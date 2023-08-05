@@ -1,0 +1,3 @@
+[console_scripts]
+adviewer = adviewer.main:_entry_point
+

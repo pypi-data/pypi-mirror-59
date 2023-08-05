@@ -1,0 +1,16 @@
+include AUTHORS.rst
+include CONTRIBUTING.rst
+include LICENSE
+include README.rst
+include requirements.txt
+include dev-requirements.txt
+include docs-requirements.txt
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include docs *.rst conf.py Makefile make.bat
+
+include versioneer.py
+include adviewer/_version.py
+include adviewer/image_viewer.ui
