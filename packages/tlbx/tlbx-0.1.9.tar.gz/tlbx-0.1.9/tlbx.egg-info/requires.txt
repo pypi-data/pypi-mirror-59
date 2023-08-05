@@ -1,0 +1,14 @@
+black
+climax
+imapclient
+orderedset
+pandas
+pre-commit
+pytest
+pylint
+python-dateutil
+requests
+simplejson
+sqlparse
+twine
+wheel
