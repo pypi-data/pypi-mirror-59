@@ -1,0 +1,15 @@
+spoofbot/__init__.py,sha256=01squzkcavj8QMihFFmoJd3VxXwh0f_FEPbWSVnh76I,253
+spoofbot/browser.py,sha256=BN3_ftCdb3_gCKJuI_dJUdB6Jn1kGVWNrF727oVZhRk,11468
+spoofbot/operating_system.py,sha256=TQC4ij_2FnmeUTTG5ulvjo5R1TDqnQDW2pKoM2HO50U,2807
+spoofbot/tag.py,sha256=ub9J2Zx_4Eg6wgF9ZqHBCeIElE4GE70-19Kv7gFtlMM,1509
+spoofbot/adapter/__init__.py,sha256=D8z2DBkaH8SRePhdUuhMcaDM7kBBmTTlWrbfBDXhYPo,107
+spoofbot/adapter/cache.py,sha256=s1sc98JhkqhEHsjywzA5d5o-J1sm3eXcV7a2AjH3lLs,5952
+spoofbot/adapter/common.py,sha256=qszlujkNGWXTfT3-nyr-wewvldKUEON66zmoI5GfIiI,2038
+spoofbot/adapter/har.py,sha256=KKVUk3ZJqBwpo-5gR4j0Alf0JF6SZs3Y8NF_aUibozw,5762
+spoofbot/util/__init__.py,sha256=_jk4EK98X4hWgdUKxQOIcmOhRo9mkwyLoEARfMWrPvI,127
+spoofbot/util/common.py,sha256=Yvtrcndw7JaA0UDrcqupQCayN6AuHnAfQjqgHTocFig,381
+spoofbot-0.1.1.dist-info/LICENSE,sha256=bAkQdUIIfDxL0Vm_YR002mRymJjGUTb3x9FU70aCxvA,1072
+spoofbot-0.1.1.dist-info/METADATA,sha256=Sdd_GMfJ59aTBZXa6_zfbOYtPkHdR33HYONbqgbkZ2I,2490
+spoofbot-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+spoofbot-0.1.1.dist-info/top_level.txt,sha256=dLN4yjpuO5RcixKftx45w9WGCDVake3OXrzSm2N-NFQ,9
+spoofbot-0.1.1.dist-info/RECORD,,
