@@ -1,0 +1,4 @@
+[console_scripts]
+iams-client = iams.client:execute_command_line
+iams-server = iams.server:execute_command_line
+
