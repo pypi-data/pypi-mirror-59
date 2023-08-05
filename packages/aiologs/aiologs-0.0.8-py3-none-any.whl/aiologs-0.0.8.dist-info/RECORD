@@ -1,0 +1,7 @@
+aiologs/__init__.py,sha256=F_3ZSxhtfSENh1bEhEtfPoZDUmwWzurkr-WS15sIGEM,13094
+aiologs/esHandler.py,sha256=9zMt5ExiSkzuN2IRFVK_DTBmgS46rnF7GNXad-hTxkk,1439
+aiologs/mongoHandler.py,sha256=L8HWI702bhkmd9B50eciEXuAkZcKrewUoTO4slboMcY,519
+aiologs-0.0.8.dist-info/METADATA,sha256=__Cem2w7TLPUmyVxXmVc0DLlbHz6us6ZRom2I_6JikM,863
+aiologs-0.0.8.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+aiologs-0.0.8.dist-info/top_level.txt,sha256=lMRAAY5ryZc_V3FjWLLGEScAoDNts9y79wubpZUhF_Y,8
+aiologs-0.0.8.dist-info/RECORD,,
