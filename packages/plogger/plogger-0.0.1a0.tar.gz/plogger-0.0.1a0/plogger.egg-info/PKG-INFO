@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: plogger
+Version: 0.0.1a0
+Summary: A simple high level logger wrapper to log into console/file with different level.
+Home-page: https://github.com/c-pher/plogger.git
+Author: Andrey Komissarov
+Author-email: a.komisssarov@gmail.com
+License: MIT
+Description: [![Build Status](https://travis-ci.org/c-pher/plogger.svg?branch=master)](https://travis-ci.org/c-pher/plogger)
+        
+        
+        ## Plogger
+        
+        Plogger - a simple high level logger wrapper to log into console/file with different level. Used built-in logger module.
+        
+        ## Installation
+        For most users, the recommended method to install is via pip:
+        ```cmd
+        pip install plogger
+        ```
+        
+        ## Import
+        ```python
+        from plogger import Logger
+        ```
+        
+        ## Usage
+        - As standalone logger:
+        ```python
+        from plogger import Logger
+        
+        logger = Logger('test', console=True, file=True)  # Log into file too
+        logger().info('log this')
+        logger.logger.info('and log this too')
+        ```
+        
+        - As part of class using inheritance:
+        ```python
+        from plogger import Logger
+        
+        class MyClass(Logger):
+            def __init__(self, logger_enabled=True, *args, **kwargs):
+                super().__init__(name=self.__class__.__name__, enabled=logger_enabled, *args, **kwargs)
+            
+            def method_name(self):
+                self.logger.info('method_name invoked')
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
