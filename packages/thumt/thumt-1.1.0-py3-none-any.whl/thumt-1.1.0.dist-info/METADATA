@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: thumt
+Version: 1.1.0
+Summary: THUMT: An open-source toolkit for neural machine translation
+Home-page: http://thumt.thunlp.org
+Author: The THUMT Authors
+Author-email: thumt17@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: future
+Requires-Dist: pillow
+Requires-Dist: torch (>=1.1.0)
+Requires-Dist: tensorflow (>=2.0.0)
+
+UNKNOWN
+
+
