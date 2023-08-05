@@ -1,0 +1,3 @@
+[circum.sensors]
+hc-sr04 = circum_hc_sr04.hc_sr04:hc_sr04
+
