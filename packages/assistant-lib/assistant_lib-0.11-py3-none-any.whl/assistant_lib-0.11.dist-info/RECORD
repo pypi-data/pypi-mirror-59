@@ -1,0 +1,8 @@
+assistant_lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+assistant_lib/assistant.py,sha256=_rfl16GGDBg9R-SNCH5wkCDkZxIb7vrL502zLLqLBL4,11769
+assistant_lib/jsonlogger.py,sha256=6xrxK3wGpB6Wuxw6LpWTudTirp9KDPhnxI8mws37FDc,1419
+assistant_lib-0.11.dist-info/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+assistant_lib-0.11.dist-info/METADATA,sha256=NCnqxcsEZjaxTATaZRSoJIhFTYqa84BHYUIhBM_LEfI,3989
+assistant_lib-0.11.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+assistant_lib-0.11.dist-info/top_level.txt,sha256=gT9XajHsJGclnq3u2vg66aTulK-WhINgHzD6456_lAQ,14
+assistant_lib-0.11.dist-info/RECORD,,
