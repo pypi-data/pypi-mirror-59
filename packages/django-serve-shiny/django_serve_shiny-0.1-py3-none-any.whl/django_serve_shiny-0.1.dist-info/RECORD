@@ -1,0 +1,17 @@
+serve_shiny/__init__.py,sha256=JNhsH-3HB4xxU1uh1uUi8CmpvoUCS_tKcU7gpE3d-n8,56
+serve_shiny/admin.py,sha256=NQOjMQlIo_bOwIQuNwGfwEa7lYzucQGrpXViafb-nw8,178
+serve_shiny/apps.py,sha256=XeCuhcLBKOq6Ui21WpduNq-mudY3b1RoONrpBGNVCzs,147
+serve_shiny/models.py,sha256=cZ-UOf_tjiYJD1t9HlJBbW_8WQZPeX9MEuQ6g08FKGs,467
+serve_shiny/shiny_cleanup.py,sha256=mHIHG2Plz1yXUAO70QSFg2Rce8ydSx0XkyXiQAWJTI4,1025
+serve_shiny/signals.py,sha256=wTa3G85WFXZ5h-5bo04GE6GCtAuFdCNRmKqR6TS9NxM,532
+serve_shiny/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+serve_shiny/urls.py,sha256=hEOGq4vqrMXKWgjO5-p-zWITurZf3K1vZ9XmsNx1cLU,220
+serve_shiny/utils.py,sha256=E_MaVKTdsO9IsqbTEsYeOZIoqN-BxXsq1mtgYqAQSDk,1199
+serve_shiny/views.py,sha256=_M-WMo7DHvXNZkzY_ZdfteRoQUykWyeotvC-2t_yYkk,1754
+serve_shiny/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+serve_shiny/templates/serve_shiny/shiny_wrapper.html,sha256=dE-iCCRE2FsspfM65QU-Xjj8gRK-41vk4kNGSFSFjUI,756
+django_serve_shiny-0.1.dist-info/LICENSE,sha256=Swtx9-1dEhWvhQxRikgYna8m7Qmv8m-MOvcDUza8XvQ,667
+django_serve_shiny-0.1.dist-info/METADATA,sha256=HcFqDBGx8wXJb4DbSpNaAGaaniw_cYCaos7xbDyy6iM,929
+django_serve_shiny-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_serve_shiny-0.1.dist-info/top_level.txt,sha256=60Ca-PcbCH3aFT0DDXBCuEj4ZZL_W42r4oAmBgYU9E8,12
+django_serve_shiny-0.1.dist-info/RECORD,,
