@@ -1,0 +1,16 @@
+[console_scripts]
+godkjenn = godkjenn.cli:main
+
+[godkjenn.comparator]
+exact = godkjenn.comparators.exact:extension
+
+[godkjenn.differ]
+binary = godkjenn.differs.binary:extension
+text = godkjenn.differs.text:extension
+
+[godkjenn.vault]
+fs-vault = godkjenn.vaults.fs_vault:extension
+
+[pytest11]
+godkjenn = godkjenn.integration.pytest_plugin
+
