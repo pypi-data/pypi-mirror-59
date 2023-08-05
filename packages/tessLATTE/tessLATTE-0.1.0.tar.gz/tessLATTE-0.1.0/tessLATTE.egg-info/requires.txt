@@ -1,0 +1,14 @@
+astropy>=3.2
+numpy
+pandas
+seaborn
+requests
+lightkurve
+matplotlib
+astroplan
+astroquery
+sklearn
+scipy
+tess-point
+reproject
+reportlab
