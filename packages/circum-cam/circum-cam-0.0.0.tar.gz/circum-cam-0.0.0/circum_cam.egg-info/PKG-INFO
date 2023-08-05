@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: circum-cam
+Version: 0.0.0
+Summary: Webcam + ML sensor plugin for circum.
+Home-page: https://github.com/LumineerLabs/circum-cam
+Author: Lane Haury
+Author-email: lane@lumineerlabs.com
+License: UNKNOWN
+Description: # circum-cam
+        
+        ![build](https://travis-ci.com/LumineerLabs/circum-cam.svg?branch=master) ![PyPI](https://img.shields.io/pypi/v/circum-cam)
+        
+        Webcam + ML sensor plugin for [circum](https://github.com/LumineerLabs/circum).
+        
+        ## Install
+        
+        ```bash
+        pip3 install circum-cam
+        ```
+        
+        ## Usage
+        
+        ```bash
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
