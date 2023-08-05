@@ -1,0 +1,3 @@
+[console_scripts]
+lms-prepaid=lms_prepaid.lms_prepaid:query
+
