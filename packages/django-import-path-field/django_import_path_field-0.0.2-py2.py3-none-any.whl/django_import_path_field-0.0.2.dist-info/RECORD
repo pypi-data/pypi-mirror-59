@@ -1,0 +1,13 @@
+importpath_field/__init__.py,sha256=1AXDXAa26PqnVwqlkV5bRxSdJG3IXaFaAmewcxF-JT4,239
+importpath_field/apps.py,sha256=3vKLJ3ufsZY-Z7lmOniiwm5wO5_-FaStq1S-SQRroJ4,218
+importpath_field/choices.py,sha256=LRJmcHt1u6VbGvGu4wYF6egNrA7-JO6eVvMNxC1ID_o,1451
+importpath_field/compat.py,sha256=2TC8d6v8nBjcWIJz7ETuZTEz5ZU5fXbMS6wDkwuO6yA,362
+importpath_field/utils.py,sha256=Z4XgIP3uvU6HwSHdlnpItO5SHtNHIW2XnMh3G9zlcdI,2396
+importpath_field/db/__init__.py,sha256=Q3Hifl4pdESlAS-ESZmBQVdbolGvJzSx9EoVeUe0Syo,91
+importpath_field/db/descriptors.py,sha256=G9gtZ9uU5J25US5EVFc8Klqu58xJypJ-KJ573wBx1xs,1630
+importpath_field/db/fields.py,sha256=4kDmjtE72YqsLu1AcFfgNJNv1EzjfQyoOhsG089qEHg,1236
+django_import_path_field-0.0.2.dist-info/LICENSE,sha256=p2Pc8h8dnZN8NxLnKB7BQDpDrQtET3UoYwb7UiK2CGg,1090
+django_import_path_field-0.0.2.dist-info/METADATA,sha256=MxUBFyDqij47TF3-qIEOLK0JrfG8q9bWDRY_AKKPIEs,4062
+django_import_path_field-0.0.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+django_import_path_field-0.0.2.dist-info/top_level.txt,sha256=xCFSF231qGJwj8eQ60zQwY9otyp_rQEiDQoJKo9Qb00,17
+django_import_path_field-0.0.2.dist-info/RECORD,,
