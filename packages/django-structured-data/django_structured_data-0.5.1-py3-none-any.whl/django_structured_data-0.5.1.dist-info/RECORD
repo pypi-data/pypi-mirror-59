@@ -1,0 +1,11 @@
+structured_data/__init__.py,sha256=upba1AezTHteIuD7O0TPhqBcwz5l-N_35r7soVRiBPs,173
+structured_data/apps.py,sha256=VeaElG9otLb4KBqodtEwyeyinVHol8hDFLfQpvMxYO4,154
+structured_data/util.py,sha256=jJwltS9quCPaFEML-GJMRiiMnhd64WPmtyh4rINRyks,1127
+structured_data/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+structured_data/templatetags/jsonld.py,sha256=w6Ip3WIfY_56SrMMYWGZ8XwtO9GiPsj4sPieL0HGeMU,637
+structured_data/templatetags/meta.py,sha256=iL6M6snM7yUt8EfN1YQ_83IZQFmcr5pF6pkJx8tLgHo,500
+structured_data/templatetags/opengraph.py,sha256=2Q2c8NUld2xi5bABBzRHI-_8xRQpzfOsh7DiMml-qlU,1838
+django_structured_data-0.5.1.dist-info/LICENSE,sha256=-StV1LNo15J7RVlx8y9iAhix3F6XM1WDtPok-dMgRJ0,1079
+django_structured_data-0.5.1.dist-info/WHEEL,sha256=bH-u_BY_RnUj9Z3s1FehhR3OifYy3H_vQHEtDkXLu84,81
+django_structured_data-0.5.1.dist-info/METADATA,sha256=2ioRnBIV0IBfc3KmdC3Y1uiX11S2Yewy5MjhW25mJmc,3696
+django_structured_data-0.5.1.dist-info/RECORD,,
