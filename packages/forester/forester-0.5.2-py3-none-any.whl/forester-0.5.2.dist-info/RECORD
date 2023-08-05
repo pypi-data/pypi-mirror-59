@@ -1,0 +1,11 @@
+forester/__init__.py,sha256=wzOAo9VwbmP9B0yozVQ3xHtknDV7mWewXSDzQ4fDLn4,148
+forester/cli.py,sha256=lKwZPqmlDo5wsl06c6xYY-lo583gISHKNj6Deu2qfXU,1756
+forester/folder_contributions.py,sha256=40Us8RKfPyR5Alb-C4K3O8kYS_J9JVH3P-S_uFoUwxw,4744
+forester/tree_info.py,sha256=0GwK2igx_YoyOEv4lIb5hxB8_OATV9AXbRSerHgBeHY,4034
+forester/util.py,sha256=P63H8yaME-CC7aQOtJzHriL8P1IsvXo2XmWRjolhrQc,742
+forester-0.5.2.dist-info/LICENSE,sha256=vELA7GfIDLm-NxRLl-LcS-oArMskETa1mXLkHfvcjVs,1076
+forester-0.5.2.dist-info/METADATA,sha256=lRbTZYCOHOwYHpmnmydVNR_Gtt1JSJFvQbV8DGGpy8A,5839
+forester-0.5.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+forester-0.5.2.dist-info/entry_points.txt,sha256=ICZ8FojuuCQ01A9kYRKzKFwOUWTp6eOqFhffqub2Uec,53
+forester-0.5.2.dist-info/top_level.txt,sha256=0cu9WEsI8SwIVC7gO99x_HizV7WLPLtyljfDuNOTxhU,9
+forester-0.5.2.dist-info/RECORD,,
