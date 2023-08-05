@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/cdk_iamgenerator/__init__.py
+src/cdk_iamgenerator/py.typed
+src/cdk_iamgenerator.egg-info/PKG-INFO
+src/cdk_iamgenerator.egg-info/SOURCES.txt
+src/cdk_iamgenerator.egg-info/dependency_links.txt
+src/cdk_iamgenerator.egg-info/requires.txt
+src/cdk_iamgenerator.egg-info/top_level.txt
+src/cdk_iamgenerator/_jsii/__init__.py
+src/cdk_iamgenerator/_jsii/cdk-iam-generator@1.0.1.jsii.tgz
