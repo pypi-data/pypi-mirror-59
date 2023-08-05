@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+daikinapi.egg-info/PKG-INFO
+daikinapi.egg-info/SOURCES.txt
+daikinapi.egg-info/dependency_links.txt
+daikinapi.egg-info/requires.txt
+daikinapi.egg-info/top_level.txt
