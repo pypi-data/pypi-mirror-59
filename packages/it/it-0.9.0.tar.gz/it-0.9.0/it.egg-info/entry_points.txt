@@ -1,0 +1,3 @@
+[console_scripts]
+it = it.__main__:main
+
