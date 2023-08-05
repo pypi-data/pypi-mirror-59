@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+tupper/__init__.py
+tupper/__main__.py
+tupper/constants.py
+tupper/solver.py
+tupper/test_solver.py
+tupper.egg-info/PKG-INFO
+tupper.egg-info/SOURCES.txt
+tupper.egg-info/dependency_links.txt
+tupper.egg-info/top_level.txt
