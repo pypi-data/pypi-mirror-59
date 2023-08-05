@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: quantized
+Version: 0.0.1a0
+Summary: Quantifying Probabilistic Electron Transit times.
+License: MIT
+Author: Evan Curtin
+Author-email: fakeemail@gmail.com
+Requires-Python: >=3.7.0,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: attrs (>=19.3,<20.0)
+Requires-Dist: cattrs (>=1.0,<2.0)
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: joblib (>=0.14.1,<0.15.0)
+Requires-Dist: loguru (>=0.4.0,<0.5.0)
+Requires-Dist: matplotlib (>=3.1,<4.0)
+Requires-Dist: numba (>=0.43.0,<0.44.0)
+Requires-Dist: numpy (>=1.17,<2.0)
+Requires-Dist: scipy (>=1.3,<2.0)
+Requires-Dist: tqdm (>=4.39,<5.0)
+Description-Content-Type: text/markdown
+
+# Transit-Chem
+
+[Documentation Home](https://transit-chem.readthedocs.io)
+
+
+Library for solving the time dependent schroedinger equation, 
+and finding the probablilistic confidence of the time it takes for a quantum
+particle to move from one place to another. Based on 
+[this paper](https://www.worldscientific.com/doi/10.1142/S0219633618500463).
+
+## Features
+
+- Harmonic Oscillator Basis Functions
+- Functional API for Solving the Time Independent/Time Dependent Schroedinger Equation
+- Molecular manipulations: translation, rotation, etc
+- Guaranteed 90%+ test coverage
+- CLI for 1d transit time analysis
+- Caching and optimizations for overlap and hamiltonian integrals
+- Fully type hinted
+- Logging and input validation, with helpful error messages
+
+
+## License
+[License](LICENSE.md)
+
