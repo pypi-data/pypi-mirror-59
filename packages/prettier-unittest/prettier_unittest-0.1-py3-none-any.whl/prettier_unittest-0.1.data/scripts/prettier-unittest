@@ -1,0 +1,5 @@
+#!python
+
+import prettier_unittest
+
+prettier_unittest.run()
