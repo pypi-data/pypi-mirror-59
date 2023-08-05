@@ -1,0 +1,54 @@
+Metadata-Version: 1.1
+Name: mds_import_product
+Version: 4.6.0
+Summary: Tryton module to import csv-file to product
+Home-page: https://www.m-ds.de/
+Author: m-ds
+Author-email: service@m-ds.de
+License: GPL-3
+Description-Content-Type: UNKNOWN
+Description: mds-import-product
+        ==================
+        Tryton module to import products from csv-file.
+        
+        Install
+        =======
+        
+        pip install mds-import-product
+        
+        Requires
+        ========
+        - Tryton 4.6
+        
+        HowTo
+        =====
+        
+        Use the action button on the Products list to start the 
+        'Import CSV-file' wizard. The assignment of the columns in the 
+        file to the fields of the products takes place in the 
+        second step. Use product attributes to add more columns to the product.
+        
+        Changes
+        =======
+        
+        
+        *09.01.2020*
+        
+        - first public
+        
+Keywords: tryton product import csv
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Plugins
+Classifier: Framework :: Tryton
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Office/Business
+Classifier: Natural Language :: German
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

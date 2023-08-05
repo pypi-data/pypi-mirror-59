@@ -1,0 +1,5 @@
+mds-csv-reader>=1.0.4
+trytond_product<4.7,>=4.6
+trytond_product_attribute<4.7,>=4.6
+trytond_account_product<4.7,>=4.6
+trytond<4.7,>=4.6
