@@ -1,0 +1,9 @@
+requests
+asyncio
+pandas
+pyppeteer
+nest_asyncio
+bs4
+
+[test]
+unittest
