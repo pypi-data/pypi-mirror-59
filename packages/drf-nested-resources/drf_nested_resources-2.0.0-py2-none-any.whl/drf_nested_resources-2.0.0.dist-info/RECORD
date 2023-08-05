@@ -1,0 +1,10 @@
+drf_nested_resources/__init__.py,sha256=-VCXjhMifpRRYdhbCvlyLQJAAP0eacpqP9cBQT2qeZE,815
+drf_nested_resources/_forged_request.py,sha256=fwTtbCW7q9W8fbFADIPQHxrZ6u92JrL-xLd4VphCuf8,1671
+drf_nested_resources/fields.py,sha256=ETq6yY8KfqqbCuOLcSomkNxcrXqnu-l_tKSPs3dO1VE,3906
+drf_nested_resources/lookup_helpers.py,sha256=Q_puYSLXUGeX927WvAhON4MJpny4H2nb-V1SfvtaGSA,3164
+drf_nested_resources/routers.py,sha256=EHpZcN4lzc-SOlqVyPgPk8zI4FpeSMhhcezk892T4Vs,19206
+drf_nested_resources-2.0.0.dist-info/LICENSE.txt,sha256=t0oOZlm6NMY_XBmDQsoRm2zqTfT98xNuPJwGyyEp4Rs,1527
+drf_nested_resources-2.0.0.dist-info/METADATA,sha256=CuGvaWidUygu8miXMAbGxYKnyFCGNSnbNoha15TBO5Y,4656
+drf_nested_resources-2.0.0.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+drf_nested_resources-2.0.0.dist-info/top_level.txt,sha256=uqlVJCQh4B_QJMRxcRKwOu8SirZ0DdrjInIXyKop3yQ,21
+drf_nested_resources-2.0.0.dist-info/RECORD,,
