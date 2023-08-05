@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: flask-mvc
+Version: 0.1.5
+Summary: Flask automated MVC experiment
+Home-page: https://github.com/alexbredo/flask_mvc_experiment/
+Author: Alexander Bredo
+Author-email: adagio@live.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: flask-sqlalchemy
+Requires-Dist: flask-migrate
+Requires-Dist: sqlalchemy-mixins
+
+# Flask MVC Experiment (Django alternative)
+Idea: Django alternative (powered by Flask + SQL-Alchemy)
+
+## Run project
+
+### Install requirements
+```
+pip install -r requirements.txt
+```
+
+### Apply changes to database (from database migration files)
+```
+flask db upgrade
+```
+
+### Start Webserver
+```
+set FLASK_APP=flask_mvc_app
+flask run
+# optional
+flask run --port 80 --host 0.0.0.0
+```
+
+## Development
+
+### Enable debug mode for development:
+```
+set FLASK_DEBUG=1
+```
+
+### Use Flask Shell:
+```
+flask shell
+>>> from flask_mvc_app.models import *
+>>> TestModel.all()
+```
+
+### Create migration-file after model changes
+```
+flask db migrate -m "user model added"
+```
+
+### Initialize DB Structures 
+Normally not needed again... (for information only)
+```
+flask db init
+```
+
+### Create Release-Build for PIP
+```
+python setup.py bdist_wheel
+```
+
+## Inspired (or powered) by:
+ - https://github.com/absent1706/sqlalchemy-mixins
+ - http://flask.palletsprojects.com/en/1.1.x/
+ - https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world (Flask Tutorial)
+ - https://docs.sqlalchemy.org/en/13/orm/tutorial.html 
+
+

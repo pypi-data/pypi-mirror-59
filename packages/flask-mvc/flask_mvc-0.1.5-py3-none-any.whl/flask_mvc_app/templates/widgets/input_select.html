@@ -1,0 +1,11 @@
+<div class="form-group row">
+    <label for="{{ id }}" class="col-sm-2 col-form-label">{{ label }}</label>
+    <div class="col-sm-10">
+        <select class="form-control" id="{{ id }}" name="{{ name }}">
+            <option value="0">-- please select --</option>
+            {% for item in items %}
+                <option value="{{ item.id }}" {% if item.id == value.id %}selected{% endif %}>{{ item }}</option> 
+            {% endfor %}
+        </select>
+    </div>
+</div>

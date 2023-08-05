@@ -1,0 +1,7 @@
+<div class="form-group row">
+    <label for="{{ id }}" class="col-sm-2 col-form-label">{{ label }}</label>
+    <div class="col-sm-10">
+        <input type="hidden" name="{{ name }}" value="" />
+        <input type="checkbox" class="form-check-input" id="{{ id }}" name="{{ name }}" value="On" {% if value==True %}checked{% endif %}>
+    </div>
+</div>

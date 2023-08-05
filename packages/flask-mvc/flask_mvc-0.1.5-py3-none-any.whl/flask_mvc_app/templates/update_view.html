@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Update</h1>
+
+<form method="post">
+    {% for col in model.get_columns(exclude=['id']) %}
+        {{ object.get_edit_widget_rendered(col.key)|safe }}
+    {% endfor %}
+
+    <div class="form-group row">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Update</button>
+        </div>
+    </div>
+</form>
+
+{% endblock %}

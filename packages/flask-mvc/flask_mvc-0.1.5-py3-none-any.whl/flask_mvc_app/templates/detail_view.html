@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Detail View</h1>
+
+<table class="table">
+  <tbody>
+    {% for col in model.get_columns() %}
+        <tr>
+            <td>{{ col.verbose_name }}</td>
+            <td>{{ object.get_view_widget_rendered(col.key)|safe }}</td>
+        </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

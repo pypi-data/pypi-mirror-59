@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Content</h1>
+<a href="{{ model.get_add_url() }}" class="btn btn-primary" role="button" aria-pressed="true">Add</a>
+<p></p>
+
+{% if object %}
+<table class="table table-hover">
+  <thead class= "thead-dark">
+    <tr>
+      {% for col in model.get_columns() %}
+        <th scope="col">{{ col.verbose_name }}</th>
+      {% endfor %}
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for row in object %}
+    <tr>
+      {% for col in model.get_columns()  %}
+        <td>{{ row.get_view_widget_rendered(col.key)|safe }}</td>
+      {% endfor %}
+      <td>
+        <a href="{{ row.get_edit_url() }}">Edit</a> 
+        <a href="{{ row.get_delete_url() }}">Delete</a>
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% else %}
+  <p>Currently no data.</p>
+{% endif %}
+
+{% endblock %}
