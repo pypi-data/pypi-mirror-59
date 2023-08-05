@@ -1,0 +1,15 @@
+CodeEditor/__init__.py,sha256=kE-F2ULOOEJHDCd_rQC9CYhCAfU9HA39L4n8CyRUd4c,188
+CodeEditor/auxilary.py,sha256=2Nlh3A8qJ2cC81nCjegy_bLvB5_v_uNYrsS1m-kelCc,7703
+CodeEditor/editor.py,sha256=tBPEsH3S6a-eUGlGh125TzIl1pZzoa--zKpNzSRxhVY,15717
+CodeEditor/lang.py,sha256=9f0wcty_21EwPaFCD99x_HVWfKcPOxAe6opQUNVe3eY,1665
+CodeEditor/search.py,sha256=GeOv_vuePcJBw32_8T6ZORe8ueNZUHrTlbn024cNr3g,9899
+CodeEditor/setting_enums.py,sha256=U0fEX1I5E4jTK15JN54RkzCA2lmfl5xC9IypJg6J2W4,14051
+CodeEditor/settings.py,sha256=PKl4JMZ3AZFUQJ0bEmO4_rHUnGKVGnraTBqN2bkFWgU,22224
+CodeEditor/lexers/__init__.py,sha256=I45HGEvlU9_M_1U60GsqBjW1BAofgeaCehfjpx-5CpU,76
+CodeEditor/lexers/lexer_qss.py,sha256=3Z-gWZXr7G1r9QrLwCir_sDtleJGHEBzgjHbDI91p-Q,19250
+CodeEditor/lexers/lexer_text.py,sha256=YO-yNVMINMZQ5fxR18CDgg3NlGoKb_hGdZDNtW7Kxl8,851
+CodeEditor-1.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+CodeEditor-1.1.0.dist-info/METADATA,sha256=7thjwqBMINlD5F2646VdA4H0pkINxo1j3022Hie5Fgw,2413
+CodeEditor-1.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+CodeEditor-1.1.0.dist-info/top_level.txt,sha256=8CxggpGaZbhUdo1UMP5bzFJic2LyTAOAjePIvv7zIKk,11
+CodeEditor-1.1.0.dist-info/RECORD,,
