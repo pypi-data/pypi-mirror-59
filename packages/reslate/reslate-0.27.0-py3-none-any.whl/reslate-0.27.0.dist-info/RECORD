@@ -1,0 +1,15 @@
+reslate/__init__.py,sha256=GRwX4YgDhWdxiSHRoOzbiFpifOKZAGNy3WFn1qMg0lI,3296
+reslate/__main__.py,sha256=ej_W8_-OhR4lmJXUPi4Ifm3kwpBvMVS6xmDevre9-hQ,7225
+reslate/loader.py,sha256=15fgAGsCP_zWUC1YNxj4lp-O1_k0kj3jnQjWn1Qq1xk,2617
+reslate/object_info.py,sha256=VMPy_Fd3RqBeDl6Yd1ibfggUihCySyvmlA4rMWA_wFs,1874
+reslate/parsing.py,sha256=Bl0mQB2o-SJAPMj4NMfFbNg1m6gULLi9f8z6C74gyq4,7669
+reslate/version.py,sha256=xMJHJ_m2UpAKVSJrj5QNVQRwPK51_pSVu4sTvcXNchw,117
+reslate/writer.py,sha256=MsMTmdCr787TsjNW63LKlHtUSfTA7DRHh5iuMw1Ajpw,3697
+reslate/templates/__init__.py,sha256=b01gxuUuI5Rm2aPsOVaLWXkJEO7TeGwTiYZHmVnlSwY,19
+reslate/templates/load.py,sha256=nd8jYXN89yslPcxy3pCnd6HGOSH-w4MDfuoigxscHZs,4170
+reslate-0.27.0.dist-info/LICENSE,sha256=kk6xvKeh2mfQOXTRbRWeofdKQ5sX85NRll-JWt25veI,35067
+reslate-0.27.0.dist-info/METADATA,sha256=6oKW5QfGBiDwMoGfmjylAAwhac_XdVnTH7YoP7Yx-vw,1222
+reslate-0.27.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+reslate-0.27.0.dist-info/entry_points.txt,sha256=YFPpVDId_uukGukZvYnufNXOpCIlZ1AZP2ByOk0hgHo,51
+reslate-0.27.0.dist-info/top_level.txt,sha256=ahLo2d5RaqMKa3TSir5LQ9Ocp59Ubk8hhIlhAMNaTg0,8
+reslate-0.27.0.dist-info/RECORD,,
