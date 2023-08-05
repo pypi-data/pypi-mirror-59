@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" ng-app="angularMaterialAdmin">
+    <head>
+        <meta charset="utf-8">
+        <title>Rackio Framework - Admin</title>
+        <meta name="description" content="Admin system for Rackio Applications">
+        <meta name="author" content="flatlogic.com">
+        <meta name="viewport" content="width=device-width">
+        <link href="/static/css/angular-material.css" rel="stylesheet">
+        <link href="/admin/stylesheets/custom.css" rel="stylesheet">
+        <link href="/admin/stylesheets/table.css" rel="stylesheet">
+        <link href="/static/css/md-data-table.css" rel="stylesheet">
+        <link href="/static/css/md-data-table-style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        {% for module in rackio_modules -%}
+        <script src="/{{ module.folder }}/{{ module.subfolder }}/{{ module.module }}"></script>
+        {% endfor %}
+
+    </head>
+    <body>
+       
+        <div ui-view layout="row" layout-fill></div>
+
+        {% for module in admin_modules -%}
+        <script src="/{{ module.folder }}/{{ module.subfolder }}/{{ module.module }}"></script>
+        {% endfor %}
+
+        <!-- Directives -->
+        {% for directive in directives -%}
+        <script src="/admin/components/directives/{{ directive }}"></script>
+        {% endfor %}
+
+        <!-- Services -->
+        {% for service in services -%}
+        <script src="/admin/components/services/{{ service }}"></script>
+        {% endfor %}
+
+        <!-- Controllers -->
+        {% for controller in controllers -%}
+        <script src="/admin/controllers/{{ controller }}"></script>
+        {% endfor %}
+
+    </body>
+</html>
