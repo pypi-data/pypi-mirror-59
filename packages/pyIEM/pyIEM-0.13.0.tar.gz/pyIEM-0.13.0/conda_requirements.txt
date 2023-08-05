@@ -1,0 +1,29 @@
+affine
+cartopy>=0.17
+cython
+descartes
+fiona
+# need to pin for comparables
+freetype>=2.10
+gdal
+geojson
+matplotlib
+metpy
+metar>=1.7.0
+mock
+# needed for fiona?
+ncurses
+netCDF4
+geopandas
+pandas
+# need due to busted pint 0.9 conda-forge/pint-feedstock#23
+pint<0.9
+psycopg2
+pytest
+pytest-mpl
+pytest-runner
+rasterstats
+shapely
+tqdm
+# prevent xarray 0.12.2 bug
+xarray<0.12.2
