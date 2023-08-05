@@ -1,0 +1,3 @@
+[console_scripts]
+zk-screenshot-maker = zk_screenshot_maker.__main__:main
+

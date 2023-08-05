@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: zk-screenshot-maker
+Version: 1.0.5
+Summary: Tool to make screenshots for apple app store
+Home-page: https://github.com/caojianfeng/zk_logo_maker
+Author: JeffreyCao
+Author-email: jeffreycao1024@gmail.com
+License: MIT Licence
+Keywords: pip,zk_screenshot_maker
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+
+# zk_screenshot_maker
+
+#### Description
+苹果商店上截图的尺寸要求比较严格，直接截图并不能使用。
+这个工具用了创建一个符合尺寸要求的截图
+
+#### 
+
