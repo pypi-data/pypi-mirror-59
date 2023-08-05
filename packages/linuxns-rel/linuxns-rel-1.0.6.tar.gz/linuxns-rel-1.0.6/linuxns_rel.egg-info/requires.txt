@@ -1,0 +1,12 @@
+psutil
+asciitree
+sty
+
+[dev]
+coverage
+sphinx
+sphinx_rtd_theme
+
+[graph]
+graphviz
+PyQt5
