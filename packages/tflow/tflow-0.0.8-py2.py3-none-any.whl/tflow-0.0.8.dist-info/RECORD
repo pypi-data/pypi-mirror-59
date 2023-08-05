@@ -1,0 +1,11 @@
+tflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tflow/__main__.py,sha256=z3OQolCKD8rUd3pKYp_FISq2VctFhFl1mV-DVnaoNOM,29
+tflow/cli.py,sha256=2adWv_3bv4U5V6785Jxrz5AgkXp4TJolGfdjxg4wXYQ,1419
+tflow/cli_args.py,sha256=9ab_EyJQkZB8urfAEQ93KDP6alGpox4nD0u0VpM1P0I,3465
+tflow/gitlab-ci.tmpl,sha256=7y9WTA9RR1DRsBmz27pPEz3bOzDduO948lTJectPau4,621
+tflow/render.py,sha256=1irukQ6gN-Mw2F5wh8WefkCAz7MN9bhFnPjaJjJO4MA,381
+tflow-0.0.8.dist-info/METADATA,sha256=HG5-4odQHws-HIJr2HNz7LyDzVZGzvWaLDBoBCZ4NBE,1273
+tflow-0.0.8.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+tflow-0.0.8.dist-info/entry_points.txt,sha256=_pDzk4vTUVUd3NYrV92FfH1fZJ7tKL2XcazoYLdVSjs,42
+tflow-0.0.8.dist-info/top_level.txt,sha256=CuAaU7jetDEHTmZyKgaWVImfPIVPGjP-QBydectDTis,6
+tflow-0.0.8.dist-info/RECORD,,
