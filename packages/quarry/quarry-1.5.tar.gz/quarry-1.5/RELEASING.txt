@@ -1,0 +1,24 @@
+Release Process
+===============
+
+1. Clean up.
+2. Run tests + build docs with ``tox``
+3. Bump the version number:
+
+  - Check for stragglers: ``git status``; clean up
+  - Update version number in setup.py
+  - Update version number in CHANGES.rst
+  - Update version number in docs/conf.py
+  - Update copyright year in docs/conf.py
+  - Update copyright year in COPYING.txt
+4. Run tests + build docs with ``tox``
+5. Clean up.
+6. Build with:
+    python setup.py sdist
+    twine upload dist/*
+5. Commit+push changes:
+    git commit -m "Bump version to XXX"
+    git tag vXXX
+    git push origin master
+    git push vXXX
+8. Update readthedocs TODO
