@@ -1,0 +1,10 @@
+<registry>
+
+    <records interface="Products.CMFPlone.interfaces.controlpanel.ISearchSchema"
+             prefix="plone">
+        <value key="types_not_searched" purge="false">
+            <element>ftw.collectionblock.CollectionBlock</element>
+        </value>
+    </records>
+
+</registry>
