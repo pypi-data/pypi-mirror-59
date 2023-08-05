@@ -1,0 +1,7 @@
+README.md
+setup.py
+stbs/__init__.py
+stbs.egg-info/PKG-INFO
+stbs.egg-info/SOURCES.txt
+stbs.egg-info/dependency_links.txt
+stbs.egg-info/top_level.txt
