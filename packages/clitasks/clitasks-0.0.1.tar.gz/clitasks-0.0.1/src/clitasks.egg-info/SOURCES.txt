@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+src/clitasks/__init__.py
+src/clitasks/quote.py
+src/clitasks/task_container.py
+src/clitasks/tasks.py
+src/clitasks/validators.py
+src/clitasks.egg-info/PKG-INFO
+src/clitasks.egg-info/SOURCES.txt
+src/clitasks.egg-info/dependency_links.txt
+src/clitasks.egg-info/entry_points.txt
+src/clitasks.egg-info/requires.txt
+src/clitasks.egg-info/top_level.txt
+src/clitasks/bin/__init__.py
+src/clitasks/bin/dict.py
+src/clitasks/bin/run.py

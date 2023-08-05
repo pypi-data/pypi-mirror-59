@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: clitasks
+Version: 0.0.1
+Summary: Command line task manager
+Home-page: UNKNOWN
+Author: Sarath Menon
+Author-email: sarath.menon@rub.de
+License: UNKNOWN
+Download-URL: https://github.com/srmnitc/cli-tasks/archive/0.0.1.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
