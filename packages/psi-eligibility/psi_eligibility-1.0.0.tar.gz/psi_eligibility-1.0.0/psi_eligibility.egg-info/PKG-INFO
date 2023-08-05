@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: psi-eligibility
+Version: 1.0.0
+Summary: PSI Candidate Rest Eligibility Service
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: morahood@gmail.com
+License: UNKNOWN
+Description:     PSIs REST based service to modify candidate test eligibilities.  # noqa: E501
+            
+Keywords: Swagger,PSI Candidate Rest Eligibility Service
+Platform: UNKNOWN
