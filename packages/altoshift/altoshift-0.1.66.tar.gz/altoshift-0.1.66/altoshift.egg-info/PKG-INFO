@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: altoshift
+Version: 0.1.66
+Summary: learning today make you better tomorrow
+Home-page: https://altoshift.com
+Author: eko
+Author-email: eko@altoshift.com
+License: MIT
+Description: #Altoshift Module Python#
+        
+        Altoshift.com - Search engine as a service.
+        
+        we provide easy setup for integration.
+        
+        ## Installing
+        
+        ```
+        pip install altoshift --user
+        ```
+        
+        ## Upgrade
+        
+        ```
+        pip install altoshift --upgrade --user
+        ```
+        
+        
+        
+        Author :
+        Eko Aprili Trisno
+        
+        eaprilitrisno@gmail.com
+        
+Platform: UNKNOWN
+Requires: requests(>=1.2.3)
+Requires: pandas
+Requires: xlrd
+Requires: tqdm
