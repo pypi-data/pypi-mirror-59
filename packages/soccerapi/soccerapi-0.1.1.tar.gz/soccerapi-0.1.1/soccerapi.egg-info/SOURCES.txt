@@ -1,0 +1,8 @@
+README.md
+setup.py
+soccerapi.egg-info/PKG-INFO
+soccerapi.egg-info/SOURCES.txt
+soccerapi.egg-info/dependency_links.txt
+soccerapi.egg-info/requires.txt
+soccerapi.egg-info/top_level.txt
+test/test_888sport.py
