@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: circum-hc-sr04
+Version: 0.0.0
+Summary: HC-SR04 sensor plugin for circum.
+Home-page: https://github.com/LumineerLabs/circum-hc-sr04
+Author: Lane Haury
+Author-email: lane@lumineerlabs.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: circum
+Requires-Dist: click
+Requires-Dist: setuptools-git-version
+
+# circum-hc-sr04
+
+![build](https://travis-ci.com/LumineerLabs/circum-hc-sr04.svg?branch=master) ![PyPI](https://img.shields.io/pypi/v/circum-hc-sr04)
+
+HC-SR04 sensor plugin for [circum](https://github.com/LumineerLabs/circum).
+
+## Install
+
+```bash
+pip3 install circum-hc-sr04
+```
+
+## Usage
+
+```bash
+```
+
+
