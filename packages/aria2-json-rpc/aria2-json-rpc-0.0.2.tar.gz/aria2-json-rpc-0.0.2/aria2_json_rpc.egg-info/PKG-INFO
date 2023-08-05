@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aria2-json-rpc
+Version: 0.0.2
+Summary: a naive aria2c rpc api lib
+Home-page: https://github.com/Virace/aria2-rpc
+Author: Virace
+Author-email: Virace@yeah.net
+License: UNKNOWN
+Description: # aria2-rpc
+        
+        基于 https://bitbucket.org/tinyproxy/pyaria2.git
+        修改
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
