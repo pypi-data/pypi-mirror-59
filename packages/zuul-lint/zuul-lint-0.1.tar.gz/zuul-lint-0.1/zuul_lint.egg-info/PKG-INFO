@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: zuul-lint
+Version: 0.1
+Summary: Zuul Job Config Linter
+Home-page: https://github.com/pycontribs/zuul-lint
+Author: Sorin Sbarnea
+Author-email: sorin.sbarnea@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/pycontribs/zuul-lint
+Project-URL: Tracker, https://github.com/tox-dev/pycontribs/zuul-lint
+Description: # zuul-lint
+        Zuul Config Linter
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: !=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7
+Description-Content-Type: text/markdown
