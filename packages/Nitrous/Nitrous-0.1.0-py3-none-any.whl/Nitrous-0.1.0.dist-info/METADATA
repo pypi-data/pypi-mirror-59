@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: Nitrous
+Version: 0.1.0
+Summary: Front-to-back, open-source, rapid web development framework
+Home-page: https://bitbucket.org/brightlinkinfrastructure/nitrous
+Author: BrightLink
+Author-email: drocco@thebrightlink.com
+Maintainer: BrightLink
+Maintainer-email: drocco@thebrightlink.com
+License: MIT
+Download-URL: https://bitbucket.org/brightlinkinfrastructure/nitrous/get/0.1.0.tar.gz
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Framework :: TurboGears
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: future (>=0.17.1)
+Requires-Dist: CherryPy (>=3.1.2)
+Requires-Dist: ConfigObj (>=4.3.2)
+Requires-Dist: FormEncode (>=1.2.1)
+Requires-Dist: Genshi (>=0.4.4)
+Requires-Dist: setuptools (>=0.6c11)
+Requires-Dist: TGScheduler (>=1.6.2)
+Provides-Extra: compat
+Provides-Extra: develop
+Requires-Dist: future (>=0.17.1) ; extra == 'develop'
+Requires-Dist: CherryPy (>=3.1.2) ; extra == 'develop'
+Requires-Dist: ConfigObj (>=4.3.2) ; extra == 'develop'
+Requires-Dist: FormEncode (>=1.2.1) ; extra == 'develop'
+Requires-Dist: Genshi (>=0.4.4) ; extra == 'develop'
+Requires-Dist: setuptools (>=0.6c11) ; extra == 'develop'
+Requires-Dist: TGScheduler (>=1.6.2) ; extra == 'develop'
+Requires-Dist: SQLAlchemy (>=0.4.3) ; extra == 'develop'
+Provides-Extra: future
+Provides-Extra: sqlalchemy
+Requires-Dist: SQLAlchemy (>=0.4.3) ; extra == 'sqlalchemy'
+Provides-Extra: testtools
+Provides-Extra: tgtesttools
+Provides-Extra: toscawidgets
+
+
+Front-to-back rapid web development
+===================================
+
+TurboGears brings together four major pieces to create an easy to
+install, easy to use web mega-framework. It covers everything from
+front end (MochiKit JavaScript for the browser, Genshi / Kid / Mako for
+templates in Python) to the controllers (CherryPy) to the
+back end (SQLAlchemy).
+
+The TurboGears project is focused on providing documentation and
+integration with these tools without losing touch with the communities
+that already exist around those tools.
+
+TurboGears is easy to use for a wide range of web applications.
+
+The latest development version is available in the `TurboGears
+subversion repository`_.
+
+Our `mailing list`_ is lively and helpful, don't hesitate to send your
+questions there, we will try to help you find out a solution to your
+problem.
+
+.. _mailing list:
+    http://groups.google.com/group/turbogears
+
+.. _TurboGears subversion repository:
+    http://svn.turbogears.org/trunk#egg=turbogears-dev
+
+
