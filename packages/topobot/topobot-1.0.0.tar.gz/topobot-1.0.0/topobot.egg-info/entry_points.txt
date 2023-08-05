@@ -1,0 +1,3 @@
+[console_scripts]
+topobot = topobot.cmd:cli
+
