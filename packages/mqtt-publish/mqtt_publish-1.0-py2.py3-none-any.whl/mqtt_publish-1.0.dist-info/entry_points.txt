@@ -1,0 +1,3 @@
+[console_scripts]
+mqtt_publish = mqtt_publish.bin.mqtt_publish:main
+
