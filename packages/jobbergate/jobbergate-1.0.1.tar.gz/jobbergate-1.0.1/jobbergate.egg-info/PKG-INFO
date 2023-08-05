@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: jobbergate
+Version: 1.0.1
+Summary: Questionnaire application that populates Jinja2 templates with given answers.
+Home-page: https://github.com/HeMan/jobbergate
+Author: Jimmy Hedman
+Author-email: jimmy.hedman@cygni.se
+License: UNKNOWN
+Description: Jobbergate
+        ==========
+        
+        Jobbergate is an questionnaire application that populates Jinja2 templates with given answers.
+        
+        In its simplest form you only need a `views.py` that defines `mainflow` and a template file (called `templates/job_template.j2`) which gets populated with your answers.
+        To support advanced workflows you could define multiple levels of questions, change to other templates, run functions before and after subworkflows, have follow up questions to boolean questions and so on.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/x-rst
