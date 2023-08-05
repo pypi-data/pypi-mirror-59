@@ -1,0 +1,10 @@
+README.md
+ffsend.py
+setup.cfg
+setup.py
+ffsend.egg-info/PKG-INFO
+ffsend.egg-info/SOURCES.txt
+ffsend.egg-info/dependency_links.txt
+ffsend.egg-info/entry_points.txt
+ffsend.egg-info/requires.txt
+ffsend.egg-info/top_level.txt
