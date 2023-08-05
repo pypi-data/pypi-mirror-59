@@ -1,0 +1,16 @@
+UniSync-1.0.data/scripts/Client.py,sha256=H0EIUX7tCOspNMaStpWATeoIZrTlyS2q5cdz5jxD4fw,2110
+UniSync-1.0.data/scripts/ClientClass.py,sha256=-LUQucb7XVE40yUoAp3jAYSCVYFQo9iT1aDfzZ6mSmQ,639
+UniSync-1.0.data/scripts/ClientDatabase.py,sha256=166DlaS_X_54O91SAz9DvO1sJk74BXSWTBPzTaDgX7c,3936
+UniSync-1.0.data/scripts/ClientWorkerClass.py,sha256=euIdWRRSLxHOoG-9foztOat_LssPmeSTX2gfUzgWNnA,2569
+UniSync-1.0.data/scripts/DataExchangeThread.py,sha256=XY4HYnOJ_NTGKxutrZ46g6ACQu7rxrHysww6pDfsMz0,2214
+UniSync-1.0.data/scripts/HighPriorityThread.py,sha256=1Rv0Zsr3u2ONxGF9FHrzamyE-rRLKntuVZ2BLlPYiWY,1082
+UniSync-1.0.data/scripts/MessageSender.py,sha256=oQa9caueXh6FRRrt7zpEy4gw_Beu3tcO0t1G_Cd4VUY,1233
+UniSync-1.0.data/scripts/ServerThread.py,sha256=XyWkV3P7Qex5sRcDW_bSjA6A-9t_6NkDRgwUnfo--xI,6091
+UniSync-1.0.data/scripts/Sync.py,sha256=79BkuVC30PmYLlSrs1OaGWam4FGnYeHSeW8htPlwH5o,4769
+UniSync-1.0.data/scripts/Utilities.py,sha256=QrmKoPJovpRwGUqUS1q6jMsTaqM4VLPTKwNVdRny_Yk,281
+UniSync-1.0.data/scripts/createsync.kv,sha256=UXHi0P64rtNoDaObXsf_8SrxZPsxv-vw_bPe-fIdOK0,4686
+UniSync-1.0.dist-info/LICENSE,sha256=r8qk3h9dDNf1E3noNYegU_Oh01MGsuTcouX2_VELR4Y,75
+UniSync-1.0.dist-info/METADATA,sha256=1dSLukvIgFvJL_Vdo7SnNL9iereU7-9XhO8ef9qAoHU,728
+UniSync-1.0.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+UniSync-1.0.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+UniSync-1.0.dist-info/RECORD,,

@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: UniSync
+Version: 1.0
+Summary: UniSync software
+Home-page: UNKNOWN
+Author: alex_lacra
+Author-email: alexalbu78@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+#Required packages for running the app
+sudo add-apt-repository ppa:kivy-team/kivy # stable builds repository
+sudo apt-get update 
+sudo apt-get install python-kivy python3-kivy python-kivy-examples
+
+After installing just run the Sync.py file with python3 command.
+
+
+#Description
+UniSync is a software that helps you sync your files across all your devices.
+
+
