@@ -1,0 +1,8 @@
+README.md
+rules
+setup.py
+robocup_spl_rules_cli.egg-info/PKG-INFO
+robocup_spl_rules_cli.egg-info/SOURCES.txt
+robocup_spl_rules_cli.egg-info/dependency_links.txt
+robocup_spl_rules_cli.egg-info/requires.txt
+robocup_spl_rules_cli.egg-info/top_level.txt
