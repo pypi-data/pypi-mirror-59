@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+ewlibs/__init__.py
+ewlibs/testcode.py
+ewlibs.egg-info/PKG-INFO
+ewlibs.egg-info/SOURCES.txt
+ewlibs.egg-info/dependency_links.txt
+ewlibs.egg-info/top_level.txt
