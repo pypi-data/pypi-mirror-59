@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: pavis
+Version: 0.0.3
+Summary: Parallel corpora version control engine
+Home-page: http://at.senhacore.xyz:3000/huang825172/Pavis
+Author: huang825172
+Author-email: 1048035187@qq.com
+License: UNKNOWN
+Description: # Pavis
+        
+        基于 Python3 的 **平行语料版本管理引擎**
+        
+        软件参考 git 的版本管理机制，并针对平行语料管理用途，对功能进行了优化。软件的版本管理粒度精细到单句，能够为基于平行语料的学术、科研用途提供更加丰富的基础数据支持。
+        
+        [详细文档：Pavis.md](docs/pavis.md)
+Keywords: corpora parallel version control
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.6
