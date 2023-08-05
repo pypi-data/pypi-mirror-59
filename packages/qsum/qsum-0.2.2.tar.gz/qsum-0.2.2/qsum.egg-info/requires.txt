@@ -1,0 +1,4 @@
+
+[test]
+pytest>=4.4.0
+pytest-pylint
