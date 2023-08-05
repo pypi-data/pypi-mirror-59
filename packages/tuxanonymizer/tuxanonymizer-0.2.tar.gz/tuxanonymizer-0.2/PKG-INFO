@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: tuxanonymizer
+Version: 0.2
+Summary: Customer file obfuscation library and cli
+Home-page: https://github.com/narfai/tuxanonymize
+Author: Francois CADEILLAN
+Author-email: narfai@azsystem.fr
+License: MIT
+Download-URL: https://github.com/narfai/tuxanonymize/archive/v_02.tar.gz
+Description: UNKNOWN
+Keywords: ANONYMIZE,OBFUSCATION,CUSTOMER,XML
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
