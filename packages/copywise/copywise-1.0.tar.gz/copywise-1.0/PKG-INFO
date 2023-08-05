@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: copywise
+Version: 1.0
+Summary: Wisely copy files
+Home-page: https://github.com/matheusccouto/copywise
+Author: Matheus Couto
+Author-email: matheusccouto@gmail.com
+License: MIT
+Download-URL: https://github.com/matheusccouto/copywise/archive/1.0.tar.gz
+Description: UNKNOWN
+Keywords: COPY,EXTENSION
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
