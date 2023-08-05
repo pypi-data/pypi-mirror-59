@@ -1,0 +1,5 @@
+setup.py
+terraria.py.egg-info/PKG-INFO
+terraria.py.egg-info/SOURCES.txt
+terraria.py.egg-info/dependency_links.txt
+terraria.py.egg-info/top_level.txt
