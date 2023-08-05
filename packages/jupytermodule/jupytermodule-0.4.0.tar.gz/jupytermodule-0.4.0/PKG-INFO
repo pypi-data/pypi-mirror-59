@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: jupytermodule
+Version: 0.4.0
+Summary: import jupyter notebooks as python modules
+Home-page: https://github.com/poga/jupytermodule
+Author: Poga
+Author-email: poga.po@gmail.com
+License: UNKNOWN
+Description: # jupyter-module
+        
+        Import jupyter notebooks as python modules
+        
+        ## Install
+        
+        ```
+        pip install jupytermodule
+        ```
+        
+        ## Synopsis
+        
+        ```python
+        from jupytermodule import open
+        
+        notebook_module = open("https://raw.githubusercontent.com/poga/jupyter-module/master/examples/primes.ipynb")
+        
+        print(notebook_module.primes(10))
+        # [2,3,5,7]
+        print(notebook_module.PI)
+        # 3.1415
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
