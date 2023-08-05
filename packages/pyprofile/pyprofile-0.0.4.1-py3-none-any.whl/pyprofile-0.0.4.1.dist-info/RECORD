@@ -1,0 +1,14 @@
+pyprofile/__init__.py,sha256=aN0Jw3pGtDYaTyRSR35pg0d21OKrasmJ0b2LA5WK4dA,86
+pyprofile/profiler.py,sha256=LbSo_X6wNBwtgBzFw7yNZbgTPN92hVFGstwNzFgNnbg,3979
+pyprofile/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyprofile/contrib/django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyprofile/contrib/django/middleware.py,sha256=uQ5dYUQg3gmOao0q0EvOe3awM6m__TjCBkH0MUbhzkY,3719
+pyprofile/contrib/django/sql_profiler.py,sha256=770Tt5pE8qUGfokDuIwFmSHgROSOvt5MuQ5fmg2KPN4,11167
+pyprofile/fixtures/__init__.py,sha256=ssbhpTJhlVY8um6w5cpumaiCMdjREGbcwvtF6Npai3U,337
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_profiler.py,sha256=HN2hmUl0hhy8LW57orNyE75m0od6DN5iszq97hh7aUI,625
+pyprofile-0.0.4.1.dist-info/LICENSE,sha256=B19-B5fz-8DSyjiaKL1TAkSpfCGjWXu60UklsyTKmjA,1072
+pyprofile-0.0.4.1.dist-info/METADATA,sha256=vSR8TEDFHyfk8rQJJ13eiqpcKzXQiakRsBY-ePdvnoQ,490
+pyprofile-0.0.4.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyprofile-0.0.4.1.dist-info/top_level.txt,sha256=Um4uYhbBuQerCzzVjPnbXoN0ptykuGAknQUOrQLt9L0,16
+pyprofile-0.0.4.1.dist-info/RECORD,,
