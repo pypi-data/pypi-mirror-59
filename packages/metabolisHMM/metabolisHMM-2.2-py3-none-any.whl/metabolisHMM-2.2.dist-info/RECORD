@@ -1,0 +1,9 @@
+bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+metabolisHMM-2.2.data/scripts/create-genome-phylogeny,sha256=EDgDbAWiFBv-Fs9CyJH9zGNW7gRcdAFEwsqhipK2QmQ,13134
+metabolisHMM-2.2.data/scripts/search-custom-markers,sha256=j7uvpy9EJzjYgRRBdoQ1-dZWc6jR8QucNp9jeI93Ctg,15552
+metabolisHMM-2.2.data/scripts/single-marker-phylogeny,sha256=koH-8xDdK4BZ55X_3o59rDVFRwRrWAIR_91Uc3udydk,18415
+metabolisHMM-2.2.data/scripts/summarize-metabolism,sha256=i5ybInxQvp7pfAMSr1NyLM_Xg7Et9r3Oxna9VZALGEc,25766
+metabolisHMM-2.2.dist-info/METADATA,sha256=agdDlbMEeb500D-cHOQZXN-tBaIRKWQUNwWscCbgSvM,468
+metabolisHMM-2.2.dist-info/RECORD,,
+metabolisHMM-2.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+metabolisHMM-2.2.dist-info/top_level.txt,sha256=R96X4WkWzS2JXVjmQGzznHrsb0spoRTVPx0dimUsYls,4
