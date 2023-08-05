@@ -1,0 +1,9 @@
+validobj/__init__.py,sha256=7Jfj2dEQ8SmxD3O6W8Ez1ApVyMwpjzZS7CQo28XpehU,135
+validobj/errors.py,sha256=zKTZWVPwnnBdM50iRMSgF5v_f57a8prXtMbcdyiXOn8,5112
+validobj/validation.py,sha256=9XlMH9qoampAjJbxP_NvRBVQ8oDp-0OYYBFO4jkLn0k,9417
+validobj/tests/test_errors.py,sha256=6sbjd7Gob_SDFVLPjQeHXnDzScrOzoRZ4NpHYFujr3s,1862
+validobj/tests/test_validation.py,sha256=od6bd8Lg0Mg8I3JC8Cu_laSzHb8GEWlNnCdS0uYaxvw,3201
+validobj-0.3.1.dist-info/LICENSE,sha256=xhV0RZUv3gzMfEJRwWxgWUyjpSlH96EYYExYdiURrGA,1082
+validobj-0.3.1.dist-info/WHEEL,sha256=BO4rLihzJxX3WFgRFhCLEiuIEjpUSRh92PQXyB9DXS0,99
+validobj-0.3.1.dist-info/METADATA,sha256=KL6KiJaKZ4xmNHuQ7kD9tmtbj8vjZYRTR_TY6sULmSw,3327
+validobj-0.3.1.dist-info/RECORD,,
