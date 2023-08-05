@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: jarviscore
+Version: 0.1.1.14
+Summary: A python package for creating Twitch Bots
+Home-page: https://dev.azure.com/cubbei/jarviscore
+Author: Cubbei
+Author-email: author@example.com
+License: UNKNOWN
+Description: #Jarvis 
+        
+        **Status**
+        [![Build status](https://dev.azure.com/cubbei/JarvisCore/_apis/build/status/JarvisCore-PiP%20Publish)](https://dev.azure.com/cubbei/JarvisCore/_build/latest?definitionId=1)
+        
+        
+        This is the repository for Jarvis, the twitch bot.
+        
+        ##Getting Started
+        
+        The simplest way to get started is to create a new file, with the basic code below:
+        
+        ```python
+        from jarviscore.client import Client
+        
+        jarvis = Client(nick="yourbotsname", 
+            token="yourbotstoken",
+            channels=['a list', 'of channels', 'to connect to'])
+        jarvis.start()
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
