@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: datacatalog-api
+Version: 0.0.1
+Summary: MINT Data Catalog
+Home-page: https://pypi.org/project/datacatalog-api/
+Author: UNKNOWN
+Author-email: danf@usc.edu
+License: UNKNOWN
+Description:     API Documentation for MINT Data Catalog  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,MINT Data Catalog
+Platform: UNKNOWN
