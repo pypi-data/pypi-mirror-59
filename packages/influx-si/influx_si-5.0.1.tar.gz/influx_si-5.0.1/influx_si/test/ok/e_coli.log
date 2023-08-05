@@ -1,0 +1,38 @@
+"/home/sokol/.local/bin/influx_s.py" "e_coli"
+code gen: 2019-11-07 14:58:06
+executing: "/home/sokol/.local/bin/ftbl2optR.py" "--tblimit" "0" "--ropts" "TIMEIT=TRUE" "e_coli.ftbl"
+executing: R --vanilla --slave < e_coli.R
+calcul  : 2019-11-07 14:58:06
+load    : 2019-11-07 14:58:07.46 cpu=0.693
+rinit   : 2019-11-07 14:58:07.46 cpu=0.695
+r_flux  : 2019-11-07 14:58:07.46 cpu=0.695
+Afl qr(): 2019-11-07 14:58:07.55 cpu=0.78
+dfl_dffg: 2019-11-07 14:58:07.57 cpu=0.798
+spAbr   : 2019-11-07 14:58:07.57 cpu=0.799
+weight 1: 2019-11-07 14:58:07.57 cpu=0.799
+weight 2: 2019-11-07 14:58:07.60 cpu=0.828
+weight 3: 2019-11-07 14:58:07.64 cpu=0.873
+weight 4: 2019-11-07 14:58:07.68 cpu=0.91
+weight 5: 2019-11-07 14:58:07.70 cpu=0.928
+weight 6: 2019-11-07 14:58:07.75 cpu=0.98
+measure : 2019-11-07 14:58:07.77 cpu=0.998
+ineq    : 2019-11-07 14:58:07.82 cpu=1.052
+preopt  : 2019-11-07 14:58:07.86 cpu=1.087
+labargs : 2019-11-07 14:58:07.87 cpu=1.095
+run    1: 2019-11-07 14:58:09.83 cpu=3.049
+Starting point
+res esti: 2019-11-07 14:58:09.83 cpu=3.05
+kvh init: 2019-11-07 14:58:09.84 cpu=3.064
+check ja: 2019-11-07 14:58:09.87 cpu=3.085
+optim   : 2019-11-07 14:58:09.91 cpu=3.116
+it=0	res=33.60668
+it=1	res=8.537147	normstep=0.372971	btk=1
+it=2	res=7.844899	normstep=0.1372184	btk=1
+it=3	res=7.843106	normstep=0.005504594	btk=1
+it=4	res=7.843096	normstep=0.0004985717	btk=1
+it=5	res=7.843096	normstep=2.725573e-05	btk=1
+it=6	res=7.843096	normstep=3.688584e-06	btk=1
+postopt : 2019-11-07 14:58:10.12 cpu=3.313
+linstats: 2019-11-07 14:58:10.23 cpu=3.402
+rend    : 2019-11-07 14:58:10.45 cpu=3.518
+end     : 2019-11-07 14:58:10
