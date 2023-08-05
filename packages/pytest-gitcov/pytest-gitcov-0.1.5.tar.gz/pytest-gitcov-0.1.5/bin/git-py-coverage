@@ -1,0 +1,40 @@
+#!/usr/bin/env python
+# -*- mode: python-mode -*-
+import time
+import argparse
+
+from pytest_gitcov.coverage import (
+    get_coverage_data_from_file,
+    get_coverage_timestamp,
+)
+
+from pytest_gitcov.report import (
+    calculate_commit_coverage,
+    generate_report,
+)
+
+parser = argparse.ArgumentParser(
+    prog='get-py-coverage',
+    description=('Show coverage for the files you have changed')
+)
+parser.add_argument(
+    'commit_id', nargs='?', type=str,
+    default=None,
+    help=('commit id to get coverage against '
+          '(default value is working tree)'),
+)
+args = parser.parse_args()
+
+cov_data = get_coverage_data_from_file()
+
+timestamp = get_coverage_timestamp(cov_data)
+time_str = time.ctime(timestamp)
+
+covered_files = calculate_commit_coverage(
+    cov_data=cov_data,
+    commit_id=args.commit_id,
+)
+
+report = generate_report(covered_files)
+
+print(report)
