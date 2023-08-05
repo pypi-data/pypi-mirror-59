@@ -1,0 +1,6 @@
+wasmtime/__init__.py,sha256=n04GudsXeH7ry7P8p-2TlXYq1IQLPWnvKVNpVzWppns,1765
+wasmtime/lib_wasmtime.cp38-win_amd64.pyd,sha256=r3A_ZfB0oWDU_--tHiJ_4hMIN4ztVxq3tgUPeDZn6tQ,4990976
+wasmtime-0.9.0.dist-info/METADATA,sha256=SviajvsE12Bt6Sv7aozEtL4RaaLEfHPqy_k3CUiwCGg,487
+wasmtime-0.9.0.dist-info/RECORD,,
+wasmtime-0.9.0.dist-info/WHEEL,sha256=D5MYgX8j_rBSaoy625o2KbUhu2MbPtQx705KCUnyCwM,106
+wasmtime-0.9.0.dist-info/top_level.txt,sha256=Gpf719yNkwIqSdSL4RA_Qk9h2x5m7U9K7SLv9txxLpA,9
