@@ -1,0 +1,50 @@
+language: python
+python:
+    - "2.7"
+    - "3.6"
+
+os:
+    - linux
+
+env:
+  global:
+   - ECL_VER=master
+
+before_install:
+  - pushd ..
+  - export ROOT="$PWD"
+  - export INSTALL="$ROOT/install"
+  - export PYTHONPATH=$INSTALL/lib/python$TRAVIS_PYTHON_VERSION/dist-packages:$PYTHONPATH
+  - git clone https://github.com/Statoil/libecl.git
+  - popd
+
+
+install:
+  - pushd $ROOT/libecl
+  - git checkout $ECL_VER
+  - pip install -r requirements.txt
+  - mkdir build
+  - pushd build
+  - cmake .. -DENABLE_PYTHON=ON
+             -DBUILD_TESTS=OFF
+             -DCMAKE_INSTALL_PREFIX=$INSTALL
+  - make -j4 install
+  - popd
+  - popd
+  - pip install -r requirements.txt
+
+script:
+  - python setup.py build
+  - python setup.py install
+  - python setup.py test 
+
+deploy:
+  - provider: pypi
+    user: statoil-travis
+    distributions: bdist_wheel sdist
+    skip_existing: true
+    password:
+      secure: HMdPrOEcjZ047Z/4h6IyXgV+90CHNQ1jW0rS0YFnYYkD//qSaou3F5+vWx6aJjm2YajycTjWGhIW2J5LGcEU+HP1SI6QhGqBQO8mcLZb8w6Em6LpDYnfRmMtU+Wb8mI82krpI9F/oP++TA9bOZFf1blBswECEoQ4pxatEpkBsfFq4kvOuORcmh2CRvdvplfJ5a0HMSIyqlJnlKCHUHFTdj9oI0wzitxnfggyY3055z7pTg2Yy3dHRVW+rZ34Cuu0Q6c95FyH5RLmY0Spu0MeDggyddyPxM2b/7iF5VqCa+BQFLMDQ1Jha9WZGHF9ETuz/Aqpo3eUmLwv2P9GJ2rywenhIeaPrEc5E8epZLXcUZCtIk5VsBg7sh9sdSEtC10l3fvIdIAF3rr7NK4zqLOzJxwU9JJ8y8dbR+cJff5nYv3I1Ciqdjo5h+o5ccuFgmrNJTQx3FKkPzEnaep4JieIdf67P95Fh1DAgVZO/T9mmdihYX4TWuvKboOyJqOtLcvwA0uLvmzJ3IE9/yGHif5/7p5yXqKG/YjyckhiX9ioXkRLh04p69fJHAVbvi0fs3iG271ANVsPVSbmJD+iNaofEbkc9eFwCW6oy0C3hmM981KMljB9XJUcTkvG959iEzr5RDEKici+kT78fBJoQQdK00yvQdRZYv/nVC08hUOoaW0=
+    on:
+      tags: true
+      branch: master
