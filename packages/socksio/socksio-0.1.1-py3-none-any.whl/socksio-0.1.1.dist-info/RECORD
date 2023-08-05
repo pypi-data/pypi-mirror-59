@@ -1,0 +1,10 @@
+socksio/__init__.py,sha256=fq262X3hV4WLZqlsnXSMfl-cILI5WyVyHgI70LZoXuo,824
+socksio/exceptions.py,sha256=aaex8Bq8BHEQIaG6Sw3gtVkrT0BXH8mjcOA1-5DCWB4,131
+socksio/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+socksio/socks4.py,sha256=GMl9Ru7ndlx9ShRGgDP9EAvmWwld_x70y9h_ubGofrk,3324
+socksio/socks5.py,sha256=GznmLRMDXSJfM_w9aX0tmH35hxyedsaPJkfaxkeZMnQ,7625
+socksio/utils.py,sha256=3JMsQUqYJWpO1pSwWT9Z-uleVlps_O6jG28rCz2di0w,1586
+socksio-0.1.1.dist-info/LICENSE,sha256=cIfw9ffCmT88TtEXuqNiLBBjYm58aS6eoRZHW1_BOWw,1076
+socksio-0.1.1.dist-info/WHEEL,sha256=bH-u_BY_RnUj9Z3s1FehhR3OifYy3H_vQHEtDkXLu84,81
+socksio-0.1.1.dist-info/METADATA,sha256=-fcfsY0PGpucdb8qKjUBWNEr3gOu6tEOYzJp0tu_oys,5093
+socksio-0.1.1.dist-info/RECORD,,
