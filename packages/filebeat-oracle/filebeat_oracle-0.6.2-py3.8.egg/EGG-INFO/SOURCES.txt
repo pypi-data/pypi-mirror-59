@@ -1,0 +1,7 @@
+README.md
+filebeat_oracle.py
+setup.py
+filebeat_oracle.egg-info/PKG-INFO
+filebeat_oracle.egg-info/SOURCES.txt
+filebeat_oracle.egg-info/dependency_links.txt
+filebeat_oracle.egg-info/top_level.txt
