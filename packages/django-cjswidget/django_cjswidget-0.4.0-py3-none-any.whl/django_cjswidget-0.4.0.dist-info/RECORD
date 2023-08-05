@@ -1,0 +1,10 @@
+cjswidget/__init__.py,sha256=yzbaGXb_Ef6ea8LSvt_Le_oAVe8ThS59H7ajcPeOIqk,116
+cjswidget/apps.py,sha256=23-upkTWUZcad6xiAT9Y-eJHVRB_5WQ-tXehSqGSDk4,138
+cjswidget/widgets.py,sha256=dCk7glDTSZxCZnBeEV8gLFOxZGhwL6PJGuX_s4nsZiE,831
+cjswidget/static/cjswidget/choices.min.css,sha256=bwXq92id88FiJxqCQOk2c1A01bz6qMaT__ThPBp8qsU,6680
+cjswidget/static/cjswidget/choices.min.js,sha256=UxjcKAyrnXCwRsU4erm_pJnokxwC7Z8z-xrayrqlORk,73784
+cjswidget/templates/cjswidget/widget.html,sha256=GHfYp-ADF7Eu5rm7lpVHO033Zc1v0V6urwrTmeUwG3Y,395
+django_cjswidget-0.4.0.dist-info/LICENSE,sha256=2y4rF71R4SlCuy_TZZh7aqdml1fD-WuKdZfrswxT-fM,1073
+django_cjswidget-0.4.0.dist-info/WHEEL,sha256=bH-u_BY_RnUj9Z3s1FehhR3OifYy3H_vQHEtDkXLu84,81
+django_cjswidget-0.4.0.dist-info/METADATA,sha256=oUWhCaFr2I3iN7EQlXUnYAVtxax8pkkiVfmX5jsED7M,2004
+django_cjswidget-0.4.0.dist-info/RECORD,,
