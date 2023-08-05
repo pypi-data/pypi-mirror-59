@@ -1,0 +1,9 @@
+databear/__init__.py,sha256=FBKYqJY-4x5pr9yt6iVKu78cg4TvPHxf_Ez-gzOPDzE,23
+databear/logger.py,sha256=183kdckd0KwTdfZ4s8pZQ0F4b6b7FzHjlrVdFAFNbhA,3834
+databear/schedule.py,sha256=8KLuYzT3AdtTwbB2Rd06dHzuu2imHesejwHdLBiTsSA,4388
+databear/sensor.py,sha256=rpZU4o9diHaC2poNeBeVL87M_2O2prz8gmU3sx4LG_4,4728
+databear-0.1.0.dist-info/LICENSE,sha256=j_MUqHxGtkQpJJBg-J022zTRuFrZQLbpIuUnUmXUmJQ,1087
+databear-0.1.0.dist-info/METADATA,sha256=A07e6LZtNta5LZ6YGLOGYYz4688q5RIkwEcRWAXhMlQ,504
+databear-0.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+databear-0.1.0.dist-info/top_level.txt,sha256=vE9vE9bOukUvf3NinxlkIlSSw_YVw2Z4GVdzZU1rGKQ,9
+databear-0.1.0.dist-info/RECORD,,
