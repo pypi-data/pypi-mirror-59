@@ -1,0 +1,8 @@
+README.md
+setup.py
+shiner.egg-info/PKG-INFO
+shiner.egg-info/SOURCES.txt
+shiner.egg-info/dependency_links.txt
+shiner.egg-info/entry_points.txt
+shiner.egg-info/requires.txt
+shiner.egg-info/top_level.txt

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: shiner
+Version: 0.0.1
+Summary: Shiner makes servers shine
+Home-page: https://gitlab.com/mintlab/devops/ansible/shiner
+Author: Flip Hess
+Author-email: ops@mintlab.nl
+License: MIT
+Description: Shiner makes servers shine
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
