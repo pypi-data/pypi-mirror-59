@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: wodpy
+Version: 1.6.2
+Summary: A parser for the WOD data format, described in http://data.nodc.noaa.gov/woa/WOD/DOC/wodreadme.pdf
+Home-page: https://github.com/IQuOD/wodpy
+Author: Simon Good, Bill Mills
+Author-email: mills.wj@gmail.com
+License: MIT
+Description: See https://github.com/IQuOD/wodpy
+Platform: UNKNOWN
