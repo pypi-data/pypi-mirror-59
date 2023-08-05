@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+bin/prg2tap
+prg2tap/__init__.py
+prg2tap/prg2tap.py
+prg2tap.egg-info/PKG-INFO
+prg2tap.egg-info/SOURCES.txt
+prg2tap.egg-info/dependency_links.txt
+prg2tap.egg-info/requires.txt
+prg2tap.egg-info/top_level.txt
+prg2tap/test/__init__.py
+prg2tap/test/test_prg2tap.py
