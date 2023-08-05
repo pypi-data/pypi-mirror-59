@@ -1,0 +1,6 @@
+PyQt5>=5.13.2
+PyQtWebEngine>=5.13.2
+requests>=2.22.0
+PyInstaller>=3.5
+numpy>=1.16.4
+pywin32>=224
