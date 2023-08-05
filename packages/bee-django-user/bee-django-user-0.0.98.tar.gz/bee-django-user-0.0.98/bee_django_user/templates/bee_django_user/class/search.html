@@ -1,0 +1,32 @@
+<form method="get">
+    {{ search_form }}
+    <input type="hidden" name="export" id="export">
+    {#    <input type="submit" value="查询"/>#}
+
+    <button class="" onclick="click_search()">查询</button>
+    {#    <button class="" onclick="click_export()">导出</button>#}
+    <div style="margin: 5px 0;color: gray">当【助教/讲师/客服】输入"<span style="color: #2aabd2">无</span>"时，会筛选对应值为空的记录</div>
+</form>
+{% block scripts %}
+    <script>
+        $(document).ready(function () {
+
+        });
+
+        function click_search() {
+            var $form = $("form");
+            var $export = $("#export");
+            $export.attr("value", "");
+            $form.submit()
+
+        }
+
+        function click_export() {
+            var $form = $("form");
+            var $export = $("#export");
+            $export.attr("value", "1");
+            $form.submit()
+
+        }
+    </script>
+{% endblock %}
