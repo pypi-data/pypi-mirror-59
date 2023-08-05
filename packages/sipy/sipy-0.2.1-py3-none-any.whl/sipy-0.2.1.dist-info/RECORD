@@ -1,0 +1,15 @@
+sipy/__init__.py,sha256=BH9E8DjNC3eMJMLDQULaX48PmIBCXV0ASMWd9cqNbPU,2461
+sipy/config.py,sha256=IqxwGArI-7kPg_7lVXPAiPti2zjHou1caE3pIxc--rc,3243
+sipy/constants.py,sha256=d84DBI62qpYSYh7qDYhEpPA6wjrtOoZ7PMILPaBkBrE,511
+sipy/definitions.py,sha256=PEId2Scf14wdlGryvmZl6drLCiyG-HzAwVeCXp0VX1k,5665
+sipy/quantities/__init__.py,sha256=215YXF9Ff8YkQxn-0RBhj52KlPLty8dlIVSdv-EEc3E,100
+sipy/quantities/quantity.py,sha256=_qUtB74wnquU_k3UEIbIYext_FL1EA0Eyjk-grsqCYE,10064
+sipy/sipy.toml,sha256=sDmhaKnQvij1TdhuNj2LK-DiMhDrh9c0-djBJCf9-2Q,1699
+sipy/units/__init__.py,sha256=TQkCQKvC-kWP8YMQUM9LQPpLBaBjJiOkTcsew5jTykc,164
+sipy/units/automap.py,sha256=30a6lHqF50tL6P-8kdhPfaGFQ-OXQLr7B0JX0oB31l8,1631
+sipy/units/prefixes.py,sha256=sLubgnAzZKM-S5KR4GGQrHSMIWbuodzVrGbKvbkDy6g,1462
+sipy/units/public.py,sha256=lNQtHge4hFzeDltZ_IRxNHOwiOq5UD26sSQhYK-7z6A,119
+sipy/units/si.py,sha256=aS9ptXWecAa7O4Dacy7ylMhkxS-F7s9sZMWfWvBjBiw,653
+sipy-0.2.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+sipy-0.2.1.dist-info/METADATA,sha256=o4mMnIAiApPD-rCNNIk6wc1TuPUGm9Z4Zo8atXVqjdo,377
+sipy-0.2.1.dist-info/RECORD,,

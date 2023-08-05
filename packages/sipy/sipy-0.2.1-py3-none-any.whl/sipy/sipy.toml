@@ -1,0 +1,80 @@
+[Sipy]
+version = "1.0.0"
+
+[Constants]
+avogradro = ["6.02214076e23",  "mol^-1"]
+boltzmann = ["1.380649e-23", "kg.m^2.s^-2.K^-1"]
+newton = ["6.67430e-11", "m^3.kg.s"]
+planck = ["6.62607015e-34", "kg.m^2.s^-1"]
+
+[Prefixes]
+exa = 1e18
+peta = 1e15
+tera = 1e12
+giga = 1e9
+mega = 1e6
+kilo = 1e3
+hecto = 1e2
+deka = 1e1
+deci = 1e-1
+centi = 1e-2
+milli = 1e-3
+micro = 1e-6
+nano = 1e-9
+pico = 1e-12
+femto = 1e-15
+atto = 1e-18
+
+[Quantity]
+  [Quantity.Length]
+  miles = ["Multiplier", "1609.34"]
+    [Quantity.Length.config]
+    si_units = "m"
+    unit_names = ["meter", "meters"]
+
+  [Quantity.Mass]
+  grams = ["Multiplier", "1e-3"]
+    [Quantity.Mass.config]
+    si_units = "kg"
+    unit_names = ["kilogram", "kilograms"]
+    prefix = "MassPrefix"
+
+  [Quantity.Time]
+  minutes = ["Multiplier", "60"]
+  hours = ["Multiplier", "3600"]
+  days = ["Multiplier", "86400"]
+  weeks = ["Multiplier", "604800"]
+  years = ["Multiplier", "31536000"]
+    [Quantity.Time.config]
+    si_units = "s"
+    unit_names = ["second", "seconds"]
+
+  [Quantity.Current]
+    [Quantity.Current.config]
+    si_units = "A"
+    unit_names = ["ampere", "amperes"]
+
+  [Quantity.Temperature]
+    [Quantity.Temperature.config]
+    si_units = "K"
+    unit_names = ["kelvin", "kelvins"]
+
+  [Quantity.Amount]
+    [Quantity.Amount.config]
+    si_units = "mol"
+    unit_names = ["mole", "moles"]
+
+  [Quantity.Luminosity]
+    [Quantity.Luminosity.config]
+    si_units = "cd"
+    unit_names = ["candela", "candelas"]
+
+  [Quantity.Power]
+    [Quantity.Power.config]
+      si_units = "kg.m^2.s^-3"
+      unit_names = ["watt", "watts"]
+
+  [Quantity.WorkDone]
+    [Quantity.WorkDone.config]
+    si_units = "kg.m^2.s^-2"
+    unit_names = ["joule", "joules"]
