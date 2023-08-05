@@ -1,0 +1,15 @@
+drf_yasg-stubs/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_yasg-stubs/app_settings.pyi,sha256=EsBarL7UkBwH-udeSl5RAHDywGufFLN7JEkhz2QIIMI,402
+drf_yasg-stubs/codecs.pyi,sha256=Mz3Vn2rV1-goPdea2Wg84rm4dt7HyZgRr-xHxa4g7sk,1244
+drf_yasg-stubs/errors.pyi,sha256=pP3h5lfOqxl0jakTZq9oKLfZFVzaESvCL1JXdw1FYEc,428
+drf_yasg-stubs/generators.pyi,sha256=i6Ni2Z7cyncFCnqkUze5NCdDob_wapgfM26MVGCFAPA,2428
+drf_yasg-stubs/middleware.pyi,sha256=8RBJMV9ID-IA8oV7qYrl5N8nQ_0oio9sz6aK4Mpiqnc,242
+drf_yasg-stubs/openapi.pyi,sha256=yVNO2_tPvpQBsW5fXK2XG6yjcy5s5oOzDjBh_EZ_BcA,10358
+drf_yasg-stubs/renderers.pyi,sha256=TsAEtOkvuu0Xv7-4Rfo_ZJhHsxU_DLjKqZUZf7HcSWk,1648
+drf_yasg-stubs/utils.pyi,sha256=AfXpqigdnaiBDSHcOBio4_E5UVg2WWExuiysMCD28Uw,2321
+drf_yasg-stubs/views.pyi,sha256=G17k_87TwYE92HW6jibIZofGItZGSleA2J7I8NLMsMM,1818
+drf_yasg_stubs-0.0.dev1.dist-info/LICENSE.txt,sha256=Y4Jh8A5PEHv012r5Jdu1ilgFsqWvLkwsL4FvLtamL0k,1515
+drf_yasg_stubs-0.0.dev1.dist-info/METADATA,sha256=F08D4u8rIF7of8UII38wAeIHPs3dQp73pacsTbsTG0Q,1254
+drf_yasg_stubs-0.0.dev1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+drf_yasg_stubs-0.0.dev1.dist-info/top_level.txt,sha256=q-4-bBPG3aLOF-NHVAC9AVgb3B6QACbYzdQ1cP4JKg8,15
+drf_yasg_stubs-0.0.dev1.dist-info/RECORD,,
