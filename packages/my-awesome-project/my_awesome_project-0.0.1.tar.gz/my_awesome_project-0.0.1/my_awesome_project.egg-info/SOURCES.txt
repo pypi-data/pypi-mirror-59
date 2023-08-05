@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+human/__init__.py
+human/heart.py
+human/mind.py
+human/soul.py
+human/subpackage/__init__.py
+human/subpackage/heart_pump.py
+my_awesome_project.egg-info/PKG-INFO
+my_awesome_project.egg-info/SOURCES.txt
+my_awesome_project.egg-info/dependency_links.txt
+my_awesome_project.egg-info/top_level.txt
