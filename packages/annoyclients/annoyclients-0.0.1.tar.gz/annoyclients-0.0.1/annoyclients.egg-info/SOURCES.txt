@@ -1,0 +1,11 @@
+setup.py
+annoyclients/__init__.py
+annoyclients/index_pb2.py
+annoyclients/index_pb2_grpc.py
+annoyclients/indexing_client.py
+annoyclients.egg-info/PKG-INFO
+annoyclients.egg-info/SOURCES.txt
+annoyclients.egg-info/dependency_links.txt
+annoyclients.egg-info/requires.txt
+annoyclients.egg-info/top_level.txt
+annoyclients.egg-info/zip-safe
