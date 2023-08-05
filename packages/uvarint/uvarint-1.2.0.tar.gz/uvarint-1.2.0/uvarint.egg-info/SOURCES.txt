@@ -1,0 +1,8 @@
+README.md
+setup.py
+uvarint/__init__.py
+uvarint/py.typed
+uvarint.egg-info/PKG-INFO
+uvarint.egg-info/SOURCES.txt
+uvarint.egg-info/dependency_links.txt
+uvarint.egg-info/top_level.txt
