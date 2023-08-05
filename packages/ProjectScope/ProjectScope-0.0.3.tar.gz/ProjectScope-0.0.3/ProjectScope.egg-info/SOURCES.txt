@@ -1,0 +1,9 @@
+setup.py
+ProjectScope/ProjectScopeViewer.py
+ProjectScope/__init__.py
+ProjectScope/__main__.py
+ProjectScope.egg-info/PKG-INFO
+ProjectScope.egg-info/SOURCES.txt
+ProjectScope.egg-info/dependency_links.txt
+ProjectScope.egg-info/requires.txt
+ProjectScope.egg-info/top_level.txt
