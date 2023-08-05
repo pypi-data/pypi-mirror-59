@@ -1,0 +1,7 @@
+setuptools
+requests>=2.2.1
+Mopidy>=2.0
+Pykka>=2.0.1
+youtube_dl
+bs4
+cachetools
