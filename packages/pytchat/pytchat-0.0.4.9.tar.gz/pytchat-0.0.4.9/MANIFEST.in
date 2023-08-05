@@ -1,0 +1,4 @@
+include requirements.txt
+include requirements_test.txt
+global-exclude tests/*
+global-exclude pytchat/testrun*.py
