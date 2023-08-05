@@ -1,0 +1,4 @@
+include *.yaml
+include *.dll
+include *.so
+include *.ids
