@@ -1,0 +1,10 @@
+connect/__init__.py,sha256=FQ_cH6EO_tzF6gG44CTnrThtEK68OYA4965MskO45GI,1127
+connect/autogen.py,sha256=95TTRf7uFSd5WQnnuP0p3HY3-VaqVGsFJcGvKyan49Y,511017
+connect/api/__init__.py,sha256=SNRber6Y1Gqs_bWOa7YEz08fFiMBUHUMyXTIKKaru0k,697
+connect/logger/__init__.py,sha256=1P9OdsTeeQUBxIU0J20vtr2jojRk8bZsQ02mhJwOsaw,720
+connect/models/__init__.py,sha256=wHpCBI48UxzgOTJThbIzSFdVPVlevWMS8kE1QnwthRI,4303
+connect_sdk_haxe_port-18.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+connect_sdk_haxe_port-18.0.dist-info/METADATA,sha256=C9KwUngHItHVxoR8wOalEI_j0j9M-3tUm835HSgeEys,960
+connect_sdk_haxe_port-18.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+connect_sdk_haxe_port-18.0.dist-info/top_level.txt,sha256=jdHQZCexp8gDBvhVgbNotMao00FkQFY9AONopq424-0,8
+connect_sdk_haxe_port-18.0.dist-info/RECORD,,
