@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: chunk-http-tornado
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Kxrr
+Author-email: hi@kxrr.us
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Requires-Dist: tornado
+
+# Chunk Http Tornado
+
+A chunk handler and async client based on tornado.
+
+
+
