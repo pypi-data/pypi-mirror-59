@@ -1,0 +1,37 @@
+2020-01-09T15:37:53,842 Created temporary directory: /tmp/pip-ephem-wheel-cache-9k9tjbpk
+2020-01-09T15:37:53,843 Created temporary directory: /tmp/pip-req-tracker-l5_8n5jd
+2020-01-09T15:37:53,843 Created requirements tracker '/tmp/pip-req-tracker-l5_8n5jd'
+2020-01-09T15:37:53,843 Created temporary directory: /tmp/pip-install-pqt6_98t
+2020-01-09T15:37:53,844 Looking in indexes: https://test.pypi.org/simple/
+2020-01-09T15:37:53,846 1 location(s) to search for versions of wp-tinymath:
+2020-01-09T15:37:53,846 * https://test.pypi.org/simple/wp-tinymath/
+2020-01-09T15:37:53,846 Getting page https://test.pypi.org/simple/wp-tinymath/
+2020-01-09T15:37:53,846 Found index url https://test.pypi.org/simple/
+2020-01-09T15:37:54,204 Analyzing links from page https://test.pypi.org/simple/wp-tinymath/
+2020-01-09T15:37:54,204   Found link https://test-files.pythonhosted.org/packages/4b/89/82a0ebfee1cb1e09431b80da6533daecd78c7f69a9fdc688ee271ef4b4b6/wp-tinymath-0.0.1.1.tar.gz#sha256=c446b73141b2f9da5f309e8cf139a9b6411a3b287ad8d80bb38361d2a6271565 (from https://test.pypi.org/simple/wp-tinymath/), version: 0.0.1.1
+2020-01-09T15:37:54,206 Given no hashes to check 1 links for project 'wp-tinymath': discarding no candidates
+2020-01-09T15:37:54,206 Using version 0.0.1.1 (newest of versions: 0.0.1.1)
+2020-01-09T15:37:54,207 Using cached wheel link: file:///home/gregor/.cache/pip/wheels/63/47/01/0665f47f8ee8d338e0d00f7c16a5c87eeb5a1c3ad9f9e6a29b/wp_tinymath-0.0.1.1-cp36-cp36m-linux_x86_64.whl
+2020-01-09T15:37:54,208 Processing /home/gregor/.cache/pip/wheels/63/47/01/0665f47f8ee8d338e0d00f7c16a5c87eeb5a1c3ad9f9e6a29b/wp_tinymath-0.0.1.1-cp36-cp36m-linux_x86_64.whl
+2020-01-09T15:37:54,212   Added wp-tinymath from file:///home/gregor/.cache/pip/wheels/63/47/01/0665f47f8ee8d338e0d00f7c16a5c87eeb5a1c3ad9f9e6a29b/wp_tinymath-0.0.1.1-cp36-cp36m-linux_x86_64.whl to build tracker '/tmp/pip-req-tracker-l5_8n5jd'
+2020-01-09T15:37:54,212   Removed wp-tinymath from file:///home/gregor/.cache/pip/wheels/63/47/01/0665f47f8ee8d338e0d00f7c16a5c87eeb5a1c3ad9f9e6a29b/wp_tinymath-0.0.1.1-cp36-cp36m-linux_x86_64.whl from build tracker '/tmp/pip-req-tracker-l5_8n5jd'
+2020-01-09T15:37:54,218 Requirement already satisfied: setuptools in /home/gregor/anaconda3/envs/test_pypi_env/lib/python3.6/site-packages (from wp-tinymath) (44.0.0.post20200106)
+2020-01-09T15:37:54,223 1 location(s) to search for versions of numpy:
+2020-01-09T15:37:54,223 * https://test.pypi.org/simple/numpy/
+2020-01-09T15:37:54,223 Getting page https://test.pypi.org/simple/numpy/
+2020-01-09T15:37:54,224 Found index url https://test.pypi.org/simple/
+2020-01-09T15:37:54,275 Analyzing links from page https://test.pypi.org/simple/numpy/
+2020-01-09T15:37:54,275   Found link https://test-files.pythonhosted.org/packages/4f/96/b3329750a04fcfc316f15f658daf6d81acc3ac61e3db390abe8954574c18/numpy-1.9.3.tar.gz#sha256=f50e530177b20453d946711e3ca1a317ea9026832cac9e96faf72ffea8f81ddf (from https://test.pypi.org/simple/numpy/), version: 1.9.3
+2020-01-09T15:37:54,275   Found link https://test-files.pythonhosted.org/packages/d5/80/b947c574d9732e39db59203f9aa35cb4d9a5dd8a0ea2328acb89cf10d6e3/numpy-1.9.3.zip#sha256=73e0e6e818903616e707e95e06cc5446eab3a17e69ddd70d144fd8e4647e0795 (from https://test.pypi.org/simple/numpy/), version: 1.9.3
+2020-01-09T15:37:54,275 Given no hashes to check 2 links for project 'numpy': discarding no candidates
+2020-01-09T15:37:54,275 Using version 1.9.3 (newest of versions: 1.9.3)
+2020-01-09T15:37:54,276 Using cached wheel link: file:///home/gregor/.cache/pip/wheels/11/31/e0/3589a9ed32bdf64bc022c97a3703ac9962681e0e0087d6f566/numpy-1.9.3-cp36-cp36m-linux_x86_64.whl
+2020-01-09T15:37:54,276 Processing /home/gregor/.cache/pip/wheels/11/31/e0/3589a9ed32bdf64bc022c97a3703ac9962681e0e0087d6f566/numpy-1.9.3-cp36-cp36m-linux_x86_64.whl
+2020-01-09T15:37:54,434   Added numpy from file:///home/gregor/.cache/pip/wheels/11/31/e0/3589a9ed32bdf64bc022c97a3703ac9962681e0e0087d6f566/numpy-1.9.3-cp36-cp36m-linux_x86_64.whl (from wp-tinymath) to build tracker '/tmp/pip-req-tracker-l5_8n5jd'
+2020-01-09T15:37:54,435   Removed numpy from file:///home/gregor/.cache/pip/wheels/11/31/e0/3589a9ed32bdf64bc022c97a3703ac9962681e0e0087d6f566/numpy-1.9.3-cp36-cp36m-linux_x86_64.whl (from wp-tinymath) from build tracker '/tmp/pip-req-tracker-l5_8n5jd'
+2020-01-09T15:37:54,439 Installing collected packages: numpy, wp-tinymath
+
+
+2020-01-09T15:37:55,049 Successfully installed numpy-1.9.3 wp-tinymath-0.0.1.1
+2020-01-09T15:37:55,049 Cleaning up...
+2020-01-09T15:37:55,062 Removed build tracker '/tmp/pip-req-tracker-l5_8n5jd'
