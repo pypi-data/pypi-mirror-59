@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: desktop-encrypt
+Version: 3.1.0
+Summary: keep desktop folders encrypted
+Home-page: http://github.com/geavioleta/desktop-encrypt
+Author: geavioleta
+Author-email: geavioleta@protonmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5

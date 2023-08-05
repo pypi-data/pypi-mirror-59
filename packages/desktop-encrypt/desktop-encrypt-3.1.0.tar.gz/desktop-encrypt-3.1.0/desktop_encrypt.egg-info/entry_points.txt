@@ -1,0 +1,5 @@
+[console_scripts]
+desktop-keygen = desktopencrypt.keygen:keygen
+desktop-lock = desktopencrypt.lock:lock
+desktop-unlock = desktopencrypt.unlock:unlock
+

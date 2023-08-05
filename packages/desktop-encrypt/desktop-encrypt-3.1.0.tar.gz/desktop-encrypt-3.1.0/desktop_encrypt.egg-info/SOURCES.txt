@@ -1,0 +1,13 @@
+README.md
+setup.py
+desktop_encrypt.egg-info/PKG-INFO
+desktop_encrypt.egg-info/SOURCES.txt
+desktop_encrypt.egg-info/dependency_links.txt
+desktop_encrypt.egg-info/entry_points.txt
+desktop_encrypt.egg-info/not-zip-safe
+desktop_encrypt.egg-info/requires.txt
+desktop_encrypt.egg-info/top_level.txt
+desktopencrypt/__init__.py
+desktopencrypt/keygen.py
+desktopencrypt/lock.py
+desktopencrypt/unlock.py
