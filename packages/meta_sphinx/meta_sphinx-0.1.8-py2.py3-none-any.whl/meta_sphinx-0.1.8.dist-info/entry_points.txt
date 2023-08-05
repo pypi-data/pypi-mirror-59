@@ -1,0 +1,3 @@
+[console_scripts]
+meta_sphinx_k8s=meta_sphinx.generate_hosting:generate_kubernetes_volumes
+

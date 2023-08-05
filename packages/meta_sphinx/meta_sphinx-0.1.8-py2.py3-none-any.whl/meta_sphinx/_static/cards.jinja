@@ -1,0 +1,37 @@
+{% from 'categories.jinja' import language_tag %}
+
+{% for item in items %}
+    {% if loop.index0 is divisibleby 2 %}
+    <div class="row">
+    {% if loop.length is divisibleby 2 or not loop.last%}
+    <div class="col-lg-12">
+    {% else %}
+    <div class="col-lg-6">
+    {% endif %}
+    <div class="card-deck">
+    {% endif %}
+
+    <div class="card">
+    <div class="card-header"><b>{{ item['name'] }}</b></div>
+    <div class="card-body">
+        {{ item.get('description', 'No description') | markdown }}
+        {% if not item['is_url'] %}
+        <a href="/{{ item['name'] | lower | replace(' ', '-') }}" role="button" class="btn btn-success">Documentation</a>
+        {% else %}
+        <a href="{{ item['path'] }}" role="button" class="btn btn-success">Documentation</a>
+        {% endif %}
+    </div>
+    <div class="card-footer">
+    {% for language, slug in zip(item['languages'], item['language_slugs']) %}
+    {{ language_tag(language, slug) }}
+    {% endfor %}
+    </div> {# close footer #}
+    </div> {# close card #}
+
+    {% if loop.index0 is not divisibleby 2 or loop.last %}
+    </div> {# close card deck, row and column #}
+    </div>
+    </div>
+    {% endif %}
+    &nbsp;
+{% endfor %}

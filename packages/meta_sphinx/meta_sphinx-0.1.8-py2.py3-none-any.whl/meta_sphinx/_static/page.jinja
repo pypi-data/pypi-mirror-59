@@ -1,0 +1,36 @@
+{% from 'categories.jinja' import language_tag %}
+{{ item['name'] }}
+==================
+
+
+.. raw:: html
+
+    {% for language, slug in zip(item['languages'], item['language_slugs']) %}
+    {{ language_tag(language, slug) }}
+    {% endfor %}
+
+    &nbsp;
+
+    {{ item['description'] | markdown | indent(4, first=True) }}
+
+    {% if not item['is_url'] %}
+    <a href="/{{ item['name'] | lower | replace(' ', '-') }}" role="button" class="btn btn-success">Documentation</a>
+    {%- else -%}
+    <a href="{{ item['path'] }}" role="button" class="btn btn-success">Documentation</a>
+    {% endif %}
+
+    <p>&nbsp;</p>
+
+    {% if 'long_description' in item['package_metadata'] %}
+    <h2>Package description:</h2>
+
+    <div class="embedded-readme">
+    {% if item['package_metadata']['description-content-type'] == 'text/markdown' %}
+    {{ item['package_metadata']['long_description'] | markdown | indent(4, first=True) }}
+    {%- else %}
+    {{ item['package_metadata']['long_description'] | rst | indent(4, first=True) }}
+    {%- endif %}
+    </div>
+    {% endif %}
+
+*This page was generated automatically using meta-sphinx.*

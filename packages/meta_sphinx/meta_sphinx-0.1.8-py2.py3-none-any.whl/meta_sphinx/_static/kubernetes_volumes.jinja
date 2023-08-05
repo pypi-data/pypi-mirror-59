@@ -1,0 +1,6 @@
+{% for item in items if not item["is_url"] %}
+- name: {{ item['name'] | lower | replace(' ', '-') }}-vol
+  hostPath:
+    path: {{ item['path'] }}
+    type: Directory
+{%- endfor %}

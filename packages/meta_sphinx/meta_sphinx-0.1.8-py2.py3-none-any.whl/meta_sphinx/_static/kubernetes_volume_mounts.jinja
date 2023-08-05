@@ -1,0 +1,5 @@
+{% for item in items if not item["is_url"] %}
+- name: {{ item['name'] | lower | replace(' ', '-') }}-vol
+  mountPath: /var/www/{{ item['name'] | lower | replace(' ', '-') }}
+  readOnly: true
+{%- endfor %}
