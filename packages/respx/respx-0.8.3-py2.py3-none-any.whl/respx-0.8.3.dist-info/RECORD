@@ -1,0 +1,13 @@
+responsex/__init__.py,sha256=In_UmF71yZRlegQFcJCBcnNFeapyM2P9AdGoSqzLYoE,296
+responsex/mock.py,sha256=IQTnKFkixxxhW86W3aEz96rpCDiTsZTJa7ibbGX1NjE,7776
+responsex/models.py,sha256=ixdIMK-Nbd1chJuVAfVVsUN4CCTvbwzg_y2TDokXlK8,4384
+respx/__init__.py,sha256=lDxdvU4Z64JVoru9BU1W_kXVFn1h0vLzWtrGIxS6nRE,349
+respx/__version__.py,sha256=otnwfmvJLUamPajTPUaIekiO9mA-2HPi-_h_E0N-uOQ,22
+respx/api.py,sha256=Tb3KT0BunRX0fAubBhBausv539ST0kIGkTO9Q572brg,13413
+respx/mock.py,sha256=BHJXNyKEearSTrb8xDtcvdTxJiYWKz2SnKxbrmi0xX8,13254
+respx/models.py,sha256=7C8DeW_H-xto_MsWkJHhyr4XGO5tarE__5WNrmaenkw,7665
+respx/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+respx-0.8.3.dist-info/METADATA,sha256=9Z7dSByklOPzHvnHV4A19LC4XWY2YbuJ2ccS2NPSXGg,1728
+respx-0.8.3.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+respx-0.8.3.dist-info/top_level.txt,sha256=ctmM09kloydXMkBad1eclHrXrYK3qxCv6FRSdL7A9fE,6
+respx-0.8.3.dist-info/RECORD,,
