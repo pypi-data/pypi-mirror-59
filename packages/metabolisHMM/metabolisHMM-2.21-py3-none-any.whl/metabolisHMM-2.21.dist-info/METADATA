@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: metabolisHMM
+Version: 2.21
+Summary: Constructing phylogenies and performing functional annotations with HMM markers
+Home-page: https://github.com/elizabethmcd/metabolisHMM
+Author: Elizabeth McDaniel
+Author-email: emcdaniel@wisc.edu
+License: GNU
+Platform: UNKNOWN
+Requires-Dist: pandas (==0.23.0)
+Requires-Dist: biopython (==1.71)
+Requires-Dist: numpy (==1.14.3)
+Requires-Dist: matplotlib (==2.2.2)
+Requires-Dist: seaborn (==0.8.1)
+
+UNKNOWN
+
+
