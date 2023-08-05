@@ -1,0 +1,12 @@
+MANIFEST.in
+README.MD
+setup.cfg
+setup.py
+fet/__init__.py
+fet/dummy_features.py
+fet.egg-info/PKG-INFO
+fet.egg-info/SOURCES.txt
+fet.egg-info/dependency_links.txt
+fet.egg-info/not-zip-safe
+fet.egg-info/requires.txt
+fet.egg-info/top_level.txt
