@@ -1,0 +1,1 @@
+https://github.com/that-recsys-lab/librec-auto-java/raw/master/auto/out/artifacts/auto.jar
