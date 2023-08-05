@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: fasthex
+Version: 0.0.1
+Summary: A fast python 3 implemenation of Intel Hex Format
+Home-page: https://github.com/menschel/fasthex
+Author: Patrick Menschel
+Author-email: menschel.p@posteo.de
+License: UNKNOWN
+Keywords: Intel HEX
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# fasthex
+A python 3 implemenation of Intels Hex Format using python 3 's build-in bytearrays for faster processing
+
+# Description
+This project implements a faster way to handle hex files in python 3 than standard IntelHex package.
+Bytearrays and list comprehension are used to increase performance.
+
+# Usage
+Same as the IntelHex package on Pypi although not all features have been realized.
+
+
+
