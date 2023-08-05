@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: prog-lang-detector
+Version: 0.1
+Summary: Detect programming language using Markov chains.
+Home-page: https://github.com/Bystroushaak/prog_lang_detector
+Author: Bystroushaak
+Author-email: bystrousak@kitakitsune.org
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
