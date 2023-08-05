@@ -1,0 +1,9 @@
+README.md
+setup.py
+crsredis/__init__.py
+crsredis/crsredis.py
+crsredis.egg-info/PKG-INFO
+crsredis.egg-info/SOURCES.txt
+crsredis.egg-info/dependency_links.txt
+crsredis.egg-info/requires.txt
+crsredis.egg-info/top_level.txt
