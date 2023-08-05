@@ -1,0 +1,4 @@
+cx_Oracle
+dataverk_vault
+urllib3
+pandas
