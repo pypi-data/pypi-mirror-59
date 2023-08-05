@@ -1,0 +1,3 @@
+include meta.yaml
+include Readme.md
+include License
