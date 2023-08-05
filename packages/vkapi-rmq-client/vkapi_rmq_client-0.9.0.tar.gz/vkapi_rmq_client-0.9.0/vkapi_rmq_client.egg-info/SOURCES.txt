@@ -1,0 +1,12 @@
+README.md
+setup.py
+vkapi/__init__.py
+vkapi/api.py
+vkapi/exceptions.py
+vkapi/session.py
+vkapi/utils.py
+vkapi_rmq_client.egg-info/PKG-INFO
+vkapi_rmq_client.egg-info/SOURCES.txt
+vkapi_rmq_client.egg-info/dependency_links.txt
+vkapi_rmq_client.egg-info/requires.txt
+vkapi_rmq_client.egg-info/top_level.txt
