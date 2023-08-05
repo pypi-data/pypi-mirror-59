@@ -1,0 +1,8 @@
+asdf>=1.2.0
+astropy>=3.2.1
+jwst-backgrounds>=1.1.1
+lxml>=3.6.4
+matplotlib>=1.4.3
+numpy
+photutils>=0.4.0
+pysiaf>=0.6.1scipy>=0.17
