@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: soco-doc-parser-python
+Version: 0.0.1
+Summary: Python SDK for using SOCO platform
+Home-page: https://www.soco.ai
+Author: kyusonglee
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Free for non-commercial use
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: unoconv (>=0.9.0)
+Requires-Dist: boto3 (>=1.10.16)
+
+# SOCO-Doc-Parser Python SDK
+Python client to use SOCO document parsing platform
+
+## Install 
+    pip install soco-doc-parser-python
+
+## Quick Start
+
+This following example can be found at: quick_start.py. To see more examples, check out /examples folder
+
+First of all, register at https://app.soco.ai. After get your API_KEYs, you can setup a answer answer 
+using 10 lines of code!
+
+```python
+from soco_parser.doc_api import DocAPI
+from soco_parser.utils import pprint_json
+
+
+if __name__ == '__main__':
+    PARSER_API_KEY = 'convmind'
+    client = DocAPI(PARSER_API_KEY)
+    """
+        parsing a url
+    """
+    #url = "https://convmind-images.s3.us-east-2.amazonaws.com/pdfview/Fresh_Start_Program_Summary.pdf"
+    #parsed_data = client.parse(file_url=url)
+
+    """
+        parsing a local file
+    """
+    parsed_data = client.parse_local_file("resources/1906.09308.pdf")
+    pprint_json(parsed_data)
+```
+
+## Contact
+kyusongl@soco.ai
+

@@ -1,0 +1,10 @@
+soco_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+soco_parser/cloud.py,sha256=Xj0bOmmcQbe3LLsVx972Jfkt7J4ZsF8b6QPtj-zZIic,1544
+soco_parser/config.py,sha256=GUGmCxu6Ql9NlW84_NImt34BnAXdn7c6D_ro0cpos3c,334
+soco_parser/doc_api.py,sha256=TSmDsaxGXRlTwSiVVWkEX_Z6GlZLQm7a_T-fLaLXu0M,1196
+soco_parser/utils.py,sha256=Tk2YuRMlMIMhN5mWeW_e9_3dS1m6_ECGVwD5UHzHVUY,6437
+soco_doc_parser_python-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+soco_doc_parser_python-0.0.1.dist-info/METADATA,sha256=fehnuveYhF-URJ3iMXEtlnbZpbW2dLp_Qf8m3doQmik,1387
+soco_doc_parser_python-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+soco_doc_parser_python-0.0.1.dist-info/top_level.txt,sha256=pf8BOrieOgwvyBLUKq63mBHcY0hwJG-au2_O4ZmlwbI,12
+soco_doc_parser_python-0.0.1.dist-info/RECORD,,
