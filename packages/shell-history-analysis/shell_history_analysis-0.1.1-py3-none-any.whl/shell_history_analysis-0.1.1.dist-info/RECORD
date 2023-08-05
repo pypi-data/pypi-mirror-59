@@ -1,0 +1,12 @@
+shell_history_analysis/__init__.py,sha256=j_CslLxrGjMq4UmcYQ-mpFpfxoIMqRS9eJ3ihGsjEsw,93
+shell_history_analysis/analyze.py,sha256=AeZI-SmymGrjlMsQjpSKaeeqggXM0neSxM1-F6Otmo4,1461
+shell_history_analysis/cli.py,sha256=wD6D6gDH4BTP5ox2GgcEElhkhaPgY3Ju5aAlKypzHmU,490
+shell_history_analysis/grouping.yaml,sha256=mQWc2sI1qTePcwjn9CjFUePMwH2oWZiLzVJ9IjLSerE,1567
+shell_history_analysis/shell_io.py,sha256=R8ygbZpYj4DVKcxUVKIeMA71YHTSazY1Dn8qENv1p4w,2537
+shell_history_analysis-0.1.1.dist-info/LICENSE,sha256=KEFeilQeKUm2guZA9DStgJgDz8EtPJzTloA_tbtx7lk,1069
+shell_history_analysis-0.1.1.dist-info/METADATA,sha256=7N4100rL9cKLhHhU0K-IoPkWHjqgS9y40d7oWwOr-Y8,3146
+shell_history_analysis-0.1.1.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+shell_history_analysis-0.1.1.dist-info/entry_points.txt,sha256=ZXPXpY86_r7CbN4c9XtNny8hnHsMsIlpgjTLK2TCsfw,83
+shell_history_analysis-0.1.1.dist-info/top_level.txt,sha256=-_vhO-a61XrzWkO-p77MPjGRSGnMRkE3yBzS8X9Mzck,23
+shell_history_analysis-0.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+shell_history_analysis-0.1.1.dist-info/RECORD,,
