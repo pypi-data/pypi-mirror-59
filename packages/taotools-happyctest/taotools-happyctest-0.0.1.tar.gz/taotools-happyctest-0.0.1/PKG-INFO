@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: taotools-happyctest
+Version: 0.0.1
+Summary: Small tools for more easy-use Python by HappyCtest. Evolving...
+Home-page: https://github.com/HappyCtest/taotools
+Author: HappyCtest
+Author-email: happyctest@foxmail.com
+License: UNKNOWN
+Description: # Taotools
+        Some useful tools for Python. Evolving...
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
