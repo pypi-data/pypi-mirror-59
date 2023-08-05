@@ -1,0 +1,11 @@
+[oasys.addons]
+ALS ShadowOui = orangecontrib.shadow.als
+ALS XOPPY = orangecontrib.xoppy.als
+
+[oasys.widgets]
+Shadow ALS Optical Elements = orangecontrib.shadow.als.widgets.optical_elements
+Shadow ALS Sources = orangecontrib.shadow.als.widgets.sources
+Shadow ALS Utility = orangecontrib.shadow.als.widgets.utility
+Syned ALS Tools = orangecontrib.syned.als.widgets.tools
+XOPPY ALS SRCALC = orangecontrib.xoppy.als.widgets.srcalc
+
