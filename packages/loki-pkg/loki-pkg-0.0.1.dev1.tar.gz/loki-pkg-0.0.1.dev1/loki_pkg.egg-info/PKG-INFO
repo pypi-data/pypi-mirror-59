@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: loki-pkg
+Version: 0.0.1.dev1
+Summary: REST API operations for tibco bpm amx 4.3
+Home-page: UNKNOWN
+Author: Luis Soto
+Author-email: luis-vicente.soto-salinas@dxc.com
+License: UNKNOWN
+Description: # loki
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Operating System :: OS Independent
+Requires-Python: ==2.7
+Description-Content-Type: text/markdown
