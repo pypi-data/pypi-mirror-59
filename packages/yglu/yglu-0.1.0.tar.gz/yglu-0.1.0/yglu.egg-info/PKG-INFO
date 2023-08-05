@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: yglu
+Version: 0.1.0
+Summary: YAML glue for structural templating and processing
+Home-page: https://github.com/lbovet/yglu
+Author: Laurent Bovet
+Author-email: laurent.bovet@windmaster.ch
+License: UNKNOWN
+Description: [![Build Status](https://travis-ci.org/lbovet/yglu.svg?branch=master)](https://travis-ci.org/lbovet/yglu)
+        # Yglu ᕄ
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
