@@ -1,0 +1,11 @@
+forester/__init__.py,sha256=KMaTMubRHumzzOxUlI4LU6vryg16xK9fJ4T-6UHPiOM,148
+forester/cli.py,sha256=lKwZPqmlDo5wsl06c6xYY-lo583gISHKNj6Deu2qfXU,1756
+forester/folder_contributions.py,sha256=xNG3ifYAJ4hTU3BATN77n4nlz0zAR0NIyhQ546rBlJQ,4374
+forester/tree_info.py,sha256=AiTYQC2sz1zL_llVnlmNKW1swuf22ypijTyEMB089yY,3463
+forester/util.py,sha256=P63H8yaME-CC7aQOtJzHriL8P1IsvXo2XmWRjolhrQc,742
+forester-0.5.0.dist-info/LICENSE,sha256=vELA7GfIDLm-NxRLl-LcS-oArMskETa1mXLkHfvcjVs,1076
+forester-0.5.0.dist-info/METADATA,sha256=5QvzQOEWrafJK0XnueODgeVPVj-txxfRGFFVdg3FJic,1593
+forester-0.5.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+forester-0.5.0.dist-info/entry_points.txt,sha256=ICZ8FojuuCQ01A9kYRKzKFwOUWTp6eOqFhffqub2Uec,53
+forester-0.5.0.dist-info/top_level.txt,sha256=0cu9WEsI8SwIVC7gO99x_HizV7WLPLtyljfDuNOTxhU,9
+forester-0.5.0.dist-info/RECORD,,
