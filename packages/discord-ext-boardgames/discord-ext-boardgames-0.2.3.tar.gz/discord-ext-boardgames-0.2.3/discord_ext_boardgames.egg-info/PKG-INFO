@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: discord-ext-boardgames
+Version: 0.2.3
+Summary: Interactive board game session for discord.py
+Home-page: https://github.com/bijij/discord-ext-boardgames
+Author: bijij
+License: MIT
+Description: Simple emoji grid with row and column markers for discord.py.
+        
+        Installation
+        ---------------------------
+        
+        **Windows**
+        
+        .. code:: sh
+        
+            py -version -m pip install boardgames
+        
+        **Linux**
+        
+        .. code:: sh
+        
+            python3 -m pip install boardgames
+        
+        Getting Started
+        ----------------------------
+        TODO: THIS
+        
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
