@@ -1,0 +1,54 @@
+credentials:
+  ldap:
+  - hostname: "domain.local"
+    name: "adldap"
+    password: "pass!!"
+    username: 'username'
+    use_ssl: False
+  archer:
+  - hostname: "mock://localhost"
+    instance_name: "instance"
+    user_domain: "test"
+    name: "archer"
+    password: "password"
+    username: "username"
+  ldap:
+    - name: "ldap"
+      hostname: "localhost"
+      use_ssl: False
+      base_dn: "dc=com"
+  manual:
+    - hostname: "none"
+      name: "manual"
+script:
+- destination:
+  - archer:
+      credential: "archer"
+      query:
+        group:
+          - obj_id: 1
+          - name: "test"
+  source:
+  - ldap:
+      credential: "ldap"
+      query:
+        groups:
+          - name: "test"
+            user_attribute: "uid"
+  - archer:
+      credential: "archer"
+      query:
+        group:
+          - obj_id: 1
+          - name: "test"
+  - manual:
+      credential: "manual"
+      users:
+        - "cribbsky"
+configuration:
+  logging:
+    stdout:
+      log_level: "debug"
+    output:
+      filepath: "archertools.log"
+      log_level: "error"
