@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+orderedpy/__init__.py
+orderedpy.egg-info/PKG-INFO
+orderedpy.egg-info/SOURCES.txt
+orderedpy.egg-info/dependency_links.txt
+orderedpy.egg-info/entry_points.txt
+orderedpy.egg-info/top_level.txt
+orderedpy.egg-info/zip-safe
