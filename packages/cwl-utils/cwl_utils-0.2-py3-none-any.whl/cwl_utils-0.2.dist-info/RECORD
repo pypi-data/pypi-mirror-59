@@ -1,0 +1,17 @@
+cwl_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cwl_utils/cite_extract.py,sha256=8bwixUVYJE7pEFErytYLC4ZuvA8u61z0lhOYL2g71fY,1515
+cwl_utils/docker_extract.py,sha256=yG72IvEuDszeQHsDexddCw4aU54f0gd5R-iLYdHIdiE,2187
+cwl_utils/first_tool.py,sha256=Ifj23dn6kPsoLlKld9U4PuUW-ky59XEPOSDuRjowrnM,45084
+cwl_utils/graph_split.py,sha256=XM4gkFik2jttpwe0QSAfWEx1MrgKBf3aYHO6Vt8wQPY,5144
+cwl_utils/image_puller.py,sha256=MNcorbkpXFMQpk1SMGRL5on44VDJPQ5KmqwPSMk1EOA,3246
+cwl_utils/parser_v1_0.py,sha256=kA1PwwXXah0aG550r70YR4Wb-kK4PJmYUQA9hmvBmBw,294034
+cwl_utils/parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cwl_utils-0.2.data/scripts/docker_extract.py,sha256=8ywxJ9lieBVNY-P6g10OTAMoXmQU4kfW0_NTrrv4cnM,2173
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cite_extract.py,sha256=oEbyY85Oqje_8AxfEKJ99LNRBtQOixMVhYsd04e3IGY,400
+tests/test_docker_extract.py,sha256=5yQE73pksk-JNXSnpx5ZB25rRTbSzFFyq2-oy5dglqA,1287
+cwl_utils-0.2.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+cwl_utils-0.2.dist-info/METADATA,sha256=cnw36q6tXcH2Tp2nRVvMjnDHQyx-FrQGwDWkKVWQ6fg,390
+cwl_utils-0.2.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+cwl_utils-0.2.dist-info/top_level.txt,sha256=lUIexrnE3z65yWRvn8bEeRVX5iRBI0uzru2mFuqCMU8,16
+cwl_utils-0.2.dist-info/RECORD,,

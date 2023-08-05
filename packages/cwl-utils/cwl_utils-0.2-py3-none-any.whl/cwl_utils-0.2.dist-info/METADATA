@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cwl-utils
+Version: 0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Common workflow language working group
+Author-email: common-workflow-language@googlegroups.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: ruamel.yaml
+Requires-Dist: schema-salad
+Requires-Dist: six
+Requires-Dist: typing-extensions
+
+UNKNOWN
+
+
