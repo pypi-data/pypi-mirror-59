@@ -1,0 +1,8 @@
+README.md
+setup.py
+NanoCamera.egg-info/PKG-INFO
+NanoCamera.egg-info/SOURCES.txt
+NanoCamera.egg-info/dependency_links.txt
+NanoCamera.egg-info/top_level.txt
+nanocamera/NanoCam.py
+nanocamera/__init__.py
