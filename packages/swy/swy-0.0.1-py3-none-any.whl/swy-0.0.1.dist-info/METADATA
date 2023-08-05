@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: swy
+Version: 0.0.1
+Summary: SWY Project
+Home-page: https://github.com/Haytek/swy
+Author: Haytek
+Author-email: haytek34@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Games/Entertainment
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+[![Build Status](https://travis-ci.com/Haytek/swy.svg?branch=master)](https://travis-ci.com/Haytek/swy)
+[![Coverage Status](https://coveralls.io/repos/github/Haytek/swy/badge.svg?branch=master)](https://coveralls.io/github/Haytek/swy?branch=master)
+![PyPI](https://img.shields.io/pypi/v/swy)
+
+# swy
+
+yop
+
+
