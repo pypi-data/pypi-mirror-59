@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mytopsis
+Version: 0.0.1
+Summary: finding ranks and scores row wise of a dataset according to given weights of columns and impacts that they will have on output.
+Home-page: UNKNOWN
+Author: Sapna Goyal
+Author-email: sp2000jeea@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/plain
+
+dfa
+
+
