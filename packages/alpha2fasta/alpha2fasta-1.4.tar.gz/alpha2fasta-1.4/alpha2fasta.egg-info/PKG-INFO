@@ -1,0 +1,41 @@
+Metadata-Version: 1.0
+Name: alpha2fasta
+Version: 1.4
+Summary: Encode text written in natural language in a FASTA-based format
+Home-page: UNKNOWN
+Author: Diogo de Jesus Soares Machado
+Author-email: diogomachado.bioinfo@gmail.com
+License: UNKNOWN
+Description: PyInstaller Overview
+        ====================
+        The alpha2fasta library can be used to encode texts written in natural language to a FASTA-based format. The purpose of coding is to enable the application of various bioinformatics tools in text mining.
+        
+        Installation
+        ------------
+        You can install alpha2fasta through `pip`::
+        
+              pip install alpha2fasta
+        
+        
+        Tested Platforms
+        ----------------
+        - Python:
+        
+         - 3.7.4
+        
+        - Windows (64bit):
+        
+         - 10
+        
+        Required external libraries
+        ---------------------------
+        - numpy
+        - unidecode
+        
+        Functions
+        ---------------
+        - :code:`AMINOcode(text,simplified=False)`
+        - :code:`AMINOcode_reverse(coded_text,simplified=False)`
+        - :code:`DNAbits(text)`
+        - :code:`DNAbits_reverse(coded_text)`
+Platform: UNKNOWN
