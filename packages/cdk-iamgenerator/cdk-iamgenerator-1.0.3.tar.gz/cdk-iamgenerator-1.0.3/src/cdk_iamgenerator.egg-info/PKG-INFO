@@ -1,0 +1,156 @@
+Metadata-Version: 2.1
+Name: cdk-iamgenerator
+Version: 1.0.3
+Summary: This CDK Construct helps create IAM Managed Policies and IAM Roles using JSON Configuration
+Home-page: https://github.com/srihariph/cdk-iam-generator.git
+Author: Srihari Prabaharan<srihariph@gmail.com>
+License: Apache-2.0
+Project-URL: Source, https://github.com/srihariph/cdk-iam-generator.git
+Description: # CDK IAM Generator
+        
+        [AWS CDK](https://aws.amazon.com/cdk/) construct helps create IAM Managed Policies and IAM Roles using JSON Configuration
+        
+        This package is written in TypeScript and made available via [JSII](https://github.com/aws/jsii) to all other supported languages. Package are available on:
+        
+        * [npm](https://www.npmjs.com/package/cdk-iam-generator)
+        * [PyPI](https://pypi.org/project/cdk-iamgenerator/)
+        
+        ## Quickstart
+        
+        Install or update from npm
+        
+        TypeScript/Javascript
+        
+        ```console
+        npm i cdk-iam-generator
+        
+        ```
+        
+        ## Usage
+        
+        ** TypeScript **
+        
+        ```python
+        # Example automatically generated. See https://github.com/aws/jsii/issues/826
+        from cdk_iam_generator import IamPolicyGenerator, IamRoleGenerator
+        
+        IamPolicyGenerator(self, "IamPolicyGenerator",
+            config_path="config/iam_generator_config.json",
+            policy_path="config/policy"
+        )
+        
+        IamRoleGenerator(self, "IamRoleGenerator",
+            config_path="config/iam_generator_config.json"
+        )
+        ```
+        
+        ## Prerequsites
+        
+        Example folder structure for Json Configuration of Roles and Policies:
+        
+        ```
+        config
+        ├── policy
+        │   ├── CodeCommitArchive.json
+        │   └── KMSPolicy.json
+        │   └── CreateServiceLinkedRoleECS.json
+        │   └── DeployService1.json
+        │   └── DeployService2.json
+        ├── iam_generator_config.json
+        
+        ```
+        
+        Place all the Policy Json files inside config/policy in your project root and policy file would look something like this:
+        
+        ```json
+        {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": [
+                "codecommit:CancelUploadArchive",
+                "codecommit:UploadArchive"
+              ],
+              "Resource": "*"
+            }
+          ]
+        }
+        ```
+        
+        Configure the policies and roles to be created in config/iam_generator_config.json file and would look something like this:
+        
+        ```json
+        {
+            "policies": [
+                {
+                    "policy_name": "CodeCommitArchive",
+                    "description": "CodeCommitArchive policy",
+                    "policy_file": "CodeCommitArchive.json"
+                },
+                {
+                    "policy_name": "KMSPolicy",
+                    "description": "KMSPolicy policy",
+                    "policy_file": "KMSPolicy.json"
+                },
+                {
+                    "policy_name": "CreateServiceLinkedRoleECS",
+                    "description": "CreateServiceLinkedRoleECS policy",
+                    "policy_file": "CreateServiceLinkedRoleECS.json"
+                },
+                {
+                    "policy_name": "DeployService1",
+                    "description": "DeployService1 policy",
+                    "policy_file": "DeployService1.json"
+                },
+                {
+                    "policy_name": "DeployService2",
+                    "description": "DeployService2 policy",
+                    "policy_file": "DeployService2.json"
+                }
+            ],
+            "roles": [
+                {
+                    "role_name": "TestRole1",
+                    "trust_service_principal": ["apigateway.amazonaws.com","lambda.amazonaws.com"],
+                    "customer_managed_policies": ["DeployService1","DeployService2","KMSPolicy"],
+                    "aws_managed_policies": ["service-role/AmazonAPIGatewayPushToCloudWatchLogs"]
+                },
+                {
+                    "role_name": "TestRole2",
+                    "trust_service_principal": ["sns.amazonaws.com"],
+                    "trust_account_principal": ["748669239283"],
+                    "customer_managed_policies": ["CreateServiceLinkedRoleECS","CodeCommitArchive","KMSPolicy"],
+                    "aws_managed_policies": ["service-role/AmazonAPIGatewayPushToCloudWatchLogs"]
+                },
+                {
+                    "role_name": "TestRole3",
+                    "trust_service_principal": ["ec2.amazonaws.com","sns.amazonaws.com"],
+                    "trust_account_principal": ["748669239283"],
+                    "customer_managed_policies": ["DeployService2","CodeCommitArchive","KMSPolicy"],
+                    "aws_managed_policies": ["AWSLambdaFullAccess"]
+                }
+        
+            ]
+        }
+        ```
+        
+        ## License
+        
+        cdk-iamgenerator is distributed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+        
+        See [LICENSE](./LICENSE) for more information.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
