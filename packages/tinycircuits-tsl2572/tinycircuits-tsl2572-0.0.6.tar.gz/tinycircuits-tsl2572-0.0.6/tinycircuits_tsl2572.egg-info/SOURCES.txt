@@ -1,0 +1,8 @@
+README.md
+setup.py
+tinycircuits_tsl2572/__init__.py
+tinycircuits_tsl2572/tinycircuits_tsl2572.py
+tinycircuits_tsl2572.egg-info/PKG-INFO
+tinycircuits_tsl2572.egg-info/SOURCES.txt
+tinycircuits_tsl2572.egg-info/dependency_links.txt
+tinycircuits_tsl2572.egg-info/top_level.txt
