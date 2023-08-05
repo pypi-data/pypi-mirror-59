@@ -1,0 +1,7 @@
+markovgram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+markovgram/__main__.py,sha256=8pBT-9ESurjUKoBXblVtW9gkAodEekwDbhm2uI9EXj8,4768
+markovgram/merge.py,sha256=lilo2jmlbtlaM2HDSrhdEIQBtE6xlY3KSJI5R9e86ck,528
+markovgram/preview.py,sha256=2E0of_9roDZeNwoAhlBC-zamUXmhNx8IDCgxEuz-dJc,459
+markovgram-0.3.dist-info/WHEEL,sha256=0LqClw0y45nNGWtOkoSiM9aN5p1kS5vGsVfoCyuJCNA,85
+markovgram-0.3.dist-info/METADATA,sha256=blkAUDL7tTsHseGlsyXvCihwk0QpJbZccZz9mFYfZjM,384
+markovgram-0.3.dist-info/RECORD,,
