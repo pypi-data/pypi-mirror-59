@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gux
+Version: 0.0.1
+Summary: git user switcher
+Home-page: https://github.com/azye/gu
+Author: Alex Ye
+Author-email: alexzye1@gmail.com
+License: UNKNOWN
+Description: # gu
+        git user switcher
+        
+        python setup.py sdist bdist_wheel && pip install --upgrade --force-reinstall dist/gu-0.0.1-py3-none-any.whl
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
