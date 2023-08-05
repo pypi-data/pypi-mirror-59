@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: remu-operator
+Version: 1.0
+Summary: A framework to separate resolution of operator precedence and associativity from parsing time
+Home-page: https://github.com/RemuLang/remu-operator
+Author: thautawarm
+Author-email: twshere@outlook.com
+License: mit
+Keywords: compiler,operator precedence,operator associativity,resolver
+Platform: any
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+## remu-operator
+
+
