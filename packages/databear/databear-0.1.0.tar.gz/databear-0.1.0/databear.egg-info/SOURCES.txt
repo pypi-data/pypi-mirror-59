@@ -1,0 +1,10 @@
+README.md
+setup.py
+databear/__init__.py
+databear/logger.py
+databear/schedule.py
+databear/sensor.py
+databear.egg-info/PKG-INFO
+databear.egg-info/SOURCES.txt
+databear.egg-info/dependency_links.txt
+databear.egg-info/top_level.txt
