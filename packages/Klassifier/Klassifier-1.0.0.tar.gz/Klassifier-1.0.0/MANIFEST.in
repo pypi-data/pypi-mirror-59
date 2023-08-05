@@ -1,0 +1,16 @@
+include *.txt
+include *.md
+include *.cfg
+include *.pkl
+recursive-include ./Klassifier/*
+
+include Klassifier/datasets/train.csv
+include Klassifier/datasets/test.csv
+include Klassifier/trained_models/*.pkl
+include Klassifier/VERSION
+
+include ./requirements.txt
+exclude *.log
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

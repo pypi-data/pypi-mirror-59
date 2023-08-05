@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Klassifier
+Version: 1.0.0
+Summary: Train and deploy regression model.
+Home-page: https://github.com/prakharlovesdata
+Author: Prakhar Agrawal
+Author-email: prakhar23sep@gmail.com
+License: MIT
+Description: 
+        # model_deployment_template
+        This is the basic template which i use for any machine learning development into production.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
