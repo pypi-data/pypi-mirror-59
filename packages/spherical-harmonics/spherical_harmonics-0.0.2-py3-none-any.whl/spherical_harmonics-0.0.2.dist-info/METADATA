@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: spherical-harmonics
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Ben Russell
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: bokeh
+Requires-Dist: Jinja2
+Requires-Dist: MarkupSafe
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: Pillow
+Requires-Dist: pscript
+Requires-Dist: pyparsing
+Requires-Dist: python-dateutil
+Requires-Dist: PyYAML
+Requires-Dist: selenium
+Requires-Dist: six
+Requires-Dist: tornado
+Requires-Dist: urllib3
+
+UNKNOWN
+
+

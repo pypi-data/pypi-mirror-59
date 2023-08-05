@@ -1,0 +1,10 @@
+no_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+no_server/main.py,sha256=VLsyRU1G-e9OuSQm_Q-n0SlHnF0IMKO66KKiW8SQL7Y,2588
+no_server/sh_funcs.py,sha256=7Y_yH1u0b_O5NGoCqha0OqBUGNv0XxCunzzijhnNOCA,4569
+server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+server/main.py,sha256=0T_EIZjVc2axUyn6v3tZck22eUc_BM0Y-G0a1Ojt1L0,3252
+server/spherical_harmonics.py,sha256=3hj1Xt-fWiSTpea6LsS8iRwzIC9_EQG48y7e37VS7Hs,3116
+spherical_harmonics-0.0.2.dist-info/METADATA,sha256=sc5NEBzLiDimeADM8JjVWOAzTyGbOcnkvBzmV6tuUD8,530
+spherical_harmonics-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+spherical_harmonics-0.0.2.dist-info/top_level.txt,sha256=7erwdwLGgLlyk269gsR6zg6D6b-in3Pi_u5uwY5GaA4,17
+spherical_harmonics-0.0.2.dist-info/RECORD,,
