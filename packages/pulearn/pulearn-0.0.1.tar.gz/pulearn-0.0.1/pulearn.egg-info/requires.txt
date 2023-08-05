@@ -1,0 +1,11 @@
+numpy
+scikit-learn
+
+[test]
+pytest
+coverage
+pytest-cov
+pytest-ordering
+matplotlib
+collective.checkdocs
+pygments
