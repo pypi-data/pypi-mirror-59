@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: vkapi-rmq-client
+Version: 0.9.1
+Summary: A library to work with vkAPIService. Useless if you don't have the service.
+Home-page: https://github.com/cyber-chuvash/vkAPIClient
+Author: Mikhail Migushov
+Author-email: me@chuvash.pw
+License: UNKNOWN
+Description: # vkAPIClient
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
