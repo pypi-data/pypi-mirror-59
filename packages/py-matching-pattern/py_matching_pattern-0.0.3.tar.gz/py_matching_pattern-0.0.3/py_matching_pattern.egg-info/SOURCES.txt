@@ -1,0 +1,7 @@
+README.md
+setup.py
+py_matching_pattern/__init__.py
+py_matching_pattern.egg-info/PKG-INFO
+py_matching_pattern.egg-info/SOURCES.txt
+py_matching_pattern.egg-info/dependency_links.txt
+py_matching_pattern.egg-info/top_level.txt
