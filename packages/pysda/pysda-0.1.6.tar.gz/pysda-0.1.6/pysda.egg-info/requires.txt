@@ -1,0 +1,13 @@
+numpy
+scipy
+pandas
+geopandas
+shapely
+descartes
+matplotlib
+seaborn
+datetime
+python-dateutil
+imageio
+tapitas
+mstdbscan
