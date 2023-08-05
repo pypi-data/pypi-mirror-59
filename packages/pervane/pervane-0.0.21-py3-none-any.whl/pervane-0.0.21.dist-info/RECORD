@@ -1,0 +1,15 @@
+pervane/__init__.py,sha256=oGB6W1cvI4U0MOMXTs8Ef123sSI8xopRh_kHCJLQPj8,28
+pervane/cli.py,sha256=7U6JZuf948SlaTyv4P3Ia5WnKeC4bFCLQQEmBbBbRZk,76
+pervane/serve.py,sha256=iEAWXBUFF2pLjySFSVEF9sD3VyXZtfZj_JdGyowqvxQ,9237
+pervane/static/img/document-code.svg,sha256=uGeL6dHEwKdRFHrPodcVARpocs0DwMRsMjKWu0vZnag,600
+pervane/static/img/document-text.svg,sha256=d9w2VfAmVZI4z5qa04PjGgObA2uonllF5ZysJdSbEMA,646
+pervane/static/img/folder.svg,sha256=9WV5_wYvuVbIV1jl4CFqh8vBDlOtBzucScKsIWafySA,570
+pervane/static/img/pervane_logo_small.png,sha256=YrIwtsgJfzDKm3CUNJkDFQlcqAH9VwS9sIniP65YJ2E,14639
+pervane/static/img/plus.svg,sha256=UQThs4dFmxFIq5cRyhij2gSTgdeYmS7ed-r5wbwx_8k,379
+pervane/templates/index.html,sha256=rq8uW7qyGj0rLDcRUx5MZAK30mZz4_7EMf-fqGrPY3k,13294
+pervane-0.0.21.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+pervane-0.0.21.dist-info/METADATA,sha256=blYHFT8l6FCF3x_DnKNPqoiN5LDnmKsoS3JFP0LO9Qk,6402
+pervane-0.0.21.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pervane-0.0.21.dist-info/entry_points.txt,sha256=S7vd6enT_B6EQWsg9s36yg297hldva9V0IFC8hDP2jo,46
+pervane-0.0.21.dist-info/top_level.txt,sha256=eJcFCQd5zqL_KxS7YM0itBL_HNOw8k6dvpDjXnBZ8UA,8
+pervane-0.0.21.dist-info/RECORD,,
