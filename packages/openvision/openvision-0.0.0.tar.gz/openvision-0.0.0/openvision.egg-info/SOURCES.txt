@@ -1,0 +1,7 @@
+MANIFEST.in
+setup.py
+openvision/__init__.py
+openvision.egg-info/PKG-INFO
+openvision.egg-info/SOURCES.txt
+openvision.egg-info/dependency_links.txt
+openvision.egg-info/top_level.txt
