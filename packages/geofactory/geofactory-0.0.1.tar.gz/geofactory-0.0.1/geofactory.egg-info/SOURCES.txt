@@ -1,0 +1,7 @@
+README.md
+setup.py
+geofactory/__init__.py
+geofactory.egg-info/PKG-INFO
+geofactory.egg-info/SOURCES.txt
+geofactory.egg-info/dependency_links.txt
+geofactory.egg-info/top_level.txt
