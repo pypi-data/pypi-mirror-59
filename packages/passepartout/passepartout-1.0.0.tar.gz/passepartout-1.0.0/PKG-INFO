@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: passepartout
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/Varkal/passepartout
+Author: Romain Moreau
+Author-email: moreau.romain83@gmail.com
+License: MIT
+Download-URL: https://github.com/Varkal/passepartout/archive/1.0.0.tar.gz
+Description: # passepartout
+        
+        Passepartout is an helper library to create [Alfred Workflow Script](https://www.alfredapp.com/help/workflows/inputs/script-filter/json/) Filter in Python3
+        
+Keywords: passepartout,alfred,butler
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
