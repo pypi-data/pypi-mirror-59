@@ -1,0 +1,12 @@
+fixedint/__init__.py,sha256=fGCV9IahJnJq3dHF2qGPNpSLfhIR9BRHQuK1DM4pQ0I,251
+fixedint/aliases.py,sha256=w1IAB8tyrmcK0BK_K0h5PAx5tZaclMmUcB4ks5lYrSc,319
+fixedint/base.py,sha256=T-AjHH2WVlO9LclEIebCF8oNAymj9qcf7mzk4T3AuO8,15111
+fixedint/compat.py,sha256=fvGTEt_ojR0igunHaDugRvtwgyKGe2i6KvwyF2TecLw,675
+fixedint/test_fixedint.py,sha256=M8Uif8XQxsVtxcnVZJi0GFINMYw45vQ2wtrBfckUpZs,10607
+fixedint/util.py,sha256=hNuF0bYRE1QHXMYssJVa93N2X0f-Z21DQcI3Lno9znw,233
+fixedint-0.1.5.dist-info/DESCRIPTION.rst,sha256=hX4kaedBTDQgChZzluBk5VspH56iVZ0TlNWYT5-wL-c,4009
+fixedint-0.1.5.dist-info/METADATA,sha256=6mDA0p0LBpN-EaR3z7BhaU3FovbZxyLBmjdm-YI15Ag,4822
+fixedint-0.1.5.dist-info/RECORD,,
+fixedint-0.1.5.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+fixedint-0.1.5.dist-info/metadata.json,sha256=BkOdmO3bA-Syz742-HwjGouxzpI47nYVftXunwHmZok,908
+fixedint-0.1.5.dist-info/top_level.txt,sha256=3j0TE2C2A_UZDsAg9hPMYB5kYFBkFJefG4tK1w_LGhs,9
