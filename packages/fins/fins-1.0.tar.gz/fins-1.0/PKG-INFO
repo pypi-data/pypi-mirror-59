@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fins
+Version: 1.0
+Summary: Omron FINS memory read
+Home-page: https://github.com/per000/fins
+Author: Per
+Author-email: perolaf@gmail.com
+License: UNKNOWN
+Description: # Omron FINS read memory area
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
