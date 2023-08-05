@@ -1,0 +1,10 @@
+README.md
+setup.py
+tripimgen/AugmentedDataGenerator.py
+tripimgen/TripletImageGenerator.py
+tripimgen/__init__.py
+tripimgen/options.py
+tripimgen.egg-info/PKG-INFO
+tripimgen.egg-info/SOURCES.txt
+tripimgen.egg-info/dependency_links.txt
+tripimgen.egg-info/top_level.txt
