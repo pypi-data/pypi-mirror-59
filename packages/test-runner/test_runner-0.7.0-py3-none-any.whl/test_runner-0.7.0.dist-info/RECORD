@@ -1,0 +1,14 @@
+testrunner/__init__.py,sha256=A_ByPbnXJD0OI0xM0WneyCojtPbTEKLUL_XvZ876LwQ,1042
+testrunner/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testrunner/runner.py,sha256=6k581LWG-uDUUBPfda8ILMEI0ogK3eSMbPNYWryLD8A,7646
+testrunner/runners/__init__.py,sha256=DgRjplssPIc-M-stNayUKaP8ovyxJEEClYgxVSyEsXk,860
+testrunner/runners/abstract_runner.py,sha256=ZWqkmbzQZpIJ6Eannm4N-VM_Cz5G-Fn990gLrJOKQ7E,4255
+testrunner/runners/nose2_runner.py,sha256=_UrklmLQtKs-stsHIm-YgcOHU2HthxDZBWkBjMzc1-k,4279
+testrunner/runners/nose_runner.py,sha256=Cfr0t9BT6ejNKugMtD3AUz2cw4G_ucNjMzG720_cisk,4438
+testrunner/runners/pytest_runner.py,sha256=j6eF9yfAN3PQmdUKSCufcyVo-ZDy37D8eSo4oroPWVA,6455
+testrunner/runners/setup_py_runner.py,sha256=s6ilD83DONWFd9D9iCUqtiAayR16meQkfJHUwbvtcdk,2503
+testrunner/runners/tox_runner.py,sha256=7E6olSc6-_6MwdbRWfgDccuoreXgdxEpdvZJSTe9Egg,1218
+test_runner-0.7.0.dist-info/LICENSE.txt,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+test_runner-0.7.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+test_runner-0.7.0.dist-info/METADATA,sha256=n3AZxLdmK8dkJeGCQMnWwmBep6bbadPJIGy95Oxt_Vs,5221
+test_runner-0.7.0.dist-info/RECORD,,
