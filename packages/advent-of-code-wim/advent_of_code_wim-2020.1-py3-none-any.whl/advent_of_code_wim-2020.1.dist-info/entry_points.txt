@@ -1,0 +1,6 @@
+[adventofcode.user]
+wim = aoc_wim:plugin
+
+[console_scripts]
+aocw = aoc_wim.cli:run_one
+
