@@ -1,0 +1,7 @@
+README.md
+setup.py
+multilabel3rc/__init__.py
+multilabel3rc.egg-info/PKG-INFO
+multilabel3rc.egg-info/SOURCES.txt
+multilabel3rc.egg-info/dependency_links.txt
+multilabel3rc.egg-info/top_level.txt
