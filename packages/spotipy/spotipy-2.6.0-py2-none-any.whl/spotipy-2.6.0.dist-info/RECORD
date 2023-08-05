@@ -1,0 +1,9 @@
+spotipy/__init__.py,sha256=kh4VSTWrpJMDvpDHQmtn11F24OxHkOjfmkKYDb8Mz04,88
+spotipy/client.py,sha256=4BgOtdFZxtpkgREaCJBPgRt7Va72ITjs9li0cRvifY4,42948
+spotipy/oauth2.py,sha256=jdP2CRejij8OHdQlfIZ_AMM3fJvfS-4iugysyyWfUf4,9236
+spotipy/util.py,sha256=bDHOZhMBg_Y8hWB6oNCIOArmepy3LHkAEZri_7URAes,3434
+spotipy-2.6.0.dist-info/LICENSE.md,sha256=H_AMsRswN7AnM3Kxz7zCof1TINLDwGpT_0NV-wGItCk,1078
+spotipy-2.6.0.dist-info/METADATA,sha256=YOuUvxVvEkmYNqlH9D_P8krcGxQDbHWJFDyax6S54bg,393
+spotipy-2.6.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+spotipy-2.6.0.dist-info/top_level.txt,sha256=dSwjjk5rAZzv_g4EkBg7OkAUjW6k02wB8jjA29BrSa0,8
+spotipy-2.6.0.dist-info/RECORD,,
