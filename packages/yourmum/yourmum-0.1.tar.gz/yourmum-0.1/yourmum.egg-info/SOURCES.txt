@@ -1,0 +1,7 @@
+setup.py
+yourmum/__init__.py
+yourmum.egg-info/PKG-INFO
+yourmum.egg-info/SOURCES.txt
+yourmum.egg-info/dependency_links.txt
+yourmum.egg-info/not-zip-safe
+yourmum.egg-info/top_level.txt
