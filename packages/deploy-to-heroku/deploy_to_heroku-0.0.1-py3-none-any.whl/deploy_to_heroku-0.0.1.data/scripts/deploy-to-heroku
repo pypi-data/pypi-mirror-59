@@ -1,0 +1,59 @@
+#!python
+
+import sys
+from colorama import Fore
+import sys
+import os
+
+def get_app_name():
+    try:
+        app_name = sys.argv[1]
+    except:
+        print('App name cannot be empty. Please consider using --help')
+        print(Fore.RED + 'Creation of directory failed: ')
+        sys.exit(1)
+
+    return app_name
+
+def get_requirements_txt():
+    if not (os.path.isfile('requirements.txt')):
+        requirements_txt = open("./requirements.txt", "w+")
+        linePython = "flask\ngunicorn\n"
+        requirements_txt.writelines([linePython])
+        requirements_txt.close()
+
+
+def get_Procfile():
+    if not (os.path.isfile('Procfile')):
+        procfile = open("./Procfile", "w+")
+        linePython = "web: gunicorn app:app"
+        procfile.writelines([linePython])
+        procfile.close()
+
+def run_git_init():
+    os.system('git init')
+
+def git_remote_add():
+    try:
+        os.system('heroku git:remote -a ' + app_name)
+    except:
+        print('No such app found on heroku')
+
+def run_git_add():
+    os.system('git add .')
+
+def run_git_commit():
+    msg = input('Committing to git. Please enter message: ')
+    os.system('git commit -m ' + msg)
+
+def run_git_push():
+    os.system('git push heroku master')
+
+app_name = get_app_name()
+get_requirements_txt()
+get_Procfile()
+run_git_init()
+git_remote_add()
+run_git_add()
+run_git_commit()
+run_git_push()

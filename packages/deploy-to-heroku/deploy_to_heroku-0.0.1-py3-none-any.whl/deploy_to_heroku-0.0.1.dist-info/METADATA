@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: deploy-to-heroku
+Version: 0.0.1
+Summary: Deploy flask apps to heroku with one command!
+Home-page: https://github.com/askyourkode/deploy-to-heroku
+Author: Hans Maulloo
+Author-email: askyourkode@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Freely Distributable
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+## Deploy Flask App
+A CLI package that deploys your flask app to Heroku.
+
+### Install using pip3
+```
+$ pip3 install deploy-to-heroku
+```
+Package @ PyPI repository: https://pypi.org/project/deploy-to-heroku/
+
+### Usage
+```
+$ cd app_name
+$ deploy-to-heroku app_name
+```
+
+Feel free to create issue in case something is not working :)
+
