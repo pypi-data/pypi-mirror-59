@@ -1,0 +1,15 @@
+ds_connectors/__init__.py,sha256=RcYPkooYSsruRYvl-Ir5Gh1Ou9lb0gAap1x9fGkpQUI,114
+ds_connectors/handlers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ds_connectors/handlers/hive_handlers.py,sha256=1lTgikPoktiqeKrMJBgZGYV3I7zworvm3hLyt7-hTVo,2941
+ds_connectors/handlers/mongo_handlers.py,sha256=cT2m0OYWlpMkP2fnENFEherCdvc8jR_o8ieP2MfW3Dc,2571
+ds_connectors/handlers/postgres_handlers.py,sha256=LTeRBB95k0hvvW96fF7u8s9wOQ3e_tEaXcfJVCIm3yc,2781
+ds_connectors/parsers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ds_connectors/parsers/dsv.py,sha256=0WqAgz679KZoqrxt7LzXA8CS1gmnrdCVVToH2JWGfHM,3311
+tests/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/aws/s3_handler_test.py,sha256=oepgPnq9-RoQXtvirVXbAuwheHP4CZEcIRz03S87V8g,3358
+tests/mongo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discovery_connectors-1.1.11.dist-info/LICENSE.txt,sha256=qyk9NzWmH6LpTBtMX7xPhpJhb-Si3-qWAIEzcNjoxqw,1507
+discovery_connectors-1.1.11.dist-info/METADATA,sha256=4SqCiXOE-Ya6kfyPKutwNf0woE0QLS6DsvF-wel8TzY,1455
+discovery_connectors-1.1.11.dist-info/WHEEL,sha256=6MATnTigfn5mZBlO9h_zG5yVyOumeVBMSfj4ZIPQsyY,93
+discovery_connectors-1.1.11.dist-info/top_level.txt,sha256=eg96Zso5DdL2sEK_-ZWKm7dw8HqEHm2hs06kFb7OoGw,20
+discovery_connectors-1.1.11.dist-info/RECORD,,
