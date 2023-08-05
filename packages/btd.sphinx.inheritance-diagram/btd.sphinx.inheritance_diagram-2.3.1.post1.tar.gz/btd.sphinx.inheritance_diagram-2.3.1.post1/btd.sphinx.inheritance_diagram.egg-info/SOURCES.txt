@@ -1,0 +1,8 @@
+README.md
+setup.py
+btd.sphinx.inheritance_diagram.egg-info/PKG-INFO
+btd.sphinx.inheritance_diagram.egg-info/SOURCES.txt
+btd.sphinx.inheritance_diagram.egg-info/dependency_links.txt
+btd.sphinx.inheritance_diagram.egg-info/requires.txt
+btd.sphinx.inheritance_diagram.egg-info/top_level.txt
+btd/sphinx/inheritance_diagram.py
