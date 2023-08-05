@@ -1,0 +1,14 @@
+README.md
+setup.py
+thegeotarginator_back_interface/domain_event.py
+thegeotarginator_back_interface/geotargeting_event.py
+thegeotarginator_back_interface/json_serializable.py
+thegeotarginator_back_interface/organisation_geotargeting_changed_event.py
+thegeotarginator_back_interface/organisation_geotargeting_removed_event.py
+thegeotarginator_back_interface/study_geotargeting_changed_event.py
+thegeotarginator_back_interface/study_geotargeting_removed_event.py
+thegeotarginator_back_interface.egg-info/PKG-INFO
+thegeotarginator_back_interface.egg-info/SOURCES.txt
+thegeotarginator_back_interface.egg-info/dependency_links.txt
+thegeotarginator_back_interface.egg-info/not-zip-safe
+thegeotarginator_back_interface.egg-info/top_level.txt
