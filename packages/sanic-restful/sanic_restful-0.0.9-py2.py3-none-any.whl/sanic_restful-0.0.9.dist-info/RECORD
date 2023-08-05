@@ -1,0 +1,17 @@
+sanic_restful/__init__.py,sha256=lU8aStt8j50uRKKnl7rAnjTm786GRhyskQ458fwhffc,192
+sanic_restful/__version__.py,sha256=VkqKNhCu7_SPtm2SJjQ7vIeLd6wBQJZl_t1N5uPUZuc,22
+sanic_restful/api.py,sha256=ltFgQXBjWCNaZQJbCawiCzyNpuBv4KC6MT98E7xu4gk,10832
+sanic_restful/datastructures.py,sha256=s9QGwqOgjEZvBGSHrFSUcBwjL4QfU5QcciRsAhijufA,599
+sanic_restful/exceptions.py,sha256=-NSHsViRoKPXEExLqLGeZU9JSVUzLNQFF0A_5P5NXrs,204
+sanic_restful/fields.py,sha256=VIbT8ivAwDJUvP3cYjwETyqpwKajHlp7AAEG5Nnx1As,11529
+sanic_restful/json.py,sha256=3QG-uHsZ5nbh_c_LCm8LRLmfqBpTn0_oJ3pdXWK1wP4,813
+sanic_restful/marshal.py,sha256=rGHeDS-oPG7uiJlFOlm56wSnqAC45Z4f0pnkMul0E_U,3918
+sanic_restful/reqparse.py,sha256=KQEyo8CS6B-I4WP9BSxlg1PPuidtQdvNhQJJHXlzLb8,14824
+sanic_restful/resource.py,sha256=y_vXNe-xxfCZuISl4nvBf_mNpMZJqOVOCEOxqWN6wr0,3232
+sanic_restful/util.py,sha256=KhcEWQmyLktWsXed0Lzx6p_2vSCYeTCFlXFOd9hV5os,1851
+sanic_restful-0.0.9.dist-info/AUTHORS.md,sha256=HBq00z_VgMI2xfwfUobrU16_qamdouMkpNxbR0BzaVg,1992
+sanic_restful-0.0.9.dist-info/LICENSE,sha256=PFjoO0Jk5okmshAgMix5-RZTC0sFT_EJWpC_CtQcCyM,1485
+sanic_restful-0.0.9.dist-info/METADATA,sha256=fM9O5JFwzV9Pc8Ng7TaIaG07MuLtNUJfAtbcNRXiQF0,510
+sanic_restful-0.0.9.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+sanic_restful-0.0.9.dist-info/top_level.txt,sha256=YzhtDd5yxslwpSjusWj245H-1B07TNU3J6yyAAswQ_M,14
+sanic_restful-0.0.9.dist-info/RECORD,,
