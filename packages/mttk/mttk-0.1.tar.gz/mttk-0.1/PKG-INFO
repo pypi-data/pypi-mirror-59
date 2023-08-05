@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: mttk
+Version: 0.1
+Summary: Map tile toolkits (地图瓦片工具包）
+Home-page: https://github.com/anhenghuang/MapTileToolKits
+Author: anhenghuang
+Author-email: contact@anhenghuang.com
+License: GNU General Public License v3.0
+Description: ### MapTileToolKits
+        
+        Map tile toolkits
+        
+        - coordinate convert
+        - crawler
+        - map image concat
+        
+        地图瓦片工具包 
+        
+        - 坐标系转换
+        - 地图爬虫
+        - 地图拼接
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
