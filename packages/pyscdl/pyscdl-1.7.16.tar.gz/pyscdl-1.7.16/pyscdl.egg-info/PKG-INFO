@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pyscdl
+Version: 1.7.16
+Summary: Download Music from SoundCloud
+Home-page: https://github.com/AHDCreative/pyscdl
+Author: DarkArtek
+Author-email: luca@ahd-creative.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet
+Classifier: Topic :: Multimedia :: Sound/Audio
