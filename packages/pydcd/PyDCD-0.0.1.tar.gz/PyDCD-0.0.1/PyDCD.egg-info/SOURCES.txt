@@ -1,0 +1,7 @@
+README.md
+setup.py
+PyDCD.egg-info/PKG-INFO
+PyDCD.egg-info/SOURCES.txt
+PyDCD.egg-info/dependency_links.txt
+PyDCD.egg-info/requires.txt
+PyDCD.egg-info/top_level.txt
