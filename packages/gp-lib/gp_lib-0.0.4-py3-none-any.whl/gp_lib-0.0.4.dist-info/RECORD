@@ -1,0 +1,12 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gp_lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gp_lib/algs.py,sha256=6pB-PQKQV0cI69MG9m1ow7vQnmSoAUrvP_TtQAVQ-o0,3384
+gp_lib/gp.py,sha256=QeagQe0ZGD9dG-QOH_MszxY6kdlYwcgJnto811LqhNs,8543
+gp_lib/kernels.py,sha256=KAvZYi0gEhJY4BD2SuhTQpUr2tSP-jwHk9wJyBmvWFc,7420
+gp_lib/sparse.py,sha256=yJ9XWN0MxfcX7cG11v1Kd2Q0-t2OcIhK065ar05ruCU,5014
+gp_lib/utils.py,sha256=VVnrEm9KP1hN3WuA5r6wMDCGlyCKGck_P18fMtwvWaM,1380
+gp_lib-0.0.4.dist-info/LICENSE,sha256=FNDCaU0zx5eka7XB3BmStD18BMfutfbuzRvviOaaQok,1066
+gp_lib-0.0.4.dist-info/METADATA,sha256=1u70Tlp41ngoRnZg0cO3k6qpkOtvvTQ3T8pVSyDMIyI,472
+gp_lib-0.0.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+gp_lib-0.0.4.dist-info/top_level.txt,sha256=iX-tRI612SYTrFfhz7pncDpT7P8_Y3jzVYB1Q5Vxvys,16
+gp_lib-0.0.4.dist-info/RECORD,,
