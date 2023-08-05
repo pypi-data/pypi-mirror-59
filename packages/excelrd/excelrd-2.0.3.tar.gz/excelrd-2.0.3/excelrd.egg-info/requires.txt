@@ -1,0 +1,10 @@
+
+[dev]
+releasecmd<1,>=0.2.0
+twine
+wheel
+pylama
+pytest
+
+[test]
+pytest
