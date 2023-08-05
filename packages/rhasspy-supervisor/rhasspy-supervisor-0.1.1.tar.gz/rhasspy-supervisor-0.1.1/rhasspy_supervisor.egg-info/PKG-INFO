@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: rhasspy-supervisor
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/synesthesiam/rhasspy-supervisor
+Author: Michael Hansen
+Author-email: hansen.mike@gmail.com
+License: UNKNOWN
+Description: # Rhasspy Supervisor
+        
+        Generates a supervisord configuration from a Rhasspy profile.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
