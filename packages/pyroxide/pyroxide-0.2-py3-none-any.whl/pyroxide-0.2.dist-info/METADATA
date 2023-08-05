@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pyroxide
+Version: 0.2
+Summary: HTTP(s)/SOCKS Proxy Sanitizer & Validator
+Home-page: https://github.com/tinkerfish/pyroxide
+Author: Steven Reagan
+Author-email: slreagan90@gmail.com
+License: MIT
+Download-URL: https://github.com/tinkerfish/pyroxide/archive/v_0.2.tar.gz
+Keywords: PROXY,SOCKS,SANITIZE,VERIFY
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.6) ; extra == 'dev'
+
+# Pyroxide
+
+This is a simple HTTP(s)/SOCKS4/5 Proxy Checker to be used to sanitize and verify online proxy lists
+
+## Installation
+
+Run the following to install:
+
+```python
+pip install pyroxide
+```
+
