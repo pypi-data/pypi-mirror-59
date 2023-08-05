@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: testlinkwrapper
+Version: 0.1.3
+Summary: Wrapper for test tool Testlink
+Home-page: UNKNOWN
+Author: Alejandro Manzanero
+Author-email: UNKNOWN
+License: MIT
+Download-URL: https://github.com/Manzanero/testlinkwrapper/archive/v_0_1_3.tar.gz
+Description: UNKNOWN
+Keywords: test,testlink,wrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
