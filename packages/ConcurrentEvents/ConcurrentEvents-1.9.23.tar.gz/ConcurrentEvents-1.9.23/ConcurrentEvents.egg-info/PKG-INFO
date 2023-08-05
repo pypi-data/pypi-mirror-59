@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ConcurrentEvents
+Version: 1.9.23
+Summary: An event system build on top of the concurrent futures library, including additional threading tools
+Home-page: https://gitlab.com/Reggles44/LFC
+Author: Reggles
+Author-email: reginaldbeakes@gmail.com
+License: UNKNOWN
+Description: LFC
+        ==================
+        
+        Lightweight multi-threaded event framework based around concurrent.futures
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
