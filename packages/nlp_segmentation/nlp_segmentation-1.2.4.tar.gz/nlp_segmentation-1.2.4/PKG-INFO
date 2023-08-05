@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: nlp_segmentation
+Version: 1.2.4
+Summary: 分词工具
+Home-page: https://github.com/SharpCX/sougou_fenci.git
+Author: cx
+Author-email: sharpcx@live.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
