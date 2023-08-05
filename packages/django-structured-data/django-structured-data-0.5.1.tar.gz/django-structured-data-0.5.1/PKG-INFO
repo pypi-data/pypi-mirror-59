@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: django-structured-data
+Version: 0.5.1
+Summary: Template tags to assist in adding structured metadata to views and models.
+Home-page: https://github.com/dmptrluke/django-structured-data
+Author: Luke Rogers
+Author-email: luke@dmptr.com
