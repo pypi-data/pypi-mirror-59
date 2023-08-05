@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: prettier_unittest
+Version: 0.1
+Summary: A small package to easily setup unittests and have a better rendering
+Home-page: https://github.com/SpartanPlume/PrettierUnittestPython
+Author: Spartan Plu,e
+Author-email: spartan.plume@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: prettier pretty color unittest unit test
+Platform: UNKNOWN

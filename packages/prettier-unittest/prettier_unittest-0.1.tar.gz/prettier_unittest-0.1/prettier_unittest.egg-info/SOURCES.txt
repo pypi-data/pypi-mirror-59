@@ -1,0 +1,9 @@
+setup.py
+bin/prettier-unittest
+prettier_unittest/__init__.py
+prettier_unittest.egg-info/PKG-INFO
+prettier_unittest.egg-info/SOURCES.txt
+prettier_unittest.egg-info/dependency_links.txt
+prettier_unittest.egg-info/not-zip-safe
+prettier_unittest.egg-info/requires.txt
+prettier_unittest.egg-info/top_level.txt
