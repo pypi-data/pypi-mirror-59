@@ -1,0 +1,15 @@
+README.md
+setup.py
+lightDict.egg-info/PKG-INFO
+lightDict.egg-info/SOURCES.txt
+lightDict.egg-info/dependency_links.txt
+lightDict.egg-info/requires.txt
+lightDict.egg-info/top_level.txt
+lightdict/__init__.py
+lightdict/component/__init__.py
+lightdict/component/character.py
+lightdict/component/dictionary.py
+lightdict/component/word.py
+lightdict/utils/__init__.py
+lightdict/utils/common.py
+test/test_json.py
