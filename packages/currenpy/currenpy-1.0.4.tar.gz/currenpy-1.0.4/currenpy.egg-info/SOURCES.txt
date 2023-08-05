@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+currenpy/__init__.py
+currenpy/currency.py
+currenpy/exceptions.py
+currenpy/exchange.py
+currenpy/money.py
+currenpy/symbols.py
+currenpy.egg-info/PKG-INFO
+currenpy.egg-info/SOURCES.txt
+currenpy.egg-info/dependency_links.txt
+currenpy.egg-info/top_level.txt
