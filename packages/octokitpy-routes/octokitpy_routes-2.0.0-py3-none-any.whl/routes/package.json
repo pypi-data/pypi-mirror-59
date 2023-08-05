@@ -1,0 +1,50 @@
+{
+  "_from": "@octokit/routes@26.12.0",
+  "_id": "@octokit/routes@26.12.0",
+  "_inBundle": false,
+  "_integrity": "sha512-5+Af5NEf4LlBW8vr79AImf3K4dT6atqFflL3GgRUwFQw3n3gflhvNTBtC1cm3/XughKVBgd+dh7EVjhW1/dHCA==",
+  "_location": "/@octokit/routes",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@octokit/routes@26.12.0",
+    "name": "@octokit/routes",
+    "escapedName": "@octokit%2froutes",
+    "scope": "@octokit",
+    "rawSpec": "26.12.0",
+    "saveSpec": null,
+    "fetchSpec": "26.12.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@octokit/routes/-/routes-26.12.0.tgz",
+  "_shasum": "ab6acbe8ed054f69b2771b6c9a8d6d29bcdd869c",
+  "_spec": "@octokit/routes@26.12.0",
+  "_where": "/home/runner/work/octokitpy-routes/octokitpy-routes",
+  "author": {
+    "name": "Gregor Martynus",
+    "url": "https://github.com/gr2m"
+  },
+  "bugs": {
+    "url": "https://github.com/octokit/routes/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Machine-readable, always up-to-date GitHub REST API route specifications",
+  "homepage": "https://github.com/octokit/routes#readme",
+  "keywords": [
+    "octokit"
+  ],
+  "license": "MIT",
+  "name": "@octokit/routes",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octokit/routes.git"
+  },
+  "version": "26.12.0"
+}
