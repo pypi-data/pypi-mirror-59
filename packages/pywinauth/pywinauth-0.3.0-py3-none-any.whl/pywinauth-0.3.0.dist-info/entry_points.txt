@@ -1,0 +1,3 @@
+[console_scripts]
+winauthc = winauth.__main__:main
+
