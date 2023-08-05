@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: time-adapters
+Version: 0.0.1
+Summary: time adapters
+Home-page: https://github.com/dpep/py_time_adapters
+Author: Daniel Pepper
+License: MIT
+Description: time-adapters
+        ======
+        Making time play nice with others.
+        
+        
+        ### Install
+        ```pip install time-adapters```
+        
+        
+        ### Usage
+        ```
+        import time_adapters.auto
+        
+        
+        ----
+        [![installs](https://img.shields.io/pypi/dm/time_adapters.svg?label=installs)](https://pypi.org/project/time_adapters)
+        
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
