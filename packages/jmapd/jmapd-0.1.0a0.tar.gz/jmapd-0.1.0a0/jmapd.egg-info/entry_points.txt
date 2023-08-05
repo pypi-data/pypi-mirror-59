@@ -1,0 +1,3 @@
+[console_scripts]
+jmapd = jmapd.main:jmapd_main
+
