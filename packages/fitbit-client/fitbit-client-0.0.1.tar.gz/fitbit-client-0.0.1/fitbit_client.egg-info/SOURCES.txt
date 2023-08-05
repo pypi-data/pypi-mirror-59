@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fitbit_client/__init__.py
+fitbit_client.egg-info/PKG-INFO
+fitbit_client.egg-info/SOURCES.txt
+fitbit_client.egg-info/dependency_links.txt
+fitbit_client.egg-info/requires.txt
+fitbit_client.egg-info/top_level.txt
