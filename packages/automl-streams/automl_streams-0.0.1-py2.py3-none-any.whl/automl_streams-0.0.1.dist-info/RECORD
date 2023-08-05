@@ -1,0 +1,10 @@
+automlstreams/__init__.py,sha256=tKrDu7MSz2y5b9r_EIrqzTvkxfx8Gcw0vmh3V_BaxEI,349
+automlstreams/console.py,sha256=c4G4Gd5gwppIYwfuyV7rEhVfyV8SuT16hKKidoqLd4A,2830
+automlstreams/streams/__init__.py,sha256=DzyXrfUgczZ26yv0ocWMxSX-tTEMDpAhCoAuaZA_RJk,201
+automlstreams/streams/kafka_stream.py,sha256=NYXqCUxlDBmNGh4t17X76nQw9PIYecqO7dDHJsnHzj0,10811
+automl_streams-0.0.1.dist-info/AUTHORS.md,sha256=92JBcvGdzy-oeGNcVxUck8iVMto8KwOMpR3-aMKNM8Q,88
+automl_streams-0.0.1.dist-info/LICENSE,sha256=51jEA5yA_xukebNX68OBZdF9DJG11jgWEpr89DBgAig,1089
+automl_streams-0.0.1.dist-info/METADATA,sha256=WOk3TPhkEjR5nLPV3hPNkF4ZOtIErEDYRA_ZONcccIE,1966
+automl_streams-0.0.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+automl_streams-0.0.1.dist-info/top_level.txt,sha256=yZKpZdbuIcjlMtlxUbrZeNIrgPuvSZ-8KHX47bmMK3E,14
+automl_streams-0.0.1.dist-info/RECORD,,
