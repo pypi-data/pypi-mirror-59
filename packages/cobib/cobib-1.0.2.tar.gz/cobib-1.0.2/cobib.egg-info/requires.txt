@@ -1,0 +1,5 @@
+bibtexparser
+bs4
+requests
+ruamel.yaml
+tabulate
