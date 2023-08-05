@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: BioMetaDB
+Version: 0.1.2.1
+Summary: BioMetaDB is a data-management package that automatically generates database schemas, minimizing the amount of temporary files used and handling migrations and updates smoothly.
+Home-page: https://github.com/cjneely10/BioMetaDB
+License: UNKNOWN
+Author: Christopher Neely
+Author-email: christopher.neely1200@gmail.com
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
