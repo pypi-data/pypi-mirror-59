@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: alpha2fasta
+Version: 1.3
+Summary: Encode text written in natural language in a FASTA-based format
+Home-page: UNKNOWN
+Author: Diogo de Jesus Soares Machado
+Author-email: diogomachado.bioinfo@gmail.com
+License: UNKNOWN
+Description: # alpha2fasta
+        The alpha2fasta library can be used to encode texts written in natural language to a FASTA-based format. The purpose of coding is to enable the application of various bioinformatics tools in text mining.
+        
+        Functions
+        --------------------------------------------------------------------------------------------------------------------------------
+        - aminocode
+        - dnabits
+        
+Platform: UNKNOWN

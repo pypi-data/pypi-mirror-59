@@ -1,0 +1,7 @@
+README.md
+setup.py
+alpha2fasta.egg-info/PKG-INFO
+alpha2fasta.egg-info/SOURCES.txt
+alpha2fasta.egg-info/dependency_links.txt
+alpha2fasta.egg-info/not-zip-safe
+alpha2fasta.egg-info/top_level.txt
