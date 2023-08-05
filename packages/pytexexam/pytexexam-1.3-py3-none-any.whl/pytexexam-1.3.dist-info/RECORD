@@ -1,0 +1,11 @@
+pytexexam/__init__.py,sha256=nlnW_GDyCSPbd5KvtidV_VIGfpBNqrl1cjYLMIb8MOc,145
+pytexexam/answer.py,sha256=XRJFE5vx61xL1Q4kKQL5jP_KobEtj8iR9jv9H_gkAkQ,455
+pytexexam/exam.py,sha256=hVnMCXOyjosaWaPzV-GL2kWtK1QbILM2Sd7_9hMNuLs,470
+pytexexam/latexexam.py,sha256=9OMIz7c8AufjQjDFBH7csGYPCQiF0zFVVvZ8c0wN6v0,6790
+pytexexam/latexexamutil.py,sha256=A7DAu5jJpAiLwYlIy6fp_xnj5jJg9nJo0fNRH6FbFmc,251
+pytexexam/question.py,sha256=FeWHN4ynQ7kIhRbqCfk6WnY6cYrnEW4taPskvGrSIgg,5717
+pytexexam-1.3.dist-info/LICENSE.txt,sha256=dPEqSG0Y1s7LbnMtA4MscjXm4tcOCp2OwO4wPTNiJVU,9160
+pytexexam-1.3.dist-info/METADATA,sha256=CECa4MifGBg4IWFnKvLiVZ4YOWzQCWf0eGlBK914tLw,2734
+pytexexam-1.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pytexexam-1.3.dist-info/top_level.txt,sha256=ut6B9pk2He7mzBqu9w4IspmNr9jPGwhyQJXQbk48O7o,10
+pytexexam-1.3.dist-info/RECORD,,
