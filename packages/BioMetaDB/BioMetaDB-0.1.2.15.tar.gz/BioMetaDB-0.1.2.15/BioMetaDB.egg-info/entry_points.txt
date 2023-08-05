@@ -1,0 +1,3 @@
+[console_scripts]
+dbdm = BioMetaDB:run
+
