@@ -1,0 +1,12 @@
+PloidPy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PloidPy/binom_model.py,sha256=s4j7L34l3OSrW9w6w1JonlqJb35ffT1JcxFp3cdjWy8,2496
+PloidPy/nbinom.py,sha256=mL-UEyp_cf_xTaoFqCA7eI5cUgbe_0iFpPA6HmooizA,473
+PloidPy/ploidy_model.py,sha256=AJxlPotT0BdpyB_55qAr-th0o-xygv7Iv6VyIKycRaE,1307
+PloidPy/plot_read_data.py,sha256=ZmOwwa80rlE8vjostZA32PmodVG_EhAe0NFXHy6923U,569
+PloidPy/process_bam.py,sha256=jaN_cR1kdoCB2up5DOfPYBvLJaZ1x1LOM1IbDH9DEjM,3635
+PloidPy_oaolayin-0.1.0.data/scripts/PloidPy,sha256=etL3UNPshveB9nZRmfajALDa0V5Ii-Za1MijkFDITuw,4784
+PloidPy_oaolayin-0.1.0.dist-info/LICENSE,sha256=PdK_olq9obh2_AebAFBQ-VXOth0zo0fPdz4xH5DBWRU,1076
+PloidPy_oaolayin-0.1.0.dist-info/METADATA,sha256=duL2wkn7cmzWsEC7aIcuqPyq2gHvMmut_tUUp-3Evi0,5919
+PloidPy_oaolayin-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+PloidPy_oaolayin-0.1.0.dist-info/top_level.txt,sha256=ETZz1MevOPoipS46U_NM8PtIfErTo81lig5ddkW-Cac,8
+PloidPy_oaolayin-0.1.0.dist-info/RECORD,,
