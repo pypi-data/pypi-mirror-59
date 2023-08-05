@@ -1,0 +1,126 @@
+#!/usr/bin/env python
+
+import os
+import signal
+import re
+
+class Killall(object):
+    procdir = '/proc'
+    @classmethod
+    def _getallprocs(self):
+        procs = []
+        #
+        for filename in os.listdir(self.procdir):
+            try:
+                pid = int(filename)
+            except ValueError as e:
+                # not a process
+                pass
+            else:
+                path = os.path.join(self.procdir, filename)
+                procs.append((path, pid))
+        #
+        return procs
+        #
+    #
+    @classmethod
+    def _getargv(self, pid):
+        result = None
+        field = 'cmdline'
+        inpath = os.path.join(self.procdir, str(pid), field)
+        with open(inpath) as infile:
+            value = infile.read()
+            #
+            if value:
+                #
+                # print('pid', pid, field, value)
+                #
+                argv = value.split('\x00')
+            else:
+                argv = []
+            #
+            result = argv
+            #
+        return result
+    #
+    @classmethod
+    def is_webkit(self, argv):
+        result = False
+        #
+        if argv:
+            #
+            #
+            #
+            procname = argv[0]
+            #
+            basename = os.path.basename(procname)
+            #
+            print('argv', argv)
+            print('procname', procname)
+            print('basename', basename)
+            #
+            if basename in set(['WebKitNetworkProcess', 'WebKitWebProcess', 'pxgsettings']):
+                #
+                # print('basename match')
+                #
+                result = True
+                #
+            else:
+                cmdline = ' '.join(argv)
+                #
+                if any(cmd in cmdline for cmd in ['python ', 'python2 ', 'python3 ']):
+                    #
+                    for script_filename in ['run_session', 'web_session.py', 'webkitgtk.py']:
+                        #
+                        for (prefix, suffix) in (('/', ' '), (' ', ' ')):
+                            #
+                            pat = prefix + script_filename + suffix
+                            #
+                            print('pat', pat)
+                            #
+                            if pat in cmdline:
+                                #
+                                print('found pat')
+                                #
+                                result = True
+                            #
+                        #
+                    #
+                #
+                print('cmdline', cmdline, 'result', result)
+            #
+        else:
+            #
+            # is kernel process
+            #
+            pass
+        #
+        return result
+    #
+    @classmethod
+    def webkit(self):
+        for (path, pid) in self._getallprocs():
+            #
+            print('pid', pid)
+            #
+            argv = self._getargv(pid)
+            #
+            if argv:
+                #
+                procname = argv[0]
+                #
+                print('argv', argv)
+                print('argc', len(argv))
+                #
+                if self.is_webkit(argv):
+                    #
+                    killsig = signal.SIGKILL
+                    #
+                    print('killing', 'argv', argv, 'signal', killsig)
+                    #
+                    os.kill(pid, killsig)
+                    #
+                #
+
+if __name__ == '__main__':
+    Killall.webkit()
