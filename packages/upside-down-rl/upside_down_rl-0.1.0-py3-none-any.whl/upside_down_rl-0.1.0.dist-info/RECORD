@@ -1,0 +1,10 @@
+upside_down_rl/__init__.py,sha256=-FXXQH4XdR6P5FtydwVexei89gbH63Q6alNH3iS-ZME,144
+upside_down_rl/cartpole.py,sha256=nI_Zlu2AIetIGeaa7Dd-e9uJ0jdAT2UvLnnhHz2PGFg,2140
+upside_down_rl/gym_model.py,sha256=kjJvdmPL9OSSQoq9HBuvdrr4JR1BUfwOPmicFDkVfmc,3905
+upside_down_rl/lander.py,sha256=N5RWtVCTEQyg3M-IpROlzkRxPETkfOajycVULVtyE68,2195
+upside_down_rl/udrl.py,sha256=zHrl9TOI2b07Lfjjx1oEUqDuT7eIhc0o-Vpbi4CUfE8,9059
+upside_down_rl/utils.py,sha256=rOK_yyDyZOBP76_3JBicxoDi1gysVjp907LqC591yqg,1389
+upside_down_rl-0.1.0.dist-info/entry_points.txt,sha256=bkl1xF_wwLoaeHWlp0GAzij0rGJf-6qdgNkDsiMznSU,91
+upside_down_rl-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+upside_down_rl-0.1.0.dist-info/METADATA,sha256=Ejq1OAahQe3A5HkNb5lZZsTKHC8b-HXMQTOqPqsPb_Q,769
+upside_down_rl-0.1.0.dist-info/RECORD,,

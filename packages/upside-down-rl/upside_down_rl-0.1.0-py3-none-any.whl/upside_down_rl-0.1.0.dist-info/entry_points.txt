@@ -1,0 +1,4 @@
+[console_scripts]
+cartpole=upside_down_rl.cartpole:main
+lander=upside_down_rl.lander:main
+
