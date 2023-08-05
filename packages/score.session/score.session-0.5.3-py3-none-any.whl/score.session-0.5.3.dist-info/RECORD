@@ -1,0 +1,11 @@
+score.session-0.5.3-py3.7-nspkg.pth,sha256=Sc8n-AjC4efQEM9N970YYvqthmC_oBMk9MryXA8wB9c,534
+score/session/__init__.py,sha256=ZvrRHuOCzHsmpF3hvzmdg9t8edC_urm77H18rHy53IQ,1550
+score/session/_init.py,sha256=tsFVWrncbyzSKZazhqMKnyt56VmHzc9RFxIrGNpOOVo,16191
+score/session/_kvcache.py,sha256=PhjVwILOiLO4M1JAiVdOE_ApbyqJH-UtjSfrKQRFeZ4,2090
+score/session/orm.py,sha256=tgS4ElXaLPGX2KjY-fhrqsThN7OYue1LR5GtkgdUou8,5124
+score.session-0.5.3.dist-info/COPYING.LESSER.txt,sha256=Okmm5A9QcXz_d-8FH0qPxEG_r_Yc0bM07KQZHBTzAH8,42870
+score.session-0.5.3.dist-info/METADATA,sha256=oKKiDLd4H6nXRjAVeTAWZbMVIUsFfddFLoLWeBJFTDI,2662
+score.session-0.5.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+score.session-0.5.3.dist-info/namespace_packages.txt,sha256=ombXQcxxoHXkOBjIMIwHIdXOU_bRR6fxpkmCd_LLxCQ,6
+score.session-0.5.3.dist-info/top_level.txt,sha256=ombXQcxxoHXkOBjIMIwHIdXOU_bRR6fxpkmCd_LLxCQ,6
+score.session-0.5.3.dist-info/RECORD,,
