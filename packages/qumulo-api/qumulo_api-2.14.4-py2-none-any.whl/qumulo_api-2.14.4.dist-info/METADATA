@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: qumulo-api
+Version: 2.14.4
+Summary: API for the Qumulo file system
+Home-page: http://www.qumulo.com/
+Author: Qumulo, Inc.
+Author-email: api@qumulo.com
+License: UNKNOWN
+Keywords: Qumulo QFSD
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Requires-Dist: future (>=0.15.0)
+
+================
+Qumulo API Tools
+================
+
+This directory contains a collection of tools and libraries that will help
+the user interact with the Qumulo REST API server.
+
+It includes the following:
+
+  - ``qumulo/``: a directory of libraries that can be used to interact with the
+    REST API server
+  - ``qq``: a comprehensive tool that implements the libraries in ``qumulo/``
+    and provides for typical Qumulo CLI control functionality
+  - ``qqurl``: a convenient way to experiment with any Qumulo API endpoint using
+     URL paths, and without worrying about authentication.
+
+Using qq
+========
+
+To see all commands available from the ``qq`` tool::
+
+    $ cd qumulo_api
+    $ ./qq --help
+
+To run commands against the REST API server, you must first login::
+
+    $ ./qq --host host_ip login --user admin
+
+Once authenticated, you can run other commands::
+
+    # Get the network configuation of nodes in the cluster:
+    $ ./qq --host host_ip network_poll
+
+    # Get the list of users
+    $ ./qq --host host_ip auth_list_users
+
+    # See all commands available
+    $ ./qq --help
+
+    # Get help with a specific command
+    $ ./qq command --help
+
+Using qqurl
+===========
+
+The ``qqurl`` tool provides "raw" access to Qumulo API endpoints through URLs
+and request/response bodies (usually in JSON).
+
+It may be a convenient way to explore the endpoints and HTTP methods in advance
+of writing your own scripts against the endpoints.
+
+In general, ``qqurl`` is invoked as follows::
+
+    qqurl --host host_ip [<HTTP method> <url path>]
+
+For example::
+
+    $ ./qqurl --host music GET /v1/version
+    {
+    "build_date": "2019-06-19T16:16:22Z",
+    "build_id": "143273.1.13",
+    "flavor": "release",
+    "revision_id": "Qumulo Core 2.12.5"
+    }
+
+You can log in as follows::
+
+    $ ./qqurl --host host_ip -u <username> -p <password>
+
+And having logged in, subsequent uses will remember your credentials, so you
+can do privileged things, such as create a file (the JSON request body is
+taken on standard input)::
+
+    $ ./qqurl --host music POST /v1/files/%2f/entries/
+    {
+        "name": "newfile",
+        "action": "CREATE_FILE"
+    }
+
+This command will also print the response body, which is not shown here.
+
+Accepted methods include ``GET``, ``PUT``, ``POST``, ``PATCH`` and ``DELETE``.
+
+Notes
+=====
+
+These tools require Python 2.7; they will not run under Python 3.
+
+For more information, visit our Knowledge Base site: https://care.qumulo.com
+
+
