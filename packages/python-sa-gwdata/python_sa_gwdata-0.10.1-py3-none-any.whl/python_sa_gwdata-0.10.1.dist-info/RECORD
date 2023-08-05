@@ -1,0 +1,9 @@
+sa_gwdata/__init__.py,sha256=UUl2sXU5UUHxWHNGhz8UxSE1XXIlxhJQufwgzdeHwdU,131
+sa_gwdata/identifiers.py,sha256=Ewyh776XQt3Yp50cDbeWTRlzBR4MXsFievdj9wWL_90,18222
+sa_gwdata/sarig.py,sha256=9HmV3hmpABtoAqDP5Fw3Y-_M0Y_GMQMIxbd2UC1mdSM,722
+sa_gwdata/waterconnect.py,sha256=Kc00h9i6BOxrjI6ks4OtRXXK082Sxh1Mn6rsl5xBSh8,37563
+python_sa_gwdata-0.10.1.dist-info/LICENSE,sha256=4m3IfGbG6RPjJbkTLsECsPZxL38-2LkLqhQU1nhFuOU,1098
+python_sa_gwdata-0.10.1.dist-info/METADATA,sha256=OPC2bDBIqXqfgwPosNde7nyht0mw2xX7N43lAMNUqEg,4444
+python_sa_gwdata-0.10.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+python_sa_gwdata-0.10.1.dist-info/top_level.txt,sha256=MXqmIRvuaK8q_biAe-JyXNnZUeehkyWiWKvQDUPP-FI,10
+python_sa_gwdata-0.10.1.dist-info/RECORD,,
