@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<form col="2">
+    
+    <field name="sp01i"/>
+    <field name="sp01t"/>
+    <field name="sp02i"/>
+    <field name="sp02t"/>
+
+    <field name="sp03i"/>
+    <field name="sp03t"/>
+    <field name="sp04i"/>
+    <field name="sp04t"/>
+
+    <field name="sp05i"/>
+    <field name="sp05t"/>
+    <field name="sp06i"/>
+    <field name="sp06t"/>
+
+    <field name="sp07i"/>
+    <field name="sp07t"/>
+    <field name="sp08i"/>
+    <field name="sp08t"/>
+
+    <field name="sp09i"/>
+    <field name="sp09t"/>
+    <field name="sp10i"/>
+    <field name="sp10t"/>
+
+    <field name="sp11i"/>
+    <field name="sp11t"/>
+    <field name="sp12i"/>
+    <field name="sp12t"/>
+
+    <field name="sp13i"/>
+    <field name="sp13t"/>
+    <field name="sp14i"/>
+    <field name="sp14t"/>
+
+    <field name="sp15i"/>
+    <field name="sp15t"/>
+    <field name="sp16i"/>
+    <field name="sp16t"/>
+
+    <field name="sp17i"/>
+    <field name="sp17t"/>
+    <field name="sp18i"/>
+    <field name="sp18t"/>
+
+    <field name="sp19i"/>
+    <field name="sp19t"/>
+    <field name="sp20i"/>
+    <field name="sp20t"/>
+</form>
