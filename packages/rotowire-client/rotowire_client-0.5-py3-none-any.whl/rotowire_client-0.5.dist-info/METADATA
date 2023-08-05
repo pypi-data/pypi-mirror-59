@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rotowire-client
+Version: 0.5
+Summary: API Consumer for Rotowire
+Home-page: https://github.com/ballwiz/rotowire-client
+Author: Wedevelop's team
+Author-email: rdemasi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
