@@ -1,0 +1,8 @@
+matplotlib
+pandas
+scipy
+astroquery
+git+https://github.com/MarcoMuellner/eleanor.git-0
+jupyter
+Sphinx
+sphinx_rtd_theme
