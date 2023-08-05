@@ -1,0 +1,13 @@
+{
+    "global":{
+        "Fs.info": false,
+        "Watchfs.kw": {
+            "info": false,
+            "command": "find . -name .sass-cache -type d -exec rm -rv {} \;; find . -name .webassets-cache -type d -exec rm -rv {} \;; find . -name .cache -type d -exec rm -rv {} \;; make",
+            "path":".",
+            "recursive":true,
+            "patterns":".*\\.py;.*\\.mako;.*\\.js;.*\\.css;.*\\.scss;.*\\.rst;.*\\.json;",
+            "ignore_renamed_event":true
+        }
+    }
+}
