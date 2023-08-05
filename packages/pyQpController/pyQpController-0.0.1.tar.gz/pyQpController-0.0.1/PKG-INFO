@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: pyQpController
+Version: 0.0.1
+Summary: Python implementation of a multi-objective controller using quadratic programming.
+Home-page: https://github.com/wyqsnddd/pyQpController
+Author: Yuquan Wang
+Author-email: wyqsnddd@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
