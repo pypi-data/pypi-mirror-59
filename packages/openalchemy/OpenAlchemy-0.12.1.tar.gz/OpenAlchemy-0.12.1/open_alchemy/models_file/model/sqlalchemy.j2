@@ -1,0 +1,28 @@
+
+
+class T{{ artifacts.name }}({{ artifacts.parent_cls }}):
+    """SQLAlchemy model protocol."""
+
+    # SQLAlchemy properties
+    __table__: sqlalchemy.Table
+    __tablename__: str
+    query: orm.Query{% if not artifacts.empty %}
+
+    # Model properties{% for column in artifacts.columns %}
+    {{ column.name }}: {{ column.type }}{% endfor %}{% endif %}
+
+    def __init__(self{{ arg_init_source }}) -> None:
+        """Construct."""
+        ...
+
+    @classmethod
+    def from_dict(cls{{ arg_from_dict_source }}) -> "T{{ artifacts.name }}":
+        """Construct from a dictionary (eg. a POST payload)."""
+        ...
+
+    def to_dict(self) -> {{ artifacts.name }}Dict:
+        """Convert to a dictionary (eg. to send back for a GET request)."""
+        ...
+
+
+{{ artifacts.name }}: T{{ artifacts.name }} = models.{{ artifacts.name }}  # type: ignore
