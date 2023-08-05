@@ -1,0 +1,14 @@
+tiktalik/__init__.py,sha256=LbJTCUxSKQE0e5C6bOB2fmnLL5NTd-tv51ZrNAEJKiY,1099
+tiktalik/apiobject.py,sha256=K1M1KcvP3usUVscYkOWa6vAl-TFYfnazvGPNhDz4C30,1577
+tiktalik/connection.py,sha256=DjNWVvtt3b-d6Yg9HdhUmHL4KZFoqWtLrUybH9vvBeI,6752
+tiktalik/error.py,sha256=TRp5TiOv5ZgiWzMWKNNjYunOw3seMO3RfmBklOn27UE,1830
+tiktalik/computing/__init__.py,sha256=Qw1SoXOOW0HPU0VIYY266SmIbiht5AoiUVM_w2G7aF4,1176
+tiktalik/computing/connection.py,sha256=t1V10azGrY_sg--T0AQKc5_KLpKd2_hukhSewhBVTtU,8800
+tiktalik/computing/objects.py,sha256=5iFfsQ79QpZ4zfqTuFLphjX70eH8zYLAfco0NUyEJMI,8417
+tiktalik/loadbalancer/__init__.py,sha256=y24sZ_8op4BQnJuusELXMvpPnimwCFaivuWv613UJcM,157
+tiktalik/loadbalancer/connection.py,sha256=GloLiLHPUjTP2mANSNHQOCxZGepIwJxb-FxyJqWE6MY,2818
+tiktalik/loadbalancer/objects.py,sha256=Ull24aqsHFdRjxl-05L3WYdL4Mdtqp3I7g234o2F6w0,4890
+tiktalik-1.6.3.dist-info/METADATA,sha256=ilUigL-FoSQ64_tU7Ya5xzrCL2A9pAE01pGUmWTAXuk,456
+tiktalik-1.6.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tiktalik-1.6.3.dist-info/top_level.txt,sha256=lSKO3XhXZI4qK5XvtIg-TuH_NoGD942WkUpnfKxZz10,9
+tiktalik-1.6.3.dist-info/RECORD,,
