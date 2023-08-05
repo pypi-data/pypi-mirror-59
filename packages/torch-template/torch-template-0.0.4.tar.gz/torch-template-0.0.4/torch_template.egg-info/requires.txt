@@ -1,0 +1,5 @@
+torch
+numpy
+torchvision
+tensorboardX
+utils-misc>=0.0.3
