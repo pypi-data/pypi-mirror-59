@@ -1,0 +1,7 @@
+templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+templatetags/materializecss.py,sha256=S0tFk-yzs6MqcVVfFNvN1ofQ1LmPtGqTlJsJvCiRYyg,4494
+django_materializecss_form-1.1.15.dist-info/LICENSE,sha256=hJz_6jlyXTzyV8gkq-cifqpAWvR0-MM5vVzH5UM_gZc,1114
+django_materializecss_form-1.1.15.dist-info/METADATA,sha256=v3ArUbpAqH9ReuXnQCaTZyamjFzHHphwTM_iN4q72tQ,5379
+django_materializecss_form-1.1.15.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+django_materializecss_form-1.1.15.dist-info/top_level.txt,sha256=kj52b65Pn4W0Jzq4cFNFzZ3AL2GldhVrCzVw5EZJ5K0,13
+django_materializecss_form-1.1.15.dist-info/RECORD,,
