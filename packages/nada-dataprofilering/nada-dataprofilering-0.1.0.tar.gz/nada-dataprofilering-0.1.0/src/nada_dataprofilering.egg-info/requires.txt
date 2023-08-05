@@ -1,0 +1,3 @@
+cx_Oracle
+dataverk_vault
+urllib3
