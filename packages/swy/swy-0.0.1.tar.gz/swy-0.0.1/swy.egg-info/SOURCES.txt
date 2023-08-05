@@ -1,0 +1,9 @@
+README.md
+setup.py
+swy/__init__.py
+swy/__main__.py
+swy/app.py
+swy.egg-info/PKG-INFO
+swy.egg-info/SOURCES.txt
+swy.egg-info/dependency_links.txt
+swy.egg-info/top_level.txt
