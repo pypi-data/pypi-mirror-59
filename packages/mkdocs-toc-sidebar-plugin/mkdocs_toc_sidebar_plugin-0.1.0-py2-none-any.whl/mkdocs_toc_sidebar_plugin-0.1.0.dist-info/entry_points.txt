@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+toc-sidebar = mkdocs_toc_sidebar_plugin.plugin:TocSidebar
+
