@@ -1,0 +1,16 @@
+CHANGES.md,sha256=llBUdvJJ-7N6GYNhT7Vm0HdiiuH9lw9uNXJYCobPlB8,107
+LICENSE,sha256=__gHsn7hyvVMoMNswGOcrTuZ3ph1dnlGA5YnPQZWxiM,1486
+docs/installation.md,sha256=eMt_Gbq4r-Iw61m3h-smGdUdeNvPmG_kLf8XrBDw-S4,55
+docs/quickstart.md,sha256=vhDuQ6tePPY9-_R3vObJXYT-7vzh-POEbamxCVhR8jE,61
+docs/tree.yml,sha256=zYZEVXwYe5su3obOH7yj6W-FQOPYMg3cgxz-3JaUVN8,39
+severus/__init__.py,sha256=9BdYvLpGCXIx-McAQyIaa4Obr19zmOlewwmxjHeMIK8,52
+severus/__version__.py,sha256=QSsOK2YBtUTdjUF5q9cLjUJw8mPdwGp9iNFce_IofX0,24
+severus/apis.py,sha256=ThMdRzKdzb-Dc8-eWqEAT1nsrgV0AtynXCvGGdFnXpA,865
+severus/ctx.py,sha256=xmmuRAyIvfJpHNKSlrhfyKXjbqllieAcFrdHu7Wljuo,1043
+severus/datastructures.py,sha256=k9triQFHqL2be4-_aLkTZDsktLdS3o-rVVjGf1AR7Z0,2314
+severus/language.py,sha256=EmVssTLv7kwXvgapZuyJl_WD1u9QY6bdjSRuHhg-ZdY,3788
+severus/translator.py,sha256=oKTHWDTfbAK_d8nnoXYPInjRjeNZtHArhTJg6xQgPYM,3358
+severus-1.0.0b1.dist-info/LICENSE,sha256=__gHsn7hyvVMoMNswGOcrTuZ3ph1dnlGA5YnPQZWxiM,1486
+severus-1.0.0b1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+severus-1.0.0b1.dist-info/METADATA,sha256=6WOB9gH7Oph0iCboUoUhDQ6N7bPJnhx1SKy5acOi9kE,1615
+severus-1.0.0b1.dist-info/RECORD,,
