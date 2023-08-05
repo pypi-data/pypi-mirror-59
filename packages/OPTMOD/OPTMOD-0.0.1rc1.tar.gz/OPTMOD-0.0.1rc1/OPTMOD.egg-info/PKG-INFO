@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: OPTMOD
+Version: 0.0.1rc1
+Summary: Optimization Modeling Library
+Home-page: UNKNOWN
+Author: Tomas Tinoco De Rubira
+Author-email: ttinoco5687@gmail.com
+License: BSD 2-Clause License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
