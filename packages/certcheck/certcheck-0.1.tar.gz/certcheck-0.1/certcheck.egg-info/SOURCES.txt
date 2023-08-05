@@ -1,0 +1,9 @@
+setup.py
+bin/certcheck
+certcheck/__init__.py
+certcheck.egg-info/PKG-INFO
+certcheck.egg-info/SOURCES.txt
+certcheck.egg-info/dependency_links.txt
+certcheck.egg-info/not-zip-safe
+certcheck.egg-info/requires.txt
+certcheck.egg-info/top_level.txt
