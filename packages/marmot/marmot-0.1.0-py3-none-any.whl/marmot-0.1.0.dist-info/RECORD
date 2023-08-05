@@ -1,0 +1,12 @@
+marmot/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+marmot/automodel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+marmot/automodel/aggregate.py,sha256=X_XUib1ntjGXDET909ubbm-y_a-snIIFv5vYw2ozM2U,775
+marmot/automodel/model.py,sha256=yOM3y4MdGkjMNRkSyjTjRb-0OAL6sDGwZpCicTEGPwk,3247
+marmot/automodel/model_config.py,sha256=QDp0fKKxUAokYPXDWeLc4hY0VDAECWUtIjazk7Ix3tQ,1157
+marmot/automodel/preprocess.py,sha256=aoI8naL8gSxUZC3iqN1LLRKefmC8SJCpalWsLLB7vuU,537
+marmot/base_model.py,sha256=R0s6X2PS5fqgQ41339eS_MyE1syclKe3sxBo9b_cfsg,8270
+marmot/ensemble_model.py,sha256=EkxxuV0-4kAST3UPaRhqbbUPbChY39aNqRlX-RYXkYI,5711
+marmot-0.1.0.dist-info/LICENSE,sha256=8PsSbdLiZkEKtCK4-mEKF2HO6Y58QCC401E6duHC9fY,1085
+marmot-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+marmot-0.1.0.dist-info/METADATA,sha256=svAGXfqO9uASAcmXvKEq8YI0zaidR2QsVV8JDZgMUD8,1257
+marmot-0.1.0.dist-info/RECORD,,
