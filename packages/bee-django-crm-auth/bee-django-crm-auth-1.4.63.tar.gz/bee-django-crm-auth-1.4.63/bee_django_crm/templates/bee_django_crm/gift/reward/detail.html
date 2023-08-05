@@ -1,0 +1,48 @@
+{% extends "bee_django_crm/base.html" %}
+{% load bee_django_crm_filter %}
+{% load static %}
+{% block styles %}
+    <style>
+        .wx_info img {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    {% include 'bee_django_crm/logo.html' %}
+    {% include 'bee_django_crm/nav.html' %}
+    {% include 'bee_django_crm/messages.html' %}
+
+    <h4>详情</h4>
+
+    <table class="table wx_info">
+        <tr>
+            <td class="col-sm-3">活动名称</td>
+            <td>{{ reward.title }}</td>
+        </tr>
+        <tr>
+            <td class="col-sm-3">结束时间</td>
+            <td>{{ reward.end_time }}</td>
+        </tr>
+    </table>
+
+
+{% endblock %}
+
+
+{% block scripts %}
+    <script>
+        {#function click_del(_this) {#}
+        {#    if (!confirm('确认要执行这个操作？')) {#}
+        {#        return false;#}
+        {#    }#}
+        {#    var url = $(_this).attr('data-confirm');#}
+        {#    $.post(url).done(function (data) {#}
+        {#        alert('删除成功!');#}
+        {#        location.href = "{% url 'bee_django_crm:contract_list' %}";#}
+        {#    });#}
+        {
+        #}#}
+    </script>
+{% endblock %}
