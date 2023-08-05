@@ -1,0 +1,586 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html lang="en">
+<head>
+<title>
+ComputationalGraphPrimer-1.0.2.html
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>ComputationalGraphPrimer</strong></big></big> (version 1.0.2, 2020-January-12)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">
+</font></td></tr></table>
+<p><a href="#ComputationalGraphPrimer"><tt>ComputationalGraphPrimer</tt></a>.py<br>
+<tt>
+&nbsp;<br>
+Version:&nbsp;1.0.2<br>
+&nbsp;&nbsp;&nbsp;<br>
+Author:&nbsp;Avinash&nbsp;Kak&nbsp;(kak@purdue.edu)<br>
+&nbsp;<br>
+Date:&nbsp;2020-January-12<br>
+&nbsp;<br>
+&nbsp;<br>
+</tt>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="2"> 
+<TR>
+<TH ALIGN=left>
+<tt>
+<b>Download Version 1.0.2:</b>&nbsp;  
+<a HREF="https://engineering.purdue.edu/kak/distCGP/ComputationalGraphPrimer-1.0.2.tar.gz?download">gztar</a> 
+&nbsp;             
+<br>
+<br>
+&nbsp;
+</tt>
+</TH>
+<TD>
+<tt>
+&nbsp;&nbsp;&nbsp;&nbsp;
+Total number of downloads (all versions): 
+<?php   
+    $file = fopen("HowManyCounts.txt", "r") or exit("Unable to open file!");
+    echo fgets($file);
+    fclose($file);
+?>
+</tt>
+<br>
+<center>
+<tt>
+<font color="red" size="-2">
+&nbsp;&nbsp;&nbsp;&nbsp;
+This count is automatically updated at every rotation of
+<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;
+the weblogs (normally once every two to four days)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+Last updated:
+<?php   
+    $file = fopen("LastUpdated.txt", "r") or exit("Unable to open file!");
+    echo fgets($file);
+    fclose($file);
+?>
+</font>
+</tt>
+</center>
+</TD>
+</TR>
+</TABLE>
+<br>
+<tt>
+<a HREF="ComputationalGraphPrimer-1.0.2_CodeOnly.html">View the main module code file in your browser</a> 
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+<font size="+2" color="red">CHANGES:<br>
+</font>
+<br>
+
+&nbsp;&nbsp;Version&nbsp;1.0.2:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;version&nbsp;reflects&nbsp;the&nbsp;change&nbsp;in&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;module&nbsp;that&nbsp;was<br>
+&nbsp;&nbsp;&nbsp;&nbsp;initially&nbsp;released&nbsp;under&nbsp;the&nbsp;name&nbsp;CompGraphPrimer&nbsp;with&nbsp;version&nbsp;1.0.1<br>
+&nbsp;<br>
+&nbsp;<br>
+<font size="+2" color="red">INTRODUCTION:<br>
+</font>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;module&nbsp;was&nbsp;created&nbsp;with&nbsp;a&nbsp;modest&nbsp;goal&nbsp;in&nbsp;mind:&nbsp;its&nbsp;purpose&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;merely&nbsp;to&nbsp;serve&nbsp;as&nbsp;a&nbsp;prelude&nbsp;to&nbsp;discussing&nbsp;automatic&nbsp;calculation&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;loss&nbsp;gradients&nbsp;in&nbsp;modern&nbsp;Python&nbsp;based&nbsp;platforms&nbsp;for&nbsp;deep&nbsp;learning.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Most&nbsp;students&nbsp;taking&nbsp;classes&nbsp;on&nbsp;deep&nbsp;learning&nbsp;focus&nbsp;on&nbsp;just&nbsp;using&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tools&nbsp;provided&nbsp;by&nbsp;platforms&nbsp;such&nbsp;as&nbsp;PyTorch&nbsp;without&nbsp;any&nbsp;understanding<br>
+&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;how&nbsp;the&nbsp;tools&nbsp;really&nbsp;work.&nbsp;&nbsp;Consider,&nbsp;for&nbsp;example,&nbsp;Autograd&nbsp;---&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;module&nbsp;that&nbsp;is&nbsp;at&nbsp;the&nbsp;heart&nbsp;of&nbsp;PyTorch&nbsp;---&nbsp;for&nbsp;automatic<br>
+&nbsp;&nbsp;&nbsp;&nbsp;differentiation&nbsp;of&nbsp;tensors.&nbsp;With&nbsp;no&nbsp;effort&nbsp;on&nbsp;the&nbsp;part&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;programmer,&nbsp;and&nbsp;through&nbsp;the&nbsp;functionality&nbsp;built&nbsp;into&nbsp;the&nbsp;torch.Tensor<br>
+&nbsp;&nbsp;&nbsp;&nbsp;class,&nbsp;the&nbsp;Autograd&nbsp;module&nbsp;keeps&nbsp;track&nbsp;of&nbsp;a&nbsp;tensor&nbsp;through&nbsp;all<br>
+&nbsp;&nbsp;&nbsp;&nbsp;calculations&nbsp;involving&nbsp;the&nbsp;tensor&nbsp;and&nbsp;computes&nbsp;its&nbsp;partial&nbsp;derivatives<br>
+&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;respect&nbsp;to&nbsp;the&nbsp;other&nbsp;entities&nbsp;involved&nbsp;in&nbsp;the&nbsp;calculations.&nbsp;&nbsp;These<br>
+&nbsp;&nbsp;&nbsp;&nbsp;derivatives&nbsp;are&nbsp;subsequently&nbsp;used&nbsp;to&nbsp;estimate&nbsp;the&nbsp;gradient&nbsp;of&nbsp;the&nbsp;loss<br>
+&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;respect&nbsp;to&nbsp;the&nbsp;learnable&nbsp;parameters&nbsp;and&nbsp;for&nbsp;backpropagating&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;loss.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Now&nbsp;imagine&nbsp;a&nbsp;beginning&nbsp;student&nbsp;trying&nbsp;to&nbsp;make&nbsp;sense&nbsp;of&nbsp;the&nbsp;following<br>
+&nbsp;&nbsp;&nbsp;&nbsp;excerpts&nbsp;from&nbsp;the&nbsp;documentation&nbsp;related&nbsp;to&nbsp;Autograd:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Every&nbsp;operation&nbsp;performed&nbsp;on&nbsp;Tensors&nbsp;creates&nbsp;a&nbsp;new&nbsp;function&nbsp;<a href="__builtin__.html#object">object</a>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that&nbsp;performs&nbsp;the&nbsp;computation,&nbsp;and&nbsp;records&nbsp;that&nbsp;it&nbsp;happened.&nbsp;The<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;history&nbsp;is&nbsp;retained&nbsp;in&nbsp;the&nbsp;form&nbsp;of&nbsp;a&nbsp;DAG&nbsp;of&nbsp;functions,&nbsp;with&nbsp;edges<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;denoting&nbsp;data&nbsp;dependencies&nbsp;(input&nbsp;&lt;-&nbsp;output).&nbsp;Then,&nbsp;when&nbsp;backward<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is&nbsp;called,&nbsp;the&nbsp;graph&nbsp;is&nbsp;processed&nbsp;in&nbsp;the&nbsp;topological&nbsp;ordering,&nbsp;by<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calling&nbsp;backward()&nbsp;methods&nbsp;of&nbsp;each&nbsp;Function&nbsp;<a href="__builtin__.html#object">object</a>,&nbsp;and&nbsp;passing<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returned&nbsp;gradients&nbsp;on&nbsp;to&nbsp;next&nbsp;Functions."<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Check&nbsp;gradients&nbsp;computed&nbsp;via&nbsp;small&nbsp;finite&nbsp;differences&nbsp;against<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;analytical&nbsp;gradients&nbsp;w.r.t.&nbsp;tensors&nbsp;in&nbsp;inputs&nbsp;that&nbsp;are&nbsp;of&nbsp;floating<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;point&nbsp;type&nbsp;and&nbsp;with&nbsp;requires_grad=True."<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;There&nbsp;is&nbsp;a&nbsp;lot&nbsp;going&nbsp;on&nbsp;here:&nbsp;Why&nbsp;do&nbsp;we&nbsp;need&nbsp;to&nbsp;record&nbsp;the&nbsp;history&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;operations&nbsp;carried&nbsp;out&nbsp;on&nbsp;a&nbsp;tensor?&nbsp;&nbsp;What&nbsp;is&nbsp;a&nbsp;DAG?&nbsp;&nbsp;What&nbsp;are&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;returned&nbsp;gradients?&nbsp;&nbsp;Gradients&nbsp;of&nbsp;what?&nbsp;&nbsp;What&nbsp;are&nbsp;the&nbsp;small&nbsp;finite<br>
+&nbsp;&nbsp;&nbsp;&nbsp;differences?&nbsp;&nbsp;Analytical&nbsp;gradients&nbsp;of&nbsp;what?&nbsp;etc.&nbsp;etc.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;goal&nbsp;of&nbsp;the&nbsp;<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a>&nbsp;is&nbsp;serve&nbsp;as&nbsp;a&nbsp;first&nbsp;step&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;understanding&nbsp;the&nbsp;concepts&nbsp;involved&nbsp;in&nbsp;the&nbsp;questions&nbsp;listed&nbsp;above.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;module&nbsp;allows&nbsp;you&nbsp;to&nbsp;create&nbsp;a&nbsp;DAG&nbsp;(Directed&nbsp;Acyclic&nbsp;Graph)&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;variables&nbsp;with&nbsp;a&nbsp;statement&nbsp;like<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expressions&nbsp;=&nbsp;['xx=xa^2',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'xy=ab*xx+ac*xa',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'xz=bc*xx+xy',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'xw=cd*xx+xz^3']<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;where&nbsp;we&nbsp;assume&nbsp;that&nbsp;a&nbsp;symbolic&nbsp;name&nbsp;that&nbsp;beings&nbsp;with&nbsp;the&nbsp;letter&nbsp;'x'&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;variable,&nbsp;all&nbsp;other&nbsp;symbolic&nbsp;names&nbsp;being&nbsp;learnable&nbsp;parameters,&nbsp;and<br>
+&nbsp;&nbsp;&nbsp;&nbsp;where&nbsp;we&nbsp;use&nbsp;'^'&nbsp;for&nbsp;exponentiation.&nbsp;The&nbsp;four&nbsp;expressions&nbsp;shown&nbsp;above<br>
+&nbsp;&nbsp;&nbsp;&nbsp;contain&nbsp;five&nbsp;variables&nbsp;---&nbsp;'xx',&nbsp;'xa',&nbsp;'xy',&nbsp;'xz',&nbsp;and&nbsp;'xw'&nbsp;---&nbsp;and<br>
+&nbsp;&nbsp;&nbsp;&nbsp;four&nbsp;learnable&nbsp;parameters:&nbsp;'ab',&nbsp;'ac',&nbsp;'bc',&nbsp;and&nbsp;'cd'.&nbsp;&nbsp;The&nbsp;DAG&nbsp;that&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;generated&nbsp;by&nbsp;these&nbsp;expressions&nbsp;looks&nbsp;like:<br>
+&nbsp;<br>
+&nbsp;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;________________________________&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xx=xa**2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xa&nbsp;--------------&gt;&nbsp;xx&nbsp;-----------------&gt;&nbsp;xy&nbsp;&nbsp;&nbsp;xy&nbsp;=&nbsp;ab*xx&nbsp;+&nbsp;ac*xa<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\_____________&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V&nbsp;V&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xz&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;xz&nbsp;=&nbsp;bc*xx&nbsp;+&nbsp;xy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-----&gt;&nbsp;xw&nbsp;&lt;----&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xw&nbsp;&nbsp;=&nbsp;cd*xx&nbsp;+&nbsp;xz&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+<br>
+
+
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;By&nbsp;the&nbsp;way,&nbsp;you&nbsp;can&nbsp;call&nbsp;'display_network2()'&nbsp;on&nbsp;an&nbsp;instance&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a>&nbsp;to&nbsp;make&nbsp;a&nbsp;much&nbsp;better&nbsp;looking&nbsp;plot&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;network&nbsp;for&nbsp;any&nbsp;DAG&nbsp;created&nbsp;by&nbsp;the&nbsp;sort&nbsp;of&nbsp;expressions&nbsp;shown&nbsp;above.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;For&nbsp;the&nbsp;educational&nbsp;example&nbsp;shown&nbsp;above,&nbsp;the&nbsp;nodes&nbsp;in&nbsp;the&nbsp;DAG<br>
+&nbsp;&nbsp;&nbsp;&nbsp;correspond&nbsp;to&nbsp;the&nbsp;variables.&nbsp;&nbsp;For&nbsp;a&nbsp;more&nbsp;sophisticated&nbsp;DAG,&nbsp;each&nbsp;node<br>
+&nbsp;&nbsp;&nbsp;&nbsp;would&nbsp;correspond&nbsp;to&nbsp;each&nbsp;operation&nbsp;between&nbsp;the&nbsp;tensors.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;In&nbsp;the&nbsp;DAG&nbsp;shown&nbsp;above,&nbsp;the&nbsp;variable&nbsp;'xa'&nbsp;is&nbsp;an&nbsp;independent&nbsp;variable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;since&nbsp;it&nbsp;has&nbsp;no&nbsp;incoming&nbsp;arcs,&nbsp;and&nbsp;'xw'&nbsp;is&nbsp;an&nbsp;output&nbsp;variable&nbsp;since&nbsp;it<br>
+&nbsp;&nbsp;&nbsp;&nbsp;has&nbsp;no&nbsp;outgoing&nbsp;arcs.&nbsp;A&nbsp;DAG&nbsp;of&nbsp;the&nbsp;sort&nbsp;shown&nbsp;above&nbsp;is&nbsp;represented&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a>&nbsp;by&nbsp;two&nbsp;dictionaries:&nbsp;'depends_on'&nbsp;and&nbsp;'leads_to'.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Here&nbsp;is&nbsp;what&nbsp;the&nbsp;'depends_on'&nbsp;dictionary&nbsp;would&nbsp;look&nbsp;like&nbsp;for&nbsp;the&nbsp;DAG<br>
+&nbsp;&nbsp;&nbsp;&nbsp;shown&nbsp;above:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;depends_on['xx']&nbsp;&nbsp;=&nbsp;&nbsp;['xa']<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;depends_on['xy']&nbsp;&nbsp;=&nbsp;&nbsp;['xa',&nbsp;'xx']<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;depends_on['xz']&nbsp;&nbsp;=&nbsp;&nbsp;['xx',&nbsp;'xy']<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;depends_on['xw']&nbsp;&nbsp;=&nbsp;&nbsp;['xx',&nbsp;'xz']<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Something&nbsp;like&nbsp;"depends_on['xx']&nbsp;=&nbsp;['xa']"&nbsp;is&nbsp;best&nbsp;read&nbsp;as&nbsp;"the&nbsp;vertex<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'xx'&nbsp;depends&nbsp;on&nbsp;the&nbsp;vertex&nbsp;'xa'."&nbsp;&nbsp;Similarly,&nbsp;the&nbsp;"depends_on['xz']&nbsp;=<br>
+&nbsp;&nbsp;&nbsp;&nbsp;['xx',&nbsp;'xy']"&nbsp;is&nbsp;best&nbsp;read&nbsp;aloud&nbsp;as&nbsp;"the&nbsp;vertex&nbsp;'xz'&nbsp;depends&nbsp;on&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;vertices&nbsp;'xx'&nbsp;and&nbsp;'xy'."&nbsp;And&nbsp;so&nbsp;on.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Whereas&nbsp;the&nbsp;'depends_on'&nbsp;dictionary&nbsp;is&nbsp;a&nbsp;complete&nbsp;description&nbsp;of&nbsp;a&nbsp;DAG,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;programming&nbsp;convenience,&nbsp;<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a>&nbsp;also&nbsp;maintains<br>
+&nbsp;&nbsp;&nbsp;&nbsp;another&nbsp;representation&nbsp;for&nbsp;the&nbsp;same&nbsp;graph,&nbsp;as&nbsp;provide&nbsp;by&nbsp;the&nbsp;'leads_to'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dictionary.&nbsp;&nbsp;This&nbsp;dictionary&nbsp;for&nbsp;the&nbsp;same&nbsp;graph&nbsp;as&nbsp;shown&nbsp;above&nbsp;would<br>
+&nbsp;&nbsp;&nbsp;&nbsp;be:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leads_to['xa']&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;['xx',&nbsp;'xy']<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leads_to['xx']&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;['xy',&nbsp;'xz',&nbsp;'xw']<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leads_to['xy']&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;['xz']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leads_to['xz']&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;['xw']<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;"leads_to[xa]&nbsp;=&nbsp;[xx]"&nbsp;is&nbsp;best&nbsp;read&nbsp;as&nbsp;"the&nbsp;outgoing&nbsp;edge&nbsp;at&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;node&nbsp;'xa'&nbsp;leads&nbsp;to&nbsp;the&nbsp;node&nbsp;'xx'."&nbsp;&nbsp;Along&nbsp;the&nbsp;same&nbsp;lines,&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"leads_to['xx']&nbsp;=&nbsp;['xy',&nbsp;'xz',&nbsp;'xw']"&nbsp;is&nbsp;best&nbsp;read&nbsp;as&nbsp;"the&nbsp;outgoing<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;edges&nbsp;at&nbsp;the&nbsp;vertex&nbsp;'xx'&nbsp;lead&nbsp;to&nbsp;the&nbsp;vertices&nbsp;'xy',&nbsp;'xz',&nbsp;and&nbsp;'xw'.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given&nbsp;a&nbsp;computational&nbsp;graph&nbsp;like&nbsp;the&nbsp;one&nbsp;shown&nbsp;above,&nbsp;we&nbsp;are&nbsp;faced<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;the&nbsp;following&nbsp;questions:&nbsp;(1)&nbsp;How&nbsp;to&nbsp;propagate&nbsp;the&nbsp;information<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;the&nbsp;independent&nbsp;nodes&nbsp;---&nbsp;that&nbsp;we&nbsp;can&nbsp;refer&nbsp;to&nbsp;as&nbsp;the&nbsp;input&nbsp;nodes<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;to&nbsp;the&nbsp;output&nbsp;nodes,&nbsp;these&nbsp;being&nbsp;the&nbsp;nodes&nbsp;with&nbsp;only&nbsp;incoming<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;edges?&nbsp;&nbsp;(2)&nbsp;As&nbsp;the&nbsp;information&nbsp;flows&nbsp;in&nbsp;the&nbsp;forward&nbsp;direction,&nbsp;meaning<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;the&nbsp;input&nbsp;nodes&nbsp;to&nbsp;the&nbsp;output&nbsp;nodes,&nbsp;is&nbsp;it&nbsp;possible&nbsp;to&nbsp;estimate<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;partial&nbsp;derivatives&nbsp;that&nbsp;apply&nbsp;to&nbsp;each&nbsp;link&nbsp;in&nbsp;the&nbsp;graph?&nbsp;&nbsp;And,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;finally,&nbsp;(3)&nbsp;Given&nbsp;a&nbsp;scalar&nbsp;value&nbsp;at&nbsp;an&nbsp;output&nbsp;node&nbsp;(which&nbsp;could&nbsp;be<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;loss&nbsp;estimated&nbsp;at&nbsp;that&nbsp;node),&nbsp;can&nbsp;the&nbsp;partial&nbsp;derivatives<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;estimated&nbsp;during&nbsp;the&nbsp;forward&nbsp;pass&nbsp;be&nbsp;used&nbsp;to&nbsp;backpropagate&nbsp;the&nbsp;loss?<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Consider,&nbsp;for&nbsp;example,&nbsp;the&nbsp;directed&nbsp;link&nbsp;between&nbsp;the&nbsp;node&nbsp;'xy'&nbsp;and<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;node&nbsp;'xz'.&nbsp;As&nbsp;a&nbsp;variable,&nbsp;the&nbsp;value&nbsp;of&nbsp;'xz'&nbsp;is&nbsp;calculated&nbsp;through&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;formula&nbsp;"xz&nbsp;=&nbsp;bc*xx&nbsp;+&nbsp;xy".&nbsp;In&nbsp;the&nbsp;forward&nbsp;propagation&nbsp;of&nbsp;information,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;we&nbsp;estimate&nbsp;the&nbsp;value&nbsp;of&nbsp;'xz'&nbsp;from&nbsp;currently&nbsp;known&nbsp;values&nbsp;for&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;learnable&nbsp;parameter&nbsp;'bc'&nbsp;and&nbsp;the&nbsp;variables&nbsp;'xx'&nbsp;and&nbsp;'xy'.&nbsp;&nbsp;In&nbsp;addition<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;variable&nbsp;at&nbsp;the&nbsp;node&nbsp;'xz',&nbsp;we&nbsp;are&nbsp;also&nbsp;interested<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;partial&nbsp;derivative&nbsp;of&nbsp;'xz'&nbsp;with&nbsp;respect&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;other&nbsp;variables&nbsp;that&nbsp;it&nbsp;depends&nbsp;on&nbsp;---&nbsp;'xx'&nbsp;and&nbsp;'xy'&nbsp;---&nbsp;and&nbsp;also&nbsp;with<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;respect&nbsp;to&nbsp;the&nbsp;parameter&nbsp;it&nbsp;depends&nbsp;on,&nbsp;'bc'.&nbsp;&nbsp;For&nbsp;the&nbsp;calculation&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;derivatives,&nbsp;we&nbsp;have&nbsp;a&nbsp;choice:&nbsp;We&nbsp;can&nbsp;either&nbsp;do&nbsp;a&nbsp;bit&nbsp;of&nbsp;computer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;algebra&nbsp;and&nbsp;figure&nbsp;out&nbsp;that&nbsp;the&nbsp;partial&nbsp;of&nbsp;'xz'&nbsp;with&nbsp;respect&nbsp;to&nbsp;'xx'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is&nbsp;equal&nbsp;to&nbsp;the&nbsp;current&nbsp;value&nbsp;for&nbsp;'bc'.&nbsp;&nbsp;Or,&nbsp;we&nbsp;can&nbsp;use&nbsp;the&nbsp;small<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;finite&nbsp;difference&nbsp;method&nbsp;for&nbsp;doing&nbsp;the&nbsp;same,&nbsp;which&nbsp;means&nbsp;that&nbsp;(1)&nbsp;we<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calculate&nbsp;the&nbsp;value&nbsp;of&nbsp;'xz'&nbsp;for&nbsp;the&nbsp;current&nbsp;value&nbsp;of&nbsp;'xx',&nbsp;on&nbsp;the&nbsp;one<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hand,&nbsp;and,&nbsp;on&nbsp;the&nbsp;other,&nbsp;for&nbsp;'xx'&nbsp;plus&nbsp;a&nbsp;delta;&nbsp;(2)&nbsp;take&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;difference&nbsp;of&nbsp;the&nbsp;two;&nbsp;and&nbsp;(3)&nbsp;divide&nbsp;the&nbsp;difference&nbsp;by&nbsp;the&nbsp;delta.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a>&nbsp;module&nbsp;uses&nbsp;the&nbsp;finite&nbsp;differences&nbsp;method&nbsp;for<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;estimating&nbsp;the&nbsp;partial&nbsp;derivatives.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since&nbsp;we&nbsp;have&nbsp;two&nbsp;different&nbsp;types&nbsp;of&nbsp;partial&nbsp;derivatives,&nbsp;partial&nbsp;of&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable&nbsp;with&nbsp;respect&nbsp;to&nbsp;another&nbsp;variable,&nbsp;and&nbsp;the&nbsp;partial&nbsp;of&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variable&nbsp;with&nbsp;respect&nbsp;a&nbsp;learnable&nbsp;parameter,&nbsp;<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uses&nbsp;to&nbsp;different&nbsp;dictionaries&nbsp;for&nbsp;storing&nbsp;this&nbsp;partials&nbsp;during&nbsp;each<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;forward&nbsp;pass.&nbsp;&nbsp;Partials&nbsp;of&nbsp;variables&nbsp;with&nbsp;respect&nbsp;to&nbsp;other&nbsp;variables<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as&nbsp;encountered&nbsp;during&nbsp;forward&nbsp;propagation&nbsp;are&nbsp;stored&nbsp;in&nbsp;the&nbsp;dictionary<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"partial_var_to_var"&nbsp;and&nbsp;the&nbsp;partials&nbsp;of&nbsp;the&nbsp;variables&nbsp;with&nbsp;respect&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;learnable&nbsp;parameters&nbsp;are&nbsp;stored&nbsp;in&nbsp;the&nbsp;dictionary<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;partial_var_to_param.&nbsp;&nbsp;At&nbsp;the&nbsp;end&nbsp;of&nbsp;each&nbsp;forward&nbsp;pass,&nbsp;the&nbsp;relevant<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;partials&nbsp;extracted&nbsp;from&nbsp;these&nbsp;dictionaries&nbsp;are&nbsp;used&nbsp;to&nbsp;estimate&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gradients&nbsp;of&nbsp;the&nbsp;loss&nbsp;with&nbsp;respect&nbsp;to&nbsp;the&nbsp;learnable&nbsp;parameters,&nbsp;as<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;illustrated&nbsp;in&nbsp;the&nbsp;implementation&nbsp;of&nbsp;the&nbsp;method&nbsp;train_on_all_data().<br>
+&nbsp;<br>
+&nbsp;<br>
+<font size="+2" color="red">INSTALLATION:<br>
+</font>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a>&nbsp;class&nbsp;was&nbsp;packaged&nbsp;using&nbsp;setuptools.&nbsp;&nbsp;For<br>
+&nbsp;&nbsp;&nbsp;&nbsp;installation,&nbsp;execute&nbsp;the&nbsp;following&nbsp;command&nbsp;in&nbsp;the&nbsp;source&nbsp;directory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(this&nbsp;is&nbsp;the&nbsp;directory&nbsp;that&nbsp;contains&nbsp;the&nbsp;setup.py&nbsp;file&nbsp;after&nbsp;you&nbsp;have<br>
+&nbsp;&nbsp;&nbsp;&nbsp;downloaded&nbsp;and&nbsp;uncompressed&nbsp;the&nbsp;package):<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sudo&nbsp;python&nbsp;setup.py&nbsp;install<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;and/or,&nbsp;for&nbsp;the&nbsp;case&nbsp;of&nbsp;Python3,&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sudo&nbsp;python3&nbsp;setup.py&nbsp;install<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;On&nbsp;Linux&nbsp;distributions,&nbsp;this&nbsp;will&nbsp;install&nbsp;the&nbsp;module&nbsp;file&nbsp;at&nbsp;a&nbsp;location<br>
+&nbsp;&nbsp;&nbsp;&nbsp;that&nbsp;looks&nbsp;like<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/usr/local/lib/python2.7/dist-packages/<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;and,&nbsp;for&nbsp;the&nbsp;case&nbsp;of&nbsp;Python3,&nbsp;at&nbsp;a&nbsp;location&nbsp;that&nbsp;looks&nbsp;like<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/usr/local/lib/python3.6/dist-packages/<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;you&nbsp;do&nbsp;not&nbsp;have&nbsp;root&nbsp;access,&nbsp;you&nbsp;have&nbsp;the&nbsp;option&nbsp;of&nbsp;working&nbsp;directly<br>
+&nbsp;&nbsp;&nbsp;&nbsp;off&nbsp;the&nbsp;directory&nbsp;in&nbsp;which&nbsp;you&nbsp;downloaded&nbsp;the&nbsp;software&nbsp;by&nbsp;simply<br>
+&nbsp;&nbsp;&nbsp;&nbsp;placing&nbsp;the&nbsp;following&nbsp;statements&nbsp;at&nbsp;the&nbsp;top&nbsp;of&nbsp;your&nbsp;scripts&nbsp;that&nbsp;use<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a>&nbsp;class:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;sys<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sys.path.append(&nbsp;"pathname_to_ComputationalGraphPrimer_directory"&nbsp;)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;To&nbsp;uninstall&nbsp;the&nbsp;module,&nbsp;simply&nbsp;delete&nbsp;the&nbsp;source&nbsp;directory,&nbsp;locate<br>
+&nbsp;&nbsp;&nbsp;&nbsp;where&nbsp;the&nbsp;<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a>&nbsp;module&nbsp;was&nbsp;installed&nbsp;with&nbsp;"locate<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a>"&nbsp;and&nbsp;delete&nbsp;those&nbsp;files.&nbsp;&nbsp;As&nbsp;mentioned&nbsp;above,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;full&nbsp;pathname&nbsp;to&nbsp;the&nbsp;installed&nbsp;version&nbsp;is&nbsp;likely&nbsp;to&nbsp;look&nbsp;like<br>
+&nbsp;&nbsp;&nbsp;&nbsp;/usr/local/lib/python2.7/dist-packages/<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a>*<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;you&nbsp;want&nbsp;to&nbsp;carry&nbsp;out&nbsp;a&nbsp;non-standard&nbsp;install&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a>&nbsp;module,&nbsp;look&nbsp;up&nbsp;the&nbsp;on-line&nbsp;information&nbsp;on<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Disutils&nbsp;by&nbsp;pointing&nbsp;your&nbsp;browser&nbsp;to<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://docs.python.org/dist/dist.html">http://docs.python.org/dist/dist.html</a><br>
+&nbsp;<br>
+<font size="+2" color="red">USAGE:<br>
+</font>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Construct&nbsp;an&nbsp;instance&nbsp;of&nbsp;the&nbsp;<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a>&nbsp;class&nbsp;as&nbsp;follows:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a>&nbsp;import&nbsp;*<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cgp&nbsp;=&nbsp;<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expressions&nbsp;=&nbsp;['xx=xa^2',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'xy=ab*xx+ac*xa',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'xz=bc*xx+xy',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'xw=cd*xx+xz^3'],<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;output_vars&nbsp;=&nbsp;['xw'],<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataset_size&nbsp;=&nbsp;10000,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;learning_rate&nbsp;=&nbsp;1e-6,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grad_delta&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;1e-4,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display_vals_how_often&nbsp;=&nbsp;1000,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cgp.parse_expressions()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cgp.display_network2()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cgp.gen_gt_dataset(vals_for_learnable_params&nbsp;=&nbsp;{'ab':1.0,&nbsp;'bc':2.0,&nbsp;'cd':3.0,&nbsp;'ac':4.0})<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cgp.train_on_all_data()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cgp.plot_loss()<br>
+&nbsp;<br>
+&nbsp;<br>
+<font size="+2" color="red">CONSTRUCTOR&nbsp;PARAMETERS:&nbsp;<br>
+</font>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expressions:&nbsp;These&nbsp;expressions&nbsp;define&nbsp;the&nbsp;computational&nbsp;graph.&nbsp;&nbsp;The<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expressions&nbsp;are&nbsp;based&nbsp;on&nbsp;the&nbsp;following&nbsp;assumptions:&nbsp;(1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;any&nbsp;variable&nbsp;name&nbsp;must&nbsp;start&nbsp;with&nbsp;the&nbsp;letter&nbsp;'x';&nbsp;(2)&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;symbolic&nbsp;name&nbsp;that&nbsp;does&nbsp;not&nbsp;start&nbsp;with&nbsp;'x'&nbsp;is&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;learnable&nbsp;parameter;&nbsp;(3)&nbsp;exponentiation&nbsp;operator&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'^';&nbsp;(4)&nbsp;the&nbsp;symbols&nbsp;'*',&nbsp;'+',&nbsp;and&nbsp;'-'&nbsp;carry&nbsp;their<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usual&nbsp;arithmetic&nbsp;meanings.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;output_vars:&nbsp;Although&nbsp;the&nbsp;parser&nbsp;has&nbsp;the&nbsp;ability&nbsp;to&nbsp;figure&nbsp;out&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nodes&nbsp;in&nbsp;the&nbsp;computational&nbsp;graph&nbsp;represent&nbsp;the&nbsp;output<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variables&nbsp;---&nbsp;these&nbsp;being&nbsp;nodes&nbsp;with&nbsp;no&nbsp;outgoing&nbsp;arcs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;you&nbsp;are&nbsp;allowed&nbsp;to&nbsp;designate&nbsp;the&nbsp;specific&nbsp;output<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variables&nbsp;you&nbsp;are&nbsp;interested&nbsp;in&nbsp;through&nbsp;this<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor&nbsp;parameter.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dataset_size:&nbsp;Although&nbsp;the&nbsp;networks&nbsp;created&nbsp;by&nbsp;an&nbsp;arbitrary&nbsp;set&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expressions&nbsp;are&nbsp;not&nbsp;likely&nbsp;to&nbsp;allow&nbsp;for&nbsp;any&nbsp;true<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;learning&nbsp;of&nbsp;the&nbsp;parameters,&nbsp;nonetheless&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a>&nbsp;allows&nbsp;for&nbsp;the&nbsp;computation&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;loss&nbsp;at&nbsp;the&nbsp;output&nbsp;nodes&nbsp;and&nbsp;backpropagation&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loss&nbsp;to&nbsp;the&nbsp;other&nbsp;nodes.&nbsp;&nbsp;To&nbsp;demonstrate&nbsp;this,&nbsp;we&nbsp;need<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;ground-truth&nbsp;set&nbsp;of&nbsp;input/output&nbsp;values&nbsp;for&nbsp;given<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;for&nbsp;the&nbsp;learnable&nbsp;parameters.&nbsp;&nbsp;The&nbsp;constructor<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parameter&nbsp;'dataset_size'&nbsp;refers&nbsp;to&nbsp;how&nbsp;may&nbsp;of&nbsp;these<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'input/output'&nbsp;pairs&nbsp;would&nbsp;be&nbsp;generated&nbsp;for&nbsp;such<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;experiments.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;learning_rate:&nbsp;Carries&nbsp;the&nbsp;usual&nbsp;meaning&nbsp;for&nbsp;updating&nbsp;the&nbsp;values&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;learnable&nbsp;parameters&nbsp;based&nbsp;on&nbsp;the&nbsp;gradients&nbsp;of&nbsp;the&nbsp;loss<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;respect&nbsp;to&nbsp;those&nbsp;parameters.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;grad_delta:&nbsp;This&nbsp;constructor&nbsp;option&nbsp;sets&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;delta&nbsp;to&nbsp;be<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;used&nbsp;for&nbsp;estimating&nbsp;the&nbsp;partial&nbsp;derivatives&nbsp;with&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;finite&nbsp;difference&nbsp;method.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;display_vals_how_often:&nbsp;This&nbsp;controls&nbsp;how&nbsp;often&nbsp;you&nbsp;will&nbsp;see&nbsp;the&nbsp;result<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;the&nbsp;calculations&nbsp;being&nbsp;carried&nbsp;out&nbsp;in&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;computational&nbsp;graph.&nbsp;&nbsp;Let's&nbsp;say&nbsp;you&nbsp;are&nbsp;experimenting<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;10,000&nbsp;input/output&nbsp;samples&nbsp;for&nbsp;propagation&nbsp;in&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;network,&nbsp;if&nbsp;you&nbsp;set&nbsp;this&nbsp;constructor&nbsp;option&nbsp;to&nbsp;1000,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;you&nbsp;will&nbsp;see&nbsp;the&nbsp;partial&nbsp;derivatives&nbsp;and&nbsp;the&nbsp;values&nbsp;for<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;learnable&nbsp;parameters&nbsp;every&nbsp;1000&nbsp;passes&nbsp;through&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;graph.<br>
+&nbsp;<br>
+<font size="+2" color="red">PUBLIC&nbsp;METHODS:<br>
+</font>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(1)&nbsp;&nbsp;parse_expressions()<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;parses&nbsp;the&nbsp;expressions&nbsp;provided&nbsp;and&nbsp;constructs&nbsp;a&nbsp;DAG<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;them&nbsp;for&nbsp;the&nbsp;variables&nbsp;and&nbsp;the&nbsp;parameters&nbsp;in&nbsp;the&nbsp;expressions.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It&nbsp;is&nbsp;based&nbsp;on&nbsp;the&nbsp;convention&nbsp;that&nbsp;the&nbsp;names&nbsp;of&nbsp;all&nbsp;variables<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin&nbsp;with&nbsp;the&nbsp;character&nbsp;'x',&nbsp;with&nbsp;all&nbsp;other&nbsp;symbolic&nbsp;names&nbsp;being<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;treated&nbsp;as&nbsp;learnable&nbsp;parameters.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(2)&nbsp;&nbsp;display_network2()<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;calls&nbsp;on&nbsp;the&nbsp;networkx&nbsp;module&nbsp;to&nbsp;construct&nbsp;a&nbsp;visual&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;computational&nbsp;graph.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(3)&nbsp;&nbsp;gen_gt_dataset()<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;illustrates&nbsp;that&nbsp;it&nbsp;is&nbsp;trivial&nbsp;to&nbsp;forward-propagate<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;information&nbsp;through&nbsp;the&nbsp;computational&nbsp;graph&nbsp;if&nbsp;you&nbsp;are&nbsp;not<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;concerned&nbsp;about&nbsp;estimating&nbsp;the&nbsp;partial&nbsp;derivatives&nbsp;at&nbsp;the&nbsp;same&nbsp;time.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;is&nbsp;used&nbsp;to&nbsp;generate&nbsp;'dataset_size'&nbsp;number&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;input/output&nbsp;values&nbsp;for&nbsp;the&nbsp;computational&nbsp;graph&nbsp;for&nbsp;given&nbsp;values<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;the&nbsp;learnable&nbsp;parameters.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(4)&nbsp;&nbsp;train_on_all_data()<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;purpose&nbsp;of&nbsp;this&nbsp;method&nbsp;is&nbsp;to&nbsp;call<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;forward_propagate_one_input_sample_with_partial_deriv_calc()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;repeatedly&nbsp;on&nbsp;all&nbsp;input/output&nbsp;ground-truth&nbsp;training&nbsp;data&nbsp;pairs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generated&nbsp;by&nbsp;the&nbsp;method&nbsp;gen_gt_dataset().&nbsp;&nbsp;The&nbsp;call&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;forward_propagate...()&nbsp;method&nbsp;returns&nbsp;the&nbsp;predicted&nbsp;value&nbsp;at&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;output&nbsp;nodes&nbsp;from&nbsp;the&nbsp;supplied&nbsp;values&nbsp;at&nbsp;the&nbsp;input&nbsp;nodes.&nbsp;&nbsp;The<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"train_on_all_data()"&nbsp;method&nbsp;calculates&nbsp;the&nbsp;error&nbsp;associated&nbsp;with<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;predicted&nbsp;value.&nbsp;&nbsp;The&nbsp;call&nbsp;to&nbsp;forward_propagate...()&nbsp;also<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returns&nbsp;the&nbsp;partial&nbsp;derivatives&nbsp;estimated&nbsp;by&nbsp;using&nbsp;the&nbsp;finite<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;difference&nbsp;method&nbsp;in&nbsp;the&nbsp;computational&nbsp;graph.&nbsp;&nbsp;Using&nbsp;the&nbsp;partial<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;derivatives,&nbsp;the&nbsp;"train_on_all_data()"&nbsp;backpropagates&nbsp;the&nbsp;loss&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;interior&nbsp;nodes&nbsp;in&nbsp;the&nbsp;computational&nbsp;graph&nbsp;and&nbsp;updates&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values&nbsp;for&nbsp;the&nbsp;learnable&nbsp;parameters.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(5)&nbsp;&nbsp;forward_propagate_one_input_sample_with_partial_deriv_calc()<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;you&nbsp;want&nbsp;to&nbsp;look&nbsp;at&nbsp;how&nbsp;the&nbsp;information&nbsp;flows&nbsp;in&nbsp;the&nbsp;DAG&nbsp;when<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;you&nbsp;don't&nbsp;have&nbsp;to&nbsp;worry&nbsp;about&nbsp;estimating&nbsp;the&nbsp;partial&nbsp;derivatives,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;see&nbsp;the&nbsp;method&nbsp;gen_gt_dataset().&nbsp;&nbsp;As&nbsp;you&nbsp;will&nbsp;notice&nbsp;in&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;implementation&nbsp;code&nbsp;for&nbsp;that&nbsp;method,&nbsp;there&nbsp;is&nbsp;nothing&nbsp;much&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pushing&nbsp;the&nbsp;input&nbsp;values&nbsp;through&nbsp;the&nbsp;nodes&nbsp;and&nbsp;the&nbsp;arcs&nbsp;of&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;computational&nbsp;graph&nbsp;if&nbsp;we&nbsp;are&nbsp;not&nbsp;concerned&nbsp;about&nbsp;estimating&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;partial&nbsp;derivatives.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On&nbsp;the&nbsp;other&nbsp;hand,&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;see&nbsp;how&nbsp;one&nbsp;might&nbsp;also&nbsp;estimate<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;partial&nbsp;derivatives&nbsp;as&nbsp;during&nbsp;the&nbsp;forward&nbsp;flow&nbsp;of&nbsp;information<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in&nbsp;a&nbsp;computational&nbsp;graph,&nbsp;the&nbsp;forward_propagate...()&nbsp;presented<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;here&nbsp;is&nbsp;the&nbsp;method&nbsp;to&nbsp;examine.&nbsp;&nbsp;We&nbsp;first&nbsp;split&nbsp;the&nbsp;expression&nbsp;that<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;node&nbsp;variable&nbsp;depends&nbsp;on&nbsp;into&nbsp;its&nbsp;constituent&nbsp;parts&nbsp;on&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;basis&nbsp;of&nbsp;'+'&nbsp;and&nbsp;'-'&nbsp;operators&nbsp;and&nbsp;subsequently,&nbsp;for&nbsp;each&nbsp;part,&nbsp;we<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;estimate&nbsp;the&nbsp;partial&nbsp;of&nbsp;the&nbsp;node&nbsp;variable&nbsp;with&nbsp;respect&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variables&nbsp;and&nbsp;the&nbsp;learnable&nbsp;parameters&nbsp;in&nbsp;that&nbsp;part.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(6)&nbsp;&nbsp;plot_loss()<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs&nbsp;a&nbsp;plot&nbsp;of&nbsp;losses&nbsp;during&nbsp;each&nbsp;iteration&nbsp;of&nbsp;the&nbsp;forward<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pass&nbsp;of&nbsp;the&nbsp;data.&nbsp;&nbsp;Do&nbsp;not&nbsp;forget&nbsp;that&nbsp;you&nbsp;are&nbsp;highly&nbsp;unlikely&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;see&nbsp;a&nbsp;loss&nbsp;plot&nbsp;as&nbsp;you&nbsp;would&nbsp;for&nbsp;a&nbsp;neural&nbsp;network.&nbsp;&nbsp;Arbitrary<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;computational&nbsp;graphs,&nbsp;as&nbsp;used&nbsp;for&nbsp;illustrating&nbsp;concepts&nbsp;in&nbsp;this<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;module,&nbsp;are&nbsp;not&nbsp;likely&nbsp;to&nbsp;possess&nbsp;learning&nbsp;capability.<br>
+&nbsp;<br>
+&nbsp;<br>
+<font size="+2" color="red">THE&nbsp;Examples&nbsp;DIRECTORY:<br>
+</font>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;Examples&nbsp;subdirectory&nbsp;in&nbsp;the&nbsp;distribution&nbsp;contains&nbsp;a&nbsp;script&nbsp;named<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"demo.py"&nbsp;that&nbsp;illustrates&nbsp;how&nbsp;you&nbsp;can&nbsp;use&nbsp;this&nbsp;module.&nbsp;&nbsp;In&nbsp;order&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;illustrate&nbsp;in&nbsp;a&nbsp;classroom&nbsp;setting&nbsp;the&nbsp;various&nbsp;concepts&nbsp;that&nbsp;this&nbsp;module<br>
+&nbsp;&nbsp;&nbsp;&nbsp;is&nbsp;meant&nbsp;for,&nbsp;you&nbsp;may&nbsp;need&nbsp;to&nbsp;insert&nbsp;print&nbsp;statements&nbsp;in&nbsp;the&nbsp;various<br>
+&nbsp;&nbsp;&nbsp;&nbsp;module&nbsp;functions.<br>
+&nbsp;<br>
+&nbsp;<br>
+<font size="+2" color="red">BUGS:<br>
+</font>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Please&nbsp;notify&nbsp;the&nbsp;author&nbsp;if&nbsp;you&nbsp;encounter&nbsp;any&nbsp;bugs.&nbsp;&nbsp;When&nbsp;sending<br>
+&nbsp;&nbsp;&nbsp;&nbsp;email,&nbsp;please&nbsp;place&nbsp;the&nbsp;string&nbsp;'<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a>'&nbsp;in&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;subject&nbsp;line&nbsp;to&nbsp;get&nbsp;past&nbsp;the&nbsp;author's&nbsp;spam&nbsp;filter.<br>
+&nbsp;<br>
+&nbsp;<br>
+<font size="+2" color="red">ABOUT&nbsp;THE&nbsp;AUTHOR:<br>
+</font>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;author,&nbsp;Avinash&nbsp;Kak,&nbsp;is&nbsp;a&nbsp;professor&nbsp;of&nbsp;Electrical&nbsp;and&nbsp;Computer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Engineering&nbsp;at&nbsp;Purdue&nbsp;University.&nbsp;&nbsp;For&nbsp;all&nbsp;issues&nbsp;related&nbsp;to&nbsp;this<br>
+&nbsp;&nbsp;&nbsp;&nbsp;module,&nbsp;contact&nbsp;the&nbsp;author&nbsp;at&nbsp;kak@purdue.edu&nbsp;If&nbsp;you&nbsp;send&nbsp;email,&nbsp;please<br>
+&nbsp;&nbsp;&nbsp;&nbsp;place&nbsp;the&nbsp;string&nbsp;"<a href="#ComputationalGraphPrimer">ComputationalGraphPrimer</a>"&nbsp;in&nbsp;your&nbsp;subject&nbsp;line&nbsp;to&nbsp;get<br>
+&nbsp;&nbsp;&nbsp;&nbsp;past&nbsp;the&nbsp;author's&nbsp;spam&nbsp;filter.<br>
+&nbsp;<br>
+<font size="+2" color="red">COPYRIGHT:<br>
+</font>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Python&nbsp;Software&nbsp;Foundation&nbsp;License<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Copyright&nbsp;2020&nbsp;Avinash&nbsp;Kak<br>
+&nbsp;<br>
+@endofdocs</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="copy.html">copy</a><br>
+<a href="math.html">math</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="networkx.html">networkx</a><br>
+<a href="os.html">os</a><br>
+<a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+<a href="re.html">re</a><br>
+<a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="__builtin__.html#object">__builtin__.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="ComputationalGraphPrimer.html#ComputationalGraphPrimer">ComputationalGraphPrimer</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ComputationalGraphPrimer">class <strong>ComputationalGraphPrimer</strong></a>(<a href="__builtin__.html#object">__builtin__.object</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="ComputationalGraphPrimer-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ComputationalGraphPrimer-calculate_loss"><strong>calculate_loss</strong></a>(self, predicted_val, true_val)</dt></dl>
+
+<dl><dt><a name="ComputationalGraphPrimer-display_network1"><strong>display_network1</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ComputationalGraphPrimer-display_network2"><strong>display_network2</strong></a>(self)</dt><dd><tt>Provides&nbsp;a&nbsp;fancier&nbsp;display&nbsp;of&nbsp;the&nbsp;network&nbsp;graph</tt></dd></dl>
+
+<dl><dt><a name="ComputationalGraphPrimer-forward_propagate_one_input_sample_with_partial_deriv_calc"><strong>forward_propagate_one_input_sample_with_partial_deriv_calc</strong></a>(self, sample_index, input_vals_for_ind_vars)</dt><dd><tt>If&nbsp;you&nbsp;want&nbsp;to&nbsp;look&nbsp;at&nbsp;how&nbsp;the&nbsp;information&nbsp;flows&nbsp;in&nbsp;the&nbsp;DAG&nbsp;when&nbsp;you&nbsp;don't&nbsp;have&nbsp;to&nbsp;worry&nbsp;about<br>
+estimating&nbsp;the&nbsp;partial&nbsp;derivatives,&nbsp;see&nbsp;the&nbsp;method&nbsp;<a href="#ComputationalGraphPrimer-gen_gt_dataset">gen_gt_dataset</a>().&nbsp;&nbsp;As&nbsp;you&nbsp;will&nbsp;notice&nbsp;in&nbsp;the<br>
+implementation&nbsp;code&nbsp;for&nbsp;that&nbsp;method,&nbsp;there&nbsp;is&nbsp;nothing&nbsp;much&nbsp;to&nbsp;pushing&nbsp;the&nbsp;input&nbsp;values&nbsp;through<br>
+the&nbsp;nodes&nbsp;and&nbsp;the&nbsp;arcs&nbsp;of&nbsp;a&nbsp;computational&nbsp;graph&nbsp;if&nbsp;we&nbsp;are&nbsp;not&nbsp;concerned&nbsp;about&nbsp;estimating&nbsp;the<br>
+partial&nbsp;derivatives.<br>
+&nbsp;<br>
+On&nbsp;the&nbsp;other&nbsp;hand,&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;see&nbsp;how&nbsp;one&nbsp;might&nbsp;also&nbsp;estimate&nbsp;the&nbsp;partial&nbsp;derivatives&nbsp;as<br>
+during&nbsp;the&nbsp;forward&nbsp;flow&nbsp;of&nbsp;information&nbsp;in&nbsp;a&nbsp;computational&nbsp;graph,&nbsp;the&nbsp;forward_propagate...()<br>
+presented&nbsp;here&nbsp;is&nbsp;the&nbsp;method&nbsp;to&nbsp;examine.&nbsp;&nbsp;We&nbsp;first&nbsp;split&nbsp;the&nbsp;expression&nbsp;that&nbsp;the&nbsp;node&nbsp;<br>
+variable&nbsp;depends&nbsp;on&nbsp;into&nbsp;its&nbsp;constituent&nbsp;parts&nbsp;on&nbsp;the&nbsp;basis&nbsp;of&nbsp;'+'&nbsp;and&nbsp;'-'&nbsp;operators&nbsp;and<br>
+subsequently,&nbsp;for&nbsp;each&nbsp;part,&nbsp;we&nbsp;estimate&nbsp;the&nbsp;partial&nbsp;of&nbsp;the&nbsp;node&nbsp;variable&nbsp;with&nbsp;respect<br>
+to&nbsp;the&nbsp;variables&nbsp;and&nbsp;the&nbsp;learnable&nbsp;parameters&nbsp;in&nbsp;that&nbsp;part.</tt></dd></dl>
+
+<dl><dt><a name="ComputationalGraphPrimer-gen_gt_dataset"><strong>gen_gt_dataset</strong></a>(self, vals_for_learnable_params<font color="#909090">={}</font>)</dt><dd><tt>This&nbsp;method&nbsp;illustrates&nbsp;that&nbsp;it&nbsp;is&nbsp;trivial&nbsp;to&nbsp;forward-propagate&nbsp;the&nbsp;information&nbsp;through<br>
+the&nbsp;computational&nbsp;graph&nbsp;if&nbsp;you&nbsp;are&nbsp;not&nbsp;concerned&nbsp;about&nbsp;estimating&nbsp;the&nbsp;partial&nbsp;derivatives<br>
+at&nbsp;the&nbsp;same&nbsp;time.&nbsp;&nbsp;This&nbsp;method&nbsp;is&nbsp;used&nbsp;to&nbsp;generate&nbsp;'dataset_size'&nbsp;number&nbsp;of&nbsp;input/output<br>
+values&nbsp;for&nbsp;the&nbsp;computational&nbsp;graph&nbsp;for&nbsp;given&nbsp;values&nbsp;for&nbsp;the&nbsp;learnable&nbsp;parameters.</tt></dd></dl>
+
+<dl><dt><a name="ComputationalGraphPrimer-parse_expressions"><strong>parse_expressions</strong></a>(self)</dt><dd><tt>This&nbsp;method&nbsp;creates&nbsp;a&nbsp;DAG&nbsp;from&nbsp;a&nbsp;set&nbsp;of&nbsp;expressions&nbsp;that&nbsp;involve&nbsp;variables&nbsp;and&nbsp;learnable<br>
+parameters.&nbsp;The&nbsp;expressions&nbsp;are&nbsp;based&nbsp;on&nbsp;the&nbsp;assumption&nbsp;that&nbsp;a&nbsp;symbolic&nbsp;name&nbsp;that&nbsp;starts<br>
+with&nbsp;the&nbsp;letter&nbsp;'x'&nbsp;is&nbsp;a&nbsp;variable,&nbsp;with&nbsp;all&nbsp;other&nbsp;symbolic&nbsp;names&nbsp;being&nbsp;learnable&nbsp;parameters.<br>
+The&nbsp;computational&nbsp;graph&nbsp;is&nbsp;represented&nbsp;by&nbsp;two&nbsp;dictionaries,&nbsp;'depends_on'&nbsp;and&nbsp;'leads_to'.<br>
+To&nbsp;illustrate&nbsp;the&nbsp;meaning&nbsp;of&nbsp;the&nbsp;dictionaries,&nbsp;something&nbsp;like&nbsp;"depends_on['xz']"&nbsp;would&nbsp;be<br>
+set&nbsp;to&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;other&nbsp;variables&nbsp;whose&nbsp;outgoing&nbsp;arcs&nbsp;end&nbsp;in&nbsp;the&nbsp;node&nbsp;'xz'.&nbsp;&nbsp;So&nbsp;<br>
+something&nbsp;like&nbsp;"depends_on['xz']"&nbsp;is&nbsp;best&nbsp;read&nbsp;as&nbsp;"node&nbsp;'xz'&nbsp;depends&nbsp;on&nbsp;...."&nbsp;where&nbsp;the<br>
+dots&nbsp;stand&nbsp;for&nbsp;the&nbsp;array&nbsp;of&nbsp;nodes&nbsp;that&nbsp;is&nbsp;the&nbsp;value&nbsp;of&nbsp;"depends_on['xz']".&nbsp;&nbsp;On&nbsp;the&nbsp;other<br>
+hand,&nbsp;the&nbsp;'leads_to'&nbsp;dictionary&nbsp;has&nbsp;the&nbsp;opposite&nbsp;meaning.&nbsp;&nbsp;That&nbsp;is,&nbsp;something&nbsp;like<br>
+"leads_to['xz']"&nbsp;is&nbsp;set&nbsp;to&nbsp;the&nbsp;array&nbsp;of&nbsp;nodes&nbsp;at&nbsp;the&nbsp;ends&nbsp;of&nbsp;all&nbsp;the&nbsp;arcs&nbsp;that&nbsp;emanate<br>
+from&nbsp;'xz'.</tt></dd></dl>
+
+<dl><dt><a name="ComputationalGraphPrimer-plot_loss"><strong>plot_loss</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ComputationalGraphPrimer-train_on_all_data"><strong>train_on_all_data</strong></a>(self)</dt><dd><tt>The&nbsp;purpose&nbsp;of&nbsp;this&nbsp;method&nbsp;is&nbsp;to&nbsp;call&nbsp;<a href="#ComputationalGraphPrimer-forward_propagate_one_input_sample_with_partial_deriv_calc">forward_propagate_one_input_sample_with_partial_deriv_calc</a>()<br>
+repeatedly&nbsp;on&nbsp;all&nbsp;input/output&nbsp;ground-truth&nbsp;training&nbsp;data&nbsp;pairs&nbsp;generated&nbsp;by&nbsp;the&nbsp;method&nbsp;<br>
+<a href="#ComputationalGraphPrimer-gen_gt_dataset">gen_gt_dataset</a>().&nbsp;&nbsp;The&nbsp;call&nbsp;to&nbsp;the&nbsp;forward_propagate...()&nbsp;method&nbsp;returns&nbsp;the&nbsp;predicted&nbsp;value<br>
+at&nbsp;the&nbsp;output&nbsp;nodes&nbsp;from&nbsp;the&nbsp;supplied&nbsp;values&nbsp;at&nbsp;the&nbsp;input&nbsp;nodes.&nbsp;&nbsp;The&nbsp;"<a href="#ComputationalGraphPrimer-train_on_all_data">train_on_all_data</a>()"<br>
+method&nbsp;calculates&nbsp;the&nbsp;error&nbsp;associated&nbsp;with&nbsp;the&nbsp;predicted&nbsp;value.&nbsp;&nbsp;The&nbsp;call&nbsp;to<br>
+forward_propagate...()&nbsp;also&nbsp;returns&nbsp;the&nbsp;partial&nbsp;derivatives&nbsp;estimated&nbsp;by&nbsp;using&nbsp;the&nbsp;finite<br>
+difference&nbsp;method&nbsp;in&nbsp;the&nbsp;computational&nbsp;graph.&nbsp;&nbsp;Using&nbsp;the&nbsp;partial&nbsp;derivatives,&nbsp;the&nbsp;<br>
+"<a href="#ComputationalGraphPrimer-train_on_all_data">train_on_all_data</a>()"&nbsp;backpropagates&nbsp;the&nbsp;loss&nbsp;to&nbsp;the&nbsp;interior&nbsp;nodes&nbsp;in&nbsp;the&nbsp;computational&nbsp;graph<br>
+and&nbsp;updates&nbsp;the&nbsp;values&nbsp;for&nbsp;the&nbsp;learnable&nbsp;parameters.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+
+p<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__author__</strong> = 'Avinash Kak (kak@purdue.edu)'<br>
+<strong>__copyright__</strong> = '(C) 2020 Avinash Kak. Python Software Foundation.'<br>
+<strong>__date__</strong> = '2020-January-12'<br>
+<strong>__url__</strong> = 'https://engineering.purdue.edu/kak/distCGP/ComputationalGraphPrimer-1.0.2.html'<br>
+<strong>__version__</strong> = '1.0.2'</td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#7799ee">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Author</strong></big></font></td></tr>
+<tr><td bgcolor="#7799ee"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Avinash&nbsp;Kak&nbsp;(kak@purdue.edu)</td></tr></table>
+</body></html>

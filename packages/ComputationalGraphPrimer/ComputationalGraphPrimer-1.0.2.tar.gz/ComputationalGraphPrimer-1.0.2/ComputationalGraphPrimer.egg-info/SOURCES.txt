@@ -1,0 +1,15 @@
+ComputationalGraphPrimer-1.0.2.html
+MANIFEST.in
+Makefile
+README
+setup.py
+ComputationalGraphPrimer/ComputationalGraphPrimer.py
+ComputationalGraphPrimer/__init__.py
+ComputationalGraphPrimer.egg-info/PKG-INFO
+ComputationalGraphPrimer.egg-info/SOURCES.txt
+ComputationalGraphPrimer.egg-info/dependency_links.txt
+ComputationalGraphPrimer.egg-info/top_level.txt
+Examples/demo.py
+TestComputationalGraphPrimer/ComputationalGraphPrimer.py
+TestComputationalGraphPrimer/Test.py
+TestComputationalGraphPrimer/TestInstanceCreation.py
