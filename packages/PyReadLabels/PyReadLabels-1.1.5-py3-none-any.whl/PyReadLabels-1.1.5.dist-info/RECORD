@@ -1,0 +1,9 @@
+PyReadLabels/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyReadLabels/pyreadlabels.py,sha256=aIw4B3vaf_8yJOR40yfYgaP5nrxC_wAeT2TGs_Vuvkw,2752
+PyReadLabels/yolov3-tiny-label.cfg,sha256=qraMK-mV-evhGAzd5uCcbiI9gTKpYWtkN6kERI4VwYY,2087
+PyReadLabels/yolov3-tiny-label_84.weights,sha256=UQj6OnvKcTtbYmgmEck73zeyM0bad0484YoqdReSFbI,34935996
+PyReadLabels-1.1.5.dist-info/LICENSE,sha256=JvbecwLDpI7eD6vqeArp44EIw8tua-l3EV89w749eIM,1065
+PyReadLabels-1.1.5.dist-info/METADATA,sha256=RtjJB0JFdYAMIi6NLTqngdaP7WCiG0EDLN7shcr5PM4,1574
+PyReadLabels-1.1.5.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+PyReadLabels-1.1.5.dist-info/top_level.txt,sha256=Dsbqjd422SOYuKhxTrBmwCej6unBgUz_SndE7063E40,13
+PyReadLabels-1.1.5.dist-info/RECORD,,
