@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: aperturecore
+Version: 0.0.5
+Summary: A (unofficial) package for our Aperture Science Cores (tm)
+Home-page: https://github.com/LazyNeko1/ApertureCore
+Author: LazyNeko
+Author-email: lazynekoo@gmail.com
+License: UNKNOWN
+Description: ##  Here at the Aperture Science Laboratory, We  ##
+        ##  are working on a public build for making     ##
+        ##  your own cores!                              ##
+        
+        
+        
+        Filetype refrence:
+        CTV: Core Text Viewer (plaintext)
+        CTP: Core Text Player (variables, GEN)
+        CSP: Core Sound Player (uses CTP variables)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        note: this is not official, this was made by
+              a very small, and dumb neko that likes
+              to do stuff in the worst way possible.
+              But this should work!
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

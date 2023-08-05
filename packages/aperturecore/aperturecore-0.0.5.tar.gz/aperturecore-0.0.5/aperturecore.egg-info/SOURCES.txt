@@ -1,0 +1,12 @@
+MANIFEST.in
+README.ctv
+setup.py
+aperture/__init__.py
+aperture/__s_lib__.py
+aperture/__pycache__/__init__.cpython-36.pyc
+aperture/__pycache__/__s_lib__.cpython-36.pyc
+aperture/examples/fem_1.ctp
+aperturecore.egg-info/PKG-INFO
+aperturecore.egg-info/SOURCES.txt
+aperturecore.egg-info/dependency_links.txt
+aperturecore.egg-info/top_level.txt
