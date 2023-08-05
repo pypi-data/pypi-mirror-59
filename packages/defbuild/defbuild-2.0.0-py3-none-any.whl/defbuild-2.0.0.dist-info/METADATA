@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: defbuild
+Version: 2.0.0
+Summary: Commandline tool for building for Defold
+Home-page: UNKNOWN
+Author: Mattias.Hedberg
+Author-email: hedberg.a.mattias@gmail.com
+License: UNKNOWN
+Requires-Dist: requests
+
+# DefBuild
+
+

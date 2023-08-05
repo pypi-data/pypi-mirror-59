@@ -1,0 +1,10 @@
+defbuild/__init__.py,sha256=t-e_WxcSRqiXeVgVFxVllb16LczOWQAX-IUWNOBM8JU,10856
+defbuild/bob.py,sha256=IyY61VMeATNnMZZOsyB4JKJ4HfL3Jy3oEO0u_nfJE4c,3000
+defbuild/commands.py,sha256=TYeRAtfDyKRhfbhleXXb4V9FdYTJ-U6v3z7sGozqhh4,6532
+defbuild/versions.py,sha256=d3HIDn5JAGJXWdaIi1z9OMgOEPCe_9AF_Qp8XM9BgHc,1948
+defbuild-2.0.0.dist-info/LICENSE,sha256=XeW96PRdF8om_trOc8I9xffppmJThNsawv28hLpXgWs,1091
+defbuild-2.0.0.dist-info/METADATA,sha256=smXBANPLA4m4kJ9a0eeEDwDTD_3GvTZ3nEW7QTkgvw0,242
+defbuild-2.0.0.dist-info/WHEEL,sha256=P3qJ5yBP-M5n4VbrgU3eTDIHvegviaBxiqCi1ejHWOs,97
+defbuild-2.0.0.dist-info/entry_points.txt,sha256=qo2gXr8ERNMPUU7xkMEyTf7VU7Vx-Un4W4xMI1T6KvY,44
+defbuild-2.0.0.dist-info/top_level.txt,sha256=5U3rHl_Ps8c-dxNhiMClf_FUdLmBwdb1FbwJgbrAcs4,9
+defbuild-2.0.0.dist-info/RECORD,,
