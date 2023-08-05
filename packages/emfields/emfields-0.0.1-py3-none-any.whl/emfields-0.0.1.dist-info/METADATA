@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: emfields
+Version: 0.0.1
+Summary: Electric and magnetic field computations
+Home-page: http://github.com
+Author: Koos Zevenhoven
+Author-email: koos.zevenhoven@aalto.fi
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+Requires-Dist: numpy
+
+################################################
+The ``emfields`` package for field computations
+################################################
+
+*************
+What's this?
+*************
+There will be tools for computing magnetic and electric field problems and electromagnetic induction.
+
+
