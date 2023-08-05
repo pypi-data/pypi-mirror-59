@@ -1,0 +1,5 @@
+setuptools
+pip
+click
+wheel
+twine
