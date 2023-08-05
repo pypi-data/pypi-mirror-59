@@ -1,0 +1,13 @@
+pycopy-argparse
+pycopy-array
+pycopy-binascii
+pycopy-byteslib
+pycopy-collections
+pycopy-copy
+pycopy-hashlib
+pycopy-os
+pycopy-socket
+pycopy-string
+pycopy-struct
+pycopy-time
+pycopy-types
