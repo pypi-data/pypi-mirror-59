@@ -1,0 +1,7 @@
+README.md
+setup.py
+poi_spider/__init__.py
+poi_spider.egg-info/PKG-INFO
+poi_spider.egg-info/SOURCES.txt
+poi_spider.egg-info/dependency_links.txt
+poi_spider.egg-info/top_level.txt
