@@ -1,0 +1,11 @@
+croniter<0.4
+django<3.0
+python-dateutil
+requests
+typing
+
+[redis]
+redis<2.11
+
+[sentry]
+raven<5.33
