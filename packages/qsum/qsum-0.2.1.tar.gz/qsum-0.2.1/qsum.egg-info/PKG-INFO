@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: qsum
+Version: 0.2.1
+Summary: Python Checksumming Library
+Home-page: https://github.com/QCoding/qsum
+Author: Justin M. Quartiere
+License: MIT
+Description: Intuitive and extendable checksumming for python objects
+Keywords: checksum checksumming hashing
+Platform: any
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Provides-Extra: test
