@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+apttusvisualizations/__init__.py
+apttusvisualizations/sourcedopps.py
+apttusvisualizations.egg-info/PKG-INFO
+apttusvisualizations.egg-info/SOURCES.txt
+apttusvisualizations.egg-info/dependency_links.txt
+apttusvisualizations.egg-info/not-zip-safe
+apttusvisualizations.egg-info/requires.txt
+apttusvisualizations.egg-info/top_level.txt
