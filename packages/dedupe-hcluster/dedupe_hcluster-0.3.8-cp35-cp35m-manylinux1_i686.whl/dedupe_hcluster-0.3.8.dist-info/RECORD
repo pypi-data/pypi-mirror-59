@@ -1,0 +1,10 @@
+hcluster/hierarchy.py,sha256=uslOrkH56k_jCKGUA7sdsXy4sdOKDQH5osklKesy4Gw,93466
+hcluster/distance.py,sha256=aREWT6rMsIDYCbzJCTrZ0TXyM7GEg2o7f-Ete2O376E,72879
+hcluster/_distance_wrap.cpython-35m-i386-linux-gnu.so,sha256=5U65zWLeRWdNj_ZNRbaC-iITx245r9Dq4pBj556K22k,141612
+hcluster/_hierarchy.cpython-35m-i386-linux-gnu.so,sha256=GjV1iW5i-21kuF9Zjn2qfyyeyosjxR-21-6DSIbBqNk,1029432
+hcluster/__init__.py,sha256=FuA0kLeeVgQ1_LN01Hazz-1opOUSwZTaT4OmHHP_MyM,49
+dedupe_hcluster-0.3.8.dist-info/LICENSE.txt,sha256=7zGYvKziah4VyS85xscp1Za8a-JyrNqAObBiKZQK3rk,1637
+dedupe_hcluster-0.3.8.dist-info/top_level.txt,sha256=Inz6_YsyroIuO_nNL62-HsAv7OSAZydOdUcqtZmwRUU,9
+dedupe_hcluster-0.3.8.dist-info/RECORD,,
+dedupe_hcluster-0.3.8.dist-info/METADATA,sha256=Ubx1g7W3fFCgDSP219TF7F4ueZ6OWd5SrQeABlxmnTc,1627
+dedupe_hcluster-0.3.8.dist-info/WHEEL,sha256=tCsPks9f1Sj2c35D6F9ThbS2yCBn0o6ZDkPlS-yelxA,107
