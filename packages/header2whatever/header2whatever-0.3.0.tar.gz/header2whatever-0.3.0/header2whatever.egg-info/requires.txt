@@ -1,0 +1,5 @@
+robotpy-cppheaderparser>=4.0.0
+jinja2
+pyyaml
+schematics
+pcpp
