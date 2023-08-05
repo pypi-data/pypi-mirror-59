@@ -1,0 +1,14 @@
+bokeh
+Jinja2
+MarkupSafe
+numpy
+packaging
+Pillow
+pscript
+pyparsing
+python-dateutil
+PyYAML
+selenium
+six
+tornado
+urllib3

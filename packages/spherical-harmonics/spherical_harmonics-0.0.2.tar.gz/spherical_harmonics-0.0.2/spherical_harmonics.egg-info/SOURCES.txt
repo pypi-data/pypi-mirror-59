@@ -1,0 +1,13 @@
+README.md
+setup.py
+no_server/__init__.py
+no_server/main.py
+no_server/sh_funcs.py
+server/__init__.py
+server/main.py
+server/spherical_harmonics.py
+spherical_harmonics.egg-info/PKG-INFO
+spherical_harmonics.egg-info/SOURCES.txt
+spherical_harmonics.egg-info/dependency_links.txt
+spherical_harmonics.egg-info/requires.txt
+spherical_harmonics.egg-info/top_level.txt
