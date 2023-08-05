@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+jokettt/__init__.py
+jokettt/board.py
+jokettt/consoleplayer.py
+jokettt/learnerplayer.py
+jokettt/minimaxplayer.py
+jokettt/player.py
+jokettt.egg-info/PKG-INFO
+jokettt.egg-info/SOURCES.txt
+jokettt.egg-info/dependency_links.txt
+jokettt.egg-info/requires.txt
+jokettt.egg-info/top_level.txt
