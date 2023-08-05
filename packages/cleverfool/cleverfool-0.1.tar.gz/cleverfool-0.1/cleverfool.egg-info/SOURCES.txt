@@ -1,0 +1,9 @@
+README.rst
+setup.py
+cleverfool/__init__.py
+cleverfool/wrapper.py
+cleverfool.egg-info/PKG-INFO
+cleverfool.egg-info/SOURCES.txt
+cleverfool.egg-info/dependency_links.txt
+cleverfool.egg-info/not-zip-safe
+cleverfool.egg-info/top_level.txt

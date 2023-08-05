@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cleverfool
+Version: 0.1
+Summary: Thin wrapper to load Foolbox-native attacks in CleverHans 4
+Home-page: https://github.com/wielandbrendel/cleverfool
+Author: Wieland Brendel
+Author-email: wieland.brendel@uni-tuebingen.de
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
