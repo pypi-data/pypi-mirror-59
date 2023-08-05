@@ -1,0 +1,15 @@
+doctr_versions_menu/__init__.py,sha256=XUYhUQMUSShfGKNAYMqwR3MsqfKsdmbPCFyDLvj0Ylc,619
+doctr_versions_menu/cli.py,sha256=ubPBXnfxabZbVw6CALj2hpVC9bPf99WXa_gxqP5eKJ8,62
+doctr_versions_menu/ext.py,sha256=dxQItKpHnmQg7q5LtBqamtBxfjN2SGYow34MMUyir5A,1911
+doctr_versions_menu/_css/badge_only.css,sha256=Zbo_LZVsmuktvRQPVR28UVs2_FZ3oM3qD7NcG7P3n_w,4428
+doctr_versions_menu/_fonts/fontawesome-webfont.eot,sha256=e_yrbbmdXPvxcFygU23ceFhUMsxfpBu9etDwCQM7KXk,165742
+doctr_versions_menu/_fonts/fontawesome-webfont.svg,sha256=rWFXkmwWIrpOHQPUePFUE2hSS_xG9R5C_g2UX37zI-Q,444379
+doctr_versions_menu/_fonts/fontawesome-webfont.ttf,sha256=qljzPyOaD7AvXHpsRcBD16msmgkzNYBmlOzW1O3A1qg,165548
+doctr_versions_menu/_fonts/fontawesome-webfont.woff,sha256=ugxZ3rVFD1y0Gz-TYJ7i0NmVQVh33foiPoqKdTNHTwc,98024
+doctr_versions_menu/_fonts/fontawesome-webfont.woff2,sha256=Kt78vAQefRj88tQXh53FoJmXqmTWdbejxLbOM9oT8_4,77160
+doctr_versions_menu/_template/doctr-versions-menu.js_t,sha256=lV5wCHJkWY8RQoGzUwh728EBfFs--8DErv2lHPU5y5E,5945
+doctr_versions_menu-0.1.0rc1.dist-info/LICENSE,sha256=KJLYxf62o7YqeUNQMP9FiEvftwblEOfB4Vt3d-v4q4k,1072
+doctr_versions_menu-0.1.0rc1.dist-info/METADATA,sha256=1DEypVkMINMq39hYBZuqKcSnPYMs521ym_cStdKMTAE,4910
+doctr_versions_menu-0.1.0rc1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+doctr_versions_menu-0.1.0rc1.dist-info/top_level.txt,sha256=7f20EL2N10Ffy8iYQL-RVov76raSIPNKtcZeRmG2LPE,20
+doctr_versions_menu-0.1.0rc1.dist-info/RECORD,,
