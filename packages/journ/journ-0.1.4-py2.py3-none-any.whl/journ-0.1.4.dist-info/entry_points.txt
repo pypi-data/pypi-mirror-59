@@ -1,0 +1,5 @@
+[console_scripts]
+journ = journ:main
+journ-egg = journ:egg
+journ-upgrade = journ:upgrade
+
