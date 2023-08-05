@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+src/click_from_docstring.py
+src/click_from_docstring.egg-info/PKG-INFO
+src/click_from_docstring.egg-info/SOURCES.txt
+src/click_from_docstring.egg-info/dependency_links.txt
+src/click_from_docstring.egg-info/requires.txt
+src/click_from_docstring.egg-info/top_level.txt
