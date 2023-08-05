@@ -1,0 +1,2 @@
+diceware>=0.9.6
+click>=7.0
