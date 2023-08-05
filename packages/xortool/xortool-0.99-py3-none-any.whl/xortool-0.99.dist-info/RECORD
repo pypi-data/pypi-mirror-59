@@ -1,0 +1,13 @@
+xortool/__init__.py,sha256=NX_w-ZdkpQEmCsn13ztXM5PLZz0968BGJTpHMmujcfM,72
+xortool/args.py,sha256=2meXkyqWgDCI-mDzMZCXsMg7leWVpwTN7Z2Voht5_cE,980
+xortool/charset.py,sha256=eAcqLQginMe8Syuu8LdRuNodgkOxf2eWQLTx7oOtzJI,752
+xortool/colors.py,sha256=RlHIhpooOeBmuISPZlxZ3QnmJyPy_OvP1DFVmR0c4AA,386
+xortool/libcolors.py,sha256=3Vwc6dABofPXTiCqRcNZS3_wpmhqxPGjttRPnz4qCwk,2289
+xortool/routine.py,sha256=Z9COoninDGeZ8JF12aqoJQpM_FExR65G4P23_jN05u4,1875
+xortool-0.99.data/scripts/xortool,sha256=sbnb-YIjVoBWt8S7DwUhFHuhszNvlHsmlz0gaJ0wRZU,11994
+xortool-0.99.data/scripts/xortool-xor,sha256=_-1tYqXpmvSdKCmKjYEPdGRbJgag4KXET0w1BP84tV0,2426
+xortool-0.99.dist-info/LICENSE,sha256=DaDlLqkhGHGq5MUHsdoImkQ2KEfdwprVLBPs-A4ax-Y,1100
+xortool-0.99.dist-info/METADATA,sha256=7clifabk8wBwY9Zp4JQag0Yksc5m1xFyji0wMYlOTf8,6020
+xortool-0.99.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+xortool-0.99.dist-info/top_level.txt,sha256=1CgffYOv4AHC5UpssAEQhGN7g6E3o7fS3GRab777nIA,8
+xortool-0.99.dist-info/RECORD,,
