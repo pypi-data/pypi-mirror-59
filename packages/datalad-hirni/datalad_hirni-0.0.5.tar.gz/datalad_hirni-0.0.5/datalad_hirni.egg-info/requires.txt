@@ -1,0 +1,10 @@
+datalad-container>=0.5.2
+datalad-metalad>=0.2.0
+datalad-neuroimaging
+datalad-webapp
+datalad[full]>=0.12.0rc4
+
+[devel-docs]
+pypandoc
+sphinx-rtd-theme
+sphinx>=1.6.2
