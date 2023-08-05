@@ -1,0 +1,4 @@
+circum
+click
+setuptools
+setuptools-git-version
