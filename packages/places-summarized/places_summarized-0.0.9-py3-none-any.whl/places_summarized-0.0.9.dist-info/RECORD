@@ -1,0 +1,12 @@
+places_summarized/__init__.py,sha256=KyEFxMCdCUOdjIfw14S3XdFInfcXRvRbySRDo_twbMY,97
+places_summarized/client.py,sha256=9fuW28dsDfNSN-pMiYYMsxTP0WdN1QGTFtmwbSyupFI,2647
+places_summarized/errors.py,sha256=EtiUijsRysMqQjF_bmWtcL6YaIRjpNTMFFA8uuLzpII,221
+places_summarized/fake_client.py,sha256=k-WjveJdQQJJIJDrASTz26If1Mcsmny0pUy-xau1j3c,866
+places_summarized/summary.py,sha256=ehLCj3LwB6x7runnqorXF5DWs9nsWseaNmunclZw5Uc,4226
+places_summarized/testing.py,sha256=ajPGUbnOSq1Js3xfsZDvCJFvLIu8mw1uZHva9w7P9gI,530
+places_summarized/data/sydney.json,sha256=YbQym489a4qRX5yy_fdjg89aVmbaI8Faaxs38UcBMzU,38672
+places_summarized-0.0.9.dist-info/LICENSE,sha256=mR4MUNAICqZ6nLgBUYTZLUEuxLVrIdZ52h5hQiD0hmg,1076
+places_summarized-0.0.9.dist-info/METADATA,sha256=ELDDH0nqnJljujbzOPasoxOork8aS_aSIm4HC61d3PI,2291
+places_summarized-0.0.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+places_summarized-0.0.9.dist-info/top_level.txt,sha256=MDj2gNLFZFXmdCWTCn9LR-6AyYi31OUO9ABLKfgqWC0,18
+places_summarized-0.0.9.dist-info/RECORD,,
