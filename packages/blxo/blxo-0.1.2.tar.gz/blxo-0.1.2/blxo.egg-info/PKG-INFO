@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: blxo
+Version: 0.1.2
+Summary: Bent Laue Monochromators X-ray Optics
+Home-page: https://github.com/darwinqii
+Author: Peng Qi
+Author-email: peng.qi@usask.ca
+License: UNKNOWN
+Description: # BLXO (Bent Laue X-ray Optics)
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
