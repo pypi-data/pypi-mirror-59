@@ -1,0 +1,6 @@
+README.md
+setup.py
+Jigmepdf.egg-info/PKG-INFO
+Jigmepdf.egg-info/SOURCES.txt
+Jigmepdf.egg-info/dependency_links.txt
+Jigmepdf.egg-info/top_level.txt
