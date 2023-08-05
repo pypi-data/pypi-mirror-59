@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: libpythonproh
+Version: 0.3
+Summary: Treinamentos diversos em Python para aprender algumas ferramentas em python.
+Home-page: https://github.com/herminiojunior/treinamento
+Author: Herminio Junior
+Author-email: email@gmail.com
+License: UNKNOWN
+Description: Treinamento em Python
+        ===========
+        
+        <p>Treinamentos diversos em Python para aprender algumas ferramentas em python.</p>
+        
+        [![Build Status](https://travis-ci.com/herminiojunior/treinamento.svg?branch=master)](https://travis-ci.com/herminiojunior/treinamento)
+        [![Updates](https://pyup.io/repos/github/herminiojunior/treinamento/shield.svg)](https://pyup.io/repos/github/herminiojunior/treinamento/)
+        [![Python 3](https://pyup.io/repos/github/herminiojunior/treinamento/python-3-shield.svg)](https://pyup.io/repos/github/herminiojunior/treinamento/)
+        [![codecov](https://codecov.io/gh/herminiojunior/treinamento/branch/master/graph/badge.svg)](https://codecov.io/gh/herminiojunior/treinamento)
+        
+        # Para instalar:
+        
+        ```console
+        python3 -m venv .venv
+        source .venv/bin/activate
+        pip install -r requirements-dev.txt
+        ```
+        
+        
+        # Para conferir qualidade do código:
+        
+        ```console
+        flake8
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Pytest
+Description-Content-Type: text/markdown
