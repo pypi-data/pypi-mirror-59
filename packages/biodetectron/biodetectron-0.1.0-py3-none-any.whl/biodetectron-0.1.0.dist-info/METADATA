@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: biodetectron
+Version: 0.1.0
+Summary: Machine learning framework for biological image analysis.
+Home-page: https://github.com/CALM-LMU/BioDetectron
+Author: David Bunk
+Author-email: bunk@bio.lmu.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch (==1.3.1git+git://github.com/facebookresearch/detectron2@54d8e798ade481274387779018969f388dd0443d)
+Requires-Dist: pandas (==0.24.2)
+Requires-Dist: scikit-image (==0.16.2)
+Requires-Dist: imgaug (==0.3.0)
+Requires-Dist: numpy (==1.16.2)
+Requires-Dist: pycocotools (==2.0.0)
+
+# BioDetectron
+Tools for object detection in biological images using Detectron2.
+
+
