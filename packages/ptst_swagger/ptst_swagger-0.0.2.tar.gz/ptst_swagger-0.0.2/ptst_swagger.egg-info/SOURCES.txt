@@ -1,0 +1,8 @@
+README.md
+setup.py
+ptst_swagger/__init__.py
+ptst_swagger/core.py
+ptst_swagger.egg-info/PKG-INFO
+ptst_swagger.egg-info/SOURCES.txt
+ptst_swagger.egg-info/dependency_links.txt
+ptst_swagger.egg-info/top_level.txt
