@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: OpenWorkstation
+Version: 0.0.1
+Summary: The opentrons API is a simple framework designed to make writing automated biology lab protocols easy.
+Home-page: https://github.com
+Author: SebastianEggert
+Author-email: s.eggert@qut.edu.au
+Maintainer: SebastianEggert
+Maintainer-email: s.eggert@qut.edu.au
+License: GNU GENERAL PUBLIC LICENSE
+Keywords: robots,protocols,synbio,pcr,automation,lab
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: dill (==0.2.5)
+Requires-Dist: requests (==2.14.2)
+Requires-Dist: pyserial (==3.2.1)
+
+Sebastian
+
+
+
+pip install openworkstation
+
+
