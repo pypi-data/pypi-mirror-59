@@ -1,0 +1,4 @@
+future
+pillow
+torch>=1.1.0
+tensorflow>=2.0.0
