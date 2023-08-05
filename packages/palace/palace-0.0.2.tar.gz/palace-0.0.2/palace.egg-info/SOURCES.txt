@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+alure.pxd
+palace.cpp
+palace.pyx
+setup.py
+palace.egg-info/PKG-INFO
+palace.egg-info/SOURCES.txt
+palace.egg-info/dependency_links.txt
+palace.egg-info/not-zip-safe
+palace.egg-info/top_level.txt
