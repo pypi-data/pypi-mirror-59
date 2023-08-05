@@ -1,0 +1,10 @@
+nuamo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nuamo/__main__.py,sha256=iudhuuuU2mCXsEXdOKNxy8BxTUynq7NpxC5d3h8RAEc,2744
+nuamo/char_model.py,sha256=hb_HATxTzw4bjJtyCTX4nNsYycZ_AZnGy2wNC_UCiDQ,2754
+nuamo/google_searcher.py,sha256=IXTUsAmn2qmWHsjhsSMTFVQ8lxlFe3uktqAsdutBVyk,1516
+nuamo-0.2.1.dist-info/LICENSE,sha256=2Vyhpq2-ukG4qZfSwf7rHVQIXA9QqfoGGjDK3pb9f3Y,1063
+nuamo-0.2.1.dist-info/METADATA,sha256=Bjrw__2sXSq7naTTkem5ax8k_iTueyLvzx_8dmeR1I4,609
+nuamo-0.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+nuamo-0.2.1.dist-info/entry_points.txt,sha256=vkgWTgGN55_IimHihs93c8CnEMQQACTHS1AzuR4_sGk,47
+nuamo-0.2.1.dist-info/top_level.txt,sha256=KvkMJHknMruziJLHN9eml-MzrYlsKYeUaYFgGihIeqM,6
+nuamo-0.2.1.dist-info/RECORD,,
