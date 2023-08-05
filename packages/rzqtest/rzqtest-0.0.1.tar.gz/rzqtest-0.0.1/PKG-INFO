@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: rzqtest
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/ruanzq/watchdog
+Author: cxzool
+Author-email: 954542623@qq.com
+License: UNKNOWN
+Description: ## 本包用来测试URL有效性及证书剩余时间
+        
+        请用-m参数，调用
+        
+        ```
+        python -m rzqtest args...
+        ```
+        
+        
+        
+        参数列表说明
+        
+        | 参数    | 说明                                                         |
+        | :------ | ------------------------------------------------------------ |
+        | -s      | SMTP服务的寄信人                                             |
+        | -k      | SMTP的授权码                                                 |
+        | -S      | SMTP服务器地址                                               |
+        | -P      | SMTP服务器端口                                               |
+        | -p 小写 | 包含了URL所在的文件路径                                      |
+        | -l      | 收件邮箱地址列表，多个地址间以英文符号;来分隔                |
+        | -e      | 设置证书的剩余天数期限，默认值-1将返回所有可用的URL证书有效期限 |
+        | -t      | 模板文件路径，支持UTF8，默认或无法读取文件的情况下发送纯文本 |
+        | -f      | 设置程序的工作方式，参数cert启动证书检测，参数url启动url有效性检测，参数all启用所有功能 |
+        
+        # 描述
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
