@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: podcraft
+Version: 0.0.1
+Summary: Minecraft server manager, using podman
+Author: Jamie Bliss
+Author-email: jamie@ivyleav.es
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: cached-property (>=1.5.1,<2.0.0)
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: podman (>=1.6.0,<2.0.0)
+Requires-Dist: requests (>=2.22.0,<3.0.0)
+Requires-Dist: toml (>=0.10.0,<0.11.0)
