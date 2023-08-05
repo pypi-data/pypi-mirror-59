@@ -1,0 +1,11 @@
+time_adapters/__init__.py,sha256=7dL6CN6o07QpiTkSzp0LKI3cMEWQg6fVbcs78pR38_E,58
+time_adapters/auto.py,sha256=Udpi6BR2xSdrBpRpUL93DdcG61HPAfJ2c_E_0-proIc,294
+time_adapters/graphene.py,sha256=cwD42vUb4b1xqPrSi96e9pDgVN6cEPavaQC4SzfHFXE,1070
+time_adapters/postgres.py,sha256=8arWUkQ2esQ5dSmgsoRK9zHxoximhLjuep8HjcxSmg4,278
+time_adapters/sqlalchemy.py,sha256=r4VZ4MLtRTt5z2sadTDhJcHGwgkiwt_q8CWg52FY3s4,1260
+time_adapters/sqlite.py,sha256=0efuMwJ-AlOBsPjEfLYvQLh6GVUGdDEsFSRl3sxPwlo,209
+time_adapters-0.0.1.dist-info/LICENSE.txt,sha256=bwZfvn-EzBtwk1CiquzB3KcEEgtXHyQNp3Kse1nrFO4,1081
+time_adapters-0.0.1.dist-info/METADATA,sha256=MhQ90KNqGJhS8jrRSTSea4E0mFCcOTk1ytN8FjR75WM,684
+time_adapters-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+time_adapters-0.0.1.dist-info/top_level.txt,sha256=Y83cw0DFZA5owy3eNpRk2ncVXoWCcdxBztHbJC4DEWE,14
+time_adapters-0.0.1.dist-info/RECORD,,
