@@ -1,0 +1,13 @@
+rolltables/__init__.py,sha256=Nlvpskzs8g3WebeBnwNCEUcVzVfx0I7pnT7ZmCF6eOw,166
+rolltables/constants.py,sha256=pTwPsPo4d4xO4qoqTJq80INDuTX-tvvyNrnMV_Zqfew,23
+rolltables/priortables.py,sha256=ySh2pX-8alYonnfGOpg4Ndi6i-lR0gpkWSXytlRR4cU,2816
+rolltables/rolltables.py,sha256=xGuTL9lh-LV7-Nt6z-hJwNXVMp3t8icxSfSeIq9p7DA,8925
+rolltables/utils.py,sha256=OHcQIQQc_d-o2dimpn5I-raRuSwvAHJGfoclPbr-hrk,638
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/priortables.py,sha256=MZJ6DVw6Zuny87dVGhK8D_HXoLXS9E67JzJQTDuuxgw,1412
+tests/rolltables.py,sha256=Nq2KPUZwCr5bGD7vQ-W0hn0qFY45WLFyHBRpTit8ce0,6310
+rolltables-0.1.0.dist-info/LICENCE,sha256=uF-phKTg-OT3AAI0as4EuhR2hWrkkQo6jNxppUP3xFU,1097
+rolltables-0.1.0.dist-info/METADATA,sha256=SeSA8vtX0XRiTE4yrjrrjOnboz1DmT_na6hpVxSRFTY,658
+rolltables-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+rolltables-0.1.0.dist-info/top_level.txt,sha256=Nhg9VSs98ct0DspXr60rm222CWq2tpk7qg8cQmwVOzE,17
+rolltables-0.1.0.dist-info/RECORD,,
