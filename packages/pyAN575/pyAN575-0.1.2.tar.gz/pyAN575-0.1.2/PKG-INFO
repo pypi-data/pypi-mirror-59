@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pyAN575
+Version: 0.1.2
+Summary: Converts between Microchip's an575 float format and IEEE-754.
+Home-page: https://github.com/ronyb29/pyAN575
+Author: Rony Batista
+Author-email: rony.batista29@gmail.com
+License: UNKNOWN
+Description: # pyAN575
+        
+        Converts between Microchip's an575 float format and IEEE-754.
+        
+        
+        ## Usage
+        ```python
+        from pyAN575.__init__ import An575Float, Ieee754Float
+        
+        an_from_float = An575Float.from_float(3.141592618)
+        print(float(an_from_float) == 3.141592618) # True
+        
+        raw_an = An575Float.from_buffer_copy(b'850beb2a')
+        print(float(raw_an) == 69.95930480957031) # True
+        ```
+        
+        
+Keywords: float,ieee754,AN575
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

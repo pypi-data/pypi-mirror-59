@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+pyAN575/__init__.py
+pyAN575.egg-info/PKG-INFO
+pyAN575.egg-info/SOURCES.txt
+pyAN575.egg-info/dependency_links.txt
+pyAN575.egg-info/top_level.txt
