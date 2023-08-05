@@ -1,0 +1,10 @@
+hybridts/__init__.py,sha256=rqUtJyMLicobcyhmr74TepjmUQAEmlazKT3vjV_n3aA,6
+hybridts/exc.py,sha256=OQZCSEbKw3j6ap5sOzcz6z7ZnGGXzZdLGPEqLa0NXWc,477
+hybridts/tc_state.py,sha256=DLAKKYN3VoDfGxOtL3K-wP3jPF3tGvX_JLuePLJhy6I,8338
+hybridts/type_encoding.py,sha256=FtQKF6LAog98swgeeT56Ej56NWZvzqf_BwJHXnt4JRg,5502
+hybrid_type_system-0.1.dist-info/LICENSE,sha256=ONDYNv3llJjcYUKz7kHAXdp8E1-3OWegz7FsoGy6smM,1120
+hybrid_type_system-0.1.dist-info/METADATA,sha256=JmpfUx57Q90MJX9PMAPjysVLzZTdhckdFvVCwKYElQw,1836
+hybrid_type_system-0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+hybrid_type_system-0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+hybrid_type_system-0.1.dist-info/top_level.txt,sha256=O0QX5dtlhKOpDZY-6U9yuKNAEm1porsCKTc5iSwddIs,9
+hybrid_type_system-0.1.dist-info/RECORD,,
