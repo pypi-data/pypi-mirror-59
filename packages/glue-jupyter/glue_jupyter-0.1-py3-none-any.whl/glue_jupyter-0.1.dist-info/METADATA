@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: glue-jupyter
+Version: 0.1
+Summary: Jupyter notebook/lab viewers for glue
+Home-page: https://glueviz.org
+Author: Maarten A. Breddels
+Author-email: maartenbreddels@gmail.com
+License: BSD License
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: glue-core (>=0.15)
+Requires-Dist: glue-vispy-viewers (>=0.12)
+Requires-Dist: notebook
+Requires-Dist: ipympl
+Requires-Dist: ipyvolume
+Requires-Dist: ipywidgets
+Requires-Dist: ipymaterialui (==0.1.1)
+Requires-Dist: ipyvuetify (<2,>=1.0.4)
+Requires-Dist: bqplot-image-gl
+Requires-Dist: bqplot (>=0.12)
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-automodapi ; extra == 'docs'
+Requires-Dist: numpydoc ; extra == 'docs'
+Requires-Dist: nbsphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: runipy ; extra == 'test'
+Requires-Dist: codecov ; extra == 'test'
+
+UNKNOWN
+
+
