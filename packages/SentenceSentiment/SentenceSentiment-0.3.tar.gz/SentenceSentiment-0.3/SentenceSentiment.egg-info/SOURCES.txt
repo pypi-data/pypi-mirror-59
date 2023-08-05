@@ -1,0 +1,6 @@
+setup.py
+SentenceSentiment/__init__.py
+SentenceSentiment.egg-info/PKG-INFO
+SentenceSentiment.egg-info/SOURCES.txt
+SentenceSentiment.egg-info/dependency_links.txt
+SentenceSentiment.egg-info/top_level.txt
