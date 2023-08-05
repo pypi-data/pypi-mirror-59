@@ -1,0 +1,10 @@
+README.md
+setup.py
+dbq/__init__.py
+dbq/main.py
+dbq.egg-info/PKG-INFO
+dbq.egg-info/SOURCES.txt
+dbq.egg-info/dependency_links.txt
+dbq.egg-info/entry_points.txt
+dbq.egg-info/requires.txt
+dbq.egg-info/top_level.txt
