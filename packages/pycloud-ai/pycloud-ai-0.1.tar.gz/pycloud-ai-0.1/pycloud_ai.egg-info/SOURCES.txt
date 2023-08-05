@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pycloud/__init__.py
+pycloud/core.py
+pycloud_ai.egg-info/PKG-INFO
+pycloud_ai.egg-info/SOURCES.txt
+pycloud_ai.egg-info/dependency_links.txt
+pycloud_ai.egg-info/requires.txt
+pycloud_ai.egg-info/top_level.txt
