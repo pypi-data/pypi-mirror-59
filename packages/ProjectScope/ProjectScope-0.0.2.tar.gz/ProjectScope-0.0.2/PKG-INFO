@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: ProjectScope
+Version: 0.0.2
+Summary: A small project management tool
+Home-page: https://bitbucket.org/CoreyBird/projectscope/src/master/
+Author: Corey Bird
+Author-email: birdcorey@gmail.com
+License: MIT
+Download-URL: https://bitbucket.org/CoreyBird/projectscope/src/master/dist/ProjectScope-0.0.1.tar.gz
+Description: *****************
+        *
+        * Project Scope
+        *
+        *****************
+        
+        Welcome to the Project Scope management tool
+        
+        This tool is created to help manage the semantic connections in a project. The idea
+        is that there are many kinds of data required by a project, and sometimes the organization
+        of ideas cannot be effectively conveyed with a hierarchical file system. Therefore this
+        tool was written to allow the flexibility in how information is linked together.
+        
+        This project is a real work in progress. This was hastily built to solve a problem I was
+        having, and as a result many aspects of the project are sub-par.
+        
+        Supported commands:
+        ```
+        ProjectScope Initialize
+        ```
+        Creates a new project in the current working directory.
+        
+        
+        ```
+        ProjectScope Viewer
+        ```
+        Open a 3D project visualizer application. Requires GUI.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
