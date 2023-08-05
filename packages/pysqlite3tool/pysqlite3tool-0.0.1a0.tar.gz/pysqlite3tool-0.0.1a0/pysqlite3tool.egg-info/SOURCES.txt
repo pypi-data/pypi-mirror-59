@@ -1,0 +1,7 @@
+README.md
+setup.py
+pysqlite3tool/__init__.py
+pysqlite3tool.egg-info/PKG-INFO
+pysqlite3tool.egg-info/SOURCES.txt
+pysqlite3tool.egg-info/dependency_links.txt
+pysqlite3tool.egg-info/top_level.txt
