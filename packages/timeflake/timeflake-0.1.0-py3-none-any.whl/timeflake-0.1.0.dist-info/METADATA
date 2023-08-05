@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: timeflake
+Version: 0.1.0
+Summary: Timeflakes are 64-bit roughly-ordered, globally-unique, URL-safe UUIDs.
+License: MIT
+Author: Anthony Najjar Simon
+Author-email: anthonynsimon@users.noreply.github.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
