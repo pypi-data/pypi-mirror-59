@@ -1,0 +1,13 @@
+README.md
+setup.py
+PloidPy/__init__.py
+PloidPy/binom_model.py
+PloidPy/nbinom.py
+PloidPy/ploidy_model.py
+PloidPy/plot_read_data.py
+PloidPy/process_bam.py
+PloidPy_oaolayin.egg-info/PKG-INFO
+PloidPy_oaolayin.egg-info/SOURCES.txt
+PloidPy_oaolayin.egg-info/dependency_links.txt
+PloidPy_oaolayin.egg-info/top_level.txt
+scripts/PloidPy
