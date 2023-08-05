@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+Makefile
+README
+androidstringslib.rst
+index.rst
+language.rst
+make.bat
+parser.rst
+setup.py
+android_stringslib.egg-info/PKG-INFO
+android_stringslib.egg-info/SOURCES.txt
+android_stringslib.egg-info/dependency_links.txt
+android_stringslib.egg-info/top_level.txt
+androidstringslib/__init__.py
+androidstringslib/languages.py
+androidstringslib/parser.py
