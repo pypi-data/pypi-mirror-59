@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pycloud-ai
+Version: 0.1
+Summary: Pycloud engine
+Home-page: http://pycloud.ai
+Author: Krzysztof Balka
+Author-email: krzysztof.balka@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Requires-Dist: docopt
+Requires-Dist: numpy
+
+# public pycloud package
+
+

@@ -1,0 +1,9 @@
+pycloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycloud/core.py,sha256=vDi0QFTp5qeqvjrt47zKYUwTRB5VyR7-GKb94n6z_WY,95
+pycloud_ai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycloud_ai/core.py,sha256=vDi0QFTp5qeqvjrt47zKYUwTRB5VyR7-GKb94n6z_WY,95
+pycloud_ai-0.1.dist-info/LICENSE.txt,sha256=lbvLdOtz0E0QjXVuhkfPJMTl91LwMDXPeLhmwlftbsI,1068
+pycloud_ai-0.1.dist-info/METADATA,sha256=9wWaeqSHGb_KZUxzY9X5Q76DnxNZsR1wsszWxlHM6jM,341
+pycloud_ai-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pycloud_ai-0.1.dist-info/top_level.txt,sha256=Irm6Ixm8QvZCideNjP-mdUfRcjdK6oP69Nrp3jdUfws,8
+pycloud_ai-0.1.dist-info/RECORD,,
