@@ -1,0 +1,10 @@
+gimpify/__init__.py,sha256=_5NYhykMbstjZYJbyP-s3Q7X-KPrSyAO1pI_3rgLBSk,197
+gimpify/montage.py,sha256=7rEvbNc5cfdtXYlnJUIDGS9z89DEOY1OwG1j4VGRSLc,12702
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/context.py,sha256=BowCgbZupkFL1vKa87ujeb0EOXCvxPGWJKpgaqqCyQI,144
+tests/test_montage.py,sha256=4themxUhn1Pm0gkNfmXK4MoQbkgRcu6CeA_vw116I6Q,2129
+gimpify_watxaut-0.0.1a3.dist-info/LICENCE,sha256=zEVEdFZhzE9MoR85snuvDiPTBIM0Jwwm-4IwTsqdzzc,1073
+gimpify_watxaut-0.0.1a3.dist-info/METADATA,sha256=KSSjF7aE7mbDkZu07doLm4zTJbxdgnRIHBjU4Iwos-E,855
+gimpify_watxaut-0.0.1a3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+gimpify_watxaut-0.0.1a3.dist-info/top_level.txt,sha256=IV5IXQV2hdyWmr91sI3M0-BR-4tfq8YymQql3ctw-tg,8
+gimpify_watxaut-0.0.1a3.dist-info/RECORD,,
