@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+pomodoro-timer/__main__.py
+pomodoro-timer/sounds/metal_gong_1.wav
+pomodoro-timer/sounds/metal_gong_1_sound.txt
+pomodoro-timer/sounds/tolling_bell.wav
+pomodoro-timer/sounds/tolling_bell_sound.txt
+pomodoro_timer.egg-info/PKG-INFO
+pomodoro_timer.egg-info/SOURCES.txt
+pomodoro_timer.egg-info/dependency_links.txt
+pomodoro_timer.egg-info/requires.txt
+pomodoro_timer.egg-info/top_level.txt
