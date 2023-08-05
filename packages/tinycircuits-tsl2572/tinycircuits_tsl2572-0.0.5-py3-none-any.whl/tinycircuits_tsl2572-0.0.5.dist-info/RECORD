@@ -1,0 +1,9 @@
+light-sensor/__init__.py,sha256=CtOD65YmSkOiOFbssicSuUwKSd1_EamWJhuDiCUJnt8,40
+light-sensor/tinycircuits_tsl2572.py,sha256=22AZMOlrMmWL_ukWjityJ0GBcdr-eJ-Jr_tK85QkDRw,3302
+tinycircuits_tsl2572/__init__.py,sha256=CtOD65YmSkOiOFbssicSuUwKSd1_EamWJhuDiCUJnt8,40
+tinycircuits_tsl2572/tinycircuits_tsl2572.py,sha256=76iS0T1EUPZkc-PVIhYJoV7u-eHRtjN7lj1uKoWjbU0,3191
+tinycircuits_tsl2572-0.0.5.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+tinycircuits_tsl2572-0.0.5.dist-info/METADATA,sha256=nGDJ6xBSG9luFvElG6vdOv4HMM9J0aeOX_9RRDIafhI,964
+tinycircuits_tsl2572-0.0.5.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+tinycircuits_tsl2572-0.0.5.dist-info/top_level.txt,sha256=2LJOGTP1g9rAMN5dNqBBM0sjOwh7ltNsVsxV-fTDnYI,21
+tinycircuits_tsl2572-0.0.5.dist-info/RECORD,,
