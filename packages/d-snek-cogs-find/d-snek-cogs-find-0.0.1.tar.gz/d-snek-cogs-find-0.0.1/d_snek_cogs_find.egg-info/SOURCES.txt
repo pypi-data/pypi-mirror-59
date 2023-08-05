@@ -1,0 +1,7 @@
+setup.py
+cogs/find/__init__.py
+d_snek_cogs_find.egg-info/PKG-INFO
+d_snek_cogs_find.egg-info/SOURCES.txt
+d_snek_cogs_find.egg-info/dependency_links.txt
+d_snek_cogs_find.egg-info/requires.txt
+d_snek_cogs_find.egg-info/top_level.txt

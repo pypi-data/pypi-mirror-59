@@ -1,0 +1,7 @@
+d-snek>=1.2.4
+discord.py>=1.2.5
+ruamel-yaml>=0.16.5
+
+[dev]
+ipython
+twine
