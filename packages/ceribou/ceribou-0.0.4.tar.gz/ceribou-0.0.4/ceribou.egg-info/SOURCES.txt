@@ -1,0 +1,9 @@
+setup.py
+ceribou/__init__.py
+ceribou/ceribou.py
+ceribou/ceribou2.py
+ceribou.egg-info/PKG-INFO
+ceribou.egg-info/SOURCES.txt
+ceribou.egg-info/dependency_links.txt
+ceribou.egg-info/requires.txt
+ceribou.egg-info/top_level.txt
