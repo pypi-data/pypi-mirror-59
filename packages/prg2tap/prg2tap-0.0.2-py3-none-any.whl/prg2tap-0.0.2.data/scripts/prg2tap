@@ -1,0 +1,4 @@
+#!python
+
+from prg2tap import convert
+convert()
