@@ -1,0 +1,17 @@
+api_permission/__init__.py,sha256=2zE0fONHBJzPlnxObQTrcK6zhLelM2ymOFcJGt9lOAI,54
+api_permission/admin.py,sha256=iE21qslCI2GF5FR0TtFl5IPtpKrtvZ2gEoggl2Lc-n4,270
+api_permission/apps.py,sha256=cSjl6IkV2pV1fewZhEFsOMqfmfCwGnhaxHojXOZjRnM,127
+api_permission/exceptions.py,sha256=dBotGnmUi_pIgOhePPZaIQuILz1bk19WEvNvfBm5xj0,50
+api_permission/middleware.py,sha256=cRvxwKLPu8kiFXqpmY9aHpSQm9bKdz51d7DIYGlTd3g,2402
+api_permission/models.py,sha256=wt2ZCjPxrdBtSp6jTcH0YAXWaPqpYpeWyIzVctPYhn0,1019
+api_permission/serializers.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api_permission/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+api_permission/urls.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api_permission/views.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api_permission/migrations/0001_initial.py,sha256=DZBnc3xHMD9_0G2_EcZEq4J2Wii2GQlD5Vv4Q3AJl5o,1439
+api_permission/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_api_permission-0.0.1.dist-info/LICENSE,sha256=T-YMOPISYEGrBZBorVchalJ8XUKcSVLx2UoK8SM9uIs,1070
+django_api_permission-0.0.1.dist-info/METADATA,sha256=l8y0Mlm6M6G7Z43mtTX7doXcH5O27sxNhYPs8Q0QyDQ,1865
+django_api_permission-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_api_permission-0.0.1.dist-info/top_level.txt,sha256=yagGEVqDWSu0YD4Syh0ETrSVHHkHk3YU04OFFm6spG8,15
+django_api_permission-0.0.1.dist-info/RECORD,,
