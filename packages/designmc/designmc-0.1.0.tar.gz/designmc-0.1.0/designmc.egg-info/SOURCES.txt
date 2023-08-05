@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+designmc/__init__.py
+designmc/cli.py
+designmc/designmc.py
+designmc.egg-info/PKG-INFO
+designmc.egg-info/SOURCES.txt
+designmc.egg-info/dependency_links.txt
+designmc.egg-info/entry_points.txt
+designmc.egg-info/not-zip-safe
+designmc.egg-info/requires.txt
+designmc.egg-info/top_level.txt
