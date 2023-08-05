@@ -1,0 +1,3 @@
+
+[byro.plugin]
+byro_mailman=byro_mailman:ByroPluginMeta
