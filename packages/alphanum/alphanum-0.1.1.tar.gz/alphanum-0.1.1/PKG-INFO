@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: alphanum
+Version: 0.1.1
+Summary: Generates random alphanumeric strings.
+Home-page: https://github.com/clpo13/alphanum
+License: MIT
+Keywords: string,random,pseudo-random,generator
+Author: Cody Logan
+Author-email: clpo13@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Repository, https://github.com/clpo13/repository
+Description-Content-Type: text/markdown
+
+# alphanum
+
+Simple Python library to generate pseudo-random alphanumeric strings of
+arbitrary length. Requires Python 3.6+.
+
+## Usage
+
+```python
+import alphanum
+
+foo = alphanum.generate(10)
+print(foo)
+```
+
+## License
+
+Copyright (c) 2020 Cody Logan. MIT licensed.
+
