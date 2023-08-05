@@ -1,0 +1,8 @@
+README.md
+setup.py
+aria2_json_rpc.egg-info/PKG-INFO
+aria2_json_rpc.egg-info/SOURCES.txt
+aria2_json_rpc.egg-info/dependency_links.txt
+aria2_json_rpc.egg-info/top_level.txt
+aria2_rpc/Aria2.py
+aria2_rpc/__init__.py
