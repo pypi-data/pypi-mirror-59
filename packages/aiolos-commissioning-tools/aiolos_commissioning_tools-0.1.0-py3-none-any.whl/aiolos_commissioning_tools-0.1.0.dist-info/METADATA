@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: aiolos-commissioning-tools
+Version: 0.1.0
+Summary: data reduction tools for general aerodynamic measurements
+Home-page: https://github.com/csooriyakumaran/aiolos-commissioning-tools
+Author: Christopher Sooriyakumaran
+Author-email: c.sooriyakumaran@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: pandas
+
+aiolos-commissioning-tools
+==========================
+
+.. image:: https://img.shields.io/pypi/v/aiolos-commissioning-tools.svg
+    :target: https://pypi.python.org/pypi/aiolos-commissioning-tools
+    :alt: Latest PyPI version
+
+data reduction tools for general aerodynamic measurements
+
+Usage
+-----
+
+Installation
+------------
+
+Requirements
+^^^^^^^^^^^^
+
+Compatibility
+-------------
+
+Licence
+-------
+
+Authors
+-------
+
+`aiolos-commissioning-tools` was written by `Christopher Sooriyakumaran <c.sooriyakumaran@gmail.com>`_.
+
+
