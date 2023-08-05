@@ -1,0 +1,53 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  i18n_domain="collective.resume">
+
+
+  <!-- Helper view & Report Template for typing -->
+<!--
+  <configure
+    zcml:condition="installed gene.typing">
+    <browser:page
+      for="gene.typing.interfaces.ITyping"
+      class="collective.resume.adapters.typing.ReportHelperView"
+      name="collective_helper_view"
+      permission="zope2.View"
+      layer="collective.reflex.interfaces.ICollectiveResumeLayer"
+    />
+    <adapter
+      for="gene.typing.interfaces.ITyping"
+      factory="collective.resume.adapters.typing.TemplateConfigure"
+      provides="collective.reflex.interfaces.IBaseTemplateConfigure"
+      permission="zope2.View"
+    />
+    <utility
+      component="collective.resume.interfaces.ITypingTemplateConfigure"
+      provides="collective.reflex.interfaces.IBaseTemplateConfigure"
+      name="Typing"
+    />
+  </configure>
+-->
+
+  <!-- Helper view & Report Template for genebpo -->
+  <configure
+    zcml:condition="installed unimer.genebpo">
+    <utility
+      component="collective.resume.interfaces.IBpoTemplateConfigure"
+      provides="collective.reflex.interfaces.IBaseTemplateConfigure"
+      name="Bpo"
+    />
+  </configure>
+
+  <!-- Helper view & Report Template for genechip -->
+  <configure
+    zcml:condition="installed unimer.genechip">
+    <utility
+      component="collective.resume.interfaces.IChipTemplateConfigure"
+      provides="collective.reflex.interfaces.IBaseTemplateConfigure"
+      name="Chip"
+    />
+  </configure>
+
+</configure>

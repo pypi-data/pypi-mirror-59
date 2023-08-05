@@ -1,0 +1,48 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:zcml="http://namespaces.zope.org/zcml">
+
+  <configure
+    zcml:condition="installed unimer.genebpo">
+    <subscriber
+      for="unimer.genebpo.content.bpo.IBpo
+           collective.reflex.interfaces.IBeforeReportCreatedEvent"
+      handler=".anything.pre_handle_chip"
+    />
+    <subscriber
+      for="unimer.genebpo.content.bpo.IBpo
+           collective.reflex.interfaces.IBeforeSubReportCreatedEvent"
+      handler=".anything.pre_handle_cnv"
+    />
+    <subscriber
+      for="unimer.genebpo.content.bpo.IBpo
+           collective.reflex.interfaces.IBeforeSubReportCreatedEvent"
+      handler=".anything.pre_handle_ra"
+    />
+    <subscriber
+      for="unimer.genebpo.content.bpo.IBpo
+           collective.reflex.interfaces.IBeforeSubReportCreatedEvent"
+      handler=".anything.pre_handle_fxs"
+    />
+  </configure>
+
+  <configure
+    zcml:condition="installed unimer.genechip">
+    <subscriber
+      for="unimer.genechip.content.chip.IChip
+           collective.reflex.interfaces.IBeforeReportCreatedEvent"
+      handler=".anything.pre_handle_chip"
+    />
+    <subscriber
+      for="unimer.genechip.content.chip.IChip
+           collective.reflex.interfaces.IBeforeSubReportCreatedEvent"
+      handler=".anything.pre_handle_cnv"
+    />
+    <subscriber
+      for="unimer.genechip.content.chip.IChip
+           collective.reflex.interfaces.IBeforeSubReportCreatedEvent"
+      handler=".anything.pre_handle_pgt"
+    />
+  </configure>
+
+</configure>

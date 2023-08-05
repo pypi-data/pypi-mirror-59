@@ -1,0 +1,39 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  i18n_domain="collective.resume">
+
+  <!--
+      <utility
+          factory=".typing.TemplatesVocabularyFactory"
+          name="collective.resume.typing_templates"
+      />
+  -->
+  <configure
+    zcml:condition="installed unimer.genebpo">
+    <utility
+      factory=".bpo.TemplatesVocabularyFactory"
+      name="collective.resume.bpo_templates"
+    />
+  </configure>
+  <utility
+    factory=".bpo.ProjectTypeVocabularyFactory"
+    name="collective.resume.bpo_project"
+  />
+
+  <configure
+    zcml:condition="installed unimer.genechip">
+    <utility
+      factory=".chip.TemplatesVocabularyFactory"
+      name="collective.resume.chip_templates"
+    />
+
+    <utility
+      factory=".chip.ProjectTypeVocabularyFactory"
+      name="collective.resume.chip_project"
+    />
+  </configure>
+
+  <!-- -*- extra stuff goes here -*- -->
+
+</configure>

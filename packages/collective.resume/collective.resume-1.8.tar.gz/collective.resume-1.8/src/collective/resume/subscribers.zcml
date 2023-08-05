@@ -1,0 +1,9 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:zcml="http://namespaces.zope.org/zcml">
+
+  <subscriber
+    for="plone.dexterity.interfaces.IDexterityContent
+         Products.CMFCore.interfaces.IActionSucceededEvent"
+    handler=".subscribers.handle_obj_cnv_desc" />
+
+</configure>

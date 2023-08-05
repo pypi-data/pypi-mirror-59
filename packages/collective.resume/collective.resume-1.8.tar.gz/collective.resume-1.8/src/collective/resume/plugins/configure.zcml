@@ -1,0 +1,20 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml">
+
+    <!-- Typing -->
+    <subscriber
+         for="plone.dexterity.interfaces.IDexterityContent"
+         factory=".deaf.DemoAttachment"
+         provides="collective.reflex.interfaces.IReportsAttachment"
+         zcml:condition="installed collective.typing"
+       />
+
+    <subscriber
+         for="plone.dexterity.interfaces.IDexterityContent"
+         factory=".anything.AttachmentCnv"
+         provides="collective.reflex.interfaces.IReportsAttachment"
+         zcml:condition="installed unimer.genechip"
+       />
+
+</configure>

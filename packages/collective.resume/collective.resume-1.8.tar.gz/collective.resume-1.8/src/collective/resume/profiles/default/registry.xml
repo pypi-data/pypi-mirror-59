@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<registry>
+    <records interface="collective.resume.interfaces.IBpoTemplateConfigure" />
+    <records interface="collective.resume.interfaces.IChipTemplateConfigure" />
+<!--    <records interface="collective.resume.interfaces.ITypingTemplateConfigure" />-->
+<!-- -*- extra stuff goes here -*- -->
+
+</registry>

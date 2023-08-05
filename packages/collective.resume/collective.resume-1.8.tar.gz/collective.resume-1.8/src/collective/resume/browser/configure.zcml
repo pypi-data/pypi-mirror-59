@@ -1,0 +1,53 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  i18n_domain="collective.resume">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml"/>
+  <browser:jbot
+    directory="overrides"
+    layer="collective.resume.interfaces.ICollectiveResumeLayer"
+  />
+
+  <!-- Publish static files -->
+  <plone:static
+    name="collective.resume"
+    type="plone"
+    directory="static"
+  />
+
+  <!-- Register the control panel -->
+  <!--
+  <browser:page
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.TypingReportControlPanelView"
+      template="templates/report_settings.pt"
+      name="resume-controlpanel-typing"
+      permission="cmf.ManagePortal"
+      layer="collective.resume.interfaces.ICollectiveResumeLayer"
+      />
+-->
+
+  <browser:page
+    zcml:condition="installed unimer.genebpo"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    class=".controlpanel.BpoReportControlPanelView"
+    name="resume-controlpanel-bpo"
+    permission="cmf.ManagePortal"
+    layer="collective.resume.interfaces.ICollectiveResumeLayer"
+  />
+
+  <browser:page
+    zcml:condition="installed unimer.genechip"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    class=".controlpanel.ChipReportControlPanelView"
+    name="resume-controlpanel-chip"
+    permission="cmf.ManagePortal"
+    layer="collective.resume.interfaces.ICollectiveResumeLayer"
+  />
+
+
+</configure>
