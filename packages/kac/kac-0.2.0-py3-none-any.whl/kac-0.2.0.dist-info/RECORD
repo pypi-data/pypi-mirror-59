@@ -1,0 +1,14 @@
+kac/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kac/changelog.py,sha256=ebn4dOHvwzcvH8bEOqVi6YHF2tTu-_PaI_r7cWtzwgg,8409
+kac/kac.py,sha256=qxer-rxdhZ2DBoXSHcLHBuTYtdEIFUffyNlzWiHbWD0,1407
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_changelog/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kac-0.2.0.dist-info/LICENSE,sha256=3w_dVyjq4F2Wb1G7NKRs6oQLS9kkA2-L5W1en8e0cxw,1066
+kac-0.2.0.dist-info/METADATA,sha256=UVM0Ilx6j63l7-Xcz-5KXGyqcwKTjGxh8qntHxBEPIk,1362
+kac-0.2.0.dist-info/SOURCES (adams-mac-mini.velsol.com's conflicted copy 2019-12-22).txt,sha256=HEiizI-yuUnjvTpnM8lhCkq_bm1pUu6qShVvYb690XM,277
+kac-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+kac-0.2.0.dist-info/entry_points.txt,sha256=IYSVNOfSSk6BMKrpIg8VhZBg8A8M2Sn8RqVrFZtGQLQ,55
+kac-0.2.0.dist-info/requires (adams-mac-mini.velsol.com's conflicted copy 2019-12-22).txt,sha256=zjSU5--nEx7d5xKGqcRrxNMXhVbW_ILDbmKzXhgc9ys,47
+kac-0.2.0.dist-info/top_level (adams-mac-mini.velsol.com's conflicted copy 2019-12-22).txt,sha256=VzT8U_AjKHngpPasGXJ8obhIROB1Pt8B-TAZyqe3GE4,10
+kac-0.2.0.dist-info/top_level.txt,sha256=VzT8U_AjKHngpPasGXJ8obhIROB1Pt8B-TAZyqe3GE4,10
+kac-0.2.0.dist-info/RECORD,,
