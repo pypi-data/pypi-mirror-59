@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: cimren-helpers
+Version: 1.0.3
+Summary: Helper functions
+Home-page: https://github.com/emrahcimren/helper_functions
+Author: cimren
+Author-email: cimren.1@gmail.com
+License: MIT
+Description: **Helper Functions**
+        =================
+        
+        This repo provides helper functions for
+        
+        - Listing files in a directory
+        - Calculating Haversine Distance in miles
+        
+        Installation
+        ------------
+        
+        ```
+        pip install cimren-helpers
+        ```
+        
+        How to use
+        ----------
+        
+        ```
+        from helpers import files
+        
+        file_list = files.get_all_files_in_directory('.')
+        ```
+        
+        ```
+        from helpers import haversine_distance
+        
+        distance = haversine_distance.calculate_haversine_distance(from_latitude=[47.6062],
+                                                                   from_longitude=[122.3321],
+                                                                   to_latitude=[47.5301],
+                                                                   to_longitude=[122.0326])
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
