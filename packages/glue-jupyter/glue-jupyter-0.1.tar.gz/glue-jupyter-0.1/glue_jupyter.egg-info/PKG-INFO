@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: glue-jupyter
+Version: 0.1
+Summary: Jupyter notebook/lab viewers for glue
+Home-page: https://glueviz.org
+Author: Maarten A. Breddels
+Author-email: maartenbreddels@gmail.com
+License: BSD License
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: test
+Provides-Extra: docs
