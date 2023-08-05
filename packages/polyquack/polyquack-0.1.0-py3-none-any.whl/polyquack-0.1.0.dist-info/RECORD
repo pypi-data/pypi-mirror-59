@@ -1,0 +1,8 @@
+polyquack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polyquack/pluralization.py,sha256=rg7k37KrzqB9Em1bOAdWLm03Ggfu6gUe2_XtWb7ZWoU,4938
+polyquack/pluralization_ranges.py,sha256=SEOyR1KH9UV-ad9wAuMHORZwdAPqFtGXQjTeRofLhZU,544
+polyquack/rules.py,sha256=bP6M0vYdsUje3eiesvAsYAeH5YLw6eD_NJnYkBQsuNs,3526
+polyquack-0.1.0.dist-info/LICENSE,sha256=SzA6QN4FLNIXafzT0Z8fZKTc-bITgg6FiO1ZlOJrfCg,1516
+polyquack-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+polyquack-0.1.0.dist-info/METADATA,sha256=ZRL9WAFNNSiJLtmlfA5CNj4hMox1rbNGV_MH2mQQc-c,2337
+polyquack-0.1.0.dist-info/RECORD,,
