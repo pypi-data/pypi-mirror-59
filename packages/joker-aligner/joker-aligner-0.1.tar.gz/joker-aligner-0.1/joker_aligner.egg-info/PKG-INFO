@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: joker-aligner
+Version: 0.1
+Summary: Global, local and overlap sequence alignment.
+Home-page: https://github.com/frozflame/joker-aligner
+Author: frozflame
+Author-email: frozflame@outlook.com
+License: GNU General Public License (GPL)
+Description: joker-aligner
+        =============
+        
+        Global, local and overlap sequence alignment.
+        
+        ```python
+        from joker.aligner import get_aligner
+        
+        s1 = 'MKMRGIILAGGSGTRLYPVTMAVSKQLLPIYDKPMIYYPLSTLMLAGIRDILIISTPQD'
+        s2 = 'MKGIKILAGGSGSSTRLYPITRGVSKQLLPVYDKPMLAGIRDILVITAPENASTTTTTT'
+        
+        aligner = get_aligner('blosum62')
+        ali = aligner(s1, s2)
+        
+        
+        
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
