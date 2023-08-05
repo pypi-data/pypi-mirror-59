@@ -1,0 +1,30 @@
+CHANGES
+=======
+
+1.0.1
+-----
+
+* specify readme format
+
+1.0.0
+-----
+
+* update test hashes to include timestamps
+* add proper README
+* fix type annotations
+* add expected value for a specific timestamp
+* ensure logs respect timezone
+* use arrow instead of datetime for improved datetime support
+* update readme to add coverage badge
+* enable coveralls coverage check
+* raise coverage
+* added a mode to raise exceptions when an exception occurs
+* allow record fields to be read back from a dump
+* finalize typing support
+* use base64 for message storage
+* fix requirements
+* fix typo in travis config
+* add travis config
+* add project files
+* working chain system
+* Initial commit
