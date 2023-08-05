@@ -1,0 +1,9 @@
+httpself/__init__.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+httpself/cli.py,sha256=g9x_HgqId_V0bTv-R5yg2-5LPbs005ZrcFuVVQLF6XE,1064
+httpself/security.py,sha256=J26gJGJ_wscyFPaqaEmAq7D9Sxgz8xfUOfmNwXjSt34,1520
+httpself/server.py,sha256=7bpl6jGY5aLjqBowBxx1HvcrHjbVNJR3eKKLR1SGGqE,538
+httpself-1.0.0.dist-info/entry_points.txt,sha256=KnChWQ2uzD43irHhrlElAUm50cKM6aO3S7-EVuDlnUc,42
+httpself-1.0.0.dist-info/LICENSE,sha256=4Tx8kLcT3lqehKBfWJ5SkT5Oic5c1HwH0DOJFur29zM,1075
+httpself-1.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+httpself-1.0.0.dist-info/METADATA,sha256=g_Q5569gctAFpfyoqROQwC62TnFSh1uI4mQqrqSg7c0,1654
+httpself-1.0.0.dist-info/RECORD,,
