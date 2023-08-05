@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+ewlibs/__init__.py
+ewlibs/char_handler.py
+ewlibs/jsonp_handler.py
+ewlibs/nlp_handler.py
+ewlibs/re_handler.py
+ewlibs.egg-info/PKG-INFO
+ewlibs.egg-info/SOURCES.txt
+ewlibs.egg-info/dependency_links.txt
+ewlibs.egg-info/top_level.txt
+ewlibs/mongo/__init__.py
+ewlibs/mongo/conn_mongo.py
