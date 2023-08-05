@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+stampel.egg-info/PKG-INFO
+stampel.egg-info/SOURCES.txt
+stampel.egg-info/dependency_links.txt
+stampel.egg-info/entry_points.txt
+stampel.egg-info/top_level.txt
