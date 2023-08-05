@@ -1,0 +1,9 @@
+flask_pydantic/__init__.py,sha256=N2fzffApqBx-jr-6JN2G7c82A2IXlRZZqxSmb0A2XRg,88
+flask_pydantic/core.py,sha256=EebxAUEg2btFy_YEqpR1kPf-63p8StoWupwW4SYdf2M,5130
+flask_pydantic/exceptions.py,sha256=P6wcqvR9Q_LzF2IRn9m2Na20WYNNyshPXUijVzU0O10,685
+flask_pydantic/version.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+Flask_Pydantic-0.0.4.dist-info/LICENSE,sha256=A2uSNAJI4eeJcSlVU4M55dJJKKdyo2CA37X5paozsaw,1067
+Flask_Pydantic-0.0.4.dist-info/METADATA,sha256=LhEb2mla7xkJyyP3KY1mQIYgPHRnscLlJKc7idYiTuU,6280
+Flask_Pydantic-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+Flask_Pydantic-0.0.4.dist-info/top_level.txt,sha256=IzmsZAOs5sdZ5o0l-WWxc7l8gt9vZ4mEafkp5SkLob0,15
+Flask_Pydantic-0.0.4.dist-info/RECORD,,
