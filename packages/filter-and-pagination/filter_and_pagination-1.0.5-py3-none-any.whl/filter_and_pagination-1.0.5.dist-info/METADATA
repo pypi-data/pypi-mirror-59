@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: filter-and-pagination
+Version: 1.0.5
+Summary: Filter and Pagination in Django
+Home-page: https://github.com/ashish1997it/
+Author: Ashish Sondagar
+Author-email: sondagarashish@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+
+# Filter & Pagination in Django
+
+- Filter your result-set
+- Paginate your result-set as per object you want in your response
+- It's a open source service. 
+- Easy to implement
+- Fastest execution & High performance
+
+---
+## Install with pip
+```
+pip install filter_and_pagination
+```
+
+---
+### GitHub
+- Project: filter-pagination-dj
+- link: https://github.com/ashish1997it/filter-pagination-dj
+
+---
+### PostMan
+- Collection: filter-and-pagination-in-GH-proj
+- link: https://www.getpostman.com/collections/eae09a934fbc284bc062
+
+---
+### Medium
+- Artical: Filter & Pagination in Django
+- link: https://medium.com/@sondagarashish/filter-and-pagination-in-django-c0a61ff5f5c4
+
+---
+
+
