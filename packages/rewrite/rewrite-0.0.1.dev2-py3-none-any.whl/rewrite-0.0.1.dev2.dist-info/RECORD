@@ -1,0 +1,16 @@
+rewrite/__init__.py,sha256=wkFTUIgpMOuTEnTNZx7li62fSqWlkf4FITursFcQ2ho,2517
+rewrite/assessment.py,sha256=BgKgMElf36z-DFdolM13ZhqKqpT4YYxj8WcGQmjbOEE,4285
+rewrite/autodoc_example.py,sha256=A6ARGutBwWsXceg9nh6H0Y7yW0buWci8u9MwlY29CMU,6529
+rewrite/course.py,sha256=vNfWFPQYIooLf0sL-2u1zYrhvkZgPlba-GIBTmEqjyE,8137
+rewrite/mathlib.py,sha256=loohJUWGjuwEY6PKj3_B4cIMwG1F0M7PDJusrs5Rats,6985
+rewrite/problem.py,sha256=1ur8YQNEx5iLjG8g_aEM5OPhoSJlAavlTmEqcQWHRGI,9894
+rewrite/publisher.py,sha256=iifnDzOdS867ed7UmFFPPJ9380aJXQqORD7Vnqn_amw,1924
+rewrite/schedule.py,sha256=BKEIwGyrbDhRVYbJbdUckUBjxpgiV8Gs2AvtVHohj60,9985
+rewrite/term.py,sha256=HfI4Gu-DSjqPkmkLKdcZ30PbQ9cPRBmq_YQC94GNQnE,2100
+rewrite-0.0.1.dev2.data/scripts/makeproblem.py,sha256=njDBigSaGkehbUlnNWM9xVSU2cbfnXtoS5PvHknrK3U,1232
+rewrite-0.0.1.dev2.data/scripts/newproblem.py,sha256=xGTvZ11qVrC6MxyaHet2kH2t-HrpXNulFgd-nGRMPcs,757
+rewrite-0.0.1.dev2.dist-info/LICENSE.md,sha256=bw_o6_qlUklbhXhB2XMAJXYlcfZzuhc_7D0dJQYKC5o,1101
+rewrite-0.0.1.dev2.dist-info/METADATA,sha256=XbWYSP7KZzd11mioVZ6n08fRGJNLzoSkruxN80xDqTo,2249
+rewrite-0.0.1.dev2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+rewrite-0.0.1.dev2.dist-info/top_level.txt,sha256=eF4--0M-kNmHmBBz2eCSe8ggHIfdP4alXDV2fvQtsns,8
+rewrite-0.0.1.dev2.dist-info/RECORD,,
