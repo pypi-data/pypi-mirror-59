@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+pyavia/__init__.py
+pyavia/solve.py
+pyavia.egg-info/PKG-INFO
+pyavia.egg-info/SOURCES.txt
+pyavia.egg-info/dependency_links.txt
+pyavia.egg-info/requires.txt
+pyavia.egg-info/top_level.txt
+pyavia/aero/__init__.py
+pyavia/aero/_atmosphere.py
+pyavia/aero/_gasflow.py
+pyavia/core/__init__.py
+pyavia/core/containers.py
+pyavia/core/units.py
+pyavia/core/util.py
