@@ -1,0 +1,12 @@
+.gitignore
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+ihela_client/__init__.py
+ihela_client/client.py
+ihela_python_client.egg-info/PKG-INFO
+ihela_python_client.egg-info/SOURCES.txt
+ihela_python_client.egg-info/dependency_links.txt
+ihela_python_client.egg-info/top_level.txt
