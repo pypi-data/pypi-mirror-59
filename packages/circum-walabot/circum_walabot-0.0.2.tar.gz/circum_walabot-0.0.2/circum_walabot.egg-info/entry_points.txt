@@ -1,0 +1,3 @@
+[circum.plugins]
+walabot = circum_walabot.walabot:walabot
+
