@@ -1,0 +1,3 @@
+[console_scripts]
+dbq = dbq.main:run
+
