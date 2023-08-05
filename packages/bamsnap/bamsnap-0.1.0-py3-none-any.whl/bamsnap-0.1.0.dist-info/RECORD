@@ -1,0 +1,16 @@
+bamsnap/__init__.py,sha256=s_X22wT_P3ytLyTsPhpPmPOimVaHjemZ52oz_hfjY44,331
+bamsnap/_logging.py,sha256=mn5n8s1zUTqY-od7wj9jM17ZsOoYxzTx5ni3kwFB3dg,1269
+bamsnap/_options.py,sha256=7p4Nom1bhoTkyVE0gmXJBv7Gs-UgmoRmTnPOUulrbe8,8921
+bamsnap/bamsnap.py,sha256=vfOdBuPLHC0FhdeYw4hq_tXmEH-uEX0IiohuKqqiE2Q,10574
+bamsnap/conf.py,sha256=DLuSrFRn0xhoP3UL8wG49xeX3luuXQYFc9Z3YAObgWE,1864
+bamsnap/drawread.py,sha256=mfcfXyGr8Z3YHPyY0TXQz4-BDk4x_axsGdO1lcHuOl0,7822
+bamsnap/drawreadset.py,sha256=g2hDu1G6i-O_Ddw4kGwSMKFmD6_fPwk0Rx0Je-9pImA,8413
+bamsnap/util.py,sha256=yzpFckEXgH4UQu-9zqgkQx3wfICWYzEeqpcZolI0GfE,1870
+bamsnap/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bamsnap/templates/template.html,sha256=YiRcQcORrTilgV-jcpjOM0JvgNYiKFV4_CaZyT-1N7k,3859
+bamsnap-0.1.0.dist-info/LICENSE,sha256=-5-jWrK3YeriE3TDwgUM5Mfn8nrRWfwmVSpNkoMX0ek,1091
+bamsnap-0.1.0.dist-info/METADATA,sha256=l_zgMB6OYBtSajOqGyqG2HkMuZ4KKYSraFBfCd5JKpc,3836
+bamsnap-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+bamsnap-0.1.0.dist-info/entry_points.txt,sha256=8twcjNMknFEXD5vx7_Nueu47IXBp58cnlc5-BtPYcsc,41
+bamsnap-0.1.0.dist-info/top_level.txt,sha256=lm7T1aNFdhpHspq0J1YCMbGULkvz3KJd82-nLFdP8Us,8
+bamsnap-0.1.0.dist-info/RECORD,,
