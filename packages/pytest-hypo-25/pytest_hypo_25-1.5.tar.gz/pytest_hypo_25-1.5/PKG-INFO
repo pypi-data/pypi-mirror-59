@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: pytest_hypo_25
+Version: 1.5
+Summary: help hypo module for pytest
+Home-page: https://github.com/agishagyp23/pytest_hypo_23
+Author: Agisha
+Author-email: agupta3@pipeline.sbcc.edu
+License: MIT
+Download-URL: https://github.com/agishagyp23/pytest_hypo_23/releases/download/v1.0/hypotensisi.tar
+Description: UNKNOWN
+Keywords: pytest,hypo
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.1
