@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/pyroxide.py
+src/pyroxide.egg-info/PKG-INFO
+src/pyroxide.egg-info/SOURCES.txt
+src/pyroxide.egg-info/dependency_links.txt
+src/pyroxide.egg-info/requires.txt
+src/pyroxide.egg-info/top_level.txt
