@@ -1,0 +1,14 @@
+gobattlesim/Engine.py,sha256=zxJODPY4sSefYlOFzTtWU5iwInlMK_Yk2A-kwLEeBUk,3101
+gobattlesim/GameMaster.py,sha256=DsfjqAbvMd1jmv8smJqn1oqkf_ayufNZFym9acGGQcE,12667
+gobattlesim/Matrix.py,sha256=Z43uK51VS1U22bsVFNhhfsrkBQxFRyeTIhUYOkN9PHY,10640
+gobattlesim/Move.py,sha256=Ns2vum3YIjKMzbnzTIIQfIyFi6oXLQ4kd7ITv05eGzM,1193
+gobattlesim/PokeQuery.py,sha256=aJgD_VG-T47NcUn5FzUl1vEsSfDp4eaxlIAnoiZ2MWg,11200
+gobattlesim/Pokemon.py,sha256=kZiERDXQSuCN0XmNwlNt2OsLLy4oMRJa8NlGZB1yI-Y,5343
+gobattlesim/__init__.py,sha256=Elm6iezsxKhohBoNjBYJinXvcyUIheDoizSuWfc8_kQ,61
+gobattlesim/__main__.py,sha256=0U-xvVAxtbJIaHdJLtx99-BE3D7MuLySBOPmHTXC3x0,70
+gobattlesim/libGoBattleSim.dll,sha256=ynqZ9TM5kmC-aB9cF9qysSjwhl5xsIu-lykGxwSLaQE,547365
+gobattlesim-0.8.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+gobattlesim-0.8.1.dist-info/METADATA,sha256=ZhuXljfU3nNlO0HJJ3vbUh_8nzZ7uqRwqoLTeeTBPDI,4750
+gobattlesim-0.8.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+gobattlesim-0.8.1.dist-info/top_level.txt,sha256=CDZcK9kxYT6cVzksPtDVT7-5LXz6y3KAe6NoCbZ9FQw,12
+gobattlesim-0.8.1.dist-info/RECORD,,
