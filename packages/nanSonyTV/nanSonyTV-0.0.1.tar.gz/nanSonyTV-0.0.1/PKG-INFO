@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: nanSonyTV
+Version: 0.0.1
+Summary: Library for Sony Bravia TVs with Pre-Shared Key option
+Home-page: https://github.com/aaronj-nzme/Sony_TV
+Maintainer: Nan
+Maintainer-email: 499521010@qq.com
+License: MIT
+Description: UNKNOWN
+Keywords: Sony Bravia TV PSK for Home Assistant
+Platform: UNKNOWN

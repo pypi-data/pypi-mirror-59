@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+braviapsk/__init__.py
+braviapsk/sony_bravia_psk.py
+nanSonyTV.egg-info/PKG-INFO
+nanSonyTV.egg-info/SOURCES.txt
+nanSonyTV.egg-info/dependency_links.txt
+nanSonyTV.egg-info/not-zip-safe
+nanSonyTV.egg-info/requires.txt
+nanSonyTV.egg-info/top_level.txt
