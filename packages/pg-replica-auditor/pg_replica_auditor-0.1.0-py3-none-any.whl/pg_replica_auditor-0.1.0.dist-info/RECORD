@@ -1,0 +1,9 @@
+pgreplicaauditor/__init__.py,sha256=w7TMtnQzQT-YHaUNkdhPgtX_AzmVfKbUuVS-kB2Xr5U,62
+pgreplicaauditor/__main__.py,sha256=LfNvXxXDVOYLOJQ2L_FhckPyEZDTkKbwhp1my1CuyFw,79
+pgreplicaauditor/checksummer.py,sha256=FTL7Dwh_nAwW71JpPsGwpTeYqk3FrJkcWV06wqYFdP0,4863
+pg_replica_auditor-0.1.0.dist-info/LICENSE,sha256=w5Sh59GN5yZRAw1RSoUKGYmyEJpVz4YMztjpRHrlRAI,1060
+pg_replica_auditor-0.1.0.dist-info/METADATA,sha256=FZCXlMw7dZtSQq3tFHOHWDWZFa9vSbFurqRlA4cmQLg,1474
+pg_replica_auditor-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pg_replica_auditor-0.1.0.dist-info/entry_points.txt,sha256=dE69HK6k-uyEEbSx5GJGGEaJxHsjpXItWsX3LjSa1ec,55
+pg_replica_auditor-0.1.0.dist-info/top_level.txt,sha256=delkNMdqPd895enNVNYK3zlC59bqQQe9NCofAXZRWTE,17
+pg_replica_auditor-0.1.0.dist-info/RECORD,,
