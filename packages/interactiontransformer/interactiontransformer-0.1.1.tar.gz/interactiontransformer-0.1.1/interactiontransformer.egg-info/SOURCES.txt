@@ -1,0 +1,11 @@
+README.md
+setup.py
+interactiontransformer/InteractionTransformer.py
+interactiontransformer/__init__.py
+interactiontransformer/manuscript_scripts.py
+interactiontransformer/utils.py
+interactiontransformer.egg-info/PKG-INFO
+interactiontransformer.egg-info/SOURCES.txt
+interactiontransformer.egg-info/dependency_links.txt
+interactiontransformer.egg-info/requires.txt
+interactiontransformer.egg-info/top_level.txt
