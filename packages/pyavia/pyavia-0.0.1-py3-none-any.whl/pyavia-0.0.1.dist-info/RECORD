@@ -1,0 +1,14 @@
+pyavia/__init__.py,sha256=_uXasiztNY52aixUvMMfRDNtUaPxYiI-iwFTPTnRCn8,1313
+pyavia/solve.py,sha256=IpZhEfm4CpZPySXCcO9DyxzMcLeQiXvKzLJbiwhQQxk,14612
+pyavia/aero/__init__.py,sha256=Cn3-r2o4q_CdOb5IuBmozS7msjZEthfkJ3RHVEnneGs,201
+pyavia/aero/_atmosphere.py,sha256=m_2-oTnqGStKYG5Z2xyGJGDeL-G8_BaRZYzAY0U4wUI,17767
+pyavia/aero/_gasflow.py,sha256=uOU8i-5KK3ZEo-1t_xTlYF_9q2_c3TBjvdA1CiomwBA,27145
+pyavia/core/__init__.py,sha256=OMMxMtuSM7Ho-sidCVXm46XI97X4oG9MXW-YwULc-Xk,369
+pyavia/core/containers.py,sha256=f0KBLSmf4I5t67vbS1MZ1vLklP3fcl0EgI9j6h7klIs,14484
+pyavia/core/units.py,sha256=dxBNA-K0b-BKmkEkcbw55SaT4jAUSaPvmMTZwxS1TqQ,41902
+pyavia/core/util.py,sha256=35vDhPnHTeSU3PcWFXhbiB4JsX83yBJUDzZxgrjHSNI,13251
+pyavia-0.0.1.dist-info/LICENSE,sha256=ETIVKLo-0J9h-6sxzqdNCw1MxJWG8t0a05w4DGVIutc,1093
+pyavia-0.0.1.dist-info/METADATA,sha256=G132MQc_ThjmYVqGWNszcl4cYaUcl87NyzoOQoWRlKU,2530
+pyavia-0.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pyavia-0.0.1.dist-info/top_level.txt,sha256=yDbyqfsBwX2atykETrKKSNHIRwUt2vK97f1Cl1-uZUI,7
+pyavia-0.0.1.dist-info/RECORD,,
