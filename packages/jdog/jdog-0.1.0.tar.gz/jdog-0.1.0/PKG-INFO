@@ -1,0 +1,112 @@
+Metadata-Version: 1.1
+Name: jdog
+Version: 0.1.0
+Summary: Just another Data Offline Generator
+Home-page: https://github.com/petrnymsa/jdog
+Author: Petr Nymsa
+Author-email: nymsa.petr@outlook.cz
+License: MIT
+Description: .. image:: https://github.com/petrnymsa/jdog/workflows/build-test/badge.svg
+        
+        .. image:: https://readthedocs.org/projects/jdog/badge/?version=latest
+        
+        *********************************************
+        Just another Data Offline Generator (JDOG) 🐶
+        *********************************************
+        
+        🗎 `Full documentation <https://jdog.readthedocs.io/en/latest/>`_.
+        
+        .. start-inclusion-marker-do-not-remove
+        
+        - JDOG is Python library which helps generate sample data for your projects.
+        - JDOG can be run also as CLI tool.
+        - For generating sample data, the data scheme is provided
+        - The scheme is in JSON format
+        
+        Scheme
+        ======
+        
+        - Scheme is provided in JSON format with special placeholders.
+        - Placeholder is something like variable, where generated data will be replaced.
+        - Output is nearly the same as scheme besides replaced placeholders.
+        
+        In the simplest form, given JSON scheme
+        
+        .. code-block:: json
+        
+            {
+                "name": "Bob",
+                "age" : "18"
+            }
+        
+        is **valid scheme** although no additional generation will proceed.
+        
+        The simplest example can be
+        
+        .. code-block:: json
+        
+            {
+                "name": "Bob",
+                "age": "{{number(18,100)}"
+            }
+        
+        which produce Bob with any age between <18, 99> e.g:
+        
+        .. code-block:: json
+        
+            {
+                "name": "Bob",
+                "age": 26
+            }
+        
+        More useful example
+        
+        .. code-block:: json
+        
+            {
+                "{{range(people, 4)}}": {
+                    "name": "{{first_name}}",
+                    "age" : "{{number(18, 100)}}"
+        
+                }
+            }
+        
+        generates array of size 4 with objects containing name and age. The result
+        
+        .. code-block:: json
+        
+            {
+                "people": [{
+                        "name": "Bob",
+                        "age": "18"
+                    },
+                    {
+                        "name": "Alice",
+                        "age": 25
+                    },
+                    {
+                        "name": "George",
+                        "age": 85
+                    },
+                    {
+                        "name": "Janice",
+                        "age": 34
+                    }
+                ]
+            }
+        
+        .. end-inclusion-marker-do-not-remove
+        
+        TODO - faker info
+        
+Keywords: data generator,data generation,json scheme,scheme based,cli tool
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Environment :: Console
+Classifier: Topic :: Software Development :: Libraries

@@ -1,0 +1,3 @@
+[console_scripts]
+jdog = jdog.cli:run
+
