@@ -1,0 +1,17 @@
+hdmf_docutils/__init__.py,sha256=PTTyNb8RTD15DW0UuZYL-gaGFBSj5f0f9WwCRreWENQ,205
+hdmf_docutils/_version.py,sha256=4Bob-bVBvegX0X5HZL83yQ-4sM8OxYQqIOJC0nVgPac,518
+hdmf_docutils/compare-hdf5-files.ipynb,sha256=zxQ93oSq3FQNfIty1IfzLt4QN8KfiRZKxdKdrU2Xbeg,2072917
+hdmf_docutils/generate_format_docs.py,sha256=XdgxPbv8iRT3nnEgb9gXFZaQQIJz6lNaH2IHxG4TnpQ,29748
+hdmf_docutils/init_sphinx_extension_doc.py,sha256=ErZ8pXNKmF46J2x99QcZlqIClO9DRavps3Wg6BMfwcI,48363
+hdmf_docutils/sg_prototype.py,sha256=ylh76UrOxmIh10z2ojzg542b4UDRQYWaD0XkuHf8RPk,4550
+hdmf_docutils/doctools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hdmf_docutils/doctools/output.py,sha256=Gw1eIyCIgL7eGvg_28rLMrXs2gG2fh9bjp-7LJccmX0,3641
+hdmf_docutils/doctools/render.py,sha256=pPBj82PGWCC3UUkL0sD4S33xl-9a46QTuPu9KWW7ptU,36043
+hdmf_docutils/doctools/renderrst.py,sha256=q6jhJby0VYPqrvNt1Iv3-y0powGgv9giJvmhDUORzw0,45484
+hdmf_docutils/doctools/rst.py,sha256=tI3BbP4noijgWyeQhnaQeIu_DVPek_7L8xxk1IwWCXo,25319
+hdmf_docutils-0.4.0.dist-info/METADATA,sha256=azls6sd1heZMC7nbyqlpS74GTNjq0BV2E0VQ1rsn2N0,3786
+hdmf_docutils-0.4.0.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+hdmf_docutils-0.4.0.dist-info/entry_points.txt,sha256=3mpJU0BXHvJDcaNswB8j43n94-2A0vNMSLmmKzyLHoo,428
+hdmf_docutils-0.4.0.dist-info/license.txt,sha256=QYZGZWUCErSvS6UdCccsmXl-ep2ZQPiD_0BDn7q_YUI,2429
+hdmf_docutils-0.4.0.dist-info/top_level.txt,sha256=snDNreJYIBQYEKbZUVndU8zFLyP6bkwTvW32PFvF2Fs,14
+hdmf_docutils-0.4.0.dist-info/RECORD,,
