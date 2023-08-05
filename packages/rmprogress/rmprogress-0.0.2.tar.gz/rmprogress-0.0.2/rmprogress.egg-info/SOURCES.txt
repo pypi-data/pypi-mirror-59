@@ -1,0 +1,6 @@
+README.md
+setup.py
+rmprogress.egg-info/PKG-INFO
+rmprogress.egg-info/SOURCES.txt
+rmprogress.egg-info/dependency_links.txt
+rmprogress.egg-info/top_level.txt
