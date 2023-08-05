@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+grapher_web.egg-info/PKG-INFO
+grapher_web.egg-info/SOURCES.txt
+grapher_web.egg-info/dependency_links.txt
+grapher_web.egg-info/top_level.txt
+src/web/__init__.py
+src/web/server.py
