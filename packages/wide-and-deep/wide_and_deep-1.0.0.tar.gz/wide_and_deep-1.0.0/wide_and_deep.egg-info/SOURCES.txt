@@ -1,0 +1,12 @@
+README.md
+setup.py
+wide_and_deep/__init__.py
+wide_and_deep/_nbdev.py
+wide_and_deep/model.py
+wide_and_deep/prediction.py
+wide_and_deep.egg-info/PKG-INFO
+wide_and_deep.egg-info/SOURCES.txt
+wide_and_deep.egg-info/dependency_links.txt
+wide_and_deep.egg-info/entry_points.txt
+wide_and_deep.egg-info/not-zip-safe
+wide_and_deep.egg-info/top_level.txt
