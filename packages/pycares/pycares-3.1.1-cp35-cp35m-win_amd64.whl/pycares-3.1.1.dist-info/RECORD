@@ -1,0 +1,11 @@
+pycares/__init__.py,sha256=V5uljtFj4HJ53r0kOyhPAwZaVdikWlR6YglEwnhRQr8,25386
+pycares/__main__.py,sha256=pyTg570Kh3P3KYckLfmhgMsITjZ3zLiHeOCx-aD1S7c,2756
+pycares/_cares.cp35-win_amd64.pyd,sha256=ewoY4KghDKLuw8VpyjGW01jSQc_1z94DBgVscITHRUA,134144
+pycares/_version.py,sha256=tAUIODsunh3i6BKzXpxxCwsW0-u9Qz7NTlYKlP-Q8Tk,25
+pycares/errno.py,sha256=m-bP-R_-Ew_NgI7Jx9tqrAw4WhDCE-hoJkgclRQ-Rzs,1068
+pycares/utils.py,sha256=lKohvVcx0fjDcbkK0hGgvgY5WWnshj1Snxy-gGRbDNo,1399
+pycares-3.1.1.dist-info/LICENSE,sha256=ZzIVbIpf5QFzaiLCDSjxhvH5EViAWLVO-W4ZgBzWvb8,1090
+pycares-3.1.1.dist-info/METADATA,sha256=QcR6O8ZNFghTxkibJOepYvF0KnPrr_q8s7QjfYXrvQI,344
+pycares-3.1.1.dist-info/WHEEL,sha256=gVvMRrLrLpj9gcCf1pGXdht1T11gigD8qAXbQWBpk54,106
+pycares-3.1.1.dist-info/top_level.txt,sha256=nIeo7L2XUVBQZO2YE6pH7tlKaBWTfmmRcXbqe_NWYCw,15
+pycares-3.1.1.dist-info/RECORD,,
