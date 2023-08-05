@@ -1,0 +1,1 @@
+include README.md LICENSE PyReadLabels/yolov3-tiny-label.cfg PyReadLabels/yolov3-tiny-label_84.weights

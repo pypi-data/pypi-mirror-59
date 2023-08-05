@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+PyReadLabels/__init__.py
+PyReadLabels/pyreadlabels.py
+PyReadLabels/yolov3-tiny-label.cfg
+PyReadLabels/yolov3-tiny-label_84.weights
+PyReadLabels.egg-info/PKG-INFO
+PyReadLabels.egg-info/SOURCES.txt
+PyReadLabels.egg-info/dependency_links.txt
+PyReadLabels.egg-info/requires.txt
+PyReadLabels.egg-info/top_level.txt
