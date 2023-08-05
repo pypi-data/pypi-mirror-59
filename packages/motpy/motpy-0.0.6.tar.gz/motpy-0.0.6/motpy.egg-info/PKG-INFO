@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: motpy
+Version: 0.0.6
+Summary: Library for track-by-detection multi object tracking implemented in python
+Home-page: https://github.com/wmuron/motpy.git
+Author: Wiktor Muron
+Author-email: wiktormuron@gmail.com
+License: MIT
+Download-URL: https://github.com/wmuron/motpy/releases/tag/v0.0.6-alpha
+Description: UNKNOWN
+Keywords: multi-object-tracking,object-tracking,kalman-filter
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >3.6
