@@ -1,0 +1,8 @@
+README
+setup.cfg
+setup.py
+BYTUM.egg-info/PKG-INFO
+BYTUM.egg-info/SOURCES.txt
+BYTUM.egg-info/dependency_links.txt
+BYTUM.egg-info/top_level.txt
+UserManager/__init__.py
