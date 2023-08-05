@@ -1,0 +1,427 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>iocbio.kinetics.io.db &#8212; Kinetics 1 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Kinetics 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for iocbio.kinetics.io.db</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">PyQt5.QtWidgets</span> <span class="k">import</span> <span class="n">QDialog</span><span class="p">,</span> <span class="n">QLineEdit</span><span class="p">,</span> <span class="n">QPushButton</span><span class="p">,</span> <span class="n">QGridLayout</span><span class="p">,</span> <span class="n">QMessageBox</span><span class="p">,</span> <span class="n">QLabel</span><span class="p">,</span> <span class="n">QCheckBox</span><span class="p">,</span> <span class="n">QFileDialog</span>
+<span class="kn">from</span> <span class="nn">PyQt5.QtCore</span> <span class="k">import</span> <span class="n">QSettings</span>
+<span class="kn">import</span> <span class="nn">keyring</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">getpass</span>
+<span class="kn">from</span> <span class="nn">records</span> <span class="k">import</span> <span class="n">Database</span>
+<span class="kn">from</span> <span class="nn">sys</span> <span class="k">import</span> <span class="n">version_info</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+
+<span class="k">def</span> <span class="nf">mkdir_p</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="kn">import</span> <span class="nn">errno</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>  <span class="c1"># Python &gt;2.5</span>
+        <span class="k">if</span> <span class="n">exc</span><span class="o">.</span><span class="n">errno</span> <span class="o">==</span> <span class="n">errno</span><span class="o">.</span><span class="n">EEXIST</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+            <span class="k">pass</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span>
+
+<span class="k">class</span> <span class="nc">Login</span><span class="p">(</span><span class="n">QDialog</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">QDialog</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s2">&quot;PostgreSQL login&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">textName</span> <span class="o">=</span> <span class="n">QLineEdit</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">textPass</span> <span class="o">=</span> <span class="n">QLineEdit</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">textPass</span><span class="o">.</span><span class="n">setEchoMode</span><span class="p">(</span><span class="n">QLineEdit</span><span class="o">.</span><span class="n">Password</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">buttonLogin</span> <span class="o">=</span> <span class="n">QPushButton</span><span class="p">(</span><span class="s1">&#39;Login&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">buttonLogin</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">handleLogin</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rememberPassword</span> <span class="o">=</span> <span class="n">QCheckBox</span><span class="p">(</span><span class="s2">&quot;Store password in keyring&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rememberPassword</span><span class="o">.</span><span class="n">setCheckState</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">layout</span> <span class="o">=</span> <span class="n">QGridLayout</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">QLabel</span><span class="p">(</span><span class="s2">&quot;User:&quot;</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">textName</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">QLabel</span><span class="p">(</span><span class="s2">&quot;Password:&quot;</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">textPass</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">buttonLogin</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">rememberPassword</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">handleLogin</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">textName</span><span class="o">.</span><span class="n">text</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">password</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">textPass</span><span class="o">.</span><span class="n">text</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">accept</span><span class="p">()</span>
+        <span class="c1"># if (self.textName.text() == &#39;foo&#39; and</span>
+        <span class="c1">#     self.textPass.text() == &#39;bar&#39;):</span>
+        <span class="c1">#     self.accept()</span>
+        <span class="c1"># else:</span>
+        <span class="c1">#     QMessageBox.warning(self, &#39;Error&#39;, &#39;You failed and this incident will be forgotten&#39;)</span>
+
+<div class="viewcode-block" id="DatabaseInterface"><a class="viewcode-back" href="../../../../index.html#iocbio.kinetics.io.db.DatabaseInterface">[docs]</a><span class="k">class</span> <span class="nc">DatabaseInterface</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Database interface and helper functions&quot;&quot;&quot;</span>
+
+    <span class="n">schema_version</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dbtype</span><span class="o">=</span><span class="s2">&quot;sqlite3&quot;</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dbtype</span> <span class="o">=</span> <span class="n">dbtype</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">database</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">read_only</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">disable_read_only</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="k">if</span> <span class="n">dbtype</span> <span class="o">==</span> <span class="s2">&quot;sqlite3&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">open_sqlite3</span><span class="p">()</span>
+        <span class="k">elif</span> <span class="n">dbtype</span> <span class="o">==</span> <span class="s2">&quot;postgresql&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">open_postgresql</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Not implemented: &quot;</span> <span class="o">+</span> <span class="n">dbtype</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">set_read_only</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">disable_read_only</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">read_only</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">read_only</span> <span class="o">=</span> <span class="n">state</span>
+
+    <span class="k">def</span> <span class="nf">open_sqlite3</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="kn">import</span> <span class="nn">sqlite3</span><span class="o">,</span> <span class="nn">os</span>
+        <span class="kn">from</span> <span class="nn">PyQt5.QtCore</span> <span class="k">import</span> <span class="n">QStandardPaths</span>
+
+        <span class="n">path</span> <span class="o">=</span> <span class="n">QStandardPaths</span><span class="o">.</span><span class="n">writableLocation</span><span class="p">(</span><span class="n">QStandardPaths</span><span class="o">.</span><span class="n">AppDataLocation</span><span class="p">)</span>
+        <span class="n">mkdir_p</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+        <span class="c1">#self.database = sqlite3.connect(os.path.join(path,&quot;kinetics.sqlite&quot;))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">database</span> <span class="o">=</span> <span class="n">Database</span><span class="p">(</span><span class="s2">&quot;sqlite:///&quot;</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="s2">&quot;kinetics.sqlite&quot;</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">open_postgresql</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">settings</span> <span class="o">=</span> <span class="n">QSettings</span><span class="p">()</span>
+        <span class="n">save</span> <span class="o">=</span> <span class="kc">False</span><span class="c1">#, False</span>
+        <span class="n">username</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s2">&quot;postgresql/username&quot;</span><span class="p">,</span> <span class="n">defaultValue</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">))</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">password</span> <span class="o">=</span> <span class="n">keyring</span><span class="o">.</span><span class="n">get_password</span><span class="p">(</span><span class="s2">&quot;iocbio-kinetics&quot;</span><span class="p">,</span> <span class="n">username</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Failed to get password from keyring. Looking password from crypted folder&#39;</span><span class="p">)</span>
+            <span class="n">pwd_file</span> <span class="o">=</span> <span class="n">settings</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s2">&quot;postgresql/pwd_file&quot;</span><span class="p">,</span> <span class="n">defaultValue</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">pwd_file</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">password</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">pwd_file</span><span class="p">):</span>
+                    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">pwd_file</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                        <span class="n">password</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">password</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">username</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">password</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">login</span> <span class="o">=</span> <span class="n">Login</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">login</span><span class="o">.</span><span class="n">exec_</span><span class="p">()</span> <span class="o">==</span> <span class="n">QDialog</span><span class="o">.</span><span class="n">Accepted</span><span class="p">:</span>
+                <span class="n">username</span> <span class="o">=</span> <span class="n">login</span><span class="o">.</span><span class="n">username</span>
+                <span class="n">password</span> <span class="o">=</span> <span class="n">login</span><span class="o">.</span><span class="n">password</span>
+                <span class="n">save</span> <span class="o">=</span> <span class="n">login</span><span class="o">.</span><span class="n">rememberPassword</span><span class="o">.</span><span class="n">checkState</span><span class="p">()</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">database</span> <span class="o">=</span> <span class="n">Database</span><span class="p">(</span><span class="s2">&quot;postgresql://&quot;</span> <span class="o">+</span> <span class="n">username</span> <span class="o">+</span> <span class="s2">&quot;:&quot;</span> <span class="o">+</span> <span class="n">password</span> <span class="o">+</span>
+                                     <span class="s2">&quot;@sysbio-db.kybi/experiments_v2&quot;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">expt</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">save</span><span class="p">:</span>
+                <span class="c1"># probably wrong uid/pwd, cleanup</span>
+                <span class="n">settings</span><span class="o">.</span><span class="n">setValue</span><span class="p">(</span><span class="s2">&quot;postgresql/username&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">keyring</span><span class="o">.</span><span class="n">delete_password</span><span class="p">(</span><span class="s2">&quot;iocbio-kinetics&quot;</span><span class="p">,</span> <span class="n">username</span><span class="p">)</span>
+                <span class="k">except</span><span class="p">:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Faild to delete password from keyring&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Exception&#39;</span><span class="p">,</span> <span class="n">expt</span><span class="p">)</span>
+            <span class="n">QMessageBox</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="s1">&#39;Error&#39;</span><span class="p">,</span>
+                                <span class="s2">&quot;Failed to open PostgreSQL database connection</span><span class="se">\n\n</span><span class="s2">Exception: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">expt</span><span class="p">))</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">save</span><span class="p">:</span>
+            <span class="c1"># let&#39;s save the settings</span>
+            <span class="n">settings</span><span class="o">.</span><span class="n">setValue</span><span class="p">(</span><span class="s2">&quot;postgresql/username&quot;</span><span class="p">,</span> <span class="n">username</span><span class="p">)</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">keyring</span><span class="o">.</span><span class="n">set_password</span><span class="p">(</span><span class="s2">&quot;iocbio-kinetics&quot;</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
+            <span class="k">except</span><span class="p">:</span>
+                <span class="n">path</span> <span class="o">=</span> <span class="n">QFileDialog</span><span class="o">.</span><span class="n">getExistingDirectory</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="s1">&#39;Set secure location for saving password&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">QFileDialog</span><span class="o">.</span><span class="n">ShowDirsOnly</span><span class="p">)</span>
+
+                <span class="k">if</span> <span class="n">path</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
+                    <span class="n">pwd_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">username</span><span class="p">)</span>
+                    <span class="n">settings</span><span class="o">.</span><span class="n">setValue</span><span class="p">(</span><span class="s2">&quot;postgresql/pwd_file&quot;</span><span class="p">,</span> <span class="n">pwd_file</span><span class="p">)</span>
+                    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">pwd_file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;You clicked cancel, password not saved&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">database</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">command</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">read_only</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;insert &#39;</span><span class="p">,</span> <span class="s1">&#39;create &#39;</span><span class="p">,</span> <span class="s1">&#39;update &#39;</span><span class="p">,</span> <span class="s1">&#39;set &#39;</span><span class="p">,</span> <span class="s1">&#39;delete &#39;</span><span class="p">]:</span>
+                <span class="k">if</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">command</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Read only mode, no data changes allowed. Skipped:&#39;</span><span class="p">,</span> <span class="n">command</span><span class="p">)</span>
+                    <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<div class="viewcode-block" id="DatabaseInterface.schema"><a class="viewcode-back" href="../../../../index.html#iocbio.kinetics.io.db.DatabaseInterface.schema">[docs]</a>    <span class="k">def</span> <span class="nf">schema</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check the present schema version, create if missing and return the version of current schema&quot;&quot;&quot;</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;CREATE TABLE IF NOT EXISTS &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="s2">&quot;iocbio&quot;</span><span class="p">)</span> <span class="o">+</span>
+                <span class="s2">&quot;(name text NOT NULL PRIMARY KEY, value text NOT NULL)&quot;</span><span class="p">)</span>
+
+        <span class="n">version</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">c</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;SELECT value FROM </span><span class="si">%s</span><span class="s2"> WHERE name=:name&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="s2">&quot;iocbio&quot;</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;version&quot;</span><span class="p">):</span>
+            <span class="n">version</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">value</span>
+
+        <span class="k">if</span> <span class="n">version</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">c</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;INSERT INTO </span><span class="si">%s</span><span class="s2">(name, value) VALUES(:name,:value)&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="s2">&quot;iocbio&quot;</span><span class="p">),</span>
+                    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;version&quot;</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">schema_version</span><span class="p">)</span>
+            <span class="n">version</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">schema_version</span>
+
+        <span class="k">return</span> <span class="n">version</span></div>
+
+    <span class="k">def</span> <span class="nf">has_record</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">table</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;SELECT 1 FROM &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">table</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; WHERE &quot;</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="n">sql</span> <span class="o">+=</span> <span class="n">key</span> <span class="o">+</span> <span class="s2">&quot;=:&quot;</span> <span class="o">+</span> <span class="n">key</span> <span class="o">+</span> <span class="s2">&quot; AND &quot;</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="n">sql</span><span class="p">[:</span><span class="o">-</span><span class="mi">5</span><span class="p">]</span> <span class="c1"># dropping excessive &quot; AND &quot;</span>
+        <span class="n">sql</span> <span class="o">+=</span> <span class="s2">&quot; LIMIT 1&quot;</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">c</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="k">def</span> <span class="nf">table</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="c1"># IF CHANGED HERE, CHECK OUT also the following methods</span>
+        <span class="c1">#   has_view, grant</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbtype</span> <span class="o">==</span> <span class="s2">&quot;sqlite3&quot;</span><span class="p">:</span> <span class="k">return</span> <span class="n">name</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbtype</span> <span class="o">==</span> <span class="s2">&quot;postgresql&quot;</span><span class="p">:</span> <span class="k">return</span> <span class="s2">&quot;kinetics_&quot;</span> <span class="o">+</span> <span class="n">name</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Not implemented table name mangling: &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbtype</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">has_view</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">view</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbtype</span> <span class="o">==</span> <span class="s2">&quot;sqlite3&quot;</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;SELECT 1 AS reply FROM sqlite_master WHERE type=&#39;view&#39; AND &quot;</span> <span class="o">+</span>
+                                           <span class="s2">&quot;name=:view&quot;</span><span class="p">,</span> <span class="n">view</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">view</span><span class="p">)):</span>
+                <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbtype</span> <span class="o">==</span> <span class="s2">&quot;postgresql&quot;</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;SELECT 1 AS reply FROM information_schema.views WHERE &quot;</span> <span class="o">+</span>
+                                           <span class="s2">&quot;table_schema=:schema AND table_name=lower(:view)&quot;</span><span class="p">,</span>
+                                            <span class="n">schema</span><span class="o">=</span><span class="s2">&quot;public&quot;</span><span class="p">,</span> <span class="n">view</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">view</span><span class="p">)):</span>
+                <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Not implemented table name mangling: &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbtype</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_managed_table</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">strict</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">candelete</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;pg_&#39;</span><span class="p">,</span> <span class="s1">&#39;sql_&#39;</span><span class="p">,</span> <span class="s1">&#39;_pg&#39;</span><span class="p">,</span> <span class="s1">&#39;information_&#39;</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="n">name</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">False</span>
+        <span class="k">if</span> <span class="n">candelete</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">&#39;kinetics_ioc&#39;</span> <span class="ow">in</span> <span class="n">name</span> <span class="ow">or</span> <span class="s2">&quot;kinetics_experiment&quot;</span> <span class="ow">in</span> <span class="n">name</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">False</span>
+        <span class="k">if</span> <span class="n">strict</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;kinetics_&#39;</span> <span class="ow">in</span> <span class="n">name</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+<div class="viewcode-block" id="DatabaseInterface.grant_groups"><a class="viewcode-back" href="../../../../index.html#iocbio.kinetics.io.db.DatabaseInterface.grant_groups">[docs]</a>    <span class="k">def</span> <span class="nf">grant_groups</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set default permissions for all tables&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbtype</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;postgresql&quot;</span><span class="p">]:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Permissions model not supported for&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbtype</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbtype</span> <span class="o">==</span> <span class="s2">&quot;postgresql&quot;</span><span class="p">:</span>
+            <span class="c1"># allow select to PUBLIC</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;GRANT SELECT ON ALL TABLES IN SCHEMA public TO PUBLIC&quot;</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;SELECT tablename AS name FROM pg_catalog.pg_tables WHERE schemaname=&#39;public&#39; AND tablename LIKE &#39;kinetics_%&#39;&quot;</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">DatabaseInterface</span><span class="o">.</span><span class="n">_managed_table</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">candelete</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+                    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;DELETE&quot;</span><span class="p">]:</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;GRANT &quot;</span> <span class="o">+</span> <span class="n">p</span> <span class="o">+</span> <span class="s2">&quot; ON &quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39; TO &quot;sysbio&quot;&#39;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">row</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;kinetics_vo2&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;INSERT&quot;</span><span class="p">,</span> <span class="s2">&quot;UPDATE&quot;</span><span class="p">]:</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;GRANT &quot;</span> <span class="o">+</span> <span class="n">p</span> <span class="o">+</span> <span class="s2">&quot; ON &quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39; TO &quot;respiration&quot;&#39;</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;SELECT&quot;</span><span class="p">,</span> <span class="s2">&quot;UPDATE&quot;</span><span class="p">]:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;GRANT &#39;</span> <span class="o">+</span> <span class="n">p</span> <span class="o">+</span> <span class="s1">&#39; ON kinetics_experiment_to_mouse_cardiomyocytes_id_seq TO &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="s1">&#39;sysbio&#39;</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;kinetics_roi&quot;</span><span class="p">,</span> <span class="s2">&quot;kinetics_experiment&quot;</span><span class="p">,</span> <span class="s2">&quot;kinetics_experiment_to_mouse_cardiomyocytes&quot;</span><span class="p">]:</span>
+                <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;SELECT&quot;</span><span class="p">,</span> <span class="s2">&quot;INSERT&quot;</span><span class="p">,</span> <span class="s2">&quot;UPDATE&quot;</span><span class="p">,</span> <span class="s2">&quot;REFERENCES&quot;</span><span class="p">]:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;GRANT &#39;</span> <span class="o">+</span> <span class="n">p</span> <span class="o">+</span> <span class="s1">&#39; ON &quot;</span><span class="si">%s</span><span class="s1">&quot; TO &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="s2">&quot;sysbio&quot;</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="DatabaseInterface.grant"><a class="viewcode-back" href="../../../../index.html#iocbio.kinetics.io.db.DatabaseInterface.grant">[docs]</a>    <span class="k">def</span> <span class="nf">grant</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Grant access permissions for user&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbtype</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;postgresql&quot;</span><span class="p">]:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Permissions model not supported for&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbtype</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbtype</span> <span class="o">==</span> <span class="s2">&quot;postgresql&quot;</span><span class="p">:</span>
+            <span class="c1"># allow select to PUBLIC</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;GRANT SELECT ON ALL TABLES IN SCHEMA public TO PUBLIC&quot;</span><span class="p">)</span>
+
+            <span class="c1"># # tables</span>
+            <span class="c1"># for row in self.database.query(&quot;SELECT tablename AS name FROM pg_catalog.pg_tables WHERE schemaname=&#39;public&#39;&quot;):</span>
+            <span class="c1">#     if DatabaseInterface._managed_table(row.name):</span>
+            <span class="c1">#         for p in [&quot;SELECT&quot;]:</span>
+            <span class="c1">#             self.database.query(&quot;GRANT &quot; + p + &quot; ON &quot; + row.name + &#39; TO &quot;%s&quot;&#39; % user)</span>
+
+            <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;SELECT tablename AS name FROM pg_catalog.pg_tables WHERE schemaname=&#39;public&#39; AND tablename LIKE &#39;kinetics_%&#39;&quot;</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">DatabaseInterface</span><span class="o">.</span><span class="n">_managed_table</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">candelete</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+                    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;DELETE&quot;</span><span class="p">]:</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;GRANT &quot;</span> <span class="o">+</span> <span class="n">p</span> <span class="o">+</span> <span class="s2">&quot; ON &quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39; TO &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="n">user</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;SELECT&quot;</span><span class="p">,</span> <span class="s2">&quot;UPDATE&quot;</span><span class="p">]:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;GRANT &#39;</span> <span class="o">+</span> <span class="n">p</span> <span class="o">+</span> <span class="s1">&#39; ON kinetics_experiment_to_mouse_cardiomyocytes_id_seq TO &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="n">user</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;kinetics_roi&quot;</span><span class="p">,</span> <span class="s2">&quot;kinetics_experiment&quot;</span><span class="p">,</span> <span class="s2">&quot;kinetics_experiment_to_mouse_cardiomyocytes&quot;</span><span class="p">]:</span>
+                <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;SELECT&quot;</span><span class="p">,</span> <span class="s2">&quot;INSERT&quot;</span><span class="p">,</span> <span class="s2">&quot;UPDATE&quot;</span><span class="p">,</span> <span class="s2">&quot;REFERENCES&quot;</span><span class="p">]:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;GRANT &#39;</span> <span class="o">+</span> <span class="n">p</span> <span class="o">+</span> <span class="s1">&#39; ON &quot;</span><span class="si">%s</span><span class="s1">&quot; TO &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">user</span><span class="p">))</span></div>
+
+            <span class="c1"># # views</span>
+            <span class="c1"># for row in self.database.query(&quot;SELECT viewname AS name FROM pg_catalog.pg_views WHERE schemaname=&#39;public&#39;&quot;):</span>
+            <span class="c1">#     if DatabaseInterface._managed_table(row.name):</span>
+            <span class="c1">#         for p in [&quot;SELECT&quot;]:</span>
+            <span class="c1">#             self.database.query(&quot;GRANT &quot; + p + &quot; ON &quot; + row.name + &quot; TO &quot; + user)</span>
+
+<div class="viewcode-block" id="DatabaseInterface.revoke"><a class="viewcode-back" href="../../../../index.html#iocbio.kinetics.io.db.DatabaseInterface.revoke">[docs]</a>    <span class="k">def</span> <span class="nf">revoke</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Revoke access permissions for user&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbtype</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;postgresql&quot;</span><span class="p">]:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Permissions model not supported for&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbtype</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbtype</span> <span class="o">==</span> <span class="s2">&quot;postgresql&quot;</span><span class="p">:</span>
+            <span class="c1"># tables</span>
+            <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;SELECT tablename AS name FROM pg_catalog.pg_tables WHERE schemaname=&#39;public&#39;&quot;</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">DatabaseInterface</span><span class="o">.</span><span class="n">_managed_table</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">name</span><span class="p">):</span>
+                    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;ALL&quot;</span><span class="p">]:</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;REVOKE &quot;</span> <span class="o">+</span> <span class="n">p</span> <span class="o">+</span> <span class="s2">&quot; ON &quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39; FROM &quot;</span><span class="si">%s</span><span class="s1">&quot; CASCADE&#39;</span> <span class="o">%</span> <span class="n">user</span><span class="p">)</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;REVOKE REFERENCES ON kinetics_experiment FROM &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="n">user</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;ALL&quot;</span><span class="p">]:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;REVOKE &#39;</span> <span class="o">+</span> <span class="n">p</span> <span class="o">+</span> <span class="s1">&#39; ON kinetics_experiment_to_mouse_cardiomyocytes_id_seq FROM &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="n">user</span><span class="p">)</span>
+
+            <span class="c1"># views</span>
+            <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;SELECT viewname AS name FROM pg_catalog.pg_views WHERE schemaname=&#39;public&#39;&quot;</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">DatabaseInterface</span><span class="o">.</span><span class="n">_managed_table</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">name</span><span class="p">):</span>
+                    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;ALL&quot;</span><span class="p">]:</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;REVOKE &quot;</span> <span class="o">+</span> <span class="n">p</span> <span class="o">+</span> <span class="s2">&quot; ON &quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&quot; FROM &quot;</span> <span class="o">+</span> <span class="n">user</span> <span class="o">+</span> <span class="s2">&quot; CASCADE&quot;</span><span class="p">)</span></div></div>
+
+
+<span class="c1">#####################################################################################</span>
+<span class="c1">### Authentication function used by scripts</span>
+<span class="k">def</span> <span class="nf">authenticate_sysbio_database</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">server</span><span class="o">=</span><span class="s1">&#39;sysbio-db.kybi/experiments_v2&#39;</span><span class="p">):</span>
+    <span class="n">py3</span> <span class="o">=</span> <span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="c1"># If true python3 is used</span>
+    <span class="k">if</span> <span class="n">py3</span><span class="p">:</span> <span class="n">cli_input</span> <span class="o">=</span> <span class="nb">input</span>
+    <span class="k">else</span><span class="p">:</span> <span class="n">cli_input</span> <span class="o">=</span> <span class="n">raw_input</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">password</span> <span class="o">=</span> <span class="n">keyring</span><span class="o">.</span><span class="n">get_password</span><span class="p">(</span><span class="n">server</span><span class="p">,</span> <span class="n">username</span><span class="p">)</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="n">pwd_file</span> <span class="o">=</span> <span class="s1">&#39;/home/martinl/crypt/auth/sysbio-db/pwd&#39;</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">pwd_file</span><span class="p">):</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">pwd_file</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">password</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;No such file:&#39;</span><span class="p">,</span> <span class="n">pwd_file</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Create password file in crypted folder.&#39;</span><span class="p">)</span>
+            <span class="n">exit</span><span class="p">()</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Connecting to </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">server</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">password</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">username</span> <span class="o">=</span> <span class="n">cli_input</span><span class="p">(</span><span class="s1">&#39;  Enter your username: &#39;</span><span class="p">)</span>
+        <span class="n">password</span> <span class="o">=</span> <span class="n">getpass</span><span class="o">.</span><span class="n">getpass</span><span class="p">(</span><span class="n">prompt</span><span class="o">=</span><span class="s1">&#39;  Enter your password: &#39;</span><span class="p">)</span>
+        <span class="n">save_inp</span> <span class="o">=</span> <span class="n">cli_input</span><span class="p">(</span><span class="s1">&#39;  Save username and password [n/y]: &#39;</span><span class="p">)</span>
+
+        <span class="n">save</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">if</span> <span class="n">save_inp</span> <span class="o">==</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span>
+            <span class="n">save</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">keyring</span><span class="o">.</span><span class="n">set_password</span><span class="p">(</span><span class="n">server</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Username and password saved.&#39;</span><span class="p">)</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">keyring</span><span class="o">.</span><span class="n">delete_password</span><span class="p">(</span><span class="n">server</span><span class="p">,</span> <span class="n">username</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Username and password not saved.&#39;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">server</span>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../index.html">Kinetics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../index.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Kinetics 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, MV.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>

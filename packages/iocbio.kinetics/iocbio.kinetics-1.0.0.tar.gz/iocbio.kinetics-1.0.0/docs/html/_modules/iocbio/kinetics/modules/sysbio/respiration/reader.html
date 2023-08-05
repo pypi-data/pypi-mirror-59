@@ -1,0 +1,574 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>iocbio.kinetics.modules.sysbio.respiration.reader &#8212; Kinetics 1 documentation</title>
+    <link rel="stylesheet" href="../../../../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../../',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../../index.html">Kinetics 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for iocbio.kinetics.modules.sysbio.respiration.reader</h1><div class="highlight"><pre>
+<span></span><span class="ch">#!/usr/bin/env python3</span>
+<span class="c1"># Original Author: Pearu Peterson</span>
+<span class="c1"># Adopted by Martin Laasmaa and Marko Vendelin</span>
+<span class="c1"># Created: June 2010</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span><span class="o">,</span> <span class="nn">hashlib</span><span class="o">,</span> <span class="nn">re</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="k">import</span> <span class="n">linregress</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="k">import</span> <span class="n">datetime</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">OrderedDict</span>
+
+<span class="kn">from</span> <span class="nn">iocbio.kinetics.io.data</span> <span class="k">import</span> <span class="n">Data</span><span class="p">,</span> <span class="n">Carrier</span>
+<span class="kn">from</span> <span class="nn">.experiment_strathkelvin</span> <span class="k">import</span> <span class="n">ExperimentStrathkelvin</span>
+
+<span class="c1">### Required definition for exported module ###</span>
+<span class="n">IocbioKineticsModule</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;args&#39;</span><span class="p">,</span> <span class="s1">&#39;reader&#39;</span><span class="p">]</span>
+
+<span class="c1">### Implementaiton</span>
+
+<span class="sd">&quot;&quot;&quot;Time units.</span>
+
+<span class="sd">Provides time classes with arithmetic support to manipulate time</span>
+<span class="sd">quantity with various units (Seconds, Minutes, and Hours).</span>
+
+<span class="sd">Examples</span>
+<span class="sd">--------</span>
+
+<span class="sd">::</span>
+
+<span class="sd">  &gt;&gt;&gt; from iocbio.timeunit import *</span>
+<span class="sd">  &gt;&gt;&gt; Seconds(10)</span>
+<span class="sd">  Seconds(10.0)</span>
+<span class="sd">  &gt;&gt;&gt; print Seconds(10)+Minutes(1)</span>
+<span class="sd">  70.0sec</span>
+<span class="sd">  &gt;&gt;&gt; print Hours(1) - Minutes(20)</span>
+<span class="sd">  0.666667h</span>
+<span class="sd">  &gt;&gt;&gt; print Hours(1) - Minutes(30)</span>
+<span class="sd">  0.5h</span>
+<span class="sd">  &gt;&gt;&gt; print Seconds(Hours(1) - Minutes(30))</span>
+<span class="sd">  1800.0sec</span>
+
+<span class="sd">The base class, ``Time``, of ``Seconds``, ``Minutes``, and ``Hours`` classes can be used</span>
+<span class="sd">to construct time instances from strings and to convert between different</span>
+<span class="sd">units. For example::</span>
+
+<span class="sd">  &gt;&gt;&gt; Time(20, unit=&#39;min&#39;)</span>
+<span class="sd">  Minutes(20.0)</span>
+<span class="sd">  &gt;&gt;&gt; Time(&#39;60 seconds&#39;, unit=&#39;min&#39;)</span>
+<span class="sd">  Minutes(1.0)</span>
+<span class="sd">  &gt;&gt;&gt; Time(Hours(1), unit=&#39;min&#39;)</span>
+<span class="sd">  Minutes(60.0)</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Time&#39;</span><span class="p">,</span> <span class="s1">&#39;Seconds&#39;</span><span class="p">,</span> <span class="s1">&#39;Minutes&#39;</span><span class="p">,</span> <span class="s1">&#39;Hours&#39;</span><span class="p">]</span>
+
+<span class="n">re_time</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;(?P&lt;data&gt;[+-]?(\d+(\s*[.]\s*\d+)?|[.]\s*\d+))\s*(?P&lt;unit&gt;(s|sec|seconds|second|m|min|minutes|minute|h|hour|hours|))&#39;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Time"><a class="viewcode-back" href="../../../../../../index.html#iocbio.kinetics.modules.sysbio.respiration.reader.Time">[docs]</a><span class="k">class</span> <span class="nc">Time</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Base class to time quantity with units.</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    iocbio.timeunit</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Construct a Time instance.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        data : {float, int, long, Seconds, Minutes, Hours}</span>
+<span class="sd">        unit : {None, &#39;s&#39;, &#39;m&#39;, &#39;h&#39;,...}</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="n">m</span> <span class="o">=</span> <span class="n">re_time</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+            <span class="k">if</span> <span class="n">m</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">))</span>
+            <span class="n">u</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;unit&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">u</span><span class="p">:</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="n">Time</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">unit</span> <span class="o">=</span> <span class="n">u</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">cls</span> <span class="ow">is</span> <span class="n">Time</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">Time</span><span class="p">)</span> <span class="ow">and</span> <span class="n">unit</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">data</span>
+            <span class="n">objcls</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">s</span><span class="o">=</span><span class="n">Seconds</span><span class="p">,</span> <span class="n">sec</span><span class="o">=</span><span class="n">Seconds</span><span class="p">,</span> <span class="n">secs</span> <span class="o">=</span> <span class="n">Seconds</span><span class="p">,</span> <span class="n">seconds</span> <span class="o">=</span> <span class="n">Seconds</span><span class="p">,</span> <span class="n">second</span><span class="o">=</span><span class="n">Seconds</span><span class="p">,</span>
+                          <span class="n">m</span><span class="o">=</span><span class="n">Minutes</span><span class="p">,</span> <span class="nb">min</span><span class="o">=</span><span class="n">Minutes</span><span class="p">,</span> <span class="n">minutes</span><span class="o">=</span><span class="n">Minutes</span><span class="p">,</span> <span class="n">minute</span><span class="o">=</span><span class="n">Minutes</span><span class="p">,</span>
+                          <span class="n">h</span><span class="o">=</span><span class="n">Hours</span><span class="p">,</span> <span class="n">hour</span> <span class="o">=</span> <span class="n">Hours</span><span class="p">,</span> <span class="n">hours</span> <span class="o">=</span> <span class="n">Hours</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">unit</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="kc">None</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">objcls</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">unit</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">Time</span><span class="p">):</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="n">objcls</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">data</span>
+            <span class="k">if</span> <span class="nb">isinstance</span> <span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="nb">int</span><span class="p">)):</span>
+                <span class="n">obj</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__new__</span> <span class="p">(</span><span class="n">objcls</span><span class="p">)</span>
+                <span class="n">obj</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">objcls</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">obj</span>
+            <span class="k">raise</span> <span class="ne">NotImplementedError</span> <span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">objcls</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+
+        <span class="k">assert</span> <span class="n">unit</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">,</span> <span class="n">unit</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">Time</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="vm">__class__</span> <span class="ow">is</span> <span class="bp">cls</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">data</span> <span class="c1"># assume that Time is immutable</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">to_other_name</span> <span class="o">=</span> <span class="s1">&#39;to_</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
+                <span class="n">to_other</span> <span class="o">=</span> <span class="nb">getattr</span> <span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">to_other_name</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">to_other_name</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="ne">NotImplementedError</span> <span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> class needs </span><span class="si">%s</span><span class="s1"> member&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">to_other_name</span><span class="p">))</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="n">to_other</span> <span class="o">*</span> <span class="n">data</span><span class="o">.</span><span class="n">data</span>
+        <span class="k">if</span> <span class="nb">isinstance</span> <span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="nb">int</span><span class="p">)):</span>
+            <span class="n">obj</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span>
+            <span class="n">obj</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">obj</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__str__</span> <span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="si">%s%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">unit_label</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__repr__</span> <span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">(</span><span class="si">%r</span><span class="s1">)&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__abs__</span> <span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">__pos__</span> <span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="k">return</span> <span class="bp">self</span>
+    <span class="k">def</span> <span class="nf">__neg__</span> <span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__add__</span> <span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span> <span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">Time</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">NotImplemented</span>
+    <span class="fm">__radd__</span> <span class="o">=</span> <span class="fm">__add__</span>
+
+    <span class="k">def</span> <span class="nf">__sub__</span> <span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span> <span class="o">+</span> <span class="p">(</span><span class="o">-</span><span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__rsub__</span> <span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">other</span> <span class="o">+</span> <span class="p">(</span><span class="o">-</span><span class="bp">self</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__mul__</span> <span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span> <span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="n">long</span><span class="p">)):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">*</span> <span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">NotImplemented</span>
+
+    <span class="fm">__rmul__</span> <span class="o">=</span> <span class="fm">__mul__</span>
+
+    <span class="k">def</span> <span class="nf">__floordiv__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span> <span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="n">long</span><span class="p">)):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">//</span> <span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">NotImplemented</span>
+
+    <span class="k">def</span> <span class="nf">__truediv__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span> <span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="n">long</span><span class="p">)):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">/</span> <span class="n">other</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">NotImplemented</span>
+
+    <span class="n">__div__</span> <span class="o">=</span> <span class="fm">__truediv__</span>
+
+    <span class="k">def</span> <span class="nf">__float__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__int__</span> <span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__hash__</span> <span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">hash</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span> <span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span> <span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">Time</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span><span class="o">.</span><span class="n">data</span>
+        <span class="k">return</span> <span class="bp">NotImplemented</span>
+    <span class="k">def</span> <span class="nf">__ne__</span> <span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span> <span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">Time</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span><span class="o">.</span><span class="n">data</span>
+        <span class="k">return</span> <span class="bp">NotImplemented</span>
+    <span class="k">def</span> <span class="nf">__lt__</span> <span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span> <span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">Time</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span><span class="o">.</span><span class="n">data</span>
+        <span class="k">return</span> <span class="bp">NotImplemented</span>
+    <span class="k">def</span> <span class="nf">__le__</span> <span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span> <span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">Time</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span><span class="o">.</span><span class="n">data</span>
+        <span class="k">return</span> <span class="bp">NotImplemented</span>
+    <span class="k">def</span> <span class="nf">__gt__</span> <span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span> <span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">Time</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span><span class="o">.</span><span class="n">data</span>
+        <span class="k">return</span> <span class="bp">NotImplemented</span>
+    <span class="k">def</span> <span class="nf">__ge__</span> <span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span> <span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">Time</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span><span class="o">.</span><span class="n">data</span>
+        <span class="k">return</span> <span class="bp">NotImplemented</span></div>
+
+
+<div class="viewcode-block" id="Seconds"><a class="viewcode-back" href="../../../../../../index.html#iocbio.kinetics.modules.sysbio.respiration.reader.Seconds">[docs]</a><span class="k">class</span> <span class="nc">Seconds</span><span class="p">(</span><span class="n">Time</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Time in seconds.</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    iocbio.timeunit</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">unit_label</span> <span class="o">=</span> <span class="s1">&#39;sec&#39;</span>
+    <span class="n">to_Minutes</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">60</span>
+    <span class="n">to_Hours</span> <span class="o">=</span> <span class="n">to_Minutes</span><span class="o">/</span><span class="mi">60</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">round</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">round</span> <span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="Minutes"><a class="viewcode-back" href="../../../../../../index.html#iocbio.kinetics.modules.sysbio.respiration.reader.Minutes">[docs]</a><span class="k">class</span> <span class="nc">Minutes</span><span class="p">(</span><span class="n">Time</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Time in minutes.</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    iocbio.timeunit</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">unit_label</span> <span class="o">=</span> <span class="s1">&#39;min&#39;</span>
+    <span class="n">to_Seconds</span> <span class="o">=</span> <span class="mi">60</span>
+    <span class="n">to_Hours</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">60</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">round</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">round</span> <span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="Hours"><a class="viewcode-back" href="../../../../../../index.html#iocbio.kinetics.modules.sysbio.respiration.reader.Hours">[docs]</a><span class="k">class</span> <span class="nc">Hours</span><span class="p">(</span><span class="n">Time</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Time in hours.</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    iocbio.timeunit</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">unit_label</span> <span class="o">=</span> <span class="s1">&#39;h&#39;</span>
+    <span class="n">to_Minutes</span> <span class="o">=</span> <span class="mi">60</span>
+    <span class="n">to_Seconds</span> <span class="o">=</span> <span class="n">to_Minutes</span> <span class="o">*</span> <span class="mi">60</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">round</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">round</span> <span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span></div>
+
+
+<span class="k">def</span> <span class="nf">splitline</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">r</span><span class="p">)</span><span class="o">==</span><span class="mi">3</span><span class="p">:</span>
+        <span class="n">r</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">r</span>
+
+<span class="k">def</span> <span class="nf">get_protocol</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
+    <span class="n">protocol</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;#  protocol :&#39;</span><span class="p">):</span>
+                <span class="n">protocol</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">protocol</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">protocol</span> <span class="o">==</span> <span class="s2">&quot;None&quot;</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+            <span class="n">m</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;# [\w\s]*[.]float volume_ml :&quot;</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span>
+            <span class="c1"># print(line, m)</span>
+            <span class="k">if</span> <span class="n">m</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">protocol</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">()[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">18</span><span class="p">]</span>
+                <span class="k">return</span> <span class="n">protocol</span>
+            <span class="c1"># if line.find(&quot;volume&quot;) &gt; 0:</span>
+            <span class="c1">#     aaa</span>
+    <span class="k">return</span> <span class="n">protocol</span>
+
+
+<span class="k">def</span> <span class="nf">reader</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Reader of strathkelvin929 output files.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    filename : str</span>
+<span class="sd">      Path to experiment file.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    data : dict</span>
+<span class="sd">      Dictionary of time, oxygen, respiration_rate, and event arrays.</span>
+<span class="sd">    info : dict</span>
+<span class="sd">      Dictionary of experimental parameters.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">start_time_format</span> <span class="o">=</span> <span class="s1">&#39;%y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M&#39;</span>
+    <span class="n">protocol</span> <span class="o">=</span> <span class="n">get_protocol</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Detected protocol:&quot;</span><span class="p">,</span> <span class="n">protocol</span><span class="p">)</span>
+    <span class="n">timeunit</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">info</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">keys</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">defaultdict</span> <span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+    <span class="n">events</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">datastr</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
+        <span class="n">datastr</span> <span class="o">+=</span> <span class="n">line</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
+        <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;# Configuration.rate_regression_points :&#39;</span><span class="p">):</span>
+                <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+            <span class="k">elif</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;#  protocol :&#39;</span><span class="p">):</span>
+                <span class="c1">#protocol = line.split(&#39;:&#39;,1)[-1].strip()</span>
+                <span class="k">pass</span> <span class="c1"># separate protocol detector was written</span>
+            <span class="k">elif</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;#  start time :&#39;</span><span class="p">):</span>
+                <span class="n">start_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">start_time_format</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;# Configuration.oxygen_units :&#39;</span><span class="p">):</span>
+                <span class="n">oxygenunit</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;# Configuration.time_units :&#39;</span><span class="p">):</span>
+                <span class="n">timeunit</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="s1">&#39;volume_ml :&#39;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;# </span><span class="si">%s</span><span class="s1">.&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">protocol</span><span class="p">)):</span>
+                    <span class="n">volume_ml</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">split</span> <span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span> <span class="p">())</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="c1"># sometimes we have volume defined for several protocols</span>
+                    <span class="c1"># in this case, check if volume for correct protocol has been</span>
+                    <span class="c1"># supplied</span>
+                    <span class="n">check_volume</span> <span class="o">=</span> <span class="n">line</span>
+            <span class="k">if</span> <span class="s1">&#39;:&#39;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+                <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="n">line</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">split</span> <span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+                <span class="n">info</span><span class="p">[</span><span class="n">key</span><span class="o">.</span><span class="n">strip</span><span class="p">()]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="ow">not</span> <span class="n">keys</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">w</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()):</span>
+                    <span class="k">if</span> <span class="n">i</span><span class="o">%</span><span class="mi">2</span><span class="p">:</span>
+                        <span class="n">keys</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">w</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">keys</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">w</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">index</span> <span class="o">=</span> <span class="kc">None</span>
+                <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">w</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">splitline</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">strip</span><span class="p">())):</span>
+                    <span class="k">if</span> <span class="n">i</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+                        <span class="n">time</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">Seconds</span><span class="p">(</span><span class="n">Time</span> <span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">timeunit</span><span class="p">)))</span>
+                        <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">t</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">keys</span><span class="p">[</span><span class="mi">0</span><span class="p">]]):</span>
+                            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">float</span><span class="p">):</span>
+                                <span class="k">if</span> <span class="n">t</span> <span class="o">&gt;</span> <span class="n">value</span><span class="p">:</span>
+                                    <span class="k">break</span>
+                    <span class="k">elif</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">:</span>
+                        <span class="n">value</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">events</span><span class="p">[</span><span class="n">time</span><span class="p">]</span> <span class="o">=</span> <span class="n">w</span>
+                <span class="c1">#print &#39;Unprocessed line: %r&#39; % (line)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">w</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">splitline</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">())):</span>
+                <span class="k">if</span> <span class="n">i</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+                    <span class="n">value</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">Seconds</span><span class="p">(</span><span class="n">Time</span> <span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">timeunit</span><span class="p">)))</span>
+                <span class="k">elif</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">:</span>
+                    <span class="n">value</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">value</span> <span class="o">=</span> <span class="n">w</span>
+                <span class="n">data</span><span class="p">[</span><span class="n">keys</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+        <span class="n">data</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+    <span class="n">info</span><span class="p">[</span><span class="s1">&#39;events&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">events</span>
+    <span class="n">info</span><span class="p">[</span><span class="s1">&#39;protocol&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">protocol</span>
+    <span class="k">if</span> <span class="s1">&#39;protocol override&#39;</span> <span class="ow">in</span> <span class="n">info</span><span class="p">:</span>
+        <span class="n">override</span> <span class="o">=</span> <span class="n">info</span><span class="p">[</span><span class="s1">&#39;protocol override&#39;</span><span class="p">]</span>
+        <span class="n">info</span><span class="p">[</span><span class="s1">&#39;protocol&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">override</span>
+        <span class="n">keys</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">info</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">key</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">protocol</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span><span class="p">):</span>
+                <span class="n">info</span><span class="p">[</span><span class="n">override</span> <span class="o">+</span> <span class="n">key</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">protocol</span><span class="p">):]]</span> <span class="o">=</span> <span class="n">info</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+
+    <span class="c1"># check that settings are there</span>
+    <span class="n">data_test</span> <span class="o">=</span> <span class="n">Data</span><span class="p">(</span><span class="s1">&#39;bogus_id&#39;</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="n">info</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="n">getvalue</span><span class="p">(</span><span class="n">data_test</span><span class="p">,</span> <span class="s2">&quot;volume_ml&quot;</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="n">getvalue</span><span class="p">(</span><span class="n">data_test</span><span class="p">,</span> <span class="s2">&quot;temperature&quot;</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cannot find volume or temperature in specified settings. Maybe protocol is specified wrongly?&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Current settings:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">info</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">info</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">()</span>
+        <span class="n">force_crash</span>
+
+    <span class="k">return</span> <span class="n">data</span><span class="p">,</span> <span class="n">info</span><span class="p">,</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">datastr</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">calc_rate</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">o2</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">vo2</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">o2_interp</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># time in minutes</span>
+    <span class="n">N</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">interval</span> <span class="o">/</span> <span class="nb">max</span><span class="p">(</span><span class="mf">1e-5</span><span class="p">,</span> <span class="n">time</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">time</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+    <span class="n">N2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">N</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N2</span><span class="p">,</span> <span class="n">o2</span><span class="o">.</span><span class="n">size</span><span class="o">-</span><span class="n">N2</span><span class="p">):</span>
+        <span class="n">slope</span><span class="p">,</span> <span class="n">intercept</span><span class="p">,</span> <span class="n">r_value</span><span class="p">,</span> <span class="n">p_value</span><span class="p">,</span> <span class="n">std_err</span> <span class="o">=</span> <span class="n">linregress</span><span class="p">(</span><span class="n">time</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="n">N2</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">N2</span><span class="p">],</span> <span class="n">o2</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="n">N2</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">N2</span><span class="p">])</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">time</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">vo2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="n">slope</span><span class="p">)</span>
+        <span class="n">o2_interp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">o2</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="n">N2</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">N2</span><span class="p">]))</span>
+    <span class="k">return</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">o2_interp</span><span class="p">),</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">vo2</span><span class="p">)</span>
+
+
+
+<span class="c1">#########################################</span>
+<span class="c1">########## Modules API ##################</span>
+<span class="k">def</span> <span class="nf">args</span><span class="p">(</span><span class="n">parser</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s1">&#39;&#39;&#39;Respiration</span>
+<span class="s1">-----------</span>
+<span class="s1">ADP titration</span>
+<span class="s1">ATP titration</span>
+<span class="s1">ATP_AMP_ADP</span>
+<span class="s1">ATP_AMP_PEP_PK</span>
+<span class="s1">ATP_glucose_ADP</span>
+<span class="s1">ATP_glucose_PEP_PK</span>
+<span class="s1">creatine_ATP_ADP</span>
+<span class="s1">creatine_ATP_PEP_PK</span>
+<span class="s1">GMPS</span>
+<span class="s1">merviPK</span>
+<span class="s1">Respiratory complexes</span>
+<span class="s1">SGMP</span>
+<span class="s1">&#39;&#39;&#39;</span>
+
+<span class="k">def</span> <span class="nf">create_data</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">experiment_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="kn">from</span> <span class="nn">iocbio.kinetics.handler.experiment_generic</span> <span class="k">import</span> <span class="n">ExperimentGeneric</span>
+
+    <span class="n">filename</span><span class="o">=</span><span class="nb">getattr</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="s2">&quot;file_name&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+    <span class="n">fulltxt</span><span class="o">=</span><span class="kc">None</span>
+    <span class="n">protocol</span><span class="o">=</span><span class="nb">getattr</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="s2">&quot;protocol&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">experiment_id</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">fulltxt</span> <span class="o">=</span> <span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="n">get_fulltxt</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">experiment_id</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">filename</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">fulltxt</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="c1"># identify if it is strathkelvin file</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">fulltxt</span><span class="o">.</span><span class="n">begins_with</span><span class="p">(</span><span class="s1">&#39;#  channel index :&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">fulltxt</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;# Configuration.path_to_strathkelvin_program :&#39;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="c1"># seems to be strathkelvin, load it</span>
+        <span class="k">if</span> <span class="n">protocol</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">fulltxt</span> <span class="o">=</span> <span class="s1">&#39;# protocol override: &#39;</span> <span class="o">+</span> <span class="n">protocol</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">fulltxt</span>
+
+    <span class="c1"># check if we can load anything</span>
+    <span class="k">if</span> <span class="n">fulltxt</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="n">lines</span> <span class="o">=</span> <span class="n">fulltxt</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
+
+    <span class="n">d</span><span class="p">,</span> <span class="n">info</span><span class="p">,</span> <span class="n">expid</span> <span class="o">=</span> <span class="n">reader</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Using protocol:&quot;</span><span class="p">,</span> <span class="n">info</span><span class="p">[</span><span class="s1">&#39;protocol&#39;</span><span class="p">])</span>
+
+    <span class="n">e</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="c1"># make events in minutes</span>
+    <span class="n">eold</span> <span class="o">=</span> <span class="n">info</span><span class="p">[</span><span class="s1">&#39;events&#39;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">eold</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">e</span><span class="p">[</span><span class="n">k</span> <span class="o">/</span> <span class="mf">60.0</span><span class="p">]</span> <span class="o">=</span> <span class="n">eold</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+    <span class="n">info</span><span class="p">[</span><span class="s2">&quot;events&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">e</span>
+
+    <span class="n">t</span> <span class="o">=</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;time [min]&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mf">1.0</span><span class="o">/</span><span class="mi">60</span>
+
+    <span class="n">exp_time</span> <span class="o">=</span> <span class="s1">&#39;20&#39;</span> <span class="o">+</span> <span class="n">info</span><span class="p">[</span><span class="s1">&#39;start time&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">,</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+
+    <span class="n">t_vo2</span><span class="p">,</span> <span class="n">o2_vo2</span><span class="p">,</span> <span class="n">vo2</span> <span class="o">=</span> <span class="n">calc_rate</span><span class="p">(</span> <span class="n">t</span><span class="p">,</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;oxygen [umol/l]&#39;</span><span class="p">]</span> <span class="p">)</span>
+
+    <span class="n">dd</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;o2&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span>
+                   <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="n">Carrier</span><span class="p">(</span><span class="s2">&quot;oxygen&quot;</span><span class="p">,</span> <span class="s2">&quot;umol/l&quot;</span><span class="p">,</span>
+                                <span class="n">d</span><span class="p">[</span><span class="s1">&#39;oxygen [umol/l]&#39;</span><span class="p">])</span> <span class="p">}),</span>
+          <span class="p">(</span><span class="s1">&#39;vo2&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="n">t_vo2</span><span class="p">,</span>
+                    <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="n">Carrier</span><span class="p">(</span><span class="s2">&quot;respiration rate&quot;</span><span class="p">,</span> <span class="s2">&quot;umol/l/min&quot;</span><span class="p">,</span> <span class="n">vo2</span><span class="p">)})]</span>
+
+    <span class="k">if</span> <span class="n">info</span><span class="p">[</span><span class="s1">&#39;protocol&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;Respiratory complexes&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">dd</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">(</span><span class="s1">&#39;o2_vo2&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="n">t_vo2</span><span class="p">,</span>
+                                <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="n">Carrier</span><span class="p">(</span><span class="s2">&quot;oxygen smooth&quot;</span><span class="p">,</span> <span class="s2">&quot;umol/l&quot;</span><span class="p">,</span> <span class="n">o2_vo2</span><span class="p">)</span> <span class="p">})</span> <span class="p">)</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="n">Data</span><span class="p">(</span><span class="n">expid</span><span class="p">,</span>
+                <span class="n">config</span><span class="o">=</span><span class="n">info</span><span class="p">,</span>
+                <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;Strathkelvin &quot;</span> <span class="o">+</span> <span class="n">info</span><span class="p">[</span><span class="s1">&#39;protocol&#39;</span><span class="p">],</span>
+                <span class="n">type_generic</span> <span class="o">=</span> <span class="s2">&quot;VO2 &quot;</span> <span class="o">+</span> <span class="n">info</span><span class="p">[</span><span class="s1">&#39;protocol&#39;</span><span class="p">],</span>
+                <span class="n">time</span> <span class="o">=</span> <span class="n">exp_time</span><span class="p">,</span>
+                <span class="n">name</span> <span class="o">=</span> <span class="n">info</span><span class="p">[</span><span class="s2">&quot;this file&quot;</span><span class="p">],</span>
+                <span class="n">xname</span> <span class="o">=</span> <span class="s2">&quot;Time&quot;</span><span class="p">,</span> <span class="n">xunit</span> <span class="o">=</span> <span class="s2">&quot;min&quot;</span><span class="p">,</span>
+                <span class="n">xlim</span> <span class="o">=</span> <span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">t</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]),</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">(</span> <span class="n">dd</span> <span class="p">),</span>
+    <span class="p">)</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">fulltext</span> <span class="o">=</span> <span class="n">fulltxt</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">ExperimentGeneric</span><span class="o">.</span><span class="n">has_record</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">experiment_id</span><span class="p">):</span>
+        <span class="n">database</span><span class="o">.</span><span class="n">set_read_only</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="n">store</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">data</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">sys</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="n">create_data</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<h3><a href="../../../../../../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../index.html">Kinetics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../index.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../../index.html">Kinetics 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../../index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, MV.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>

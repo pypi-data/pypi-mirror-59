@@ -1,0 +1,233 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>iocbio.kinetics.calc.current &#8212; Kinetics 1 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Kinetics 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for iocbio.kinetics.calc.current</h1><div class="highlight"><pre>
+<span></span><span class="c1">#from scipy.stats import linregress</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="k">import</span> <span class="n">trapz</span>
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="k">import</span> <span class="n">leastsq</span>
+<span class="kn">from</span> <span class="nn">scipy.special</span> <span class="k">import</span> <span class="n">lambertw</span>
+
+<span class="kn">from</span> <span class="nn">.generic</span> <span class="k">import</span> <span class="n">AnalyzerGeneric</span><span class="p">,</span> <span class="n">XYData</span><span class="p">,</span> <span class="n">Stats</span>
+<span class="kn">from</span> <span class="nn">.xy</span> <span class="k">import</span> <span class="n">AnalyzerXY</span>
+<span class="kn">from</span> <span class="nn">..constants</span> <span class="k">import</span> <span class="n">database_table_experiment</span>
+
+
+<div class="viewcode-block" id="AnalyzerCurrent"><a class="viewcode-back" href="../../../../index.html#iocbio.kinetics.calc.current.AnalyzerCurrent">[docs]</a><span class="k">class</span> <span class="nc">AnalyzerCurrent</span><span class="p">(</span><span class="n">AnalyzerGeneric</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Current analyzer&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">baseline_subtraction</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="n">AnalyzerGeneric</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">baseline_subtraction</span> <span class="o">=</span> <span class="n">baseline_subtraction</span>
+
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">7</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">y</span><span class="o">.</span><span class="n">size</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">x</span>
+            <span class="n">y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">y</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">blackman</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+            <span class="n">k</span> <span class="o">/=</span> <span class="n">k</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+            <span class="c1">#c = self.experiment.y#</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">convolve</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;same&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">y</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">baseline_subtraction</span><span class="p">:</span>
+            <span class="n">current_baseline</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="o">-</span><span class="mi">20</span><span class="p">:]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">current_baseline</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="n">current_peak</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="o">-</span> <span class="n">current_baseline</span>
+        <span class="n">ind_to_peak</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+        <span class="n">arg_to_peak</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="n">ind_to_peak</span><span class="p">]</span>
+
+        <span class="n">y_int</span> <span class="o">=</span> <span class="n">y</span> <span class="o">-</span> <span class="n">current_baseline</span>
+        <span class="c1">#charge_carried = trapz(pulse[a:b] - pulse[b-20:b].mean(), dx=self.Dt)</span>
+        <span class="n">charge_carried</span> <span class="o">=</span> <span class="n">trapz</span><span class="p">(</span><span class="n">y_int</span><span class="p">[</span><span class="n">y_int</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="n">y_int</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">charge_carried</span> <span class="o">=</span> <span class="n">trapz</span><span class="p">(</span><span class="n">y_int</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;current baseline&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;current baseline&#39;</span><span class="p">,</span> <span class="s1">&#39;pA&#39;</span><span class="p">,</span> <span class="n">current_baseline</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;current peak&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;current peak&#39;</span><span class="p">,</span> <span class="s1">&#39;pA&#39;</span><span class="p">,</span> <span class="n">current_peak</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;arg to peak&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;arg to peak&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="n">arg_to_peak</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;charge carried&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;charge carried&#39;</span><span class="p">,</span> <span class="s1">&#39;pC&#39;</span><span class="p">,</span> <span class="n">charge_carried</span><span class="p">)</span>
+
+        <span class="c1">#self.calc = XYData([arg_to_peak, arg_to_peak], [0.95*current_peak, 1.05*current_peak])</span>
+        <span class="c1"># self.calc = XYData(self.experiment.x[ind_to_peak-20:ind_to_peak+20],</span>
+        <span class="c1">#                    c[ind_to_peak-20:ind_to_peak+20])</span>
+
+        <span class="c1">#self.calc = XYData(x[y_int&lt;0], y_int[y_int&lt;0])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">calc</span> <span class="o">=</span> <span class="n">XYData</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y_int</span><span class="p">)</span></div>
+
+
+<span class="k">class</span> <span class="nc">AnalyzerCurrentIV</span><span class="p">(</span><span class="n">AnalyzerXY</span><span class="p">):</span>
+
+    <span class="n">database_table</span> <span class="o">=</span> <span class="s2">&quot;electrophysiology_current_iv_fit&quot;</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">database_schema</span><span class="p">(</span><span class="n">db</span><span class="p">):</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;CREATE TABLE IF NOT EXISTS &quot;</span> <span class="o">+</span> <span class="n">db</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">AnalyzerCurrentIV</span><span class="o">.</span><span class="n">database_table</span><span class="p">)</span> <span class="o">+</span>
+                 <span class="s2">&quot;(experiment_id text PRIMARY KEY, &quot;</span> <span class="o">+</span>
+                 <span class="s2">&quot;gmax double precision, &quot;</span> <span class="o">+</span>
+                 <span class="s2">&quot;vrev double precision, &quot;</span> <span class="o">+</span>
+                 <span class="s2">&quot;vhalfi double precision, &quot;</span> <span class="o">+</span>
+                 <span class="s2">&quot;kg double precision, &quot;</span> <span class="o">+</span>
+                 <span class="s2">&quot;v_current_max double precision, &quot;</span> <span class="o">+</span>
+                 <span class="s2">&quot;max_current double precision, &quot;</span> <span class="o">+</span>
+                 <span class="s2">&quot;FOREIGN KEY (experiment_id) REFERENCES &quot;</span> <span class="o">+</span> <span class="n">db</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">database_table_experiment</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;(experiment_id) ON DELETE CASCADE&quot;</span> <span class="o">+</span>
+                 <span class="s2">&quot;)&quot;</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">iv_func</span><span class="p">(</span><span class="n">V</span><span class="p">,</span> <span class="n">Gmax</span><span class="p">,</span> <span class="n">Vrev</span><span class="p">,</span> <span class="n">Vhalf</span><span class="p">,</span> <span class="n">kG</span><span class="p">):</span>
+        <span class="c1"># The cardiac L-type calcium channel distal carboxy terminus autoinhibition is regulated by calcium</span>
+        <span class="c1"># https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3774502/</span>
+        <span class="c1"># http://jgp.rupress.org/content/128/1/15?ijkey=cf7d206e01efdf758ad1e8be2afbd9e20048376f&amp;keytype2=tf_ipsecsha</span>
+        <span class="c1"># https://academic.oup.com/cardiovascres/article/38/2/424/299912</span>
+        <span class="c1"># http://circres.ahajournals.org/content/90/9/933 -- read this</span>
+        <span class="k">return</span> <span class="n">Gmax</span><span class="o">*</span><span class="p">(</span><span class="n">V</span><span class="o">-</span><span class="n">Vrev</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">((</span><span class="n">Vhalf</span><span class="o">-</span><span class="n">V</span><span class="p">)</span><span class="o">/</span><span class="n">kG</span><span class="p">))</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">iv_error_func</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">y_std</span><span class="p">,</span> <span class="n">V</span><span class="p">):</span>
+        <span class="n">Gmax</span><span class="p">,</span> <span class="n">Vrev</span><span class="p">,</span> <span class="n">Vhalf</span><span class="p">,</span> <span class="n">kG</span> <span class="o">=</span> <span class="n">x0</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="n">AnalyzerCurrentIV</span><span class="o">.</span><span class="n">iv_func</span><span class="p">(</span><span class="n">V</span><span class="p">,</span> <span class="n">Gmax</span><span class="p">,</span> <span class="n">Vrev</span><span class="p">,</span> <span class="n">Vhalf</span><span class="p">,</span> <span class="n">kG</span><span class="p">))</span> <span class="o">/</span> <span class="n">y_std</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">table_name</span><span class="p">,</span> <span class="n">value_name</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">axisnames</span><span class="p">,</span> <span class="n">axisunits</span><span class="p">):</span>
+        <span class="n">AnalyzerXY</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">table_name</span><span class="p">,</span> <span class="n">value_name</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">axisnames</span><span class="p">,</span> <span class="n">axisunits</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">database_schema</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">analyze</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">analyze</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">analyze</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">y</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;fail&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;Cannot fit! At least 4 points are needed&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="k">return</span>
+
+        <span class="c1"># x0_I = Gmax, Vrev, Vhalf, kG</span>
+        <span class="n">x0_I</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">50.</span><span class="p">,</span> <span class="o">-</span><span class="mf">15.</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">]</span>
+        <span class="p">(</span><span class="n">gmax</span><span class="p">,</span> <span class="n">vrev</span><span class="p">,</span> <span class="n">vhalfi</span><span class="p">,</span> <span class="n">kg</span><span class="p">),</span> <span class="n">msg</span> <span class="o">=</span> <span class="n">leastsq</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">iv_error_func</span><span class="p">,</span> <span class="n">x0_I</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
+        <span class="n">v_current_max</span> <span class="o">=</span> <span class="o">-</span><span class="n">kg</span> <span class="o">*</span> <span class="n">lambertw</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">vrev</span><span class="o">/</span><span class="n">kg</span><span class="o">-</span><span class="n">vhalfi</span><span class="o">/</span><span class="n">kg</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="n">vrev</span> <span class="o">-</span> <span class="n">kg</span>
+        <span class="n">v_current_max</span> <span class="o">=</span> <span class="n">v_current_max</span><span class="o">.</span><span class="n">real</span>
+        <span class="n">max_current</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">iv_func</span><span class="p">(</span><span class="n">v_current_max</span><span class="p">,</span> <span class="n">gmax</span><span class="p">,</span> <span class="n">vrev</span><span class="p">,</span> <span class="n">vhalfi</span><span class="p">,</span> <span class="n">kg</span><span class="p">)</span>
+        <span class="c1"># print(&#39;Gmax, Vrev, VhalfI, kG, VImax, msg&#39;, Gmax, Vrev, VhalfI, kG, V_current_max, msg)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;gmax&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;Maximal conductance&#39;</span><span class="p">,</span> <span class="s1">&#39;pA/mV&#39;</span><span class="p">,</span> <span class="n">gmax</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;vrev&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;Reversal potential&#39;</span><span class="p">,</span> <span class="s1">&#39;mV&#39;</span><span class="p">,</span> <span class="n">vrev</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;vhalfi&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;Activation midpoint potential&#39;</span><span class="p">,</span> <span class="s1">&#39;mV&#39;</span><span class="p">,</span> <span class="n">vhalfi</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;kg&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;Slope factor&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">kg</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;v_current_max&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;Potential at maximal current &#39;</span><span class="p">,</span> <span class="s1">&#39;mV&#39;</span><span class="p">,</span> <span class="n">v_current_max</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;max_current&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;Maximal current&#39;</span><span class="p">,</span> <span class="s1">&#39;pA&#39;</span><span class="p">,</span> <span class="n">max_current</span><span class="p">)</span>
+
+        <span class="c1"># experiment_id is inherited from AnalyzerXY</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">has_record</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database_table</span><span class="p">,</span> <span class="n">experiment_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">experiment_id</span><span class="p">):</span>
+            <span class="n">c</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;UPDATE &quot;</span> <span class="o">+</span> <span class="n">c</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database_table</span><span class="p">)</span> <span class="o">+</span>
+                    <span class="s2">&quot; SET gmax=:gmax, vrev=:vrev, vhalfi=:vhalfi, kg=:kg, v_current_max=:v_current_max, max_current=:max_current&quot;</span> <span class="o">+</span>
+                    <span class="s2">&quot; WHERE experiment_id=:experiment_id&quot;</span><span class="p">,</span>
+                    <span class="n">gmax</span><span class="o">=</span><span class="n">gmax</span><span class="p">,</span> <span class="n">vrev</span><span class="o">=</span><span class="n">vrev</span><span class="p">,</span> <span class="n">vhalfi</span><span class="o">=</span><span class="n">vhalfi</span><span class="p">,</span> <span class="n">kg</span><span class="o">=</span><span class="n">kg</span><span class="p">,</span> <span class="n">v_current_max</span><span class="o">=</span><span class="n">v_current_max</span><span class="p">,</span> <span class="n">max_current</span><span class="o">=</span><span class="n">max_current</span><span class="p">,</span>
+                    <span class="n">experiment_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">experiment_id</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">c</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;INSERT INTO &quot;</span> <span class="o">+</span> <span class="n">c</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database_table</span><span class="p">)</span> <span class="o">+</span>
+                    <span class="s2">&quot; (experiment_id, gmax, vrev, vhalfi, kg, v_current_max, max_current)&quot;</span> <span class="o">+</span>
+                    <span class="s2">&quot; VALUES(:experiment_id, :gmax, :vrev, :vhalfi, :kg, :v_current_max, :max_current)&quot;</span><span class="p">,</span>
+                    <span class="n">experiment_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">experiment_id</span><span class="p">,</span>
+                    <span class="n">gmax</span><span class="o">=</span><span class="n">gmax</span><span class="p">,</span> <span class="n">vrev</span><span class="o">=</span><span class="n">vrev</span><span class="p">,</span> <span class="n">vhalfi</span><span class="o">=</span><span class="n">vhalfi</span><span class="p">,</span> <span class="n">kg</span><span class="o">=</span><span class="n">kg</span><span class="p">,</span> <span class="n">v_current_max</span><span class="o">=</span><span class="n">v_current_max</span><span class="p">,</span> <span class="n">max_current</span><span class="o">=</span><span class="n">max_current</span><span class="p">)</span>
+
+        <span class="n">dt</span> <span class="o">=</span> <span class="mf">1.0</span>
+        <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">dt</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">calc</span> <span class="o">=</span> <span class="n">XYData</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">iv_func</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">gmax</span><span class="p">,</span> <span class="n">vrev</span><span class="p">,</span> <span class="n">vhalfi</span><span class="p">,</span> <span class="n">kg</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">signals</span><span class="o">.</span><span class="n">sigUpdate</span><span class="o">.</span><span class="n">emit</span><span class="p">()</span>
+
+
+<span class="c1"># class </span>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../index.html">Kinetics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../index.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Kinetics 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, MV.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>
