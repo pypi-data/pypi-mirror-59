@@ -1,0 +1,30 @@
+Longleding Static File Service SDK
+
+# Supported Python Versions
+
+Python >= 3.6
+
+# Installation
+
+longleding-static-file-service-sdk is available for Linux, macOS, and Windows.
+
+```shell script
+$ pip install longleding-static-file-service-sdk
+```
+
+# Basic Usage
+
+```python
+# -*- coding: utf-8 -*-
+from sdk import static_file_service_sdk
+
+static_file_service_endpoint = "localhost:80"
+static_file_service_sdk.init_service(endpoint=static_file_service_endpoint)
+
+
+if __name__ == '__main__':
+    print(static_file_service_sdk.get_oss_bucket_info())
+    print(static_file_service_sdk.get_upload_credentials())
+    static_file_service_sdk.move_static_file(from_path="a.txt", to_path="b.txt")
+
+```
