@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ProjectScope
+Version: 0.0.1
+Summary: A small project management tool
+Home-page: https://bitbucket.org/CoreyBird/projectscope.git
+Author: Corey Bird
+Author-email: birdcorey@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
