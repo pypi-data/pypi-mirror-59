@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: wifi_qrcode
+Version: 1.0.1
+Summary: Generate WiFi Access QR Codes
+Home-page: https://github.com/shpaker/wifi_qrcode
+Author: Aleksandr Shpak
+Author-email: shpaker@gmail.com
+License: UNKNOWN
+Description: # wifi_qrcode
+        Generate WiFi Access QR Codes
+        
+        # Installation
+        
+        ```bash
+        pip install wifi_qrcode
+        ```
+        
+        # Usage example
+        
+        ```bash
+        wifi_qrcode --ssid MYWIRELESSNETWORK --auth WPA --password SECRET
+        ```
+        
+        # Arguments
+        
+        ## Required
+        
+        * `--ssid` Network SSID
+        
+        ## Optional
+        
+        * `--auth` Authentication type; can be WEP or WPA, or 'nopass' for no password
+        * `--password` Password, ignored if `--auth` is "nopass" 
+        * `--hidden` True if the network SSID is hidden.
+        * `--output` QR-code file
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Communications
+Description-Content-Type: text/markdown
