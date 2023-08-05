@@ -1,0 +1,207 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>iocbio.kinetics.app.gui &#8212; Kinetics 1 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Kinetics 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for iocbio.kinetics.app.gui</h1><div class="highlight"><pre>
+<span></span><span class="ch">#!/usr/bin/env python3</span>
+
+<span class="kn">from</span> <span class="nn">PyQt5.QtCore</span> <span class="k">import</span> <span class="n">Qt</span><span class="p">,</span> <span class="n">pyqtSlot</span><span class="p">,</span> <span class="n">pyqtSignal</span><span class="p">,</span> <span class="n">QSettings</span><span class="p">,</span> <span class="n">QCoreApplication</span><span class="p">,</span> <span class="n">QStandardPaths</span>
+<span class="kn">from</span> <span class="nn">PyQt5.QtWidgets</span> <span class="k">import</span> <span class="n">QApplication</span>
+<span class="kn">import</span> <span class="nn">hashlib</span><span class="o">,</span> <span class="nn">sys</span>
+
+<span class="kn">import</span> <span class="nn">iocbio.kinetics.io.db</span> <span class="k">as</span> <span class="nn">dbwrapper</span>
+
+<span class="c1">################################################################################</span>
+<span class="c1">### Helper functions</span>
+<span class="c1">################################################################################</span>
+
+<div class="viewcode-block" id="handle_schema_changes"><a class="viewcode-back" href="../../../../index.html#iocbio.kinetics.app.gui.handle_schema_changes">[docs]</a><span class="k">def</span> <span class="nf">handle_schema_changes</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">version</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Handles changes in schema induced by updates. Returns true if successful&quot;&quot;&quot;</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;TODO: Handle changes in schema version&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="kc">True</span> <span class="c1"># successful update</span></div>
+
+<span class="c1">################################################################################</span>
+<span class="c1">### Main app function</span>
+<span class="c1">################################################################################</span>
+
+<span class="k">def</span> <span class="nf">app</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">modules</span><span class="p">):</span>
+    <span class="kn">from</span> <span class="nn">iocbio.kinetics.gui.mainwindow</span> <span class="k">import</span> <span class="n">MainGUI</span>
+    <span class="kn">from</span> <span class="nn">iocbio.kinetics.handler.roi</span> <span class="k">import</span> <span class="n">ROIHandler</span>
+    <span class="kn">from</span> <span class="nn">iocbio.kinetics.handler.experiment_generic</span> <span class="k">import</span> <span class="n">ExperimentGeneric</span>
+
+    <span class="n">QCoreApplication</span><span class="o">.</span><span class="n">setOrganizationName</span><span class="p">(</span><span class="s2">&quot;iocbio&quot;</span><span class="p">)</span>
+    <span class="n">QCoreApplication</span><span class="o">.</span><span class="n">setApplicationName</span><span class="p">(</span><span class="s2">&quot;kinetics&quot;</span><span class="p">)</span>
+
+    <span class="n">app</span> <span class="o">=</span> <span class="n">QApplication</span><span class="p">([])</span>
+
+    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">sqlite</span><span class="p">:</span> <span class="n">dbtype</span> <span class="o">=</span> <span class="s2">&quot;sqlite3&quot;</span>
+    <span class="k">else</span><span class="p">:</span> <span class="n">dbtype</span><span class="o">=</span><span class="s2">&quot;postgresql&quot;</span>
+    <span class="n">database</span> <span class="o">=</span> <span class="n">dbwrapper</span><span class="o">.</span><span class="n">DatabaseInterface</span><span class="p">(</span><span class="n">dbtype</span><span class="p">)</span>
+    <span class="n">version</span> <span class="o">=</span> <span class="n">database</span><span class="o">.</span><span class="n">schema</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">version</span> <span class="o">!=</span> <span class="n">dbwrapper</span><span class="o">.</span><span class="n">DatabaseInterface</span><span class="o">.</span><span class="n">schema_version</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">handle_schema_changes</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">version</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Failed to update the database schema&quot;</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1"># init database</span>
+    <span class="n">ExperimentGeneric</span><span class="o">.</span><span class="n">database_schema</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+    <span class="n">ROIHandler</span><span class="o">.</span><span class="n">database_schema</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+    <span class="n">modules</span><span class="o">.</span><span class="n">database_schema</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">set_default_permissions</span><span class="p">:</span>
+        <span class="n">database</span><span class="o">.</span><span class="n">grant_groups</span><span class="p">()</span>
+        <span class="n">database</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">enable_user</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">database</span><span class="o">.</span><span class="n">grant</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">enable_user</span><span class="p">)</span>
+        <span class="n">database</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">disable_user</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">database</span><span class="o">.</span><span class="n">revoke</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">disable_user</span><span class="p">)</span>
+        <span class="n">database</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">rw</span><span class="p">:</span>
+        <span class="n">database</span><span class="o">.</span><span class="n">set_read_only</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">database</span><span class="o">.</span><span class="n">set_read_only</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">force_rw</span><span class="p">:</span>
+        <span class="n">database</span><span class="o">.</span><span class="n">disable_read_only</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">database</span><span class="o">.</span><span class="n">set_read_only</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="n">modules</span><span class="o">.</span><span class="n">create_data</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">args</span> <span class="o">=</span> <span class="n">args</span><span class="p">)</span>
+    <span class="n">modules</span><span class="o">.</span><span class="n">database_process</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span>
+
+    <span class="n">gui_obj</span> <span class="o">=</span> <span class="n">MainGUI</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">modules</span><span class="p">)</span>
+    <span class="n">exit_code</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">exec_</span><span class="p">()</span>
+    <span class="n">database</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">exit_code</span><span class="p">)</span>
+
+
+<span class="c1">################################################################################</span>
+<span class="c1">### Main entry point</span>
+<span class="c1">################################################################################</span>
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="kn">from</span> <span class="nn">iocbio.kinetics.io.modules</span> <span class="k">import</span> <span class="n">Modules</span>
+    <span class="kn">import</span> <span class="nn">argparse</span>
+
+    <span class="c1"># load modules</span>
+    <span class="n">modules</span> <span class="o">=</span> <span class="n">Modules</span><span class="p">()</span>
+
+    <span class="c1"># fill arguments</span>
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;IOCBIO Kinetics analyser&#39;</span><span class="p">,</span> <span class="n">formatter_class</span><span class="o">=</span><span class="n">argparse</span><span class="o">.</span><span class="n">RawTextHelpFormatter</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;file_name&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">&#39;?&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Input file&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--sqlite&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;If option given SQLite database is used&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--rw&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;If given, program started in Read/Write mode&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--set-default-permissions&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;If given, sets default access permissions&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--enable-user&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Add access permissions for specified user&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--disable-user&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Remove access permissions for specified user&#39;</span><span class="p">)</span>
+    <span class="c1"># following is a hidden feature for forcing disabling read-only mode option</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--force-rw&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="n">argparse</span><span class="o">.</span><span class="n">SUPPRESS</span><span class="p">)</span>
+
+    <span class="c1"># fill protocol help text and module specific args</span>
+    <span class="n">protocol</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">Experiment protocols that can be specified on command line (enclose in &#39;&#39; if contains space).</span>
+
+<span class="s1">&#39;&#39;&#39;</span>
+    <span class="n">protocol</span> <span class="o">=</span> <span class="n">modules</span><span class="o">.</span><span class="n">args</span><span class="p">(</span><span class="n">parser</span><span class="p">,</span> <span class="n">protocol</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--protocol&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">help</span> <span class="o">=</span> <span class="n">protocol</span><span class="p">)</span>
+    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+    <span class="n">app</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">modules</span><span class="p">)</span>
+
+<span class="c1"># if run as a script</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../index.html">Kinetics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../index.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Kinetics 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, MV.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>

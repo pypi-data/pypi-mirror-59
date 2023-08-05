@@ -1,0 +1,137 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>iocbio.kinetics.handler.experiment_generic &#8212; Kinetics 1 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Kinetics 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for iocbio.kinetics.handler.experiment_generic</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">..constants</span> <span class="k">import</span> <span class="n">database_table_experiment</span>
+
+
+<div class="viewcode-block" id="ExperimentGeneric"><a class="viewcode-back" href="../../../../index.html#iocbio.kinetics.handler.experiment_generic.ExperimentGeneric">[docs]</a><span class="k">class</span> <span class="nc">ExperimentGeneric</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Collection of methods used by all experiments&quot;&quot;&quot;</span>
+
+    <span class="n">database_table</span> <span class="o">=</span> <span class="n">database_table_experiment</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">database_schema</span><span class="p">(</span><span class="n">db</span><span class="p">):</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;CREATE TABLE IF NOT EXISTS &quot;</span> <span class="o">+</span> <span class="n">db</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">ExperimentGeneric</span><span class="o">.</span><span class="n">database_table</span><span class="p">)</span> <span class="o">+</span>
+                 <span class="s2">&quot;(experiment_id text not null, date text not null, time text, type_generic text not null, type_specific text not null, hardware text not null &quot;</span> <span class="o">+</span>
+                 <span class="s2">&quot;, primary key(experiment_id))&quot;</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">has_record</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">experiment_id</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">res</span> <span class="o">=</span> <span class="n">database</span><span class="o">.</span><span class="n">has_record</span><span class="p">(</span><span class="n">ExperimentGeneric</span><span class="o">.</span><span class="n">database_table</span><span class="p">,</span> <span class="n">experiment_id</span><span class="o">=</span><span class="n">experiment_id</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="n">res</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">return</span> <span class="n">res</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">hardware</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">experiment_id</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;select hardware from &quot;</span> <span class="o">+</span> <span class="n">database</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="s2">&quot;experiment&quot;</span><span class="p">)</span> <span class="o">+</span>
+                              <span class="s2">&quot; where experiment_id=:experiment_id&quot;</span><span class="p">,</span>
+                              <span class="n">experiment_id</span><span class="o">=</span><span class="n">experiment_id</span><span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="p">()</span><span class="o">.</span><span class="n">hardware</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">store</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">experiment_id</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">type_generic</span><span class="p">,</span> <span class="n">type_specific</span><span class="p">,</span> <span class="n">hardware</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">ExperimentGeneric</span><span class="o">.</span><span class="n">has_record</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">experiment_id</span><span class="p">):</span>
+            <span class="k">return</span>
+
+        <span class="n">date</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;INSERT INTO &quot;</span> <span class="o">+</span> <span class="n">database</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">ExperimentGeneric</span><span class="o">.</span><span class="n">database_table</span><span class="p">)</span> <span class="o">+</span>
+                            <span class="s2">&quot;(experiment_id, date, time, type_generic, type_specific, hardware) &quot;</span> <span class="o">+</span>
+                            <span class="s2">&quot;VALUES(:experiment_id, :date, :time, :typeg, :types, :hardware)&quot;</span><span class="p">,</span>
+                            <span class="n">experiment_id</span><span class="o">=</span><span class="n">experiment_id</span><span class="p">,</span> <span class="n">date</span><span class="o">=</span><span class="n">date</span><span class="p">,</span> <span class="n">time</span><span class="o">=</span><span class="n">t</span><span class="p">,</span>
+                            <span class="n">typeg</span><span class="o">=</span><span class="n">type_generic</span><span class="p">,</span> <span class="n">types</span><span class="o">=</span><span class="n">type_specific</span><span class="p">,</span> <span class="n">hardware</span><span class="o">=</span><span class="n">hardware</span><span class="p">)</span>
+
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">db</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">database</span> <span class="o">=</span> <span class="n">db</span></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../index.html">Kinetics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../index.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Kinetics 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, MV.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>

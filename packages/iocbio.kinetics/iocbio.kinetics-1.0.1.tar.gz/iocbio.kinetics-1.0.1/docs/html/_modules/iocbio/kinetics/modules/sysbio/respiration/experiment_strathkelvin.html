@@ -1,0 +1,278 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>iocbio.kinetics.modules.sysbio.respiration.experiment_strathkelvin &#8212; Kinetics 1 documentation</title>
+    <link rel="stylesheet" href="../../../../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../../',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../../index.html">Kinetics 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for iocbio.kinetics.modules.sysbio.respiration.experiment_strathkelvin</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">iocbio.kinetics.handler.experiment_generic</span> <span class="k">import</span> <span class="n">ExperimentGeneric</span>
+<span class="kn">from</span> <span class="nn">iocbio.kinetics.constants</span> <span class="k">import</span> <span class="n">database_table_experiment</span>
+<span class="kn">from</span> <span class="nn">.analyzer_primary</span> <span class="k">import</span> <span class="n">AnalyzerRespirationCreator</span><span class="p">,</span> <span class="n">AnalyzerRespirationTMPD</span><span class="p">,</span> <span class="n">AnalyzerRespirationTMPDCorrected</span>
+
+<span class="c1">### Module flag</span>
+<span class="n">IocbioKineticsModule</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;analyzer&#39;</span><span class="p">,</span> <span class="s1">&#39;database_schema&#39;</span><span class="p">]</span>
+
+<span class="c1">### Implementation</span>
+
+<div class="viewcode-block" id="ExperimentStrathkelvin"><a class="viewcode-back" href="../../../../../../index.html#iocbio.kinetics.modules.sysbio.respiration.experiment_strathkelvin.ExperimentStrathkelvin">[docs]</a><span class="k">class</span> <span class="nc">ExperimentStrathkelvin</span><span class="p">(</span><span class="n">ExperimentGeneric</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;General description of experiment performed on Strathkelvin&quot;&quot;&quot;</span>
+
+    <span class="n">database_table</span> <span class="o">=</span> <span class="s2">&quot;strathkelvin&quot;</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">database_schema</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">gen_config_table</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;CREATE TABLE IF NOT EXISTS &quot;</span> <span class="o">+</span> <span class="n">db</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="n">database_table</span><span class="p">)</span> <span class="o">+</span>
+                 <span class="s2">&quot;(experiment_id text PRIMARY KEY, rawdata text, filename text, title text, channel integer, &quot;</span> <span class="o">+</span>
+                 <span class="s2">&quot;FOREIGN KEY (experiment_id) REFERENCES &quot;</span> <span class="o">+</span> <span class="n">db</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">database_table_experiment</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;(experiment_id) ON DELETE CASCADE&quot;</span> <span class="o">+</span>
+                 <span class="s2">&quot;)&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">gen_config_table</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;CREATE TABLE IF NOT EXISTS &quot;</span> <span class="o">+</span> <span class="n">db</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">gen_config_table</span><span class="p">)</span> <span class="o">+</span>
+                     <span class="s2">&quot;(experiment_id text not null, cells_in_mkL double precision, chamber_volume_in_ml double precision, &quot;</span> <span class="o">+</span>
+                     <span class="s2">&quot;temperature double precision&quot;</span>
+                     <span class="s2">&quot;, primary key(experiment_id), &quot;</span> <span class="o">+</span>
+                     <span class="s2">&quot;FOREIGN KEY (experiment_id) REFERENCES &quot;</span> <span class="o">+</span> <span class="n">db</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">database_table_experiment</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;(experiment_id) ON DELETE CASCADE&quot;</span> <span class="o">+</span>
+                     <span class="s2">&quot;)&quot;</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">getvalue</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">protocol</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="n">k</span> <span class="o">=</span> <span class="n">key</span>
+        <span class="k">if</span> <span class="n">k</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">config</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">protocol</span><span class="p">:</span>
+                <span class="n">k</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;protocol&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span> <span class="o">+</span> <span class="n">key</span>
+                <span class="k">if</span> <span class="n">k</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">config</span><span class="p">:</span>
+                    <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">config</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;protocol&quot;</span><span class="p">])</span> <span class="ow">and</span> <span class="n">s</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">key</span><span class="p">):</span>
+                            <span class="n">k</span> <span class="o">=</span> <span class="n">s</span>
+
+                <span class="k">if</span> <span class="n">k</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">config</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="n">v</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">vf</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">vf</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="k">pass</span>
+        <span class="k">return</span> <span class="n">v</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">getcells</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+        <span class="n">cells</span> <span class="o">=</span> <span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="n">getvalue</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">&quot;cells&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">cells</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="k">return</span> <span class="n">cells</span>
+        <span class="k">if</span> <span class="n">cells</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span> <span class="o">!=</span> <span class="s2">&quot;mkL&quot;</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Unexpected unit for cells: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">cells</span><span class="p">)</span>
+            <span class="n">this_is_an_ugly_crash</span>
+        <span class="n">cells</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">cells</span><span class="p">[:</span><span class="o">-</span><span class="mi">3</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">cells</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">store</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="n">ExperimentGeneric</span><span class="o">.</span><span class="n">database_schema</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+        <span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="n">database_schema</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+
+        <span class="n">experiment_id</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">experiment_id</span>
+
+        <span class="n">ExperimentGeneric</span><span class="o">.</span><span class="n">store</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">experiment_id</span><span class="p">,</span> <span class="n">time</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">time</span><span class="p">,</span>
+                                <span class="n">type_generic</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">type_generic</span><span class="p">,</span>
+                                <span class="n">type_specific</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">type</span><span class="p">,</span> <span class="n">hardware</span><span class="o">=</span><span class="s2">&quot;strathkelvin&quot;</span><span class="p">)</span>
+
+        <span class="n">c</span> <span class="o">=</span> <span class="n">database</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">database</span><span class="o">.</span><span class="n">has_record</span><span class="p">(</span><span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="n">database_table</span><span class="p">,</span>
+                                   <span class="n">experiment_id</span> <span class="o">=</span> <span class="n">experiment_id</span><span class="p">):</span>
+           <span class="n">c</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;INSERT INTO &quot;</span> <span class="o">+</span> <span class="n">database</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="n">database_table</span><span class="p">)</span> <span class="o">+</span>
+                   <span class="s2">&quot;(experiment_id, rawdata, filename, title, channel) &quot;</span> <span class="o">+</span>
+                   <span class="s2">&quot;VALUES(:experiment_id,:ftxt,:fname,:exptitle,:channel)&quot;</span><span class="p">,</span>
+                   <span class="n">experiment_id</span><span class="o">=</span><span class="n">experiment_id</span><span class="p">,</span>
+                   <span class="n">ftxt</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">fulltext</span><span class="p">,</span>
+                   <span class="n">fname</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;this file&quot;</span><span class="p">],</span>
+                   <span class="n">exptitle</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;experiment title&quot;</span><span class="p">],</span>
+                   <span class="n">channel</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;channel index&quot;</span><span class="p">]))</span>
+
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">get_fulltxt</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">experiment_id</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">ExperimentGeneric</span><span class="o">.</span><span class="n">hardware</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">experiment_id</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;strathkelvin&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Loading raw data for experiment:&#39;</span><span class="p">,</span> <span class="n">experiment_id</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;SELECT rawdata FROM &quot;</span> <span class="o">+</span> <span class="n">database</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="n">database_table</span><span class="p">)</span> <span class="o">+</span>
+                                <span class="s2">&quot; WHERE experiment_id=:experiment_id&quot;</span><span class="p">,</span>
+                                <span class="n">experiment_id</span><span class="o">=</span><span class="n">experiment_id</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">q</span><span class="o">.</span><span class="n">rawdata</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">gen_config_table</span><span class="p">):</span>
+        <span class="n">ExperimentGeneric</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">database</span><span class="p">)</span>
+        <span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="n">database_schema</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">gen_config_table</span><span class="p">)</span>
+
+        <span class="n">experiment_id</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">experiment_id</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;this file&quot;</span><span class="p">]</span>
+
+        <span class="n">cells</span> <span class="o">=</span> <span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="n">getcells</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="n">volume_ml</span> <span class="o">=</span> <span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="n">getvalue</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">&quot;volume_ml&quot;</span><span class="p">)</span>
+        <span class="n">temperature</span> <span class="o">=</span> <span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="n">getvalue</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">&quot;temperature&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">database</span><span class="o">.</span><span class="n">has_record</span><span class="p">(</span><span class="n">gen_config_table</span><span class="p">,</span> <span class="n">experiment_id</span><span class="o">=</span><span class="n">experiment_id</span><span class="p">):</span>
+            <span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;INSERT INTO &quot;</span> <span class="o">+</span> <span class="n">database</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">gen_config_table</span><span class="p">)</span> <span class="o">+</span>
+                    <span class="s2">&quot;(experiment_id, cells_in_mkL, chamber_volume_in_ml, temperature) &quot;</span> <span class="o">+</span>
+                    <span class="s2">&quot;VALUES (:experiment_id,:cells,:volume,:temperature)&quot;</span><span class="p">,</span>
+                    <span class="n">experiment_id</span><span class="o">=</span><span class="n">experiment_id</span><span class="p">,</span> <span class="n">cells</span><span class="o">=</span><span class="n">cells</span><span class="p">,</span>
+                    <span class="n">volume</span><span class="o">=</span><span class="n">volume_ml</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="n">temperature</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;UPDATE &quot;</span> <span class="o">+</span> <span class="n">database</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">gen_config_table</span><span class="p">)</span> <span class="o">+</span>
+                    <span class="s2">&quot; SET cells_in_mkL=:cells, chamber_volume_in_ml=:volume, temperature=:temperature WHERE experiment_id=:experiment_id&quot;</span><span class="p">,</span>
+                    <span class="n">experiment_id</span><span class="o">=</span><span class="n">experiment_id</span><span class="p">,</span> <span class="n">cells</span><span class="o">=</span><span class="n">cells</span><span class="p">,</span>
+                    <span class="n">volume</span><span class="o">=</span><span class="n">volume_ml</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="n">temperature</span><span class="p">)</span></div>
+
+
+<span class="c1">#############################################################################################</span>
+<span class="k">class</span> <span class="nc">ExperimentStrathkelvinADPTitration</span><span class="p">(</span><span class="n">ExperimentStrathkelvin</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="s2">&quot;VO2_ADP_config&quot;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">ExperimentStrathkelvinATPTitration</span><span class="p">(</span><span class="n">ExperimentStrathkelvin</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="s2">&quot;VO2_ATP_config&quot;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">ExperimentStrathkelvinMerviPK</span><span class="p">(</span><span class="n">ExperimentStrathkelvin</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="s2">&quot;VO2_MerviPK_config&quot;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">ExperimentStrathkelvinRespiratoryComplexes</span><span class="p">(</span><span class="n">ExperimentStrathkelvin</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="s2">&quot;VO2_RespiratoryComplexes_config&quot;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">ExperimentStrathkelvinGMPS</span><span class="p">(</span><span class="n">ExperimentStrathkelvin</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="s2">&quot;VO2_GMPS_config&quot;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">ExperimentStrathkelvinSGMP</span><span class="p">(</span><span class="n">ExperimentStrathkelvin</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="s2">&quot;VO2_SGMP_config&quot;</span><span class="p">)</span>
+
+<span class="c1">#############################################################################################</span>
+<span class="c1"># allocation of experiment handler and analyzers for strathkelvin experiments</span>
+
+<span class="k">def</span> <span class="nf">allocate_handler_analyzer</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+
+    <span class="n">titration_types</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Strathkelvin merviPK&#39;</span><span class="p">:</span> <span class="s1">&#39;MerviPK&#39;</span><span class="p">}</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;GMPS&#39;</span><span class="p">,</span> <span class="s1">&#39;SGMP&#39;</span><span class="p">,</span> <span class="s1">&#39;ATP_glucose_PEP_PK&#39;</span><span class="p">,</span> <span class="s1">&#39;ATP_AMP_PEP_PK&#39;</span><span class="p">,</span> <span class="s1">&#39;creatine_ATP_PEP_PK&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;ATP_glucose_ADP&#39;</span><span class="p">,</span> <span class="s1">&#39;ATP_AMP_ADP&#39;</span><span class="p">,</span> <span class="s1">&#39;creatine_ATP_ADP&#39;</span><span class="p">]:</span>
+        <span class="n">titration_types</span><span class="p">[</span><span class="s1">&#39;Strathkelvin &#39;</span> <span class="o">+</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span>
+
+    <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">type</span> <span class="ow">in</span> <span class="n">titration_types</span><span class="p">:</span>
+        <span class="n">Analyzer</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;default&#39;</span><span class="p">:</span> <span class="n">AnalyzerRespirationCreator</span><span class="p">(</span><span class="s1">&#39;VO2_&#39;</span> <span class="o">+</span> <span class="n">titration_types</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">type</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;_raw&#39;</span><span class="p">)</span> <span class="p">}</span>
+        <span class="n">experiment_handler</span> <span class="o">=</span> <span class="n">ExperimentStrathkelvin</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="s1">&#39;VO2_&#39;</span> <span class="o">+</span> <span class="n">titration_types</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">type</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;_config&#39;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">data</span><span class="o">.</span><span class="n">type</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;Strathkelvin ADP titration&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">Analyzer</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;default&#39;</span><span class="p">:</span> <span class="n">AnalyzerRespirationCreator</span><span class="p">(</span><span class="s2">&quot;VO2_ADP_titration_raw&quot;</span><span class="p">)</span> <span class="p">}</span>
+        <span class="n">experiment_handler</span> <span class="o">=</span> <span class="n">ExperimentStrathkelvinADPTitration</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">data</span><span class="o">.</span><span class="n">type</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;Strathkelvin Respiratory complexes&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">Analyzer</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;default&#39;</span><span class="p">:</span> <span class="n">AnalyzerRespirationCreator</span><span class="p">(</span><span class="s1">&#39;VO2_RespiratoryComplexes_raw&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;TMPD oxydation&#39;</span><span class="p">:</span> <span class="n">AnalyzerRespirationTMPD</span><span class="p">,</span>
+            <span class="s1">&#39;TMPD corrected&#39;</span><span class="p">:</span> <span class="n">AnalyzerRespirationTMPDCorrected</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">experiment_handler</span> <span class="o">=</span> <span class="n">ExperimentStrathkelvinRespiratoryComplexes</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">data</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s2">&quot;Strathkelvin ATP titration&quot;</span><span class="p">:</span>
+        <span class="n">Analyzer</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;default&#39;</span><span class="p">:</span> <span class="n">AnalyzerRespirationCreator</span><span class="p">(</span><span class="s2">&quot;VO2_ATP_titration_raw&quot;</span><span class="p">)</span> <span class="p">}</span>
+        <span class="n">experiment_handler</span> <span class="o">=</span> <span class="n">ExperimentStrathkelvinATPTitration</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span>
+    <span class="k">return</span> <span class="n">Analyzer</span><span class="p">,</span> <span class="n">experiment_handler</span>
+
+
+<span class="c1">#####################</span>
+<span class="c1">#### ModuleAPI ######</span>
+
+<span class="k">def</span> <span class="nf">database_schema</span><span class="p">(</span><span class="n">db</span><span class="p">):</span>
+    <span class="n">ExperimentStrathkelvin</span><span class="o">.</span><span class="n">database_schema</span><span class="p">(</span><span class="n">db</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">analyzer</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+    <span class="n">A</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">allocate_handler_analyzer</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">A</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<h3><a href="../../../../../../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../index.html">Kinetics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../index.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../../index.html">Kinetics 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../../index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, MV.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>

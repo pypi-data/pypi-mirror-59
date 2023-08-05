@@ -1,0 +1,463 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Kinetics &#8212; Kinetics 1 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Kinetics 1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="kinetics">
+<h1>Kinetics<a class="headerlink" href="#kinetics" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Kinetics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-iocbio.kinetics.app.__init__">Apps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#codes">codes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#calc">Calc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#handler">Handler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gui">Gui</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#io">io</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modules">Modules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sysbio">Sysbio</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#module-iocbio.kinetics.modules.sysbio.confocal_catransient.analyzer">Confocal-catransient</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#electrophysiology">Electrophysiology</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#mechanics">Mechanics</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#misc">Misc</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#respiration">Respiration</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#spectro">Spectro</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+</div>
+<span class="target" id="module-iocbio.kinetics"><span id="base-codes"></span></span><span class="target" id="module-iocbio.kinetics.constants"></span><span class="target" id="module-iocbio.kinetics.global_vars"></span><div class="section" id="module-iocbio.kinetics.app.__init__">
+<span id="apps"></span><h2>Apps<a class="headerlink" href="#module-iocbio.kinetics.app.__init__" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-iocbio.kinetics.app.gui"></span><dl class="function">
+<dt id="iocbio.kinetics.app.gui.handle_schema_changes">
+<code class="descclassname">iocbio.kinetics.app.gui.</code><code class="descname">handle_schema_changes</code><span class="sig-paren">(</span><em>database</em>, <em>version</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/app/gui.html#handle_schema_changes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.app.gui.handle_schema_changes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handles changes in schema induced by updates. Returns true if successful</p>
+</dd></dl>
+
+<span class="target" id="module-iocbio.kinetics.app.fetch"></span><span class="target" id="module-iocbio.kinetics.app.fetch_repeated"></span><span class="target" id="module-iocbio.kinetics.app.banova"></span><dl class="function">
+<dt id="iocbio.kinetics.app.banova.analyze_dict">
+<code class="descclassname">iocbio.kinetics.app.banova.</code><code class="descname">analyze_dict</code><span class="sig-paren">(</span><em>data</em>, <em>keys=None</em>, <em>sample_id=None</em>, <em>value=None</em>, <em>nullmodel=None</em>, <em>plot=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/app/banova.html#analyze_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.app.banova.analyze_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Analyze by BANOVA dataset in the form of dictionary
+with list of vectors</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="iocbio.kinetics.app.banova.analyze_r">
+<code class="descclassname">iocbio.kinetics.app.banova.</code><code class="descname">analyze_r</code><span class="sig-paren">(</span><em>robj</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/app/banova.html#analyze_r"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.app.banova.analyze_r" title="Permalink to this definition">¶</a></dt>
+<dd><p>Analyze BANOVA results as obtained in R</p>
+<p>As an input, use result from anovaBF</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="iocbio.kinetics.app.banova.analyze_rows">
+<code class="descclassname">iocbio.kinetics.app.banova.</code><code class="descname">analyze_rows</code><span class="sig-paren">(</span><em>rdict</em>, <em>keys=None</em>, <em>sample_id=None</em>, <em>value=None</em>, <em>nullmodel=None</em>, <em>plot=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/app/banova.html#analyze_rows"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.app.banova.analyze_rows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Analyze by BANOVA dataset in the form of iterative
+of dictionaries, like returned by DictReader,
+and records SQL query</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="iocbio.kinetics.app.banova.analyze_sql">
+<code class="descclassname">iocbio.kinetics.app.banova.</code><code class="descname">analyze_sql</code><span class="sig-paren">(</span><em>sql</em>, <em>user=None</em>, <em>db='sysbio-db.kybi/experiments_v2'</em>, <em>keys=None</em>, <em>sample_id=None</em>, <em>value=None</em>, <em>nullmodel=None</em>, <em>plot=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/app/banova.html#analyze_sql"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.app.banova.analyze_sql" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load data using IOCBIO Kinetics fetch</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="iocbio.kinetics.app.banova.star">
+<code class="descclassname">iocbio.kinetics.app.banova.</code><code class="descname">star</code><span class="sig-paren">(</span><em>v</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/app/banova.html#star"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.app.banova.star" title="Permalink to this definition">¶</a></dt>
+<dd><p>Statistical evidence categories for Bayes Factor</p>
+</dd></dl>
+
+</div>
+<div class="section" id="codes">
+<span id="id1"></span><h2>codes<a class="headerlink" href="#codes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="calc">
+<span id="id2"></span><h3>Calc<a class="headerlink" href="#calc" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="module-iocbio.kinetics.calc.xy"></span><span class="target" id="module-iocbio.kinetics.calc.mm"></span><dl class="class">
+<dt id="iocbio.kinetics.calc.mm.AnalyzerMM">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.calc.mm.</code><code class="descname">AnalyzerMM</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/calc/mm.html#AnalyzerMM"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.calc.mm.AnalyzerMM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Michaelis-Menten kinetics fitter</p>
+</dd></dl>
+
+<span class="target" id="module-iocbio.kinetics.calc.mean_med_std"></span><dl class="class">
+<dt id="iocbio.kinetics.calc.mean_med_std.AnalyzerMeanMedStd">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.calc.mean_med_std.</code><code class="descname">AnalyzerMeanMedStd</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/calc/mean_med_std.html#AnalyzerMeanMedStd"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.calc.mean_med_std.AnalyzerMeanMedStd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Analyzer finding mean, median, and std</p>
+</dd></dl>
+
+<span class="target" id="module-iocbio.kinetics.calc.linreg"></span><dl class="class">
+<dt id="iocbio.kinetics.calc.linreg.AnalyzerLinRegress">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.calc.linreg.</code><code class="descname">AnalyzerLinRegress</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/calc/linreg.html#AnalyzerLinRegress"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.calc.linreg.AnalyzerLinRegress" title="Permalink to this definition">¶</a></dt>
+<dd><p>Linear regression analyzer</p>
+</dd></dl>
+
+<span class="target" id="module-iocbio.kinetics.calc.__init__"></span><span class="target" id="module-iocbio.kinetics.calc.generic"></span><dl class="class">
+<dt id="iocbio.kinetics.calc.generic.Stats">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.calc.generic.</code><code class="descname">Stats</code><span class="sig-paren">(</span><em>human</em>, <em>unit</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#iocbio.kinetics.calc.generic.Stats" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="iocbio.kinetics.calc.generic.Stats.human">
+<code class="descname">human</code><a class="headerlink" href="#iocbio.kinetics.calc.generic.Stats.human" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="iocbio.kinetics.calc.generic.Stats.unit">
+<code class="descname">unit</code><a class="headerlink" href="#iocbio.kinetics.calc.generic.Stats.unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="iocbio.kinetics.calc.generic.Stats.value">
+<code class="descname">value</code><a class="headerlink" href="#iocbio.kinetics.calc.generic.Stats.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="iocbio.kinetics.calc.generic.XYData">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.calc.generic.</code><code class="descname">XYData</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#iocbio.kinetics.calc.generic.XYData" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="iocbio.kinetics.calc.generic.XYData.x">
+<code class="descname">x</code><a class="headerlink" href="#iocbio.kinetics.calc.generic.XYData.x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="iocbio.kinetics.calc.generic.XYData.y">
+<code class="descname">y</code><a class="headerlink" href="#iocbio.kinetics.calc.generic.XYData.y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-iocbio.kinetics.calc.explin_fit"></span><dl class="class">
+<dt id="iocbio.kinetics.calc.explin_fit.AnalyzerExpLinFit">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.calc.explin_fit.</code><code class="descname">AnalyzerExpLinFit</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/calc/explin_fit.html#AnalyzerExpLinFit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.calc.explin_fit.AnalyzerExpLinFit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Analyser for exponential + linear fitting</p>
+</dd></dl>
+
+<span class="target" id="module-iocbio.kinetics.calc.current"></span><dl class="class">
+<dt id="iocbio.kinetics.calc.current.AnalyzerCurrent">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.calc.current.</code><code class="descname">AnalyzerCurrent</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>baseline_subtraction=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/calc/current.html#AnalyzerCurrent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.calc.current.AnalyzerCurrent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Current analyzer</p>
+</dd></dl>
+
+<span class="target" id="module-iocbio.kinetics.calc.composer"></span><dl class="class">
+<dt id="iocbio.kinetics.calc.composer.AnalyzerCompose">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.calc.composer.</code><code class="descname">AnalyzerCompose</code><a class="reference internal" href="_modules/iocbio/kinetics/calc/composer.html#AnalyzerCompose"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.calc.composer.AnalyzerCompose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generic analyzer consisting of sub-analyzers</p>
+</dd></dl>
+
+<span class="target" id="module-iocbio.kinetics.calc.bump"></span><dl class="class">
+<dt id="iocbio.kinetics.calc.bump.AnalyzerBump">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.calc.bump.</code><code class="descname">AnalyzerBump</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/calc/bump.html#AnalyzerBump"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.calc.bump.AnalyzerBump" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bump analyzer</p>
+</dd></dl>
+
+</div>
+<div class="section" id="handler">
+<span id="id3"></span><h3>Handler<a class="headerlink" href="#handler" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="module-iocbio.kinetics.handler.experiment_generic"></span><dl class="class">
+<dt id="iocbio.kinetics.handler.experiment_generic.ExperimentGeneric">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.handler.experiment_generic.</code><code class="descname">ExperimentGeneric</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/handler/experiment_generic.html#ExperimentGeneric"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.handler.experiment_generic.ExperimentGeneric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collection of methods used by all experiments</p>
+</dd></dl>
+
+<span class="target" id="module-iocbio.kinetics.handler.__init__"></span><span class="target" id="module-iocbio.kinetics.handler.roi"></span><dl class="class">
+<dt id="iocbio.kinetics.handler.roi.ROIHandler">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.handler.roi.</code><code class="descname">ROIHandler</code><span class="sig-paren">(</span><em>database</em>, <em>data</em>, <em>Analyzer</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/handler/roi.html#ROIHandler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.handler.roi.ROIHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>class that holds ROIs</p>
+</dd></dl>
+
+</div>
+<div class="section" id="gui">
+<span id="id4"></span><h3>Gui<a class="headerlink" href="#gui" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="module-iocbio.kinetics.gui"></span><span class="target" id="module-iocbio.kinetics.gui.experiment_plot"></span><span class="target" id="module-iocbio.kinetics.gui.__init__"></span><span class="target" id="module-iocbio.kinetics.gui.mainwindow"></span><span class="target" id="module-iocbio.kinetics.gui.roi_list"></span><span class="target" id="module-iocbio.kinetics.gui.stats_widget"></span><span class="target" id="module-iocbio.kinetics.gui.xy_plot"></span></div>
+<div class="section" id="io">
+<span id="id5"></span><h3>io<a class="headerlink" href="#io" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="module-iocbio.kinetics.io.data"></span><dl class="class">
+<dt id="iocbio.kinetics.io.data.Data">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.io.data.</code><code class="descname">Data</code><span class="sig-paren">(</span><em>experiment_id</em>, <em>comment=None</em>, <em>data={}</em>, <em>xname=None</em>, <em>xunit=None</em>, <em>xlim=None</em>, <em>config={}</em>, <em>type=None</em>, <em>type_generic=None</em>, <em>name=None</em>, <em>time=None</em>, <em>data_id=None</em>, <em>add_range=0.05</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/io/data.html#Data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.io.data.Data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for representing recorded data</p>
+</dd></dl>
+
+<span class="target" id="module-iocbio.kinetics.io.db"></span><dl class="class">
+<dt id="iocbio.kinetics.io.db.DatabaseInterface">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.io.db.</code><code class="descname">DatabaseInterface</code><span class="sig-paren">(</span><em>dbtype='sqlite3'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/io/db.html#DatabaseInterface"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.io.db.DatabaseInterface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Database interface and helper functions</p>
+<dl class="method">
+<dt id="iocbio.kinetics.io.db.DatabaseInterface.grant">
+<code class="descname">grant</code><span class="sig-paren">(</span><em>user</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/io/db.html#DatabaseInterface.grant"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.io.db.DatabaseInterface.grant" title="Permalink to this definition">¶</a></dt>
+<dd><p>Grant access permissions for user</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="iocbio.kinetics.io.db.DatabaseInterface.grant_groups">
+<code class="descname">grant_groups</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/io/db.html#DatabaseInterface.grant_groups"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.io.db.DatabaseInterface.grant_groups" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set default permissions for all tables</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="iocbio.kinetics.io.db.DatabaseInterface.revoke">
+<code class="descname">revoke</code><span class="sig-paren">(</span><em>user</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/io/db.html#DatabaseInterface.revoke"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.io.db.DatabaseInterface.revoke" title="Permalink to this definition">¶</a></dt>
+<dd><p>Revoke access permissions for user</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="iocbio.kinetics.io.db.DatabaseInterface.schema">
+<code class="descname">schema</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/io/db.html#DatabaseInterface.schema"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.io.db.DatabaseInterface.schema" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the present schema version, create if missing and return the version of current schema</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-iocbio.kinetics.io.modules"></span><dl class="class">
+<dt id="iocbio.kinetics.io.modules.Modules">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.io.modules.</code><code class="descname">Modules</code><a class="reference internal" href="_modules/iocbio/kinetics/io/modules.html#Modules"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.io.modules.Modules" title="Permalink to this definition">¶</a></dt>
+<dd><p>Interface to modules</p>
+</dd></dl>
+
+</div>
+<div class="section" id="modules">
+<span id="id6"></span><h3>Modules<a class="headerlink" href="#modules" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="sysbio">
+<span id="id7"></span><h4>Sysbio<a class="headerlink" href="#sysbio" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="module-iocbio.kinetics.modules.sysbio.confocal_catransient.analyzer">
+<span id="id8"></span><span id="confocal-catransient"></span><h5>Confocal-catransient<a class="headerlink" href="#module-iocbio.kinetics.modules.sysbio.confocal_catransient.analyzer" title="Permalink to this headline">¶</a></h5>
+<span class="target" id="module-iocbio.kinetics.modules.sysbio.confocal_catransient.reader"></span></div>
+<div class="section" id="electrophysiology">
+<span id="id9"></span><h5>Electrophysiology<a class="headerlink" href="#electrophysiology" title="Permalink to this headline">¶</a></h5>
+<span class="target" id="module-iocbio.kinetics.modules.sysbio.electrophysiology.elec_current_analyzer"></span><span class="target" id="module-iocbio.kinetics.modules.sysbio.electrophysiology.elec_current_fluo_analysers"></span><span class="target" id="module-iocbio.kinetics.modules.sysbio.electrophysiology.elec_fluo_analyzer"></span><span class="target" id="module-iocbio.kinetics.modules.sysbio.electrophysiology.reader"></span></div>
+<div class="section" id="mechanics">
+<span id="id10"></span><h5>Mechanics<a class="headerlink" href="#mechanics" title="Permalink to this headline">¶</a></h5>
+<span class="target" id="module-iocbio.kinetics.modules.sysbio.mechanics.experiment_mechanics"></span><dl class="class">
+<dt id="iocbio.kinetics.modules.sysbio.mechanics.experiment_mechanics.ExperimentMechanics">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.modules.sysbio.mechanics.experiment_mechanics.</code><code class="descname">ExperimentMechanics</code><span class="sig-paren">(</span><em>database</em>, <em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/modules/sysbio/mechanics/experiment_mechanics.html#ExperimentMechanics"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.modules.sysbio.mechanics.experiment_mechanics.ExperimentMechanics" title="Permalink to this definition">¶</a></dt>
+<dd><p>General description of experiment performed on SBMicroscope Mechanics</p>
+</dd></dl>
+
+<span class="target" id="module-iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl"></span><dl class="class">
+<dt id="iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl.AnalyzerMechFreqCa">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl.</code><code class="descname">AnalyzerMechFreqCa</code><span class="sig-paren">(</span><em>database</em>, <em>data</em>, <em>database_table</em>, <em>signal</em>, <em>peak</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/modules/sysbio/mechanics/mech_ufreqcasl.html#AnalyzerMechFreqCa"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl.AnalyzerMechFreqCa" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calcium fluorescence analyzer, included in the main analyzer</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl.AnalyzerMechFreqCaSL">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl.</code><code class="descname">AnalyzerMechFreqCaSL</code><span class="sig-paren">(</span><em>database</em>, <em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/modules/sysbio/mechanics/mech_ufreqcasl.html#AnalyzerMechFreqCaSL"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl.AnalyzerMechFreqCaSL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main analyzers</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl.AnalyzerMechFreqmech">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl.</code><code class="descname">AnalyzerMechFreqmech</code><span class="sig-paren">(</span><em>database</em>, <em>data</em>, <em>database_table</em>, <em>signal</em>, <em>peak</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/modules/sysbio/mechanics/mech_ufreqcasl.html#AnalyzerMechFreqmech"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl.AnalyzerMechFreqmech" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sarcomere length, fiber deformation analyzer, included in the main analyzer</p>
+</dd></dl>
+
+<span class="target" id="module-iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl_lowhigh"></span><dl class="class">
+<dt id="iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl_lowhigh.AnalyzerMechUFreqCaSL_High">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl_lowhigh.</code><code class="descname">AnalyzerMechUFreqCaSL_High</code><span class="sig-paren">(</span><em>database</em>, <em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/modules/sysbio/mechanics/mech_ufreqcasl_lowhigh.html#AnalyzerMechUFreqCaSL_High"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl_lowhigh.AnalyzerMechUFreqCaSL_High" title="Permalink to this definition">¶</a></dt>
+<dd><p>High calcium</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl_lowhigh.AnalyzerMechUFreqCaSL_Low">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl_lowhigh.</code><code class="descname">AnalyzerMechUFreqCaSL_Low</code><span class="sig-paren">(</span><em>database</em>, <em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/modules/sysbio/mechanics/mech_ufreqcasl_lowhigh.html#AnalyzerMechUFreqCaSL_Low"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl_lowhigh.AnalyzerMechUFreqCaSL_Low" title="Permalink to this definition">¶</a></dt>
+<dd><p>Low calcium</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl_lowhigh.analyzer">
+<code class="descclassname">iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl_lowhigh.</code><code class="descname">analyzer</code><span class="sig-paren">(</span><em>database</em>, <em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/modules/sysbio/mechanics/mech_ufreqcasl_lowhigh.html#analyzer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.modules.sysbio.mechanics.mech_ufreqcasl_lowhigh.analyzer" title="Permalink to this definition">¶</a></dt>
+<dd><p>ModuleAPI</p>
+</dd></dl>
+
+<span class="target" id="module-iocbio.kinetics.modules.sysbio.mechanics.reader"></span></div>
+<div class="section" id="misc">
+<span id="id11"></span><h5>Misc<a class="headerlink" href="#misc" title="Permalink to this headline">¶</a></h5>
+<span class="target" id="module-iocbio.kinetics.modules.sysbio.misc.set_prepid"></span></div>
+<div class="section" id="respiration">
+<span id="id12"></span><h5>Respiration<a class="headerlink" href="#respiration" title="Permalink to this headline">¶</a></h5>
+<span class="target" id="module-iocbio.kinetics.modules.sysbio.respiration.analyzer_post"></span><span class="target" id="module-iocbio.kinetics.modules.sysbio.respiration.analyzer_primary"></span><span class="target" id="module-iocbio.kinetics.modules.sysbio.respiration.experiment_strathkelvin"></span><dl class="class">
+<dt id="iocbio.kinetics.modules.sysbio.respiration.experiment_strathkelvin.ExperimentStrathkelvin">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.modules.sysbio.respiration.experiment_strathkelvin.</code><code class="descname">ExperimentStrathkelvin</code><span class="sig-paren">(</span><em>database</em>, <em>data</em>, <em>gen_config_table</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/modules/sysbio/respiration/experiment_strathkelvin.html#ExperimentStrathkelvin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.modules.sysbio.respiration.experiment_strathkelvin.ExperimentStrathkelvin" title="Permalink to this definition">¶</a></dt>
+<dd><p>General description of experiment performed on Strathkelvin</p>
+</dd></dl>
+
+<span class="target" id="module-iocbio.kinetics.modules.sysbio.respiration.reader"></span><dl class="class">
+<dt id="iocbio.kinetics.modules.sysbio.respiration.reader.Time">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.modules.sysbio.respiration.reader.</code><code class="descname">Time</code><a class="reference internal" href="_modules/iocbio/kinetics/modules/sysbio/respiration/reader.html#Time"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.modules.sysbio.respiration.reader.Time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class to time quantity with units.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><code class="xref py py-class docutils literal"><span class="pre">iocbio.timeunit</span></code></p>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="iocbio.kinetics.modules.sysbio.respiration.reader.Seconds">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.modules.sysbio.respiration.reader.</code><code class="descname">Seconds</code><a class="reference internal" href="_modules/iocbio/kinetics/modules/sysbio/respiration/reader.html#Seconds"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.modules.sysbio.respiration.reader.Seconds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time in seconds.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><code class="xref py py-class docutils literal"><span class="pre">iocbio.timeunit</span></code></p>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="iocbio.kinetics.modules.sysbio.respiration.reader.Minutes">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.modules.sysbio.respiration.reader.</code><code class="descname">Minutes</code><a class="reference internal" href="_modules/iocbio/kinetics/modules/sysbio/respiration/reader.html#Minutes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.modules.sysbio.respiration.reader.Minutes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time in minutes.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><code class="xref py py-class docutils literal"><span class="pre">iocbio.timeunit</span></code></p>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="iocbio.kinetics.modules.sysbio.respiration.reader.Hours">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.modules.sysbio.respiration.reader.</code><code class="descname">Hours</code><a class="reference internal" href="_modules/iocbio/kinetics/modules/sysbio/respiration/reader.html#Hours"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.modules.sysbio.respiration.reader.Hours" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time in hours.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><code class="xref py py-class docutils literal"><span class="pre">iocbio.timeunit</span></code></p>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="spectro">
+<span id="id13"></span><h5>Spectro<a class="headerlink" href="#spectro" title="Permalink to this headline">¶</a></h5>
+<span class="target" id="module-iocbio.kinetics.modules.sysbio.spectro.analyzer_primary"></span><span class="target" id="module-iocbio.kinetics.modules.sysbio.spectro.experiment_spectro"></span><dl class="class">
+<dt id="iocbio.kinetics.modules.sysbio.spectro.experiment_spectro.ExperimentSpectro">
+<em class="property">class </em><code class="descclassname">iocbio.kinetics.modules.sysbio.spectro.experiment_spectro.</code><code class="descname">ExperimentSpectro</code><span class="sig-paren">(</span><em>database</em>, <em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/iocbio/kinetics/modules/sysbio/spectro/experiment_spectro.html#ExperimentSpectro"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#iocbio.kinetics.modules.sysbio.spectro.experiment_spectro.ExperimentSpectro" title="Permalink to this definition">¶</a></dt>
+<dd><p>General description of experiment performed on Spectrophotomer Thermo Evolution 600</p>
+</dd></dl>
+
+<span class="target" id="module-iocbio.kinetics.modules.sysbio.spectro.reader"></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<h3><a href="#">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Kinetics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-iocbio.kinetics.app.__init__">Apps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#codes">codes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#calc">Calc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#handler">Handler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gui">Gui</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#io">io</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modules">Modules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sysbio">Sysbio</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#module-iocbio.kinetics.modules.sysbio.confocal_catransient.analyzer">Confocal-catransient</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#electrophysiology">Electrophysiology</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#mechanics">Mechanics</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#misc">Misc</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#respiration">Respiration</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#spectro">Spectro</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Kinetics 1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, MV.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,364 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>iocbio.kinetics.calc.bump &#8212; Kinetics 1 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Kinetics 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for iocbio.kinetics.calc.bump</h1><div class="highlight"><pre>
+<span></span><span class="c1">#from scipy.stats import linregress</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.interpolate</span> <span class="k">import</span> <span class="n">interp1d</span><span class="p">,</span> <span class="n">PchipInterpolator</span>
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="k">import</span> <span class="n">leastsq</span><span class="p">,</span> <span class="n">brentq</span>
+<span class="kn">from</span> <span class="nn">PyQt5.QtCore</span> <span class="k">import</span> <span class="n">pyqtSignal</span><span class="p">,</span> <span class="n">QObject</span>
+
+<span class="kn">from</span> <span class="nn">.generic</span> <span class="k">import</span> <span class="n">AnalyzerGeneric</span><span class="p">,</span> <span class="n">XYData</span><span class="p">,</span> <span class="n">Stats</span>
+<span class="kn">from</span> <span class="nn">iocbio.kinetics.constants</span> <span class="k">import</span> <span class="n">database_table_roi</span>
+
+
+<span class="k">class</span> <span class="nc">BumpSpline</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">nodes_before</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">nodes_after</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">enforce_monotonic</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">xmax</span> <span class="o">=</span> <span class="n">xmax</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nodes_before</span> <span class="o">=</span> <span class="n">nodes_before</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nodes_after</span> <span class="o">=</span> <span class="n">nodes_after</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">enforce_monotonic</span> <span class="o">=</span> <span class="n">enforce_monotonic</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">spline_ready</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">calcspline</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">calcspline</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fitting bump: </span><span class="si">%d</span><span class="s2"> + </span><span class="si">%d</span><span class="s2"> nodes; x: </span><span class="si">%f</span><span class="s2"> </span><span class="si">%f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nodes_before</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">nodes_after</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">dx0</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">xmax</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">nodes_before</span>
+            <span class="n">dx1</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">xmax</span><span class="p">)</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">nodes_after</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">xx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">dx0</span><span class="o">/</span><span class="mi">10</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">xmax</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">nodes_before</span><span class="p">),</span>
+                                <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">xmax</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">dx1</span><span class="o">/</span><span class="mi">10</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">nodes_after</span><span class="p">)[</span><span class="mi">1</span><span class="p">:])</span>
+            <span class="n">yy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">xx</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">leastsq</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">spline_error</span><span class="p">,</span> <span class="n">yy</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">make_spline</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">spline_ready</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Spline fitting failed. Exception occured during spline fitting&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">make_spline</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">yy</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">enforce_monotonic</span><span class="p">:</span>
+            <span class="n">val</span> <span class="o">=</span> <span class="n">yy</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">zz</span> <span class="o">=</span> <span class="p">[</span><span class="n">val</span><span class="p">]</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">nodes_before</span><span class="p">):</span>
+                <span class="n">val</span> <span class="o">+=</span> <span class="n">yy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span>
+                <span class="n">zz</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nodes_before</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">yy</span><span class="p">)):</span>
+                <span class="n">val</span> <span class="o">-=</span> <span class="n">yy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span>
+                <span class="n">zz</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">spline</span> <span class="o">=</span> <span class="n">PchipInterpolator</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">xx</span><span class="p">,</span> <span class="n">zz</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1">#self.spline = interp1d(self.xx, yy, kind=&quot;cubic&quot;)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">spline</span> <span class="o">=</span> <span class="n">PchipInterpolator</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">xx</span><span class="p">,</span> <span class="n">yy</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">spline_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pars</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">make_spline</span><span class="p">(</span><span class="n">pars</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">curr_error</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">curr_error</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">spline</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+        <span class="c1">#return self.y[1:-1] - self.spline(self.x[1:-1])</span>
+        <span class="c1">#return self.y[1:self.xmax] - self.spline(self.x[1:self.xmax])</span>
+
+    <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">spline_ready</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">spline</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">min</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">spline_ready</span><span class="p">:</span> <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">spline</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="bp">self</span><span class="o">.</span><span class="n">spline</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+
+    <span class="k">def</span> <span class="nf">max</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">spline_ready</span><span class="p">:</span> <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">spline</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">xmax</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_intersect_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">spline</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">intersect_value</span>
+
+    <span class="k">def</span> <span class="nf">intersect</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Assuming that value is between minima and maxima, finds two argument values</span>
+<span class="sd">        closest to the maxima at which spline is equal to value</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">spline_ready</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">intersect_value</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">spline</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">intersect_value</span>
+
+        <span class="n">i_raise</span><span class="p">,</span> <span class="n">i_fall</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span>
+
+        <span class="n">idx_max</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">xmax</span><span class="p">))</span><span class="o">.</span><span class="n">argmin</span><span class="p">()</span>
+
+        <span class="c1"># raise</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">idx_max</span><span class="o">-</span><span class="mi">1</span>
+        <span class="k">while</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">i_raise</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">/</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                <span class="k">break</span>
+            <span class="n">i</span> <span class="o">-=</span> <span class="mi">1</span>
+
+        <span class="c1"># fall</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">idx_max</span>
+        <span class="n">imax</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">imax</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">i_fall</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">/</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span> <span class="o">*</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                <span class="k">break</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="k">return</span> <span class="n">i_raise</span><span class="p">,</span> <span class="n">i_fall</span>
+
+        <span class="c1"># self.intersect_value = value</span>
+        <span class="c1"># try:</span>
+        <span class="c1">#     a ,b = brentq(self._intersect_error, self.x[0], self.xmax), brentq(self._intersect_error, self.xmax, self.x[-1])</span>
+        <span class="c1"># except:</span>
+        <span class="c1">#     print(&quot;Exception occured during zero finding&quot;)</span>
+        <span class="c1">#     return None, None</span>
+        <span class="c1"># return a, b</span>
+
+
+<div class="viewcode-block" id="AnalyzerBump"><a class="viewcode-back" href="../../../../index.html#iocbio.kinetics.calc.bump.AnalyzerBump">[docs]</a><span class="k">class</span> <span class="nc">AnalyzerBump</span><span class="p">(</span><span class="n">AnalyzerGeneric</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Bump analyzer&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+        <span class="n">AnalyzerGeneric</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">nodes_before</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">nodes_after</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">points_per_node</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_nodes</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stats</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">blackman</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">convolve</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;same&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">x</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Seems that some data are missing, skipping analysis&quot;</span><span class="p">)</span>
+            <span class="k">return</span>
+
+        <span class="n">xloc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;arg to peak&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;arg to peak&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">x</span><span class="p">[</span> <span class="n">xloc</span> <span class="p">])</span>
+
+        <span class="k">if</span> <span class="n">points_per_node</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">nodes_before</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">max_nodes</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">xloc</span><span class="o">/</span><span class="n">points_per_node</span><span class="p">)))</span><span class="o">+</span><span class="mi">1</span>
+            <span class="n">nodes_after</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">max_nodes</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">int</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">xloc</span><span class="p">)</span><span class="o">/</span><span class="n">points_per_node</span><span class="p">)))</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">spline</span> <span class="o">=</span> <span class="n">BumpSpline</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">y</span><span class="p">,</span>
+                                 <span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">x</span><span class="p">[</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="p">],</span>
+                                 <span class="n">nodes_before</span><span class="o">=</span><span class="n">nodes_before</span><span class="p">,</span> <span class="n">nodes_after</span><span class="o">=</span><span class="n">nodes_after</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">spline</span><span class="o">.</span><span class="n">spline_ready</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">calc</span> <span class="o">=</span> <span class="n">XYData</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">spline</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">x</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">calc</span> <span class="o">=</span> <span class="n">XYData</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span></div>
+
+
+<span class="k">class</span> <span class="nc">AnalyzerBumpDatabaseSignals</span><span class="p">(</span><span class="n">QObject</span><span class="p">):</span>
+    <span class="n">sigUpdate</span> <span class="o">=</span> <span class="n">pyqtSignal</span><span class="p">()</span>
+
+
+<span class="k">class</span> <span class="nc">AnalyzerBumpDatabase</span><span class="p">(</span><span class="n">AnalyzerBump</span><span class="p">):</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">database_schema</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">tablename</span><span class="p">,</span> <span class="n">peak</span><span class="p">):</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;CREATE TABLE IF NOT EXISTS &quot;</span> <span class="o">+</span> <span class="n">db</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">tablename</span><span class="p">)</span> <span class="o">+</span>
+                 <span class="s2">&quot;(data_id text not null, &quot;</span> <span class="o">+</span>
+                 <span class="s2">&quot;type text not null, value double precision, PRIMARY KEY(data_id, type), &quot;</span> <span class="o">+</span>
+                 <span class="s2">&quot;FOREIGN KEY (data_id) REFERENCES &quot;</span> <span class="o">+</span> <span class="n">db</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">database_table_roi</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;(data_id) ON DELETE CASCADE&quot;</span> <span class="o">+</span>
+                 <span class="s2">&quot;)&quot;</span><span class="p">)</span>
+
+        <span class="n">viewname</span> <span class="o">=</span> <span class="n">tablename</span> <span class="o">+</span> <span class="s2">&quot;_amplitude&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">db</span><span class="o">.</span><span class="n">has_view</span><span class="p">(</span><span class="n">viewname</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">peak</span><span class="p">:</span>
+                <span class="n">db</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;CREATE VIEW &quot;</span> <span class="o">+</span> <span class="n">db</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">viewname</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; AS SELECT &quot;</span> <span class="o">+</span>
+                        <span class="s2">&quot;r.experiment_id, r.data_id, r.event_name, r.event_value, vmax.value-vend.value AS amplitude &quot;</span> <span class="o">+</span>
+                        <span class="s2">&quot;FROM &quot;</span> <span class="o">+</span> <span class="n">db</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">tablename</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; vmax &quot;</span> <span class="o">+</span>
+                        <span class="s2">&quot;INNER JOIN &quot;</span> <span class="o">+</span> <span class="n">db</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">tablename</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; vend ON vmax.data_id=vend.data_id &quot;</span> <span class="o">+</span>
+                        <span class="s2">&quot;INNER JOIN &quot;</span> <span class="o">+</span> <span class="n">db</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="s2">&quot;roi&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; r ON vmax.data_id=r.data_id &quot;</span> <span class="o">+</span>
+                        <span class="s2">&quot;WHERE vmax.type=&#39;value max&#39; AND vend.type=&#39;value end&#39;&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">db</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;CREATE VIEW &quot;</span> <span class="o">+</span> <span class="n">db</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">viewname</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; AS SELECT &quot;</span> <span class="o">+</span>
+                        <span class="s2">&quot;r.experiment_id, r.data_id, r.event_name, r.event_value, vend.value-vmin.value AS amplitude &quot;</span> <span class="o">+</span>
+                        <span class="s2">&quot;FROM &quot;</span> <span class="o">+</span> <span class="n">db</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">tablename</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; vmin &quot;</span> <span class="o">+</span>
+                        <span class="s2">&quot;INNER JOIN &quot;</span> <span class="o">+</span> <span class="n">db</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">tablename</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; vend ON vmin.data_id=vend.data_id &quot;</span> <span class="o">+</span>
+                        <span class="s2">&quot;INNER JOIN &quot;</span> <span class="o">+</span> <span class="n">db</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="s2">&quot;roi&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; r ON vmin.data_id=r.data_id &quot;</span> <span class="o">+</span>
+                        <span class="s2">&quot;WHERE vmin.type=&#39;value min&#39; AND vend.type=&#39;value end&#39;&quot;</span><span class="p">)</span>
+
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">tablename</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span>
+                 <span class="n">peak</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">argname</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="n">valunit</span><span class="o">=</span><span class="s2">&quot;AU&quot;</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">database_schema</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">tablename</span><span class="p">,</span> <span class="n">peak</span><span class="p">)</span>
+        <span class="n">AnalyzerBump</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">signals</span> <span class="o">=</span> <span class="n">AnalyzerBumpDatabaseSignals</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">database</span> <span class="o">=</span> <span class="n">database</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_database_table</span> <span class="o">=</span> <span class="n">tablename</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span> <span class="c1"># used by event name reader</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data_id</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">data_id</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">t_reference</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1"># has to be found in deriving class</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">peak</span> <span class="o">=</span> <span class="n">peak</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">argname</span> <span class="o">=</span> <span class="n">argname</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">valunit</span> <span class="o">=</span> <span class="n">valunit</span>
+
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">nodes_before</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">nodes_after</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">points_per_node</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_nodes</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="c1"># nothing to analyze</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">peak</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">experiment</span> <span class="o">=</span> <span class="n">XYData</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+
+        <span class="n">AnalyzerBump</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">,</span> <span class="n">nodes_before</span><span class="o">=</span><span class="n">nodes_before</span><span class="p">,</span> <span class="n">nodes_after</span><span class="o">=</span><span class="n">nodes_after</span><span class="p">,</span>
+                         <span class="n">points_per_node</span><span class="o">=</span><span class="n">points_per_node</span><span class="p">,</span> <span class="n">max_nodes</span><span class="o">=</span><span class="n">max_nodes</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">bool</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">):</span>
+            <span class="k">return</span> <span class="c1"># nothing calculated</span>
+
+        <span class="n">tp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;arg to peak&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">argname</span> <span class="o">+</span> <span class="s1">&#39; to peak&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">argname</span> <span class="o">+</span> <span class="s1">&#39; to peak&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span>
+                                           <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;arg to peak&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">t_reference</span><span class="p">)</span>
+        <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;arg to peak&#39;</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">y</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># find time constants</span>
+            <span class="n">mx</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">y</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+            <span class="n">mn</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span>
+            <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">75</span><span class="p">]:</span>
+                <span class="n">i_raise</span><span class="p">,</span> <span class="n">i_fall</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">spline</span><span class="o">.</span><span class="n">intersect</span><span class="p">(</span><span class="n">mn</span> <span class="o">+</span> <span class="p">(</span><span class="n">mx</span><span class="o">-</span><span class="n">mn</span><span class="p">)</span><span class="o">*</span><span class="n">v</span><span class="o">/</span><span class="mf">100.0</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">i_raise</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;before </span><span class="si">%02d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">argname</span> <span class="o">+</span> <span class="s1">&#39; before </span><span class="si">%02d%%</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">v</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="n">tp</span> <span class="o">-</span> <span class="n">i_raise</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">i_fall</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;after </span><span class="si">%02d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">argname</span> <span class="o">+</span> <span class="s1">&#39; after </span><span class="si">%02d%%</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">v</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="n">i_fall</span> <span class="o">-</span> <span class="n">tp</span><span class="p">)</span>
+
+        <span class="c1"># flip the sign back if needed</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">peak</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">experiment</span> <span class="o">=</span> <span class="n">XYData</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">y</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">calc</span> <span class="o">=</span> <span class="n">XYData</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">y</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># find signal range</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;value max&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;Maximal value&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">valunit</span><span class="p">,</span>
+                                            <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">y</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;value min&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;Minimal value&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">valunit</span><span class="p">,</span>
+                                            <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">y</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;value start&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;Value at the start&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">valunit</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;value end&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;Value at the end&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">valunit</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">calc</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># find signal range</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;value max&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;Maximal value&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">valunit</span><span class="p">,</span>
+                                            <span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">y</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;value min&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="s1">&#39;Minimal value&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">valunit</span><span class="p">,</span>
+                                            <span class="bp">self</span><span class="o">.</span><span class="n">experiment</span><span class="o">.</span><span class="n">y</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span>
+            <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">has_record</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_database_table</span><span class="p">,</span> <span class="n">data_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">data_id</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">k</span><span class="p">):</span>
+                    <span class="n">c</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;UPDATE &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_database_table</span><span class="p">)</span> <span class="o">+</span>
+                              <span class="s2">&quot; SET value=:value WHERE data_id=:data_id AND type=:type&quot;</span><span class="p">,</span>
+                              <span class="n">value</span><span class="o">=</span><span class="n">v</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="n">data_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">data_id</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">c</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;INSERT INTO &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_database_table</span><span class="p">)</span> <span class="o">+</span>
+                              <span class="s2">&quot;(data_id, type, value) VALUES(:data_id,:type,:value)&quot;</span><span class="p">,</span>
+                              <span class="n">data_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">data_id</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">v</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">signals</span><span class="o">.</span><span class="n">sigUpdate</span><span class="o">.</span><span class="n">emit</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;DELETE FROM &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_database_table</span><span class="p">)</span> <span class="o">+</span>
+                <span class="s2">&quot; WHERE data_id=:data_id&quot;</span><span class="p">,</span>
+                <span class="n">data_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">data_id</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">database</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1"># through errors if someone tries to do something after remove</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">signals</span><span class="o">.</span><span class="n">sigUpdate</span><span class="o">.</span><span class="n">emit</span><span class="p">()</span>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../index.html">Kinetics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../index.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Kinetics 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, MV.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>
