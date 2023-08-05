@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: NNS-RPY2-ScikitLearn
+Version: 0.0.1
+Summary: NNS Regressor and Classifier, using Scikit Learn interface and RPY2 bridge
+Home-page: https://github.com/rspadim/NNS-RPY2-ScikitLearn
+Author: Fred Viole, Roberto Spadim
+Author-email: fredviole@gmail.com, roberto@spadim.com.br
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
