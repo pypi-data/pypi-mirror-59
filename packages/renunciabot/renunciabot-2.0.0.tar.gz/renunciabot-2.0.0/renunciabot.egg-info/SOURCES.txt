@@ -1,0 +1,11 @@
+README.md
+setup.py
+renuncia/__init__.py
+renuncia/bot.py
+renunciabot.egg-info/PKG-INFO
+renunciabot.egg-info/SOURCES.txt
+renunciabot.egg-info/dependency_links.txt
+renunciabot.egg-info/entry_points.txt
+renunciabot.egg-info/not-zip-safe
+renunciabot.egg-info/requires.txt
+renunciabot.egg-info/top_level.txt
