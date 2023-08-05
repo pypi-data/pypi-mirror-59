@@ -1,0 +1,7 @@
+setuptools
+colorama
+scapy
+
+[:platform_system == "Windows"]
+PyQt5
+pywin32
