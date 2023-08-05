@@ -1,0 +1,3 @@
+[console_scripts]
+dfmpy = dfmpy.__main__:main
+
