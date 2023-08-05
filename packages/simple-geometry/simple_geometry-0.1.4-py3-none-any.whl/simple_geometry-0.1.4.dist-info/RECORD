@@ -1,0 +1,17 @@
+geometry/__init__.py,sha256=seObBeqxlpcLA85w6mrzV20P2S4LTGjM3eovmasrMHo,569
+geometry/canvas.py,sha256=ThhJcRNZ4jVkXNCZIjgHx--Uw9rTk4rhgvxHUPCOC4s,11031
+geometry/group.py,sha256=QBAi5-xCjuNu82lewQESmCLM62DcAkNta-HSbIlD3ts,12181
+geometry/handles.py,sha256=nNPcbM1-Plpj_qzFM3k_ODigL0gpmLjOqvO1wnfeP-U,5023
+geometry/mixins.py,sha256=1YzswcYbI6In-WA5GrLePfjtbfUkim13AHFzjw_yJt0,1668
+geometry/path.py,sha256=190ip6xqPDii5hBwpBibJ4nGIoGKHo4jKeAZPgGlU1k,6292
+geometry/point.py,sha256=jtPnx6smY9Tn1Z5oNZIDyR1DDnKXnBqFbgTk01HwXJs,3601
+geometry/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geometry/rect.py,sha256=V_aDjSwzh1tpWWEUXv2WxjD6KgBxsEdVQ5OOpnoXLvU,9875
+geometry/translate.py,sha256=Gaq4jWbrV3bNxfGcNCu-KVHC6rcCvWVzMIaw-nLkhL0,3802
+geometry/userdata.py,sha256=nX-I1Yk5U13cubZvQOB6LZQpO0nT6wa4dJxVwwrW510,1758
+geometry/version.py,sha256=aBEbDvx4LMg8A1TJJR6dEHu8rQODVin528hLS_EDvuA,22
+simple_geometry-0.1.4.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+simple_geometry-0.1.4.dist-info/METADATA,sha256=H7-AhIZ4FEGCsYPwtqwWPe7ZgjHwUIb2_CrvdGXpn9o,1845
+simple_geometry-0.1.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+simple_geometry-0.1.4.dist-info/top_level.txt,sha256=RWbWhWYclEM-OFtXLCB4eLv-jxNnlJB-NPC2YM587Fo,9
+simple_geometry-0.1.4.dist-info/RECORD,,
