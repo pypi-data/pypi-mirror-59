@@ -1,0 +1,5 @@
+include LICENSE.md
+include README.md
+include hmmer_reader/test/PF02545.hmm
+include hmmer_reader/test/three-profs.hmm
+include version.py
