@@ -1,0 +1,17 @@
+winfspy/__init__.py,sha256=sjdUNmqUouxfbe-7xtqst_vDD2O3swzoePqr_p_tB78,1024
+winfspy/_version.py,sha256=zYiFHqR7JwbvdK9dvKrh-RTNfUqjHUwC4CTcFAPVYLc,22
+winfspy/exceptions.py,sha256=46anohUVyLZ-gvMusRa94C36qOISMH_clrlWfyZwWmc,852
+winfspy/file_system.py,sha256=rIGcp7UNQLDeejzOMGtpkwe0zbUuYq5jw6q1WdBUi3c,4967
+winfspy/operations.py,sha256=3ZWfQfgyvlp2eNkeipq8kPhwjv2R7yz5Z40VqmAaxKw,26549
+winfspy/plumbing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winfspy/plumbing/_bindings.cp36-win32.pyd,sha256=4lRhHPNJiE-kXRbcOqdsJ57Zx4Cz0MRabHWBrLgZXSw,79872
+winfspy/plumbing/bindings.py,sha256=czQq_TwsUYFd4q_BBLCT3eX-_joP86_w4l8kvNXRorI,881
+winfspy/plumbing/file_system_interface.py,sha256=kU9eDW8LRLPmd74hdQ8sn_mCAAE7JTZ0_p2-BPJ_6Bw,10084
+winfspy/plumbing/get_winfsp_dir.py,sha256=xyhcYiwboj54O0gu9tiiBzsYIgjn-lofbZ6lGNsZP-c,737
+winfspy/plumbing/service.py,sha256=3k2B53qI50o4Ze-ZSyFyWyuXWd3v5UM3hzSPyS_-7nM,2701
+winfspy/plumbing/win32_filetime.py,sha256=myhNcfjjgMWB1qDT4cUPxRdkwo3hVakVgAa1nWqQuy4,3701
+winfspy/plumbing/winstuff.py,sha256=nsYxTGQ-_qj4FpaLtvCpMvJw1esvdw6R1t8D75OvbtI,91555
+winfspy-0.6.3.dist-info/METADATA,sha256=tddpNdqNl2FvjmPZ-vKDpQqhlRDnqm-vBMZ6QHJ2gKw,1227
+winfspy-0.6.3.dist-info/WHEEL,sha256=BWBcgVHkeAa2gX50hi5tpUL8dDP1yeySqXAVuaCx3Jw,102
+winfspy-0.6.3.dist-info/top_level.txt,sha256=JTVDkc3tmcadT5r6ksDzwsSCQroJdM9uV2__dX1kU4Q,8
+winfspy-0.6.3.dist-info/RECORD,,
