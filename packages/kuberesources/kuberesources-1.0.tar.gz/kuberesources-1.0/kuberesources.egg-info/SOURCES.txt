@@ -1,0 +1,11 @@
+README.md
+setup.py
+kuberesources/__init__.py
+kuberesources/__main__.py
+kuberesources/entities.py
+kuberesources/helpers.py
+kuberesources.egg-info/PKG-INFO
+kuberesources.egg-info/SOURCES.txt
+kuberesources.egg-info/dependency_links.txt
+kuberesources.egg-info/entry_points.txt
+kuberesources.egg-info/top_level.txt
