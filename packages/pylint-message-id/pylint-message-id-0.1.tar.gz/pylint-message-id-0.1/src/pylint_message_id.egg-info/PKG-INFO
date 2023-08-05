@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pylint-message-id
+Version: 0.1
+Summary: A pylint plugin to enforce the use of message symbols
+Home-page: https://github.com/Polyconseil/pylint-message-id
+Author: Polyconseil
+Author-email: opensource+pylint-message-id@polyconseil.fr
+License: UNKNOWN
+Description: =================
+        Pylint Message ID
+        =================
+        
+        Pylint checker to enforce the use of symbolic names.
+        
+Keywords: tools pylint
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Provides-Extra: dev
