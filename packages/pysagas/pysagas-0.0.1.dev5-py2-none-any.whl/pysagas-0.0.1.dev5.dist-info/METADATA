@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pysagas
+Version: 0.0.1.dev5
+Summary: Simple async sagas package
+Home-page: https://github.com/kimbugp/sagas
+Author: Kimbugwe Simon Peter
+Author-email: kimbsimon2@gmail.com
+License: MIT
+Project-URL: Source Code, https://github.com/kimbugp/sagas
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+# SAGAS
+
+A simple async sagas implementation
+
+## Installation
+
+```
+$ pip install pysagas
+```
+
+# Saga Change Log
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
+
+## 0.0.1
+- App creation
+
+
+
