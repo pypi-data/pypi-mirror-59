@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: jet-tracking
+Version: 0.0.0
+Summary: CXI liquid jet positioning feedback and tracking
+Home-page: https://github.com/pcdshub/jet_tracking
+Author: SLAC National Accelerator Laboratory
+Author-email: UNKNOWN
+License: SLAC Open License
+Description: ===============================
+        CXI Jet Tracking
+        ===============================
+        
+        .. image:: https://img.shields.io/travis/pcdshub/jet_tracking.svg
+                :target: https://travis-ci.org/pcdshub/jet_tracking
+        
+        .. image:: https://img.shields.io/pypi/v/jet_tracking.svg
+                :target: https://pypi.python.org/pypi/jet_tracking
+        
+        
+        CXI liquid jet positioning feedback and tracking methods and utilities.
+        
+        * Documentation: http://pswww.slac.stanford.edu/swdoc/releases/jet_tracking/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
