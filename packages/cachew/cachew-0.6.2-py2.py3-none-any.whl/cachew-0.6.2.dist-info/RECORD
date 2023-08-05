@@ -1,0 +1,12 @@
+cachew/__init__.py,sha256=aOQJllefIwwWkEXKAmJoVl8IXklh75ds0Ceew3dMnFI,25408
+cachew/compat.py,sha256=m2PkjFHf5u_9OEbGVUs4_7GTpq7DBpzVq2Qcy4zaSWE,3490
+cachew/experimental.py,sha256=zltmVd0gCJnkzWLLgs7QXqfXXmltKmd66K2XkT97s0o,1321
+cachew/misc.py,sha256=68VXzrof78yOnTHhrDy0os7rK-a1b3TDUxjZ9xYF8KU,519
+cachew/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cachew/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cachew/tests/test_cachew.py,sha256=Xa9KF8TMLkYC_b1Xc46WDNu6jvaMAgvbVwHiD9aD93w,16902
+cachew-0.6.2.dist-info/LICENSE.txt,sha256=KtyCVFfY3Kgcx0r4r4sTPeBe_-bo3Gt9eO3JB4S4iQA,1081
+cachew-0.6.2.dist-info/METADATA,sha256=TpakOX6gUYoLdviWUR462Xb2qqVD4AQMvRxGHLdSF10,13718
+cachew-0.6.2.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+cachew-0.6.2.dist-info/top_level.txt,sha256=h9IN_-Dz-IyaVJskAE-8iJPMX8q8Y9h5KWUQnkLnnT4,7
+cachew-0.6.2.dist-info/RECORD,,
