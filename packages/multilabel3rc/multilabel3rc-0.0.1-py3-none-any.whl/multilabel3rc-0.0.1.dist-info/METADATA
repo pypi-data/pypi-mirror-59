@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: multilabel3rc
+Version: 0.0.1
+Summary: A novel approach to deal with multilabel classification and considering relations between labels
+Home-page: https://github.com/badboy86/3RC-Multilabel-approach/
+Author: LOTF HAMZA
+Author-email: lotf.hamza@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
