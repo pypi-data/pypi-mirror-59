@@ -1,0 +1,8 @@
+README.md
+setup.py
+brute_curvefit/__init__.py
+brute_curvefit/brute_curvefit.py
+brute_curvefit.egg-info/PKG-INFO
+brute_curvefit.egg-info/SOURCES.txt
+brute_curvefit.egg-info/dependency_links.txt
+brute_curvefit.egg-info/top_level.txt
