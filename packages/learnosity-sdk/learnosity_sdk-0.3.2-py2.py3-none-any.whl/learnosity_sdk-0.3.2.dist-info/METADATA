@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: learnosity-sdk
+Version: 0.3.2
+Summary: Learnosity SDK for Python
+Home-page: https://github.com/Learnosity/learnosity-sdk-python
+Author: Learnosity
+Author-email: sdk@learnosity.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.21.0)
+Provides-Extra: dev
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest (<6.0,>=4.6.6) ; extra == 'test'
+Requires-Dist: pytest-cov (<3.0,>=2.8.1) ; extra == 'test'
+Requires-Dist: responses (<1.0,>=0.8.1) ; extra == 'test'
+
+UNKNOWN
+
+
