@@ -1,0 +1,5 @@
+stevedore
+
+[dev]
+bumpversion
+twine
