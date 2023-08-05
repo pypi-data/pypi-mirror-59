@@ -1,0 +1,11 @@
+README.rst
+setup.py
+bin/__init__.py
+bin/baidu_fenci
+bin/sougou_fenci
+nlp_segmentation/__init__.py
+nlp_segmentation.egg-info/PKG-INFO
+nlp_segmentation.egg-info/SOURCES.txt
+nlp_segmentation.egg-info/dependency_links.txt
+nlp_segmentation.egg-info/requires.txt
+nlp_segmentation.egg-info/top_level.txt
