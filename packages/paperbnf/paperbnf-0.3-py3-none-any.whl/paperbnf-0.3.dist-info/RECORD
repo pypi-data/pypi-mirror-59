@@ -1,0 +1,12 @@
+paperbnf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paperbnf/cli.py,sha256=X8UJGAUlrYr7Fb7M4jLHQJbdkbWtrqYo0eenR-fJdcQ,521
+paperbnf/package.py,sha256=CBPnUXDZVn9lP02-gePmyFErnbCtz3e5RDGtE735R_c,4270
+paperbnf/parser_generated.py,sha256=msaXTvsmw0O_hGfqRz7rQekj5PAoYA7d_1FUqc4pCUw,39828
+paperbnf/parser_wrap.py,sha256=4e0CNk_Jq0TgSLRWBc0ePxJw9lyzPFOGQHwgGIoDYuo,1134
+paperbnf/terms.py,sha256=nMdJX7Hu6qBgCMDBiTVVC8W9u8MXMNfqE_9m3dBzl3c,742
+paperbnf-0.3.dist-info/LICENSE,sha256=ONDYNv3llJjcYUKz7kHAXdp8E1-3OWegz7FsoGy6smM,1120
+paperbnf-0.3.dist-info/METADATA,sha256=c5U8VJWG-b2w0cHABsDGwTzyL0KZ7MBDd47TleD--pA,1302
+paperbnf-0.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+paperbnf-0.3.dist-info/entry_points.txt,sha256=OKxEzqbfUbRmmSMtPWpHOEkquq268VOMSncc2Xjpgmw,48
+paperbnf-0.3.dist-info/top_level.txt,sha256=OsMTUcVBetRWJb-AdH70_5f4JW9GMoD4EFWO53lW5JQ,9
+paperbnf-0.3.dist-info/RECORD,,

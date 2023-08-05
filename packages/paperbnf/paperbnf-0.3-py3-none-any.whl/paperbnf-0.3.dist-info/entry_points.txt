@@ -1,0 +1,3 @@
+[console_scripts]
+paperbnf = paperbnf.cli:main
+
