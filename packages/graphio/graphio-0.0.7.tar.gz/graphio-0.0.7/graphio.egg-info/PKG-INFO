@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: graphio
+Version: 0.0.7
+Summary: Library to load data sets to Neo4j.
+Home-page: https://github.com/kaiserpreusse/graphio
+Author: Martin Preusse
+Author-email: martin.preusse@gmail.com
+License: Apache License 2.0
+Description: # GraphIO
+        
+        [![Build Status](https://travis-ci.com/kaiserpreusse/graphio.svg?branch=master)](https://travis-ci.com/kaiserpreusse/graphio)
+        [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+        
+        A Python library to load data sets to Neo4j. Based on Py2neo.
+        
+        ## Status
+        This is a pre-release in alpha stage.
+        
+Keywords: NEO4J
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
