@@ -1,0 +1,12 @@
+chatbot_help/__init__.py,sha256=0tzAVWOsEqsqBMZu59olklZAtnEcelf0UrCn-PSnohM,299
+chatbot_help/version.py,sha256=1S9S-68NqZKlatAXq0CeyvQ9RighVBntVDU1WSsqzmw,167
+chatbot_help/dingtalk/__init__.py,sha256=JxQnCd7pCjN_kon41-9jmq7i-mE6VC18olFwifHeEOU,148
+chatbot_help/dingtalk/dingtalkbot.py,sha256=-mzeH6bcQgFr6ZW4mybNKzzpwdaAjNqFjys0uxO0j80,14533
+chatbot_help/qqtalk/__init__.py,sha256=g7hF8Dpi51PyPhARi-ZqfrDBOp0_K1bPRMJDeohm8wU,148
+chatbot_help/wetalk/__init__.py,sha256=q8d7lCL3JC5yd9QXEcxN5fm0etnlWlqu3GZvM-GZ3KU,148
+tests/__init__.py,sha256=1HgDplFVQuDsQKunRydCh0P_erqREScGPCxiDsV6g8I,148
+tests/dingtalk_test.py,sha256=6qa0xw3u2M_4b9Zhm38TNihv7aA9atMEJvwgfo3ECaw,7113
+chatbot_help-1.0.0.dist-info/METADATA,sha256=K7THdAqjHptrIfxpDk-0a7ITzIWYxm7RX9cMsxIoxzo,1445
+chatbot_help-1.0.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+chatbot_help-1.0.0.dist-info/top_level.txt,sha256=TjRDhQhCkVHJO0Ka_z8B-gOpGY-myRVuFtw2T2s2kDU,19
+chatbot_help-1.0.0.dist-info/RECORD,,
