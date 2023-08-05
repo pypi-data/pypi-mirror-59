@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: yakutils
+Version: 1.0.0
+Summary: A really lazy package
+Home-page: https://github.com/nficano/yakutils
+Author: Nick Ficano
+Author-email: nficano@gmail.com
+License: MIT
+Description: 
+        # yakutils
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
