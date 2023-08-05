@@ -1,0 +1,16 @@
+flake8_flask/.unescaped_template_file_extensions.py.swo,sha256=lzy8Rk5AO4uTsY2W32XVPuRYhmALmrpt-KgRdZQ6dn4,12288
+flake8_flask/__init__.py,sha256=2244UoNWi5N0e5I4c59EYPD4tlXXmDs_tasvlc7A5No,24
+flake8_flask/constants.py,sha256=O-JfYV2oj72Xy5pVDQWIpJgX_brDhvuw_1SO4AKrdeU,22
+flake8_flask/flask_base_visitor.py,sha256=SfHo-sJkmY5RSG2uv_gIAY8StYjsrJQbYgo0OHZhYdU,411
+flake8_flask/jwt_token_checks.py,sha256=4OKfB27pMmnnjitNArLU1kZG2sZ9C8c7f0534c8bMHM,2147
+flake8_flask/main.py,sha256=bzigSvRDttUF4dX2bnK8HL96MK-EecVoIS7AfB5Oiwo,2423
+flake8_flask/secure_set_cookies.py,sha256=wuz7h2x61AmtlKC652YnqyKFjRSiQlHTwbHfkTGUs1s,2110
+flake8_flask/send_file_checks.py,sha256=TWOMb9y4zLc7WzXMBFYFabVCgSrsmOb6wep-em1CeCw,4395
+flake8_flask/talisman_checks.py,sha256=-lEzSKRRO6jIBXiqEAhhFDRXer0pMshedRJ_7TZtNoA,2865
+flake8_flask/unescaped_template_file_extensions.py,sha256=Gn2O_tUhvbjdPxrtVARSRMGSjZNhN7oFYOkZKuzdrkw,4078
+flake8_flask/upsell_blueprint.py,sha256=o6_AJClSXwtnoYvsoEfAzWrVYxi4h_1uPV-ZHEoNu3k,4111
+flake8_flask/use_jsonify.py,sha256=U8G6xhukMYuAxE6gOIU-2rmsMmsf0zhD1i1PTpgCd8I,3286
+flake8_flask-0.8.2b3.dist-info/entry_points.txt,sha256=rW73rupx6tKTExXQNSoLBv5EKv51m2cz33Ovs7gPd7g,61
+flake8_flask-0.8.2b3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+flake8_flask-0.8.2b3.dist-info/METADATA,sha256=yhc-pbmXodgvFZFhvqyE529MN91Nm3WaH9KKYeoAgg4,619
+flake8_flask-0.8.2b3.dist-info/RECORD,,
