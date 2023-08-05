@@ -1,0 +1,10 @@
+neural_dream/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+neural_dream/neural_dream.py,sha256=7Y3iMYcc7o6ycwZBS4ZlYSMeRCphpEl6JaU5g4Ne-0U,29675
+neural_dream/loader/CaffeLoader.py,sha256=0W-OLPL3cwmpYV0v8a1ZFUmevB5CVAANMbLbB8Qojqk,10697
+neural_dream/loader/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+neural_dream-0.0.1.dev0.dist-info/LICENSE,sha256=CRi5klQ-mCXYygzu5KiL2UJp5xU1QalB_DZTfiqYsgw,1112
+neural_dream-0.0.1.dev0.dist-info/METADATA,sha256=Aa7h4JaRBut8EbNg17td2nacxb6nQ_Jnnaxpvp-NjEk,12870
+neural_dream-0.0.1.dev0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+neural_dream-0.0.1.dev0.dist-info/entry_points.txt,sha256=5mZBpvGinHFJRenbgd43u1aheOGf1vUEv58ghyz9iM8,65
+neural_dream-0.0.1.dev0.dist-info/top_level.txt,sha256=CRsFUegYYVNVT6p2Wu2xbG7D5_wFu8CSIo4zxXi0vnU,13
+neural_dream-0.0.1.dev0.dist-info/RECORD,,

@@ -1,0 +1,220 @@
+Metadata-Version: 2.1
+Name: neural-dream
+Version: 0.0.1.dev0
+Summary: A PyTorch implementation of DeepDream
+Home-page: https://github.com/ProGamerGov/neural-dream/tree/pip-master/
+Author: ProGamerGov
+License: UNKNOWN
+Keywords: neural artistic neural-dream pytorch neuralart neural-art hallucinations mlart machine-learning-art aiart ai-art deepdream
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: pillow
+
+# neural-dream
+
+This is a PyTorch implementation of DeepDream. The code is based on [neural-style-pt](https://github.com/ProGamerGov/neural-style-pt).
+
+
+Here we DeepDream a photograph of the Tubingen in Germany with a
+variety of settings:
+
+<div align="center">
+<img src="" height="250px">
+<img src="" height="250px">
+
+<img src="https://user-images.githubusercontent.com/10626398/71783649-acb65900-2fe1-11ea-8387-be8f33d4d159.png" height="250px">
+<img src="https://user-images.githubusercontent.com/10626398/71787130-e4d29180-300b-11ea-9d70-84a8da9a0b7a.png" height="250px">
+
+</div>
+
+
+### Specific Channel Selection
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/10626398/71792075-32acc100-302f-11ea-8668-3e81ce07f46d.png" height="250px">
+<img src="https://user-images.githubusercontent.com/10626398/71792076-32acc100-302f-11ea-8b54-0e13ec94a6b2.png" height="250px">
+
+<img src="https://user-images.githubusercontent.com/10626398/71792077-32acc100-302f-11ea-8c82-ac8321b61aee.png" height="250px">
+<img src="https://user-images.githubusercontent.com/10626398/71792078-33455780-302f-11ea-9d90-8cce83d64225.png" height="250px">
+
+</div>
+
+### Channel Selection Based On Activation Strength
+
+You can select channels automatically based on their activation strength. 
+
+Clockwise from upper left: The top 10 weakest channels, the 10 most average channels,
+the top 10 strongest channels, and all channels
+
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/10626398/71847779-bdd89600-30c5-11ea-9c8f-bd3cfa21a069.png" height="250px">
+<img src="https://user-images.githubusercontent.com/10626398/71792268-05acde00-3030-11ea-97e5-5203f5929c2f.png" height="250px">
+
+<img src="https://user-images.githubusercontent.com/10626398/71792272-06457480-3030-11ea-9006-1bd77224c799.png" height="250px">
+<img src="https://user-images.githubusercontent.com/10626398/71846779-4a358980-30c3-11ea-9017-6b9b392f1792.png" height="250px">
+
+</div>
+
+
+## Setup:
+
+Dependencies:
+* [PyTorch](http://pytorch.org/)
+
+Optional dependencies:
+* For CUDA backend:
+  * CUDA 7.5 or above
+* For cuDNN backend:
+  * cuDNN v6 or above
+* For ROCm backend:
+  * ROCm 2.1 or above
+* For MKL backend:
+  * MKL 2019 or above
+* For OpenMP backend:
+  * OpenMP 5.0 or above
+
+After installing the dependencies, you'll need to run the following script to download the VGG model:
+```
+python models/download_models.py
+```
+This will download the original [VGG-19 model](https://gist.github.com/ksimonyan/3785162f95cd2d5fee77#file-readme-md).
+The original [VGG-16 model](https://gist.github.com/ksimonyan/211839e770f7b538e2d8#file-readme-md) will also be downloaded. By default the original VGG-19 model is used.
+
+If you have a smaller memory GPU then using NIN Imagenet model will be better and gives slightly worse yet comparable results. You can get the details on the model from [BVLC Caffe ModelZoo](https://github.com/BVLC/caffe/wiki/Model-Zoo). The NIN model is downloaded when you run the `download_models.py` script.
+
+You can find detailed installation instructions for Ubuntu and Windows in the [installation guide](INSTALL.md).
+
+## Usage
+Basic usage:
+```
+python neural_dream.py -content_image <image.jpg>
+```
+
+cuDNN usage with NIN Model:
+```
+python neural_dream.py -content_image examples/inputs/brad_pitt.jpg -output_image profile.png -model_file models/nin_imagenet.pth -gpu 0 -backend cudnn -num_iterations 10 -seed 123 -dream_layers relu0,relu3,relu7,relu12 -dream_weight 10 -image_size 512 -optimizer adam
+```
+
+![cuDNN NIN Model Picasso Brad Pitt](https://user-images.githubusercontent.com/10626398/71845110-7d761980-30bf-11ea-9c80-46b6c71477c9.png)
+
+
+Note that paths to images should not contain the `~` character to represent your home directory; you should instead use a relative
+path or a full absolute path.
+
+**Options**:
+* `-image_size`: Maximum side length (in pixels) of the generated image. Default is 512.
+* `-gpu`: Zero-indexed ID of the GPU to use; for CPU mode set `-gpu` to `c`.
+
+**Optimization options**:
+* `-dream_weight`: How much to weight DeepDream. Default is 1e3.
+* `-tv_weight`: Weight of total-variation (TV) regularization; this helps to smooth the image.
+  Default is 1e-3. Set to 0 to disable TV regularization.
+* `-num_iterations`: Default is 10.
+* `-init`: Method for generating the generated image; one of `random` or `image`.
+  Default is `image` which initializes with the content image; `random` uses random noise to initialize the input image.
+* `-init_image`: Replaces the initialization image with a user specified image.
+* `-jitter`: Apply jitter to image. Default is 32. Set to 0 to disable jitter.
+* `-optimizer`: The optimization algorithm to use; either `lbfgs` or `adam`; default is `adam`.
+  L-BFGS tends to give better results, but uses more memory. Switching to ADAM will reduce memory usage;
+  when using ADAM you will probably need to play with other parameters to get good results, especially
+  the style weight, content weight, and learning rate.
+* `-learning_rate`: Learning rate to use with the ADAM optimizer. Default is 1e1.
+* `-normalize_weights`: If this flag is present, style and content weights will be divided by the number of channels for each layer. Idea from [PytorchNeuralStyleTransfer](https://github.com/leongatys/PytorchNeuralStyleTransfer).
+* `-loss_mode`: The DeepDream loss mode; `bce`, `mse`, `mean`, or `norm`; default is `mean`.
+
+**Output options**:
+* `-output_image`: Name of the output image. Default is `out.png`.
+* `-print_iter`: Print progress every `print_iter` iterations. Set to 0 to disable printing.
+* `-print_octave_iter`: Print octave progress every `print_octave_iter` iterations. Default is set to 0 to disable printing.
+* `-save_iter`: Save the image every `save_iter` iterations. Set to 0 to disable saving intermediate results.
+* `-save_octave_iter`: Save the image every `save_octave_iter` iterations. Default is set to 0 to disable saving intermediate results.
+
+**Layer options**:
+* `-dream_layers`: Comma-separated list of layer names to use for DeepDream reconstruction.
+
+**Channel options:**
+* `-channels`: Comma-separated list of channels to use for DeepDream. If `-channel_mode` is set to a value other than `all`, only the first value in the list will be used.
+* `-channel_mode`: The DeepDream channel selection mode; `all`, `strong`, `avg`, or `weak`; default is `all`. The `strong` option will select the strongest channels, while `weak` will do the same with the weakest channels. The `avg` option will select the most average channels instead of the strongest or weakest. The number of channels selected by `strong`, `avg`, or `weak` is based on the first value for the `-channels` parameter.
+
+**Octave Options:**
+* `-num_octaves`: Number of octaves per iteration. Default is 4.
+* `-octave_scale`: Value for resizing the image by. Default is 0.25.
+* `-octave_iter`: Number of iterations per octave. Default is 100.
+
+**Other options**:
+* `-original_colors`: If you set this to 1, then the output image will keep the colors of the content image.
+* `-model_file`: Path to the `.pth` file for the VGG Caffe model. Default is the original VGG-19 model; you can also try the original VGG-16 model.
+* `-model_type`: Whether the model was trained using Caffe or PyTorch preprocessing; `caffe` or `pytorch`; default is `caffe`.
+* `-pooling`: The type of pooling layers to use; one of `max` or `avg`. Default is `max`.
+  The VGG-19 models uses max pooling layers, but the paper mentions that replacing these layers with average
+  pooling layers can improve the results. I haven't been able to get good results using average pooling, but
+  the option is here.
+* `-seed`: An integer value that you can specify for repeatable results. By default this value is random for each run.
+* `-multidevice_strategy`: A comma-separated list of layer indices at which to split the network when using multiple devices. See [Multi-GPU scaling](https://github.com/ProGamerGov/neural-dream#multi-gpu-scaling) for more details.
+* `-backend`: `nn`, `cudnn`, `openmp`, or `mkl`. Default is `nn`. `mkl` requires Intel's MKL backend.
+* `-cudnn_autotune`: When using the cuDNN backend, pass this flag to use the built-in cuDNN autotuner to select
+  the best convolution algorithms for your architecture. This will make the first iteration a bit slower and can
+  take a bit more memory, but may significantly speed up the cuDNN backend.
+* `-clamp`: If this flag is enabled, every iteration values will be clamped so that they are the model's input range.
+
+
+## Frequently Asked Questions
+
+**Problem:** The program runs out of memory and dies
+
+**Solution:** Try reducing the image size: `-image_size 512` (or lower). Note that different image sizes will likely
+require non-default values for `-octave_scale` and `-num_octaves` for optimal results.
+If you are running on a GPU, you can also try running with `-backend cudnn` to reduce memory usage.
+
+**Problem:** `-backend cudnn` is slower than default NN backend
+
+**Solution:** Add the flag `-cudnn_autotune`; this will use the built-in cuDNN autotuner to select the best convolution algorithms.
+
+**Problem:** Get the following error message:
+
+`Missing key(s) in state_dict: "classifier.0.bias", "classifier.0.weight", "classifier.3.bias", "classifier.3.weight".
+        Unexpected key(s) in state_dict: "classifier.1.weight", "classifier.1.bias", "classifier.4.weight", "classifier.4.bias".`
+
+**Solution:** Due to a mix up with layer locations, older models require a fix to be compatible with newer versions of PyTorch. The included [`donwload_models.py`](https://github.com/ProGamerGov/neural-dream/blob/master/models/download_models.py) script will automatically perform these fixes after downloading the models.
+
+
+
+## Memory Usage
+By default, `neural-dream` uses the `nn` backend for convolutions and L-BFGS for optimization. These give good results, but can both use a lot of memory. You can reduce memory usage with the following:
+
+* **Use cuDNN**: Add the flag `-backend cudnn` to use the cuDNN backend. This will only work in GPU mode.
+* **Use ADAM**: Add the flag `-optimizer adam` to use ADAM instead of L-BFGS. This should significantly
+  reduce memory usage, but may require tuning of other parameters for good results; in particular you should
+  play with the learning rate, content weight, and style weight.
+  This should work in both CPU and GPU modes.
+* **Reduce image size**: If the above tricks are not enough, you can reduce the size of the generated image;
+  pass the flag `-image_size 256` to generate an image at half the default size.
+
+With the default settings, neural-dream uses about <value> GB of GPU memory on my system; switching to ADAM and cuDNN reduces the GPU memory footprint to about <value>GB.
+
+
+## Multi-GPU scaling
+You can use multiple CPU and GPU devices to process images at higher resolutions; different layers of the network will be
+computed on different devices. You can control which GPU and CPU devices are used with the `-gpu` flag, and you can control
+how to split layers across devices using the `-multidevice_strategy` flag.
+
+For example in a server with four GPUs, you can give the flag `-gpu 0,1,2,3` to process on GPUs 0, 1, 2, and 3 in that order; by also giving the flag `-multidevice_strategy 3,6,12` you indicate that the first two layers should be computed on GPU 0, layers 3 to 5 should be computed on GPU 1, layers 6 to 11 should be computed on GPU 2, and the remaining layers should be computed on GPU 3. You will need to tune the `-multidevice_strategy` for your setup in order to achieve maximal resolution.
+
+We can achieve very high quality results at high resolution by combining multi-GPU processing with multiscale
+generation as described in the paper
+<a href="https://arxiv.org/abs/1611.07865">**Controlling Perceptual Factors in Neural Style Transfer**</a> by Leon A. Gatys,
+Alexander S. Ecker, Matthias Bethge, Aaron Hertzmann and Eli Shechtman.
+
+
