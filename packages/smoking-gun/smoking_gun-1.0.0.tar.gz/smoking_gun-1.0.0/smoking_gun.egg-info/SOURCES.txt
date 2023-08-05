@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+smoking_gun/__init__.py
+smoking_gun/logs.py
+smoking_gun.egg-info/PKG-INFO
+smoking_gun.egg-info/SOURCES.txt
+smoking_gun.egg-info/dependency_links.txt
+smoking_gun.egg-info/requires.txt
+smoking_gun.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+
+[linting]
+flake8
+bandit
+flake8-isort
+flake8-quotes
+
+[testing]
+flask
+pytest
+pytest-cov
+wheel
+codecov
+coverage
+mock
