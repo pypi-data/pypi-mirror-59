@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+twitter_ads_v2/__init__.py
+twitter_ads_v2/base.py
+twitter_ads_v2/client.py
+twitter_ads_v2/enum.py
+twitter_ads_v2/error.py
+twitter_ads_v2/http.py
+twitter_ads_v2/oauth.py
+twitter_ads_v2/resources.py
+twitter_ads_v2/utils.py
+twitter_ads_v2.egg-info/PKG-INFO
+twitter_ads_v2.egg-info/SOURCES.txt
+twitter_ads_v2.egg-info/dependency_links.txt
+twitter_ads_v2.egg-info/requires.txt
+twitter_ads_v2.egg-info/top_level.txt
