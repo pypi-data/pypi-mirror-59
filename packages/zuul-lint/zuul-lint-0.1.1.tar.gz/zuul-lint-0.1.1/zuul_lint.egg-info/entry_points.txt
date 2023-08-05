@@ -1,0 +1,3 @@
+[console_scripts]
+zuul-lint = zuul_lint.__main__:main
+
