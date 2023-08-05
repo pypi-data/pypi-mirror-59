@@ -1,0 +1,3 @@
+[circum.sensors]
+ir = circum_ir.ir:ir
+
