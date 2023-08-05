@@ -1,0 +1,9 @@
+README.txt
+setup.cfg
+setup.py
+slingshot/__init__.py
+slingshot_lawdocs.egg-info/PKG-INFO
+slingshot_lawdocs.egg-info/SOURCES.txt
+slingshot_lawdocs.egg-info/dependency_links.txt
+slingshot_lawdocs.egg-info/requires.txt
+slingshot_lawdocs.egg-info/top_level.txt
