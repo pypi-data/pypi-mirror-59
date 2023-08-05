@@ -1,0 +1,8 @@
+README.md
+setup.py
+fasthex/__init__.py
+fasthex/fasthex.py
+fasthex.egg-info/PKG-INFO
+fasthex.egg-info/SOURCES.txt
+fasthex.egg-info/dependency_links.txt
+fasthex.egg-info/top_level.txt
