@@ -1,0 +1,10 @@
+openmdao>=2.6.0
+lxml
+numpy
+cached-property
+plotly
+six
+typing
+
+[SSBJ]
+ssbjkadmos>=0.1.9
