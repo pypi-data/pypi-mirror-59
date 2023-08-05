@@ -1,0 +1,9 @@
+dit_cli/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+dit_cli/__main__.py,sha256=1J5yybiwIKQgT5_GTAbdnJBIqUjVO7bdRK5-zI-THBA,58
+dit_cli/addition.py,sha256=YRFWTFTTcH1Uic_7T5GyPDKlZnRu5X1VZpw8z62nOXY,135
+dit_cli/dit.py,sha256=FpiZal9uyoUCFduZR2OVJtD4R7vEtGmMpCltKdIKoyc,502
+dit_cli-0.1.0.dist-info/entry_points.txt,sha256=XOARtdLNQCK4lSZwzEBdfqwiyURNt2usTdVSkWAfpeI,39
+dit_cli-0.1.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+dit_cli-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+dit_cli-0.1.0.dist-info/METADATA,sha256=mhkTmhfTBoO-kh33z4hVGmLqEzK_sX0rakLso0v-rS8,745
+dit_cli-0.1.0.dist-info/RECORD,,
