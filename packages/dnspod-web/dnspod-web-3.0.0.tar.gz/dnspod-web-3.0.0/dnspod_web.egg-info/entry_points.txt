@@ -1,0 +1,3 @@
+[console_scripts]
+dnspod-web = dnspod_web.app:main
+
