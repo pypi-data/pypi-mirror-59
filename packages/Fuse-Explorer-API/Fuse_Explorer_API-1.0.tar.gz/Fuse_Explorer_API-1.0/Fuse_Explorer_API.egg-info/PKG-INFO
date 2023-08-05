@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: Fuse-Explorer-API
+Version: 1.0
+Summary: Python wrapper for the FUSE explorer api
+Home-page: https://github.com/Andrew-Pohl/FUSE_Explorer_API_Python_wrapper
+Author: Andy Pohl
+Author-email: andypohl@hotmail.co.uk
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
