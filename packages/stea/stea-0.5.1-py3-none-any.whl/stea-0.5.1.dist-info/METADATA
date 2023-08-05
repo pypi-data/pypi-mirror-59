@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: stea
+Version: 0.5.1
+Summary: stea - calculate economic analysis
+Home-page: https://github.com/equinor/stea
+Author: Software Innovation Bergen, Equinor ASA
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: any
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: requests
+Requires-Dist: pyyaml
+Requires-Dist: configsuite
+
+UNKNOWN
+
+
