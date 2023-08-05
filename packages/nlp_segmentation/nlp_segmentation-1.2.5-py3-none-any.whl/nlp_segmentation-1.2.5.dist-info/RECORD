@@ -1,0 +1,10 @@
+bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fenci/__init__.py,sha256=HvYp0WYfwnDW9hwQiPM1oGDGIKdIhHma8T_s015LZ64,1864
+nlp_segmentation-1.2.5.data/scripts/baidu_fenci,sha256=zt65kTl6fl-2E3ZXIEzWfkR0T2zYaR-VFgIQvcxKN_s,754
+nlp_segmentation-1.2.5.data/scripts/sougou_fenci,sha256=Gpyy3P3PakycEHO8i9l3vdgkjSiUWwpZE8gYdUxw6sg,756
+nlp_segmentation-1.2.5.dist-info/DESCRIPTION.rst,sha256=0rDSK4k1asuOTCQydZWgWLgYpjkoqWzUa8M0Lz1vtMk,1031
+nlp_segmentation-1.2.5.dist-info/METADATA,sha256=MVuLU--L317W9vai0ANwHy3BpdRi5j3Nzu7HrMjL_AA,1416
+nlp_segmentation-1.2.5.dist-info/RECORD,,
+nlp_segmentation-1.2.5.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+nlp_segmentation-1.2.5.dist-info/metadata.json,sha256=Qw_pR9QCkmxmxfwiVMvkFZYac53NwJjRGa-o22vvjCY,587
+nlp_segmentation-1.2.5.dist-info/top_level.txt,sha256=cHtrs4HAWGbnEcT-HB-NweYlhfjynqZdhsQjLdbbBIs,10
