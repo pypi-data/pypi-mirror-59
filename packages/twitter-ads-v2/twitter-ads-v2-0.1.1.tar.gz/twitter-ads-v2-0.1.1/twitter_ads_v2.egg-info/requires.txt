@@ -1,0 +1,8 @@
+python-dateutil
+oauthlib==3.1.0
+requests
+
+[doc]
+sphinx<3.0.0,>=2.0.0
+sphinx-rtd-theme
+m2r
