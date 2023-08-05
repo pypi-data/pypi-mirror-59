@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: diff-cov-lint
+Version: 0.0.4
+Summary: Linting and coverage reports for diff only
+Home-page: https://gitlab.com/sVerentsov/diff-cov-lint
+Author: Sergey Verentsov
+Author-email: verentsov@eora.ru
+License: UNKNOWN
+Description: # Diff cov lint
+        
+        Linting and coverage reports for git diff only.
+        
+        ## Usage: 
+        
+        ```diff-cov-lint master new_branch --cov_report=coverage.xml --lint_report=pylint_output.txt```
+        
+        Example output (the command above was run in `tests/repo` folder):
+        ```
+        ======================== DIFF COVERAGE ========================
+        FILE                                    COVERED STMTS   PERCENT
+        src/add.py                                    5     8     62.5%
+        src/modify.py                                 1     2     50.0%
+        ===============================================================
+        TOTAL DIFF COV                                6    10     60.0%
+        
+        ========================== DIFF LINT ==========================
+        src/add.py:10:0 E0602: Undefined variable 'this_line_makes_no_sense' (undefined-variable)
+        ```
+        
+        Arguments:  
+        
+        POSITIONAL ARGUMENTS  
+            `TARGET_REF`
+                Target branch in repo  
+            `SOURCE_REF`
+                Source branch in repo  
+        
+        FLAGS  
+            `--cov_report=COV_REPORT`  
+                Path to coverage report in Cobertura (pytest-cov) format, If not stated, coverage report will not be produced.  
+            `--lint_report=LINT_REPORT`  
+                Path to pylint report. If not stated, linting report will not be produced.  
+            `--repo_path=REPO_PATH`  
+                Path to repo folder, defaults to "."
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
