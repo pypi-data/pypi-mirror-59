@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-01-10T15:14:57</date>
+  <millis>1578669297165</millis>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>SEVERE</level>
+  <class>appBase.AppLogging</class>
+  <method>setDefaults</method>
+  <thread>1</thread>
+  <message>Info Log</message>
+</record>
+<record>
+  <date>2020-01-10T15:14:57</date>
+  <millis>1578669297185</millis>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>appBase.AppLogging</class>
+  <method>setDefaults</method>
+  <thread>1</thread>
+  <message>Info Log</message>
+</record>
+<record>
+  <date>2020-01-10T15:14:57</date>
+  <millis>1578669297185</millis>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>appBase.AppLogging</class>
+  <method>setDefaults</method>
+  <thread>1</thread>
+  <message>Info Log</message>
+</record>
+<record>
+  <date>2020-01-10T15:14:57</date>
+  <millis>1578669297185</millis>
+  <sequence>4</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>qis.qisMain</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>v1.18.02 Starting</message>
+</record>
+<record>
+  <date>2020-01-10T15:15:01</date>
+  <millis>1578669301992</millis>
+  <sequence>5</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>qis.qisMain$SystrayResponder</class>
+  <method>systrayEventListener</method>
+  <thread>18</thread>
+  <message>Action: About</message>
+</record>
+<record>
+  <date>2020-01-10T15:48:20</date>
+  <millis>1578671300588</millis>
+  <sequence>6</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>qis.qisMain$SystrayResponder</class>
+  <method>systrayEventListener</method>
+  <thread>18</thread>
+  <message>Action: Exit</message>
+</record>
+<record>
+  <date>2020-01-10T15:48:21</date>
+  <millis>1578671301689</millis>
+  <sequence>7</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>qis.qisMain</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Stopping</message>
+</record>
+</log>
