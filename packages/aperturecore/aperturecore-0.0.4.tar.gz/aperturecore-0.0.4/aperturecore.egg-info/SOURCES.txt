@@ -1,0 +1,7 @@
+setup.py
+aperture/__init__.py
+aperture/__s_lib__.py
+aperturecore.egg-info/PKG-INFO
+aperturecore.egg-info/SOURCES.txt
+aperturecore.egg-info/dependency_links.txt
+aperturecore.egg-info/top_level.txt
