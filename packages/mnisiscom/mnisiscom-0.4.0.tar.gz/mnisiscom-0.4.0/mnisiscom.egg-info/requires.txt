@@ -1,0 +1,13 @@
+numpy
+nibabel
+scikit-learn
+nilearn
+dipy
+matplotlib
+Pillow
+click
+colorama
+eel
+
+[:platform_system == "Windows"]
+pywin32

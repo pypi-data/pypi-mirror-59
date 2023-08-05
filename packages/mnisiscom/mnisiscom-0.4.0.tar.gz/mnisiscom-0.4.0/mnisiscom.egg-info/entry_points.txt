@@ -1,0 +1,4 @@
+[console_scripts]
+mnisiscom = mnisiscom.command_line:run_siscom
+mnisiscom_gui = mnisiscom.mnisiscom:start_gui
+
