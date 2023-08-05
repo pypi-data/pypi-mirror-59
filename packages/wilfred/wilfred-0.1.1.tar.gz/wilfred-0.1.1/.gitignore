@@ -1,0 +1,9 @@
+__pycache__
+*.pyc
+wilfred.egg-info
+build
+dist
+.eggs
+
+# IDE
+.vscode
