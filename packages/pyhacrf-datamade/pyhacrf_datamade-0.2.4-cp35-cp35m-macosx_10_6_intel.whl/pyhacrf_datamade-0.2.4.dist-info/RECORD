@@ -1,0 +1,11 @@
+pyhacrf/__init__.py,sha256=zHVOzVm2bNEB1pyk8yKQca7CIUtvIs1gXEvehilUxO4,256
+pyhacrf/adjacent.cpython-35m-darwin.so,sha256=ZHO6gyC0dHZ7nH1FbNkM5c2lEB6CJMYGa0zEct2gN6o,380208
+pyhacrf/algorithms.cpython-35m-darwin.so,sha256=QKCNci3wvWkvStEWBbKczS2znmvSmPSGuU8tWn59zaU,540496
+pyhacrf/feature_extraction.py,sha256=sDuY-r52d3YLtpii7DNQpFPbJi28Du4L0EgO1BQ0xjg,9183
+pyhacrf/pyhacrf.py,sha256=21n7ddLvQZsDaYAwLtmCvIk0SX-gkY19eBy9JaISZQU,13946
+pyhacrf/state_machine.py,sha256=Idzy-2iEZzf36ebiRGQLJAREv0L3_JGPPA_qPGq-67E,4040
+pyhacrf_datamade-0.2.4.dist-info/LICENSE,sha256=PXbMdcuINOLv9uCmZbTRpUT3FwmnqHKWM4fmx5ui41o,1479
+pyhacrf_datamade-0.2.4.dist-info/METADATA,sha256=ew6WxTVRCuRNWPRQbSapEWAI4dWRADUJkiGsLs6gm2Q,3822
+pyhacrf_datamade-0.2.4.dist-info/WHEEL,sha256=BdYa13sefkHen0XB9IN0lCOeSQrE46zSZzvnFK5xexs,109
+pyhacrf_datamade-0.2.4.dist-info/top_level.txt,sha256=S-k8v_yKi-yy4DVE9pf0VRGFk1uPN876jSBxEpaRFQM,8
+pyhacrf_datamade-0.2.4.dist-info/RECORD,,
