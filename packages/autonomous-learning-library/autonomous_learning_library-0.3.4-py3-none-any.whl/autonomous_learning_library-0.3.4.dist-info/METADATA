@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: autonomous-learning-library
+Version: 0.3.4
+Summary: A library for building reinforcement learning agents in Pytorch
+Home-page: https://github.com/cpnota/autonomous-learning-library.git
+Author: Chris Nota
+Author-email: cnota@cs.umass.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: gym[atari,box2d]
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: opencv-python
+Requires-Dist: pybullet
+Requires-Dist: pylint
+Requires-Dist: tensorboardX
+Requires-Dist: torch-testing
+
+UNKNOWN
+
+
