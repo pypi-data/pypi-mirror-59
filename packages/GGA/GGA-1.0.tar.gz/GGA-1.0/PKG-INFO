@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: GGA
+Version: 1.0
+Summary: Interact with Georgia General Assembly website data
+Home-page: https://github.com/nwithan8/Georgia-General-Assembly-API
+Author: Nate Harris
+Author-email: n8gr8gbln@gmail.com
+License: GNU GPLv3
+Download-URL: https://github.com/nwithan8/Georgia-General-Assembly-API/archive/v1.0.tar.gz
+Description: Full documentation available on GitHub at https://github.com/nwithan8/Georgia-General-Assembly-API
+Keywords: Georgia,API,government,general assembly,bills,laws,lawmakers,legislation,vote
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
