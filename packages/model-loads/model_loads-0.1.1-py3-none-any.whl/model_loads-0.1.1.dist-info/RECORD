@@ -1,0 +1,13 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/examples.py,sha256=CPxjeXP36U-Rv2eaBZvzKPtonKEQ1xlwhbJSn65r2EU,667
+examples/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+model_loads/__init__.py,sha256=XB5EHgu_AE1jFLlIV5YDUtfb-7BWQqcHKi0WkfBSvko,40
+model_loads/loads.py,sha256=xl5VVNV3Df1u_yuH8NhWwhe222-w4te-HrZ0QmUmEmU,3727
+model_loads/utils.py,sha256=MZSfHv9iq8A_DGzsilu0dThF2lql4EuDRgDxXuSfCq0,999
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_loads.py,sha256=yX8MiEw1r2XQN0lXqLYizyDz839ZwpnmGvOFhAE3iRw,404
+model_loads-0.1.1.dist-info/LICENSE.md,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+model_loads-0.1.1.dist-info/METADATA,sha256=PWupM_QcBQp-fWgLK6RKGoaQkrFqQiCGGmtitoDHgRQ,1993
+model_loads-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+model_loads-0.1.1.dist-info/top_level.txt,sha256=OSKlOz-rS2ws8XSIwC2-s2mjjIh9yTedGpg_AqYhnBk,27
+model_loads-0.1.1.dist-info/RECORD,,
