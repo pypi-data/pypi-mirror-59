@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: eco-eng
+Version: 0.0.2
+Summary: Package for Ecological Engineering Applications
+Home-page: https://github.com/OSU-BEE/eco-eng
+Author: John Bolte
+Author-email: john.bolte@oregonstate.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# eco-eng Package
+
+This package provides a number of functions for common 
+analysis tasks in Ecological Engineering
+
+
