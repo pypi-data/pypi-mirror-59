@@ -1,0 +1,5 @@
+setup.py
+ScratchABit.egg-info/PKG-INFO
+ScratchABit.egg-info/SOURCES.txt
+ScratchABit.egg-info/dependency_links.txt
+ScratchABit.egg-info/top_level.txt
