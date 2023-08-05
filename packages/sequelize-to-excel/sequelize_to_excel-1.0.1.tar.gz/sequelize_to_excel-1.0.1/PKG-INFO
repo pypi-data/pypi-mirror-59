@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: sequelize_to_excel
+Version: 1.0.1
+Summary: map your sequelize columns to excel
+Home-page: https://github.com/darshan99/sequelize_to_excel
+Author: Darshan Bharat
+Author-email: mailshahdarshan@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Node,excel,Sequelize
+Platform: UNKNOWN
