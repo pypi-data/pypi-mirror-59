@@ -1,0 +1,4 @@
+spotipy==2.4.4
+
+[:platform_system == "Windows"]
+windows-curses>=2.0
