@@ -1,0 +1,6 @@
+setup.py
+featuresfinder.egg-info/PKG-INFO
+featuresfinder.egg-info/SOURCES.txt
+featuresfinder.egg-info/dependency_links.txt
+featuresfinder.egg-info/requires.txt
+featuresfinder.egg-info/top_level.txt
