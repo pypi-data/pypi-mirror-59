@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+dotflz/__init__.py
+dotflz/config.py
+dotflz/dotflz.py
+dotflz/filesystem.py
+dotflz/parser.py
+dotflz.egg-info/PKG-INFO
+dotflz.egg-info/SOURCES.txt
+dotflz.egg-info/dependency_links.txt
+dotflz.egg-info/requires.txt
+dotflz.egg-info/top_level.txt
