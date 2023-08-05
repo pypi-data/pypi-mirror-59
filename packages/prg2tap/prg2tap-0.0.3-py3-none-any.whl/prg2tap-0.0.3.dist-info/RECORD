@@ -1,0 +1,10 @@
+prg2tap/__init__.py,sha256=j9EZEVyepKukMScF-a9KRrnJo1D5vF8jeaSbFIzyqoo,289
+prg2tap/prg2tap.py,sha256=E4xY5_8wYlLscSI6BR0WXZ2XScnFnWaHPs8sjfh51Fo,1336
+prg2tap/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prg2tap/test/test_prg2tap.py,sha256=KhZS2pdqLAmzAKqE98ZMRhrNi-xLfhoMcbcRsHk5uXU,2889
+prg2tap-0.0.3.data/scripts/prg2tap,sha256=DhUFYFCmVYC4BoJB092gN3o7O3xNMbyoLr9mTtXyxa4,48
+prg2tap-0.0.3.dist-info/LICENSE,sha256=UVYHL7GIHg0Z6mJrMMFyPr539u1yukHOiSBC9yIlNoE,1081
+prg2tap-0.0.3.dist-info/METADATA,sha256=3Z6gINnLO4H8vBpoudB_OJweP8uOR76KuTgtK6TQJ_0,935
+prg2tap-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+prg2tap-0.0.3.dist-info/top_level.txt,sha256=gk-RGoCUIIEFcyOSuXGKQ9f1_UwIajud8W23h6CQM9U,8
+prg2tap-0.0.3.dist-info/RECORD,,
