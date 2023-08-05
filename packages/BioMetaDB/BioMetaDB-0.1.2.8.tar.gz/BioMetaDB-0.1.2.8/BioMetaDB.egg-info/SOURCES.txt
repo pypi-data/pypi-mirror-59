@@ -1,0 +1,8 @@
+README.md
+setup.py
+BioMetaDB.egg-info/PKG-INFO
+BioMetaDB.egg-info/SOURCES.txt
+BioMetaDB.egg-info/dependency_links.txt
+BioMetaDB.egg-info/requires.txt
+BioMetaDB.egg-info/top_level.txt
+BioMetaDB/Accessories/arg_parse.pyx
