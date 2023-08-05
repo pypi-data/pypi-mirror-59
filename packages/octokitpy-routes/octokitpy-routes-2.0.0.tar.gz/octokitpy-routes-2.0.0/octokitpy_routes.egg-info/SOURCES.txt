@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+octokitpy_routes.egg-info/PKG-INFO
+octokitpy_routes.egg-info/SOURCES.txt
+octokitpy_routes.egg-info/dependency_links.txt
+octokitpy_routes.egg-info/top_level.txt
+routes/api.github.com.json
+routes/ghe-2.16.json
+routes/ghe-2.17.json
+routes/ghe-2.18.json
+routes/ghe-2.19.json
+routes/package.json
