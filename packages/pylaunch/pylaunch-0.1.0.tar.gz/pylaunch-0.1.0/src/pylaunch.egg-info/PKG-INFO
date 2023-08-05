@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pylaunch
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/Sandersland/pylaunch
+Author: Steffen Andersland
+Author-email: stefandersland@gmail.com
+License: UNKNOWN
+Description: # pylaunch
+        
+        http://www.dial-multiscreen.org/
+        
+Keywords: dial
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Description-Content-Type: text/markdown
+Provides-Extra: dev

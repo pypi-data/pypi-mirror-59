@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/__init__.py
+src/dial.py
+src/ssdp.py
+src/xmlparse.py
+src/pylaunch.egg-info/PKG-INFO
+src/pylaunch.egg-info/SOURCES.txt
+src/pylaunch.egg-info/dependency_links.txt
+src/pylaunch.egg-info/requires.txt
+src/pylaunch.egg-info/top_level.txt
+src/tests/__init__.py
+src/tests/testDIscoveryAndLaunch.py
+src/tests/testSimpleServiceDiscoveryProtocol.py
+src/tests/testXMLFile.py
