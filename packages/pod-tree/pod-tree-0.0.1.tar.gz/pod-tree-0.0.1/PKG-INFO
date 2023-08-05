@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pod-tree
+Version: 0.0.1
+Summary: tool for extracting dependency from  Podfile.lock
+Home-page: https://zhuanlan.zhihu.com/p/26159930
+Author: gujitao
+Author-email: taojigu@163.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -1,0 +1,3 @@
+[console_scripts]
+pill = pod_tree.__init__:pill
+
