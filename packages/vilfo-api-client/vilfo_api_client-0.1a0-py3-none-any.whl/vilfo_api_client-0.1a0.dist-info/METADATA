@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: vilfo-api-client
+Version: 0.1a0
+Summary: Simple wrapper client for the Vilfo router API
+Home-page: https://github.com/mannew/vilfo-api-client-python
+Author: Emanuel Winblad
+Author-email: winblad@protonmail.com
+License: MIT License
+Keywords: vilfo,router
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: responses ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: responses ; extra == 'test'
+
+# vilfo-api-client-python
+
+This is the initial version of a Python API client for the Vilfo router.
+
+Currently, the client is quite limited but will be extended with support for additional endpoints over time.
+
+Please note that the project is not an official client for the Vilfo router API and that support is only offered on a community basis.
+
+## Installation
+
+TBD
+
+## Usage
+
+TBD
+
