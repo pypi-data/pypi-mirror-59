@@ -1,0 +1,9 @@
+swiglpk/__init__.py,sha256=4bVoDRKGYZ3NG-6E1o7y1KNiVlfbk3jo3FlArLPkNw4,22
+swiglpk/_swiglpk.so,sha256=FSvu77gfrJgsZimCpJSn4Fcr8Kel3XBUCwilYGf2c_8,723364
+swiglpk/swiglpk.py,sha256=H-A9nhBLafDXu5hfI1umypiqsHj9pXZ4Yb6YVE1OAmE,37537
+swiglpk/.dylibs/libglpk.40.dylib,sha256=JqOJs6hwU6kYwHk2neVU7eOoa0PHIw31F4b_Q0rO-A0,2560764
+swiglpk/.dylibs/libgmp.10.dylib,sha256=vbIvDLW8OHrjzT3gX-jzeq6j7RJwHdRDGjm4UaRhgAA,418480
+swiglpk-4.65.1.dist-info/LICENSE,sha256=xTplwv1WHIfqq_EHLvXcq4ZTBCvBUwhGX1JBNYXrYnE,35146
+swiglpk-4.65.1.dist-info/METADATA,sha256=kXBTDhN84_bmgkgcfKMawJxtvGQudRoy0PJrDl-fmNM,5702
+swiglpk-4.65.1.dist-info/RECORD,,
+swiglpk-4.65.1.dist-info/WHEEL,sha256=Ay_jlWougdzL9bTWq4GJsvNQuE1u6VObSFvmoQGrUf0,110
