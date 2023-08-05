@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: markdown_del_ins
+Version: 1.0.0
+Summary: Markdown extension to support the <del> and <ins> tags
+Home-page: https://github.com/honzajavorek/markdown-del-ins
+Author: Honza Javorek
+Author-email: mail@honzajavorek.cz
+License: UNKNOWN
+Description: # markdown_del_ins
+        
+        Allows the [Markdown](https://python-markdown.github.io/) package to interpret ``~~text~~`` as ``<del>text</del>`` and ``++text++`` as ``<ins>text</ins>``.
+        
+        ## Installation
+        
+            $ pip install git+git://github.com/honzajavorek/markdown-del-ins.git
+        
+        ## Usage
+        
+            >>> from markdown import Markdown
+            >>> md = Markdown(extensions=['markdown_del_ins'])
+            >>> src = 'This is ++added content++ and this is ~~deleted **strong** content~~'
+            >>> html = md.convert(src)
+            >>> print(html)
+            <p>This is <ins>added content</ins> and this is <del>deleted <strong>strong</strong> content</del></p>
+        
+        ## License & Credits
+        
+        This software is released under the modified BSD License. See [LICENSE](LICENSE) for details. The project is a fork of [aleray/mdx_del_ins](https://github.com/aleray/mdx_del_ins).
+        
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Description-Content-Type: text/markdown
