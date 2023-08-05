@@ -1,0 +1,12 @@
+discovery-foundation
+pandas>0.25
+pyyaml
+
+[postgress]
+psycopg2
+
+[pyhive]
+pyhive
+
+[pymongo]
+pymongo
