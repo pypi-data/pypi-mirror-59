@@ -1,0 +1,10 @@
+doctalk/__init__.py,sha256=cLiHHhkOHVTwMI9Pfd2wcYaMxQ_Gj3tA38yivFpGAIw,67
+doctalk/nlp.py,sha256=zUE2JL6kE7LeiXxZsN0sV8gI9ROFaPoO-QQwzhP6QRE,2564
+doctalk/params.py,sha256=nHWH_eEWNP_LlTEJb-S5QR86BnWH-KAZ3r4Q07gblfE,342
+doctalk/talk.py,sha256=T1CvJa791MNz5yyeReCimCmd27CdkfuJNB4f--hct2s,8688
+doctalk/vis.py,sha256=iKsdKeB4uBquYtemfmrq3UFlrUx5m80ECwwtlSMXVO8,1187
+doctalk-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+doctalk-0.0.1.dist-info/METADATA,sha256=dQYmqgfPdMuTSgpEph830dNEIVNgW3tjCQrjDALEpKg,1010
+doctalk-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+doctalk-0.0.1.dist-info/top_level.txt,sha256=EmMxIE9Bo6CcKbIwgai7UnBVK4PoiBgE6iQFOLTwqTA,8
+doctalk-0.0.1.dist-info/RECORD,,
