@@ -1,0 +1,9 @@
+cmake_setup/__init__.py,sha256=P7BBwLytSQPg-R_PhRknhP27pYQuKsqthZ_W42Tz-Lg,87
+cmake_setup/cmake/__init__.py,sha256=K7dOyZE2YAclonK8j8W9vn8Pt6upqI7GNDQTXviP_xY,2074
+cmake_setup/headers/__init__.py,sha256=VTvkpD3CWAqoPPu5WfUbr1rhd84cHCqpJQCeKibCbr8,1041
+cmake_setup/utils/__init__.py,sha256=LPKdw2QpqoXzUAinURbX3lTodu2O1D82fvzv-p40_EQ,3507
+cmake_setup-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cmake_setup-0.1.1.dist-info/METADATA,sha256=MlgCjmbrmGBz941Z37jlXVpUS2iz0YdJ6kuefxt5DeY,1075
+cmake_setup-0.1.1.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+cmake_setup-0.1.1.dist-info/top_level.txt,sha256=zlWkJfgLZXlkmgAD5L-E507hNJbGAyU8Px67BbaL3g4,12
+cmake_setup-0.1.1.dist-info/RECORD,,
