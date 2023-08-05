@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: certcheck
+Version: 0.1
+Summary: The http/https redirect, http response checker
+Home-page: http://github.com/youmee/certcheck
+Author: Al Fi
+Author-email: job@youmee.co
+License: MIT
+Platform: UNKNOWN
+Requires-Python: ~=3.6
+Requires-Dist: aiohttp (==3.6.2)
+Requires-Dist: colored (==1.4.2)
+
+UNKNOWN
+
+
