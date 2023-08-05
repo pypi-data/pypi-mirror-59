@@ -1,0 +1,11 @@
+totalsum/__init__.py,sha256=Jb9MEGQHY5u1xdEj4qkMQu0yFMm7Rr9dABnkz5X0gi0,82
+totalsum/admin.py,sha256=OYOwKCZdvD7qqq9Mvt7sNPB8Chwf-ztjpZQzYk9Br9U,1726
+totalsum/templates/totalsum_change_list.html,sha256=PBHuhGi8bB0UtQbWof4btoeb7dhze83UykWjBcqRluM,379
+totalsum/templates/totalsum_change_list_results.html,sha256=KjFU1do-WizEOCHtg7SDbxSZO3A0vhVGfZL7b35t88U,2166
+totalsum/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+totalsum/templatetags/totalsum.py,sha256=Qd7Jr2gdfDGISshijgQdoVrF5IZ-dPKJjubyqltJ7L8,1206
+django_totalsum_admin_django3-1.0.0.dist-info/LICENSE,sha256=b8AzlHHO1Cuy7Rowz7CnOEZ55JKA2c4KaGLCyQrZCV0,1076
+django_totalsum_admin_django3-1.0.0.dist-info/METADATA,sha256=OQES_y863ZC8ttDjaIX4JrhWhyDeME_f-j2fZcSi_S0,401
+django_totalsum_admin_django3-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_totalsum_admin_django3-1.0.0.dist-info/top_level.txt,sha256=aFC8bEXz-pCw_kZ3hCa_CLZCtrzzKYx4TSCADR5pVzM,9
+django_totalsum_admin_django3-1.0.0.dist-info/RECORD,,
