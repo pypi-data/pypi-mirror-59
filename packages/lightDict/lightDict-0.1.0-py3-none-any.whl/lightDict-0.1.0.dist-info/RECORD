@@ -1,0 +1,12 @@
+lightdict/__init__.py,sha256=fosj-w3dT0eYF7LGnLTC9SYV924XKlSUPWPZGFCj_S8,81
+lightdict/component/__init__.py,sha256=hvCnZJf--MUr92au2JpbZcIVKNjuT4NeC8csUaddjWI,82
+lightdict/component/character.py,sha256=k1i3M8BjUXRNi1N2OFEXvNdCQxhA68I_Bj5O1cxk-EA,770
+lightdict/component/dictionary.py,sha256=DKyN5zP-jyZcfPERN3dsR7UhL5DMaLbHQgpGEFyj6gM,3404
+lightdict/component/word.py,sha256=FnbEg7wUzen-rnYHUJ2uaFcgFIMTWFG7yhQF8fpWc2U,1113
+lightdict/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lightdict/utils/common.py,sha256=tp9zL16qRbGBrRbzEYSDzsU4y-Mtu8Y4DIPhraW7-lw,253
+lightDict-0.1.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+lightDict-0.1.0.dist-info/METADATA,sha256=HqljOJcgEjg1PJLNtBG8s_5sJbZcOQoI_bEKW9k76ik,12188
+lightDict-0.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+lightDict-0.1.0.dist-info/top_level.txt,sha256=5fnqC-pvzBFJYMPL_Rp-p8Akx5LOU4GBjpMjV_vAcy4,10
+lightDict-0.1.0.dist-info/RECORD,,
