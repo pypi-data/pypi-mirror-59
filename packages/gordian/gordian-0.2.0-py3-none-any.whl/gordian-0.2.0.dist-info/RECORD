@@ -1,0 +1,11 @@
+gordian/config.py,sha256=7e-AoINlEChoJ9uYTvndLyucb5VLUNrsmyRAUZ0rgFg,256
+gordian/gordian.py,sha256=PC_JDjoNFCJa7meH-OJ2cUYuFyR3nx9qJgkSqHrI-zY,4308
+gordian/pulpo.py,sha256=eL0rqb3sj5JpervYNKPeigsdY78cTUDXbkx-cryKenk,728
+gordian/repo.py,sha256=Elo2BMjr5UTrT9wNNn1-2vhDkti1vDf_CDFFfMl7gtU,4220
+gordian/transformations.py,sha256=6jBHsP-D3MPOGgrfTgU86iIrJliQD0uSmPmF1azKPH8,2762
+gordian-0.2.0.dist-info/LICENSE,sha256=05ic03LM4ocrpG-ApgJ-szT3-6PJb_oqG4nQ_gT65H0,11337
+gordian-0.2.0.dist-info/METADATA,sha256=sDKVEvydwYbPMzvOyKN2iToLpZNmDkHmFhcGe1tjdOA,506
+gordian-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+gordian-0.2.0.dist-info/entry_points.txt,sha256=QU5aIAyBJVpVZtu36YdWwnLdwSItYVlKuc73ZjADr2M,77
+gordian-0.2.0.dist-info/top_level.txt,sha256=b_UbEmhtgsyySaQWWM8y994NfrxZYmDSBcIYT6b-Frg,8
+gordian-0.2.0.dist-info/RECORD,,
