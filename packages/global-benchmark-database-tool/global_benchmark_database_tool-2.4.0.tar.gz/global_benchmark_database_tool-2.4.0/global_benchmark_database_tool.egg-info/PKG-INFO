@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: global-benchmark-database-tool
+Version: 2.4.0
+Summary: A tool for global benchmark management
+Home-page: https://github.com/Weitspringer/gbd
+Author: Markus Iser, Luca Springer
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
