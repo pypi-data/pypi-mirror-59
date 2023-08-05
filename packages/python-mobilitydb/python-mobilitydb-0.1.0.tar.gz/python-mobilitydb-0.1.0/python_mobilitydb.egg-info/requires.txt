@@ -1,0 +1,8 @@
+Spans
+asyncpg
+parsec
+postgis
+psycopg2-binary
+pytest
+pytest-asyncio
+python-dateutil
