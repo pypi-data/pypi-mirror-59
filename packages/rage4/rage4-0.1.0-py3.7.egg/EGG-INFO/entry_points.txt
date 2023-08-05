@@ -1,0 +1,3 @@
+[console_scripts]
+rage4 = rage4.cli:main
+

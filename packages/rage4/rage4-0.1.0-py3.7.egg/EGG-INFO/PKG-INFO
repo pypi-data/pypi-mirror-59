@@ -1,0 +1,44 @@
+Metadata-Version: 1.2
+Name: rage4
+Version: 0.1.0
+Summary: Python Rage4 API Module
+Home-page: https://github.com/ahmedbodi/rage4
+Author: Ahmed Bodiwala
+Author-email: ahmedbodi@crypto-expert.com
+License: UNKNOWN
+Description: =====
+        Rage4
+        =====
+        
+        
+        
+        
+        .. image:: https://pyup.io/repos/github/ahmedbodi/rage4/shield.svg
+             :target: https://pyup.io/repos/github/ahmedbodi/rage4/
+             :alt: Updates
+        
+        
+        
+        Python Rage4 API Module
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2020-01-08)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: rage4
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
