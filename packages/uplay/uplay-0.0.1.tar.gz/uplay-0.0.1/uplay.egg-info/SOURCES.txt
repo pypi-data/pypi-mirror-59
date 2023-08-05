@@ -1,0 +1,8 @@
+README.md
+setup.py
+spider/__init__.py
+spider/tools.py
+uplay.egg-info/PKG-INFO
+uplay.egg-info/SOURCES.txt
+uplay.egg-info/dependency_links.txt
+uplay.egg-info/top_level.txt
