@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: edgell
+Version: 1.2
+Summary: ipyparallel wrapper for data scientists
+Home-page: https://github.com/freedomtowin/edgell
+Author: Rohan Kotwani
+License: MIT
+Description: UNKNOWN
+Keywords: ipyparallel parallel edgell analytics sklearn xgboost
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6

@@ -1,0 +1,7 @@
+# Include the README
+include *.md
+include edgell/edge_parallel.py
+
+# Include the license file
+include LICENSE.txt
+
