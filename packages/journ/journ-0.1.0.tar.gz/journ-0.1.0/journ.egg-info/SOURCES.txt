@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+journ/__init__.py
+journ.egg-info/PKG-INFO
+journ.egg-info/SOURCES.txt
+journ.egg-info/dependency_links.txt
+journ.egg-info/entry_points.txt
+journ.egg-info/top_level.txt
