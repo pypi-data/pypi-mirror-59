@@ -1,0 +1,11 @@
+cca/__init__.py,sha256=nf_gRzDuf6WnYOuV-6N-xFyAkIi-eD0VRmE9kQOr1TU,879
+cca/cca.py,sha256=MkhIOobvBYeYuiusSkqZJO9XmIN-FRNILZvYHbnDHck,5601
+cca/chaimcli.py,sha256=5nExvSQ1QMWHe7bhjTl2VdVuAwaYXXxgijhI82P1kPU,15405
+cca/cliinifile.py,sha256=2VS01lw7lLdb-5YsZ-XvkY1JFOcjAi0KfOvhyaGirgQ,4840
+cca/cliutils.py,sha256=i5QuVkPYkQB-8wMVJPlRyf54VbTl115sLqKtZF8_ACc,4596
+chaim_cli-2.5.3.dist-info/LICENSE,sha256=-JHhLXXB2RRUeojKiRRTDHyJ1QiOCtrDfwbahUOb6Yc,35150
+chaim_cli-2.5.3.dist-info/METADATA,sha256=nQ0oJ3PmYURiJ2OkYXahkvEc982se-OFmwDmpiV-7V4,9093
+chaim_cli-2.5.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+chaim_cli-2.5.3.dist-info/entry_points.txt,sha256=8ep6XXN2oilTgY_-2mR7CBqbybxPwfm2xUvYVIpNiyI,37
+chaim_cli-2.5.3.dist-info/top_level.txt,sha256=-GMQuCCAfQZPaTv0BMQByTQbnrbjr96ZY6Nugfucibc,4
+chaim_cli-2.5.3.dist-info/RECORD,,
