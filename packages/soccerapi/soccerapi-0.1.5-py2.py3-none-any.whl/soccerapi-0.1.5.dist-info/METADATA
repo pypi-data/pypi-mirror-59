@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: soccerapi
+Version: 0.1.5
+Summary: A simple python wrapper to get soccer odds
+Home-page: https://github.com/S1M0N38/soccer-api
+Author: S1M0N38
+Author-email: bertolottosimone@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: httpx
+
+
+# soccer-api
+
+[![CI Badge](https://github.com/S1M0N38/soccer-api/workflows/CI/badge.svg)](https://github.com/S1M0N38/soccer-api/actions)
+[![Coverage Badge](https://api.codacy.com/project/badge/Coverage/5bad465c97414d86ba0931c40f0a2c95)](https://www.codacy.com/manual/S1M0N38/soccer-api?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=S1M0N38/soccer-api&amp;utm_campaign=Badge_Coverage)
+[![Quality Badge](https://api.codacy.com/project/badge/Grade/5bad465c97414d86ba0931c40f0a2c95)](https://www.codacy.com/manual/S1M0N38/soccer-api?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=S1M0N38/soccer-api&amp;utm_campaign=Badge_Grade)
+
+Soccer Odds API
+
+
