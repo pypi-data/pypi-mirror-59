@@ -1,0 +1,3 @@
+include versioneer.py
+include hxrsnd/_version.py
+include hxrsnd/screens/*
