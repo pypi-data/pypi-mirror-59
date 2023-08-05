@@ -1,0 +1,17 @@
+geocoder>=1.38
+gpxpy>=1.2.0
+lxml
+requests
+
+[WPTrackserver]
+mysqlclient
+
+[develop]
+aiosmtpd
+coverage
+pytest
+
+[doc]
+sphinx
+sphinx-argparse
+sphinx-autodoc-annotation
