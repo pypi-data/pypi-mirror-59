@@ -1,0 +1,14 @@
+ascii_designer/__init__.py,sha256=_KJ2if7OUuZHS7niN5yHDLE0XRgiQtXAtyd7tRprbjQ,1478
+ascii_designer/ascii_slice.py,sha256=o3W4YUDadvGU8QudgbgbKfWynMI6-sCbOxhuUWsIp1g,6592
+ascii_designer/autoframe.py,sha256=hZtYQO0Jn_zmnXBvbahfIUv30Mclv_m6zv3Z5_mia1Y,5712
+ascii_designer/list_model.py,sha256=B0ywT-T4dlTJkuoW40TQzUkql9r7jpQngKT3tsx7UmM,13194
+ascii_designer/toolkit.py,sha256=W6QJbXW8DmfyKFxUAtD_BbpdbuuKz9u36H3wFqCRL8E,9754
+ascii_designer/toolkit_qt.py,sha256=AWt9CwDrjCjndW2Z0CGlPa3-IUWClJp_Jvsb6OJNyTo,17000
+ascii_designer/toolkit_tk.py,sha256=oMt1f_WxNERfxdGMirOkXlihC-JNghRqv3QRT-jxkrY,19861
+ascii_designer-0.3.0.dist-info/DESCRIPTION.rst,sha256=q9KLE0NpuHfgAmGoyugrbiYQ0eGafgVJfTc3qWV5RVY,4188
+ascii_designer-0.3.0.dist-info/METADATA,sha256=a6aTBfsOkOme0-lDnm3bFqGjS1Y58gvCleOouIPEelc,4708
+ascii_designer-0.3.0.dist-info/RECORD,,
+ascii_designer-0.3.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+ascii_designer-0.3.0.dist-info/metadata.json,sha256=JLglF_r-WgunuUm4p15mupxBlClDgigD6RxcIdNHcAg,697
+ascii_designer-0.3.0.dist-info/top_level.txt,sha256=87YjZaNp_J4d7iMs975ghlO0L0BuRPhHc_9DlklnUrQ,15
+ascii_designer-0.3.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
