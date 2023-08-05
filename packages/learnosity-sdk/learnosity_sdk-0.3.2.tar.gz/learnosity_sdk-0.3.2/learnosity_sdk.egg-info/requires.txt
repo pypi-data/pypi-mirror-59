@@ -1,0 +1,12 @@
+requests>=2.21.0
+
+[dev]
+setuptools
+tox
+twine
+wheel
+
+[test]
+pytest<6.0,>=4.6.6
+pytest-cov<3.0,>=2.8.1
+responses<1.0,>=0.8.1
