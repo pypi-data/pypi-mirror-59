@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: quantum-dataset
+Version: 0.1.2
+Summary: Collection of measurements on quantum devices
+Home-page: http://qutech.nl
+Author: Pieter Eendebak
+Author-email: pieter.eendebak@tno.nl
+Maintainer: Pieter Eendebak
+Maintainer-email: pieter.eendebak@tno.nl
+License: MIT
+Description: # Quantum Dataset
+        
+        A collection of measurements on quantum devices.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
