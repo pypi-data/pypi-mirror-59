@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: websocks
+Version: 0.1.9
+Summary: A websocket-based socks5 proxy.
+Home-page: https://github.com/abersheeran/websocks
+License: MIT
+Author: abersheeran
+Author-email: me@abersheeran.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: uvloop; sys_platform != "win32" and sys_platform != "cygwin" and platform_python_implementation != "pypy"
+Requires-Dist: websockets (>=8.1,<9.0)
+Project-URL: Documentation, https://github.com/abersheeran/websocks/wiki
+Project-URL: Repository, https://github.com/abersheeran/websocks
