@@ -1,0 +1,7 @@
+_build
+_templates
+*.pyc
+__pycache__/
+libraries/
+*.egg-info
+/dist/

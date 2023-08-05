@@ -1,0 +1,3 @@
+{% macro language_tag(language, slug) -%}
+<a href="/search.html?q={{ language | urlencode }}"><span class="badge badge-pill badge-{{ slug }}">{{ language }}</span></a>
+{%- endmacro %}
