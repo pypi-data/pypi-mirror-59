@@ -1,0 +1,9 @@
+angr==8.20.1.7
+websocket-client
+qtconsole
+ipython
+pyzmq
+shiboken2
+PySide2
+toml
+pyxdg
