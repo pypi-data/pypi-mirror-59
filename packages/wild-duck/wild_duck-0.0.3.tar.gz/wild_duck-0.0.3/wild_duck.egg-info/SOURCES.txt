@@ -1,0 +1,7 @@
+README.md
+setup.py
+wild_duck.egg-info/PKG-INFO
+wild_duck.egg-info/SOURCES.txt
+wild_duck.egg-info/dependency_links.txt
+wild_duck.egg-info/entry_points.txt
+wild_duck.egg-info/top_level.txt
