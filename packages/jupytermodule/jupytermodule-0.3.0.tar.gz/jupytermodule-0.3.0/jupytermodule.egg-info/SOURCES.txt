@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+jupytermodule/__init__.py
+jupytermodule/extractor.py
+jupytermodule/finder.py
+jupytermodule.egg-info/PKG-INFO
+jupytermodule.egg-info/SOURCES.txt
+jupytermodule.egg-info/dependency_links.txt
+jupytermodule.egg-info/top_level.txt
