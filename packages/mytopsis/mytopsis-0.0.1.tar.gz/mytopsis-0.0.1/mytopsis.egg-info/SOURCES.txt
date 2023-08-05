@@ -1,0 +1,6 @@
+README.txt
+setup.py
+mytopsis.egg-info/PKG-INFO
+mytopsis.egg-info/SOURCES.txt
+mytopsis.egg-info/dependency_links.txt
+mytopsis.egg-info/top_level.txt
