@@ -1,0 +1,6 @@
+include config.yaml
+include nvme_ioctl.dll
+include nvme_ioctl.so
+include version.yaml
+include pci.ids
+include LICENSE.txt
