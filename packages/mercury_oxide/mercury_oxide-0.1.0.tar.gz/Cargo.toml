@@ -1,0 +1,27 @@
+[package]
+name = "mercury_oxide"
+version = "0.1.0"
+description = "Liquid templating engine powered by Liquid-Rust"
+authors = ["thomas9911 <thomastimmer11@hotmail.com>"]
+edition = "2018"
+
+[lib]
+name = "mercury_oxide"
+crate-type = ["cdylib"]
+
+[dependencies]
+liquid = "0.19.0"
+serde = "*"
+serde_derive = "*"
+
+[dependencies.pyo3]
+version = "0.8.5"
+features = ["extension-module"]
+
+[package.metadata.maturin]
+project-url = ["https://github.com/thomas9911/mercury_oxide_python"]
+classifier = [
+    "Programming Language :: Python",
+    "Programming Language :: Rust",
+    "Topic :: Text Processing"
+]
