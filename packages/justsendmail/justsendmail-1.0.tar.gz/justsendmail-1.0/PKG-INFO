@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: justsendmail
+Version: 1.0
+Summary: Simple lib to send mail
+Home-page: https://github.com/pschmitt/pymail_utils
+Author: Philipp Schmitt
+Author-email: philipp@schmitt.co
+License: GPL3
+Description: # Justsendmail
+        
+        Simple CLI tools to send mail using Python 3+
+        
+        ## Usage
+        
+        ```
+        python mail.py --help
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
