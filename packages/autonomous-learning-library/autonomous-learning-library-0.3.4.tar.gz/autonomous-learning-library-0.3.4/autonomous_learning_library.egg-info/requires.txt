@@ -1,0 +1,8 @@
+gym[atari,box2d]
+numpy
+matplotlib
+opencv-python
+pybullet
+pylint
+tensorboardX
+torch-testing
