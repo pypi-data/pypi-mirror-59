@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: MottMacdonald
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/EurocodeHelpers/ADO-Tutorial-python
+Author: Peter Cox
+Author-email: p.cox@outlook.com
+License: MIT
+Description: # AzureDevOpsPythonTutorial-
+        https://medium.com/raa-labs/creating-a-pipeline-in-azure-devops-to-build-and-publish-python-packages-artifacts-ea2f99410e6c
+        
+Keywords: Time Series Insight,TSI,TSI SDK
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
