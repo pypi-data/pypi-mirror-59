@@ -1,0 +1,7 @@
+cdef char** to_cstring_array(list list_str)
+cdef free_cstring_array(char **cstring_array)
+cdef char* to_cstring(str py_string)
+cdef free_cstring(char* cstring)
+cdef int count_characters(char* cstring, const char* search_val)
+cdef int stringarray_contains(char** list_of_strings, char* string_to_find)
+cdef str to_pystring(char* cstring)
