@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: designmc
+Version: 0.1.0
+Summary: Microbial Community Designer
+Home-page: https://github.com/cdanielmachado/designmc
+Author: Daniel Machado
+Author-email: cdanielmachado@gmail.com
+License: Apache Software License 2.0
+Keywords: designmc
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Requires-Dist: reframed
+Requires-Dist: pandas
+
+DesignMC
+========
+
+Designing microbial communities using genome-scale metabolic models.
+
+
