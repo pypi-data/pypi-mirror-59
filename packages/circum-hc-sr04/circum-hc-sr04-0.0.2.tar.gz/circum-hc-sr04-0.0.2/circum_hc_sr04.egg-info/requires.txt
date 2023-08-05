@@ -1,0 +1,4 @@
+Bluetin_Echo
+circum
+click
+setuptools-git-version
