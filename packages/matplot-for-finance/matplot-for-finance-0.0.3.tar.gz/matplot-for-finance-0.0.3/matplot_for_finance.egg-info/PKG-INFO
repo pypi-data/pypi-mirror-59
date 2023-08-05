@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: matplot-for-finance
+Version: 0.0.3
+Summary: a package for plot finance data
+Home-page: https://github.com/phavaha1/matplot-for-finance
+Author: haupv
+Author-email: haupv@vietnamlab.vn
+License: UNKNOWN
+Description: # matplot-for-finance
+        https://realpython.com/pypi-publish-python-package/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
