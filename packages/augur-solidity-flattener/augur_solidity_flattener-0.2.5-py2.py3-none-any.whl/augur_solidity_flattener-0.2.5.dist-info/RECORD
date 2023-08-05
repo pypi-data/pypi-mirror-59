@@ -1,0 +1,9 @@
+augur_solidity_flattener-0.2.5.data/scripts/solidity_flattener,sha256=wyeBYWv8hOf2NA-r1l3fxF7Li-sjWwDkeoG4s5w0Ayw,53
+augur_solidity_flattener-0.2.5.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+augur_solidity_flattener-0.2.5.dist-info/METADATA,sha256=dQSBTqm29__343SomCrJZbxae84tz2T3jKgajqKBKIs,324
+augur_solidity_flattener-0.2.5.dist-info/RECORD,,
+augur_solidity_flattener-0.2.5.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+augur_solidity_flattener-0.2.5.dist-info/metadata.json,sha256=2gVvC3K8_Q1whAUbVuxB0CSgoUrz02zNJwoLn0Gy3aU,478
+augur_solidity_flattener-0.2.5.dist-info/top_level.txt,sha256=APIYGzjgJH69cniFUPmY2E1Xkw5tDX0zWJEY-ByIvBc,10
+flattener/__init__.py,sha256=5VSk_4Nxk2jvMErS7LYustEtkIfh9nlu32y06gvkSpo,9
+flattener/core.py,sha256=R4JxTImizw7gutyYn03TvOUo7V6nx0ad5cnPXG_SBaA,4706
