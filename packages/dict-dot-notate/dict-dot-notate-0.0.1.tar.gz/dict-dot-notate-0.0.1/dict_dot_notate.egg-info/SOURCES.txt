@@ -1,0 +1,9 @@
+README.md
+setup.py
+dict_dot_notate.egg-info/PKG-INFO
+dict_dot_notate.egg-info/SOURCES.txt
+dict_dot_notate.egg-info/dependency_links.txt
+dict_dot_notate.egg-info/top_level.txt
+dot_notate/__init__.py
+dot_notate/dot.py
+dot_notate/dot_notate.py
