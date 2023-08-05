@@ -1,0 +1,9 @@
+auto_semver/__init__.py,sha256=1XyQCmnD07yBfEMQqD_--L9Xx2cXijfOOboD78C8SQc,27
+auto_semver/__main__.py,sha256=E1B96pHmRMesJzg8vYgwPThdo_tp9Ed3vWpyd03pGQc,227
+auto_semver/auto_semver.py,sha256=8sfaO1ETcwbedJ9cn7tjI5c90DMAdiA4NL_nYD2niw0,6269
+auto_semver-0.4.0.dist-info/LICENSE,sha256=gjWxdePIYAhM2CS4-H3yJJDmUpmxw8CbDhRe69CV4xc,1068
+auto_semver-0.4.0.dist-info/METADATA,sha256=tOVlSsd9hpRwip9DZXYYc5Easgvwa90gIBkIu_Kg--c,234
+auto_semver-0.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+auto_semver-0.4.0.dist-info/entry_points.txt,sha256=I8BZ8CmwIRlud6DQBxVXjf6oswVJxaHTU-c4eCEVhdc,59
+auto_semver-0.4.0.dist-info/top_level.txt,sha256=4DCUR-8rT-5EvdSd0AqRDytJsm9vPjMss5BoMa5ox50,12
+auto_semver-0.4.0.dist-info/RECORD,,
