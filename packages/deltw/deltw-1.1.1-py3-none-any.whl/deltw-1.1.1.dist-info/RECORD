@@ -1,0 +1,11 @@
+deltw/__init__.py,sha256=KPbQgZwQsiZ9wn-vwune2_f0yf4dFlQDZ8j8e0jBFGw,46
+deltw/__main__.py,sha256=Kqyquqeza5p0fkAxcdhp3UgvBw402y52iQntHqT3S14,53
+deltw/cleaner.py,sha256=-OtepISmJgFtwDwv-ShCuGO-3u6zH6KMUN1kL2MgDIU,4455
+deltw/main.py,sha256=errT3AKOO6Z1q00O0N9mia0ikYoM_XHoj0w6pzEa9uU,856
+deltw/util.py,sha256=xFph6kXjywGXHUM0HYkd_j2RBfKkJ1l-lzhyrG63UxQ,2961
+deltw-1.1.1.dist-info/LICENSE,sha256=-iFpGNreDeJuggAvhfskBZYciUHEsJ_4tjZaPvUbM8U,1084
+deltw-1.1.1.dist-info/METADATA,sha256=_SBHxTXOeV8_HrFTMoiEY5kK06HhRh1RBKicEb231Mk,1563
+deltw-1.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+deltw-1.1.1.dist-info/entry_points.txt,sha256=X8pbONyJGcQHP2d35i3i0oc3klqwoowlNDDibSt8mo4,43
+deltw-1.1.1.dist-info/top_level.txt,sha256=d6bWVkpMxRg7FHmEErDbf2CX7hqM86DCt5tnk5Qip8g,6
+deltw-1.1.1.dist-info/RECORD,,
