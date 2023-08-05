@@ -1,0 +1,237 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-	
+#  	
+#  Copyright 2019 Lukáš Plevač <lukasplevac@gmail.com>	
+#  	
+#  This program is free software; you can redistribute it and/or modify	
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+#  
+#
+
+import argparse, socket, subprocess
+from getpass import getpass
+from piClusterManager import config
+from piClusterManager.protocol import node_manager, node_finder
+import time, pickle
+from os.path import expanduser
+
+#add parser
+parser = argparse.ArgumentParser(description='PI Cluster manager')
+
+#add argumets
+parser.add_argument(
+    '--setup',
+    default=False,
+    action='store_true',
+    help='setup pi cluster'
+)
+
+parser.add_argument(
+    '--update',
+    default=False,
+    action='store_true',
+    help='make update && upgrade in all nodes'
+)
+
+parser.add_argument(
+    '--dockerSwarmSetup',
+    default=False,
+    action='store_true',
+    help='setup docker swarm in cluster'
+)
+
+parser.add_argument(
+    '--passwd',
+    default=False,
+    action='store_true',
+    help='change password of culster (same password in all nodes)'
+)
+
+parser.add_argument(
+    '--execute',
+    default=None,
+    type=str,
+    help='execute command in all nodes (--execute="rm -rf /home/pi/example")'
+)
+
+args = parser.parse_args()
+
+try:
+    filehandler = open(expanduser("~/.nodes.obj"),"rb")
+    nodes = pickle.load(filehandler)
+    filehandler.close()
+except IOError:
+    nodes = None
+
+if args.setup:
+    if nodes is None:
+        print("Finding nodes...")
+
+        # find nodes
+        nf = node_finder(config)
+        # send 10 find packets
+        nf.find_nodes(retry=10)
+        # wait 10s
+        time.sleep(10)
+        # kill theard for listen hello packets
+        # some like nf.listener.terminate()
+        
+        #print finded nodes
+        print("Finded nodes:\n")
+        print(*nf.nodes, sep = "\n")
+        
+        correct = input("\nIt is all nodes what you need? (y/n): ")
+        
+        if (correct == "y"):
+            prefix_hostname = input("\nPrefix for hostnames (example cluster- makes cluster-nodeN) (default is ''): ")
+            # get new password for cluster
+            password = getpass(prompt='New password for cluster: ')
+            
+            # change password, hostnames and set no-hello
+            index = 0
+            for nodeIP in nf.nodes:
+                # login on node with default login
+                node = node_manager(nodeIP, "pi", "raspberry")
+                print("set new password on {}".format(nodeIP))
+                # set new password
+                node.set_password(password)
+                print("set no hello on {}".format(nodeIP))
+                # set no hello on node (hide when finding)
+                node.no_hello()
+                print("set hostname {}node{} on {}".format(prefix_hostname, index, nodeIP))
+                # set new hsotname
+                node.set_hostname("{}node{}".format(prefix_hostname, index))
+                node.close()
+                index += 1
+
+            # save hosts to file
+            filehandler = open(expanduser("~/.nodes.obj"),"w+b")
+            pickle.dump(nf.nodes, filehandler)
+            filehandler.close()
+
+        else:
+            print("Check all connection of PIs and try it again.")
+    else:
+        print("Cluster is setuped")
+
+elif args.update:
+    if not(nodes is None):
+        # get password for cluster
+        password = getpass(prompt='password for cluster: ')
+
+        for nodeIP in nodes:
+            # login on node
+            node = node_manager(nodeIP, "pi", password)
+            print("update {}".format(nodeIP))
+            # update node
+            node.update()
+            # close comunication
+            node.close()
+
+    else:
+        print("Cluster is not setuped")
+
+elif args.passwd:
+    if not(nodes is None):
+        # get password for cluster
+        password     = getpass(prompt='OLD password for cluster: ')
+        # get new password for cluster
+        new_password = getpass(prompt='NEW password for cluster: ')
+
+        for nodeIP in nodes:
+            # login on node
+            node = node_manager(nodeIP, "pi", password)
+            print("set new password on {}".format(nodeIP))
+            # change password for cluster
+            node.set_password(new_password)
+            # close comunication
+            node.close()
+    else:
+        print("Cluster is not setuped")
+
+elif not(args.execute is None):
+    if not(nodes is None):
+        # get password for cluster
+        password = getpass(prompt='password for cluster: ')
+
+        for nodeIP in nodes:
+            # login on node
+            node = node_manager(nodeIP, "pi", password)
+            print("\n\nexecute on {}\n\n".format(nodeIP))
+            # exec command on node
+            print(node.exec(args.execute).decode("utf-8"))
+            # close comunication
+            node.close()
+    else:
+        print("Cluster is not setuped")
+
+elif args.dockerSwarmSetup:
+    #is docker installed
+    try:
+        subprocess.call(["docker", "-v"])
+        is_docker_installed = True
+    except OSError as e:
+        is_docker_installed = False
+
+    if not(nodes is None):
+        if not(is_docker_installed):
+            password = getpass(prompt='password for cluster: ')
+
+            for nodeIP in nodes:
+                # loin on node
+                node = node_manager(nodeIP, "pi", password)
+                print("installing docker on {}".format(nodeIP))
+                # install docker on node
+                node.docker_install()
+                # close comunication
+                node.close()
+
+            master_hostname = socket.gethostname()
+            # get IP of current node using connect to another node
+            test_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+            test_sock.connect((nodes[0], 80))
+            # get my IP
+            master_IPAddr = socket.gethostbyname(test_sock.getsockname()[0])
+            
+            test_sock.close()
+
+            print("setuping master on {} on IP {}".format(master_hostname, master_IPAddr))
+            # setup master on current node
+            master = node_manager(master_IPAddr, "pi", password)
+            # get join token
+            token = master.docker_setup_master(master_IPAddr).decode("utf-8")
+            # close comunication
+            master.close()
+
+            #remove master from nodes list
+            nodes.remove(master_IPAddr)
+
+            for nodeIP in nodes:
+                # login on node
+                node = node_manager(nodeIP, "pi", password)
+                print("setuping docker worker on {}".format(nodeIP))
+                # set as worker for docker
+                node.docker_setup_worker(token, master_IPAddr)
+                # close comunication
+                node.close()
+
+        else:
+            print("Docker is installed")
+    else:
+        print("Cluster is not setuped")
+
+else:
+    print("no action specifikated")
+    print("type -h or --help for show help")
