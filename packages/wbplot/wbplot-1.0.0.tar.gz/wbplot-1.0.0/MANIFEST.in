@@ -1,0 +1,8 @@
+include wbplot/LICENSE
+include wbplot/README.md
+include wbplot/setup.py
+include wbplot/data/*
+include wbplot/examples/*
+recursive-exclude wbplot/__pycache__/ *
+recursive-exclude wbplot/utils/__pycache__/ *
+recursive-exclude wbplot/examples/__pycache__/ *
