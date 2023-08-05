@@ -1,0 +1,94 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    metal:use-macro="context/main_template/macros/master"
+    i18n:domain="collective.reflex">
+
+<metal:block fill-slot="top_slot">
+
+    <tal:defines tal:define="dummy python:request.set('disable_border',1);
+                             disable_column_one python:request.set('disable_plone.leftcolumn',0);
+                             disable_column_two python:request.set('disable_plone.rightcolumn',1);"/>
+</metal:block>
+
+<metal:block fill-slot="head_slot">
+
+    <link
+        rel="stylesheet"
+        type="text/css"
+        tal:attributes="href string:${context/portal_url}/++resource++plone.app.theming/controlpanel.css"
+        />
+
+</metal:block>
+
+<body>
+
+<metal:override fill-slot="portlets_one_slot">
+    <metal:prefs use-macro="context/portlet_prefs/macros/portlet" />
+</metal:override>
+
+<div metal:fill-slot="main" id="themeControlPanel">
+
+    <h1 class="documentFirstHeading"
+        i18n:translate="heading_theme_settings">Theme settings</h1>
+
+    <a href=""
+        class="link-parent"
+        tal:attributes="href string:${portal_url}/plone_control_panel"
+        i18n:translate="label_up_to_plone_setup">
+            Up to Site Setup
+    </a>
+
+    <dl class="enableFormTabbing">
+        <dt id="fieldsetlegend-basic" i18n:translate="">Themes</dt>
+        <dd id="fieldset-basic">
+
+            <div id="themesList">
+
+                <div class="themeEntry"
+                    tal:repeat="theme view/package_list"
+                    tal:attributes="class string:selected;
+                                    id string:themeEntry-${theme/name};
+                                    data-theme string:theme/name;
+                                    data-theme-title string:theme/title;">
+
+                    <div class="themeEntryDetail">
+
+                        <span class="themeEntryTitle">
+                            <span tal:replace="theme/title">Title</span>
+                        </span>
+
+                        <div class="themeEntryWrapper">
+
+                            <a class="previewImageContainer"
+                                title="Click to view a live preview. Forms will be disabled in the preview."
+                                i18n:attributes="title tooltip_theme_preview"
+                                tal:attributes="href string:"
+                                target="_new"
+                                href="#">
+                                <img
+                                    tal:attributes="src theme/preview"
+                                    />
+                            </a>
+
+                            <div class="themeDescription" tal:content="theme/description" />
+
+                        </div>
+
+                     </div>
+                </div>
+
+                <div class="visualClear"><!-- --></div>
+
+            </div>
+
+        </dd>
+
+    </dl>
+
+</div>
+
+</body>
+</html>

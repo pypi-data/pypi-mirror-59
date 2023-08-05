@@ -1,0 +1,276 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.reflex">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="collective.reflex"
+      type="plone"
+      directory="static"
+      />
+
+  <!-- Publish static files -->
+  <browser:resourceDirectory
+    name="collective.reflex"
+    directory="static"
+  />
+
+  <!-- Register package control panel for settings -->
+  <!--<browser:page
+      name="collective-resource-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".resource.ResourceControlPanel"
+      template="templates/resource.pt"
+      permission="cmf.ManagePortal"
+      layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+      />-->
+
+  <!-- Register the control panel for settings -->
+  <browser:page
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.CollectiveReflexControlPanelView"
+      name="collective-controlpanel"
+      permission="cmf.ManagePortal"
+      layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+      />
+
+  <browser:page
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.PlansReportControlPanelView"
+      template="templates/report_settings.pt"
+      name="collective-controlpanel-plans"
+      permission="cmf.ManagePortal"
+      layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+      />
+
+<!--
+  <browser:page
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.TypingReportControlPanelView"
+      template="templates/report_settings.pt"
+      name="collective-controlpanel-typing"
+      permission="cmf.ManagePortal"
+      layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+      />
+-->
+
+<!--
+  <browser:page
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.NipatReportControlPanelView"
+      template="templates/report_settings.pt"
+      name="collective-controlpanel-nipat"
+      permission="cmf.ManagePortal"
+      layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+      />
+-->
+
+  <!-- ReportPKG PublishTraverse -->
+  <browser:page
+      name="collective-resource"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".resource.Download"
+      permission="zope2.View"
+      />
+
+  <!-- Generate File -->
+  <browser:page
+      for="*"
+      class=".generator.GeneratorView"
+      name="collective-generator"
+      permission="zope2.View"
+      layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+      />
+
+  <!-- Actions report -->
+  <browser:page
+    for="plone.dexterity.interfaces.IDexterityContent"
+    name="collective-preview-report"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    class=".actions.ActionsReport"
+    attribute="preview"
+    permission="collective.reflex.AddReport"
+    />
+
+  <browser:page
+    for="plone.dexterity.interfaces.IDexterityContent"
+    name="collective-create-report"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    class=".actions.ActionsReport"
+    attribute="create"
+    permission="collective.reflex.AddReport"
+    />
+
+  <browser:page
+    for="plone.dexterity.interfaces.IDexterityContent"
+    name="collective-delete-report"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    class=".actions.ActionsReport"
+    attribute="delete"
+    permission="collective.reflex.DeleteReport"
+    />
+
+  <browser:page
+    for="plone.dexterity.interfaces.IDexterityContent"
+    name="collective-download-report"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    class=".actions.ActionsReport"
+    attribute="download"
+    permission="collective.reflex.ViewReport"
+    />
+
+<!--
+
+  <browser:page
+    for="plone.dexterity.interfaces.IDexterityContent"
+    name="collective-create-report"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    class=".actions.CreateReport"
+    permission="collective.reflex.DeleteReport"
+    />
+-->
+
+
+  <!-- Search VIEWS FOR FOLDERS -->
+  <browser:page
+    name="collective-search-view"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".search_view.SearchView"
+    template="templates/search_view.pt"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    permission="collective.reflex.ViewReport"
+  />
+
+  <browser:page
+    name="collective-search-data"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".report_view.ReportView"
+    attribute="table_data"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    permission="collective.reflex.ViewReport"
+  />
+
+  <browser:page
+    name="collective-query-parameter"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".report_view.ReportView"
+    attribute="query_params"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    permission="collective.reflex.ViewReport"
+  />
+
+  <browser:page
+    name="collective-report-view"
+    for="*"
+    class=".report_view.ReportView"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    permission="zope.Public"
+  />
+
+  <browser:page
+    name="collective-merging-preview"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".report_view.ReportView"
+    attribute="merging_preview"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    permission="collective.reflex.ViewReport"
+  />
+
+  <browser:page
+    name="collective-merging-view"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".report_view.ReportView"
+    attribute="merging_view"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    permission="collective.reflex.ViewReport"
+  />
+
+  <browser:page
+    name="collective-packing-download"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".report_view.ReportView"
+    attribute="packing_download"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    permission="collective.reflex.ViewReport"
+  />
+
+  <browser:page
+    name="collective-download-manifest"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".report_view.ReportView"
+    attribute="download_manifest"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    permission="collective.reflex.ViewReport"
+  />
+
+  <browser:page
+    name="collective-plugins-view"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".report_view.ReportView"
+    attribute="plugins_view"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    permission="collective.reflex.ViewReport"
+  />
+
+  <browser:page
+    name="collective-bulk-delete"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".report_view.ReportView"
+    attribute="bulk_delete"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    permission="collective.reflex.DeleteReport"
+  />
+
+  <browser:page
+    for="Products.CMFCore.interfaces.IFolderish"
+    name="collective-bulk-issue"
+    class=".form.ReportIssueForm"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    permission="collective.reflex.ReviewReport"
+  />
+
+  <browser:page
+    for="Products.CMFCore.interfaces.IFolderish"
+    name="collective-state-transition"
+    class=".form.StateTransitionForm"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    permission="collective.reflex.ReviewReport"
+  />
+
+  <browser:page
+    for="Products.CMFCore.interfaces.IFolderish"
+    name="collective-plans-regexp"
+    class=".serializer.ReportSerializing"
+    attribute="plans_regexp"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    permission="collective.reflex.ReviewReport"
+  />
+
+  <browser:page
+    name="collective-upload-file"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".upload_file.UploadView"
+    template="templates/upload_file.pt"
+    layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    permission="collective.reflex.UploadData"
+  />
+
+  <browser:page
+     name="collective-upload-page"
+     for="Products.CMFCore.interfaces.IFolderish"
+     class=".upload_page.UploadView"
+     template="templates/upload_page.pt"
+     layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+     permission="collective.reflex.UploadData"
+     />
+
+</configure>

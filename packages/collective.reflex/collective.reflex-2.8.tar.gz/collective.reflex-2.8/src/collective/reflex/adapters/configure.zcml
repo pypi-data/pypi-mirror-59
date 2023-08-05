@@ -1,0 +1,58 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  i18n_domain="collective.reflex">
+
+
+  <!-- Helper view & Report Template for IDexterityContent -->
+  <configure>
+    <browser:page
+      for="plone.dexterity.interfaces.IDexterityContent"
+      class="collective.reflex.adapters.helper.BaseReportHelperView"
+      name="collective_helper_view"
+      permission="zope2.View"
+      layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    />
+    <adapter
+      for="plone.dexterity.interfaces.IDexterityContent"
+      factory="collective.reflex.adapters.template.BaseTemplateConfigure"
+      provides="collective.reflex.interfaces.IBaseTemplateConfigure"
+      permission="zope2.View"
+    />
+  </configure>
+
+  <!-- Helper view & Report Template for Typing -->
+<!--  <configure
+    zcml:condition="installed gene.typing">
+    <browser:page
+      for="gene.typing.interfaces.ITyping"
+      class="collective.reflex.adapters.typing.ReportHelperView"
+      name="collective_helper_view"
+      permission="zope2.View"
+      layer="collective.reflex.interfaces.ICollectiveReflexLayer"
+    />
+    <adapter
+      for="gene.typing.interfaces.ITyping"
+      factory="collective.reflex.adapters.typing.TemplateConfigure"
+      provides="collective.reflex.interfaces.IBaseTemplateConfigure"
+      permission="zope2.View"
+    />
+    <utility
+      component="collective.reflex.interfaces.ITypingTemplateConfigure"
+      provides="collective.reflex.interfaces.IBaseTemplateConfigure"
+      name="Typing"
+    />
+  </configure>-->
+
+  <!-- Helper view & Report Template for Typing -->
+<!--  <configure
+    zcml:condition="installed gene.nipat">
+    <utility
+      component="collective.reflex.interfaces.INipatTemplateConfigure"
+      provides="collective.reflex.interfaces.IBaseTemplateConfigure"
+      name="Nipat"
+    />
+  </configure>-->
+
+</configure>

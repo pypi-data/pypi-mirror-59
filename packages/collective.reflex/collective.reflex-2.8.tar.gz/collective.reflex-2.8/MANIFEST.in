@@ -1,0 +1,19 @@
+graft src/collective
+graft docs
+include *.rst
+global-exclude *.pyc
+
+
+global-exclude *.pyo *.pyc *.py
+global-exclude *.pot *.po *.log update.sh
+global-include __init__.py
+include setup.py
+
+exclude src/collective/*/interfaces.so
+include src/collective/*/interfaces.pyc
+exclude src/collective/*/setuphandlers.so
+include src/collective/*/setuphandlers.pyc
+exclude src/collective/*/browser/form.so
+include src/collective/*/browser/form.pyc
+exclude src/collective/*/behaviors/report_data.so
+include src/collective/*/behaviors/report_data.pyc

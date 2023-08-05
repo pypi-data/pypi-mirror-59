@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<object name="portal_catalog">
+
+    <index name="report_state" meta_type="FieldIndex">
+        <indexed_attr value="report_state"/>
+    </index>
+
+    <index name="report_time" meta_type="DateIndex">
+        <property name="index_naive_time_as_local">True</property>
+    </index>
+
+    <index name="download_count" meta_type="FieldIndex">
+        <indexed_attr value="download_count"/>
+    </index>
+
+    <column value="report_state"/>
+  <!--<column value="my_meta_column"/>-->
+
+</object>

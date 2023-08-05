@@ -1,0 +1,42 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:zcml="http://namespaces.zope.org/zcml">
+
+  <!-- init report time -->
+  <subscriber
+    for="plone.dexterity.interfaces.IDexterityContent
+         Products.DCWorkflow.interfaces.IAfterTransitionEvent"
+    handler=".subscribers.handle_report_time" />
+
+  <!-- init report state -->
+  <subscriber
+    for="plone.dexterity.interfaces.IDexterityContent
+         Products.CMFCore.interfaces.IActionSucceededEvent"
+    handler=".subscribers.handle_report_state" />
+
+  <!-- create object report -->
+  <subscriber
+    for="plone.dexterity.interfaces.IDexterityContent
+         Products.CMFCore.interfaces.IActionSucceededEvent"
+    handler=".subscribers.handle_file_creation" />
+
+  <!--zope.lifecycleevent.interfaces.IObjectRemovedEvent-->
+  <!--fired before an object is removed. Until here no deletion has happend. -->
+  <!--It is also fired on move of an object (copy/paste).-->
+<!--  <subscriber
+    zcml:condition="installed gene.sms"
+    for="gene.nipt.interfaces.IGeneNipt
+         OFS.interfaces.IObjectWillBeRemovedEvent"
+    handler=".subscribers.handle_file_delete" />-->
+
+  <!-- report handler -->
+  <subscriber
+    for="plone.dexterity.interfaces.IDexterityContent
+         collective.reflex.interfaces.IAfterReportCreatedEvent"
+    handler=".handlers.add_watermark_handler" />
+
+  <subscriber
+    for="plone.dexterity.interfaces.IDexterityContent
+         collective.reflex.interfaces.IAfterReportCreatedEvent"
+    handler=".handlers.set_metadata_handler" />
+
+</configure>

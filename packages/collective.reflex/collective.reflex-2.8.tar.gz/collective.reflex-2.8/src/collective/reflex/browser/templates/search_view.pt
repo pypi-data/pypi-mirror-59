@@ -1,0 +1,422 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      lang="en"
+         metal:use-macro="context/main_template/macros/master"
+         i18n:domain="collective.reflex">
+<body>
+
+<metal:content-core fill-slot="body">
+    <div id="content">
+        <div id="content-core">
+
+            <div class="report-list">
+                <div class="row">
+                    <div class="col-md-3">
+
+                        <div id="form-searchbox" class="input-group has-feedback">
+                            <label class="control-label sr-only" for="form-SearchableText" i18n:translate="">Full-text
+                                search</label>
+                            <span id="form-SearchableHelp" tabindex="0"
+                                  class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"
+                                  role="button" data-toggle="popover"
+                                  data-trigger="focus" title="Advanced search instructions"
+                                  data-content="" i18n:attributes="title"></span>
+                            <input id="form-SearchableText" type="text" class="form-control"
+                                   placeholder="Full-text search, Enter to submit"
+                                   aria-label="..." aria-describedby="form-SearchableHelp"
+                                     i18n:attributes="placeholder">
+                            <div id="form-SearchField" class="input-group-btn" data-container="body">
+                                <span id="form-SearchableClear" data-for="form-SearchableText"
+                                      class="glyphicon glyphicon-remove form-control-feedback del_searchword"
+                                      aria-hidden="true"></span>
+                                <button type="button" class="btn btn-default" id="form-SearchButton">
+                                    <span i18n:translate="">Search</span></button>
+                            </div>
+                            <span tal:replace="structure context/@@authenticator/authenticator" />
+                        </div>
+                        <!-- /input-group -->
+                    </div>
+
+                    <div class="col-md-7 form-inline" id="form-SearchSelect">
+                        <select class="form-control" name="portal_type">
+                            <option value="--NOVALUE--" i18n:translate="">--Portal type--</option>
+                            <tal:block repeat="name_title view/used_types/items">
+                                <option value="type"
+                                         tal:attributes="value python:name_title[0]"
+                                         tal:content="python:name_title[1]">
+                                    title
+                                </option>
+                            </tal:block>
+                        </select>
+                        <select class="form-control" name="project_type">
+                            <option value="" i18n:translate="">--Project type--</option>
+                            <tal:block define="lis_tools context/@@lis_tools;
+                            project_type python:lis_tools.get_vocab_item('collective.reflex.project_type')"
+                              repeat="kv project_type">
+                                <option value="type"
+                                         tal:attributes="value python:kv[0]"
+                                         tal:content="python:kv[1]">
+                                    title
+                                </option>
+                            </tal:block>
+                        </select>
+                        <select class="form-control" name="report_state">
+                            <option value="" i18n:translate="">--Report state--</option>
+                            <option tal:define="lis_tools context/@@lis_tools;
+                                                    report_states python:lis_tools.get_vocab_item('collective.reflex.report_states')"
+                                       tal:repeat="kv report_states"
+                                             tal:attributes="value python:kv[0]"
+                                             tal:content="python:kv[1]">title
+                                    </option>
+                        </select>
+                        <select class="form-control" name="download_count">
+                            <option value="--NOVALUE--" i18n:translate="">--Download--</option>
+                            <option value="0" i18n:translate="">Not downloaded</option>
+                            <option value="1" i18n:translate="">Has downloaded</option>
+                        </select>
+
+                        <div class="form-date-range" style="display: inline">
+                            <span>
+                                <select class="form-control"
+                                        name="date_field" id="form-date-field"
+                                        class="pat-select2"
+                                        data-pat-select2="placeholder:Date type; allowClear:true; width:10%"
+                                        data-placceholder="Date type"
+                                        data-title="Date type"
+                                         i18n:attributes="data-placceholder; data-title">
+                                    <option value="" i18n:translate="">--Date--</option>
+                                    <option tal:define="lis_tools context/@@lis_tools;
+                                                    report_time python:lis_tools.get_vocab_item('collective.reflex.report_time')"
+                                       tal:repeat="kv report_time"
+                                             tal:attributes="value python:kv[0]"
+                                             tal:content="python:kv[1]">title
+                                    </option>
+                                </select>
+                            </span>
+
+                            <label for="form-date-from" class="hide">From</label>
+                            <span class="date-from"><input type="text" id="form-date-from" name="from"
+                                                           placeholder="Start date" i18n:attributes="placeholder">
+                                <span id="form-date-from-clear" data-for="form-date-from"
+                                      class="glyphicon glyphicon-remove form-control-feedback del_searchword"
+                                      aria-hidden="true"></span></span>
+                            -
+                            <label for="form-date-to" class="hide">to</label>
+                            <span class="date-to"> <input type="text" id="form-date-to" name="to"
+                                                          placeholder="End date" i18n:attributes="placeholder">
+                                <span id="form-date-to-clear" data-for="form-date-to"
+                                      class="glyphicon glyphicon-remove form-control-feedback del_searchword"
+                                      aria-hidden="true"></span>
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-2 form-inline">
+                        <div class="text-right" id="datatable_info"></div>
+                    </div>
+                </div>
+
+                <div id="tooltip-SearchableText" class="hide">
+                    <div class="container-fluid"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="btn-group" id="selectDropdown">
+                            <button class="btn btn-default" type="button">
+                                <span data-target="indicator"
+                                    class="glyphicon glyphicon-unchecked"></span>
+                              <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                        </div>
+
+                        <div id="operatorBtnGroup" class="btn-group" role="group" aria-label="...">
+
+                            <div class="bs-operator" id="operator-button-dropdown">
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"
+                                            i18n:attributes="title">
+                                        <span class="glyphicon glyphicon-eye-open"></span>
+                                        <tal: i18n:translate="">View</tal:>
+                                        <span class="caret"></span>
+                                        <span class="sr-only">View</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                       <li><a href="#" data-target="preview"
+                                            title="Preview the report that will be generated"
+                                          i18n:attributes="title" ><span class="glyphicon glyphicon-eye-close"></span>
+                                        <tal: i18n:translate="">Preview</tal:></a></li>
+                                       <li><a href="#" data-target="view"
+                                             title="View reports that have been generated"
+                                         i18n:attributes="title"><span class="glyphicon glyphicon-eye-open"></span>
+                                        <tal: i18n:translate="">View</tal:></a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                                        <span class="glyphicon glyphicon-save-file"></span>
+                                        <tal: i18n:translate="">Download</tal:>
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#" data-target="download-manifest"><span
+                                        class="glyphicon glyphicon-save-file"></span>
+                                        <tal: i18n:translate="">Download manifest</tal:>
+                                      </a></li>
+                                      <li><a href="#" data-target="download-document"><span
+                                        class="glyphicon glyphicon-save-file"></span>
+                                        <tal: i18n:translate="">Download document</tal:>
+                                      </a></li>
+                                      <li role="separator" class="divider"></li>
+                                      <li><a href="#" data-target="download-by-project"><span
+                                        class="glyphicon glyphicon-download-alt"></span>
+                                        <tal: i18n:translate="">Download by project</tal:>
+                                      </a></li>
+                                      <li><a href="#" data-target="download-by-company"><span
+                                        class="glyphicon glyphicon-download-alt"></span>
+                                        <tal: i18n:translate="">Download by company</tal:>
+                                      </a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group hide">
+                                    <button type="button" class="btn btn-success" data-target="print"><span
+                                            class="glyphicon glyphicon-print"></span>
+                                        <tal: i18n:translate="">Print</tal:>
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" i18n:translate="">Print by default rules</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#" i18n:translate="">Print by manual selection</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-warning dropdown-toggle"
+                                            data-toggle="dropdown" aria-expanded="true" ><span
+                                            class="glyphicon glyphicon-tag"></span>
+                                        <tal: i18n:translate="">Action</tal:>
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" data-target="upload-page"><span
+                                        class="glyphicon glyphicon-upload"></span>
+                                        <tal: i18n:translate="">Page upload</tal:>
+                                        </a></li>
+                                        <li><a href="#" data-target="upload-file"><span
+                                        class="glyphicon glyphicon-upload"></span>
+                                        <tal: i18n:translate="">File upload</tal:>
+                                        </a></li>
+                                        <li role="presentation"><a data-target="transition" href="#">
+                                          <span class="glyphicon glyphicon-transfer"></span>
+                                          <tal: i18n:translate="">State transition</tal:>
+                                        </a></li>
+                                        <li role="separator" class="divider">Separated link</li>
+                                        <li><a href="#" data-target="issue"><span
+                                        class="glyphicon glyphicon-file"></span>
+                                        <tal: i18n:translate="">Issue report</tal:>
+                                        </a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group"
+                                     tal:define="plugins python:list(view.plugins_name())"
+                                         tal:condition="plugins">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                        <span class="glyphicon glyphicon-cloud"></span>
+                                        <tal: i18n:translate="">Tools</tal:>
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <!--?<li><a href="#" i18n:translate="">Downloaded by default rules</a></li>
+                                          <li role="separator" class="divider"></li>
+                                          <li><a href="#" i18n:translate="">Download by manual selection</a></li>
+                                          <li role="separator" class="divider"></li>
+                                      <li role="separator" class="divider">Separated link</li>-->
+                                      <tal:plugin tal:repeat="plugin plugins">
+                                        <li><a href="#" data-target="plugins"
+                                           tal:attributes="href plugin/name"><span
+                                          class="glyphicon glyphicon-cloud-download"></span>
+                                          <tal: content="plugin/title">view title</tal:></a></li>
+                                      </tal:plugin>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group  hide">
+                                    <button type="button" class="btn btn-success" data-target="send"><span
+                                            class="glyphicon glyphicon-envelope"></span>
+                                        <tal: i18n:translate="">Send</tal:>
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" i18n:translate="">Sent by default rules</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#" i18n:translate="">Send by manual selection</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                                <div class="btn-group" tal:condition="view/in_debug_mode | nothing">
+                                    <button type="button" class="btn btn-danger dropdown-toggle"
+                                            data-toggle="dropdown"><span
+                                            class="glyphicon glyphicon-th-large"></span>
+                                        <tal: i18n:translate="">More</tal:>
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <!--?
+                                        <li><a href="#" data-target="fetch-1" i18n:translate="">Fetch last one days</a>
+                                        </li>
+                                        -->
+                                        <li role="separator" class="divider hide">Separated link</li>
+                                        <li><a href="#" class="hide">List</a></li>
+                                        <li class="hide"><a href="#" data-target="#create" i18n:translate="">Create</a>
+                                        </li>
+                                        <li role="separator" class="divider hide"></li>
+                                        <li><a href="#" data-target="delete"><span
+                                                class="glyphicon glyphicon-erase"></span>
+                                            <tal: i18n:translate="">Delete</tal:>
+                                        </a></li>
+                                        <li class="hide"><a data-target="check" href="#check"
+                                                            title="Check for data errors" i18n:attributes="title"><span
+                                                class="glyphicon glyphicon-wrench"></span>
+                                            <tal: i18n:translate="">Check error</tal:>
+                                        </a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-5 dataTables_wrapper" id="datatable_paginate"></div>
+
+                </div>
+
+
+                <div class="">
+                    <table id="report_datatable" class="table table-striped table-bordered table-condensed table-hover"
+                           style="width: 100%; padding: 0; margin: 0;"
+                           data-datatablepattern="${view/pattern_options}"
+                             tal:define="fields_name_title view/fields_name_title;"
+                             tal:attributes="data-datatablepattern view/pattern_options">
+                        <thead>
+                        <tr>
+                            <th i18n:translate="">Select</th>
+                            <th i18n:translate="">Line number</th>
+                            <tal:block repeat="name_title fields_name_title">
+                                <th tal:content="python:name_title[1]"
+                                         tal:attributes="data-name python:name_title[0]"
+                                        data-name="name">field title
+                                </th>
+                            </tal:block>
+                        </tr>
+                        </thead>
+
+                        <tfoot>
+                        <tr>
+                            <th i18n:translate="">Select</th>
+                            <th i18n:translate="">Line number</th>
+                            <tal:block repeat="name_title fields_name_title">
+                                <th tal:content="python:name_title[1]"
+                                         tal:attributes="data-name python:name_title[0]"
+                                        data-name="name">field title
+                                </th>
+                            </tal:block>
+                        </tr>
+                        </tfoot>
+
+                        <tbody tal:replace="nothing"></tbody>
+                    </table>
+                </div>
+
+                <!-- delete.modal -->
+                <div class="modal fade" id="delete_modal_dialog" tabindex="-1" role="dialog"
+                     aria-labelledby="delete alert modal dialog"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" i18n:translate="">Alert: delete data!</h4>
+                            </div>
+                            <div class="modal-body alert alert-danger" role="alert" i18n:translate="delete-warning">
+                                <strong>N</strong> Items will be permanently deleted! Deleted cannot be
+                                recovered.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-lg btn-danger"
+                                        data-target="delete" i18n:translate="">
+                                    Confirm
+                                </button>
+                                <button type="button" class="btn btn-lg btn-default"
+                                        data-dismiss="modal" i18n:translate="">
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                <!-- dilution.modal -->
+                <div class="modal fade" id="dilution_modal_dialog" tabindex="-1" role="dialog"
+                     aria-labelledby="dilution confirm modal dialog"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" i18n:translate="">Export OT Dilution</h4>
+                            </div>
+                            <div class="modal-body alert alert-info" role="alert" i18n:translate="dilution-confirm">
+                                <strong class="_total">N</strong> items selected, <strong class="_same">N</strong> same
+                                library barcode: <br/><span class="_bar"></span>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-lg btn-info"
+                                        data-target="export-dilution" i18n:translate="">
+                                    Confirm
+                                </button>
+                                <button type="button" class="btn btn-lg btn-default"
+                                        data-dismiss="modal" i18n:translate="">
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                <!-- processing Indicator -->
+                <div id="ProgressModal" class="modal fade" data-backdrop='false' tabindex="-1">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped"></div>
+                    </div>
+                </div>
+                <!-- /.processing Indicator -->
+            </div>
+
+        </div>
+    </div>
+</metal:content-core>
+</body>
+</html>
+

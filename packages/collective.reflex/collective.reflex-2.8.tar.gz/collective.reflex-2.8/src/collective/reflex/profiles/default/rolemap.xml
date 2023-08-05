@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<rolemap>
+  <roles>
+    <role name="Report"/>
+  </roles>
+
+  <permissions>
+    <permission name="collective.reflex: Add report" acquire="True">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+      <role name="Report"/>
+    </permission>
+
+    <permission name="collective.reflex: Delete report" acquire="True">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+      <role name="Report"/>
+    </permission>
+
+    <permission name="collective.reflex: View report" acquire="True">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+      <role name="Report"/>
+    </permission>
+
+    <permission name="collective.reflex: Review report" acquire="True">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+      <role name="Report"/>
+    </permission>
+
+    <permission name="collective.reflex: Review report" acquire="True">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+      <role name="Report"/>
+    </permission>
+
+    <permission name="collective.reflex: Report List" acquire="True">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+      <role name="Report"/>
+    </permission>
+
+    <permission name="collective.reflex: Upload Data" acquire="True">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+      <role name="Report"/>
+    </permission>
+
+    <!-- -*- extra stuff goes here -*- -->
+
+  </permissions>
+</rolemap>

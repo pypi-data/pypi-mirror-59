@@ -1,0 +1,125 @@
+/**
+ * Filename: main.css
+ * Version: 5.1
+ * Date: 2019-03-01
+ */
+
+/* report-state-transition-widgets workflow state */
+
+form[id="form-state-transition"] .option {
+    float: left;
+}
+
+form[id="form-state-transition"] .datagridwidget-cell {
+    vertical-align: middle;
+}
+
+form[id="form-state-transition"] .datagridwidget-cell .label {
+    color: #333;
+    font-weight: normal;
+}
+
+
+form[id="form-state-transition"] .datagridwidget-row,
+form[class*="kssattr-formname-collective-"] .datagridwidget-row {
+    border-top: 1px solid #ccc;
+}
+
+/*End*/
+
+/* datatable */
+
+/* hide search input */
+#report_datatable_filter, #report_datatable_length {
+    display: none;
+}
+
+#report_datatable_length, #report_datatable_info {
+    height: 34px;
+    line-height: 34px;
+}
+
+#report_datatable_length select {
+    vertical-align: middle;
+    width: auto;
+    display: inline-block;
+}
+
+#datatable_paginate {
+    clear: none;
+}
+
+#datatable_paginate .pagination > li {
+    display: inline;
+}
+
+table th, table td {
+    white-space: nowrap;
+}
+
+/*End*/
+
+/* Datepicker */
+#form-date-from, #form-date-to {
+    width: 86px;
+    height: 34px;
+    /*padding-right: 34px;*/
+}
+
+.date-from, .date-to {
+    position: relative;
+    display: inline-block;
+}
+
+.date-from #form-date-from-clear, .date-to #form-date-to-clear {
+    right: -6px;
+    left: inherit;
+}
+
+/*End*/
+
+
+/* failed */
+/*
+.report-list tr.failed td:nth-of-type(-n+63) {
+    background: #fb3d09;
+}
+
+.report-list tr.failed:hover, .report-list .failed:hover td:nth-of-type(-n+63) {
+    background-color: #fc7955;
+}
+
+!* success *!
+.report-list tr.success td:nth-of-type(-n+63) {
+    background: #26ce0d;
+}
+
+.report-list tr.success:hover, .report-list .success:hover td:nth-of-type(-n+63) {
+    background-color: #8ade7d;
+}
+*/
+
+/* upload file */
+#ProgressModal > .progress {
+    position: relative;
+    top: 50%;
+}
+
+/*
+#ProgressModal > .progress > .progress-bar {
+    width: 100%;
+}
+*/
+
+@keyframes slide_progress {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.add_slide_progress {
+    animation: slide_progress 3s forwards;
+}

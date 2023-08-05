@@ -1,0 +1,258 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+         i18n:domain="collective.reflex"
+         metal:use-macro="context/main_template/macros/master">
+<head>
+    <metal:slot metal:fill-slot="style_slot">
+        <style>
+
+            .detection-plan div.alert-danger:empty,
+            .detection-plan span.help-block:empty {
+                display: none;
+            }
+
+            .detection-plan .hr {
+                height: 1px;
+                border: none;
+                border-top: 1px solid rgb(50, 159, 215);
+            }
+
+            .detection-plan legend::before {
+                font: 110% sans-serif;
+                content: "►";
+                color: limegreen;
+            }
+
+            .detection-plan legend::after {
+                font: 110% sans-serif;
+                content: " " attr(data-sn);
+                color: red;
+                margin-right: .25em;
+            }
+
+            .detection-plan .history_actions {
+                font-size: small;
+            }
+
+
+            .detection-plan .list-group-item > span:first-child::before {
+                font: 100% sans-serif;
+                content: "√";
+                color: limegreen;
+                margin-right: .5em;
+            }
+
+            @keyframes new_background {
+                from {
+                    background: yellowgreen;
+                }
+                to {
+                    background: white;
+                }
+            }
+
+            .detection-plan .new_added {
+                animation: new_background 10s;
+            }
+
+            .image_preview {
+                border: 1px dashed #0b93d5;
+                margin-right: 0;
+                margin-left: 0;
+                background-color: #eeeeee;
+                border-radius: 4px 4px 0 0;
+                box-shadow: none;
+                min-height: 180px;
+            }
+
+            .image_preview img {
+                border: 1px solid;
+                margin: 4px;
+                width: 180px;
+                height: 180px;
+            }
+
+        </style>
+    </metal:slot>
+    <metal:slot metal:fill-slot="javascript_head_slot">
+        <script>
+            window.addEventListener('load', event => {
+                document.querySelectorAll('#upload_page_part div[data-active]').forEach(item => {
+                    const section_name = item.dataset['active'];
+                    if (section_name) {
+                        const section = document.querySelector(`#tablist a[href="#${section_name}"]`);
+                        section.parentNode.classList.remove('hide');
+                        section.click();
+                    }
+                });
+            });
+
+            window.addEventListener('load', event => {
+                window.setTimeout(function () {
+                    $('#upload_page_dialog').on('show.bs.modal', function (e) {
+                        this.querySelector('div.has-done').innerHTML = '';
+                        this.querySelector('div.progress-bar').classList.add('add_slide_progress');
+                        this.querySelector('div.progress').classList.remove('hide');
+                        this.querySelectorAll('button.btn').forEach(item => {
+                            item.classList.add('hide');
+                        });
+                    });
+                    document.querySelectorAll('button[name="form.buttons.cancel"]').forEach(item => {
+                        item.addEventListener('click', event => {
+                            location.href = document.referrer;
+                        });
+                    });
+                }, 1000);
+            });
+
+            function request_done(data, textStatus, jqXHR, sectionName) {
+                document.querySelector('#upload_page_dialog div.has-done').innerHTML = data.message;
+                if (data.status) {
+                    for (let [sid, fields] of Object.entries(data.items)) {
+                        const fieldset = document.getElementById(sid);
+                        if (Object.keys(fields).length) {
+                            for (let [name, value] of Object.entries(fields)) {
+                                const el = fieldset.querySelector(`[name="${name}"]`);
+                                el.nextElementSibling.innerHTML = value;
+                                el.parentNode.classList.add('has-error');
+                            }
+                        } else {
+                            fieldset.parentNode.removeChild(fieldset);
+                            populateStorage(sectionName, sid);
+                        }
+                    }
+                    document.querySelector('#upload_page_dialog button.btn-info').classList.remove('hide');
+                } else {
+                    for (let sid of Object.keys(data.items)) {
+                        const fieldset = document.getElementById(sid);
+                        fieldset.parentNode.removeChild(fieldset);
+                        populateStorage(sectionName, sid);
+                    }
+                    document.querySelector('#upload_page_dialog button.btn-success').classList.remove('hide');
+                }
+            }
+
+            function request_fail(jqXHR, textStatus, errorThrown) {
+                if (jqXHR.status === 401) {
+                    window.location.reload();
+                } else {
+                    document.querySelector('#upload_page_dialog div.has-done').innerHTML = '发生错误';
+                }
+            }
+
+            function request_always(jqXHR, textStatus, errorThrown) {
+                document.querySelector('#upload_page_dialog div.progress').classList.add('hide');
+                document.querySelector('#upload_page_dialog div.progress-bar').classList.remove('add_slide_progress');
+            }
+
+
+            function populateStorage(sectionName, keyValue) {
+                const keyName = `${sectionName}_page`;
+                if (!localStorage.getItem(keyName)) {
+                    localStorage.setItem(keyName, JSON.stringify([]));
+                } else {
+                    const now_str = new Date().toISOString();
+                    const history = JSON.parse(localStorage.getItem(keyName));
+                    history.unshift([keyValue, now_str]);
+                    if (history.length > 12) {
+                        history.length = 12;
+                    }
+                    localStorage.setItem(keyName, JSON.stringify(history));
+                }
+                updateActionArea();
+            }
+
+            function updateActionArea(sectionName) {
+                const keyName = `${sectionName}_page`;
+                const history = JSON.parse(localStorage.getItem(keyName));
+                if (Array.isArray(history)) {
+                    const actions_list = document.querySelector(`div.${sectionName} .history_actions`);
+                    const list_array = Array.from(history, item => {
+                        const klass = (new Date() - new Date(item[1])) / 1000 < 15 ? 'new_added' : '';
+                        return `<li class="list-group-item ${klass}"><span>${item[0]}</span> <span>${item[1]}</span></li>`;
+                    });
+                    actions_list.innerHTML = list_array.join('');
+                }
+            }
+
+        </script>
+    </metal:slot>
+</head>
+<body>
+<metal:content-main fill-slot="body">
+    <div id="content">
+        <div id="content-core">
+
+            <div id="upload_page_part"
+                 class="panel panel-info" tal:attributes="data-datatablepattern view/pattern_options">
+                <div class="panel-heading">
+                    <h3 class="panel-title" i18n:translate="">Upload data</h3>
+                </div>
+                <div class="panel-body">
+
+                    <div tal:condition="python:view.transformer">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" id="tablist">
+                            <tal:block tal:repeat="item view/transformer|nothing">
+                                <li class="hide" role="presentation">
+                                    <a href="#pane-id" role="tab" data-toggle="tab"
+                                             tal:attributes="href string:#${item/name}"
+                                             tal:content="item/title">Title</a></li>
+                            </tal:block>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <tal:block tal:repeat="item view/transformer|nothing">
+                                <div role="tabpanel" class="tab-pane fade" id="pane-id"
+                                         tal:attributes="id item/name"
+                                         tal:content="structure item/template">content
+                                </div>
+                            </tal:block>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- upload.modal -->
+            <div class="modal fade" id="upload_page_dialog" tabindex="-1" role="dialog" data-backdrop="static"
+                 aria-labelledby="confirm modal dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" i18n:translate="" >Upload data</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="has-done">
+                                &hellip;
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success progress-bar-striped"></div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-lg btn-success"
+                                    name="form.buttons.cancel"
+                                    data-dismiss="modal" i18n:translate="">
+                                Back
+                            </button>
+                            <button type="button" class="btn btn-lg btn-info"
+                                    data-dismiss="modal" i18n:translate="">
+                                Ok
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+
+        </div>
+    </div>
+</metal:content-main>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  i18n_domain="plone">
+
+  <configure zcml:condition="installed AccessControl.security">
+    <permission
+        id="collective.reflex.AddReport"
+        title="collective.reflex: Add report"
+        />
+
+    <permission
+        id="collective.reflex.DeleteReport"
+        title="collective.reflex: Delete report"
+        />
+
+    <permission
+        id="collective.reflex.ViewReport"
+        title="collective.reflex: View report"
+        />
+
+    <permission
+        id="collective.reflex.ReviewReport"
+        title="collective.reflex: Review report"
+        />
+
+   <permission
+        id="collective.reflex.ReportList"
+        title="collective.reflex: Report List"
+        />
+
+    <permission
+        id="collective.reflex.UploadData"
+        title="collective.reflex: Upload Data"
+        />
+
+    <!-- -*- extra stuff goes here -*- -->
+
+  </configure>
+
+</configure>

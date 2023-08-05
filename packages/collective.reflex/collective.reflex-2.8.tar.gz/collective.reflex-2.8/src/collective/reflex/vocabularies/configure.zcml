@@ -1,0 +1,74 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="collective.reflex">
+
+    <!-- -*- extra stuff goes here -*- -->
+
+    <!-- basic Vocabulary -->
+    <utility
+        factory=".basic.StorageTypeVocabularyFactory"
+        name="collective.reflex.storage_type"
+    />
+
+    <utility
+        factory=".basic.AvailableTypesVocabularyFactory"
+        name="collective.reflex.available_types"
+    />
+
+    <utility
+        factory=".basic.ProgressStepsFactory"
+        name="collective.reflex.progress_steps"
+    />
+
+    <!-- template Vocabulary -->
+
+    <utility
+        factory=".template.ReportTemplatesVocabularyFactory"
+        name="collective.reflex.report_template"
+    />
+
+<!--
+    <utility
+        factory=".template.TypingTemplatesVocabularyFactory"
+        name="collective.reflex.typing_templates"
+    />
+-->
+<!--
+    <utility
+        factory=".template.NipatTemplatesVocabularyFactory"
+        name="collective.reflex.nipat_templates"
+    />
+-->
+
+    <!-- Content -->
+    <utility
+        factory=".content.ProjectTypeVocabularyFactory"
+        name="collective.reflex.project_type"
+    />
+
+    <utility
+        factory=".content.SubmissionCompanyVocabularyFactory"
+        name="collective.reflex.submission_company"
+    />
+
+    <utility
+        component=".output_type.OutputTypeFactory"
+        name="collective.reflex.output_type"
+    />
+
+    <utility
+        component=".report_time.ReportTimeFactory"
+        name="collective.reflex.report_time"
+    />
+
+    <utility
+      factory=".report_states.ReportStates"
+      name="collective.reflex.report_states"
+    />
+
+    <utility
+      factory=".report_transition.ReportTransition"
+      name="collective.reflex.report_transition"
+    />
+
+</configure>

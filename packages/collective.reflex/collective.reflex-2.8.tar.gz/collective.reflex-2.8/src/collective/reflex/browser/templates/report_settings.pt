@@ -1,0 +1,78 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xml:lang="en" lang="en"
+      metal:use-macro="context/prefs_main_template/macros/master"
+      i18n:domain="collective.reflex">
+
+<body>
+
+<metal:main fill-slot="prefs_configlet_content"
+    tal:define="view_name view/__name__;
+                is_package python:'selected' if view_name=='collective-package-controlpanel' else '';
+                is_setting python:'selected' if view_name=='collective-controlpanel' else '';
+                is_plans python:'selected' if view_name=='collective-controlpanel-plans' else '';">
+  <div class="documentEditable">
+
+      <div id="edit-bar">
+          <ul class="contentViews" id="content-views">
+              <!--?<li tal:attributes="class is_package">
+                <a href=""
+                   tal:attributes="href string:$portal_url/@@collective-package-controlpanel"
+                   i18n:translate="label_package">Report</a>
+                </li>-->
+                <li tal:attributes="class is_setting">
+                  <a href=""
+                     tal:attributes="href string:$portal_url/@@collective-controlpanel"
+                     i18n:translate="label_setting">Setting</a>
+                </li>
+                <li
+                   tal:condition="default"
+                   tal:attributes="class is_plans">
+                  <a href=""
+                     tal:attributes="href string:$portal_url/@@collective-controlpanel-plans"
+                     i18n:translate="label_plans">Plans</a>
+                </li>
+                <tal:
+                   tal:define="report_view context/@@collective-report-view;"
+                   tal:repeat="item report_view/used_types/items">
+                <li
+                   tal:define="name python:item[0].lower();
+                               title python:item[1];
+                               selected python: name in view.__name__ and 'selected'"
+                   tal:attributes="class selected">
+                  <a href=""
+                     tal:attributes="href string:$portal_url/@@collective-controlpanel-${name}"
+                     tal:content="title">Title</a>
+                </li>
+              </tal:>
+          </ul>
+          <div class="contentActions">&nbsp;</div>
+      </div>
+
+      <div id="content">
+
+        <div metal:use-macro="context/global_statusmessage/macros/portal_message">
+          Portal status message
+        </div>
+
+        <a href=""
+           id="setup-link"
+           tal:attributes="href string:$portal_url/plone_control_panel"
+           i18n:translate="">
+            Site Setup
+        </a>
+
+        <h1 class="documentFirstHeading" tal:content="view/label">View Title</h1>
+
+        <div id="layout-contents">
+            <span tal:replace="structure view/contents" />
+        </div>
+      </div>
+
+  </div>
+
+</metal:main>
+</body>
+</html>

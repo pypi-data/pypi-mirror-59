@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<registry>
+      <records interface="collective.reflex.interfaces.ICollectiveReflexSettings" />
+      <records interface="collective.reflex.interfaces.IPlansTemplateConfigure" />
+  <!--    <records interface="collective.reflex.interfaces.ITypingTemplateConfigure" />-->
+  <!--    <records interface="collective.reflex.interfaces.INipatTemplateConfigure" />-->
+  <!-- -*- extra stuff goes here -*- -->
+
+</registry>
