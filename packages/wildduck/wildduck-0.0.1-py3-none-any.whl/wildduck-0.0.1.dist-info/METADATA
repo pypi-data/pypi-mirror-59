@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wildduck
+Version: 0.0.1
+Summary: An API client to interface with the wildduck
+     webmail application API.
+Home-page: https://github.com/IotaSpencer/wildduck-py
+Author: Ken Spencer
+Author-email: me@iotaspencer.me
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# wild_duck
+
+
