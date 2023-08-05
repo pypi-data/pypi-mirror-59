@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: MicroBitTools
+Version: 2.1.2
+Summary: Library used for helping developing for the BBC microbit easier.
+Home-page: https://github.com/BigCowKing/MicroBitTools
+Author: Simon Lindgren
+Author-email: babbilant@outlook.com
+License: UNKNOWN
+Description: # MicroBitTools
+        MicroBitTools is a package for making BBC MicroBit development easier.
+        
+        # Installation
+        Run the following line in the terminal/command prompt to install:
+        
+        ```pip install MicroBitTools```
+        
+        
+        # Examples
+        This one is used to flash to the MicroBit
+        ```
+        from MicroBitTools import flash
+        flash("PythonFilePathHere", "MicroBitDirectoryHere")
+        ```
+        
+        
+        This one is used to flash whole folders
+        ```
+        from MicroBitTools import flashF
+        flashF("PythonFilePathHere", "MicroBitDirectoryHere")
+        ```
+        
+        
+        # Serial system (Still in early development)
+        First, let's create a SerialSystem
+        ```
+        import MicroBitTools as mbt
+        mbs = mbt.SerialSystem()
+        ```
+        Then, let's move the SerialSystem on to the MicroBit
+        ```
+        mbs.readyMicroBit()
+        ```
+        After that, we are going to create a loop that is printing the data from the MicroBit
+        ```
+        while True:
+            print(mbs.read())
+        ```
+        You'r code should look like this:
+        ```
+        import MicroBitTools as mbt
+        mbs = mbt.SerialSystem()
+        
+        mbs.readyMicroBit() # Load 
+        
+        while True: # Infinite loop
+            print(mbs.read()) # Print data from MicroBit
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Description-Content-Type: text/markdown

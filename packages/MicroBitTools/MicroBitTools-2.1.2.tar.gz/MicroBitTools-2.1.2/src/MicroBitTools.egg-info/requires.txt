@@ -1,0 +1,4 @@
+requests
+microfs
+uflash
+pyserial
