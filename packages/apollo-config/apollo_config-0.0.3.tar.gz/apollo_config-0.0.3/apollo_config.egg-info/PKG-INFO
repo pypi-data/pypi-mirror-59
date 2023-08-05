@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: apollo-config
+Version: 0.0.3
+Summary: apollo_config
+Home-page: UNKNOWN
+Author: yangxialong
+Author-email: nmgcfyxl@163.com
+License: UNKNOWN
+Description: 
+        apollo 连接工具包
+        
+        
+        
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
