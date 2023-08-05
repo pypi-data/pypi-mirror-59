@@ -1,0 +1,4 @@
+SQLAlchemy==1.3.7
+biopython==1.74
+configparser==3.8.1
+Cython==0.29.13
