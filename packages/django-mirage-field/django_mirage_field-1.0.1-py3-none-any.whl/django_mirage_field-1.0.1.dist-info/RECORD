@@ -1,0 +1,13 @@
+mirage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mirage/crypto.py,sha256=y8ndBZnyz7rfvVRItx_4qz503igAy9zKF45Mr649VTw,1939
+mirage/exceptions.py,sha256=KWRCh9ECiqcTtTwz9M_Ljq-Pr4VrLL7GBAhJSbVL6fE,51
+mirage/fields.py,sha256=Ix02Ucvde6IUjQxy5MXoClBwSzQupED0cQYcb_tSZNY,2033
+mirage/tools.py,sha256=P8WAlbwn30AD2xCqHxZIcmZeCRVrOKzVix_XmX1x3-8,3396
+mirage/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mirage/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mirage/management/commands/mirage.py,sha256=IdRd9zBfmk_qVzKgLlTOgtDwFm-EuoMSz40eqLGDaKY,1869
+django_mirage_field-1.0.1.dist-info/LICENSE,sha256=A_0ezkkNLOG7lB_0JDM6XuSVZ1ZkIgbnpeeRacrghvM,1156
+django_mirage_field-1.0.1.dist-info/METADATA,sha256=QuhXzJQs1hzxGaUBVzzcQcPH0fjLtEQES7GLMCcbDvw,3959
+django_mirage_field-1.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_mirage_field-1.0.1.dist-info/top_level.txt,sha256=x6Yl54RzCGuLqqWDF4zZ-tEaP2pUKzUqb57hVrbakVI,7
+django_mirage_field-1.0.1.dist-info/RECORD,,
