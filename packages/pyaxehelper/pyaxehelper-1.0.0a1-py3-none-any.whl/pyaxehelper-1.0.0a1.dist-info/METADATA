@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pyaxehelper
+Version: 1.0.0a1
+Summary: UNKNOWN
+Home-page: https://github.com/bkornpob/kbastroutils
+Author: Kornpob Bhirombhakdi
+Author-email: kbhirombhakdi@stsci.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# pyaXeHelper
+
+This package contains functions helping pyaXe.
+
+Functions include:
+
+    - change_catalog_order()
+
+    - change_magiso2magwavelength()
+
+    - write_catalog()
+
+    - read_catalog()
+
+    - select_source()
+
+Known issues:
+
+    - ?
+
+v.1.0.0
+
+    - Implement: change_catalog_order, change_magiso2magwavelength, write_catalog, read_catalog, select_source
+
+
