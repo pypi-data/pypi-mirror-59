@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: spotui
+Version: 0.1.0
+Summary: Spotify TUI
+Home-page: https://github.com/ceuk/spotui
+Author: ceuk
+License: MIT
+Keywords: spotify spotifytui
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Requires-Dist: spotipy (==2.4.4)
+Requires-Dist: windows-curses (>=2.0) ; platform_system == "Windows"
+
+# SpoTUI
+Yet another Spotify TUI
+
+### Dependencies
+* [Spotipy](https://spotipy.readthedocs.io/en/latest/)
+
+### Installation
+```pip install spotui```
+
+### Controls
+TODO
+
+### LICENSE
+MIT
+
+
