@@ -1,0 +1,9 @@
+numpy
+pandas
+statsmodels
+scikit-learn
+holidays
+
+[additional models]
+fbprophet
+fredapi
