@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+xortool/__init__.py
+xortool/args.py
+xortool/charset.py
+xortool/colors.py
+xortool/libcolors.py
+xortool/routine.py
+xortool/xortool
+xortool/xortool-xor
+xortool.egg-info/PKG-INFO
+xortool.egg-info/SOURCES.txt
+xortool.egg-info/dependency_links.txt
+xortool.egg-info/requires.txt
+xortool.egg-info/top_level.txt
