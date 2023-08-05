@@ -1,0 +1,3 @@
+[console_scripts]
+pycase = automation_rest_server.prunner:main
+
