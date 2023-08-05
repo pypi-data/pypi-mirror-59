@@ -1,0 +1,10 @@
+README.md
+setup.py
+siamgen/AugmentedDataGenerator.py
+siamgen/SiameseImageGenerator.py
+siamgen/__init__.py
+siamgen/options.py
+siamgen.egg-info/PKG-INFO
+siamgen.egg-info/SOURCES.txt
+siamgen.egg-info/dependency_links.txt
+siamgen.egg-info/top_level.txt

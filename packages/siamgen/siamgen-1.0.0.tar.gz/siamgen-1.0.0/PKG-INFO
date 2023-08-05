@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: siamgen
+Version: 1.0.0
+Summary: TF.Keras Image Generator for Siamese NNs.
+Home-page: https://github.com/vhidvz/SiameseImageGenerator/
+Author: Vahid V.
+Author-email: vhid.vz@gmail.com
+License: UNKNOWN
+Description: # Siamese Image Generator
+        
+        TF.Keras Image Generator for the Siamese NNs.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
