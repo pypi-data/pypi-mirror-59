@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: mafredo
+Version: 0.0.1
+Summary: Marine Frequency Domain
+Home-page: https://github.com/RubendeBruin/mafredo
+Author: Ruben de Bruin
+Author-email: rubenebruin@gmail.com
+License: mpl2
+Project-URL: Documentation, https://open-ocean.org/mafredo
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: testing
+Requires-Dist: nose ; extra == 'testing'
+
+========
+MaFreDo
+========
+
+Marine Frequency Domain
+
+
+Description
+===========
+
+A set of tools for working with frequency domain data for marine applications.
+
+-  Rao    : A class for Rao data with methods for interpolation
+-  Hyddb1 : A class for first order hydrodynamic data (added mass, damping, wave-forces)
+
+Inspired by and build to work with:
+
+- capytaine (BEM) [https://github.com/mancellin/capytaine]
+- wavespectra ([https://github.com/metocean/wavespectra])
+- DAVE (General marine modeller) [https://open-ocean.org/DAVE]
+
+Note
+====
+
+
+
+
