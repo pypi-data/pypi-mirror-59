@@ -1,0 +1,10 @@
+tupper/__init__.py,sha256=wyxR2DZjjbgu0OkBgYmR5lAni_CWs661L4BiwKnb7EM,58
+tupper/__main__.py,sha256=b_91AcL-5oZX0CG9UTfkCGShRAs32CD7SQoEAPrlUR0,1572
+tupper/constants.py,sha256=E2kzko4hxWAeA_VViTgoOXRp3pKvjNnAKua39wP17kY,548
+tupper/solver.py,sha256=QfrAMUntW4TqKkt5OiMvMED6oSiGMCQ7fX3ClKBgW_M,777
+tupper/test_solver.py,sha256=fIkljtY5VRpuPevL_C7eXq0tf9wgoiVKs8PS8brjS7Q,1082
+tupper-0.9.0.dist-info/LICENSE,sha256=w2sW6ovHC0D-4t7EyBlQOfrmIYJ-0TyaO46Lp5vGsls,1073
+tupper-0.9.0.dist-info/METADATA,sha256=ZtrVmX3dz-y-YQ-KQ5UoJR_ci0dsRXwJ-_yjh_7RfPk,4729
+tupper-0.9.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tupper-0.9.0.dist-info/top_level.txt,sha256=3jrtC3zqrBBgWedE7ySh2UTD-mBQtFMp3i4r5jrq0DE,7
+tupper-0.9.0.dist-info/RECORD,,
