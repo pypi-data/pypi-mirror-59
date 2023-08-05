@@ -1,0 +1,15 @@
+signatory/__init__.py,sha256=fSPNKvXIRPSQV0HjX1Lle8TRiwDlVQ3XlBag8_fxNqw,2680
+signatory/_impl.cp37-win_amd64.pyd,sha256=xdZZZPYLMNxGqpli2fLiDo0jchm-5ufStOkGaRuIc0A,1160192
+signatory/augment.py,sha256=jVTc_n__Z3P1zVPHm4qUiBzhkcn92ui1ZlWoaoJdTUk,9674
+signatory/deprecated.py,sha256=9BuS0s1eKGxYgoPUrzHH-dxISNO1gt5-CY-vN4SIkhs,1759
+signatory/impl.py,sha256=9PqHo1HoTQKfnrzGVSRWz7k5M8zX02kYrgBMjRURygo,2520
+signatory/logsignature_module.py,sha256=GU6NFB8SgE5t9fHOZjeYLO0cxjyWP_kOXARHtqTK014,17545
+signatory/path.py,sha256=7IH6e_fmB4a4EXIBTnmZ_1AOAW_MOmlEXe0Tl8mLmaA,19911
+signatory/signature_module.py,sha256=by93ihr1zQVjGXFbmgTv1OJJzcmTjGbs-hnTZ6Htxrw,20343
+signatory/unstable.py,sha256=3w5vXPBT4XCtayIqS7t7byM1CYr2XDsE4oc8QXTroR0,928
+signatory/utility.py,sha256=uW0EkSSBmu-9rFFD2W-f4ridAxYDsZlE03-T4B5PIF4,4478
+signatory-1.1.6.1.2.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+signatory-1.1.6.1.2.0.dist-info/METADATA,sha256=mSBXwhWuP6xomK6FyCVVxMtZUzT3cksShiHB_WkZhuA,5604
+signatory-1.1.6.1.2.0.dist-info/WHEEL,sha256=uaZe_9gV-4T_d4AskuIQkCgcY8wMc0UXsVFnf0_mBGs,106
+signatory-1.1.6.1.2.0.dist-info/top_level.txt,sha256=kEgZmE5z_M1v3T61ZA6-l9BySTTGy1iVQ7qUHucSB8w,16
+signatory-1.1.6.1.2.0.dist-info/RECORD,,
