@@ -1,0 +1,10 @@
+aglfn/__init__.py,sha256=305B8LDQzGQcx8oZvoS1J1kOm1gIPzzZrycK7jszExI,750
+aglfn/agl.py,sha256=VzdQnC-wDs2rvd2nPW54-6M4wwrQ1PBGFNEPcrxxbUE,1820
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_agl.py,sha256=oRSAat7oxcH1JGANEKqUDAF_ImgPwJtPvLr9GirSRsI,43559
+tests/test_aglfn.py,sha256=3grcFKkDLtpLE8bhxaofU9pSJG8uUMkrS1PEG3t4i6U,14380
+aglfn-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aglfn-0.0.4.dist-info/METADATA,sha256=QSQ7VsVxgch9ex7bpAz71f7oK_Z_GMFqjl265V1D4BM,5011
+aglfn-0.0.4.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+aglfn-0.0.4.dist-info/top_level.txt,sha256=bbMAI9i4lYAAkTMc-gAm0lKpsQ2BcLEjFRcfYUqMnRE,12
+aglfn-0.0.4.dist-info/RECORD,,
