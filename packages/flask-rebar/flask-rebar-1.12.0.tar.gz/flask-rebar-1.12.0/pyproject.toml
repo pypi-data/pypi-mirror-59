@@ -1,0 +1,8 @@
+[tool.black]
+exclude = '''
+/(
+    \.pytest_cache
+  | \.git
+  | \.venv
+)/
+'''
