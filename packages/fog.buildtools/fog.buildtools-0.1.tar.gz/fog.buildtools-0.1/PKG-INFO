@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: fog.buildtools
+Version: 0.1
+Summary: Build tools used by FriendsOfGalaxy plugins
+Home-page: UNKNOWN
+Author: FriendsOfGalaxy
+Author-email: FriendsOfGalaxy@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
