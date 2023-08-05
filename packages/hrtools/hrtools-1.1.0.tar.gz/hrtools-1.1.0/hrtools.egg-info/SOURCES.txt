@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+hrtools/__init__.py
+hrtools/glassdoor.py
+hrtools/utils.py
+hrtools.egg-info/PKG-INFO
+hrtools.egg-info/SOURCES.txt
+hrtools.egg-info/dependency_links.txt
+hrtools.egg-info/entry_points.txt
+hrtools.egg-info/requires.txt
+hrtools.egg-info/top_level.txt
