@@ -1,0 +1,19 @@
+Demo Project for Lesson-8
+============================
+
+Goal of this lesson is to present how to package python applications.
+
+Useful commands
+================
+
+Create distribution
+
+    python setup.py sdist
+
+Upload it using twine:
+
+    twine upload dist/*
+
+Find more lessons on:
+
+www.django-lessons.com

@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README
+requirements.txt
+setup.py
+test/__init__.py
+test/test_main.py
+xworker/__init__.py
+xworker/main.py
+xworker/utils.py
+xworker.egg-info/PKG-INFO
+xworker.egg-info/SOURCES.txt
+xworker.egg-info/dependency_links.txt
+xworker.egg-info/top_level.txt
+xworker/templates/base.html
+xworker/templates/index.html
+xworker/web/__init__.py
