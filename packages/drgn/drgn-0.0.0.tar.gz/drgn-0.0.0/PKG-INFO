@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: drgn
+Version: 0.0.0
+Summary: Scriptable debugger library
+Home-page: https://github.com/osandov/drgn
+Author: Omar Sandoval
+Author-email: osandov@osandov.com
+License: GPL-3.0+
+Project-URL: Bug Tracker, https://github.com/osandov/drgn/issues
+Project-URL: Documentation, https://drgn.readthedocs.io
+Description: drgn is not yet available on PyPI. This is a placeholder.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Debuggers
+Requires-Python: >=3.6
