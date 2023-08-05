@@ -1,0 +1,14 @@
+tupper/__init__.py,sha256=YjioOyf84AiOtGgt12XoYjxpOf24RR5dNG5-KWYB3Yk,106
+tupper/__main__.py,sha256=8cjhLScVnkj0d5fp9nUJLy1W3Anyn8Uja5oh-X17jIA,1214
+tupper/console_plotter.py,sha256=Da_DjTLK0_hYxGdZNuAGCBx0J545f3mPxtjHAIjc5uc,267
+tupper/constants.py,sha256=E2kzko4hxWAeA_VViTgoOXRp3pKvjNnAKua39wP17kY,548
+tupper/export_plotter.py,sha256=CdgGXw-HvilfcDhRa-qBOYkpB37dChBPl58PDSBE3O8,536
+tupper/solver.py,sha256=JW62XQGQtHvbLwsRtIjecGhTdbvmgqp5bHs8paR8N1k,738
+tupper/string_plotter.py,sha256=cIU2fAp7T4EAqGM2YoqXfi8s_WBNqHNLxqlHrMqPgxA,619
+tupper/test_solver.py,sha256=fIkljtY5VRpuPevL_C7eXq0tf9wgoiVKs8PS8brjS7Q,1082
+tupper/test_string_plotter.py,sha256=vnMBmVzI-eIIduxwDSzAX2TzePiMFDE9P0Ebp_bw09g,1399
+tupper-0.10.1.dist-info/LICENSE,sha256=w2sW6ovHC0D-4t7EyBlQOfrmIYJ-0TyaO46Lp5vGsls,1073
+tupper-0.10.1.dist-info/METADATA,sha256=ikWcRMQ1PqMdRjbTc7CIbEBsyLjLmIFbOtW44GlkCqk,5753
+tupper-0.10.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tupper-0.10.1.dist-info/top_level.txt,sha256=3jrtC3zqrBBgWedE7ySh2UTD-mBQtFMp3i4r5jrq0DE,7
+tupper-0.10.1.dist-info/RECORD,,
