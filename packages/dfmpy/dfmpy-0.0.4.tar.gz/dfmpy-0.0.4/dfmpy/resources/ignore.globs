@@ -1,0 +1,78 @@
+# Ignore potentially sensitive files.
+.pki/
+.ssh/id_*
+.ssh/known_hosts
+*.key
+
+# Ignore informational files.
+CONTRIBUTING.md
+LICENSE
+README.md
+
+# Ignore Git data and config files.
+.git/
+.gitattributes
+.gitignore
+.gitmodules
+
+# Ignore typical version control directories.
+.local/git
+.local/svn
+
+# Ignore common IDE directories.
+.AndroidStudio*/
+.CLion*/
+.IntelliJ*/
+.PyCharm*/
+.WebStorm*/
+.atom/blob-store/
+.atom/compile-cache/
+.atom/recovery/
+.atom/storage/
+.config/Atom/Cache/
+.config/Atom/GPUCache/
+.config/Atom/IndexedDB/
+.config/Atom/Local Storage/
+.config/Atom/databases/
+.ghidra/
+.idea/
+
+# Ignore common browser directories.
+.config/chromium/
+.mozilla/firefox/
+
+# Ignore Java directories.
+.gradle/
+.java/
+.m2/
+
+# Ignore Node directories.
+.node-gyp/
+.npm/
+
+# Ignore Python directories.
+__pycache__
+.ipython/profile_default
+.local/lib/python*/
+
+# Ignore media applications directories.
+.config/spotify/
+.config/vlc/
+
+# Ignore typical virtual machine directories.
+.config/VirtualBox/
+VirtualBox VMs/
+
+# Ignore "office" kind of stuff.
+.config/libreoffice/
+Development/
+Downloads/
+Pictures/
+Videos/
+
+# Ignore other miscellaneous directories, some even tend to be large.
+.android/
+.cache/
+.config/pulse/
+.local/share/
+.thumbnails/normal
