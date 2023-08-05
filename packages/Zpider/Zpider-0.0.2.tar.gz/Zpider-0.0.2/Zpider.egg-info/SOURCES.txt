@@ -1,0 +1,12 @@
+README.md
+setup.py
+Zpider/__init__.py
+Zpider/__version__.py
+Zpider/config.py
+Zpider/zpider.py
+Zpider.egg-info/PKG-INFO
+Zpider.egg-info/SOURCES.txt
+Zpider.egg-info/dependency_links.txt
+Zpider.egg-info/not-zip-safe
+Zpider.egg-info/requires.txt
+Zpider.egg-info/top_level.txt
