@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+Paebbels.sphinxcontrib.autoprogram.egg-info/PKG-INFO
+Paebbels.sphinxcontrib.autoprogram.egg-info/SOURCES.txt
+Paebbels.sphinxcontrib.autoprogram.egg-info/dependency_links.txt
+Paebbels.sphinxcontrib.autoprogram.egg-info/not-zip-safe
+Paebbels.sphinxcontrib.autoprogram.egg-info/requires.txt
+Paebbels.sphinxcontrib.autoprogram.egg-info/top_level.txt
+Paebbels/sphinxcontrib/__init__.py
+Paebbels/sphinxcontrib/autoprogram.py
+doc/cli.py
+doc/cli_with_groups.py
+doc/conf.py
+doc/subcmds.py
