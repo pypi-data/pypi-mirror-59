@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: receptivefield
+Version: 0.5.0
+Summary: Gradient based Receptive field estimation library for Tensorflow and Pytorch
+Home-page: https://github.com/fornaxai/receptivefield
+Author: ShelfWise.ai
+Author-email: krzysztof.kolasinski@shelfwise.ai
+License: UNKNOWN
+Download-URL: https://github.com/fornaxai/receptivefield/archive/0.5.0.tar.gz
+Keywords: tensorflow,pytorch
+Platform: UNKNOWN
+Requires-Dist: pillow (>=6.2.*)
+Requires-Dist: matplotlib (>=3.1.*)
+Requires-Dist: numpy (>=1.17.*)
+
+UNKNOWN
+
+
