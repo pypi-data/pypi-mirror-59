@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: template-ipython-magic
+Version: 0.1.0
+Summary: IPython magics to render cells as templates in a variety of different templating languages.
+Home-page: https://gitlab.com/jezcope/template-ipython-magic
+License: LGPL-3.0-or-later
+Author: Jez Cope
+Author-email: j.cope@erambler.co.uk
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: ipython (>=7.11.1,<8.0.0)
+Project-URL: Repository, https://gitlab.com/jezcope/template-ipython-magic
+Description-Content-Type: text/markdown
+
+
