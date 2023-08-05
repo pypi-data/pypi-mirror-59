@@ -1,0 +1,13 @@
+mock
+pyaudio
+pillow
+pyrbo
+diapyr
+aridity
+outjack
+mynblep
+lagoon
+splut
+timelyOSC
+pyven
+Lurlene
