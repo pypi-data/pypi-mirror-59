@@ -1,0 +1,16 @@
+tiktalik_cli/__init__.py,sha256=LbJTCUxSKQE0e5C6bOB2fmnLL5NTd-tv51ZrNAEJKiY,1099
+tiktalik_cli/auth.py,sha256=KGxwL4OvZ3_bjL7zS-WWCE3wARXolcXrxqZbTyo2QxQ,2852
+tiktalik_cli/main.py,sha256=DehAnkXqpZkqWa1xAPR9tjTPXRMuSFk0irb8GoYgBkY,3690
+tiktalik_cli/command/__init__.py,sha256=ohpPhOUqX9O_xOw2y-_51NuNo6RZPeo0A7YewBu7Xbc,1273
+tiktalik_cli/command/auth.py,sha256=l2jo1wIPhEsev-sscY4SURbwwgdsi1mn86PsM60x0_g,2399
+tiktalik_cli/command/command.py,sha256=oNFohbuPm5bHbk4-u2lCT-4W4T-Y6-IoghSUWA4GnSQ,3281
+tiktalik_cli/command/image.py,sha256=8xt5yHZHXjsNQxIEEM4EqY7af61R2VYxO_CqJR5Gdv0,3567
+tiktalik_cli/command/instance.py,sha256=p2R6xgZ_LFbefvzUty81Wku_WN6w-of42SLu5wQ8vvI,14174
+tiktalik_cli/command/loadbalancer.py,sha256=IU6O1qpJXVkmXkJ_fgK4ylxqoSpVMNLd6U3o3q7I_rQ,12198
+tiktalik_cli/command/network.py,sha256=0gcWHD_LrxT1xPxkw2eh3RFyf7Ykyo0VXu9svl5OBdE,2216
+tiktalik_cli/command/util.py,sha256=NUshe0j820uuoA7ArxjvgmaQvZqTnKJOpaPnUsD1dY8,3753
+tiktalik_cli-1.9.3.dist-info/METADATA,sha256=wugvl9MB4JWsajT3AyBCQxOkwGd6CxDxqSIdBZ6wRZw,466
+tiktalik_cli-1.9.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tiktalik_cli-1.9.3.dist-info/entry_points.txt,sha256=LTY5OFL1ZE0YryPE4ksMMLYecYzWgQmyFRq4HSq9-yk,53
+tiktalik_cli-1.9.3.dist-info/top_level.txt,sha256=JQDnSnH_MzzOaY77ySJXIyqHbLcJsgeQi06MwOziiGw,13
+tiktalik_cli-1.9.3.dist-info/RECORD,,
