@@ -1,0 +1,13 @@
+sqlalchemy
+cytoolz
+numpy
+spacy
+textblob
+vaderSentiment
+pandas
+newsapi-python
+python-dateutil
+requests
+bs4
+scrapy
+python-dotenv
