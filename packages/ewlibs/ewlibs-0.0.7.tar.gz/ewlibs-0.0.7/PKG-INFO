@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ewlibs
+Version: 0.0.7
+Summary: eric wang test
+Home-page: https://github.com/bloodrose00/pypitest
+Author: ericwang
+Author-email: 234186164@qq.com
+License: MIT
+Description: #测试
+        生成requirements
+        https://www.jianshu.com/p/2cbc4fa7dbe3
+        向服务器上传代码
+        https://blog.csdn.net/lezardfu/article/details/44891559
+Keywords: ericwang,libs,toolkits
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.4.0
+Description-Content-Type: text/markdown
