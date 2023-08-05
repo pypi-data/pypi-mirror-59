@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aiovkrmq
+Version: 1.0.1
+Summary: An async library to work with vkAPIService
+Home-page: https://gitlab.com/gladbot/aiovkrmq
+Author: Mikhail Migushov
+Author-email: me@chuvash.pw
+License: UNKNOWN
+Description: # aiovkrmq
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
