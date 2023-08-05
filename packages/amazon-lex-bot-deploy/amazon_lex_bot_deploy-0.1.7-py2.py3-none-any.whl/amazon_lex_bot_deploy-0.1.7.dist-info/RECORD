@@ -1,0 +1,12 @@
+amazon_lex_bot_deploy/__init__.py,sha256=uRY1euENkvAQfU0odmJ7T_LdMfJRqSOptRRLDxSNGm4,165
+amazon_lex_bot_deploy/amazon_lex_bot_deploy.py,sha256=OAqc6idjeYB18UVRiCo2x4CVrqGDkb_vLmkts96hhGs,16397
+amazon_lex_bot_deploy/examples/BookTrip_Export.json,sha256=hVXOxabmIAAphePYLZlVZ0jDyWDJ0k3LSSjG-2lThCQ,9037
+amazon_lex_bot_deploy/examples/OrderFlowers_Export.json,sha256=VzyLLzJ2odHLdQ-n3l1buA7GxDps0--sBBDe3uXEyrs,4372
+amazon_lex_bot_deploy/examples/ScheduleAppointment_Export.json,sha256=vm-zboSX75vO_3lgo5DrhZ1skdqFguEsKhkM2malNsk,5086
+amazon_lex_bot_deploy-0.1.7.data/scripts/lex-bot-deploy,sha256=ZGtAAP566VEcRE47KGfDbVzfInHTaQhX14QHuYxihyA,1746
+amazon_lex_bot_deploy-0.1.7.data/scripts/lex-bot-get-schema,sha256=_it6gvMp3vgv62TCiaxqvv7h8WkKZHhCn1AdGPTu5Is,1140
+amazon_lex_bot_deploy-0.1.7.dist-info/LICENSE,sha256=Jtq_g88xLitYQB_lT191QPBPZlIzJSrfzBmQjviuaO4,930
+amazon_lex_bot_deploy-0.1.7.dist-info/METADATA,sha256=dV6V84e8KWqeF5kxqAFv1DoFm3YkjGswbqUh_a5W-1M,2989
+amazon_lex_bot_deploy-0.1.7.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+amazon_lex_bot_deploy-0.1.7.dist-info/top_level.txt,sha256=0L9AtdjPK5DkA9wimLXVg0Z_uqFCGwi7oYni4stbWMc,22
+amazon_lex_bot_deploy-0.1.7.dist-info/RECORD,,
