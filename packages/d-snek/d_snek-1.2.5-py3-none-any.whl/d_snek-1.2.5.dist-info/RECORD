@@ -1,0 +1,11 @@
+snek/__init__.py,sha256=Xxt20I66ZajGjV7mge1Og4lopuOdTbqa5K5VenlFkTw,276
+snek/abc.py,sha256=c8JuHJ988xNFVWmmy0fNqCUF9ozHrgkuLn6l8mcZco8,1834
+snek/bot.py,sha256=6u7fyiUNeYIJL1hB7QdSRNb9klQYkGYcMs7ZxjlQj3I,10085
+snek/exceptions.py,sha256=-NcZfK9sFLr5yZ9VoyBaeCGzCrlMrFqWUXUId5Sc8co,85
+snek/cogs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snek/cogs/database.py,sha256=lEqzjgAa0Ivx2JoW5Sf0I-W5IyhbBB0ATxRWMfOQ1TM,1277
+d_snek-1.2.5.dist-info/LICENSE,sha256=7qD-LjjQ70x58MpvDWubSxuiR5wpSZ2DL1zvyX6SfrY,1072
+d_snek-1.2.5.dist-info/METADATA,sha256=0CLl_IZJei6mnyDWxEn7dmtTsAWtTs82wXBcUdkMGjY,1209
+d_snek-1.2.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+d_snek-1.2.5.dist-info/top_level.txt,sha256=A7-1IMVz8bP09t5CdqdI32ZHuOBH05vUXs6ifdXamMk,5
+d_snek-1.2.5.dist-info/RECORD,,
