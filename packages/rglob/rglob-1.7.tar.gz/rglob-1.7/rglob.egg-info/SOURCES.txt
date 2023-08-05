@@ -1,0 +1,8 @@
+README.md
+setup.py
+rglob/__init__.py
+rglob/rglob.py
+rglob.egg-info/PKG-INFO
+rglob.egg-info/SOURCES.txt
+rglob.egg-info/dependency_links.txt
+rglob.egg-info/top_level.txt
