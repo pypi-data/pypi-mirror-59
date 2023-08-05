@@ -1,0 +1,13 @@
+django_log_to_telegram/__init__.py,sha256=CZZa_KgxynVVngiVKn0yb0RNzoypIfjYtNtpnNvkY1c,32
+django_log_to_telegram/log.py,sha256=T_yY1ZV3kC68iyFwhgonFO77S5byEKI3_zFvP7HIBv4,2803
+django_log_to_telegram/models.py,sha256=Vc-1X6c6jt3l20EbvVftblaCK9TdSVt_sSJ1s50xTBQ,2007
+django_log_to_telegram/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_log_to_telegram/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_log_to_telegram/management/commands/send_test_message.py,sha256=kV9XipgahIoNLKdxCjJqF85A0t2DkjI6-KIPztkj4k4,291
+django_log_to_telegram/migrations/0001_initial.py,sha256=3TxvjW66A2upQ4B3FZeRurtdpRPXmh1FFwwSNU2VNWs,575
+django_log_to_telegram/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_log_to_telegram-2020.1.8.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+django_log_to_telegram-2020.1.8.dist-info/METADATA,sha256=tfG6x7BqD0YRKCZmCVTcnJeH_c53MZRVCaQpvqRONJI,3502
+django_log_to_telegram-2020.1.8.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+django_log_to_telegram-2020.1.8.dist-info/top_level.txt,sha256=fmDVNgeWilbgFIgWAjesngjQ8E4vmiscPhLfvFaU-Hk,23
+django_log_to_telegram-2020.1.8.dist-info/RECORD,,
