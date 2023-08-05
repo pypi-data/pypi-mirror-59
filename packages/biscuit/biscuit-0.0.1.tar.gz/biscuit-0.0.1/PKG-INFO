@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: biscuit
+Version: 0.0.1
+Summary: Biscuit web framework
+Home-page: UNKNOWN
+Author: munsterberg
+Author-email: munsterberg@protonmail.ch
+License: MIT
+Description: 
+        # biscuit
+        A WSGI compliant web framework for [insert something cool here].
+        
+        ### Getting Started
+        Currently there are only a few aspects to be aware of.
+        
+        Firstly, install the requirements:
+        ```
+        pip install -r requirements.txt
+        ```
+        
+        Next you can run the tests via `pytest`
+        
+        Finally, to start the example project run gunicorn like so:
+        ```
+        gunicorn examples.basic_app:APP
+        ```
+        
+        #### How to contribute
+        Idk yet, just open some PRs dude
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
