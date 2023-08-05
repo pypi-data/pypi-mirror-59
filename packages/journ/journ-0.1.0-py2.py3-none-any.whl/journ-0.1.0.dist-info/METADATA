@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: journ
+Version: 0.1.0
+Summary: A really simple command line journal.
+Home-page: https://github.com/ronbecker/journ
+Author: Ron Becker
+Author-email: ronbecker@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+### What is journ.py?
+Short and sweet? journ.py is a command line journal written in Python. journ.py is completely run in your terminal. To use it after installing, just type `journ` in your terminal, and hit enter. If it is the first time you are running it - journ.py will greet you, and show you where your journal file is going to be. Which will be your home directory.
+
+Currently journ.py only uses the file journ.txt that it creates the first time you run it. In the future I want to add the ability to choose where you want your file, and what you want to name it.
+
+Every run after the first will go straight to the `>` prompt where you can begin typing a new entry. Each entry is added to the end of your journal file, along with the date and time of entry.
+
+
