@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+gistolog/__init__.py
+gistolog/cli.py
+gistolog/log.py
+gistolog/logger.py
+gistolog.egg-info/PKG-INFO
+gistolog.egg-info/SOURCES.txt
+gistolog.egg-info/dependency_links.txt
+gistolog.egg-info/requires.txt
+gistolog.egg-info/top_level.txt

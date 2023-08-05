@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gistolog
+Version: 0.1
+Summary: Use GitHub Gists for logging
+Home-page: https://github.com/ivanjermakov/gistolog
+Author: Ivan Ermakov
+Author-email: ivanjermakov1@gmail.com
+License: MIT
+Description: # gistolog
+        Use GitHub Gists for logging
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
