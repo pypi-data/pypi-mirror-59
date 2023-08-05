@@ -1,0 +1,16 @@
+astropy
+matplotlib
+numpy
+pandas
+pytest
+scipy
+uncertainties
+astroquery
+lightkurve
+lmfit
+jupyter
+pyfcomb
+Sphinx
+recommonmark
+sphinx_rtd_theme
+tess-point>=0.3.8
