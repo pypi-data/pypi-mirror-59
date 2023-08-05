@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+license
+setup.py
+networkifaces/___init__.py
+networkifaces/network.py
+networkifaces.egg-info/PKG-INFO
+networkifaces.egg-info/SOURCES.txt
+networkifaces.egg-info/dependency_links.txt
+networkifaces.egg-info/requires.txt
+networkifaces.egg-info/top_level.txt
