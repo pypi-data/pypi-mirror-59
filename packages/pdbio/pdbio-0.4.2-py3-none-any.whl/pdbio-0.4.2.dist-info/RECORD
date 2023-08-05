@@ -1,0 +1,15 @@
+pdbio/__init__.py,sha256=D-URiZ8BWJbp-zk4UmoeRJU7gK-Wp15_ewMTA9Q2Q7I,47
+pdbio/bamwriter.py,sha256=u3K7hmwjWncYdrMjc2wTRk_FW0b0jFNk_P1gtLl7MEY,1902
+pdbio/beddataframe.py,sha256=pX1HOoSDRonwGXBvXIEydfdwS5euHoaeL2ozhp_pZdM,2825
+pdbio/biodataframe.py,sha256=spayOgQifSFO4dpEQAESKZCm8cuNffxc8NIBoSM__q0,6810
+pdbio/cli.py,sha256=0MQUmv_-BEbXyV2BnTlWyNn6SGJY8-XbpPKtKCLio8Q,4867
+pdbio/identifier.py,sha256=COpsZ19Kb5cLY0BndILiVCW1pjCBnbMe6ik5EvJd4tI,3052
+pdbio/samcigar.py,sha256=OnNzHfOZkpeGzuRdY_X3CMQ9P4nVeLdNJiUChNqQJAo,4281
+pdbio/samdataframe.py,sha256=Qbocayb_JkYGwxh0_3vk7HJGJI1Cwj2t7Xyr8UtD28M,7686
+pdbio/vcfdataframe.py,sha256=QPC9WWIY8HvN0jOaOV4CTtT_MtW-14VdVNppbTsG1SU,6212
+pdbio-0.4.2.dist-info/LICENSE,sha256=5i02CeAG2xQ0OraFGmCYyDA3glC9_ZEy8Xo0g4_XGRg,1073
+pdbio-0.4.2.dist-info/METADATA,sha256=9lGNj6NQUYhQaMX9oso8ACL38appnJTbtUVWHJBuNyU,1858
+pdbio-0.4.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pdbio-0.4.2.dist-info/entry_points.txt,sha256=R1jdAMBg3EhjSZEFWPiycqverT8EtAzTmeZDKA_-6pk,42
+pdbio-0.4.2.dist-info/top_level.txt,sha256=Or5HGmZlqyW0ZsOnazKQ4RCa-LE1tLegjaoeCsyE3_Q,6
+pdbio-0.4.2.dist-info/RECORD,,
