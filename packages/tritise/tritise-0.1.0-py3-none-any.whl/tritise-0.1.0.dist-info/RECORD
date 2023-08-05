@@ -1,0 +1,8 @@
+tritise/__init__.py,sha256=409ztEZXPzJee8e95uNGi_ChLU-njOsF4DsKgEIo4Nc,76
+tritise/cli.py,sha256=cxXGtaf7R1wch8ph4OEr3YHfHROfkuS3ImQEEZVcSrU,1817
+tritise/libtritise.py,sha256=1ksvXmv2hdyPtPExKsmZtTEA3_CkBzsefMSBIJY4zO4,3662
+tritise-0.1.0.dist-info/entry_points.txt,sha256=-aBsBFVjR3VplH8M3unG9UjJzauydvXkYyPMRDNqDGg,43
+tritise-0.1.0.dist-info/LICENSE,sha256=NfXeJrRQkxlXFGGzXMF1O7Ax-trAPxOLIE9kb8BCSk4,1082
+tritise-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+tritise-0.1.0.dist-info/METADATA,sha256=SpjqdSpDQvm3FJWtfdIU8tLUQYrBUgtoItUo3CW1l0I,479
+tritise-0.1.0.dist-info/RECORD,,
