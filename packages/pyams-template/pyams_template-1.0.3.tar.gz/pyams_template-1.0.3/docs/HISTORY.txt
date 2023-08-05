@@ -1,0 +1,19 @@
+Changelog
+=========
+
+1.0.3
+-----
+ - corrected duplicated variable name mismatch in "template_config" and "layout_config"
+   decorators
+
+1.0.2
+-----
+ - new version to avoid upload issue!
+
+1.0.1
+-----
+ - added Pyramid configuration settings to templates configuration
+
+1.0.0
+-----
+ - initial release
