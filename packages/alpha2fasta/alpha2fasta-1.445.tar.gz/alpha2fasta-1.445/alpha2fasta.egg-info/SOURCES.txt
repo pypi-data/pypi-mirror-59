@@ -1,0 +1,12 @@
+README.md
+README.rst
+setup.py
+alpha2fasta/AMINOcode.py
+alpha2fasta/DNAbits.py
+alpha2fasta/__init__.py
+alpha2fasta/fileEncode.py
+alpha2fasta.egg-info/PKG-INFO
+alpha2fasta.egg-info/SOURCES.txt
+alpha2fasta.egg-info/dependency_links.txt
+alpha2fasta.egg-info/not-zip-safe
+alpha2fasta.egg-info/top_level.txt
