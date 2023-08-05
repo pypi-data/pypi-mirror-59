@@ -1,0 +1,8 @@
+setuptools
+future
+tqdm>4.40
+argparse
+rpyc
+gitpython
+boto3
+pyyaml
