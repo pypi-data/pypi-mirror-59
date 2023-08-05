@@ -1,0 +1,88 @@
+2019-12-10 10:31:24,040 - INFO - 0/10 [10.00%]: SCMLWorld/20191210H103121008658buo89: World Created
+2019-12-10 10:31:24,041 - INFO - 0/10 [10.00%]: m_0 joined
+2019-12-10 10:31:24,041 - INFO - 0/10 [10.00%]: m_1 joined
+2019-12-10 10:31:24,041 - INFO - 0/10 [10.00%]: c_0 joined
+2019-12-10 10:31:24,042 - INFO - 0/10 [10.00%]: c_1 joined
+2019-12-10 10:31:24,042 - INFO - 0/10 [10.00%]: bank joined
+2019-12-10 10:31:24,043 - INFO - 0/10 [10.00%]: insurance_company joined
+2019-12-10 10:31:24,044 - INFO - 0/10 [10.00%]: 0 Negotiations/6 Agents
+2019-12-10 10:31:24,045 - DEBUG - 0/10 [10.00%]: c_0 registered CFP buy 0 (t: 1, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:31:24,049 - INFO - 0/10 [10.00%]: m_1 requested negotiation with ['m_1', 'c_0'] (ID 7ed0ead6-23d5-4afd-bd2b-490db4e63e63)
+2019-12-10 10:31:24,051 - INFO - 0/10 [10.00%]: m_1 request was accepted
+2019-12-10 10:31:24,053 - INFO - 0/10 [10.00%]: m_0 requested negotiation with ['m_0', 'c_0'] (ID cb662dc4-a6c5-4715-9540-ebeb6ae78f99)
+2019-12-10 10:31:24,054 - INFO - 0/10 [10.00%]: m_0 request was accepted
+2019-12-10 10:31:24,055 - DEBUG - 0/10 [10.00%]: c_0 registered CFP buy 0 (t: 2, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:31:24,056 - INFO - 0/10 [10.00%]: m_1 requested negotiation with ['m_1', 'c_0'] (ID ee1005eb-75ea-479c-a278-c0913a2a6fa7)
+2019-12-10 10:31:24,057 - INFO - 0/10 [10.00%]: m_1 request was accepted
+2019-12-10 10:31:24,058 - INFO - 0/10 [10.00%]: m_0 requested negotiation with ['m_0', 'c_0'] (ID 687fb910-5e32-469c-8981-53c9eeaffa4a)
+2019-12-10 10:31:24,059 - INFO - 0/10 [10.00%]: m_0 request was accepted
+2019-12-10 10:31:24,059 - DEBUG - 0/10 [10.00%]: c_0 registered CFP buy 0 (t: 3, u: (0, 1.5), q: (1, 2))
+2019-12-10 10:31:24,061 - INFO - 0/10 [10.00%]: m_1 requested negotiation with ['m_1', 'c_0'] (ID e8de3406-5b3c-4934-a1de-ace71e9560bd)
+2019-12-10 10:31:24,061 - INFO - 0/10 [10.00%]: m_1 request was accepted
+2019-12-10 10:31:24,063 - INFO - 0/10 [10.00%]: m_0 requested negotiation with ['m_0', 'c_0'] (ID 6f8b892d-a76d-424b-bde3-35c783b58b75)
+2019-12-10 10:31:24,064 - INFO - 0/10 [10.00%]: m_0 request was accepted
+2019-12-10 10:31:24,064 - DEBUG - 0/10 [10.00%]: c_0 registered CFP buy 0 (t: 5, u: (0, 1.5), q: (1, 4))
+2019-12-10 10:31:24,066 - INFO - 0/10 [10.00%]: m_1 requested negotiation with ['m_1', 'c_0'] (ID 2ee9722e-1737-4829-b9d2-4e4aa79b3c3f)
+2019-12-10 10:31:24,067 - INFO - 0/10 [10.00%]: m_1 request was accepted
+2019-12-10 10:31:24,068 - INFO - 0/10 [10.00%]: m_0 requested negotiation with ['m_0', 'c_0'] (ID d2353988-bb5f-4fee-9ec2-b67f52a6db68)
+2019-12-10 10:31:24,069 - INFO - 0/10 [10.00%]: m_0 request was accepted
+2019-12-10 10:31:24,069 - DEBUG - 0/10 [10.00%]: c_0 registered CFP buy 0 (t: 6, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:31:24,070 - INFO - 0/10 [10.00%]: m_1 requested negotiation with ['m_1', 'c_0'] (ID edce41ed-e88c-4657-b2ef-91e97bba5943)
+2019-12-10 10:31:24,071 - INFO - 0/10 [10.00%]: m_1 request was accepted
+2019-12-10 10:31:24,073 - INFO - 0/10 [10.00%]: m_0 requested negotiation with ['m_0', 'c_0'] (ID fc6e7b26-ebf4-42c3-99ab-6b146cd00693)
+2019-12-10 10:31:24,073 - INFO - 0/10 [10.00%]: m_0 request was accepted
+2019-12-10 10:31:24,074 - DEBUG - 0/10 [10.00%]: c_0 registered CFP buy 0 (t: 7, u: (0, 1.5), q: (1, 3))
+2019-12-10 10:31:24,075 - INFO - 0/10 [10.00%]: m_1 requested negotiation with ['m_1', 'c_0'] (ID bf0602a4-ac0a-45f0-a8ca-fe9e21d01db4)
+2019-12-10 10:31:24,076 - INFO - 0/10 [10.00%]: m_1 request was accepted
+2019-12-10 10:31:24,077 - INFO - 0/10 [10.00%]: m_0 requested negotiation with ['m_0', 'c_0'] (ID a6155a6d-d5c1-4633-8b50-5de9f72c3349)
+2019-12-10 10:31:24,078 - INFO - 0/10 [10.00%]: m_0 request was accepted
+2019-12-10 10:31:24,079 - DEBUG - 0/10 [10.00%]: c_0 registered CFP buy 0 (t: 9, u: (0, 1.5), q: (1, 2))
+2019-12-10 10:31:24,080 - INFO - 0/10 [10.00%]: m_1 requested negotiation with ['m_1', 'c_0'] (ID 5f033801-e193-4666-afbc-97afd792e6b4)
+2019-12-10 10:31:24,081 - INFO - 0/10 [10.00%]: m_1 request was accepted
+2019-12-10 10:31:24,083 - INFO - 0/10 [10.00%]: m_0 requested negotiation with ['m_0', 'c_0'] (ID 4f120073-dcd7-4ed7-845b-6bfd0c8b5712)
+2019-12-10 10:31:24,084 - INFO - 0/10 [10.00%]: m_0 request was accepted
+2019-12-10 10:31:24,085 - DEBUG - 0/10 [10.00%]: c_1 registered CFP buy 0 (t: 0, u: (0, 1.5), q: (1, 4))
+2019-12-10 10:31:24,087 - DEBUG - 0/10 [10.00%]: c_1 registered CFP buy 0 (t: 1, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:31:24,090 - INFO - 0/10 [10.00%]: m_1 requested negotiation with ['m_1', 'c_1'] (ID ad10d6a7-4865-454b-aca0-3cc9cbad7871)
+2019-12-10 10:31:24,091 - INFO - 0/10 [10.00%]: m_1 request was accepted
+2019-12-10 10:31:24,094 - INFO - 0/10 [10.00%]: m_0 requested negotiation with ['m_0', 'c_1'] (ID ab5b0118-b03a-464e-878a-0b60e8e39c56)
+2019-12-10 10:31:24,095 - INFO - 0/10 [10.00%]: m_0 request was accepted
+2019-12-10 10:31:24,097 - DEBUG - 0/10 [10.00%]: c_1 registered CFP buy 0 (t: 2, u: (0, 1.5), q: (1, 4))
+2019-12-10 10:31:24,099 - INFO - 0/10 [10.00%]: m_1 requested negotiation with ['m_1', 'c_1'] (ID 2f30700d-a762-4d1b-a1a6-a3c898a6720b)
+2019-12-10 10:31:24,101 - INFO - 0/10 [10.00%]: m_1 request was accepted
+2019-12-10 10:31:24,103 - INFO - 0/10 [10.00%]: m_0 requested negotiation with ['m_0', 'c_1'] (ID 674bb01e-cf2d-44b5-8a07-a0b739f30b54)
+2019-12-10 10:31:24,104 - INFO - 0/10 [10.00%]: m_0 request was accepted
+2019-12-10 10:31:24,106 - DEBUG - 0/10 [10.00%]: c_1 registered CFP buy 0 (t: 3, u: (0, 1.5), q: (1, 3))
+2019-12-10 10:31:24,108 - INFO - 0/10 [10.00%]: m_1 requested negotiation with ['m_1', 'c_1'] (ID ca3c2a3c-7705-4d72-906c-9807c8fd8ab3)
+2019-12-10 10:31:24,109 - INFO - 0/10 [10.00%]: m_1 request was accepted
+2019-12-10 10:31:24,110 - INFO - 0/10 [10.00%]: m_0 requested negotiation with ['m_0', 'c_1'] (ID 04355abd-e80c-4ab6-a5bb-72b17dba1ff0)
+2019-12-10 10:31:24,111 - INFO - 0/10 [10.00%]: m_0 request was accepted
+2019-12-10 10:31:24,112 - DEBUG - 0/10 [10.00%]: c_1 registered CFP buy 0 (t: 4, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:31:24,113 - INFO - 0/10 [10.00%]: m_1 requested negotiation with ['m_1', 'c_1'] (ID fbb5d229-0e01-40f2-b601-873bbf7dcc31)
+2019-12-10 10:31:24,114 - INFO - 0/10 [10.00%]: m_1 request was accepted
+2019-12-10 10:31:24,115 - INFO - 0/10 [10.00%]: m_0 requested negotiation with ['m_0', 'c_1'] (ID 6ea5362c-be04-4e69-b52c-3b875484b581)
+2019-12-10 10:31:24,116 - INFO - 0/10 [10.00%]: m_0 request was accepted
+2019-12-10 10:31:24,117 - DEBUG - 0/10 [10.00%]: c_1 registered CFP buy 0 (t: 5, u: (0, 1.5), q: (1, 4))
+2019-12-10 10:31:24,118 - INFO - 0/10 [10.00%]: m_1 requested negotiation with ['m_1', 'c_1'] (ID bdca0cf1-f297-49f3-af8f-0e6ec3b9e633)
+2019-12-10 10:31:24,119 - INFO - 0/10 [10.00%]: m_1 request was accepted
+2019-12-10 10:31:24,121 - INFO - 0/10 [10.00%]: m_0 requested negotiation with ['m_0', 'c_1'] (ID 4ddb1045-8314-4fbe-b7e3-9638dd0d1d59)
+2019-12-10 10:31:24,122 - INFO - 0/10 [10.00%]: m_0 request was accepted
+2019-12-10 10:31:24,124 - DEBUG - 0/10 [10.00%]: c_1 registered CFP buy 0 (t: 7, u: (0, 1.5), q: (1, 2))
+2019-12-10 10:31:24,125 - INFO - 0/10 [10.00%]: m_1 requested negotiation with ['m_1', 'c_1'] (ID da4285c8-a342-4b7b-b550-d217e7fe5476)
+2019-12-10 10:31:24,126 - INFO - 0/10 [10.00%]: m_1 request was accepted
+2019-12-10 10:31:24,127 - INFO - 0/10 [10.00%]: m_0 requested negotiation with ['m_0', 'c_1'] (ID 169c0e9b-2cca-47bc-8d5e-5b5c492ce8ef)
+2019-12-10 10:31:24,128 - INFO - 0/10 [10.00%]: m_0 request was accepted
+2019-12-10 10:31:24,129 - DEBUG - 0/10 [10.00%]: c_1 registered CFP buy 0 (t: 8, u: (0, 1.5), q: (1, 4))
+2019-12-10 10:31:24,131 - INFO - 0/10 [10.00%]: m_1 requested negotiation with ['m_1', 'c_1'] (ID 3fff4334-f946-4e35-b213-b4b6a2d308b4)
+2019-12-10 10:31:24,132 - INFO - 0/10 [10.00%]: m_1 request was accepted
+2019-12-10 10:31:24,137 - INFO - 0/10 [10.00%]: m_0 requested negotiation with ['m_0', 'c_1'] (ID effbd38e-73cd-435f-84fc-edcf22fb5565)
+2019-12-10 10:31:24,140 - INFO - 0/10 [10.00%]: m_0 request was accepted
+2019-12-10 10:31:24,142 - DEBUG - 0/10 [10.00%]: m_0: FinancialReport(agent='m_0-a20d1bde-3511-4dee-a1da-0990eb347481', step=0, cash=0.0, liabilities=0.0, inventory=0, credit_rating=1.0)
+2019-12-10 10:31:24,143 - DEBUG - 0/10 [10.00%]: m_1: FinancialReport(agent='m_1-fbbf8013-1012-4ba5-8ad0-70c95a35e867', step=0, cash=0.0, liabilities=0.0, inventory=0, credit_rating=1.0)
+2019-12-10 10:31:24,143 - DEBUG - 0/10 [10.00%]: c_0: FinancialReport(agent='c_0-916d3e8b-09bf-45c2-9195-669ab1c88289', step=0, cash=0, liabilities=0.0, inventory=0, credit_rating=1.0)
+2019-12-10 10:31:24,144 - DEBUG - 0/10 [10.00%]: c_1: FinancialReport(agent='c_1-9531185b-4c19-4da2-b82e-d5a0c5ccf98c', step=0, cash=0, liabilities=0.0, inventory=0, credit_rating=1.0)
+2019-12-10 10:31:24,144 - DEBUG - 0/10 [10.00%]: c_0: money=0, storage={}
+2019-12-10 10:31:24,144 - DEBUG - 0/10 [10.00%]: c_1: money=0, storage={}
+2019-12-10 10:31:24,145 - DEBUG - 0/10 [10.00%]: m_0: money=0.0, storage={}
+2019-12-10 10:31:24,145 - DEBUG - 0/10 [10.00%]: m_1: money=0.0, storage={}
+2019-12-10 10:31:24,150 - INFO - 1/10 [20.00%]: 28 Negotiations/6 Agents

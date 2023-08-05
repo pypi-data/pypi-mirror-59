@@ -1,0 +1,1089 @@
+2019-12-10 10:46:25,121 - INFO - 0/10 [10.00%]: SCMLWorld/20191210H104625121321qYmOF: World Created
+2019-12-10 10:46:25,122 - INFO - 0/10 [10.00%]: m_0 joined
+2019-12-10 10:46:25,122 - INFO - 0/10 [10.00%]: m_1 joined
+2019-12-10 10:46:25,122 - INFO - 0/10 [10.00%]: m_2 joined
+2019-12-10 10:46:25,122 - INFO - 0/10 [10.00%]: m_3 joined
+2019-12-10 10:46:25,122 - INFO - 0/10 [10.00%]: m_4 joined
+2019-12-10 10:46:25,122 - INFO - 0/10 [10.00%]: c_0 joined
+2019-12-10 10:46:25,122 - INFO - 0/10 [10.00%]: c_1 joined
+2019-12-10 10:46:25,122 - INFO - 0/10 [10.00%]: c_2 joined
+2019-12-10 10:46:25,122 - INFO - 0/10 [10.00%]: c_3 joined
+2019-12-10 10:46:25,122 - INFO - 0/10 [10.00%]: c_4 joined
+2019-12-10 10:46:25,122 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 joined
+2019-12-10 10:46:25,122 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 joined
+2019-12-10 10:46:25,123 - INFO - 0/10 [10.00%]: bank joined
+2019-12-10 10:46:25,123 - INFO - 0/10 [10.00%]: insurance_company joined
+2019-12-10 10:46:25,125 - INFO - 0/10 [10.00%]: 0 Negotiations/14 Agents
+2019-12-10 10:46:25,126 - DEBUG - 0/10 [10.00%]: c_0 registered CFP buy 1 (t: 0, u: (0, 6.0), q: (1, 2))
+2019-12-10 10:46:25,127 - DEBUG - 0/10 [10.00%]: c_0 registered CFP buy 1 (t: 2, u: (0, 6.0), q: (1, 3))
+2019-12-10 10:46:25,127 - DEBUG - 0/10 [10.00%]: c_0 registered CFP buy 1 (t: 3, u: (0, 6.0), q: (1, 3))
+2019-12-10 10:46:25,128 - DEBUG - 0/10 [10.00%]: c_0 registered CFP buy 1 (t: 4, u: (0, 6.0), q: (1, 1))
+2019-12-10 10:46:25,128 - DEBUG - 0/10 [10.00%]: c_0 registered CFP buy 1 (t: 5, u: (0, 6.0), q: (1, 3))
+2019-12-10 10:46:25,129 - DEBUG - 0/10 [10.00%]: c_0 registered CFP buy 1 (t: 6, u: (0, 6.0), q: (1, 1))
+2019-12-10 10:46:25,129 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 requested negotiation with ['98lpvEHsdGL1@f1_1', 'c_0'] (ID 4bb83752-a26a-4fbc-96a8-e430c4967dd2)
+2019-12-10 10:46:25,130 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 request was accepted
+2019-12-10 10:46:25,131 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 requested negotiation with ['phriSKnI9x1I@f1_0', 'c_0'] (ID 6ced85a5-6b40-4605-b023-29f8d98dfd96)
+2019-12-10 10:46:25,131 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 request was accepted
+2019-12-10 10:46:25,131 - DEBUG - 0/10 [10.00%]: c_0 registered CFP buy 1 (t: 8, u: (0, 6.0), q: (1, 2))
+2019-12-10 10:46:25,132 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 requested negotiation with ['98lpvEHsdGL1@f1_1', 'c_0'] (ID 9e40430a-94b2-4fd9-b1d8-06ebba122cae)
+2019-12-10 10:46:25,133 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 request was accepted
+2019-12-10 10:46:25,133 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 requested negotiation with ['phriSKnI9x1I@f1_0', 'c_0'] (ID 520fcc66-ea63-48c2-b575-1a5ff9da6a80)
+2019-12-10 10:46:25,134 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 request was accepted
+2019-12-10 10:46:25,134 - DEBUG - 0/10 [10.00%]: c_0 registered CFP buy 1 (t: 9, u: (0, 6.0), q: (1, 3))
+2019-12-10 10:46:25,135 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 requested negotiation with ['98lpvEHsdGL1@f1_1', 'c_0'] (ID 88693322-7d30-4508-b8f4-30c42746cdd0)
+2019-12-10 10:46:25,136 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 request was accepted
+2019-12-10 10:46:25,137 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 requested negotiation with ['phriSKnI9x1I@f1_0', 'c_0'] (ID d984495b-9b0d-4eed-b7b0-98fbe9ab8240)
+2019-12-10 10:46:25,137 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 request was accepted
+2019-12-10 10:46:25,137 - DEBUG - 0/10 [10.00%]: c_2 registered CFP buy 1 (t: 0, u: (0, 6.0), q: (1, 2))
+2019-12-10 10:46:25,138 - DEBUG - 0/10 [10.00%]: c_2 registered CFP buy 1 (t: 1, u: (0, 6.0), q: (1, 3))
+2019-12-10 10:46:25,138 - DEBUG - 0/10 [10.00%]: c_2 registered CFP buy 1 (t: 3, u: (0, 6.0), q: (1, 1))
+2019-12-10 10:46:25,139 - DEBUG - 0/10 [10.00%]: c_2 registered CFP buy 1 (t: 4, u: (0, 6.0), q: (1, 2))
+2019-12-10 10:46:25,139 - DEBUG - 0/10 [10.00%]: c_2 registered CFP buy 1 (t: 5, u: (0, 6.0), q: (1, 4))
+2019-12-10 10:46:25,141 - DEBUG - 0/10 [10.00%]: c_2 registered CFP buy 1 (t: 7, u: (0, 6.0), q: (1, 1))
+2019-12-10 10:46:25,142 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 requested negotiation with ['98lpvEHsdGL1@f1_1', 'c_2'] (ID aa927e27-63b7-434f-a962-00066477b405)
+2019-12-10 10:46:25,143 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 request was accepted
+2019-12-10 10:46:25,144 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 requested negotiation with ['phriSKnI9x1I@f1_0', 'c_2'] (ID 7bc77190-d668-4a4c-a303-66dbe5130071)
+2019-12-10 10:46:25,145 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 request was accepted
+2019-12-10 10:46:25,145 - DEBUG - 0/10 [10.00%]: c_2 registered CFP buy 1 (t: 8, u: (0, 6.0), q: (1, 4))
+2019-12-10 10:46:25,146 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 requested negotiation with ['98lpvEHsdGL1@f1_1', 'c_2'] (ID c2e5433e-5650-4583-b6a9-bd33a275d61f)
+2019-12-10 10:46:25,146 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 request was accepted
+2019-12-10 10:46:25,147 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 requested negotiation with ['phriSKnI9x1I@f1_0', 'c_2'] (ID 3aa208ab-dcd0-4353-9e65-02e91af03eaf)
+2019-12-10 10:46:25,147 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 request was accepted
+2019-12-10 10:46:25,148 - DEBUG - 0/10 [10.00%]: c_2 registered CFP buy 1 (t: 9, u: (0, 6.0), q: (1, 1))
+2019-12-10 10:46:25,148 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 requested negotiation with ['98lpvEHsdGL1@f1_1', 'c_2'] (ID 8dddb237-5387-47f2-a2d0-8d34eab3458d)
+2019-12-10 10:46:25,149 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 request was accepted
+2019-12-10 10:46:25,149 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 requested negotiation with ['phriSKnI9x1I@f1_0', 'c_2'] (ID 457fcd78-a36a-42a6-9b61-de97f4a007ab)
+2019-12-10 10:46:25,150 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 request was accepted
+2019-12-10 10:46:25,151 - DEBUG - 0/10 [10.00%]: c_1 registered CFP buy 1 (t: 1, u: (0, 6.0), q: (1, 1))
+2019-12-10 10:46:25,152 - DEBUG - 0/10 [10.00%]: c_1 registered CFP buy 1 (t: 2, u: (0, 6.0), q: (1, 4))
+2019-12-10 10:46:25,152 - DEBUG - 0/10 [10.00%]: c_1 registered CFP buy 1 (t: 3, u: (0, 6.0), q: (1, 1))
+2019-12-10 10:46:25,153 - DEBUG - 0/10 [10.00%]: c_1 registered CFP buy 1 (t: 6, u: (0, 6.0), q: (1, 2))
+2019-12-10 10:46:25,154 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 requested negotiation with ['98lpvEHsdGL1@f1_1', 'c_1'] (ID 092ad86a-ae82-40b3-95db-977543061afa)
+2019-12-10 10:46:25,154 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 request was accepted
+2019-12-10 10:46:25,155 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 requested negotiation with ['phriSKnI9x1I@f1_0', 'c_1'] (ID e424490a-f5a6-4960-9755-c79c585fe535)
+2019-12-10 10:46:25,155 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 request was accepted
+2019-12-10 10:46:25,156 - DEBUG - 0/10 [10.00%]: c_1 registered CFP buy 1 (t: 7, u: (0, 6.0), q: (1, 1))
+2019-12-10 10:46:25,156 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 requested negotiation with ['98lpvEHsdGL1@f1_1', 'c_1'] (ID 02f6d1ce-7b0e-4696-8993-61fe09ffd937)
+2019-12-10 10:46:25,157 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 request was accepted
+2019-12-10 10:46:25,158 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 requested negotiation with ['phriSKnI9x1I@f1_0', 'c_1'] (ID c1aff819-3500-4d11-a527-8df9a33aa581)
+2019-12-10 10:46:25,158 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 request was accepted
+2019-12-10 10:46:25,159 - DEBUG - 0/10 [10.00%]: c_1 registered CFP buy 1 (t: 9, u: (0, 6.0), q: (1, 3))
+2019-12-10 10:46:25,160 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 requested negotiation with ['98lpvEHsdGL1@f1_1', 'c_1'] (ID 55743289-134d-4a21-b3c9-1a3aad95028a)
+2019-12-10 10:46:25,160 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 request was accepted
+2019-12-10 10:46:25,161 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 requested negotiation with ['phriSKnI9x1I@f1_0', 'c_1'] (ID 5baf262b-5407-4b34-ae67-80e08261e551)
+2019-12-10 10:46:25,161 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 request was accepted
+2019-12-10 10:46:25,162 - DEBUG - 0/10 [10.00%]: c_3 registered CFP buy 1 (t: 0, u: (0, 6.0), q: (1, 4))
+2019-12-10 10:46:25,162 - DEBUG - 0/10 [10.00%]: c_3 registered CFP buy 1 (t: 1, u: (0, 6.0), q: (1, 4))
+2019-12-10 10:46:25,163 - DEBUG - 0/10 [10.00%]: c_3 registered CFP buy 1 (t: 2, u: (0, 6.0), q: (1, 1))
+2019-12-10 10:46:25,164 - DEBUG - 0/10 [10.00%]: c_3 registered CFP buy 1 (t: 3, u: (0, 6.0), q: (1, 3))
+2019-12-10 10:46:25,164 - DEBUG - 0/10 [10.00%]: c_3 registered CFP buy 1 (t: 4, u: (0, 6.0), q: (1, 4))
+2019-12-10 10:46:25,165 - DEBUG - 0/10 [10.00%]: c_3 registered CFP buy 1 (t: 5, u: (0, 6.0), q: (1, 2))
+2019-12-10 10:46:25,165 - DEBUG - 0/10 [10.00%]: c_3 registered CFP buy 1 (t: 6, u: (0, 6.0), q: (1, 1))
+2019-12-10 10:46:25,166 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 requested negotiation with ['98lpvEHsdGL1@f1_1', 'c_3'] (ID 9b8d4e89-5da4-4c2a-90b7-60c6f5032540)
+2019-12-10 10:46:25,167 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 request was accepted
+2019-12-10 10:46:25,168 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 requested negotiation with ['phriSKnI9x1I@f1_0', 'c_3'] (ID ccd4ca26-09bf-4f7e-9a0b-a3790b9e9080)
+2019-12-10 10:46:25,168 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 request was accepted
+2019-12-10 10:46:25,169 - DEBUG - 0/10 [10.00%]: c_3 registered CFP buy 1 (t: 7, u: (0, 6.0), q: (1, 2))
+2019-12-10 10:46:25,170 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 requested negotiation with ['98lpvEHsdGL1@f1_1', 'c_3'] (ID d0231d1d-0410-4c52-91fc-8dba9fd5dce0)
+2019-12-10 10:46:25,172 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 request was accepted
+2019-12-10 10:46:25,181 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 requested negotiation with ['phriSKnI9x1I@f1_0', 'c_3'] (ID 0d381574-944b-4a05-97e7-80241bccca96)
+2019-12-10 10:46:25,182 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 request was accepted
+2019-12-10 10:46:25,183 - DEBUG - 0/10 [10.00%]: c_3 registered CFP buy 1 (t: 8, u: (0, 6.0), q: (1, 4))
+2019-12-10 10:46:25,184 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 requested negotiation with ['98lpvEHsdGL1@f1_1', 'c_3'] (ID 97cf603b-fb46-4633-a86f-7341cac131fd)
+2019-12-10 10:46:25,185 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 request was accepted
+2019-12-10 10:46:25,186 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 requested negotiation with ['phriSKnI9x1I@f1_0', 'c_3'] (ID 20fb378b-2678-4778-ad54-dcb467c9740a)
+2019-12-10 10:46:25,186 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 request was accepted
+2019-12-10 10:46:25,187 - DEBUG - 0/10 [10.00%]: c_3 registered CFP buy 1 (t: 9, u: (0, 6.0), q: (1, 4))
+2019-12-10 10:46:25,189 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 requested negotiation with ['98lpvEHsdGL1@f1_1', 'c_3'] (ID 542fc822-af0c-4ebb-9aa8-bfa62919b5eb)
+2019-12-10 10:46:25,190 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 request was accepted
+2019-12-10 10:46:25,192 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 requested negotiation with ['phriSKnI9x1I@f1_0', 'c_3'] (ID fc31edc0-f398-4bda-a3c9-f92791d275ce)
+2019-12-10 10:46:25,193 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 request was accepted
+2019-12-10 10:46:25,194 - DEBUG - 0/10 [10.00%]: c_4 registered CFP buy 1 (t: 1, u: (0, 6.0), q: (1, 4))
+2019-12-10 10:46:25,196 - DEBUG - 0/10 [10.00%]: c_4 registered CFP buy 1 (t: 4, u: (0, 6.0), q: (1, 1))
+2019-12-10 10:46:25,197 - DEBUG - 0/10 [10.00%]: c_4 registered CFP buy 1 (t: 5, u: (0, 6.0), q: (1, 2))
+2019-12-10 10:46:25,197 - DEBUG - 0/10 [10.00%]: c_4 registered CFP buy 1 (t: 6, u: (0, 6.0), q: (1, 1))
+2019-12-10 10:46:25,199 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 requested negotiation with ['98lpvEHsdGL1@f1_1', 'c_4'] (ID 9f6d6559-714b-4a07-ac4c-d321c6d81596)
+2019-12-10 10:46:25,200 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 request was accepted
+2019-12-10 10:46:25,201 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 requested negotiation with ['phriSKnI9x1I@f1_0', 'c_4'] (ID fe8192de-3040-43da-9a98-aa1e443d8683)
+2019-12-10 10:46:25,203 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 request was accepted
+2019-12-10 10:46:25,204 - DEBUG - 0/10 [10.00%]: c_4 registered CFP buy 1 (t: 7, u: (0, 6.0), q: (1, 4))
+2019-12-10 10:46:25,209 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 requested negotiation with ['98lpvEHsdGL1@f1_1', 'c_4'] (ID be3a13b3-e646-4071-a4ed-ef6d1e51f72f)
+2019-12-10 10:46:25,210 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 request was accepted
+2019-12-10 10:46:25,212 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 requested negotiation with ['phriSKnI9x1I@f1_0', 'c_4'] (ID 568658df-ebb9-4f0b-bd84-a95e0737d1c7)
+2019-12-10 10:46:25,283 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 request was accepted
+2019-12-10 10:46:25,289 - DEBUG - 0/10 [10.00%]: c_4 registered CFP buy 1 (t: 8, u: (0, 6.0), q: (1, 1))
+2019-12-10 10:46:25,292 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 requested negotiation with ['98lpvEHsdGL1@f1_1', 'c_4'] (ID c21ead24-ee03-4818-9f3d-0cf8a4cc46e7)
+2019-12-10 10:46:25,293 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 request was accepted
+2019-12-10 10:46:25,303 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 requested negotiation with ['phriSKnI9x1I@f1_0', 'c_4'] (ID a399822a-f069-453f-b001-bd5b7bff728e)
+2019-12-10 10:46:25,304 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 request was accepted
+2019-12-10 10:46:25,304 - DEBUG - 0/10 [10.00%]: c_4 registered CFP buy 1 (t: 9, u: (0, 6.0), q: (1, 1))
+2019-12-10 10:46:25,305 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 requested negotiation with ['98lpvEHsdGL1@f1_1', 'c_4'] (ID 22272232-241e-4033-b11d-611eba85bd4e)
+2019-12-10 10:46:25,309 - INFO - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 request was accepted
+2019-12-10 10:46:25,316 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 requested negotiation with ['phriSKnI9x1I@f1_0', 'c_4'] (ID 15e7409b-dcbe-49b1-af87-28c2f9cbdf89)
+2019-12-10 10:46:25,317 - INFO - 0/10 [10.00%]: phriSKnI9x1I@f1_0 request was accepted
+2019-12-10 10:46:25,359 - DEBUG - 0/10 [10.00%]: m_0: FinancialReport(agent='m_0-a2781e83-0938-431c-a995-ae8e953f4852', step=0, cash=0.0, liabilities=0.0, inventory=0, credit_rating=1.0)
+2019-12-10 10:46:25,359 - DEBUG - 0/10 [10.00%]: m_1: FinancialReport(agent='m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', step=0, cash=0.0, liabilities=0.0, inventory=0, credit_rating=1.0)
+2019-12-10 10:46:25,359 - DEBUG - 0/10 [10.00%]: m_2: FinancialReport(agent='m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', step=0, cash=0.0, liabilities=0.0, inventory=0, credit_rating=1.0)
+2019-12-10 10:46:25,359 - DEBUG - 0/10 [10.00%]: m_3: FinancialReport(agent='m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', step=0, cash=0.0, liabilities=0.0, inventory=0, credit_rating=1.0)
+2019-12-10 10:46:25,360 - DEBUG - 0/10 [10.00%]: m_4: FinancialReport(agent='m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', step=0, cash=0.0, liabilities=0.0, inventory=0, credit_rating=1.0)
+2019-12-10 10:46:25,360 - DEBUG - 0/10 [10.00%]: c_0: FinancialReport(agent='c_0-d2dd29d0-d268-4f50-8c9d-223676ffb9a3', step=0, cash=0, liabilities=0.0, inventory=0, credit_rating=1.0)
+2019-12-10 10:46:25,360 - DEBUG - 0/10 [10.00%]: c_1: FinancialReport(agent='c_1-c502ead0-a081-429c-a207-5e2a882ffd7a', step=0, cash=0, liabilities=0.0, inventory=0, credit_rating=1.0)
+2019-12-10 10:46:25,360 - DEBUG - 0/10 [10.00%]: c_2: FinancialReport(agent='c_2-cf855637-d880-4dc1-8a5a-da8589977833', step=0, cash=0, liabilities=0.0, inventory=0, credit_rating=1.0)
+2019-12-10 10:46:25,360 - DEBUG - 0/10 [10.00%]: c_3: FinancialReport(agent='c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b', step=0, cash=0, liabilities=0.0, inventory=0, credit_rating=1.0)
+2019-12-10 10:46:25,360 - DEBUG - 0/10 [10.00%]: c_4: FinancialReport(agent='c_4-f4aff014-a769-4616-ad83-8f26046ca328', step=0, cash=0, liabilities=0.0, inventory=0, credit_rating=1.0)
+2019-12-10 10:46:25,360 - DEBUG - 0/10 [10.00%]: phriSKnI9x1I@f1_0: FinancialReport(agent='phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', step=0, cash=1000, liabilities=0.0, inventory=0, credit_rating=1.0)
+2019-12-10 10:46:25,360 - DEBUG - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1: FinancialReport(agent='98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', step=0, cash=1000, liabilities=0.0, inventory=0, credit_rating=1.0)
+2019-12-10 10:46:25,361 - DEBUG - 0/10 [10.00%]: phriSKnI9x1I@f1_0 (Factory f1_0): money=1000, storage={}, loans=0.0
+2019-12-10 10:46:25,361 - DEBUG - 0/10 [10.00%]: 98lpvEHsdGL1@f1_1 (Factory f1_1): money=1000, storage={}, loans=0.0
+2019-12-10 10:46:25,361 - DEBUG - 0/10 [10.00%]: c_0: money=0, storage={}
+2019-12-10 10:46:25,361 - DEBUG - 0/10 [10.00%]: c_1: money=0, storage={}
+2019-12-10 10:46:25,361 - DEBUG - 0/10 [10.00%]: c_2: money=0, storage={}
+2019-12-10 10:46:25,361 - DEBUG - 0/10 [10.00%]: c_3: money=0, storage={}
+2019-12-10 10:46:25,361 - DEBUG - 0/10 [10.00%]: c_4: money=0, storage={}
+2019-12-10 10:46:25,362 - DEBUG - 0/10 [10.00%]: m_0: money=0.0, storage={}
+2019-12-10 10:46:25,362 - DEBUG - 0/10 [10.00%]: m_1: money=0.0, storage={}
+2019-12-10 10:46:25,362 - DEBUG - 0/10 [10.00%]: m_2: money=0.0, storage={}
+2019-12-10 10:46:25,362 - DEBUG - 0/10 [10.00%]: m_3: money=0.0, storage={}
+2019-12-10 10:46:25,362 - DEBUG - 0/10 [10.00%]: m_4: money=0.0, storage={}
+2019-12-10 10:46:25,364 - INFO - 1/10 [20.00%]: 34 Negotiations/14 Agents
+2019-12-10 10:46:25,381 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 87cfb94a-8c97-4049-8784-4796c4ebef15 expecting 3.6908777614532937 profit
+2019-12-10 10:46:25,381 - DEBUG - 1/10 [20.00%]: f1_1 scheduled run 1 at 5 on 1 for 87cfb94a-8c97-4049-8784-4796c4ebef15
+2019-12-10 10:46:25,386 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 registered CFP buy 0 (t: 4, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:46:25,387 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', '98lpvEHsdGL1@f1_1'] (ID 8f7a2d3b-4b8a-424b-9919-b5e364a1bb63)
+2019-12-10 10:46:25,388 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:25,389 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', '98lpvEHsdGL1@f1_1'] (ID 42ca2438-0c2c-4089-a592-e2fa55b09714)
+2019-12-10 10:46:25,389 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:25,390 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', '98lpvEHsdGL1@f1_1'] (ID bb412511-ce5d-46c2-948a-4619adb0af17)
+2019-12-10 10:46:25,391 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:25,392 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', '98lpvEHsdGL1@f1_1'] (ID 02736a11-f421-442f-8e99-4a0a428ebde5)
+2019-12-10 10:46:25,394 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:25,394 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', '98lpvEHsdGL1@f1_1'] (ID f7170488-cbff-4a34-8e07-b5d843b3b031)
+2019-12-10 10:46:25,395 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:25,396 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['98lpvEHsdGL1@f1_1', 'c_0'] > {'time': 6, 'quantity': 1, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 6, u: (0, 6.0), q: (1, 1))', 'partners': "['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'c_0-d2dd29d0-d268-4f50-8c9d-223676ffb9a3']", 'seller': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'buyer': 'c_0-d2dd29d0-d268-4f50-8c9d-223676ffb9a3'}
+2019-12-10 10:46:25,441 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 11196022-2e13-4022-bade-ad2d0936456c expecting 15.070253562673315 profit
+2019-12-10 10:46:25,441 - DEBUG - 1/10 [20.00%]: f1_0 scheduled run 4 at 6 on 4 for 11196022-2e13-4022-bade-ad2d0936456c
+2019-12-10 10:46:25,441 - DEBUG - 1/10 [20.00%]: f1_0 scheduled run 4 at 5 on 4 for 11196022-2e13-4022-bade-ad2d0936456c
+2019-12-10 10:46:25,442 - DEBUG - 1/10 [20.00%]: f1_0 scheduled run 4 at 4 on 4 for 11196022-2e13-4022-bade-ad2d0936456c
+2019-12-10 10:46:25,442 - DEBUG - 1/10 [20.00%]: f1_0 scheduled run 4 at 3 on 4 for 11196022-2e13-4022-bade-ad2d0936456c
+2019-12-10 10:46:25,443 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 registered CFP buy 0 (t: 5, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:46:25,443 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', 'phriSKnI9x1I@f1_0'] (ID 32f14742-6cf4-4e12-a31c-6ee95f5b05a2)
+2019-12-10 10:46:25,444 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:25,444 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', 'phriSKnI9x1I@f1_0'] (ID 15c48893-97a2-4981-8377-35e1f90e10e8)
+2019-12-10 10:46:25,445 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:25,445 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', 'phriSKnI9x1I@f1_0'] (ID cf70456f-53cb-4090-ba49-6efe7addedde)
+2019-12-10 10:46:25,446 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:25,446 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', 'phriSKnI9x1I@f1_0'] (ID 8319091a-9e88-4a7f-9bb9-fb4f27fc0e66)
+2019-12-10 10:46:25,447 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:25,447 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', 'phriSKnI9x1I@f1_0'] (ID 8a804c08-1240-4aed-9de1-4dfbd28299a2)
+2019-12-10 10:46:25,448 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:25,448 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 registered CFP buy 0 (t: 4, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:46:25,449 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', 'phriSKnI9x1I@f1_0'] (ID c4f2bcd7-59ea-4db0-b365-cb455d51c5ed)
+2019-12-10 10:46:25,449 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:25,450 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', 'phriSKnI9x1I@f1_0'] (ID d4c15277-1aa7-486c-81ba-a8fd8642a4f3)
+2019-12-10 10:46:25,451 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:25,452 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', 'phriSKnI9x1I@f1_0'] (ID c9652e30-ad94-4efb-a29a-830ef7c7c3f8)
+2019-12-10 10:46:25,453 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:25,554 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', 'phriSKnI9x1I@f1_0'] (ID 97900255-c7f6-4afc-a10e-04154ac91bb0)
+2019-12-10 10:46:25,555 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:25,556 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', 'phriSKnI9x1I@f1_0'] (ID 61461825-8761-4bcb-9c39-ba923973b8db)
+2019-12-10 10:46:25,557 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:25,558 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 registered CFP buy 0 (t: 3, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:46:25,558 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', 'phriSKnI9x1I@f1_0'] (ID b94381ce-9457-4b9a-bf44-07a8b67ca642)
+2019-12-10 10:46:25,559 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:25,560 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', 'phriSKnI9x1I@f1_0'] (ID 6733bd30-057e-4a68-b379-e9775cc0853c)
+2019-12-10 10:46:25,561 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:25,561 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', 'phriSKnI9x1I@f1_0'] (ID daa3529c-4afb-48df-889a-b0e91c00f575)
+2019-12-10 10:46:25,562 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:25,563 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', 'phriSKnI9x1I@f1_0'] (ID df491dab-4773-4d06-b878-cb9880afb052)
+2019-12-10 10:46:25,563 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:25,564 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', 'phriSKnI9x1I@f1_0'] (ID a874f0c3-ffc4-4063-aecd-04babadf08b1)
+2019-12-10 10:46:25,565 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:25,566 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 registered CFP buy 0 (t: 2, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:46:25,567 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', 'phriSKnI9x1I@f1_0'] (ID 4f44e66a-8675-4a77-8732-4d734a0f47bf)
+2019-12-10 10:46:25,568 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:25,568 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', 'phriSKnI9x1I@f1_0'] (ID 11a73f44-1a74-41e0-b35c-8d8bdcc17c9b)
+2019-12-10 10:46:25,569 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:25,569 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', 'phriSKnI9x1I@f1_0'] (ID 95e45bdc-2869-4e2f-80a1-1b66120da812)
+2019-12-10 10:46:25,570 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:25,571 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', 'phriSKnI9x1I@f1_0'] (ID c55cd2d8-3263-4ac1-96ed-24c707fe3d9f)
+2019-12-10 10:46:25,571 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:25,572 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', 'phriSKnI9x1I@f1_0'] (ID 8239cd16-af9e-4ccf-90b8-019f57d60cb0)
+2019-12-10 10:46:25,573 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:25,574 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['phriSKnI9x1I@f1_0', 'c_4'] > {'time': 7, 'quantity': 4, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 7, u: (0, 6.0), q: (1, 4))', 'partners': "['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_4-f4aff014-a769-4616-ad83-8f26046ca328']", 'seller': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'buyer': 'c_4-f4aff014-a769-4616-ad83-8f26046ca328'}
+2019-12-10 10:46:25,634 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 04dbca2e-edc6-49e6-a8c5-5e5076915322 expecting 13.381755522906587 profit
+2019-12-10 10:46:25,636 - DEBUG - 1/10 [20.00%]: f1_1 scheduled run 1 at 8 on 1 for 04dbca2e-edc6-49e6-a8c5-5e5076915322
+2019-12-10 10:46:25,636 - DEBUG - 1/10 [20.00%]: f1_1 scheduled run 1 at 7 on 1 for 04dbca2e-edc6-49e6-a8c5-5e5076915322
+2019-12-10 10:46:25,637 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 registered CFP buy 0 (t: 7, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:46:25,638 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', '98lpvEHsdGL1@f1_1'] (ID d5292f30-1fe6-482e-8813-d4da8d571bdb)
+2019-12-10 10:46:25,640 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:25,641 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', '98lpvEHsdGL1@f1_1'] (ID ea0fcbba-e51e-4a78-8099-b61e12be0c1c)
+2019-12-10 10:46:25,641 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:25,642 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', '98lpvEHsdGL1@f1_1'] (ID b5f20d17-2b91-4316-a2f3-4ab039477a37)
+2019-12-10 10:46:25,643 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:25,643 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', '98lpvEHsdGL1@f1_1'] (ID c76141eb-28d9-4919-8607-930f48071e87)
+2019-12-10 10:46:25,644 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:25,645 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', '98lpvEHsdGL1@f1_1'] (ID 478ff2fc-52b7-4aa8-96b9-896565d2d78e)
+2019-12-10 10:46:25,645 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:25,646 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 registered CFP buy 0 (t: 6, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:46:25,647 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', '98lpvEHsdGL1@f1_1'] (ID 52947d29-68e0-4243-a1cc-32ae9076c7a6)
+2019-12-10 10:46:25,648 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:25,648 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', '98lpvEHsdGL1@f1_1'] (ID d6b74041-bdb0-4334-97bd-676b0606144a)
+2019-12-10 10:46:25,649 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:25,649 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', '98lpvEHsdGL1@f1_1'] (ID 3b5a86b6-3df3-4fb5-b9db-ade044ee84f3)
+2019-12-10 10:46:25,650 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:25,651 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', '98lpvEHsdGL1@f1_1'] (ID 0ae144dd-4b9f-470c-923b-e0c994b667b1)
+2019-12-10 10:46:25,651 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:25,652 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', '98lpvEHsdGL1@f1_1'] (ID 580e4591-1127-445e-ad06-a14aec053268)
+2019-12-10 10:46:25,653 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:25,654 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['98lpvEHsdGL1@f1_1', 'c_1'] > {'time': 9, 'quantity': 3, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 9, u: (0, 6.0), q: (1, 3))', 'partners': "['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'c_1-c502ead0-a081-429c-a207-5e2a882ffd7a']", 'seller': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'buyer': 'c_1-c502ead0-a081-429c-a207-5e2a882ffd7a'}
+2019-12-10 10:46:25,658 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 81eec5e3-c0cb-4b82-a5bc-d1a17bd6e820 expecting 6.0 profit
+2019-12-10 10:46:25,659 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['98lpvEHsdGL1@f1_1', 'c_2'] > {'time': 7, 'quantity': 1, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 7, u: (0, 6.0), q: (1, 1))', 'partners': "['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'c_2-cf855637-d880-4dc1-8a5a-da8589977833']", 'seller': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'buyer': 'c_2-cf855637-d880-4dc1-8a5a-da8589977833'}
+2019-12-10 10:46:25,672 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 85175cba-b496-482f-ae0a-cc2173d397d0 expecting breach
+2019-12-10 10:46:25,672 - DEBUG - 1/10 [20.00%]: Contract<> [cancelled by ['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']]: ['98lpvEHsdGL1@f1_1', 'c_1'] > {'time': 6, 'quantity': 2, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 6, u: (0, 6.0), q: (1, 2))', 'partners': "['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'c_1-c502ead0-a081-429c-a207-5e2a882ffd7a']", 'seller': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'buyer': 'c_1-c502ead0-a081-429c-a207-5e2a882ffd7a'}
+2019-12-10 10:46:25,677 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 947af6f3-9f63-4eb2-9daf-517903b4ced0 expecting breach
+2019-12-10 10:46:25,677 - DEBUG - 1/10 [20.00%]: Contract<> [cancelled by ['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']]: ['98lpvEHsdGL1@f1_1', 'c_4'] > {'time': 6, 'quantity': 1, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 6, u: (0, 6.0), q: (1, 1))', 'partners': "['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'c_4-f4aff014-a769-4616-ad83-8f26046ca328']", 'seller': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'buyer': 'c_4-f4aff014-a769-4616-ad83-8f26046ca328'}
+2019-12-10 10:46:25,681 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 559d06a8-8472-49fa-8284-2b67bccb3c6f expecting 6.0 profit
+2019-12-10 10:46:25,683 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['phriSKnI9x1I@f1_0', 'c_4'] > {'time': 8, 'quantity': 1, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 8, u: (0, 6.0), q: (1, 1))', 'partners': "['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_4-f4aff014-a769-4616-ad83-8f26046ca328']", 'seller': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'buyer': 'c_4-f4aff014-a769-4616-ad83-8f26046ca328'}
+2019-12-10 10:46:25,692 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract c77c8903-c405-45c1-9bc6-151b3235e27f expecting 12.0 profit
+2019-12-10 10:46:25,693 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['phriSKnI9x1I@f1_0', 'c_3'] > {'time': 7, 'quantity': 2, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 7, u: (0, 6.0), q: (1, 2))', 'partners': "['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b']", 'seller': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'buyer': 'c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b'}
+2019-12-10 10:46:25,702 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 685836c5-93e2-432e-8b4b-6ada27f36221 expecting 3.6908777614532937 profit
+2019-12-10 10:46:25,702 - DEBUG - 1/10 [20.00%]: f1_1 scheduled run 1 at 6 on 1 for 685836c5-93e2-432e-8b4b-6ada27f36221
+2019-12-10 10:46:25,706 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 registered CFP buy 0 (t: 5, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:46:25,707 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', '98lpvEHsdGL1@f1_1'] (ID ff50ff1e-c45a-4eb1-b7e6-effb89800dc3)
+2019-12-10 10:46:25,708 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:25,709 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', '98lpvEHsdGL1@f1_1'] (ID 8f9f5b15-ee1c-43ba-92f6-dc1e66abbce6)
+2019-12-10 10:46:25,710 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:25,711 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', '98lpvEHsdGL1@f1_1'] (ID 9589163c-4f0b-4c4c-95b5-0c8da1a8b00c)
+2019-12-10 10:46:25,712 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:25,713 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', '98lpvEHsdGL1@f1_1'] (ID 2f4858aa-bc66-42e9-a260-40e850da66bc)
+2019-12-10 10:46:25,713 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:25,715 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', '98lpvEHsdGL1@f1_1'] (ID 7418164f-21d9-4438-b802-9fa9e8585670)
+2019-12-10 10:46:25,715 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:25,717 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['98lpvEHsdGL1@f1_1', 'c_1'] > {'time': 7, 'quantity': 1, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 7, u: (0, 6.0), q: (1, 1))', 'partners': "['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'c_1-c502ead0-a081-429c-a207-5e2a882ffd7a']", 'seller': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'buyer': 'c_1-c502ead0-a081-429c-a207-5e2a882ffd7a'}
+2019-12-10 10:46:25,721 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract cc95bf8e-7ee4-42f0-beae-e9edf03b65ad expecting 6.0 profit
+2019-12-10 10:46:25,723 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['phriSKnI9x1I@f1_0', 'c_4'] > {'time': 6, 'quantity': 1, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 6, u: (0, 6.0), q: (1, 1))', 'partners': "['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_4-f4aff014-a769-4616-ad83-8f26046ca328']", 'seller': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'buyer': 'c_4-f4aff014-a769-4616-ad83-8f26046ca328'}
+2019-12-10 10:46:25,784 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 2968f336-bd27-42a4-a0e9-2e18df1ab3b0 expecting 15.330240041444426 profit
+2019-12-10 10:46:25,784 - DEBUG - 1/10 [20.00%]: Contract<> [cancelled by ['c_4-f4aff014-a769-4616-ad83-8f26046ca328']]: ['98lpvEHsdGL1@f1_1', 'c_4'] > {'time': 7, 'quantity': 4, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 7, u: (0, 6.0), q: (1, 4))', 'partners': "['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'c_4-f4aff014-a769-4616-ad83-8f26046ca328']", 'seller': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'buyer': 'c_4-f4aff014-a769-4616-ad83-8f26046ca328'}
+2019-12-10 10:46:25,789 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 45f9e8dc-e835-446d-b146-79f9e6f9abf9 expecting breach
+2019-12-10 10:46:25,789 - DEBUG - 1/10 [20.00%]: Contract<> [cancelled by ['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']]: ['phriSKnI9x1I@f1_0', 'c_3'] > {'time': 6, 'quantity': 1, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 6, u: (0, 6.0), q: (1, 1))', 'partners': "['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b']", 'seller': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'buyer': 'c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b'}
+2019-12-10 10:46:25,826 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 969dc4d6-7258-44b7-8b7b-5e4c83892226 expecting 13.009349052876587 profit
+2019-12-10 10:46:25,826 - DEBUG - 1/10 [20.00%]: f1_0 scheduled run 4 at 8 on 4 for 969dc4d6-7258-44b7-8b7b-5e4c83892226
+2019-12-10 10:46:25,827 - DEBUG - 1/10 [20.00%]: f1_0 scheduled run 4 at 7 on 4 for 969dc4d6-7258-44b7-8b7b-5e4c83892226
+2019-12-10 10:46:25,827 - DEBUG - 1/10 [20.00%]: f1_0 scheduled run 4 at 2 on 4 for 969dc4d6-7258-44b7-8b7b-5e4c83892226
+2019-12-10 10:46:25,827 - DEBUG - 1/10 [20.00%]: f1_0 scheduled run 0 at 8 on 0 for 969dc4d6-7258-44b7-8b7b-5e4c83892226
+2019-12-10 10:46:25,827 - DEBUG - 1/10 [20.00%]: f1_0 scheduled run 0 at 7 on 0 for 969dc4d6-7258-44b7-8b7b-5e4c83892226
+2019-12-10 10:46:25,828 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 registered CFP buy 0 (t: 7, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:46:25,828 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', 'phriSKnI9x1I@f1_0'] (ID e187e89d-6ade-4600-9d85-9b541a2a9878)
+2019-12-10 10:46:25,829 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:25,829 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', 'phriSKnI9x1I@f1_0'] (ID 675378c4-674d-4739-8a8e-b111ae3e0fdb)
+2019-12-10 10:46:25,830 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:25,830 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', 'phriSKnI9x1I@f1_0'] (ID b5eb719d-d2f1-4440-a490-1d4f5a2b3458)
+2019-12-10 10:46:25,831 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:25,831 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', 'phriSKnI9x1I@f1_0'] (ID 00bf1dfb-0a18-4a26-99de-2bcd91a26aa1)
+2019-12-10 10:46:25,831 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:25,832 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', 'phriSKnI9x1I@f1_0'] (ID a007b460-d8a5-4c25-9e02-8a307a8622ad)
+2019-12-10 10:46:25,832 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:25,833 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 registered CFP buy 0 (t: 6, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:46:25,834 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', 'phriSKnI9x1I@f1_0'] (ID 2adff340-a320-4f7b-88f6-f82bb9e2ae22)
+2019-12-10 10:46:25,834 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:25,834 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', 'phriSKnI9x1I@f1_0'] (ID bfb07c27-d977-4dc4-a5d1-973d675c44b5)
+2019-12-10 10:46:25,835 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:25,835 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', 'phriSKnI9x1I@f1_0'] (ID 1e7ee381-8d70-410e-924b-a96c02a5a41a)
+2019-12-10 10:46:25,836 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:25,836 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', 'phriSKnI9x1I@f1_0'] (ID 534fece9-ac21-4d10-b8fe-9048a046060e)
+2019-12-10 10:46:25,837 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:25,837 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', 'phriSKnI9x1I@f1_0'] (ID 26bf6ea1-d9a1-471c-98ba-f8d07c32eebe)
+2019-12-10 10:46:25,838 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:25,839 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 registered CFP buy 0 (t: 7, u: (0, 1.5), q: (1, 2))
+2019-12-10 10:46:25,840 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', 'phriSKnI9x1I@f1_0'] (ID fcc53473-a023-4fcf-ab10-583b04b512a1)
+2019-12-10 10:46:25,841 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:25,842 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', 'phriSKnI9x1I@f1_0'] (ID 45a175e0-5280-455f-9eae-d2b0aca57328)
+2019-12-10 10:46:25,842 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:25,843 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', 'phriSKnI9x1I@f1_0'] (ID 1467b1f3-669c-4ed1-92db-6d48223836fd)
+2019-12-10 10:46:25,844 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:25,845 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', 'phriSKnI9x1I@f1_0'] (ID b0f0a4b6-8f1b-4c43-8c12-b8b25d33f32a)
+2019-12-10 10:46:25,845 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:25,846 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', 'phriSKnI9x1I@f1_0'] (ID 27db4262-0613-4d10-996a-8edf65c1c9f7)
+2019-12-10 10:46:25,846 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:25,847 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 registered CFP buy 0 (t: 6, u: (0, 1.5), q: (1, 2))
+2019-12-10 10:46:25,848 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', 'phriSKnI9x1I@f1_0'] (ID 0915dbb1-307b-4df3-811d-d8fd9417c17e)
+2019-12-10 10:46:25,849 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:25,850 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', 'phriSKnI9x1I@f1_0'] (ID cb3636c0-6783-46d3-ad14-526a4c535117)
+2019-12-10 10:46:25,850 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:25,851 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', 'phriSKnI9x1I@f1_0'] (ID d8ef8a0b-6dd4-4416-9d71-e9d360fd2d33)
+2019-12-10 10:46:25,852 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:25,853 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', 'phriSKnI9x1I@f1_0'] (ID e29a33bb-8ac0-4430-81f6-baf66a71a314)
+2019-12-10 10:46:25,854 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:25,855 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', 'phriSKnI9x1I@f1_0'] (ID 558913b3-345b-49f8-8647-f60704e158c1)
+2019-12-10 10:46:25,856 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:25,857 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['phriSKnI9x1I@f1_0', 'c_3'] > {'time': 9, 'quantity': 4, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 9, u: (0, 6.0), q: (1, 4))', 'partners': "['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b']", 'seller': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'buyer': 'c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b'}
+2019-12-10 10:46:25,865 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract f7502ec8-e893-4b96-bffa-5c65d10fa492 expecting 18.0 profit
+2019-12-10 10:46:25,865 - DEBUG - 1/10 [20.00%]: Contract<> [cancelled by ['c_1-c502ead0-a081-429c-a207-5e2a882ffd7a']]: ['phriSKnI9x1I@f1_0', 'c_1'] > {'time': 9, 'quantity': 3, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 9, u: (0, 6.0), q: (1, 3))', 'partners': "['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_1-c502ead0-a081-429c-a207-5e2a882ffd7a']", 'seller': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'buyer': 'c_1-c502ead0-a081-429c-a207-5e2a882ffd7a'}
+2019-12-10 10:46:25,878 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract f285752f-60db-46f7-90f8-4a1613aa6c0d expecting 21.690877761453294 profit
+2019-12-10 10:46:25,878 - DEBUG - 1/10 [20.00%]: Contract<> [cancelled by ['c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b']]: ['98lpvEHsdGL1@f1_1', 'c_3'] > {'time': 9, 'quantity': 4, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 9, u: (0, 6.0), q: (1, 4))', 'partners': "['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b']", 'seller': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'buyer': 'c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b'}
+2019-12-10 10:46:25,902 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 413b4f4b-6343-41d6-bc0e-b2ad108a014a expecting 19.381755522906587 profit
+2019-12-10 10:46:25,902 - DEBUG - 1/10 [20.00%]: f1_1 scheduled run 1 at 4 on 1 for 413b4f4b-6343-41d6-bc0e-b2ad108a014a
+2019-12-10 10:46:25,902 - DEBUG - 1/10 [20.00%]: f1_1 scheduled run 1 at 3 on 1 for 413b4f4b-6343-41d6-bc0e-b2ad108a014a
+2019-12-10 10:46:25,903 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 registered CFP buy 0 (t: 3, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:46:25,904 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', '98lpvEHsdGL1@f1_1'] (ID 30cb9800-7c1c-4fc8-b694-92a188c06dd2)
+2019-12-10 10:46:25,905 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:25,906 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', '98lpvEHsdGL1@f1_1'] (ID b7e80334-0d1a-4122-9f79-4a07c98ecc87)
+2019-12-10 10:46:25,906 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:25,907 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', '98lpvEHsdGL1@f1_1'] (ID d0a6fd06-ba24-4b78-9551-2701c5bda559)
+2019-12-10 10:46:25,908 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:25,908 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', '98lpvEHsdGL1@f1_1'] (ID bfcb92f7-c013-4483-a6ef-968efa77c5e2)
+2019-12-10 10:46:25,909 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:25,910 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', '98lpvEHsdGL1@f1_1'] (ID f0285897-f5d9-4826-ac1f-de3de31d18dd)
+2019-12-10 10:46:25,910 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:25,911 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 registered CFP buy 0 (t: 2, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:46:25,911 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', '98lpvEHsdGL1@f1_1'] (ID 80e4ba26-62ba-458b-a35d-42fcb468b0ab)
+2019-12-10 10:46:25,912 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:25,912 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', '98lpvEHsdGL1@f1_1'] (ID f05d6f99-e9dd-4997-8d07-5cbb7cf5a4f8)
+2019-12-10 10:46:25,913 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:25,913 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', '98lpvEHsdGL1@f1_1'] (ID 9a3743a0-dcfb-4b6e-b822-b438f2aa8565)
+2019-12-10 10:46:25,914 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:25,914 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', '98lpvEHsdGL1@f1_1'] (ID 366148a8-819d-4146-b5c3-eb829883e8a4)
+2019-12-10 10:46:25,914 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:25,915 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', '98lpvEHsdGL1@f1_1'] (ID 1c151135-e9c9-4173-9da4-4595275496b4)
+2019-12-10 10:46:25,915 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:25,916 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['98lpvEHsdGL1@f1_1', 'c_2'] > {'time': 8, 'quantity': 4, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 8, u: (0, 6.0), q: (1, 4))', 'partners': "['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'c_2-cf855637-d880-4dc1-8a5a-da8589977833']", 'seller': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'buyer': 'c_2-cf855637-d880-4dc1-8a5a-da8589977833'}
+2019-12-10 10:46:25,922 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract eb000a4c-aeb8-47bb-97d3-82d3cbc30c13 expecting 18.0 profit
+2019-12-10 10:46:25,922 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['phriSKnI9x1I@f1_0', 'c_0'] > {'time': 9, 'quantity': 3, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 9, u: (0, 6.0), q: (1, 3))', 'partners': "['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_0-d2dd29d0-d268-4f50-8c9d-223676ffb9a3']", 'seller': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'buyer': 'c_0-d2dd29d0-d268-4f50-8c9d-223676ffb9a3'}
+2019-12-10 10:46:25,927 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 7b9ed25b-3419-41f5-bb5c-ef60ac1a430b expecting 12.0 profit
+2019-12-10 10:46:25,927 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['phriSKnI9x1I@f1_0', 'c_1'] > {'time': 6, 'quantity': 2, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 6, u: (0, 6.0), q: (1, 2))', 'partners': "['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_1-c502ead0-a081-429c-a207-5e2a882ffd7a']", 'seller': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'buyer': 'c_1-c502ead0-a081-429c-a207-5e2a882ffd7a'}
+2019-12-10 10:46:25,930 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 8bdfd360-a1e8-4c01-ba61-b87ece8d18e8 expecting 6.0 profit
+2019-12-10 10:46:25,930 - DEBUG - 1/10 [20.00%]: Contract<> [cancelled by ['c_4-f4aff014-a769-4616-ad83-8f26046ca328']]: ['98lpvEHsdGL1@f1_1', 'c_4'] > {'time': 8, 'quantity': 1, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 8, u: (0, 6.0), q: (1, 1))', 'partners': "['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'c_4-f4aff014-a769-4616-ad83-8f26046ca328']", 'seller': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'buyer': 'c_4-f4aff014-a769-4616-ad83-8f26046ca328'}
+2019-12-10 10:46:25,963 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 5ead696f-6d96-4aa5-80cd-ce9f8fd6d9a6 expecting breach
+2019-12-10 10:46:25,963 - DEBUG - 1/10 [20.00%]: Contract<> [cancelled by ['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']]: ['phriSKnI9x1I@f1_0', 'c_3'] > {'time': 8, 'quantity': 4, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 8, u: (0, 6.0), q: (1, 4))', 'partners': "['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b']", 'seller': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'buyer': 'c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b'}
+2019-12-10 10:46:25,965 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 29b4119f-7313-4da8-8cf0-6336357b0e43 expecting 6.0 profit
+2019-12-10 10:46:25,966 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['98lpvEHsdGL1@f1_1', 'c_4'] > {'time': 9, 'quantity': 1, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 9, u: (0, 6.0), q: (1, 1))', 'partners': "['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'c_4-f4aff014-a769-4616-ad83-8f26046ca328']", 'seller': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'buyer': 'c_4-f4aff014-a769-4616-ad83-8f26046ca328'}
+2019-12-10 10:46:25,969 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract f1c6b2e4-3a25-4e06-be6f-68e9cc68eb4d expecting 6.0 profit
+2019-12-10 10:46:25,970 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['98lpvEHsdGL1@f1_1', 'c_2'] > {'time': 9, 'quantity': 1, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 9, u: (0, 6.0), q: (1, 1))', 'partners': "['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'c_2-cf855637-d880-4dc1-8a5a-da8589977833']", 'seller': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'buyer': 'c_2-cf855637-d880-4dc1-8a5a-da8589977833'}
+2019-12-10 10:46:25,974 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 9448c2d9-acab-49ff-ba5a-b08bfd7426ff expecting 12.0 profit
+2019-12-10 10:46:25,974 - DEBUG - 1/10 [20.00%]: Contract<> [cancelled by ['c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b']]: ['98lpvEHsdGL1@f1_1', 'c_3'] > {'time': 7, 'quantity': 2, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 7, u: (0, 6.0), q: (1, 2))', 'partners': "['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b']", 'seller': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'buyer': 'c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b'}
+2019-12-10 10:46:25,981 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract eebf7f40-cf0b-4176-a663-d613aa2c3675 expecting 3.3533294404358003 profit
+2019-12-10 10:46:25,981 - DEBUG - 1/10 [20.00%]: Contract<> [cancelled by ['c_2-cf855637-d880-4dc1-8a5a-da8589977833']]: ['phriSKnI9x1I@f1_0', 'c_2'] > {'time': 9, 'quantity': 1, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 9, u: (0, 6.0), q: (1, 1))', 'partners': "['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_2-cf855637-d880-4dc1-8a5a-da8589977833']", 'seller': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'buyer': 'c_2-cf855637-d880-4dc1-8a5a-da8589977833'}
+2019-12-10 10:46:25,988 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 80587856-aec2-4ead-bcb0-562c62ca7635 expecting 3.3533294404358003 profit
+2019-12-10 10:46:25,988 - DEBUG - 1/10 [20.00%]: Contract<> [cancelled by ['c_1-c502ead0-a081-429c-a207-5e2a882ffd7a']]: ['phriSKnI9x1I@f1_0', 'c_1'] > {'time': 7, 'quantity': 1, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 7, u: (0, 6.0), q: (1, 1))', 'partners': "['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_1-c502ead0-a081-429c-a207-5e2a882ffd7a']", 'seller': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'buyer': 'c_1-c502ead0-a081-429c-a207-5e2a882ffd7a'}
+2019-12-10 10:46:25,996 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract c79b88c1-9421-4fba-990f-97efe8a33232 expecting 12.0 profit
+2019-12-10 10:46:25,997 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['98lpvEHsdGL1@f1_1', 'c_0'] > {'time': 8, 'quantity': 2, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 8, u: (0, 6.0), q: (1, 2))', 'partners': "['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'c_0-d2dd29d0-d268-4f50-8c9d-223676ffb9a3']", 'seller': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'buyer': 'c_0-d2dd29d0-d268-4f50-8c9d-223676ffb9a3'}
+2019-12-10 10:46:26,008 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 7e156988-d70c-4df7-8560-fe684c932404 expecting 3.3533294404358003 profit
+2019-12-10 10:46:26,008 - DEBUG - 1/10 [20.00%]: Contract<> [cancelled by ['c_4-f4aff014-a769-4616-ad83-8f26046ca328']]: ['phriSKnI9x1I@f1_0', 'c_4'] > {'time': 9, 'quantity': 1, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 9, u: (0, 6.0), q: (1, 1))', 'partners': "['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_4-f4aff014-a769-4616-ad83-8f26046ca328']", 'seller': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'buyer': 'c_4-f4aff014-a769-4616-ad83-8f26046ca328'}
+2019-12-10 10:46:26,046 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract b6b382be-4cfb-45cd-b0bc-d874b48d4f98 expecting breach
+2019-12-10 10:46:26,047 - DEBUG - 1/10 [20.00%]: Contract<> [cancelled by ['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_2-cf855637-d880-4dc1-8a5a-da8589977833']]: ['phriSKnI9x1I@f1_0', 'c_2'] > {'time': 8, 'quantity': 4, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 8, u: (0, 6.0), q: (1, 4))', 'partners': "['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_2-cf855637-d880-4dc1-8a5a-da8589977833']", 'seller': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'buyer': 'c_2-cf855637-d880-4dc1-8a5a-da8589977833'}
+2019-12-10 10:46:26,066 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract cabc3acb-b4df-48d5-a8e4-9320666bdf56 expecting 11.206091275622384 profit
+2019-12-10 10:46:26,066 - DEBUG - 1/10 [20.00%]: Contract<> [cancelled by ['c_0-d2dd29d0-d268-4f50-8c9d-223676ffb9a3']]: ['98lpvEHsdGL1@f1_1', 'c_0'] > {'time': 9, 'quantity': 3, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 9, u: (0, 6.0), q: (1, 3))', 'partners': "['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'c_0-d2dd29d0-d268-4f50-8c9d-223676ffb9a3']", 'seller': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'buyer': 'c_0-d2dd29d0-d268-4f50-8c9d-223676ffb9a3'}
+2019-12-10 10:46:26,075 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 0d082ebc-bad6-4451-b0c6-713b5eccf354 expecting breach
+2019-12-10 10:46:26,075 - DEBUG - 1/10 [20.00%]: Contract<> [cancelled by ['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_0-d2dd29d0-d268-4f50-8c9d-223676ffb9a3']]: ['phriSKnI9x1I@f1_0', 'c_0'] > {'time': 8, 'quantity': 2, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 8, u: (0, 6.0), q: (1, 2))', 'partners': "['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_0-d2dd29d0-d268-4f50-8c9d-223676ffb9a3']", 'seller': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'buyer': 'c_0-d2dd29d0-d268-4f50-8c9d-223676ffb9a3'}
+2019-12-10 10:46:26,077 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 752c69d5-2126-4323-bacd-4f7164c048c8 expecting 6.0 profit
+2019-12-10 10:46:26,078 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['98lpvEHsdGL1@f1_1', 'c_3'] > {'time': 6, 'quantity': 1, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 6, u: (0, 6.0), q: (1, 1))', 'partners': "['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b']", 'seller': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'buyer': 'c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b'}
+2019-12-10 10:46:26,085 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 72e3adcf-60c2-4350-8e75-b98a52f40280 expecting 3.3533294404358003 profit
+2019-12-10 10:46:26,085 - DEBUG - 1/10 [20.00%]: Contract<> [cancelled by ['c_2-cf855637-d880-4dc1-8a5a-da8589977833']]: ['phriSKnI9x1I@f1_0', 'c_2'] > {'time': 7, 'quantity': 1, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 7, u: (0, 6.0), q: (1, 1))', 'partners': "['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_2-cf855637-d880-4dc1-8a5a-da8589977833']", 'seller': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'buyer': 'c_2-cf855637-d880-4dc1-8a5a-da8589977833'}
+2019-12-10 10:46:26,116 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 6c8ecb74-954f-402c-9fea-857364ac9564 expecting 14.463698032707043 profit
+2019-12-10 10:46:26,116 - DEBUG - 1/10 [20.00%]: f1_1 scheduled run 1 at 2 on 1 for 6c8ecb74-954f-402c-9fea-857364ac9564
+2019-12-10 10:46:26,116 - DEBUG - 1/10 [20.00%]: f1_1 scheduled run 5 at 7 on 5 for 6c8ecb74-954f-402c-9fea-857364ac9564
+2019-12-10 10:46:26,117 - DEBUG - 1/10 [20.00%]: f1_1 scheduled run 5 at 6 on 5 for 6c8ecb74-954f-402c-9fea-857364ac9564
+2019-12-10 10:46:26,117 - DEBUG - 1/10 [20.00%]: f1_1 scheduled run 5 at 5 on 5 for 6c8ecb74-954f-402c-9fea-857364ac9564
+2019-12-10 10:46:26,118 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 registered CFP buy 0 (t: 6, u: (0, 1.5), q: (1, 2))
+2019-12-10 10:46:26,118 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', '98lpvEHsdGL1@f1_1'] (ID 4e099b4a-56ed-4a2c-a891-f0fb9a32fd7d)
+2019-12-10 10:46:26,119 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:26,120 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', '98lpvEHsdGL1@f1_1'] (ID e5bbd291-baab-495e-bbe5-8c809c5280e1)
+2019-12-10 10:46:26,120 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:26,121 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', '98lpvEHsdGL1@f1_1'] (ID 26c7dd19-e302-4cf1-9a7b-e8d1af54800a)
+2019-12-10 10:46:26,121 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:26,122 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', '98lpvEHsdGL1@f1_1'] (ID c99f6da1-eb53-48d4-a797-08854fb106af)
+2019-12-10 10:46:26,122 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:26,122 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', '98lpvEHsdGL1@f1_1'] (ID b2fc7e92-6320-41e9-b047-1a8bc1e62453)
+2019-12-10 10:46:26,123 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:26,124 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 registered CFP buy 0 (t: 5, u: (0, 1.5), q: (1, 2))
+2019-12-10 10:46:26,124 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', '98lpvEHsdGL1@f1_1'] (ID 97990a78-ed8f-477e-a2e2-631c10bbc5fc)
+2019-12-10 10:46:26,124 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:26,125 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', '98lpvEHsdGL1@f1_1'] (ID ab4eddc0-2102-40a0-981b-f741dc58f788)
+2019-12-10 10:46:26,125 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:26,126 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', '98lpvEHsdGL1@f1_1'] (ID 9afa2cab-27a4-4047-ad5b-ce5bb72f9843)
+2019-12-10 10:46:26,126 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:26,127 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', '98lpvEHsdGL1@f1_1'] (ID 8cf4b8ff-b20b-456a-80e2-0cbe2d1eb58b)
+2019-12-10 10:46:26,127 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:26,128 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', '98lpvEHsdGL1@f1_1'] (ID 9b576009-a928-457b-8732-b7d744d88b14)
+2019-12-10 10:46:26,128 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:26,129 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 registered CFP buy 0 (t: 4, u: (0, 1.5), q: (1, 2))
+2019-12-10 10:46:26,129 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', '98lpvEHsdGL1@f1_1'] (ID efe6d5ad-0e5b-47ba-930e-1a55fdfb9c49)
+2019-12-10 10:46:26,129 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:26,130 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', '98lpvEHsdGL1@f1_1'] (ID 0ae37274-35de-4e0f-a155-a6e76eb25124)
+2019-12-10 10:46:26,130 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:26,131 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', '98lpvEHsdGL1@f1_1'] (ID 516166b5-260b-424a-8932-10ae4212a26e)
+2019-12-10 10:46:26,131 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:26,132 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', '98lpvEHsdGL1@f1_1'] (ID a56e8466-07b3-4802-9991-4cd382777bc1)
+2019-12-10 10:46:26,132 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:26,133 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', '98lpvEHsdGL1@f1_1'] (ID 4a38af36-e8cd-40bb-9e5c-6e5958da3635)
+2019-12-10 10:46:26,133 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:26,134 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['98lpvEHsdGL1@f1_1', 'c_3'] > {'time': 8, 'quantity': 4, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 8, u: (0, 6.0), q: (1, 4))', 'partners': "['98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b']", 'seller': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a', 'buyer': 'c_3-70f9e4ce-5a26-488e-af7e-fff8d30fd07b'}
+2019-12-10 10:46:26,136 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 6c63be38-609a-4ef9-9fe7-879d21190e84 expecting breach
+2019-12-10 10:46:26,136 - DEBUG - 1/10 [20.00%]: Contract<> [cancelled by ['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_0-d2dd29d0-d268-4f50-8c9d-223676ffb9a3']]: ['phriSKnI9x1I@f1_0', 'c_0'] > {'time': 6, 'quantity': 1, 'unit_price': 6.0} on annotation {'cfp': 'buy 1 (t: 6, u: (0, 6.0), q: (1, 1))', 'partners': "['phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'c_0-d2dd29d0-d268-4f50-8c9d-223676ffb9a3']", 'seller': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a', 'buyer': 'c_0-d2dd29d0-d268-4f50-8c9d-223676ffb9a3'}
+2019-12-10 10:46:26,172 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 32f77aa8-4163-456e-889e-418e16eed880 expecting 0.0 profit
+2019-12-10 10:46:26,172 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', 'phriSKnI9x1I@f1_0'] > {'time': 3, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 3, u: (0, 1.5), q: (1, 1))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,173 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 082b0513-c9e9-46d9-9716-91e878fbb848 expecting 0.0 profit
+2019-12-10 10:46:26,173 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', 'phriSKnI9x1I@f1_0'] > {'time': 3, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 3, u: (0, 1.5), q: (1, 1))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,173 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 3975d507-f7fc-4a04-955d-98f60e6a14cf expecting 0.0 profit
+2019-12-10 10:46:26,174 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', 'phriSKnI9x1I@f1_0'] > {'time': 2, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 2, u: (0, 1.5), q: (1, 1))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,174 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract aa77ce52-57f1-4edb-b8bb-fd0a65f61d20 expecting 0.0 profit
+2019-12-10 10:46:26,175 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', 'phriSKnI9x1I@f1_0'] > {'time': 6, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 2))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,175 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 898338f9-78a0-4091-86c4-68076f8b4971 expecting 0.0 profit
+2019-12-10 10:46:26,176 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', '98lpvEHsdGL1@f1_1'] > {'time': 2, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 2, u: (0, 1.5), q: (1, 1))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,176 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 2cf4b719-b06a-45f2-becd-c13399c12d7f expecting 0.0 profit
+2019-12-10 10:46:26,177 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', '98lpvEHsdGL1@f1_1'] > {'time': 4, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 4, u: (0, 1.5), q: (1, 2))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,177 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 7e35d442-327a-479a-8d34-e7d0e2a8a1f1 expecting 0.0 profit
+2019-12-10 10:46:26,178 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', 'phriSKnI9x1I@f1_0'] > {'time': 4, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 4, u: (0, 1.5), q: (1, 1))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,178 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 9359dc3d-2e7b-4baf-b76d-5d016fcea180 expecting 0.0 profit
+2019-12-10 10:46:26,179 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 registered CFP buy 0 (t: 6, u: (0, 1.5), q: (1, 1))
+2019-12-10 10:46:26,179 - INFO - 1/10 [20.00%]: m_0 requested negotiation with ['m_0', '98lpvEHsdGL1@f1_1'] (ID 01bf648c-551d-4bd4-b622-e8851d2769c1)
+2019-12-10 10:46:26,180 - INFO - 1/10 [20.00%]: m_0 request was accepted
+2019-12-10 10:46:26,180 - INFO - 1/10 [20.00%]: m_3 requested negotiation with ['m_3', '98lpvEHsdGL1@f1_1'] (ID 60387ba7-1b29-47da-b1c9-01444eaedc4c)
+2019-12-10 10:46:26,181 - INFO - 1/10 [20.00%]: m_3 request was accepted
+2019-12-10 10:46:26,181 - INFO - 1/10 [20.00%]: m_2 requested negotiation with ['m_2', '98lpvEHsdGL1@f1_1'] (ID 4efd1484-26dd-46d5-a684-3096c5c54f6f)
+2019-12-10 10:46:26,181 - INFO - 1/10 [20.00%]: m_2 request was accepted
+2019-12-10 10:46:26,182 - INFO - 1/10 [20.00%]: m_1 requested negotiation with ['m_1', '98lpvEHsdGL1@f1_1'] (ID 297355d7-96b4-4a4a-a00c-209df0c059eb)
+2019-12-10 10:46:26,182 - INFO - 1/10 [20.00%]: m_1 request was accepted
+2019-12-10 10:46:26,183 - INFO - 1/10 [20.00%]: m_4 requested negotiation with ['m_4', '98lpvEHsdGL1@f1_1'] (ID 450e85a8-2f17-475b-9759-cefff158663c)
+2019-12-10 10:46:26,183 - INFO - 1/10 [20.00%]: m_4 request was accepted
+2019-12-10 10:46:26,183 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', '98lpvEHsdGL1@f1_1'] > {'time': 6, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 1))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,184 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 3d3ab8ed-020f-41a3-ae8d-6098178fc4ad expecting 0.0 profit
+2019-12-10 10:46:26,184 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', '98lpvEHsdGL1@f1_1'] > {'time': 7, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 7, u: (0, 1.5), q: (1, 1))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,184 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract d73d3513-2e90-4668-a7c5-0bf30e054286 expecting 0.0 profit
+2019-12-10 10:46:26,185 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', 'phriSKnI9x1I@f1_0'] > {'time': 5, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 5, u: (0, 1.5), q: (1, 1))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,185 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract c9c88d08-4787-434a-bef9-7f12bca1b6fd expecting 0.0 profit
+2019-12-10 10:46:26,186 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', 'phriSKnI9x1I@f1_0'] > {'time': 4, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 4, u: (0, 1.5), q: (1, 1))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,186 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 9b7ad756-8c14-4a85-8629-c1569b0c1937 expecting 0.0 profit
+2019-12-10 10:46:26,186 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', '98lpvEHsdGL1@f1_1'] > {'time': 4, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 4, u: (0, 1.5), q: (1, 1))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,187 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract be55637a-6464-4cb9-8662-ef57113dd1ed expecting 0.0 profit
+2019-12-10 10:46:26,187 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', 'phriSKnI9x1I@f1_0'] > {'time': 4, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 4, u: (0, 1.5), q: (1, 1))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,187 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 8fca2304-f8ff-46f9-a896-126ef5884cf1 expecting 0.0 profit
+2019-12-10 10:46:26,188 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', '98lpvEHsdGL1@f1_1'] > {'time': 4, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 4, u: (0, 1.5), q: (1, 2))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,189 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 9b19530a-e7e3-4610-8ad6-358f3c5f29f3 expecting 0.0 profit
+2019-12-10 10:46:26,190 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', 'phriSKnI9x1I@f1_0'] > {'time': 6, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 2))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,190 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 7dce2709-a230-48f1-bf82-fff4bf7fe7a5 expecting 0.0 profit
+2019-12-10 10:46:26,191 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', 'phriSKnI9x1I@f1_0'] > {'time': 7, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 7, u: (0, 1.5), q: (1, 2))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,192 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract f2ec2b93-23b9-48a1-b3c5-777762b15c31 expecting 0.0 profit
+2019-12-10 10:46:26,193 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', '98lpvEHsdGL1@f1_1'] > {'time': 3, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 3, u: (0, 1.5), q: (1, 1))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,193 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 9e584e79-0808-41ce-9ab5-e6e1c14b8858 expecting 0.0 profit
+2019-12-10 10:46:26,194 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', '98lpvEHsdGL1@f1_1'] > {'time': 6, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 2))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,195 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 5beb3dfe-ce7b-4ef5-a128-4c1b391f5e86 expecting 0.0 profit
+2019-12-10 10:46:26,196 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', 'phriSKnI9x1I@f1_0'] > {'time': 5, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 5, u: (0, 1.5), q: (1, 1))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,196 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 918dcabb-764b-409b-bee1-f0c8cc24dee7 expecting 0.0 profit
+2019-12-10 10:46:26,197 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', 'phriSKnI9x1I@f1_0'] > {'time': 3, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 3, u: (0, 1.5), q: (1, 1))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,198 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract f5202c69-1c00-41a7-9c88-9f117d62f819 expecting 0.0 profit
+2019-12-10 10:46:26,199 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', '98lpvEHsdGL1@f1_1'] > {'time': 4, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 4, u: (0, 1.5), q: (1, 2))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,199 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract c53bf546-b766-494b-983f-5120befc5111 expecting 0.0 profit
+2019-12-10 10:46:26,200 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', 'phriSKnI9x1I@f1_0'] > {'time': 5, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 5, u: (0, 1.5), q: (1, 1))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,201 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 6ed0dd78-c40b-4dd1-8194-2f305c325c13 expecting 0.0 profit
+2019-12-10 10:46:26,201 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', '98lpvEHsdGL1@f1_1'] > {'time': 4, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 4, u: (0, 1.5), q: (1, 1))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,202 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract f67474cd-fd1a-4bcd-8702-70081685c99d expecting 0.0 profit
+2019-12-10 10:46:26,203 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', '98lpvEHsdGL1@f1_1'] > {'time': 6, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 1))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,204 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract de71ba39-b7b5-4927-afdb-ac9e7694e93b expecting 0.0 profit
+2019-12-10 10:46:26,204 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', 'phriSKnI9x1I@f1_0'] > {'time': 6, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 1))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,205 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract ec420df5-5e75-4f91-8a5f-9627eac8b924 expecting 0.0 profit
+2019-12-10 10:46:26,206 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', '98lpvEHsdGL1@f1_1'] > {'time': 6, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 2))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,206 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 7751744d-5c1d-4d0d-baf9-2a6b0e65a649 expecting 0.0 profit
+2019-12-10 10:46:26,207 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', '98lpvEHsdGL1@f1_1'] > {'time': 6, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 2))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,208 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract c68aa6ce-f7f2-4575-bd6f-e4552c547e8a expecting 0.0 profit
+2019-12-10 10:46:26,208 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', '98lpvEHsdGL1@f1_1'] > {'time': 4, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 4, u: (0, 1.5), q: (1, 2))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,208 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 04c70874-6456-4891-9e51-0c652ea363d2 expecting 0.0 profit
+2019-12-10 10:46:26,209 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', 'phriSKnI9x1I@f1_0'] > {'time': 7, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 7, u: (0, 1.5), q: (1, 2))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,209 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 49d3d29d-adb1-4ace-accc-79a7e25b79fd expecting 0.0 profit
+2019-12-10 10:46:26,209 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', '98lpvEHsdGL1@f1_1'] > {'time': 7, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 7, u: (0, 1.5), q: (1, 1))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,210 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 0af87b71-7c33-4a72-b5d5-28fd838b9d41 expecting 0.0 profit
+2019-12-10 10:46:26,210 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', '98lpvEHsdGL1@f1_1'] > {'time': 6, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 2))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,210 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 9cc38432-9dd3-4bd8-9e6b-165eadf99d15 expecting 0.0 profit
+2019-12-10 10:46:26,211 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', 'phriSKnI9x1I@f1_0'] > {'time': 6, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 2))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,211 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 5e62743e-9c3a-4955-90bf-eb06cf630660 expecting 0.0 profit
+2019-12-10 10:46:26,211 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', '98lpvEHsdGL1@f1_1'] > {'time': 6, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 2))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,212 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract e286e85b-e5ba-43e0-83b6-4a74dab67bf5 expecting 0.0 profit
+2019-12-10 10:46:26,212 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', 'phriSKnI9x1I@f1_0'] > {'time': 7, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 7, u: (0, 1.5), q: (1, 2))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,212 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract a2bb9720-0327-423e-ab17-49c5ca8ca696 expecting 0.0 profit
+2019-12-10 10:46:26,213 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', '98lpvEHsdGL1@f1_1'] > {'time': 5, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 5, u: (0, 1.5), q: (1, 2))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,213 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract a47de70c-cd74-450c-b3e6-e892cceff442 expecting 0.0 profit
+2019-12-10 10:46:26,213 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', 'phriSKnI9x1I@f1_0'] > {'time': 2, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 2, u: (0, 1.5), q: (1, 1))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,214 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract b6cff991-afd6-4b0f-bbc1-ac23639e1209 expecting 0.0 profit
+2019-12-10 10:46:26,214 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', '98lpvEHsdGL1@f1_1'] > {'time': 4, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 4, u: (0, 1.5), q: (1, 1))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,215 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 7515d0fb-c0de-45f8-a56d-b5cd04dbdc59 expecting 0.0 profit
+2019-12-10 10:46:26,215 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', '98lpvEHsdGL1@f1_1'] > {'time': 5, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 5, u: (0, 1.5), q: (1, 1))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,215 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 0ad704ac-f6bc-485d-94af-be49a5579a30 expecting 0.0 profit
+2019-12-10 10:46:26,216 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', 'phriSKnI9x1I@f1_0'] > {'time': 6, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 1))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,216 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract fa49187b-ef2c-4982-80e7-43e462e69c34 expecting 0.0 profit
+2019-12-10 10:46:26,216 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', 'phriSKnI9x1I@f1_0'] > {'time': 3, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 3, u: (0, 1.5), q: (1, 1))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,217 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract df3a0a78-ae8e-4df3-b809-7a26a45c4961 expecting 0.0 profit
+2019-12-10 10:46:26,217 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', '98lpvEHsdGL1@f1_1'] > {'time': 3, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 3, u: (0, 1.5), q: (1, 1))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,217 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract bc65733d-52de-4a19-b1ee-1d104a639a0f expecting 0.0 profit
+2019-12-10 10:46:26,218 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', 'phriSKnI9x1I@f1_0'] > {'time': 5, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 5, u: (0, 1.5), q: (1, 1))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,218 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 8709efc8-c0b9-4c04-9b89-fcc07133e5ce expecting 0.0 profit
+2019-12-10 10:46:26,218 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', '98lpvEHsdGL1@f1_1'] > {'time': 5, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 5, u: (0, 1.5), q: (1, 2))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,219 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 0d3f6f2d-9022-4b22-843b-a3800948b95e expecting 0.0 profit
+2019-12-10 10:46:26,219 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', '98lpvEHsdGL1@f1_1'] > {'time': 6, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 1))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,219 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 6bf61b99-4a48-4ba3-887c-ea83d5b4eede expecting 0.0 profit
+2019-12-10 10:46:26,220 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', 'phriSKnI9x1I@f1_0'] > {'time': 5, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 5, u: (0, 1.5), q: (1, 1))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,220 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 4c9b7f29-4dae-457d-9d50-57042d4ce020 expecting 0.0 profit
+2019-12-10 10:46:26,220 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', '98lpvEHsdGL1@f1_1'] > {'time': 4, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 4, u: (0, 1.5), q: (1, 2))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,221 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 492ad2ac-b172-45ff-8190-47a3b5fc78db expecting 0.0 profit
+2019-12-10 10:46:26,221 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', 'phriSKnI9x1I@f1_0'] > {'time': 2, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 2, u: (0, 1.5), q: (1, 1))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,221 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 110e5a6f-de55-461d-a1ce-f19e4595890e expecting 0.0 profit
+2019-12-10 10:46:26,222 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', '98lpvEHsdGL1@f1_1'] > {'time': 5, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 5, u: (0, 1.5), q: (1, 2))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,222 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract cb59fef2-d0b7-4336-a4db-4186c3f6604e expecting 0.0 profit
+2019-12-10 10:46:26,223 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', 'phriSKnI9x1I@f1_0'] > {'time': 7, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 7, u: (0, 1.5), q: (1, 1))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,223 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract f06b8c60-7dd8-477a-988e-9e6c08ea17fa expecting 0.0 profit
+2019-12-10 10:46:26,223 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', '98lpvEHsdGL1@f1_1'] > {'time': 5, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 5, u: (0, 1.5), q: (1, 2))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,224 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 0165549f-a1be-4799-ad61-da4a53fb1e4e expecting 0.0 profit
+2019-12-10 10:46:26,224 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', '98lpvEHsdGL1@f1_1'] > {'time': 7, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 7, u: (0, 1.5), q: (1, 1))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,224 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 98124f0e-edf1-4d1e-af3e-d51fdbf23848 expecting 0.0 profit
+2019-12-10 10:46:26,225 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', 'phriSKnI9x1I@f1_0'] > {'time': 6, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 2))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,225 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 1cee0d78-1709-434b-8e17-8ef26604757a expecting 0.0 profit
+2019-12-10 10:46:26,225 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', '98lpvEHsdGL1@f1_1'] > {'time': 4, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 4, u: (0, 1.5), q: (1, 1))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,226 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 16b3cb55-844b-4aed-89e7-17f27f19fe0c expecting 0.0 profit
+2019-12-10 10:46:26,226 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', 'phriSKnI9x1I@f1_0'] > {'time': 3, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 3, u: (0, 1.5), q: (1, 1))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,226 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract d69f4473-d3a9-4ab9-9da0-796aa6a89b6a expecting 0.0 profit
+2019-12-10 10:46:26,227 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', 'phriSKnI9x1I@f1_0'] > {'time': 7, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 7, u: (0, 1.5), q: (1, 1))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,227 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 24c240fd-2b52-4fec-82e6-963543e707bc expecting 0.0 profit
+2019-12-10 10:46:26,227 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', 'phriSKnI9x1I@f1_0'] > {'time': 2, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 2, u: (0, 1.5), q: (1, 1))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,228 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 4cb57e5f-e46e-40a3-b965-9747dd47f971 expecting 0.0 profit
+2019-12-10 10:46:26,228 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', '98lpvEHsdGL1@f1_1'] > {'time': 2, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 2, u: (0, 1.5), q: (1, 1))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,228 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract fad1c4a1-d352-4326-9d91-892c137e197e expecting 0.0 profit
+2019-12-10 10:46:26,229 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', '98lpvEHsdGL1@f1_1'] > {'time': 5, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 5, u: (0, 1.5), q: (1, 1))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,229 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract c26ef9c7-9231-4135-88f5-80154358e73d expecting 0.0 profit
+2019-12-10 10:46:26,229 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', '98lpvEHsdGL1@f1_1'] > {'time': 7, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 7, u: (0, 1.5), q: (1, 1))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,230 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 6c296ba4-022c-4b2a-a502-8b519ffd2780 expecting 0.0 profit
+2019-12-10 10:46:26,230 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', '98lpvEHsdGL1@f1_1'] > {'time': 4, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 4, u: (0, 1.5), q: (1, 1))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,230 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 8c0de58d-7275-4d86-af80-e3a1fff62727 expecting 0.0 profit
+2019-12-10 10:46:26,231 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', '98lpvEHsdGL1@f1_1'] > {'time': 6, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 1))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,231 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract b1ce8368-f83b-4263-ab3a-a597c9896cdb expecting 0.0 profit
+2019-12-10 10:46:26,231 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', '98lpvEHsdGL1@f1_1'] > {'time': 3, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 3, u: (0, 1.5), q: (1, 1))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,232 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 3ca47ffa-3bfa-4c36-b378-f2f897b66493 expecting 0.0 profit
+2019-12-10 10:46:26,232 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', '98lpvEHsdGL1@f1_1'] > {'time': 6, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 1))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,232 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract d3f2aea9-be11-4e3a-a43c-2e4bcb3b4430 expecting 0.0 profit
+2019-12-10 10:46:26,233 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', 'phriSKnI9x1I@f1_0'] > {'time': 4, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 4, u: (0, 1.5), q: (1, 1))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,233 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 4160a389-a53b-4483-a1e1-de18c318ce5d expecting 0.0 profit
+2019-12-10 10:46:26,234 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', '98lpvEHsdGL1@f1_1'] > {'time': 7, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 7, u: (0, 1.5), q: (1, 1))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,234 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 75258f42-3287-43bf-bbd9-7288cbb2e2cf expecting 0.0 profit
+2019-12-10 10:46:26,234 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', 'phriSKnI9x1I@f1_0'] > {'time': 6, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 1))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,235 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 3babd02d-2fbc-45de-a572-abe1a65bb1f2 expecting 0.0 profit
+2019-12-10 10:46:26,235 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', 'phriSKnI9x1I@f1_0'] > {'time': 7, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 7, u: (0, 1.5), q: (1, 2))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,235 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 4b0a1202-3bbe-46cf-96c3-32a9d00d337f expecting 0.0 profit
+2019-12-10 10:46:26,236 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', '98lpvEHsdGL1@f1_1'] > {'time': 3, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 3, u: (0, 1.5), q: (1, 1))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,236 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract b637c3e8-7393-4c1a-beed-382b0415088b expecting 0.0 profit
+2019-12-10 10:46:26,236 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', 'phriSKnI9x1I@f1_0'] > {'time': 6, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 2))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,237 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 44e189c2-24bb-4e32-b006-8d3124392ab2 expecting 0.0 profit
+2019-12-10 10:46:26,237 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', '98lpvEHsdGL1@f1_1'] > {'time': 5, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 5, u: (0, 1.5), q: (1, 1))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,237 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 540f962c-8b5b-40b9-9a10-8db90aacf8de expecting 0.0 profit
+2019-12-10 10:46:26,238 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', 'phriSKnI9x1I@f1_0'] > {'time': 7, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 7, u: (0, 1.5), q: (1, 1))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,238 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 00efbf7a-f53f-4490-bf0a-e08c633d10e0 expecting 0.0 profit
+2019-12-10 10:46:26,239 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', '98lpvEHsdGL1@f1_1'] > {'time': 2, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 2, u: (0, 1.5), q: (1, 1))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,240 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 8b628339-608e-4aca-a78e-c81298ffc7cd expecting 0.0 profit
+2019-12-10 10:46:26,240 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', 'phriSKnI9x1I@f1_0'] > {'time': 4, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 4, u: (0, 1.5), q: (1, 1))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,241 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract cc60f9fc-c1ac-4538-8f4b-da5c6e0eb598 expecting 0.0 profit
+2019-12-10 10:46:26,242 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', '98lpvEHsdGL1@f1_1'] > {'time': 5, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 5, u: (0, 1.5), q: (1, 1))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,242 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 2a0d3a53-120e-45db-a5dd-2753adfc262f expecting 0.0 profit
+2019-12-10 10:46:26,243 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', '98lpvEHsdGL1@f1_1'] > {'time': 2, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 2, u: (0, 1.5), q: (1, 1))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,244 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract c5ea7631-329e-407c-ade4-e41e62b461e3 expecting 0.0 profit
+2019-12-10 10:46:26,244 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', '98lpvEHsdGL1@f1_1'] > {'time': 2, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 2, u: (0, 1.5), q: (1, 1))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,245 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 9aa80f5c-7634-4025-b04b-1e135fa74aa6 expecting 0.0 profit
+2019-12-10 10:46:26,246 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', 'phriSKnI9x1I@f1_0'] > {'time': 7, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 7, u: (0, 1.5), q: (1, 2))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,247 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract a81ecdaf-7580-4bd6-a10a-1a141d740e3e expecting 0.0 profit
+2019-12-10 10:46:26,247 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', '98lpvEHsdGL1@f1_1'] > {'time': 5, 'quantity': 2, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 5, u: (0, 1.5), q: (1, 2))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,248 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract b8d16e97-6205-4b66-8202-6a916945d318 expecting 0.0 profit
+2019-12-10 10:46:26,248 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', 'phriSKnI9x1I@f1_0'] > {'time': 7, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 7, u: (0, 1.5), q: (1, 1))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,249 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract ceb3929f-d366-40fb-aa0d-c294a43a4b0c expecting 0.0 profit
+2019-12-10 10:46:26,249 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', 'phriSKnI9x1I@f1_0'] > {'time': 7, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 7, u: (0, 1.5), q: (1, 1))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,249 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 028c0ab4-3dfa-4a9a-91c4-73da1ead0bb3 expecting 0.0 profit
+2019-12-10 10:46:26,250 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', 'phriSKnI9x1I@f1_0'] > {'time': 6, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 1))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,250 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 80187a8b-b3f6-4fc3-8b68-c455daf3fc6d expecting 0.0 profit
+2019-12-10 10:46:26,251 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', 'phriSKnI9x1I@f1_0'] > {'time': 2, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 2, u: (0, 1.5), q: (1, 1))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,251 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract a93a11e3-d3fc-4c2d-9c3f-475043ec5475 expecting 0.0 profit
+2019-12-10 10:46:26,251 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', '98lpvEHsdGL1@f1_1'] > {'time': 5, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 5, u: (0, 1.5), q: (1, 1))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,252 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 3e2232b3-b0cf-4d8a-ada6-01f66e5f357d expecting 0.0 profit
+2019-12-10 10:46:26,252 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', '98lpvEHsdGL1@f1_1'] > {'time': 3, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 3, u: (0, 1.5), q: (1, 1))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,252 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 singing contract 9034fb87-e620-4737-a43c-8906a24a71a8 expecting 0.0 profit
+2019-12-10 10:46:26,253 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', 'phriSKnI9x1I@f1_0'] > {'time': 6, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 1))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': 'phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a'}
+2019-12-10 10:46:26,254 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract cca5509b-3a45-41d8-a2c0-54ca90574f06 expecting 0.0 profit
+2019-12-10 10:46:26,255 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_2', '98lpvEHsdGL1@f1_1'] > {'time': 6, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 1))', 'partners': "['m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,255 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract f9c1e2b9-5033-47b3-a817-5fd0e4c27702 expecting 0.0 profit
+2019-12-10 10:46:26,256 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_1', '98lpvEHsdGL1@f1_1'] > {'time': 6, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 1))', 'partners': "['m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,256 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 1a0706da-6551-4eb4-be28-6b8a2b38bed8 expecting 0.0 profit
+2019-12-10 10:46:26,256 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_3', '98lpvEHsdGL1@f1_1'] > {'time': 6, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 1))', 'partners': "['m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_3-3f5b37ab-37d9-4acc-8b19-029167eacbef', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,257 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract a718c18d-e410-4478-9f2f-39cf71ac74ba expecting 0.0 profit
+2019-12-10 10:46:26,257 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_4', '98lpvEHsdGL1@f1_1'] > {'time': 6, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 1))', 'partners': "['m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,257 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 singing contract 3ac283f5-b9ba-4abf-a5c0-47734e456db1 expecting 0.0 profit
+2019-12-10 10:46:26,258 - DEBUG - 1/10 [20.00%]: Contract<> [signed]: ['m_0', '98lpvEHsdGL1@f1_1'] > {'time': 6, 'quantity': 1, 'unit_price': 0.0} on annotation {'cfp': 'buy 0 (t: 6, u: (0, 1.5), q: (1, 1))', 'partners': "['m_0-a2781e83-0938-431c-a995-ae8e953f4852', '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a']", 'seller': 'm_0-a2781e83-0938-431c-a995-ae8e953f4852', 'buyer': '98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a'}
+2019-12-10 10:46:26,270 - DEBUG - 1/10 [20.00%]: phriSKnI9x1I@f1_0 (Factory f1_0): money=1000, storage={}, loans=0.0
+2019-12-10 10:46:26,271 - DEBUG - 1/10 [20.00%]: 98lpvEHsdGL1@f1_1 (Factory f1_1): money=1000, storage={}, loans=0.0
+2019-12-10 10:46:26,271 - DEBUG - 1/10 [20.00%]: c_0: money=0, storage={}
+2019-12-10 10:46:26,271 - DEBUG - 1/10 [20.00%]: c_1: money=0, storage={}
+2019-12-10 10:46:26,271 - DEBUG - 1/10 [20.00%]: c_2: money=0, storage={}
+2019-12-10 10:46:26,271 - DEBUG - 1/10 [20.00%]: c_3: money=0, storage={}
+2019-12-10 10:46:26,271 - DEBUG - 1/10 [20.00%]: c_4: money=0, storage={}
+2019-12-10 10:46:26,271 - DEBUG - 1/10 [20.00%]: m_0: money=0.0, storage={}
+2019-12-10 10:46:26,271 - DEBUG - 1/10 [20.00%]: m_1: money=0.0, storage={}
+2019-12-10 10:46:26,271 - DEBUG - 1/10 [20.00%]: m_2: money=0.0, storage={}
+2019-12-10 10:46:26,271 - DEBUG - 1/10 [20.00%]: m_3: money=0.0, storage={}
+2019-12-10 10:46:26,271 - DEBUG - 1/10 [20.00%]: m_4: money=0.0, storage={}
+2019-12-10 10:46:26,272 - INFO - 2/10 [30.00%]: 0 Negotiations/14 Agents
+2019-12-10 10:46:26,281 - DEBUG - 2/10 [30.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 2, 'quantity': 1, 'unit_price': 0.0} [id 4cb57e5f-e46e-40a3-b965-9747dd47f971]
+2019-12-10 10:46:26,281 - DEBUG - 2/10 [30.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,281 - DEBUG - 2/10 [30.00%]: Moved 1 units of p0 from m_4 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,281 - DEBUG - 2/10 [30.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 2, 'quantity': 1, 'unit_price': 0.0} [id a47de70c-cd74-450c-b3e6-e892cceff442]
+2019-12-10 10:46:26,281 - DEBUG - 2/10 [30.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: Moved 1 units of p0 from m_4 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 2, 'quantity': 1, 'unit_price': 0.0} [id 2a0d3a53-120e-45db-a5dd-2753adfc262f]
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: Moved 1 units of p0 from m_3 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 2, 'quantity': 1, 'unit_price': 0.0} [id 3975d507-f7fc-4a04-955d-98f60e6a14cf]
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: Moved 1 units of p0 from m_1 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 2, 'quantity': 1, 'unit_price': 0.0} [id 24c240fd-2b52-4fec-82e6-963543e707bc]
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: Moved 1 units of p0 from m_0 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 2, 'quantity': 1, 'unit_price': 0.0} [id 00efbf7a-f53f-4490-bf0a-e08c633d10e0]
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: Moved 1 units of p0 from m_2 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 2, 'quantity': 1, 'unit_price': 0.0} [id 80187a8b-b3f6-4fc3-8b68-c455daf3fc6d]
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: Moved 1 units of p0 from m_3 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 2, 'quantity': 1, 'unit_price': 0.0} [id c5ea7631-329e-407c-ade4-e41e62b461e3]
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: Moved 1 units of p0 from m_1 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,282 - DEBUG - 2/10 [30.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 2, 'quantity': 1, 'unit_price': 0.0} [id 492ad2ac-b172-45ff-8190-47a3b5fc78db]
+2019-12-10 10:46:26,283 - DEBUG - 2/10 [30.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,283 - DEBUG - 2/10 [30.00%]: Moved 1 units of p0 from m_2 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,283 - DEBUG - 2/10 [30.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 2, 'quantity': 1, 'unit_price': 0.0} [id 898338f9-78a0-4091-86c4-68076f8b4971]
+2019-12-10 10:46:26,283 - DEBUG - 2/10 [30.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,283 - DEBUG - 2/10 [30.00%]: Moved 1 units of p0 from m_0 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,283 - DEBUG - 2/10 [30.00%]: phriSKnI9x1I@f1_0 (Factory f1_0): money=998.7675633906683, storage={0: 4, 1: 1}, loans=0.0
+2019-12-10 10:46:26,283 - DEBUG - 2/10 [30.00%]: PRODUCTION>> phriSKnI9x1I@f1_0: 4: started/finished run process 0 @ 4 steps: 2~2 balance: -1.2324366093316987, {0: -1}
+2019-12-10 10:46:26,283 - DEBUG - 2/10 [30.00%]: PRODUCTION>> phriSKnI9x1I@f1_0: Updates: balance: 0.0, {1: 1}
+2019-12-10 10:46:26,283 - DEBUG - 2/10 [30.00%]: 98lpvEHsdGL1@f1_1 (Factory f1_1): money=998.6908777614533, storage={0: 4, 1: 1}, loans=0.0
+2019-12-10 10:46:26,283 - DEBUG - 2/10 [30.00%]: PRODUCTION>> 98lpvEHsdGL1@f1_1: 1: started/finished run process 0 @ 1 steps: 2~2 balance: -1.3091222385467192, {0: -1}
+2019-12-10 10:46:26,283 - DEBUG - 2/10 [30.00%]: PRODUCTION>> 98lpvEHsdGL1@f1_1: Updates: balance: 0.0, {1: 1}
+2019-12-10 10:46:26,283 - DEBUG - 2/10 [30.00%]: c_0: money=0, storage={}
+2019-12-10 10:46:26,284 - DEBUG - 2/10 [30.00%]: c_1: money=0, storage={}
+2019-12-10 10:46:26,284 - DEBUG - 2/10 [30.00%]: c_2: money=0, storage={}
+2019-12-10 10:46:26,284 - DEBUG - 2/10 [30.00%]: c_3: money=0, storage={}
+2019-12-10 10:46:26,284 - DEBUG - 2/10 [30.00%]: c_4: money=0, storage={}
+2019-12-10 10:46:26,284 - DEBUG - 2/10 [30.00%]: m_0: money=0.0, storage={0: -2}
+2019-12-10 10:46:26,284 - DEBUG - 2/10 [30.00%]: m_1: money=0.0, storage={0: -2}
+2019-12-10 10:46:26,284 - DEBUG - 2/10 [30.00%]: m_2: money=0.0, storage={0: -2}
+2019-12-10 10:46:26,284 - DEBUG - 2/10 [30.00%]: m_3: money=0.0, storage={0: -2}
+2019-12-10 10:46:26,284 - DEBUG - 2/10 [30.00%]: m_4: money=0.0, storage={0: -2}
+2019-12-10 10:46:26,285 - INFO - 3/10 [40.00%]: 0 Negotiations/14 Agents
+2019-12-10 10:46:26,291 - DEBUG - 3/10 [40.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 3, 'quantity': 1, 'unit_price': 0.0} [id 16b3cb55-844b-4aed-89e7-17f27f19fe0c]
+2019-12-10 10:46:26,291 - DEBUG - 3/10 [40.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,291 - DEBUG - 3/10 [40.00%]: Moved 1 units of p0 from m_2 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,291 - DEBUG - 3/10 [40.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 3, 'quantity': 1, 'unit_price': 0.0} [id 4b0a1202-3bbe-46cf-96c3-32a9d00d337f]
+2019-12-10 10:46:26,291 - DEBUG - 3/10 [40.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,291 - DEBUG - 3/10 [40.00%]: Moved 1 units of p0 from m_1 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,291 - DEBUG - 3/10 [40.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 3, 'quantity': 1, 'unit_price': 0.0} [id 918dcabb-764b-409b-bee1-f0c8cc24dee7]
+2019-12-10 10:46:26,292 - DEBUG - 3/10 [40.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,292 - DEBUG - 3/10 [40.00%]: Moved 1 units of p0 from m_4 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,292 - DEBUG - 3/10 [40.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 3, 'quantity': 1, 'unit_price': 0.0} [id 32f77aa8-4163-456e-889e-418e16eed880]
+2019-12-10 10:46:26,292 - DEBUG - 3/10 [40.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,292 - DEBUG - 3/10 [40.00%]: Moved 1 units of p0 from m_3 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,292 - DEBUG - 3/10 [40.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 3, 'quantity': 1, 'unit_price': 0.0} [id fa49187b-ef2c-4982-80e7-43e462e69c34]
+2019-12-10 10:46:26,292 - DEBUG - 3/10 [40.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,292 - DEBUG - 3/10 [40.00%]: Moved 1 units of p0 from m_1 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,292 - DEBUG - 3/10 [40.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 3, 'quantity': 1, 'unit_price': 0.0} [id 3e2232b3-b0cf-4d8a-ada6-01f66e5f357d]
+2019-12-10 10:46:26,292 - DEBUG - 3/10 [40.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,292 - DEBUG - 3/10 [40.00%]: Moved 1 units of p0 from m_2 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,292 - DEBUG - 3/10 [40.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 3, 'quantity': 1, 'unit_price': 0.0} [id b1ce8368-f83b-4263-ab3a-a597c9896cdb]
+2019-12-10 10:46:26,292 - DEBUG - 3/10 [40.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,292 - DEBUG - 3/10 [40.00%]: Moved 1 units of p0 from m_0 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,292 - DEBUG - 3/10 [40.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 3, 'quantity': 1, 'unit_price': 0.0} [id f2ec2b93-23b9-48a1-b3c5-777762b15c31]
+2019-12-10 10:46:26,292 - DEBUG - 3/10 [40.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,292 - DEBUG - 3/10 [40.00%]: Moved 1 units of p0 from m_4 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,293 - DEBUG - 3/10 [40.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 3, 'quantity': 1, 'unit_price': 0.0} [id df3a0a78-ae8e-4df3-b809-7a26a45c4961]
+2019-12-10 10:46:26,293 - DEBUG - 3/10 [40.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,293 - DEBUG - 3/10 [40.00%]: Moved 1 units of p0 from m_3 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,293 - DEBUG - 3/10 [40.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 3, 'quantity': 1, 'unit_price': 0.0} [id 082b0513-c9e9-46d9-9716-91e878fbb848]
+2019-12-10 10:46:26,293 - DEBUG - 3/10 [40.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,293 - DEBUG - 3/10 [40.00%]: Moved 1 units of p0 from m_0 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,293 - DEBUG - 3/10 [40.00%]: phriSKnI9x1I@f1_0 (Factory f1_0): money=997.5351267813367, storage={0: 8, 1: 2}, loans=0.0
+2019-12-10 10:46:26,293 - DEBUG - 3/10 [40.00%]: PRODUCTION>> phriSKnI9x1I@f1_0: 4: started/finished run process 0 @ 4 steps: 3~3 balance: -1.2324366093316987, {0: -1}
+2019-12-10 10:46:26,294 - DEBUG - 3/10 [40.00%]: PRODUCTION>> phriSKnI9x1I@f1_0: Updates: balance: 0.0, {1: 1}
+2019-12-10 10:46:26,294 - DEBUG - 3/10 [40.00%]: 98lpvEHsdGL1@f1_1 (Factory f1_1): money=997.3817555229066, storage={0: 8, 1: 2}, loans=0.0
+2019-12-10 10:46:26,294 - DEBUG - 3/10 [40.00%]: PRODUCTION>> 98lpvEHsdGL1@f1_1: 1: started/finished run process 0 @ 1 steps: 3~3 balance: -1.3091222385467192, {0: -1}
+2019-12-10 10:46:26,294 - DEBUG - 3/10 [40.00%]: PRODUCTION>> 98lpvEHsdGL1@f1_1: Updates: balance: 0.0, {1: 1}
+2019-12-10 10:46:26,294 - DEBUG - 3/10 [40.00%]: c_0: money=0, storage={}
+2019-12-10 10:46:26,294 - DEBUG - 3/10 [40.00%]: c_1: money=0, storage={}
+2019-12-10 10:46:26,294 - DEBUG - 3/10 [40.00%]: c_2: money=0, storage={}
+2019-12-10 10:46:26,295 - DEBUG - 3/10 [40.00%]: c_3: money=0, storage={}
+2019-12-10 10:46:26,295 - DEBUG - 3/10 [40.00%]: c_4: money=0, storage={}
+2019-12-10 10:46:26,295 - DEBUG - 3/10 [40.00%]: m_0: money=0.0, storage={0: -4}
+2019-12-10 10:46:26,295 - DEBUG - 3/10 [40.00%]: m_1: money=0.0, storage={0: -4}
+2019-12-10 10:46:26,295 - DEBUG - 3/10 [40.00%]: m_2: money=0.0, storage={0: -4}
+2019-12-10 10:46:26,295 - DEBUG - 3/10 [40.00%]: m_3: money=0.0, storage={0: -4}
+2019-12-10 10:46:26,295 - DEBUG - 3/10 [40.00%]: m_4: money=0.0, storage={0: -4}
+2019-12-10 10:46:26,296 - INFO - 4/10 [50.00%]: 0 Negotiations/14 Agents
+2019-12-10 10:46:26,300 - DEBUG - 4/10 [50.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 4, 'quantity': 2, 'unit_price': 0.0} [id 8fca2304-f8ff-46f9-a896-126ef5884cf1]
+2019-12-10 10:46:26,300 - DEBUG - 4/10 [50.00%]: f1_1 received 2 of 0
+2019-12-10 10:46:26,300 - DEBUG - 4/10 [50.00%]: Moved 2 units of p0 from m_4 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,300 - DEBUG - 4/10 [50.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 4, 'quantity': 2, 'unit_price': 0.0} [id c68aa6ce-f7f2-4575-bd6f-e4552c547e8a]
+2019-12-10 10:46:26,300 - DEBUG - 4/10 [50.00%]: f1_1 received 2 of 0
+2019-12-10 10:46:26,300 - DEBUG - 4/10 [50.00%]: Moved 2 units of p0 from m_0 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,300 - DEBUG - 4/10 [50.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 4, 'quantity': 1, 'unit_price': 0.0} [id 6c296ba4-022c-4b2a-a502-8b519ffd2780]
+2019-12-10 10:46:26,300 - DEBUG - 4/10 [50.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,300 - DEBUG - 4/10 [50.00%]: Moved 1 units of p0 from m_2 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 4, 'quantity': 1, 'unit_price': 0.0} [id be55637a-6464-4cb9-8662-ef57113dd1ed]
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: Moved 1 units of p0 from m_2 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 4, 'quantity': 1, 'unit_price': 0.0} [id c9c88d08-4787-434a-bef9-7f12bca1b6fd]
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: Moved 1 units of p0 from m_3 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 4, 'quantity': 1, 'unit_price': 0.0} [id 7e35d442-327a-479a-8d34-e7d0e2a8a1f1]
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: Moved 1 units of p0 from m_0 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 4, 'quantity': 2, 'unit_price': 0.0} [id f5202c69-1c00-41a7-9c88-9f117d62f819]
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: f1_1 received 2 of 0
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: Moved 2 units of p0 from m_1 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 4, 'quantity': 1, 'unit_price': 0.0} [id 6ed0dd78-c40b-4dd1-8194-2f305c325c13]
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: Moved 1 units of p0 from m_3 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 4, 'quantity': 2, 'unit_price': 0.0} [id 4c9b7f29-4dae-457d-9d50-57042d4ce020]
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: f1_1 received 2 of 0
+2019-12-10 10:46:26,301 - DEBUG - 4/10 [50.00%]: Moved 2 units of p0 from m_2 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 4, 'quantity': 1, 'unit_price': 0.0} [id d3f2aea9-be11-4e3a-a43c-2e4bcb3b4430]
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: Moved 1 units of p0 from m_1 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 4, 'quantity': 1, 'unit_price': 0.0} [id 8b628339-608e-4aca-a78e-c81298ffc7cd]
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: Moved 1 units of p0 from m_4 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 4, 'quantity': 1, 'unit_price': 0.0} [id 9b7ad756-8c14-4a85-8629-c1569b0c1937]
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: Moved 1 units of p0 from m_1 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 4, 'quantity': 1, 'unit_price': 0.0} [id b6cff991-afd6-4b0f-bbc1-ac23639e1209]
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: Moved 1 units of p0 from m_0 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 4, 'quantity': 1, 'unit_price': 0.0} [id 1cee0d78-1709-434b-8e17-8ef26604757a]
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: Moved 1 units of p0 from m_4 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 4, 'quantity': 2, 'unit_price': 0.0} [id 2cf4b719-b06a-45f2-becd-c13399c12d7f]
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: f1_1 received 2 of 0
+2019-12-10 10:46:26,302 - DEBUG - 4/10 [50.00%]: Moved 2 units of p0 from m_3 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,303 - DEBUG - 4/10 [50.00%]: phriSKnI9x1I@f1_0 (Factory f1_0): money=996.302690172005, storage={0: 12, 1: 3}, loans=0.0
+2019-12-10 10:46:26,303 - DEBUG - 4/10 [50.00%]: PRODUCTION>> phriSKnI9x1I@f1_0: 4: started/finished run process 0 @ 4 steps: 4~4 balance: -1.2324366093316987, {0: -1}
+2019-12-10 10:46:26,303 - DEBUG - 4/10 [50.00%]: PRODUCTION>> phriSKnI9x1I@f1_0: Updates: balance: 0.0, {1: 1}
+2019-12-10 10:46:26,303 - DEBUG - 4/10 [50.00%]: 98lpvEHsdGL1@f1_1 (Factory f1_1): money=996.0726332843599, storage={0: 22, 1: 3}, loans=0.0
+2019-12-10 10:46:26,303 - DEBUG - 4/10 [50.00%]: PRODUCTION>> 98lpvEHsdGL1@f1_1: 1: started/finished run process 0 @ 1 steps: 4~4 balance: -1.3091222385467192, {0: -1}
+2019-12-10 10:46:26,303 - DEBUG - 4/10 [50.00%]: PRODUCTION>> 98lpvEHsdGL1@f1_1: Updates: balance: 0.0, {1: 1}
+2019-12-10 10:46:26,303 - DEBUG - 4/10 [50.00%]: c_0: money=0, storage={}
+2019-12-10 10:46:26,303 - DEBUG - 4/10 [50.00%]: c_1: money=0, storage={}
+2019-12-10 10:46:26,303 - DEBUG - 4/10 [50.00%]: c_2: money=0, storage={}
+2019-12-10 10:46:26,303 - DEBUG - 4/10 [50.00%]: c_3: money=0, storage={}
+2019-12-10 10:46:26,303 - DEBUG - 4/10 [50.00%]: c_4: money=0, storage={}
+2019-12-10 10:46:26,303 - DEBUG - 4/10 [50.00%]: m_0: money=0.0, storage={0: -8}
+2019-12-10 10:46:26,303 - DEBUG - 4/10 [50.00%]: m_1: money=0.0, storage={0: -8}
+2019-12-10 10:46:26,303 - DEBUG - 4/10 [50.00%]: m_2: money=0.0, storage={0: -8}
+2019-12-10 10:46:26,304 - DEBUG - 4/10 [50.00%]: m_3: money=0.0, storage={0: -8}
+2019-12-10 10:46:26,304 - DEBUG - 4/10 [50.00%]: m_4: money=0.0, storage={0: -8}
+2019-12-10 10:46:26,304 - INFO - 5/10 [60.00%]: 0 Negotiations/14 Agents
+2019-12-10 10:46:26,306 - DEBUG - 5/10 [60.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 5, 'quantity': 2, 'unit_price': 0.0} [id 8709efc8-c0b9-4c04-9b89-fcc07133e5ce]
+2019-12-10 10:46:26,306 - DEBUG - 5/10 [60.00%]: f1_1 received 2 of 0
+2019-12-10 10:46:26,306 - DEBUG - 5/10 [60.00%]: Moved 2 units of p0 from m_1 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,306 - DEBUG - 5/10 [60.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 5, 'quantity': 2, 'unit_price': 0.0} [id f06b8c60-7dd8-477a-988e-9e6c08ea17fa]
+2019-12-10 10:46:26,306 - DEBUG - 5/10 [60.00%]: f1_1 received 2 of 0
+2019-12-10 10:46:26,306 - DEBUG - 5/10 [60.00%]: Moved 2 units of p0 from m_3 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,306 - DEBUG - 5/10 [60.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 5, 'quantity': 1, 'unit_price': 0.0} [id 7515d0fb-c0de-45f8-a56d-b5cd04dbdc59]
+2019-12-10 10:46:26,306 - DEBUG - 5/10 [60.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,306 - DEBUG - 5/10 [60.00%]: Moved 1 units of p0 from m_3 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,307 - DEBUG - 5/10 [60.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 5, 'quantity': 1, 'unit_price': 0.0} [id fad1c4a1-d352-4326-9d91-892c137e197e]
+2019-12-10 10:46:26,307 - DEBUG - 5/10 [60.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,307 - DEBUG - 5/10 [60.00%]: Moved 1 units of p0 from m_4 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,307 - DEBUG - 5/10 [60.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 5, 'quantity': 1, 'unit_price': 0.0} [id 44e189c2-24bb-4e32-b006-8d3124392ab2]
+2019-12-10 10:46:26,307 - DEBUG - 5/10 [60.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,307 - DEBUG - 5/10 [60.00%]: Moved 1 units of p0 from m_0 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,307 - DEBUG - 5/10 [60.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 5, 'quantity': 1, 'unit_price': 0.0} [id 6bf61b99-4a48-4ba3-887c-ea83d5b4eede]
+2019-12-10 10:46:26,307 - DEBUG - 5/10 [60.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,307 - DEBUG - 5/10 [60.00%]: Moved 1 units of p0 from m_2 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,307 - DEBUG - 5/10 [60.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 5, 'quantity': 2, 'unit_price': 0.0} [id a81ecdaf-7580-4bd6-a10a-1a141d740e3e]
+2019-12-10 10:46:26,307 - DEBUG - 5/10 [60.00%]: f1_1 received 2 of 0
+2019-12-10 10:46:26,307 - DEBUG - 5/10 [60.00%]: Moved 2 units of p0 from m_2 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,307 - DEBUG - 5/10 [60.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 5, 'quantity': 2, 'unit_price': 0.0} [id 110e5a6f-de55-461d-a1ce-f19e4595890e]
+2019-12-10 10:46:26,307 - DEBUG - 5/10 [60.00%]: f1_1 received 2 of 0
+2019-12-10 10:46:26,308 - DEBUG - 5/10 [60.00%]: Moved 2 units of p0 from m_0 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,308 - DEBUG - 5/10 [60.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 5, 'quantity': 1, 'unit_price': 0.0} [id cc60f9fc-c1ac-4538-8f4b-da5c6e0eb598]
+2019-12-10 10:46:26,308 - DEBUG - 5/10 [60.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,308 - DEBUG - 5/10 [60.00%]: Moved 1 units of p0 from m_2 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,308 - DEBUG - 5/10 [60.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 5, 'quantity': 1, 'unit_price': 0.0} [id bc65733d-52de-4a19-b1ee-1d104a639a0f]
+2019-12-10 10:46:26,308 - DEBUG - 5/10 [60.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,308 - DEBUG - 5/10 [60.00%]: Moved 1 units of p0 from m_1 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,308 - DEBUG - 5/10 [60.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 5, 'quantity': 1, 'unit_price': 0.0} [id 5beb3dfe-ce7b-4ef5-a128-4c1b391f5e86]
+2019-12-10 10:46:26,308 - DEBUG - 5/10 [60.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,308 - DEBUG - 5/10 [60.00%]: Moved 1 units of p0 from m_0 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,308 - DEBUG - 5/10 [60.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 5, 'quantity': 1, 'unit_price': 0.0} [id d73d3513-2e90-4668-a7c5-0bf30e054286]
+2019-12-10 10:46:26,308 - DEBUG - 5/10 [60.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,308 - DEBUG - 5/10 [60.00%]: Moved 1 units of p0 from m_4 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,308 - DEBUG - 5/10 [60.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 5, 'quantity': 2, 'unit_price': 0.0} [id a2bb9720-0327-423e-ab17-49c5ca8ca696]
+2019-12-10 10:46:26,308 - DEBUG - 5/10 [60.00%]: f1_1 received 2 of 0
+2019-12-10 10:46:26,308 - DEBUG - 5/10 [60.00%]: Moved 2 units of p0 from m_4 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,309 - DEBUG - 5/10 [60.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 5, 'quantity': 1, 'unit_price': 0.0} [id a93a11e3-d3fc-4c2d-9c3f-475043ec5475]
+2019-12-10 10:46:26,309 - DEBUG - 5/10 [60.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,309 - DEBUG - 5/10 [60.00%]: Moved 1 units of p0 from m_1 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,309 - DEBUG - 5/10 [60.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 5, 'quantity': 1, 'unit_price': 0.0} [id c53bf546-b766-494b-983f-5120befc5111]
+2019-12-10 10:46:26,309 - DEBUG - 5/10 [60.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,309 - DEBUG - 5/10 [60.00%]: Moved 1 units of p0 from m_3 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,309 - DEBUG - 5/10 [60.00%]: phriSKnI9x1I@f1_0 (Factory f1_0): money=995.0702535626733, storage={0: 16, 1: 4}, loans=0.0
+2019-12-10 10:46:26,309 - DEBUG - 5/10 [60.00%]: PRODUCTION>> phriSKnI9x1I@f1_0: 4: started/finished run process 0 @ 4 steps: 5~5 balance: -1.2324366093316987, {0: -1}
+2019-12-10 10:46:26,309 - DEBUG - 5/10 [60.00%]: PRODUCTION>> phriSKnI9x1I@f1_0: Updates: balance: 0.0, {1: 1}
+2019-12-10 10:46:26,309 - DEBUG - 5/10 [60.00%]: 98lpvEHsdGL1@f1_1 (Factory f1_1): money=993.0211178028977, storage={0: 35, 1: 5}, loans=0.0
+2019-12-10 10:46:26,309 - DEBUG - 5/10 [60.00%]: PRODUCTION>> 98lpvEHsdGL1@f1_1: 1: started/finished run process 0 @ 1 steps: 5~5 balance: -1.3091222385467192, {0: -1}
+2019-12-10 10:46:26,310 - DEBUG - 5/10 [60.00%]: PRODUCTION>> 98lpvEHsdGL1@f1_1: 5: started/finished run process 0 @ 5 steps: 5~5 balance: -1.7423932429154507, {0: -1}
+2019-12-10 10:46:26,310 - DEBUG - 5/10 [60.00%]: PRODUCTION>> 98lpvEHsdGL1@f1_1: Updates: balance: 0.0, {1: 2}
+2019-12-10 10:46:26,310 - DEBUG - 5/10 [60.00%]: c_0: money=0, storage={}
+2019-12-10 10:46:26,310 - DEBUG - 5/10 [60.00%]: c_1: money=0, storage={}
+2019-12-10 10:46:26,310 - DEBUG - 5/10 [60.00%]: c_2: money=0, storage={}
+2019-12-10 10:46:26,310 - DEBUG - 5/10 [60.00%]: c_3: money=0, storage={}
+2019-12-10 10:46:26,310 - DEBUG - 5/10 [60.00%]: c_4: money=0, storage={}
+2019-12-10 10:46:26,310 - DEBUG - 5/10 [60.00%]: m_0: money=0.0, storage={0: -12}
+2019-12-10 10:46:26,310 - DEBUG - 5/10 [60.00%]: m_1: money=0.0, storage={0: -12}
+2019-12-10 10:46:26,310 - DEBUG - 5/10 [60.00%]: m_2: money=0.0, storage={0: -12}
+2019-12-10 10:46:26,310 - DEBUG - 5/10 [60.00%]: m_3: money=0.0, storage={0: -12}
+2019-12-10 10:46:26,310 - DEBUG - 5/10 [60.00%]: m_4: money=0.0, storage={0: -12}
+2019-12-10 10:46:26,311 - INFO - 6/10 [70.00%]: 0 Negotiations/14 Agents
+2019-12-10 10:46:26,311 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 6, 'quantity': 2, 'unit_price': 0.0} [id b637c3e8-7393-4c1a-beed-382b0415088b]
+2019-12-10 10:46:26,311 - DEBUG - 6/10 [70.00%]: f1_0 received 2 of 0
+2019-12-10 10:46:26,311 - DEBUG - 6/10 [70.00%]: Moved 2 units of p0 from m_3 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,311 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 6, 'quantity': 2, 'unit_price': 0.0} [id 9b19530a-e7e3-4610-8ad6-358f3c5f29f3]
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: f1_0 received 2 of 0
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: Moved 2 units of p0 from m_4 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 6, 'quantity': 2, 'unit_price': 0.0} [id 9cc38432-9dd3-4bd8-9e6b-165eadf99d15]
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: f1_0 received 2 of 0
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: Moved 2 units of p0 from m_0 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 6, 'quantity': 1, 'unit_price': 0.0} [id 0d3f6f2d-9022-4b22-843b-a3800948b95e]
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: Moved 1 units of p0 from m_3 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 6, 'quantity': 1, 'unit_price': 0.0} [id 8c0de58d-7275-4d86-af80-e3a1fff62727]
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: Moved 1 units of p0 from m_4 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 6, 'quantity': 1, 'unit_price': 0.0} [id 0ad704ac-f6bc-485d-94af-be49a5579a30]
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: Moved 1 units of p0 from m_0 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 6, 'quantity': 1, 'unit_price': 0.0} [id 9034fb87-e620-4737-a43c-8906a24a71a8]
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: Moved 1 units of p0 from m_4 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 6, 'quantity': 1, 'unit_price': 0.0} [id a718c18d-e410-4478-9f2f-39cf71ac74ba]
+2019-12-10 10:46:26,312 - DEBUG - 6/10 [70.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: Moved 1 units of p0 from m_4 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 6, 'quantity': 1, 'unit_price': 0.0} [id 3ca47ffa-3bfa-4c36-b378-f2f897b66493]
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: Moved 1 units of p0 from m_2 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 6, 'quantity': 1, 'unit_price': 0.0} [id 3ac283f5-b9ba-4abf-a5c0-47734e456db1]
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: Moved 1 units of p0 from m_0 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 6, 'quantity': 2, 'unit_price': 0.0} [id ec420df5-5e75-4f91-8a5f-9627eac8b924]
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: f1_1 received 2 of 0
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: Moved 2 units of p0 from m_0 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 6, 'quantity': 1, 'unit_price': 0.0} [id de71ba39-b7b5-4927-afdb-ac9e7694e93b]
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: Moved 1 units of p0 from m_3 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 6, 'quantity': 2, 'unit_price': 0.0} [id 7751744d-5c1d-4d0d-baf9-2a6b0e65a649]
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: f1_1 received 2 of 0
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: Moved 2 units of p0 from m_4 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 6, 'quantity': 1, 'unit_price': 0.0} [id 1a0706da-6551-4eb4-be28-6b8a2b38bed8]
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: Moved 1 units of p0 from m_3 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,313 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 6, 'quantity': 2, 'unit_price': 0.0} [id 5e62743e-9c3a-4955-90bf-eb06cf630660]
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: f1_1 received 2 of 0
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: Moved 2 units of p0 from m_1 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 6, 'quantity': 1, 'unit_price': 0.0} [id 75258f42-3287-43bf-bbd9-7288cbb2e2cf]
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: Moved 1 units of p0 from m_2 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 6, 'quantity': 1, 'unit_price': 0.0} [id 028c0ab4-3dfa-4a9a-91c4-73da1ead0bb3]
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: Moved 1 units of p0 from m_1 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 6, 'quantity': 1, 'unit_price': 0.0} [id cca5509b-3a45-41d8-a2c0-54ca90574f06]
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: Moved 1 units of p0 from m_2 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 6, 'quantity': 2, 'unit_price': 0.0} [id 0af87b71-7c33-4a72-b5d5-28fd838b9d41]
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: f1_1 received 2 of 0
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: Moved 2 units of p0 from m_2 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 6, 'quantity': 2, 'unit_price': 0.0} [id 9e584e79-0808-41ce-9ab5-e6e1c14b8858]
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: f1_1 received 2 of 0
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: Moved 2 units of p0 from m_3 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 6, 'quantity': 2, 'unit_price': 0.0} [id 98124f0e-edf1-4d1e-af3e-d51fdbf23848]
+2019-12-10 10:46:26,314 - DEBUG - 6/10 [70.00%]: f1_0 received 2 of 0
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: Moved 2 units of p0 from m_2 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 6, 'quantity': 1, 'unit_price': 0.0} [id 9359dc3d-2e7b-4baf-b76d-5d016fcea180]
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: Moved 1 units of p0 from m_0 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 6, 'quantity': 2, 'unit_price': 0.0} [id aa77ce52-57f1-4edb-b8bb-fd0a65f61d20]
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: f1_0 received 2 of 0
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: Moved 2 units of p0 from m_1 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 6, 'quantity': 1, 'unit_price': 0.0} [id f9c1e2b9-5033-47b3-a817-5fd0e4c27702]
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: Moved 1 units of p0 from m_1 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 6, 'quantity': 1, 'unit_price': 0.0} [id f67474cd-fd1a-4bcd-8702-70081685c99d]
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: Moved 1 units of p0 from m_1 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: f1_0 sent -2 of 1
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: f1_0 received -12.0 dollars
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: Moved 2 units of p1 from phriSKnI9x1I@f1_0 to c_1 for 12.0 dollars
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: f1_1 sent -1 of 1
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: f1_1 received -6.0 dollars
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: Moved 1 units of p1 from 98lpvEHsdGL1@f1_1 to c_3 for 6.0 dollars
+2019-12-10 10:46:26,315 - DEBUG - 6/10 [70.00%]: f1_1 sent -1 of 1
+2019-12-10 10:46:26,316 - DEBUG - 6/10 [70.00%]: f1_1 received -6.0 dollars
+2019-12-10 10:46:26,316 - DEBUG - 6/10 [70.00%]: Moved 1 units of p1 from 98lpvEHsdGL1@f1_1 to c_0 for 6.0 dollars
+2019-12-10 10:46:26,316 - DEBUG - 6/10 [70.00%]: f1_0 sent -1 of 1
+2019-12-10 10:46:26,316 - DEBUG - 6/10 [70.00%]: f1_0 received -6.0 dollars
+2019-12-10 10:46:26,316 - DEBUG - 6/10 [70.00%]: Moved 1 units of p1 from phriSKnI9x1I@f1_0 to c_4 for 6.0 dollars
+2019-12-10 10:46:26,316 - DEBUG - 6/10 [70.00%]: phriSKnI9x1I@f1_0 (Factory f1_0): money=1011.8378169533416, storage={0: 30, 1: 2}, loans=0.0
+2019-12-10 10:46:26,316 - DEBUG - 6/10 [70.00%]: PRODUCTION>> phriSKnI9x1I@f1_0: 4: started/finished run process 0 @ 4 steps: 6~6 balance: -1.2324366093316987, {0: -1}
+2019-12-10 10:46:26,316 - DEBUG - 6/10 [70.00%]: PRODUCTION>> phriSKnI9x1I@f1_0: Updates: balance: 0.0, {1: 1}
+2019-12-10 10:46:26,316 - DEBUG - 6/10 [70.00%]: 98lpvEHsdGL1@f1_1 (Factory f1_1): money=1001.9696023214356, storage={0: 53, 1: 5}, loans=0.0
+2019-12-10 10:46:26,316 - DEBUG - 6/10 [70.00%]: PRODUCTION>> 98lpvEHsdGL1@f1_1: 1: started/finished run process 0 @ 1 steps: 6~6 balance: -1.3091222385467192, {0: -1}
+2019-12-10 10:46:26,316 - DEBUG - 6/10 [70.00%]: PRODUCTION>> 98lpvEHsdGL1@f1_1: 5: started/finished run process 0 @ 5 steps: 6~6 balance: -1.7423932429154507, {0: -1}
+2019-12-10 10:46:26,316 - DEBUG - 6/10 [70.00%]: PRODUCTION>> 98lpvEHsdGL1@f1_1: Updates: balance: 0.0, {1: 2}
+2019-12-10 10:46:26,316 - DEBUG - 6/10 [70.00%]: c_0: money=-6.0, storage={1: 1}
+2019-12-10 10:46:26,316 - DEBUG - 6/10 [70.00%]: c_1: money=-12.0, storage={1: 2}
+2019-12-10 10:46:26,316 - DEBUG - 6/10 [70.00%]: c_2: money=0, storage={}
+2019-12-10 10:46:26,317 - DEBUG - 6/10 [70.00%]: c_3: money=-6.0, storage={1: 1}
+2019-12-10 10:46:26,317 - DEBUG - 6/10 [70.00%]: c_4: money=-6.0, storage={1: 1}
+2019-12-10 10:46:26,317 - DEBUG - 6/10 [70.00%]: m_0: money=0.0, storage={0: -19}
+2019-12-10 10:46:26,317 - DEBUG - 6/10 [70.00%]: m_1: money=0.0, storage={0: -19}
+2019-12-10 10:46:26,317 - DEBUG - 6/10 [70.00%]: m_2: money=0.0, storage={0: -19}
+2019-12-10 10:46:26,317 - DEBUG - 6/10 [70.00%]: m_3: money=0.0, storage={0: -19}
+2019-12-10 10:46:26,317 - DEBUG - 6/10 [70.00%]: m_4: money=0.0, storage={0: -19}
+2019-12-10 10:46:26,317 - INFO - 7/10 [80.00%]: 0 Negotiations/14 Agents
+2019-12-10 10:46:26,317 - DEBUG - 7/10 [80.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 7, 'quantity': 2, 'unit_price': 0.0} [id 9aa80f5c-7634-4025-b04b-1e135fa74aa6]
+2019-12-10 10:46:26,317 - DEBUG - 7/10 [80.00%]: f1_0 received 2 of 0
+2019-12-10 10:46:26,317 - DEBUG - 7/10 [80.00%]: Moved 2 units of p0 from m_3 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,317 - DEBUG - 7/10 [80.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 7, 'quantity': 1, 'unit_price': 0.0} [id 0165549f-a1be-4799-ad61-da4a53fb1e4e]
+2019-12-10 10:46:26,318 - DEBUG - 7/10 [80.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,318 - DEBUG - 7/10 [80.00%]: Moved 1 units of p0 from m_0 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,318 - DEBUG - 7/10 [80.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 7, 'quantity': 1, 'unit_price': 0.0} [id 540f962c-8b5b-40b9-9a10-8db90aacf8de]
+2019-12-10 10:46:26,318 - DEBUG - 7/10 [80.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,318 - DEBUG - 7/10 [80.00%]: Moved 1 units of p0 from m_1 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,318 - DEBUG - 7/10 [80.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 7, 'quantity': 1, 'unit_price': 0.0} [id 4160a389-a53b-4483-a1e1-de18c318ce5d]
+2019-12-10 10:46:26,318 - DEBUG - 7/10 [80.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,318 - DEBUG - 7/10 [80.00%]: Moved 1 units of p0 from m_1 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,318 - DEBUG - 7/10 [80.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 7, 'quantity': 2, 'unit_price': 0.0} [id 3babd02d-2fbc-45de-a572-abe1a65bb1f2]
+2019-12-10 10:46:26,318 - DEBUG - 7/10 [80.00%]: f1_0 received 2 of 0
+2019-12-10 10:46:26,318 - DEBUG - 7/10 [80.00%]: Moved 2 units of p0 from m_2 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,318 - DEBUG - 7/10 [80.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 7, 'quantity': 1, 'unit_price': 0.0} [id c26ef9c7-9231-4135-88f5-80154358e73d]
+2019-12-10 10:46:26,318 - DEBUG - 7/10 [80.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,318 - DEBUG - 7/10 [80.00%]: Moved 1 units of p0 from m_3 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,318 - DEBUG - 7/10 [80.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 7, 'quantity': 2, 'unit_price': 0.0} [id 7dce2709-a230-48f1-bf82-fff4bf7fe7a5]
+2019-12-10 10:46:26,318 - DEBUG - 7/10 [80.00%]: f1_0 received 2 of 0
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: Moved 2 units of p0 from m_0 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: Contract with 0.0 unit_price: m_1-3c6a3f3d-2d75-4062-8028-bc7bac51b833, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 7, 'quantity': 2, 'unit_price': 0.0} [id e286e85b-e5ba-43e0-83b6-4a74dab67bf5]
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: f1_0 received 2 of 0
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: Moved 2 units of p0 from m_1 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 7, 'quantity': 2, 'unit_price': 0.0} [id 04c70874-6456-4891-9e51-0c652ea363d2]
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: f1_0 received 2 of 0
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: Moved 2 units of p0 from m_4 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 7, 'quantity': 1, 'unit_price': 0.0} [id b8d16e97-6205-4b66-8202-6a916945d318]
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: Moved 1 units of p0 from m_2 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 7, 'quantity': 1, 'unit_price': 0.0} [id 3d3ab8ed-020f-41a3-ae8d-6098178fc4ad]
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: Moved 1 units of p0 from m_4 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: Contract with 0.0 unit_price: m_4-d8471aba-9bcf-4aee-a39a-81f9c0d9d7df, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 7, 'quantity': 1, 'unit_price': 0.0} [id d69f4473-d3a9-4ab9-9da0-796aa6a89b6a]
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: Moved 1 units of p0 from m_4 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: Contract with 0.0 unit_price: m_0-a2781e83-0938-431c-a995-ae8e953f4852, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 7, 'quantity': 1, 'unit_price': 0.0} [id cb59fef2-d0b7-4336-a4db-4186c3f6604e]
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: Moved 1 units of p0 from m_0 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,319 - DEBUG - 7/10 [80.00%]: Contract with 0.0 unit_price: m_3-3f5b37ab-37d9-4acc-8b19-029167eacbef, phriSKnI9x1I@f1_0-7be19cbb-ef80-4af2-b19e-3e303249fe4a agreed on {'time': 7, 'quantity': 1, 'unit_price': 0.0} [id ceb3929f-d366-40fb-aa0d-c294a43a4b0c]
+2019-12-10 10:46:26,320 - DEBUG - 7/10 [80.00%]: f1_0 received 1 of 0
+2019-12-10 10:46:26,320 - DEBUG - 7/10 [80.00%]: Moved 1 units of p0 from m_3 to phriSKnI9x1I@f1_0 for 0.0 dollars
+2019-12-10 10:46:26,320 - DEBUG - 7/10 [80.00%]: Contract with 0.0 unit_price: m_2-61e25e19-21e9-4dd5-bcda-8e7da3d403a5, 98lpvEHsdGL1@f1_1-aa586456-4c01-4fd9-823f-f1ef1996579a agreed on {'time': 7, 'quantity': 1, 'unit_price': 0.0} [id 49d3d29d-adb1-4ace-accc-79a7e25b79fd]
+2019-12-10 10:46:26,320 - DEBUG - 7/10 [80.00%]: f1_1 received 1 of 0
+2019-12-10 10:46:26,320 - DEBUG - 7/10 [80.00%]: Moved 1 units of p0 from m_2 to 98lpvEHsdGL1@f1_1 for 0.0 dollars
+2019-12-10 10:46:26,320 - DEBUG - 7/10 [80.00%]: f1_0 sent -2 of 1
+2019-12-10 10:46:26,320 - DEBUG - 7/10 [80.00%]: f1_0 received -12.0 dollars
+2019-12-10 10:46:26,320 - DEBUG - 7/10 [80.00%]: Moved 2 units of p1 from phriSKnI9x1I@f1_0 to c_3 for 12.0 dollars
+2019-12-10 10:46:26,320 - DEBUG - 7/10 [80.00%]: Penalty: phriSKnI9x1I@f1_0 paid 2.4000000000000004 to society
+2019-12-10 10:46:26,320 - DEBUG - 7/10 [80.00%]: f1_0 paid 2.4000000000000004 dollars
+2019-12-10 10:46:26,320 - DEBUG - 7/10 [80.00%]: Contract 11196022-2e13-4022-bade-ad2d0936456c has no transfers
+2019-12-10 10:46:26,320 - DEBUG - 7/10 [80.00%]: f1_1 sent -1 of 1
+2019-12-10 10:46:26,320 - DEBUG - 7/10 [80.00%]: f1_1 received -6.0 dollars
+2019-12-10 10:46:26,320 - DEBUG - 7/10 [80.00%]: Moved 1 units of p1 from 98lpvEHsdGL1@f1_1 to c_1 for 6.0 dollars
+2019-12-10 10:46:26,320 - DEBUG - 7/10 [80.00%]: f1_1 sent -1 of 1
+2019-12-10 10:46:26,321 - DEBUG - 7/10 [80.00%]: f1_1 received -6.0 dollars
+2019-12-10 10:46:26,321 - DEBUG - 7/10 [80.00%]: Moved 1 units of p1 from 98lpvEHsdGL1@f1_1 to c_2 for 6.0 dollars
+2019-12-10 10:46:26,321 - DEBUG - 7/10 [80.00%]: phriSKnI9x1I@f1_0 (Factory f1_0): money=1018.5587097844458, storage={0: 43, 1: 2}, loans=0.0
+2019-12-10 10:46:26,321 - DEBUG - 7/10 [80.00%]: PRODUCTION>> phriSKnI9x1I@f1_0: 0: started/finished run process 0 @ 0 steps: 7~7 balance: -1.6466705595642064, {0: -1}
+2019-12-10 10:46:26,321 - DEBUG - 7/10 [80.00%]: PRODUCTION>> phriSKnI9x1I@f1_0: 4: started/finished run process 0 @ 4 steps: 7~7 balance: -1.2324366093316987, {0: -1}
+2019-12-10 10:46:26,321 - DEBUG - 7/10 [80.00%]: PRODUCTION>> phriSKnI9x1I@f1_0: Updates: balance: 0.0, {1: 2}
+2019-12-10 10:46:26,321 - DEBUG - 7/10 [80.00%]: 98lpvEHsdGL1@f1_1 (Factory f1_1): money=1010.9180868399734, storage={0: 56, 1: 5}, loans=0.0
+2019-12-10 10:46:26,321 - DEBUG - 7/10 [80.00%]: PRODUCTION>> 98lpvEHsdGL1@f1_1: 1: started/finished run process 0 @ 1 steps: 7~7 balance: -1.3091222385467192, {0: -1}
+2019-12-10 10:46:26,321 - DEBUG - 7/10 [80.00%]: PRODUCTION>> 98lpvEHsdGL1@f1_1: 5: started/finished run process 0 @ 5 steps: 7~7 balance: -1.7423932429154507, {0: -1}
+2019-12-10 10:46:26,321 - DEBUG - 7/10 [80.00%]: PRODUCTION>> 98lpvEHsdGL1@f1_1: Updates: balance: 0.0, {1: 2}
+2019-12-10 10:46:26,321 - DEBUG - 7/10 [80.00%]: c_0: money=-6.0, storage={1: 1}
+2019-12-10 10:46:26,321 - DEBUG - 7/10 [80.00%]: c_1: money=-18.0, storage={1: 3}
+2019-12-10 10:46:26,321 - DEBUG - 7/10 [80.00%]: c_2: money=-6.0, storage={1: 1}
+2019-12-10 10:46:26,322 - DEBUG - 7/10 [80.00%]: c_3: money=-18.0, storage={1: 3}
+2019-12-10 10:46:26,322 - DEBUG - 7/10 [80.00%]: c_4: money=-6.0, storage={1: 1}
+2019-12-10 10:46:26,322 - DEBUG - 7/10 [80.00%]: m_0: money=0.0, storage={0: -23}
+2019-12-10 10:46:26,322 - DEBUG - 7/10 [80.00%]: m_1: money=0.0, storage={0: -23}
+2019-12-10 10:46:26,322 - DEBUG - 7/10 [80.00%]: m_2: money=0.0, storage={0: -23}
+2019-12-10 10:46:26,322 - DEBUG - 7/10 [80.00%]: m_3: money=0.0, storage={0: -23}
+2019-12-10 10:46:26,322 - DEBUG - 7/10 [80.00%]: m_4: money=0.0, storage={0: -23}
+2019-12-10 10:46:26,322 - INFO - 8/10 [90.00%]: 0 Negotiations/14 Agents
+2019-12-10 10:46:26,322 - DEBUG - 8/10 [90.00%]: f1_0 sent -1 of 1
+2019-12-10 10:46:26,322 - DEBUG - 8/10 [90.00%]: f1_0 received -6.0 dollars
+2019-12-10 10:46:26,322 - DEBUG - 8/10 [90.00%]: Moved 1 units of p1 from phriSKnI9x1I@f1_0 to c_4 for 6.0 dollars
+2019-12-10 10:46:26,322 - DEBUG - 8/10 [90.00%]: f1_1 sent -4 of 1
+2019-12-10 10:46:26,322 - DEBUG - 8/10 [90.00%]: f1_1 received -24.0 dollars
+2019-12-10 10:46:26,322 - DEBUG - 8/10 [90.00%]: Moved 4 units of p1 from 98lpvEHsdGL1@f1_1 to c_3 for 24.0 dollars
+2019-12-10 10:46:26,323 - DEBUG - 8/10 [90.00%]: Penalty: 98lpvEHsdGL1@f1_1 paid 1.8000000000000003 to society
+2019-12-10 10:46:26,323 - DEBUG - 8/10 [90.00%]: f1_1 paid 1.8000000000000003 dollars
+2019-12-10 10:46:26,323 - DEBUG - 8/10 [90.00%]: f1_1 sent -1 of 1
+2019-12-10 10:46:26,323 - DEBUG - 8/10 [90.00%]: f1_1 received -6.0 dollars
+2019-12-10 10:46:26,323 - DEBUG - 8/10 [90.00%]: Moved 1 units of p1 from 98lpvEHsdGL1@f1_1 to c_2 for 6.0 dollars
+2019-12-10 10:46:26,323 - DEBUG - 8/10 [90.00%]: Penalty: 98lpvEHsdGL1@f1_1 paid 1.2000000000000002 to society
+2019-12-10 10:46:26,323 - DEBUG - 8/10 [90.00%]: f1_1 paid 1.2000000000000002 dollars
+2019-12-10 10:46:26,323 - DEBUG - 8/10 [90.00%]: Contract c79b88c1-9421-4fba-990f-97efe8a33232 has no transfers
+2019-12-10 10:46:26,323 - DEBUG - 8/10 [90.00%]: phriSKnI9x1I@f1_0 (Factory f1_0): money=1021.67960261555, storage={0: 41, 1: 3}, loans=0.0
+2019-12-10 10:46:26,323 - DEBUG - 8/10 [90.00%]: PRODUCTION>> phriSKnI9x1I@f1_0: 0: started/finished run process 0 @ 0 steps: 8~8 balance: -1.6466705595642064, {0: -1}
+2019-12-10 10:46:26,324 - DEBUG - 8/10 [90.00%]: PRODUCTION>> phriSKnI9x1I@f1_0: 4: started/finished run process 0 @ 4 steps: 8~8 balance: -1.2324366093316987, {0: -1}
+2019-12-10 10:46:26,324 - DEBUG - 8/10 [90.00%]: PRODUCTION>> phriSKnI9x1I@f1_0: Updates: balance: 0.0, {1: 2}
+2019-12-10 10:46:26,324 - DEBUG - 8/10 [90.00%]: 98lpvEHsdGL1@f1_1 (Factory f1_1): money=1036.6089646014268, storage={0: 55, 1: 1}, loans=0.0
+2019-12-10 10:46:26,324 - DEBUG - 8/10 [90.00%]: PRODUCTION>> 98lpvEHsdGL1@f1_1: 1: started/finished run process 0 @ 1 steps: 8~8 balance: -1.3091222385467192, {0: -1}
+2019-12-10 10:46:26,324 - DEBUG - 8/10 [90.00%]: PRODUCTION>> 98lpvEHsdGL1@f1_1: Updates: balance: 0.0, {1: 1}
+2019-12-10 10:46:26,324 - DEBUG - 8/10 [90.00%]: c_0: money=-6.0, storage={1: 1}
+2019-12-10 10:46:26,324 - DEBUG - 8/10 [90.00%]: c_1: money=-18.0, storage={1: 3}
+2019-12-10 10:46:26,324 - DEBUG - 8/10 [90.00%]: c_2: money=-12.0, storage={1: 2}
+2019-12-10 10:46:26,324 - DEBUG - 8/10 [90.00%]: c_3: money=-42.0, storage={1: 7}
+2019-12-10 10:46:26,324 - DEBUG - 8/10 [90.00%]: c_4: money=-12.0, storage={1: 2}
+2019-12-10 10:46:26,324 - DEBUG - 8/10 [90.00%]: m_0: money=0.0, storage={0: -23}
+2019-12-10 10:46:26,324 - DEBUG - 8/10 [90.00%]: m_1: money=0.0, storage={0: -23}
+2019-12-10 10:46:26,324 - DEBUG - 8/10 [90.00%]: m_2: money=0.0, storage={0: -23}
+2019-12-10 10:46:26,324 - DEBUG - 8/10 [90.00%]: m_3: money=0.0, storage={0: -23}
+2019-12-10 10:46:26,324 - DEBUG - 8/10 [90.00%]: m_4: money=0.0, storage={0: -23}
+2019-12-10 10:46:26,324 - INFO - 9/10 [100.00%]: 0 Negotiations/14 Agents
+2019-12-10 10:46:26,325 - DEBUG - 9/10 [100.00%]: Penalty: 98lpvEHsdGL1@f1_1 paid 1.2000000000000002 to society
+2019-12-10 10:46:26,325 - DEBUG - 9/10 [100.00%]: f1_1 paid 1.2000000000000002 dollars
+2019-12-10 10:46:26,325 - DEBUG - 9/10 [100.00%]: f1_1 sent -1 of 1
+2019-12-10 10:46:26,325 - DEBUG - 9/10 [100.00%]: f1_1 received -6.0 dollars
+2019-12-10 10:46:26,325 - DEBUG - 9/10 [100.00%]: Moved 1 units of p1 from 98lpvEHsdGL1@f1_1 to c_1 for 6.0 dollars
+2019-12-10 10:46:26,325 - DEBUG - 9/10 [100.00%]: Penalty: 98lpvEHsdGL1@f1_1 paid 0.6000000000000001 to society
+2019-12-10 10:46:26,325 - DEBUG - 9/10 [100.00%]: f1_1 paid 0.6000000000000001 dollars
+2019-12-10 10:46:26,325 - DEBUG - 9/10 [100.00%]: Contract f1c6b2e4-3a25-4e06-be6f-68e9cc68eb4d has no transfers
+2019-12-10 10:46:26,325 - DEBUG - 9/10 [100.00%]: Penalty: 98lpvEHsdGL1@f1_1 paid 0.6000000000000001 to society
+2019-12-10 10:46:26,325 - DEBUG - 9/10 [100.00%]: f1_1 paid 0.6000000000000001 dollars
+2019-12-10 10:46:26,326 - DEBUG - 9/10 [100.00%]: Contract 29b4119f-7313-4da8-8cf0-6336357b0e43 has no transfers
+2019-12-10 10:46:26,326 - DEBUG - 9/10 [100.00%]: Penalty: phriSKnI9x1I@f1_0 paid 0.6000000000000001 to society
+2019-12-10 10:46:26,326 - DEBUG - 9/10 [100.00%]: f1_0 paid 0.6000000000000001 dollars
+2019-12-10 10:46:26,326 - DEBUG - 9/10 [100.00%]: f1_0 sent -3 of 1
+2019-12-10 10:46:26,326 - DEBUG - 9/10 [100.00%]: f1_0 received -18.0 dollars
+2019-12-10 10:46:26,326 - DEBUG - 9/10 [100.00%]: Moved 3 units of p1 from phriSKnI9x1I@f1_0 to c_3 for 18.0 dollars
+2019-12-10 10:46:26,326 - DEBUG - 9/10 [100.00%]: Penalty: phriSKnI9x1I@f1_0 paid 1.8000000000000003 to society
+2019-12-10 10:46:26,326 - DEBUG - 9/10 [100.00%]: f1_0 paid 1.8000000000000003 dollars
+2019-12-10 10:46:26,326 - DEBUG - 9/10 [100.00%]: Contract eb000a4c-aeb8-47bb-97d3-82d3cbc30c13 has no transfers
+2019-12-10 10:46:26,326 - DEBUG - 9/10 [100.00%]: phriSKnI9x1I@f1_0 (Factory f1_0): money=1037.27960261555, storage={0: 41, 1: 0}, loans=0.0
+2019-12-10 10:46:26,326 - DEBUG - 9/10 [100.00%]: 98lpvEHsdGL1@f1_1 (Factory f1_1): money=1040.208964601427, storage={0: 55, 1: 0}, loans=0.0
+2019-12-10 10:46:26,326 - DEBUG - 9/10 [100.00%]: c_0: money=-6.0, storage={1: 1}
+2019-12-10 10:46:26,326 - DEBUG - 9/10 [100.00%]: c_1: money=-24.0, storage={1: 4}
+2019-12-10 10:46:26,326 - DEBUG - 9/10 [100.00%]: c_2: money=-12.0, storage={1: 2}
+2019-12-10 10:46:26,327 - DEBUG - 9/10 [100.00%]: c_3: money=-60.0, storage={1: 10}
+2019-12-10 10:46:26,327 - DEBUG - 9/10 [100.00%]: c_4: money=-12.0, storage={1: 2}
+2019-12-10 10:46:26,327 - DEBUG - 9/10 [100.00%]: m_0: money=0.0, storage={0: -23}
+2019-12-10 10:46:26,327 - DEBUG - 9/10 [100.00%]: m_1: money=0.0, storage={0: -23}
+2019-12-10 10:46:26,327 - DEBUG - 9/10 [100.00%]: m_2: money=0.0, storage={0: -23}
+2019-12-10 10:46:26,327 - DEBUG - 9/10 [100.00%]: m_3: money=0.0, storage={0: -23}
+2019-12-10 10:46:26,327 - DEBUG - 9/10 [100.00%]: m_4: money=0.0, storage={0: -23}
