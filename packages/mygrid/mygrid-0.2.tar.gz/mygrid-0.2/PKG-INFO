@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: mygrid
+Version: 0.2
+Summary: A package to represent a electric grid     topology with extensions to make power flow and short circuit     analysis
+Home-page: https://github.com/grei-ufc/mygrid
+Author: Lucas Melo
+Author-email: lucassmelo@dee.ufc.br
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
