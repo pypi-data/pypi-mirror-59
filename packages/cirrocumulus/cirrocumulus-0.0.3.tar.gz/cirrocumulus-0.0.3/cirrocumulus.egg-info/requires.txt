@@ -1,0 +1,9 @@
+anndata
+flask
+flask-compress
+fsspec
+natsort
+ujson
+
+[test]
+pytest
