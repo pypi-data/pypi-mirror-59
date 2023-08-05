@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: rmprogress
+Version: 0.0.3
+Summary: A terminal process package
+Home-page: https://github.com/rajanmandanka/process
+Author: Rajan Mandanka
+Author-email: rajanmandanka@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+
+# Example Package
+
+steps:
+
+pip install progress-rajanmandanka==0.0.1
+
+import main
+
+main.run(50)
+
+
