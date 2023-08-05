@@ -1,0 +1,20 @@
+[build-system]
+
+	requires = [
+		"setuptools>=41.0.0",
+		"setuptools_scm",
+		"wheel",
+		"cython"
+	]
+	build-backend = "setuptools.build_meta"
+
+
+[tool.black]
+line-length = 88
+
+[tool.towncrier]
+package = "zeff"
+directory = "changelog"
+filename = "CHANGELOG.rst"
+title_format = "zeff {version} ({project_date})"
+template = "changelog/_template.rst"
