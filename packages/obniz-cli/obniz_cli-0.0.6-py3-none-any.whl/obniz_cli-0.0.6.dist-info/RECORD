@@ -1,0 +1,12 @@
+obniz_cli.py,sha256=hkDfBmwpCCVqiloCMTtFNpAidKgewnQX5PZULJrZDoU,1249
+commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commands/eraseos.py,sha256=7wmyiMFzjg8imw4xmgJRQb9M_w56qk2VuM7rCq_B9Ps,594
+commands/flashos.py,sha256=EwEvg9L9CXyybFIa4HRjnK6kZN5JtY1ROFLxVipfqF8,1854
+commands/util.py,sha256=YbiLzchXpDuTm6o_RK8I7XgdQpbMh1LGi-r2RNKeZhU,855
+obniz_cli_/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+obniz_cli_/__version__.py,sha256=CzcXzRPJNqTNVzWp48bKd5k9CaHSjpVkLYKkiQcGpAY,21
+obniz_cli-0.0.6.dist-info/METADATA,sha256=JxbhEV0glRlKgru1Lqk4ZL7ZdWL-beiT4ZCC1lS1yFA,1721
+obniz_cli-0.0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+obniz_cli-0.0.6.dist-info/entry_points.txt,sha256=p6YiE-j0ub2wFGQvbLl84DEwKNDL-VIgWiu_NQ4xzkI,46
+obniz_cli-0.0.6.dist-info/top_level.txt,sha256=UzFfh7YbJ7oMgd4cQxxKOhf8RBCxo52kodw8Nkk-hmo,30
+obniz_cli-0.0.6.dist-info/RECORD,,
