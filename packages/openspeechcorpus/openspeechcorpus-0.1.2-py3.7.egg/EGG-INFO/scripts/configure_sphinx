@@ -1,0 +1,5 @@
+#!/home/ma0/projects/openspeechorg/openspeechcorpus-cli/openspeechcorpus_env/bin/python
+from openspeechcorpus_cli import configure_sphinx_execute_from_command_line
+
+if __name__ == "__main__":
+    configure_sphinx_execute_from_command_line()
