@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: yieldlocus
+Version: 1.0.0
+Summary: Plotting yield locus for various test results
+Home-page: https://github.com/omkar-salunke/yield_locus/
+Author: omkar_salunke
+Author-email: ossalunke@gmail.com
+License: MIT
+Download-URL: https://github.com/omkar-salunke/yield_locus/archive/v{}.tar.gz
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+Yield Locus for Anisotropic Materials
+====================================
+
+
+`Yield Locus ` is a Python implementation of the Hill 1948 yield criteria for anisotropic plastic deformations. 
+since its an extension to von mises theory, Lankford coefficient in rolling direction and transverse direction are taken into account.
+No dependencies beside Python's standard library.
+
+
+Installation
+------------
+
+```
+pip install yieldlocus
+```
+
+Usage
+-----
+```
+import yieldlocus
+yield_locus.hill48(R0,R90,yield_stress)
+```
+Details
+-----
+For more information please refer
+	1.	R. Hill. (1948). A theory of the yielding and plastic flow of anisotropic metals. Proc. Roy. Soc. London, 193:281–297
+	2.	Study of Anisotropic Material Behavior for Inconel 625 Alloy 
+		https://www.sciencedirect.com/science/article/pii/S2214785319322722
+
+
+
