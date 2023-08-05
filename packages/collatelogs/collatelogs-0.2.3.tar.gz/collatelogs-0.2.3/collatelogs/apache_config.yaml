@@ -1,0 +1,26 @@
+# GBO/NRAO Apache configuration file
+
+# Defines how timestamps are formatted in output
+timestamp_output_format: '%Y-%m-%d %H:%M:%S.%f %Z'
+# Available meta_handlers: owner, filename
+# Defines how prefixes are formatted in output
+line_output_format: '{timestamp} ({filename}) | {message}'
+# Define the regexes that will be used to parse each line's prefix
+# NOTE: These are executed in order, top-down (ascending)
+log_parsing_info:
+  # https://regex101.com/r/ivx3eG/2
+  # Example:
+  # [Wed Jan 08 13:37:25.614731 2020] [rewrite:trace1] [pid 7134] mod_rewrite.c(483): [client 192.33.116.185:50494] 192.33.116.185 - - [reservations-beta.greenbankobservatory.org/sid#560adbc6cb70][rid#560adbe7a290/initial] [perdir /home/reservations-beta.greenbankobservatory.org/content/] pass through /home/reservations-beta.greenbankobservatory.org/content/vendor.fe17ee95948aeaa9ba73.js
+  - regex: '\[(?P<timestamp>\w{3} \w{3} \d{2} \d{2}:\d{2}:\d{2}.\d+ \d+)\]\s*(?P<message>.*)'
+    timestamp_input_format: '%a %b %d %H:%M:%S.%f %Y'
+
+  # https://regex101.com/r/9HRlly/1
+  - regex: '.*\[(?P<timestamp>\d{2}/\w{3}/\d{4}:\d{2}:\d{2}:\d{2} [-\d]+)\]\s(?P<message>.*)'
+    # Example: 10.16.101.154 - - [08/Jan/2020:08:28:00 -0500] "GET /api/profiles/?format=json&undefined HTTP/1.1" 200 591216 "https://reservations-beta.greenbankobservatory.org/app/transactions" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0"
+    timestamp_input_format: '%d/%b/%Y:%H:%M:%S %z'
+
+no_strip: False
+allow_duplicates: False
+bad_line_behavior: 'error'
+no_progress: False
+parse_timestamps: True
