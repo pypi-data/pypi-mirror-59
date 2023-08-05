@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mountvfs
+Version: 0.1.2
+Summary: SSHFS, NFS clients.
+Home-page: UNKNOWN
+Author: Annaz
+Author-email: annazabn@gmail.com
+License: UNKNOWN
+Description: Sshfs, nfs clients.
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
