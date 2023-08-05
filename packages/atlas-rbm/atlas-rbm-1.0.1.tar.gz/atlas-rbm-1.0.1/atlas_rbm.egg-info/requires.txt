@@ -1,0 +1,4 @@
+pysb
+jupyter
+ipykernel
+seaborn
