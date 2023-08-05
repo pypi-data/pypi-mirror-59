@@ -1,0 +1,16 @@
+options/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+options/admin.py,sha256=xAiDhts5GJXRDOX5oj8nXk6w3riTw5nNMtaxElwugY0,98
+options/apps.py,sha256=MWN415UwT9u6BCxfupc17dWAQ2ixovLTPXhxbwPmAx4,89
+options/models.py,sha256=HHmNZAUqPRa1PVO88pfjUCfD0N5ZpqAL6kHaeS2BzFo,1885
+options/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+options/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+options/management/commands/setoption.py,sha256=nSkUwaEY0oaquchTM65FX6vD4c93tUKNE1jUGhuAe58,1259
+options/migrations/0001_initial.py,sha256=2N5Eu_A-96xMun8wWp5IGTtsrJnNRL0-Z9rFuEBaRQM,644
+options/migrations/0002_auto_20181101_0047.py,sha256=I6knObHMh2EmYcrQin_GYHUh1LfmHuEinHT_HTRqvL0,761
+options/migrations/0003_auto_20181101_2050.py,sha256=dt1zCRtCAvEThvlWF7cxuTpAjcY4uAVpHEG7TgemEc4,519
+options/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_runtime_options-0.1.0.dist-info/LICENSE,sha256=8EEiT_8LEHZ4Qj9A-xvc6TdhLy57PtxmgGpv9IA2_q4,1066
+django_runtime_options-0.1.0.dist-info/METADATA,sha256=NJd6DctY6XDatzEcvDaF9fg4YvNz5MbbQQpkCEelQ8o,1858
+django_runtime_options-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_runtime_options-0.1.0.dist-info/top_level.txt,sha256=2vpXu0LnJ0uD5WDiw_PP0kVv91h0wldECQxHcviIZGE,8
+django_runtime_options-0.1.0.dist-info/RECORD,,
