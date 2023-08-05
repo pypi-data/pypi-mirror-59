@@ -1,0 +1,12 @@
+demyst-common>=0.8.14a3
+yattag
+IPython
+tqdm
+ipywidgets
+pandas
+pandas_schema
+
+[type_guesser]
+keras
+tensorflow==2.0.0
+usaddress
