@@ -1,0 +1,9 @@
+mecab2pandas/__init__.py,sha256=_ERVLrE16Bw8ieea3RRapP8woWrCQ2WBGB5HwlYENDk,139
+mecab2pandas/__version__.py,sha256=pXUbPSkTiu4Wz0uArDgCZON_xK02LiNXp5Qexuj6PsE,104
+mecab2pandas/exception/__init__.py,sha256=fNwTBlim0wRa8_3KJPCc8WPOddDYouxdyD5ojHG2kz4,67
+mecab2pandas/exception/exceptions.py,sha256=d-LzqmZ9CrNmUAHaAmqW_6pMEVVPa0z6EfHNJT3gLgU,257
+mecab2pandas/mecab_parser.py,sha256=vqgygccUnvj8B9m1X118Hyn1YvJpfBgIEBIs-lew1is,3573
+mecab2pandas-0.2.2.dist-info/LICENSE,sha256=oWSDtTX-w1M8fgzjrzo52pfkrGAE_N3ck8zgzMFcoYk,1062
+mecab2pandas-0.2.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+mecab2pandas-0.2.2.dist-info/METADATA,sha256=48PpYS2kXJsS2QHJyIun9FxQAlz0BahpCPwgseF8tCE,474
+mecab2pandas-0.2.2.dist-info/RECORD,,
