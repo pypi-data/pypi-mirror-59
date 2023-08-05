@@ -1,0 +1,9 @@
+fieldsignals/__init__.py,sha256=UsRcxh1mrNxkBW1oZg0vV41vJ8kZzWbIYZ7XlR16nYc,90
+fieldsignals/signals.py,sha256=jlU8VbrDEfSJ8hgk7VbVhTqz4-iAEFaheR_iW7KjaKk,7168
+fieldsignals/tests/__init__.py,sha256=cSMLNoTifHdHVGHvWY5cz6dX4e7YZ583ksHm81HAA28,39
+fieldsignals/tests/test_signals.py,sha256=8ZQeXnQr83gItDe41fA_GFn2YAkCA1VAtIIWNFaW0GQ,7878
+django_fieldsignals-0.5.0.dist-info/LICENSE,sha256=-kK0UiCbyKJ-Qr4JRe1Q4X4JfpCkIZJPZ5mol1xbDUg,1102
+django_fieldsignals-0.5.0.dist-info/METADATA,sha256=iJ0pjQbHJur3sw0tmGcBjysaox2B2SpZ2xRRFxWEG7o,3359
+django_fieldsignals-0.5.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+django_fieldsignals-0.5.0.dist-info/top_level.txt,sha256=EGG6XArJJSxCmO_sszgODlFueTSrqvfGEdZLVVp19O0,13
+django_fieldsignals-0.5.0.dist-info/RECORD,,
