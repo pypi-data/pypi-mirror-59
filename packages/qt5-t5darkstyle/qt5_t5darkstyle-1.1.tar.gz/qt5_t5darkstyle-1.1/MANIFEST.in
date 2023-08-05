@@ -1,0 +1,4 @@
+include README.md
+include src/darkstyle.css
+include src/darkstyle_res.py
+include src/__init__.py

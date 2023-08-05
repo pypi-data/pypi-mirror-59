@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: qt5-t5darkstyle
+Version: 1.1
+Summary: Dark Stylesheet for QT5
+Home-page: https://gitlab.com/t-5/qt5_t5darkstyle
+Author: Jürgen Herrmann
+Author-email: t-5@t-5.eu
+License: bsd-3-clause
+Description: # Dark Stylesheet for QT5
+        
+        the css and icons were inspired by https://github.com/ColinDuquesnoy/QDarkStyleSheet which are Copyright (c) 2013-2018 Colin Duquesnoy
+        
+        ## Usage:
+        
+            from qt5_t5darkstyle import darkstyle_css
+            widget.setStylesheet(darkstyle_css())
+        
+        or set your own colors with:
+        
+            widget.setStylesheet(darkstyle_css(MY_COLORS_DICT))
+        
+        
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown

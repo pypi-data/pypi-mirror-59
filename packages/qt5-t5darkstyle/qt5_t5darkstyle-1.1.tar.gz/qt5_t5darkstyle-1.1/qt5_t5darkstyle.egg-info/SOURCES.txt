@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+qt5_t5darkstyle.egg-info/PKG-INFO
+qt5_t5darkstyle.egg-info/SOURCES.txt
+qt5_t5darkstyle.egg-info/dependency_links.txt
+qt5_t5darkstyle.egg-info/top_level.txt
+src/__init__.py
+src/darkstyle.css
+src/darkstyle_res.py
