@@ -1,0 +1,8 @@
+global-exclude *_test.py
+exclude .travis.yml
+exclude .flags
+exclude *.run
+exclude *.ipynb
+exclude *.md
+recursive-include saai/scaffold *
+

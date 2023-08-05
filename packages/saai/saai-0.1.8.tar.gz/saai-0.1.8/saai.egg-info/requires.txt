@@ -1,0 +1,10 @@
+jieba
+simplejson
+paddlepaddle-tiny
+sagas>=0.1.2
+python_json_config
+python-dotenv
+
+[rasa]
+rasa~=1.6.0
+rasa-sdk~=1.6.0
