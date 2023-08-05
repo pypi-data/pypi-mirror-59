@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: offlate
+Version: 0.5
+Summary: Offline translation interface for online translation tools.
+Home-page: https://framagit.org/tyreunom/offlate
+Author: Julien Lepiller
+Author-email: julien@lepiller.eu
+License: GPLv3+
+Project-URL: Bug Tracker, https://framagit.org/tyreunom/offlate/issues
+Project-URL: Source Code, https://framagit.org/tyreunom/offlate
+Description: Offlate is a graphical interface designed for translators
+        of free and open source software.  Software projects in the free software community
+        use a wide range of online platforms (or no platform at all) to manage their
+        translations.  Offlate is able to connect to many different platforms, copy the
+        translations locally, and let you work on them on your computer, offline and in
+        a unified interface.
+Keywords: translation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Software Development :: Localization
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
