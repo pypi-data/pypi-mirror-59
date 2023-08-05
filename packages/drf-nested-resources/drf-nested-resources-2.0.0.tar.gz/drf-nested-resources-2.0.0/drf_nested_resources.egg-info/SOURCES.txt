@@ -1,0 +1,14 @@
+CHANGELOG.md
+README.md
+VERSION.txt
+setup.py
+drf_nested_resources/__init__.py
+drf_nested_resources/_forged_request.py
+drf_nested_resources/fields.py
+drf_nested_resources/lookup_helpers.py
+drf_nested_resources/routers.py
+drf_nested_resources.egg-info/PKG-INFO
+drf_nested_resources.egg-info/SOURCES.txt
+drf_nested_resources.egg-info/dependency_links.txt
+drf_nested_resources.egg-info/requires.txt
+drf_nested_resources.egg-info/top_level.txt
