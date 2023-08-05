@@ -1,0 +1,9 @@
+jismesh/__init__.py,sha256=qOLPkF9ML1P0Gnk7lzxdWya5j7lMa68Rhw8XTb2K0SY,21
+jismesh/utils/__init__.py,sha256=eUn_JXyCKBEE6fB2KY0tBy8LTQY0rwD0ajQqZ0AGenc,1711
+jismesh/utils/_scalar.py,sha256=d-m1tp-OmatAVUff29yOdTkKDwea2QL75WTLWEJHz5g,29942
+jismesh/utils/_vector.py,sha256=tXfAIm0s-G1WGij6l8R_n5XsH0d1ak7UibkR03qbz3s,19689
+jismesh-2.1.0.dist-info/LICENSE,sha256=qkJqEbN92c8Q41i5uTjhqWIIbWxxvis_sZ0QtnncVsk,1073
+jismesh-2.1.0.dist-info/METADATA,sha256=2AqhVrhpAtGO3wQRwaipb338QQeVh5ZAiN36wSmNHQg,5897
+jismesh-2.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+jismesh-2.1.0.dist-info/top_level.txt,sha256=k0bXYei2gjrgTZJXCAhJq42KlLLl4NFi53XcXQlv4oQ,8
+jismesh-2.1.0.dist-info/RECORD,,
