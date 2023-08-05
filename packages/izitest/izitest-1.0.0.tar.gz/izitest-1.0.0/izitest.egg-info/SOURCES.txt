@@ -1,0 +1,13 @@
+README.md
+setup.py
+izitest/__init__.py
+izitest/parser.py
+izitest/path.py
+izitest/prettyprint.py
+izitest/testing.py
+izitest/tests.py
+izitest.egg-info/PKG-INFO
+izitest.egg-info/SOURCES.txt
+izitest.egg-info/dependency_links.txt
+izitest.egg-info/requires.txt
+izitest.egg-info/top_level.txt
