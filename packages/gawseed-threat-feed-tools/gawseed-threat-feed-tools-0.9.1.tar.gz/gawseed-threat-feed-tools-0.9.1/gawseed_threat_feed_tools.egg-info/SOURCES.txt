@@ -1,0 +1,9 @@
+README.md
+setup.py
+gawseed/__init__.py
+gawseed_threat_feed_tools.egg-info/PKG-INFO
+gawseed_threat_feed_tools.egg-info/SOURCES.txt
+gawseed_threat_feed_tools.egg-info/dependency_links.txt
+gawseed_threat_feed_tools.egg-info/entry_points.txt
+gawseed_threat_feed_tools.egg-info/requires.txt
+gawseed_threat_feed_tools.egg-info/top_level.txt
