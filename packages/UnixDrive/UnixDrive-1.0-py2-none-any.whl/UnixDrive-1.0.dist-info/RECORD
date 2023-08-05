@@ -1,0 +1,13 @@
+UnixDrive-1.0.data/scripts/ClientClass.py,sha256=oO8udYn_vkCdlx5te269Pg_UHli4cj7YUgN4fjlwZLU,3803
+UnixDrive-1.0.data/scripts/File.py,sha256=I9FwoxC3BNPBqlcZyzB65hTVgH04rj4Q7QuHHG13us0,378
+UnixDrive-1.0.data/scripts/Folder.py,sha256=xY7mN05jc5XGex4DYNRUAKfl3MXTUL-v5wrLRqxNX30,163
+UnixDrive-1.0.data/scripts/FullClient.py,sha256=wZRfmn4crndhA0BtkvbHwpG-lveXhD4jgarKGfgRQsU,992
+UnixDrive-1.0.data/scripts/Main.py,sha256=w81iZXcK6AgcrkrNf6Z3ncG-4KfV8bs81bIW8uZYaWc,6760
+UnixDrive-1.0.data/scripts/ServerThread.py,sha256=meEXGYZ1hsX80NMmBHtf4ugtZpk-uJnL9BsrAE5UHsk,2408
+UnixDrive-1.0.data/scripts/Utilities.py,sha256=Yhn_2IMpjAvVcNm2MyCkUajyN9y4TaIpD5OhzpwPiq0,145
+UnixDrive-1.0.data/scripts/create.kv,sha256=5mEfx73rYjYdeVi6tfBsTj2sGjI0d7AQ8kp9DAaI2-E,6366
+UnixDrive-1.0.dist-info/LICENSE,sha256=wGYAcT1-gcz1rEUmTE6ZfRZlKg4Xtf4-1ZDSbihaWEI,74
+UnixDrive-1.0.dist-info/METADATA,sha256=TwpDFD9pr3NTeh2jf1cuS5znjXpfnH6RbG3AzqaQbuQ,742
+UnixDrive-1.0.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+UnixDrive-1.0.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+UnixDrive-1.0.dist-info/RECORD,,
