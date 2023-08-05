@@ -1,0 +1,15 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/client.py,sha256=dp90stGfDX6J_7CZ3oIU7Z8XcY8rNKmtU0YzjePHvgg,802
+examples/clientGui.py,sha256=dkqigLu4x6ztA_LIPiQuXyFMf4KFkQuC18phnEn80Bw,2443
+examples/server.py,sha256=nJbX1NLiBCpuTlwU-UUrlwagfn6KICD8AdTrA1BSmDM,1190
+examples/serverGui.py,sha256=Ycwz437BpE-GB5_FKqYyEWMfNZncpY7c_bOJclpBVX8,2119
+pyRpc/__init__.py,sha256=N56fwfZRD6g_fSDld_fr_YlVY7r-CvgZZZnZJ1Kkee8,2049
+pyRpc/_version.py,sha256=2KwowXhmiT6-Bln7VPq9d9sRpAzJq9qLyclhp2KWmjA,21
+pyRpc/client.py,sha256=lb98nDL5xcHf77uvOsK-lMPRAOSPb4XY-LRmu7QfLbM,9739
+pyRpc/constants.py,sha256=XcYK2gEsQQK7ko5ACNc8F8rspJCDjVcF1xVgAbwO_yc,47
+pyRpc/server.py,sha256=puY7tSXQZbdAK0qtenfNTKsAJWWmM9m7wIcHrOGz8m8,9518
+pyRpc-0.3.1.dist-info/LICENSE.TXT,sha256=T1SLbC7CTvm1Pi5Y0i09MtB3bvXwOnLjzHzeoQyEpWE,1536
+pyRpc-0.3.1.dist-info/METADATA,sha256=A9oRHKhs4srFOUlNHYSLSUtM1gNItunfSBPXR03Nbjg,637
+pyRpc-0.3.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyRpc-0.3.1.dist-info/top_level.txt,sha256=-sfRKVkH7ZMUPRVKVMRMZG3uIJji_F_vRfjZaOVUCVY,15
+pyRpc-0.3.1.dist-info/RECORD,,
