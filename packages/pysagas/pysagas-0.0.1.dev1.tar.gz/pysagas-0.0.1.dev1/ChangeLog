@@ -1,0 +1,16 @@
+CHANGES
+=======
+
+0.0.1.alpha.1
+-------------
+
+* rename package
+* add changelog
+* add setup.py file
+
+0.0.1
+-----
+
+* remove example
+* Setup publishing to pypi
+* initial commit
