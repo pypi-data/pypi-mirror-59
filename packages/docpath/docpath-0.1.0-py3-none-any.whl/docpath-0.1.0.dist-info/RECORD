@@ -1,0 +1,16 @@
+docpath/__init__.py,sha256=HBqCVMb9Zd1DGxJftru0oOoLRsPs6iCoiUb0uquDbS4,243
+docpath/axis.py,sha256=CGrgdOKs9eSf_biQNb_ebfQf9f4h-t7PYgGJr4rR5YM,6281
+docpath/docpath.py,sha256=wAJN1nr7tTCK1BrXZ67C9FD617r2PYFVrVpRw4A4Atg,5598
+docpath/parser.py,sha256=1MEK2aOsrQRSP2aWb4xXJRcM4f1PKyGRZ94WeSHO1_8,4052
+docpath/predicate.py,sha256=6cBha_Xisv0VOPM62wE5JzmawQZdGA4PEdzAE6wjgSE,5296
+docpath-0.1.0.dist-info/DESCRIPTION.rst,sha256=Je7UhorU6yAABOhDbnr67aqV7NecciTEdDEvVA8d48s,510
+docpath-0.1.0.dist-info/METADATA,sha256=edUKf7UB1djnhHStXOtT7sdyQk-_tQb6aB9sqMp_1zw,1595
+docpath-0.1.0.dist-info/RECORD,,
+docpath-0.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+docpath-0.1.0.dist-info/metadata.json,sha256=eF4tOsBqHQZbt61g_yO4u_9glwCbhEdwlGYO1CU3cRU,1201
+docpath-0.1.0.dist-info/top_level.txt,sha256=LVyWuVAb38GOI6h3dGHdHACBBoltn5HoPPY-wMUeV2c,13
+test/__init__.py,sha256=fXuzdTBDijdyxWoHRCgLM9Qnt03DkGtdTUBwdmE2ARU,197
+test/test_axis.py,sha256=2NyXbC0DoOFlLDOzFPc1KdwNKXjofKiR5BtB7jB0RHY,5576
+test/test_docpath.py,sha256=bePpV1_qcw9Ha5uvOFM8OLR3_v4KatJZZ3dLemxJ7SE,4683
+test/test_parser.py,sha256=r3lgRo9Z6F0bCNMLwE-_MjWkefwhsMl8YlbTpqj0FaQ,2811
+test/test_predicate.py,sha256=1WuZWPuijb02rBGmMnHhNrUIY_on1tr_NVVklYt7GbM,5910
