@@ -1,0 +1,7 @@
+README.md
+setup.py
+associations/__init__.py
+associations.egg-info/PKG-INFO
+associations.egg-info/SOURCES.txt
+associations.egg-info/dependency_links.txt
+associations.egg-info/top_level.txt
