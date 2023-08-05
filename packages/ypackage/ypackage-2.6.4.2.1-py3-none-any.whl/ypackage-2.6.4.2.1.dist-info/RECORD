@@ -1,0 +1,17 @@
+ypackage/__init__.py,sha256=ElIa5rCiWEcQirrm3lWnJ-e7r4ELFhbQm0AgtYzqHKQ,206
+ypackage/common.py,sha256=HLwuhRm_YrJb3BDvLXaZdSuEXc29bEphVyArVlhsjJk,1739
+ypackage/filesystem.py,sha256=7qVjwxP7YlZkfvHQQKUMPqgz6FaPiRQUnzYnVMVMyw0,7482
+ypackage/gdrive.py,sha256=tqhf9EVuLkXvsuAY1708fLFRBQi6imcI37c870vPUcg,1376
+ypackage/gitbook.py,sha256=VJFfVm0TYSMQ0x2nJSIYiy1Uw5sG8wD4PYpP-9BD_pU,11450
+ypackage/github.py,sha256=_iZi3A6ZBDhryo1gsDznjThNitdz3Cu59o5k9DMs1_M,3583
+ypackage/gsearch.py,sha256=wGUpBJx1jjs4_nJhNsjgMWsTWBqan1kceZG_UJyAqn0,2530
+ypackage/integrate.py,sha256=N7752atUa50STfsfCfilKV-IbQrndfcFeT2P3PD4JDM,11041
+ypackage/markdown.py,sha256=m9gR3fl_ZZ8xcg9cKc7Cl-FTeM0ZY9VJHJbeVrR7umM,7555
+ypackage/regex.py,sha256=mn0o0h0rpExvK3jHbsycteyUBffjNXJzkujeBtxOhH4,201
+ypackage/yfile.py,sha256=IqAX3YWKrpUPlVsWhyBqwrqj9xzC0hQOz40_wSKlBtk,2196
+ypackage-2.6.4.2.1.dist-info/LICENSE,sha256=cN46nlpzjj5Z_T9A_5_aDuoqAyG0FFcOgGiilq2QrKc,11548
+ypackage-2.6.4.2.1.dist-info/METADATA,sha256=oyyoSAvHrX4lKn1HGOLNuxB81GvsP60Gg9tQmf_f4Po,5630
+ypackage-2.6.4.2.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+ypackage-2.6.4.2.1.dist-info/entry_points.txt,sha256=7qoHmiqfgt7790J6BD8WWR8TrGv8RJ6VYj44Oa0r78g,167
+ypackage-2.6.4.2.1.dist-info/top_level.txt,sha256=i4g0BuJ6-aJ0arNijgWZdolZ1hQ1HcrjD6uDAhTh5co,9
+ypackage-2.6.4.2.1.dist-info/RECORD,,
