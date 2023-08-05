@@ -1,0 +1,20 @@
+<div class="container">
+    <!-- Formulario para decargar layout -->
+    <form method='get'>
+        <div class="col-md-2">
+            <div class="form-group">
+                <input type="submit" class="btn btn-warning" value="Descargar Layout" name="layout"/>
+            </div>
+        </div>
+    </form>
+    <!-- Formulario para cargar archivo de excel -->
+    <form method="post" class="form-new" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="col-md-6">
+            <div class="form-group">
+                <input type="file" id="excel" name="excel"/>
+                <button type="submit" class="activar-spinner" >Cargar</button>
+            </div>
+        </div>
+    </form>
+</div>

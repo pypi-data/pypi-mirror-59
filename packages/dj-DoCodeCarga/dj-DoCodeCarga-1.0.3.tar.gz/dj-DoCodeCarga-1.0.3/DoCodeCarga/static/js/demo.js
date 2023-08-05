@@ -1,0 +1,1 @@
+// Funciones JavaScript para la aplicacion
