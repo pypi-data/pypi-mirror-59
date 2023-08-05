@@ -1,0 +1,1 @@
+git://github.com/jazzband/sorl-thumbnail@13bedfb7d2970809eda597e3ef79318a6fa80ac2
