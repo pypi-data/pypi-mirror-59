@@ -1,0 +1,13 @@
+pydish/__init__.py,sha256=OB-b_GnUnTkECn1fwxl844UBmiui3mSWIvhBqMZY7Tc,22
+pydish/connector.py,sha256=gI0kWxQUBuIZBp6mNJLONS9Yw8z3Xhe3ypIh9Salb1M,8282
+pydish/device_server.py,sha256=qem31zsvLvyDL1_4T1E1dH476jymmuDLQSyi7ieNeuc,2997
+pydish/http_server.py,sha256=kUs8tpwiQgkXaE7wQKKD0PkFc5VuX7Bl4sS81Xph2s4,1848
+pydish/static/__init__.py,sha256=OB-b_GnUnTkECn1fwxl844UBmiui3mSWIvhBqMZY7Tc,22
+pydish/static/connector.js,sha256=kWjLlPLWUgtx53mZhOkVIlJLwLKDa_vcyk6w_fQQ-YA,1330
+pydish/static/device.html,sha256=4sv557eK-es2ALT2zEK8FVWmX_mtXYES3Szex1Ph-Ns,1050
+pydish/static/display_firmware.js,sha256=NOBIfBqdH7ecj2PON3AE8Hvdg9tIPLEvHHTM-ZTORfo,16185
+pydish-0.102.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pydish-0.102.dist-info/METADATA,sha256=linYEOp_bx8_FGsV1DrRpGKtI7tL0pYcpenEAOl1MjE,684
+pydish-0.102.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pydish-0.102.dist-info/top_level.txt,sha256=nYFOEgESA5A9qgI_NBU0WVsoJQmq2Wn93R9SGlNC6ok,7
+pydish-0.102.dist-info/RECORD,,
