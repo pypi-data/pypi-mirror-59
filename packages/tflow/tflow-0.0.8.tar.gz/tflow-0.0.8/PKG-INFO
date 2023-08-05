@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: tflow
+Version: 0.0.8
+Summary: A CLI for deploying a model with the Trell Model Pipeline.
+Home-page: https://github.com/frisellcpl/tflow
+Author: Johan Frisell
+Author-email: johan@trell.se
+License: MIT
+Description: tflow
+        =====
+        
+        * A simple CLI for generating a mlflow gitlab ci file for the Trell Model Pipeline *
+        
+Keywords: cli
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: Public Domain
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: test

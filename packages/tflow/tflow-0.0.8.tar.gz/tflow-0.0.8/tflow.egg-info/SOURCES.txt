@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+tflow/__init__.py
+tflow/__main__.py
+tflow/cli.py
+tflow/cli_args.py
+tflow/gitlab-ci.tmpl
+tflow/render.py
+tflow.egg-info/PKG-INFO
+tflow.egg-info/SOURCES.txt
+tflow.egg-info/dependency_links.txt
+tflow.egg-info/entry_points.txt
+tflow.egg-info/requires.txt
+tflow.egg-info/top_level.txt
