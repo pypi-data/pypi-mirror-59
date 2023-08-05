@@ -1,0 +1,141 @@
+Metadata-Version: 2.0
+Name: django-cryptolock
+Version: 0.0.2
+Summary: Django authentication using cryptocurrency wallets
+Home-page: https://github.com/dethos/django-cryptolock
+Author: Gonçalo Valério
+Author-email: gon@ovalerio.net
+License: MIT
+Keywords: django-cryptolock
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: django (>=2.2)
+Requires-Dist: django-model-utils (>=2.0)
+Requires-Dist: monero (>=0.6)
+Requires-Dist: python-monerorpc (>=0.5.5)
+
+=============================
+Django-Cryptolock
+=============================
+
+.. image:: https://badge.fury.io/py/django-cryptolock.svg
+    :target: https://badge.fury.io/py/django-cryptolock
+
+.. image:: https://travis-ci.org/dethos/django-cryptolock.svg?branch=master
+    :target: https://travis-ci.org/dethos/django-cryptolock
+
+.. image:: https://coveralls.io/repos/github/dethos/django-cryptolock/badge.svg
+    :target: https://coveralls.io/github/dethos/django-cryptolock
+
+Django authentication using cryptocurrency wallets
+
+Documentation
+-------------
+
+The full documentation is at https://django-cryptolock.readthedocs.io.
+
+Quickstart
+----------
+
+Install Django-Cryptolock::
+
+    pip install django-cryptolock
+
+Add it to your `INSTALLED_APPS`:
+
+.. code-block:: python
+
+    INSTALLED_APPS = (
+        ...
+        'django_cryptolock.apps.DjangoCryptolockConfig',
+        ...
+    )
+
+Migrate your database.
+
+Add Django-Cryptolock's URL patterns:
+
+.. code-block:: python
+
+    from django.conf.urls import url
+
+
+    urlpatterns = [
+        ...
+        url(r"^auth/", include("django_cryptolock.urls", namespace="django_cryptolock")),
+        ...
+    ]
+
+
+Add the following settings to your project:
+
+* ``django_cryptolock.backends.MoneroAddressBackend`` to your
+  ``AUTHENTICATION_BACKENDS``
+* Set ``DJCL_MONERO_NETWORK`` with the network in use: ``mainnet``,
+  ``stagenet`` or ``testnet``
+* Use ``DJCL_MONERO_WALLET_RPC_PROTOCOL``, ``DJCL_MONERO_WALLET_RPC_HOST``,
+  ``DJCL_MONERO_WALLET_RPC_USER`` and ``DJCL_MONERO_WALLET_RPC_PASS`` to specify
+  which wallet RPC should be used.
+
+Finaly create the templates files (``login.html`` and ``signup.html``) under a
+``django_cryptolock`` subfolder.
+
+Features
+--------
+
+* Adds authentication based on cryptocurrency wallets to a Django project.
+
+Running Tests
+-------------
+
+Does the code actually work?
+
+::
+
+    source <YOURVIRTUALENV>/bin/activate
+    (myenv) $ pip install tox
+    (myenv) $ tox -e <your-python-version>-django-22
+
+Credits
+-------
+
+Tools used in rendering this package:
+
+*  Cookiecutter_
+*  `cookiecutter-djangopackage`_
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`cookiecutter-djangopackage`: https://github.com/pydanny/cookiecutter-djangopackage
+
+
+
+
+History
+-------
+
+0.0.2 (2020-01-08)
+++++++++++++++++++
+
+* A default ``urls.py`` is provided by the package so can work "out-of-the-box".
+* Default location for templates moved to ``django_cryptolock`` folder.
+* Update quickstart guide.
+* Update instructions to contribute to the project.
+* Add ``DJCL`` namespace to all related settings.
+* MoneroAddressBackend is now executed when more parameters are added to the
+  ``authenticate`` function.
+
+0.0.1 (2019-11-25)
+++++++++++++++++++
+
+* First release on PyPI.
+
+
