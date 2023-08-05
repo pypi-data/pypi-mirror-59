@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: lil-pwny
+Version: 1.0.0
+Summary: Auditing Active Directory Passwords 
+Home-page: https://github.com/PaperMtn/little-pwny
+Author: PaperMtn
+Author-email: 
+License: GPL-3.0
+Description: A multiprocessing approach to auditing Active Directory passwords against HIBP using Python.
+Platform: UNKNOWN
+Requires-Python: >3.5.2
