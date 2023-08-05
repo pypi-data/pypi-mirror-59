@@ -1,0 +1,8 @@
+andotp_decrypt.py,sha256=ufjqEKX1GzB7glnfp4kYt8Wdh8gcqcv0Jh6MgnvyHzY,3305
+generate_code.py,sha256=k8-RGnPK-g607Z_WIB2swpuiQjammBdFNnRrSZkxZ9E,1793
+generate_qr_codes.py,sha256=v5wHWtpeU7sPxggI-2TBKkWzPJxVuR9w9ePMT9mUvQA,1812
+andotp_decrypt-0.1.1.dist-info/entry_points.txt,sha256=_hbBn8NdWwN9OkzHY0qlHiqe-nfg_ZbgTvKIjgeRJZ8,125
+andotp_decrypt-0.1.1.dist-info/LICENSE,sha256=SwLcd6qz-v-ZStUXl0CcKE89ml0UP8c6ebFJWuXFDM8,1082
+andotp_decrypt-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+andotp_decrypt-0.1.1.dist-info/METADATA,sha256=qCrnUwvT9LGSMLoC4ABylMOnESbjPkBHY00ELhHeo9g,1973
+andotp_decrypt-0.1.1.dist-info/RECORD,,
