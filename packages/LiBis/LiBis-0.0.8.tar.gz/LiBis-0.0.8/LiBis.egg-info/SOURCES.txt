@@ -1,0 +1,8 @@
+README.md
+setup.py
+LiBis.egg-info/PKG-INFO
+LiBis.egg-info/SOURCES.txt
+LiBis.egg-info/dependency_links.txt
+LiBis.egg-info/requires.txt
+LiBis.egg-info/top_level.txt
+bin/LiBis
