@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: astropynamic
+Version: 0.1.0
+Summary: Methods and Routines related to astrodynamics
+Home-page: https://github.com/aschleg/astropynamic
+Author: Aaron Schlegel
+Author-email: aaron@aaronschlegel.com
+License: MIT
+Description: # Astropynamic
+        
+        ## Installation
+        
+        ## Requirements
+        
+        ## References
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown

@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+astropynamic/__init__.py
+astropynamic/constants.py
+astropynamic/time.py
+astropynamic/twobody.py
+astropynamic.egg-info/PKG-INFO
+astropynamic.egg-info/SOURCES.txt
+astropynamic.egg-info/dependency_links.txt
+astropynamic.egg-info/requires.txt
+astropynamic.egg-info/top_level.txt
