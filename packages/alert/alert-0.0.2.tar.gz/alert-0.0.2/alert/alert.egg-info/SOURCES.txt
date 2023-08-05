@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+alert/alert.py
+alert/alert.egg-info/PKG-INFO
+alert/alert.egg-info/SOURCES.txt
+alert/alert.egg-info/dependency_links.txt
+alert/alert.egg-info/top_level.txt
