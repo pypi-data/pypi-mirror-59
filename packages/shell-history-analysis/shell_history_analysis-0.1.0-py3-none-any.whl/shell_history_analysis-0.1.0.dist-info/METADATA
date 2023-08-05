@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: shell-history-analysis
+Version: 0.1.0
+Summary: Analyze the history of a shell
+Home-page: https://github.com/MartinThoma/shell-history-analysis
+Author: Martin Thoma
+Author-email: info@martin-thoma.de
+Maintainer: Martin Thoma
+Maintainer-email: info@martin-thoma.de
+License: MIT
+Download-URL: https://github.com/MartinThoma/shell-history-analysis
+Keywords: utility
+Platform: Linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+
+## How to Use
+
+Get the history file:
+
+```bash
+$ history > history.txt
+$ pip install -r requirements.txt --user
+
+# You have to know which shell you have
+# This is important, because the `history` command has different outputs in
+# different shells.
+# Fish shell has only the command itself as an output.
+$ python analyze.py history.txt --shell bash
+```
+
+![History of Commands](docs/history.png)
+
+
