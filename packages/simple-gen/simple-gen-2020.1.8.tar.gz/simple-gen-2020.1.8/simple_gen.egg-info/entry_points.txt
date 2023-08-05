@@ -1,0 +1,6 @@
+
+        [console_scripts]
+        hello = packages.gen:hello
+        s = packages.group:hello
+        jwt = packages.group:jwt_tool
+    
