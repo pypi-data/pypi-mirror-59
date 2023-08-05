@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: toms
+Version: 0.1.0
+Summary: Convert date to milliseconds and back
+Home-page: https://github.com/d10xa/toms
+Author: d10xa
+Author-email: d10xa@mail.ru
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: python-dateutil (>=2.7.1)
+
+UNKNOWN
+
+
