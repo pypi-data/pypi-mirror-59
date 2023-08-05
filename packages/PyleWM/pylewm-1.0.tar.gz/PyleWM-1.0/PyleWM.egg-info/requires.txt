@@ -1,0 +1,2 @@
+pypiwin32>=223
+pystray>=0.15.0

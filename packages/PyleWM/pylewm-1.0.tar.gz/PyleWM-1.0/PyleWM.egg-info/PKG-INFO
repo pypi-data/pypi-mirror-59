@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: PyleWM
+Version: 1.0
+Summary: A utility for tiled Window Management under the Windows OS inspired by linux tiling window managers such as i3 and awesomewm.
+Home-page: https://github.com/GGLucas/PyleWM.git
+Author: Lucas de Vries
+Author-email: lucas@glacicle.org
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: window management
+Platform: UNKNOWN
