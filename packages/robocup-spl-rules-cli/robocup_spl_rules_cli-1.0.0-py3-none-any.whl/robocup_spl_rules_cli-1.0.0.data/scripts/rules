@@ -1,0 +1,65 @@
+#!python
+
+import argparse
+import logging
+import re
+import requests
+import webbrowser
+
+from bs4 import BeautifulSoup as bs
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="open RoboCup SPL rules in your browser")
+    parser.add_argument(
+        "year",
+        type=int,
+        nargs="?",
+        help=
+        "the year of which to fetch the rules; defaults to most recent if ommited",
+    )
+    args = parser.parse_args()
+    return args.year
+
+
+def get_rules_url(
+    year,
+    robocup_base_url="https://spl.robocup.org/",
+):
+    if year is None:
+        year = "\d{4}"
+    rules_regex = re.compile(f"rules.*{year}.*pdf", flags=re.IGNORECASE)
+    http_regex = re.compile("^http")
+    request = requests.get(robocup_base_url + "downloads/")
+    soup = bs(request.text, "lxml")
+    for a_tag in soup.find_all("a"):
+        href = a_tag.get("href")
+        if href is None:
+            continue
+
+        rules_match = rules_regex.search(href)
+        if rules_match is None:
+            continue
+
+        # Prepend base url if necessary
+        http_match = http_regex.search(href)
+        if http_match is None:
+            href = robocup_base_url + href
+
+        return href
+
+
+def open_rules_url(rules_url):
+    if rules_url is None:
+        logging.info("Ich habe heute leider keine Regeln für dich.")
+    else:
+        webbrowser.open(rules_url)
+        logging.info("Rules document has been opened in your browser.")
+
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO, format="%(message)s")
+    year = parse_args()
+    rules_url = get_rules_url(year)
+    open_rules_url(rules_url)
