@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: pyansystools
+Version: 0.0.2
+Summary: Provides classes to simplify the work with ANSYS using the python module pyansys.
+Home-page: https://github.com/natter1/pyansystools
+Author: Nathanael Jöhrmann
+Author-email: 
+License: MIT
+Description: Provides classes to simplify the work with ANSYS using the python module pyansys.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
