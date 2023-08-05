@@ -1,0 +1,23 @@
+#
+# Development requirements
+#
+
+invoke==1.4.0
+rituals==0.4.1
+#-e git+https://github.com/jhermann/rituals.git#egg=rituals
+
+pytest==4.6.9
+pytest-cov==2.8.1
+pytest-mock==2.0.0
+pytest-spec==2.0.0
+tox==3.13.2
+pylint==1.9.5
+bpython==0.18
+yolk3k==0.9
+pip-upgrader==1.4.15
+
+twine==1.13.0
+
+# -r test-requirements.txt
+-r requirements.txt
+-e .
