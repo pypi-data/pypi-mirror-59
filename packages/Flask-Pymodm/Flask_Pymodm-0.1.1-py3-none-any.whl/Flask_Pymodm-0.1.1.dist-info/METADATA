@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: Flask-Pymodm
+Version: 0.1.1
+Summary: Flask-Pymodm is a simple plugin for Pymodm
+Home-page: https://github.com/pbuzulan/flask-pymodm
+Author: Petru Buzulan, Daniele Dapuzzo
+Author-email: buzulan.petru@gmail.com, daniele.dapuzzo92@gmail.com
+License: MIT
+Project-URL: Documentation, https://pbuzulan.github.io/flask-pymodm/
+Project-URL: Code, https://github.com/pbuzulan/flask-pymodm
+Project-URL: Issue tracker, https://github.com/pbuzulan/flask-pymodm/issues
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: Click (>=7.0)
+Requires-Dist: Flask (>=1.1.1)
+Requires-Dist: itsdangerous (>=1.1.0)
+Requires-Dist: Jinja2 (>=2.10.3)
+Requires-Dist: MarkupSafe (==1.1.1)
+Requires-Dist: pymodm (>=0.4.2)
+Requires-Dist: pymongo (>=3.9.0)
+Requires-Dist: Werkzeug (>=0.16.0)
+
+# Flask-PyMODM
+
+[MongoDB](https://www.mongodb.com/) is a document-based database for general purpose use.
+
+Flask-PyMODM is the bridge between Flask and PyMODM, it brings to developers a simplified way to use PyMODM in Flask applications.
+
+# Quickstart
+
+To start using Flask-PyMODM, install or update it via pip:
+```
+pip install Flask-PyMODM
+```
+
+
+### A Simple Example
+ ```
+from flask import Flask
+from flask_pymodm import PyModm
+
+
+def configure_app(app):
+    app.config['MONGODB_DB_NAME'] = 'test'
+    app.config['MONGODB_HOST'] = 'localhost'
+    app.config['MONGODB_PORT'] = '27017'
+
+def create_app():
+    app = Flask(__name__)
+    configure_app(app)
+    PyModm(app)
+    return app
+
+if __name__ == '__main__':
+    create_app().run(host='0.0.0.0', port=5000)
+```
+
+
+## Customizing Properties
+
+In order to customize the host, add the following into your app.config (see [Configuration Handling](https://flask.palletsprojects.com/en/1.1.x/config/) for more details):
+```
+MONGODB_HOST = "10.10.10.13"                 # default is "localhost"
+MONGODB_PORT = "27017"                       # default is "27017"
+MONGODB_DB_NAME = "test"                     # default is "my-app"
+MONGODB_ALIAS_CONNECTION = "my_connection"   # default is "default"
+MONGODB_USERNAME = "my_username"             # default is None
+MONGODB_PASSWORD = "my_password"             # default is None
+```
+
+## Test
+To run test suite use the `tox` command.
+
+Links
+-----
+
+-   Documentation: https://flask-sqlalchemy.palletsprojects.com/
+-   Releases: 
+-   Code: https://github.com/pbuzulan/flask-pymodm
+-   Issue tracker: https://github.com/pbuzulan/flask-pymodm/issues
+-   Test status: 
+-   Test coverage: 
+
+
