@@ -1,0 +1,12 @@
+dynamodb-traverse/__init__.py,sha256=WDgpQFo9VSfT5B9oHRDWjzRb_aUDfEcp6gg6aH7vRIg,132
+dynamodb-traverse/aws_base.py,sha256=i-zCbkJs6jvdL2HiEl0WfxojocVYzWfjIGbU2g2evho,1010
+dynamodb-traverse/base.py,sha256=-YlpWWsnGgmnM6VS2UC_ZfFThxDO3UncT2RQV0ZJ-V0,1597
+dynamodb-traverse/counter.py,sha256=749XBfqGr0U2SEjLaY_110Jewa5_I_VY3_famshZqg0,226
+dynamodb-traverse/ddb_const.py,sha256=x8mx7B1sQAewhEE_bT1zWUAG7tv8Wxy-1YJH2yr2zz4,607
+dynamodb-traverse/main.py,sha256=uxW0IouZ2JJWGUtaiqFekPtUlSkA27-jMT6cGKWx0WM,3650
+dynamodb-traverse/perf.py,sha256=ACNcMQKEn95lEDwoQrawq1cUyt_SLkGvYKbP0RepAuY,529
+dynamodb_traverse-0.1.6.dist-info/LICENSE,sha256=aRqfmlqsR_4eASwXbi3psekIxyUS96I53vZhA7MGbQo,11345
+dynamodb_traverse-0.1.6.dist-info/METADATA,sha256=pFW4gga1jUszubzS3oeuG_UcKx2mpAGFG9GRfpQrOzI,2715
+dynamodb_traverse-0.1.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dynamodb_traverse-0.1.6.dist-info/top_level.txt,sha256=ZMNNVXv9A39ur3OkMRTmPqWcJUVV5qpgu-vWLFyrPYE,18
+dynamodb_traverse-0.1.6.dist-info/RECORD,,
