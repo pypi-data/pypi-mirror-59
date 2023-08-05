@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+aish-distribution-test/Binomialdistribution.py
+aish-distribution-test/Gaussiandistribution.py
+aish-distribution-test/Generaldistribution.py
+aish-distribution-test/__init__.py
+aish-distribution-test.egg-info/PKG-INFO
+aish-distribution-test.egg-info/SOURCES.txt
+aish-distribution-test.egg-info/dependency_links.txt
+aish-distribution-test.egg-info/not-zip-safe
+aish-distribution-test.egg-info/top_level.txt
+distributions.egg-info/PKG-INFO
+distributions.egg-info/SOURCES.txt
+distributions.egg-info/dependency_links.txt
+distributions.egg-info/not-zip-safe
+distributions.egg-info/top_level.txt
