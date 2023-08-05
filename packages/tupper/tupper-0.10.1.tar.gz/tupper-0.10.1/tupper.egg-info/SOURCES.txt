@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+tupper/__init__.py
+tupper/__main__.py
+tupper/console_plotter.py
+tupper/constants.py
+tupper/export_plotter.py
+tupper/solver.py
+tupper/string_plotter.py
+tupper/test_solver.py
+tupper/test_string_plotter.py
+tupper.egg-info/PKG-INFO
+tupper.egg-info/SOURCES.txt
+tupper.egg-info/dependency_links.txt
+tupper.egg-info/top_level.txt
