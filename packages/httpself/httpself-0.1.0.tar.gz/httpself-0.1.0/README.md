@@ -1,0 +1,70 @@
+# httpself
+
+HTTP server over SSL/TLS with an automatically generated self-signed certificate.
+
+## Usage
+
+Serve static files from the current working directory:
+
+```shell
+$ https [-p/--port <NNNN>] [--public]
+```
+
+### Example #1
+
+By default, the server runs on port number `443`, which requires superuser privileges. Note that the server will only be accessible from the `localhost`:
+
+```shell
+$ https
+```
+
+### Example #2
+
+To specify an alternative port number:
+
+```shell
+$ https --port 8443
+```
+
+### Example #3
+
+To make the server accessible from other devices:
+
+```shell
+$ https --public
+```
+
+## Installation
+
+### PyPI
+
+```shell
+$ pip install httpself
+```
+
+### Source Code
+
+Download the source code:
+
+```shell
+$ git clone git@github.com:bzaczynski/httpself.git
+```
+
+Install [poetry](https://poetry.eustace.io/):
+
+```shell
+$ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+```
+
+Install the module after download:
+
+```shell
+$ cd httpself/
+$ poetry install
+```
+
+Use poetry to run the server:
+
+```shell
+$ poetry run https
+```
