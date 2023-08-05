@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+materializecssform/django_materializecss_form.egg-info/PKG-INFO
+materializecssform/django_materializecss_form.egg-info/SOURCES.txt
+materializecssform/django_materializecss_form.egg-info/dependency_links.txt
+materializecssform/django_materializecss_form.egg-info/not-zip-safe
+materializecssform/django_materializecss_form.egg-info/top_level.txt
+materializecssform/templates/materializecssform/attrs.html
+materializecssform/templates/materializecssform/field.html
+materializecssform/templates/materializecssform/field_icon.html
+materializecssform/templates/materializecssform/form.html
+materializecssform/templates/materializecssform/formset.html
+materializecssform/templatetags/__init__.py
+materializecssform/templatetags/materializecss.py
