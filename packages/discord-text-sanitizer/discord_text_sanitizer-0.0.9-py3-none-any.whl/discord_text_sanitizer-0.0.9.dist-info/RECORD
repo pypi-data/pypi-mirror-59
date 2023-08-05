@@ -1,0 +1,11 @@
+build/lib/discordtextsanitizer/__init__.py,sha256=xkBDBBelXbUgSe2x8hvDNST_4iKWdURYnYOxoxtM_f8,28
+build/lib/discordtextsanitizer/_sanitizers.py,sha256=IMCkBq-lQfBu8m2PjK1wOCpVD0O1S_4CaDXRY5K8btw,3451
+build/lib/discordtextsanitizer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discordtextsanitizer/__init__.py,sha256=xkBDBBelXbUgSe2x8hvDNST_4iKWdURYnYOxoxtM_f8,28
+discordtextsanitizer/_sanitizers.py,sha256=IMCkBq-lQfBu8m2PjK1wOCpVD0O1S_4CaDXRY5K8btw,3451
+discordtextsanitizer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discord_text_sanitizer-0.0.9.dist-info/LICENSE,sha256=er_l2TprWfgKQu5LHkMNnnaxrSTwOy1CJJkzegSqqDg,1066
+discord_text_sanitizer-0.0.9.dist-info/METADATA,sha256=_cYZd2Osf3ZGbq0b-Mhp9eI4VEYNsGW5O3VI4nhgc1Y,3463
+discord_text_sanitizer-0.0.9.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+discord_text_sanitizer-0.0.9.dist-info/top_level.txt,sha256=wOAY2tg88jBy1wwUaHXh2iqwiz00lfzN_r_2N3dmgYg,32
+discord_text_sanitizer-0.0.9.dist-info/RECORD,,
