@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+recursive-include DoCodeCarga/static *
+recursive-include DoCodeCarga/templatetags *
+recursive-include DoCodeCarga/templates *
+recursive-include DoCodeCarga/procesos *
+recursive-include DoCodeCarga/migrations *
