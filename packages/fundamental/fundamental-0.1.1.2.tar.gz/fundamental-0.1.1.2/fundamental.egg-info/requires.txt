@@ -1,0 +1,7 @@
+numpy
+pandas
+yfinance
+datetime
+lxml
+pandas_market_calendars
+pandas.tseries.offsets
