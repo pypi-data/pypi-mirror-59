@@ -1,0 +1,6 @@
+anytree
+click
+packaging>=17
+pkginfo>=1.4.2
+setuptools>=38.3  # for pkg_resources
+wheel
