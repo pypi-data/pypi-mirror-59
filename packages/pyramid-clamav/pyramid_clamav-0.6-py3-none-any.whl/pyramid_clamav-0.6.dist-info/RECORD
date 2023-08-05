@@ -1,0 +1,9 @@
+pyramid_clamav/__init__.py,sha256=YIdMl4hrTTZK75DL_jZu6lWl0dCXfbbPH5tAJYKQrZQ,4100
+pyramid_clamav/tests.py,sha256=7XcV17x_L5Hgc8s1l-8CcquwRAQ3HK4mQqC5K3oDlhU,2274
+pyramid_clamav/locale/pyramid_clamav.pot,sha256=EF_RPyQ5IfOTG1Ph5kL8Mr9AwJwyRgWBJ9SmoiL6xvw,744
+pyramid_clamav/locale/de_DE/LC_MESSAGES/pyramid_clamav.mo,sha256=cwv_jv8DeCiRA6z4i5K9gvNE-BS_h1N5mv2sw0TbE-s,696
+pyramid_clamav/locale/de_DE/LC_MESSAGES/pyramid_clamav.po,sha256=UxtRgoa6bnFuftSRzIOyZBQgSNdGbbNQFZiZNAHSMKs,959
+pyramid_clamav-0.6.dist-info/METADATA,sha256=938BX5yDuLPfE8w4S98kNxIOiS4Dr3StuOMfA3icHZw,2544
+pyramid_clamav-0.6.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pyramid_clamav-0.6.dist-info/top_level.txt,sha256=54dDylTnKFU0C1TLL2YyDSrxZPXEEk590NcuHrvIbe8,15
+pyramid_clamav-0.6.dist-info/RECORD,,
