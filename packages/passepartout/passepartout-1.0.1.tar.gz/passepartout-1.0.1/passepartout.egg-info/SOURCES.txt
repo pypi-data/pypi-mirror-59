@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+passepartout/__init__.py
+passepartout/passepartout.py
+passepartout.egg-info/PKG-INFO
+passepartout.egg-info/SOURCES.txt
+passepartout.egg-info/dependency_links.txt
+passepartout.egg-info/top_level.txt
