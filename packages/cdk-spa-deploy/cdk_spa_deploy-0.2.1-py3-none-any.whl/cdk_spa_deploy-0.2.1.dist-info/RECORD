@@ -1,0 +1,8 @@
+spa_deploy/__init__.py,sha256=SqsAHx-ftjPAra7NHpVxsoYZcNqqRg_uqcBwwei8nYE,4600
+spa_deploy/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+spa_deploy/_jsii/__init__.py,sha256=chjgnumwaCSLGIK3kdYkCjAGJsuk9g8UaRB-0dIaGbU,300
+spa_deploy/_jsii/cdk-spa-deploy@0.2.1.jsii.tgz,sha256=RTWgrWyB00-R3y8cqoYrBoiiyLgmJZRjeRzdF9wDN4M,81551
+cdk_spa_deploy-0.2.1.dist-info/METADATA,sha256=RcvR9g-NN75e06DNJGGQtLIxWp2jZxXWRSiVvHlkP60,1889
+cdk_spa_deploy-0.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+cdk_spa_deploy-0.2.1.dist-info/top_level.txt,sha256=NbRBuA8U2TjVd9QOZrrTXjsba0Jb8P0i-iQ1qbpQDps,11
+cdk_spa_deploy-0.2.1.dist-info/RECORD,,
