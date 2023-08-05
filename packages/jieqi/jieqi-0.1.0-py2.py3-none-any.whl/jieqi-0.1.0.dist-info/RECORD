@@ -1,0 +1,12 @@
+jieqi/__init__.py,sha256=ylf2vOyw4ZIek4mR1bNDbLiWv9vujW8uDki28oK_HAE,136
+jieqi/cli.py,sha256=xLOzcg3k4NhkSH6FD0iHLOW8W6Ajrr107l8NqkM0CRI,418
+jieqi/config.py,sha256=2ul6M8uWxEfBcmjg_sZ8z7cc82wxIr8zdy_AYayvi-8,13303
+jieqi/jieqi.py,sha256=VYoI-gwqwBKPx84cA0KnYDRofrgIXs8xtASD2nu5fE0,44
+jieqi/main.py,sha256=_jrqWivkp3LDQfiEXmzjAbtGQaXwvuK4x5aqDfTy8GM,383
+jieqi-0.1.0.dist-info/AUTHORS.rst,sha256=hFuB5_-fX9_C4FeNRRyYKNcEe9HZLzbV27cRHBvIEDs,144
+jieqi-0.1.0.dist-info/LICENSE,sha256=0N92hJRDRZnqhuLgpITWXqiaCsx1xmBnrV6LnOoyTDk,1064
+jieqi-0.1.0.dist-info/METADATA,sha256=r0dvPOr46FLQWwf810Qo6Jcjc-6Fqjqp-2-KpixVp6k,2010
+jieqi-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+jieqi-0.1.0.dist-info/entry_points.txt,sha256=ZDGBaiEOGyvHTNbow7MJwCoeRXp8Fn6VXRCOtzZAxAg,42
+jieqi-0.1.0.dist-info/top_level.txt,sha256=rgL2PcsA4nnPPAblrdMLq2vry_ylI8mEQ-a3niYzgwI,6
+jieqi-0.1.0.dist-info/RECORD,,
