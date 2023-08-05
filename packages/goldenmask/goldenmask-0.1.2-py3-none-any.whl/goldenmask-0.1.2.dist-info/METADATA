@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: goldenmask
+Version: 0.1.2
+Summary: Protect your python source code with one command.
+Home-page: https://github.com/youngquan/goldenmask
+Author: youngquan
+Author-email: youngquan@qq.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.0,<8.0)
+Project-URL: Repository, https://github.com/youngquan/goldenmask
+Description-Content-Type: text/markdown
+
+# goldenmask
+
+Protect your python source code with one command.
