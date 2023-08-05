@@ -1,0 +1,14 @@
+biscuit/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+biscuit/api.py,sha256=RIX273e25as25zD9oTKHrioUyeKgOKw69z_j89ihz6A,3280
+biscuit/middleware.py,sha256=Y91oKDXM1aimWyytjxYa1a-oJTXFLEOt2J-TnXPTIYA,879
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/basic_app.py,sha256=8bld1VhOnjHcAZMYTHCvYEAZOmRhPl5BroqS8m1vLfc,1101
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=psmnr0C8jGB4kE55X6pe_7opGrsZlIbzFap4AOkdVx0,154
+tests/test_api.py,sha256=nlD7Cxivuz1BqOlAdeb962A3ddsxiDbPlgnnxGiICko,2309
+tests/test_app.py,sha256=qHSDyxQVAdAQ7Aq9zR2gZjWpW5Xm47QKBgsbUi8Yf5o,1336
+tests/test_biscuit.py,sha256=b_8ohJWFb3XeLN1lEDs1kw2wsmCn9IW_OPreXTa80MU,88
+biscuit-0.0.1.dist-info/METADATA,sha256=rbT4co8IPkiGUVy1mPFqC1xmx-k9GgJ30oCiO0k92tw,882
+biscuit-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+biscuit-0.0.1.dist-info/top_level.txt,sha256=DnoxCpu4BDEI2FIFlpwyZ1nLJy5YEJ0bdQxToUqhDKc,23
+biscuit-0.0.1.dist-info/RECORD,,
