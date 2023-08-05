@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tap_pagerduty
+Version: 0.2.0
+Summary: Singer.io tap for extracting data from Pagerduty v2 API
+Home-page: https://github.com/goodeggs/tap-pagerduty
+Author: David Wallace
+Author-email: david.wallace@goodeggs.com
+License: GPLv3
+Description: UNKNOWN
+Keywords: singer tap python pagerduty
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
