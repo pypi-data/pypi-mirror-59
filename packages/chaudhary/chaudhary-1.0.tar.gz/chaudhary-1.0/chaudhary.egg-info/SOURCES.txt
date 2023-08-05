@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+tox.ini
+chaudhary/__init__.py
+chaudhary/settings.py
+chaudhary/urls.py
+chaudhary/wsgi.py
+chaudhary.egg-info/PKG-INFO
+chaudhary.egg-info/SOURCES.txt
+chaudhary.egg-info/dependency_links.txt
+chaudhary.egg-info/top_level.txt
