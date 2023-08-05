@@ -1,0 +1,6 @@
+fabric<2
+httmock
+mock
+nose
+pep8
+twine<2
