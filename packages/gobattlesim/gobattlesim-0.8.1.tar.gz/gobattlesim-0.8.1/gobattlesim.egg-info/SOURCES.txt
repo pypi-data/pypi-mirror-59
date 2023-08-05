@@ -1,0 +1,15 @@
+README.md
+setup.py
+gobattlesim/Engine.py
+gobattlesim/GameMaster.py
+gobattlesim/Matrix.py
+gobattlesim/Move.py
+gobattlesim/PokeQuery.py
+gobattlesim/Pokemon.py
+gobattlesim/__init__.py
+gobattlesim/__main__.py
+gobattlesim/libGoBattleSim.dll
+gobattlesim.egg-info/PKG-INFO
+gobattlesim.egg-info/SOURCES.txt
+gobattlesim.egg-info/dependency_links.txt
+gobattlesim.egg-info/top_level.txt
