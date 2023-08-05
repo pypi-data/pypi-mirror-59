@@ -1,0 +1,45 @@
+Metadata-Version: 1.2
+Name: docpath
+Version: 0.1.1
+Summary: Use xpath style paths with docutils document trees.
+Home-page: https://bitbucket.org/libateq/docpath
+Author: David Harper
+Author-email: python-packages@libateq.org
+License: GPL-3
+Project-URL: Bug Tracker, https://bitbucket.org/libateq/docpath/issues
+Project-URL: Source Code, https://bitbucket.org/libateq/docpath
+Description: docpath
+        #######
+        
+        The *docpath* package aims to provide a way of specifying paths to nodes, or
+        sets of nodes, in a docutils_ doctree.  Where practical it uses similar syntax
+        to `xpath 1.0`_, but diverges from this to allow easier parsing and evaluation
+        of paths using common python tools and language features.
+        
+        .. _docutils: http://docutils.sourceforge.net/
+        .. _`xpath 1.0`: https://www.w3.org/TR/xpath-10/
+        
+        .. start-of-readme-only-text
+        
+        Installation
+        ============
+        
+        .. code:: python
+        
+            pip3 install docpath
+        
+Keywords: docpath docutils sphinx xpath
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Documentation
+Requires-Python: >=3.5
