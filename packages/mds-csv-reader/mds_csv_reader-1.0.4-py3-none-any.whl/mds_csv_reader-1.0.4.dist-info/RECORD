@@ -1,0 +1,6 @@
+csv_reader/__init__.py,sha256=sovbxbHw7ZNBLPa0K978Z-s4e-ApjzSn4wLpLDVgl4I,88
+csv_reader/libcsvread.py,sha256=-Ml7vN_HLLwFtgG-ja2qShH6UqLbto1ZTdoEmuJnU2k,8943
+mds_csv_reader-1.0.4.dist-info/METADATA,sha256=i9C1Nr8PEHpI1ZtSvqv75oCKdEoEV7w_GjqlfvZyVwg,2462
+mds_csv_reader-1.0.4.dist-info/RECORD,,
+mds_csv_reader-1.0.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+mds_csv_reader-1.0.4.dist-info/top_level.txt,sha256=XVAvju0L3MPxk3pBNfUCsl2js4MKrseQ0GxHOJBPpgY,11
