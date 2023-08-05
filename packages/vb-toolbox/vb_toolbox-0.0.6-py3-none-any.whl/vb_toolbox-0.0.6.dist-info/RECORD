@@ -1,0 +1,12 @@
+vb_toolbox/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vb_toolbox/app.py,sha256=qCnmcwUA16CBl6-GlQxTdcycgnsSMLaUfeY-WPSgSB8,4174
+vb_toolbox/io.py,sha256=ZBvbSKr-u4bd-ceUt7QWSj9kq7BjMFMMPzftXvnXYUc,1678
+vb_toolbox/notebook.py,sha256=QM0loWfVc8pAMsf3SAvuvxyrSktc-Cp-7LCuoT7RkS8,573
+vb_toolbox/numerics.py,sha256=5jHW1K_W4GYG6DVFzVGqUdlmSeaFtFC658kMU3BZAOg,8165
+vb_toolbox/vb_index.py,sha256=B0bI9dasG9GYD4W7ufXa_K6FMOug9POZRywHZR7ozdw,10582
+vb_toolbox-0.0.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+vb_toolbox-0.0.6.dist-info/METADATA,sha256=YWNTETdcK0ajTdHrNkddpCRE13uvsYryO1IrQf1lK9o,7197
+vb_toolbox-0.0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+vb_toolbox-0.0.6.dist-info/entry_points.txt,sha256=kt_GWicFQj48CS5HhCd0NyE-7AFBClbLbKZrWjlfQxI,49
+vb_toolbox-0.0.6.dist-info/top_level.txt,sha256=uWCMEPBE9SwPrv0vh50BCSdVjMpXgjcM50TDaVJYb_w,11
+vb_toolbox-0.0.6.dist-info/RECORD,,
