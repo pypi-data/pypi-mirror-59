@@ -1,0 +1,14 @@
+importlib-metadata
+pex
+shiv
+zapp
+
+[package]
+twine
+wheel
+zapp
+
+[test]
+pytest
+pytest-pycodestyle
+pytest-pylint
