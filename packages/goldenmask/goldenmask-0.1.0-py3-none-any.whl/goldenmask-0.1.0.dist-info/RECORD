@@ -1,0 +1,8 @@
+goldenmask/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+goldenmask/__main__.py,sha256=KtrRBODSuTZSBcLkHoYtHmmHSwbKhw0WDX1rjSZmBTU,115
+goldenmask/cli.py,sha256=yqz0MNqJHNhxL4pU5eVhIb6J_rNcXZbyH5BYTSqaxQM,1075
+goldenmask-0.1.0.dist-info/entry_points.txt,sha256=Pw92IDjqRvrbC2dtuINrr0ka9lGpHGveYlRu_U0odsM,56
+goldenmask-0.1.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+goldenmask-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+goldenmask-0.1.0.dist-info/METADATA,sha256=mLbPewPLdsbRQ6ld5IuPv8sZRypTv5bZ4Gd40zV53PA,372
+goldenmask-0.1.0.dist-info/RECORD,,
