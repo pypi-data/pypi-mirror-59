@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: Nitrous
+Version: 0.1.0
+Summary: Front-to-back, open-source, rapid web development framework
+Home-page: https://bitbucket.org/brightlinkinfrastructure/nitrous
+Author: BrightLink
+Author-email: drocco@thebrightlink.com
+Maintainer: BrightLink
+Maintainer-email: drocco@thebrightlink.com
+License: MIT
+Download-URL: https://bitbucket.org/brightlinkinfrastructure/nitrous/get/0.1.0.tar.gz
+Description: 
+        Front-to-back rapid web development
+        ===================================
+        
+        TurboGears brings together four major pieces to create an easy to
+        install, easy to use web mega-framework. It covers everything from
+        front end (MochiKit JavaScript for the browser, Genshi / Kid / Mako for
+        templates in Python) to the controllers (CherryPy) to the
+        back end (SQLAlchemy).
+        
+        The TurboGears project is focused on providing documentation and
+        integration with these tools without losing touch with the communities
+        that already exist around those tools.
+        
+        TurboGears is easy to use for a wide range of web applications.
+        
+        The latest development version is available in the `TurboGears
+        subversion repository`_.
+        
+        Our `mailing list`_ is lively and helpful, don't hesitate to send your
+        questions there, we will try to help you find out a solution to your
+        problem.
+        
+        .. _mailing list:
+            http://groups.google.com/group/turbogears
+        
+        .. _TurboGears subversion repository:
+            http://svn.turbogears.org/trunk#egg=turbogears-dev
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Framework :: TurboGears
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: compat
+Provides-Extra: sqlalchemy
+Provides-Extra: toscawidgets
+Provides-Extra: future
+Provides-Extra: testtools
+Provides-Extra: tgtesttools
+Provides-Extra: develop
