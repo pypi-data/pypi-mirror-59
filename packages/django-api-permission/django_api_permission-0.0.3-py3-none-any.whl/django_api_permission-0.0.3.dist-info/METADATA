@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: django-api-permission
+Version: 0.0.3
+Summary: A Django api permission manager that helps you custom api url in regular expression and control access.
+Home-page: https://github.com/tcitry/django-api-permission
+Author: tcitry
+Author-email: tcitry@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Description-Content-Type: text/markdown
+Requires-Dist: Django
+Requires-Dist: djangorestframework
+
+# Django-API-Permission
+
+![](https://img.shields.io/pypi/v/django-api-permission.svg?label=django-api-permission)
+
+## 1. Intro
+
+A Django api permission manager that helps you custom api url in regular expression and control access.
+
+## 2. Quick Start
+
+### 2.1 Install
+
+```
+pip install django-api-permission
+```
+
+### 2.2 add to INSTALLED_APPS and MIDDLEWARE
+
+```
+INSTALLED_APPS = [
+    ...
+    'api_permission',
+    ...
+]
+
+MIDDLEWARE = [
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    ...
+    'api_permission.middleware.APIPermCheckMiddleware',
+]
+```
+
+### 2.3 migrate
+
+```
+./manage.py migrate api_permission
+```
+
+### 2.4 API_PREFIX
+
+You can custom `API_PREFIX` in settings.py to only check the API starts with API_PREFIX, default is `/api/`.
+
+## 3. Demo
+
+### 3.1 list
+
+![](./demo1.png)
+
+### 3.2 edit
+
+![](./demo2.png)
+
+### 3.3 result
+
+![](./demo3.png)
+
+
