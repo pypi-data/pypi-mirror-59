@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: plsc
+Version: 0.1.1
+Summary: PaddlePaddle Large Scale Classfication Package.
+Home-page: https://github.com/PaddlePaddle/PLSC
+Author: PaddlePaddle Authors
+Author-email: paddle-dev@baidu.com
+License: Apache 2.0
+Keywords: plsc paddlepaddle large-scale classification model-parallelism distributed-training
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: sklearn
+Requires-Dist: easydict
+Requires-Dist: Pillow
+Requires-Dist: six
+Requires-Dist: numpy (<=1.16.4,>=1.12) ; python_version < "3.5"
+Requires-Dist: scikit-learn (<=0.20) ; python_version < "3.5"
+Requires-Dist: scipy (<=1.2.1,>=0.19.0) ; python_version < "3.5"
+Requires-Dist: numpy (>=1.12) ; python_version >= "3.5"
+Requires-Dist: scikit-learn ; python_version >= "3.5"
+Requires-Dist: scipy ; python_version >= "3.5"
+
+UNKNOWN
+
+
