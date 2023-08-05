@@ -1,0 +1,17 @@
+language: python
+matrix:
+  include:
+  - env: TARGET=py3
+  - env: TARGET=pep8
+  - env: TARGET=mypy
+  allow_failures:
+  - env: TARGET=pep8
+  - env: TARGET=mypy
+sudo: required
+services:
+ - docker
+install:
+ - true
+script:
+- docker build --tag ${TARGET} . -f .travis/${TARGET}.docker
+- docker run -v /var/run/docker.sock:/var/run/docker.sock ${TARGET} /bin/bash -c "$(cat .travis/${TARGET}.run)"
