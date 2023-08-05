@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: datafeeds
+Version: 0.11
+Summary: Python Data Source
+Home-page: UNKNOWN
+Author: liuqiuxi
+Author-email: liuqiuxi1990@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pandas
+
+UNKNOWN
+
+
