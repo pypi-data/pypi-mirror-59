@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: chaudhary
+Version: 1.0
+Summary: farzi vala app
+Home-page: UNKNOWN
+Author: Achintya Ranjan Chaudhary
+Author-email: achintyac77@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+django-myapp
+============
+
+A example django package to describe basic structure of
+third-party django applications/libraries.
+
+Here is a document to explain way to create django apps
+`How to create your first Django library <http://hirokiky.org/tech/create_django_library.html>`_.
+
+
