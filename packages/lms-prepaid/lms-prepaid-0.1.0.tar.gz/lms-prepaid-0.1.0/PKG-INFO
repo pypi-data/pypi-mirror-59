@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lms-prepaid
+Version: 0.1.0
+Summary: A script to query Last Mile Solutions prepaid card values
+Author: asmw
+Author-email: asmw@asmw.org
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: requests (>=2.22.0,<3.0.0)
+Requires-Dist: tritise (>=0.1.0,<0.2.0)
