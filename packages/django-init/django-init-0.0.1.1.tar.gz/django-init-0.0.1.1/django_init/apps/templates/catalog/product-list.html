@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load thumbnail static seo %}
+
+{% block meta_seo %}
+    {% meta_seo page %}
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        {% include 'include/sidebar.html' %}
+        <div class="col-9">
+            {% include 'include/breadcrumb.html' %}
+            <h1>{% firstof page.seo_h1 page.seo_title page.title %}</h1>
+            <div class="card-deck">
+                <div class="row">
+                    {% if products %}
+                        {% for obj in products %}
+                            {% thumbnail obj.cover 450x450 as thumb %}
+                            <div class="col-md-4 col-sm-4">
+                                <a href="{{ obj.get_url }}" class="card-item-link">
+                                    <div class="card card-item">
+                                        <img src="{{ thumb.url }}" class="card-img-top" alt="{{ obj.title }}">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">{{ obj.title }}</h5>
+                                            <p class="card-text">This is a wider card with</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+            {% include 'include/pagination.html' %}
+        </div>
+    </div>
+{% endblock %}

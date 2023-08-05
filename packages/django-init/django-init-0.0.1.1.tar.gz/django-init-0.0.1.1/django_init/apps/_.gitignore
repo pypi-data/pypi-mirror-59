@@ -1,0 +1,12 @@
+*.pyc
+
+/.idea/
+/env/
+/media/
+/logs/
+/static/
+/node_modules/
+#*/migrations/*
+#!*/migrations/__init__.py
+
+/app/local_settings.py

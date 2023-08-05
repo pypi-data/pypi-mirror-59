@@ -1,0 +1,13 @@
+<script>
+    $(document).ready(function () {
+        var id_name = '#{{ id_name }}_token';
+        $(id_name).val(Math.floor(Math.random() * Math.pow(2, 64)).toString(36));
+
+        var form_name = "#{{ form_name }}";
+        if ($(form_name).is('.popup-open')) {
+            $.magnificPopup.open({
+                items: {src: '.popup-open'}, type: 'inline'
+            }, 0);
+        }
+    });
+</script>

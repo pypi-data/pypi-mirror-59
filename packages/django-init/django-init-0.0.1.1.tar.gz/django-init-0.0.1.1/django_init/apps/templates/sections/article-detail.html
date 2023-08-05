@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+{% load thumbnail static seo %}
+
+{% block meta_seo %}
+    {% meta_seo page %}
+{% endblock %}
+
+{% block content %}
+    <div id="content">
+        <div class="container">
+            {% include 'include/breadcrumb.html' %}
+            <div class="box text-center">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <h1>{% firstof page.seo_h1 page.seo_title page.title %}</h1>
+                        <p class="text-italic text-muted">By<a href="#">John Slim</a> | June 20, 2013</p>
+                        <p class="lead">
+                            This is the lead paragraph of the article. Pellentesque habitant morbi tristique senectus et
+                            netus et malesuada
+                            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- *** LEFT COLUMN ***-->
+                <div id="blog-post" class="col-md-9">
+                    <div id="post-content">
+                        <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames
+                            ac turpis egestas. Vestibulum
+                            tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
+                            quam egestas semper.<em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo.
+                            Quisque sit amet est et sapien ullamcorper
+                            pharetra. Vestibulum erat wisi, condimentum sed,<code>commodo vitae</code>, ornare sit amet,
+                            wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum
+                            rutrum orci, sagittis tempus lacus enim ac dui.<a href="#">Donec non enim</a> in turpis
+                            pulvinar facilisis. Ut felis.
+                        </p>
+                        <p><img src="https://d19m59y37dris4.cloudfront.net/minimal/2-0/img/blog2.jpg"
+                                alt="Example blog post alt" class="img-fluid"></p>
+                        <h2>Header Level 2</h2>
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                            <li>Aliquam tincidunt mauris eu risus.</li>
+                        </ol>
+                        <blockquote>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at
+                                felis aliquet congue.
+                                Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at
+                                sagittis mollis, tellus
+                                est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
+                            </p>
+                        </blockquote>
+                        <h3>Header Level 3</h3>
+                        <p>
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                            egestas. Vestibulum tortor
+                            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+                            egestas semper. Aenean
+                            ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien
+                            ullamcorper pharetra.
+                            Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+                            fermentum, elit eget tincidunt
+                            condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in
+                            turpis pulvinar facilisis.
+                            Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu
+                            vulputate magna eros eu
+                            erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
+                            luctus, metus
+                        </p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                            <li>Aliquam tincidunt mauris eu risus.</li>
+                        </ul>
+                        <p><img src="https://d19m59y37dris4.cloudfront.net/minimal/2-0/img/blog.jpg"
+                                alt="Example blog post alt" class="img-fluid"></p>
+                        <p>
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                            egestas. Vestibulum tortor
+                            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+                            egestas semper. Aenean
+                            ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien
+                            ullamcorper pharetra.
+                            Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+                            fermentum, elit eget tincidunt
+                            condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in
+                            turpis pulvinar facilisis.
+                            Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu
+                            vulputate magna eros eu
+                            erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
+                            luctus, metus
+                        </p>
+                    </div>
+                    <!-- /#post-content-->
+                    <div id="comments">
+                        <h4>2 comments</h4>
+                        <div class="row comment">
+                            <div class="col-sm-3 col-md-2 text-center-xs">
+                                <p><img src="https://d19m59y37dris4.cloudfront.net/minimal/2-0/img/blog-avatar2.jpg"
+                                        alt="" class="img-fluid rounded-circle"></p>
+                            </div>
+                            <div class="col-sm-9 col-md-10">
+                                <h5>Julie Alma</h5>
+                                <p class="posted"><i class="fa fa-clock-o"></i> September 23, 2011 at 12:00 am</p>
+                                <p>
+                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                    egestas. Vestibulum
+                                    tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
+                                    sit amet quam egestas
+                                    semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+                                </p>
+                                <p class="reply"><a href="#"><i class="fa fa-reply"></i> Reply</a></p>
+                            </div>
+                        </div>
+                        <!-- /.comment-->
+                        <div class="row comment last">
+                            <div class="col-sm-3 col-md-2 text-center-xs">
+                                <p><img src="https://d19m59y37dris4.cloudfront.net/minimal/2-0/img/blog-avatar.jpg"
+                                        alt="" class="img-fluid rounded-circle"></p>
+                            </div>
+                            <div class="col-sm-9 col-md-10">
+                                <h5>Louise Armero</h5>
+                                <p class="posted"><i class="fa fa-clock-o"></i> September 23, 2012 at 12:00 am</p>
+                                <p>
+                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                    egestas. Vestibulum
+                                    tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
+                                    sit amet quam egestas
+                                    semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+                                </p>
+                                <p class="reply"><a href="#"><i class="fa fa-reply"></i> Reply</a></p>
+                            </div>
+                        </div>
+                        <!-- /.comment-->
+                    </div>
+                    <!-- /#comments-->
+                    <div id="comment-form">
+                        <h4>Leave comment</h4>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Name<span class="required">*</span></label>
+                                        <input id="name" type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">Email<span class="required">*</span></label>
+                                        <input id="email" type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Comment<span class="required">*</span></label>
+                                <textarea id="comment" rows="4" class="form-control"></textarea>
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary"><i class="fa fa-comment-o"></i> Post comment</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /#comment-form-->
+                </div>
+                <!-- /#blog-post-->
+                <!-- *** LEFT COLUMN END ***-->
+                <!-- *** RIGHT COLUMN ***-->
+                <div class="col-md-3">
+                    <div class="card sidebar-menu">
+                        <div class="card-header">
+                            <h5 class="mb-0 text-uppercase">Blog</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="nav nav-pills flex-column">
+                                <li><a href="blog.html" class="nav-link">About us</a></li>
+                                <li><a href="blog.html" class="nav-link active">Fashion</a></li>
+                                <li><a href="blog.html" class="nav-link">News and gossip</a></li>
+                                <li><a href="blog.html" class="nav-link">Design</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="banner"><a href="category.html"><img
+                            src="https://d19m59y37dris4.cloudfront.net/minimal/2-0/img/banner.jpg" alt="sales 2014"
+                            class="img-fluid"></a></div>
+                </div>
+                <!-- /.col-md-3-->
+                <!-- *** RIGHT COLUMN END ***-->
+            </div>
+        </div>
+    </div>
+{% endblock %}

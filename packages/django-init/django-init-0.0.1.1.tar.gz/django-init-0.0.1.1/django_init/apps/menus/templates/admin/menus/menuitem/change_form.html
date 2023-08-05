@@ -1,0 +1,42 @@
+{% extends "admin/change_form.html" %}
+{% load i18n admin_urls admin_modify %}
+
+{% comment %}
+We have to override this or the path to jsi18n will be wrong.
+Note the "super.super", as the direct parent has the wrong url.
+{% endcomment %}
+{% block extrahead %}{{ block.super.super }}
+    <script type="text/javascript" src="../../../../../jsi18n/"></script>
+    {{ media }}
+{% endblock %}
+
+
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="{% url 'admin:index' %}">{% trans "Home" %}</a> &rsaquo;
+        <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a> &rsaquo;
+        <a href="../../../">{% trans "Меню" %}</a> &rsaquo;
+        <a href="../../">{{ menu.title }}</a> &rsaquo;
+        {% if add %}{% trans 'Add' %} {{ opts.verbose_name }}{% else %}{{ original|truncatewords:"18" }}{% endif %}
+    </div>
+{% endblock %}
+
+{% block object-tools-items %}
+    {{ block.super }}
+{% endblock %}
+
+{% block submit_buttons_bottom %}
+    {% if change or add %}
+        <div class="submit-row">
+            {% if change %}
+                <p class="deletelink-box">
+                    <a href="{% url 'admin:menus_menuitem_delete' menu_pk=menu.id menu_item_pk=original.id %}"
+                       class="deletelink">{% trans "Удалить пункт меню" %}</a></p>
+                <input type="submit" value="{% trans 'Save and add another' %}" name="_addanother"/>
+                <input type="submit" value="{% trans 'Save and continue editing' %}" name="_continue"/>
+            {% endif %}
+            <input type="submit" value="{% trans 'Save' %}" class="default" name="_save"/>
+        </div>
+    {% endif %}
+    {#% submit_row %#}
+{% endblock %}
