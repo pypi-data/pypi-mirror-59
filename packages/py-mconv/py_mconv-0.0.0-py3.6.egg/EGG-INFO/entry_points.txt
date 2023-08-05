@@ -1,0 +1,3 @@
+[console_scripts]
+mconv = mconv.cli:main
+

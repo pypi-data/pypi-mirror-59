@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: py-mconv
+Version: 0.0.0
+Summary: a command line tool for converting many formats of key-value data from files to files.
+Home-page: https://github.com/Myriad-Dreamin/py-mconv
+Author: Myriad-Dreamin
+Author-email: camiyoru@gmail.com
+License: UNKNOWN
+Description: 
+        ## py-conv
+        
+        a command line tool for converting many formats of key-value data from files to files.
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
