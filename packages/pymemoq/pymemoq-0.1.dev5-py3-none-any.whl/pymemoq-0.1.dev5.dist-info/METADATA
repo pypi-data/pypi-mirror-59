@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: pymemoq
+Version: 0.1.dev5
+Summary: Python module for wrapping around the memoQ Web Service API.
+Home-page: https://github.com/leonidessaguisagjr/pymemoq
+Author: Leonides T. Saguisag Jr.
+Author-email: leonidessaguisagjr@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Localization
+Description-Content-Type: text/x-rst
+Requires-Dist: zeep
+
+``pymemoq``
+===========
+
+Python module to facilitate accessing the memoQ Web Service API.
+
+
+Installation
+------------
+
+This module is available on the Python Package Index (PyPI) and can be installed as follows:
+
+``pip install pymemoq``
+
+
+Dependencies
+------------
+
+This module is dependent on the following additional packages:
+
+- `zeep <https://pypi.org/project/zeep/>`_
+
+
+Available classes
+-----------------
+
+The following classes are currently available:
+
+Under ``memoq.webservice``:
+
+ - ``MemoQServerProjectService`` - Server projects
+ - ``MemoQTBService`` - Term base management
+ - ``MemoQTMService`` - Translation memory management
+
+
+Example API Usage
+-----------------
+
+    >>> from memoq.webservice import MemoQServerProjectService
+    >>> project_service = MemoQServerProjectService('http://localhost:8080')
+    >>> project_service.GetApiVersion()
+    '9.2.5'
+    >>>
+
+
+License
+-------
+
+This is released under an MIT license.  See the ``LICENSE`` file in this repository for more information.
+
+
