@@ -1,0 +1,4 @@
+numpy>=1.12
+absl-py
+opt_einsum
+fastcache
