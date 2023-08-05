@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: django-cjswidget
+Version: 0.4.1
+Summary: A replacement for the Select widget with fancy new features - powered by choices.js!
+Home-page: https://github.com/dmptrluke/django-cjswidget
+Author: Luke Rogers
+Author-email: luke@dmptr.com
