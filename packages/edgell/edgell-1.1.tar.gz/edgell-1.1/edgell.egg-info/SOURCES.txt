@@ -1,0 +1,10 @@
+MANIFEST.in
+edgell-README.md
+setup.py
+edgell/__init__.py
+edgell/edge_parallel.py
+edgell.egg-info/PKG-INFO
+edgell.egg-info/SOURCES.txt
+edgell.egg-info/dependency_links.txt
+edgell.egg-info/requires.txt
+edgell.egg-info/top_level.txt
