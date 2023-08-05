@@ -1,0 +1,160 @@
+Metadata-Version: 2.1
+Name: Mopidy-YouTube
+Version: 3.0a1
+Summary: Mopidy extension for YouTube
+Home-page: https://github.com/natumbri/mopidy-youtube
+Author: nik tumbri
+Author-email: natumbri@gmail.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Multimedia :: Sound/Audio :: Players
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.7
+Requires-Dist: bs4
+Requires-Dist: cachetools
+Requires-Dist: Mopidy (>=3.0)
+Requires-Dist: Pykka (>=2.0.1)
+Requires-Dist: requests
+Requires-Dist: setuptools
+Requires-Dist: youtube-dl
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: check-manifest ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: flake8-import-order ; extra == 'dev'
+Requires-Dist: isort[pyproject] ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: mock ; extra == 'dev'
+Requires-Dist: vcrpy ; extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: check-manifest ; extra == 'lint'
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: flake8-bugbear ; extra == 'lint'
+Requires-Dist: flake8-import-order ; extra == 'lint'
+Requires-Dist: isort[pyproject] ; extra == 'lint'
+Provides-Extra: release
+Requires-Dist: twine ; extra == 'release'
+Requires-Dist: wheel ; extra == 'release'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: mock ; extra == 'test'
+Requires-Dist: vcrpy ; extra == 'test'
+
+****************************
+Mopidy-YouTube
+****************************
+
+.. image:: https://img.shields.io/pypi/v/Mopidy-YouTube
+    :target: https://pypi.org/project/Mopidy-YouTube/
+    :alt: Latest PyPI version
+
+.. image:: https://img.shields.io/circleci/build/gh/natumbri/mopidy-youtube
+    :target: https://circleci.com/gh/natumbri/mopidy-youtube
+    :alt: CircleCI build status
+
+.. image:: https://img.shields.io/codecov/c/gh/natumbri/mopidy-youtube
+    :target: https://codecov.io/gh/natumbri/mopidy-youtube
+    :alt: Test coverage
+
+Mopidy extension that plays sound from YouTube.
+
+
+Installation
+============
+
+Install from PyPI by running::
+
+    python3 -m pip install Mopidy-Youtube==3.0a1
+
+Install from github by running::
+
+    python3 -m pip install https://github.com/natumbri/mopidy-youtube/archive/develop.zip
+
+
+Make sure you already have the GStreamer plugins, especially the "bad"
+collection of plugins. For example, on Debian/Ubuntu you can install it
+by running::
+
+    sudo apt-get install gstreamer1.0-plugins-bad
+
+
+Configuration
+=============
+
+Before starting Mopidy, you must add configuration for
+Mopidy-YouTube to your Mopidy configuration file::
+
+    [youtube]
+    enabled = true
+
+If you want modipy-youtube to use the YouTube API, before starting Mopidy, 
+you must add your Google API key to your Mopidy configuration file
+and set api_enabled = true::
+
+    [youtube]
+    youtube_api_key = <api key you got from Google>
+    api_enabled = false
+
+Other configuration options are::
+
+    [youtube]
+    threads_max = 16
+    search_results = 15
+    playlist_max_videos = 20
+
+
+Usage
+=====
+
+Simply use search for filename in your MPD client or add YouTube URL to
+playlist prefixed by ``yt:``.
+
+Example video::
+
+    yt:http://www.youtube.com/watch?v=Njpw2PVb1c0
+
+Example for playlist::
+
+    yt:http://www.youtube.com/playlist?list=PLeCg_YDclAETQHa8VyFUHKC_Ly0HUWUnq
+
+
+Troubleshooting
+===============
+
+If the extension is slow, try setting lower values for threads_max, search_results 
+and playlist_max_videos.
+
+If resolving of URIs stops working, always try to update the youtube-dl library
+first.
+
+
+Project resources
+=================
+
+- `Source code <https://github.com/natumbri/mopidy-youtube>`_
+- `Issue tracker <https://github.com/natumbri/mopidy-youtube/issues>`_
+- `Changelog <https://github.com/natumbri/mopidy-youtube/blob/master/CHANGELOG.rst>`_
+
+
+Credits
+=======
+
+- Original author: `Janez Troha <https://github.com/dz0ny>`_
+- Current maintainer: `Nikolas Tumbri <https://github.com/natumbri>`_
+- `Contributors <https://github.com/natumbri/mopidy-youtube/graphs/contributors>`_
+
+
+

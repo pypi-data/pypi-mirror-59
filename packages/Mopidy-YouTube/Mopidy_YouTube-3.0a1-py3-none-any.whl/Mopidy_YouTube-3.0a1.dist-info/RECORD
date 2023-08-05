@@ -1,0 +1,15 @@
+mopidy_youtube/__init__.py,sha256=dF_yU788TadT0cXX3vnrsGZyGj6urXcol5iy0gk_j9g,943
+mopidy_youtube/backend.py,sha256=_Hp-h1u299Ik81f9QAcANl5Qm2qa0QVTZjRrde945Vk,9575
+mopidy_youtube/ext.conf,sha256=t2GXA9aVtL3HBC_3zTKAWi9YsQ1p-1wsEOHFYp_TXjI,127
+mopidy_youtube/youtube.py,sha256=ozmOBpuDuCkBTh_uUsn6C4HHpanMBFQ09oGX5UX3Osw,14302
+mopidy_youtube/apis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mopidy_youtube/apis/youtube_api.py,sha256=TtutRNnTap5dVSLb5dxXPYoDdGLNTKfhpLH6OoOAZ1c,2668
+mopidy_youtube/apis/youtube_bs4api.py,sha256=YFTcxJmcGVxnF2c83eP-vAeBdba0LSW1EpXCuaLMsrk,8577
+mopidy_youtube/apis/youtube_japi.py,sha256=P4dPeT9QCTSF0qwy8HS_Jw9QYZPNXQfQULfvbm-zluE,4839
+mopidy_youtube/apis/youtube_scrapi.py,sha256=dsU-vxdAIP3D8Y4pJpxksljlO4t41LtwS9SyUwv_FBQ,9086
+Mopidy_YouTube-3.0a1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+Mopidy_YouTube-3.0a1.dist-info/METADATA,sha256=Fnx8HvvrKogbM6IW3vLyUOAWfeBYS1pyKjpyBCiSOFY,4646
+Mopidy_YouTube-3.0a1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+Mopidy_YouTube-3.0a1.dist-info/entry_points.txt,sha256=bLteTYP6fh92y54u2oEEeoD_MaK_XdyaXznQK0j6mnQ,49
+Mopidy_YouTube-3.0a1.dist-info/top_level.txt,sha256=aouE2fwx-O85TRglTVtbkGejRFEEjjHnFeuucytHgR0,15
+Mopidy_YouTube-3.0a1.dist-info/RECORD,,
