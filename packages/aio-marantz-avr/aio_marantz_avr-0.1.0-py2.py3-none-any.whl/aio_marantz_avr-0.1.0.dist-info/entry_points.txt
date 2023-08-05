@@ -1,0 +1,3 @@
+[console_scripts]
+aio_marantz_avr = aio_marantz_avr.cli:main
+
