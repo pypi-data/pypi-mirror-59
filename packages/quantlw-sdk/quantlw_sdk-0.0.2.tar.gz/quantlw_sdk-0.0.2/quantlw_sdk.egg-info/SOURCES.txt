@@ -1,0 +1,5 @@
+setup.py
+quantlw_sdk.egg-info/PKG-INFO
+quantlw_sdk.egg-info/SOURCES.txt
+quantlw_sdk.egg-info/dependency_links.txt
+quantlw_sdk.egg-info/top_level.txt
