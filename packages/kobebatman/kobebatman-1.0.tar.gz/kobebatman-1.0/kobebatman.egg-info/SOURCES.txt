@@ -1,0 +1,9 @@
+README.md
+setup.py
+kobebatman/__init__.py
+kobebatman/pdf2image.py
+kobebatman/pdf2text.py
+kobebatman.egg-info/PKG-INFO
+kobebatman.egg-info/SOURCES.txt
+kobebatman.egg-info/dependency_links.txt
+kobebatman.egg-info/top_level.txt
