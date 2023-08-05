@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<registry>
+
+    <records prefix="plone.bundles/ftw-redirector"
+             interface="Products.CMFPlone.interfaces.IBundleRegistry">
+        <value key="enabled">True</value>
+        <value key="depends">plone-logged-in</value>
+        <value key="stub_js_modules">jquery</value>
+        <value key="compile">False</value>
+        <value key="csscompilation">++resource++ftw.redirector/redirector-compiled.css</value>
+        <value key="last_compilation">2019-12-12 14:00:00</value>
+        <value key="merge_with">logged-in</value>
+    </records>
+
+</registry>
