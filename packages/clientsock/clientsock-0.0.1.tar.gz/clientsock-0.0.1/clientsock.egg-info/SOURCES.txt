@@ -1,0 +1,7 @@
+README.md
+setup.py
+client/__init__.py
+clientsock.egg-info/PKG-INFO
+clientsock.egg-info/SOURCES.txt
+clientsock.egg-info/dependency_links.txt
+clientsock.egg-info/top_level.txt
