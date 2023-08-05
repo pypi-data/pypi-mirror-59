@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+eduarduino/__init__.py
+eduarduino.egg-info/PKG-INFO
+eduarduino.egg-info/SOURCES.txt
+eduarduino.egg-info/dependency_links.txt
+eduarduino.egg-info/requires.txt
+eduarduino.egg-info/top_level.txt
