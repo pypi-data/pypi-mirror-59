@@ -1,0 +1,8 @@
+README.md
+setup.py
+funimg/__init__.py
+funimg/images.py
+funimg.egg-info/PKG-INFO
+funimg.egg-info/SOURCES.txt
+funimg.egg-info/dependency_links.txt
+funimg.egg-info/top_level.txt
