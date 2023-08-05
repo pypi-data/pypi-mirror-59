@@ -1,0 +1,15 @@
+cds_sorenson/__init__.py,sha256=PZjC35YTsSTS0wG26Iytoy_U6EYUU0fD9y5wh1zRZ80,1196
+cds_sorenson/api.py,sha256=6nHcbpLiHZWmD1nyC8ZOk_X2Cewwj6hkxSG_aZY2-3Q,11357
+cds_sorenson/config.py,sha256=VYsKZFVf6xG2orPHHGhAe6zIJzcWNeHw9lz2kN7vt40,14066
+cds_sorenson/error.py,sha256=YMdqQYMbdb7ioyb_jicdONvEs4Vxqv20fT7wyMS6JAE,2929
+cds_sorenson/ext.py,sha256=IOC2H8CMOeX3eMS3InVpV3VFR71-GLvBSfWDH-SIcWw,2551
+cds_sorenson/proxies.py,sha256=JimyeAKF_Q9oJ6-hTSdunh7KDN5paGA5ECy3IyoLO-k,1285
+cds_sorenson/utils.py,sha256=0__Vf7C82J0Iplv9Mlon41S4Mf8ZxJU8n5xUZlhvHyg,4538
+cds_sorenson/version.py,sha256=KLgPyEq34nfFrfRfzsoL00LfCWe0t3u6Zmn2t_PIQlw,1196
+cds_sorenson-0.1.7.dist-info/AUTHORS.rst,sha256=1htcovPH5-fHMyLeOpAv9K_or7samLNidgGenD4QabY,1103
+cds_sorenson-0.1.7.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+cds_sorenson-0.1.7.dist-info/METADATA,sha256=0v6zuJe0Qt2avMZWI6tmDGIQulx_KRvhuKAC8-Az1cA,5487
+cds_sorenson-0.1.7.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+cds_sorenson-0.1.7.dist-info/entry_points.txt,sha256=GLBefsvLlrsPAu0EN5Y7xAbB-hrBy48POZvhj_z90mw,179
+cds_sorenson-0.1.7.dist-info/top_level.txt,sha256=Dl8zYB_IVfVIPqkb5XKyliLmgQkAAghbhMiA1S3W934,13
+cds_sorenson-0.1.7.dist-info/RECORD,,
