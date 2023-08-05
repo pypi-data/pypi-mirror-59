@@ -1,0 +1,6 @@
+packaging
+Pillow
+requests
+
+[testing]
+pytest
