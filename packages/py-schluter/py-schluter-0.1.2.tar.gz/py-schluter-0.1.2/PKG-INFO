@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: py-schluter
+Version: 0.1.2
+Summary: Python API for Schluter DITRA-HEAT thermostat
+Home-page: https://github.com/prairieapps/py-schluter
+Author: Adam Michaleski
+Author-email: adam@prairieapps.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: requests
