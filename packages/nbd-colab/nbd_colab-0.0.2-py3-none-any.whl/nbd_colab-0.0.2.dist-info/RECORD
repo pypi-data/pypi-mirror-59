@@ -1,0 +1,9 @@
+nbd_colab/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+nbd_colab/_nbdev.py,sha256=lV87ShNmzWCSertfk-rQei1dl1NTXP3kt67BDnwXCVQ,479
+nbd_colab/core.py,sha256=B4WZEeODiYXPEC5RulUwFvNmG-evnz8esc6JHozXgFo,3303
+nbd_colab-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nbd_colab-0.0.2.dist-info/METADATA,sha256=rqQIYlADwpPrCfn5EocyrGGA0siGI0F-JCKPIJj_EMQ,2105
+nbd_colab-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+nbd_colab-0.0.2.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+nbd_colab-0.0.2.dist-info/top_level.txt,sha256=GKXfhEjh7aKSRFwAWxxMFU8RANbJ4jL9RTepyz3oCf4,10
+nbd_colab-0.0.2.dist-info/RECORD,,
