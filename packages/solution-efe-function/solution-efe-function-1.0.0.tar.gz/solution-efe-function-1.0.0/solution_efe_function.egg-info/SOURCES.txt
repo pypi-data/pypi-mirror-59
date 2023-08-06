@@ -1,0 +1,8 @@
+README.md
+setup.py
+solution_efe_function/__init__.py
+solution_efe_function/functions.py
+solution_efe_function.egg-info/PKG-INFO
+solution_efe_function.egg-info/SOURCES.txt
+solution_efe_function.egg-info/dependency_links.txt
+solution_efe_function.egg-info/top_level.txt
