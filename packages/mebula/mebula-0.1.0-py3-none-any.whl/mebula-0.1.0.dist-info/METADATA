@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mebula
+Version: 0.1.0
+Summary: 
+License: MIT
+Author: Matt Williams
+Author-email: matt@milliams.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: google-api-python-client (>=1.7.11,<2.0.0)
+Requires-Dist: oci (>=2.9.0,<3.0.0)
