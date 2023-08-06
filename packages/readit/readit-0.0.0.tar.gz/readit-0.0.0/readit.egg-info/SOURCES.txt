@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+readit/__init__.py
+readit/cli.py
+readit/database.py
+readit/view.py
+readit.egg-info/PKG-INFO
+readit.egg-info/SOURCES.txt
+readit.egg-info/dependency_links.txt
+readit.egg-info/entry_points.txt
+readit.egg-info/not-zip-safe
+readit.egg-info/requires.txt
+readit.egg-info/top_level.txt
