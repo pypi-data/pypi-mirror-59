@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: weixinpayx
+Version: 0.0.2
+Summary: 微信支付
+Home-page: https://github.com/xingluoxingkong/weixinapy
+Author: lijin
+Author-email: lijin@dingtalk.com
+License: MIT Licence
+Description: 微信支付
+Keywords: pip,pathtool,timetool,magetool,mage
+Platform: any
