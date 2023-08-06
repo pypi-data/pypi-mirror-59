@@ -1,0 +1,8 @@
+audyo==1.1.1
+dialogflow
+
+[dev]
+check-manifest
+
+[test]
+coverage
