@@ -1,0 +1,16 @@
+examples/__init__.py,sha256=OD5VPyrnqiMZyCBkqs4x23fbT3BJaZlTSnsy_Jj3C18,735
+examples/sync.py,sha256=A3O5d5db8IuZ1AH2-iSXYSSElucpjaDuRmk4yDmUk1Q,9617
+ricsdl/__init__.py,sha256=xBxl2wfsIwCISZxdYJsvxljCUPxukDMIfSY-_1WEmAI,1127
+ricsdl/configuration.py,sha256=2SrE92DCkrOcjF0scfzJxyzIUQS7_v_1SexJ_QG4uqQ,2807
+ricsdl/exceptions.py,sha256=LAX5geeMKbzl8_3egDJ6o7vQ4ZQ8YTzfTy8w3Fq_1G0,2240
+ricsdl/syncstorage.py,sha256=nlylluxSv5dfVAiZOnQ5zbQlzKtuzNhnybPv80N7b68,9441
+ricsdl/syncstorage_abc.py,sha256=Hzn1mdykLejP6ewqHGFhQvzzog2m9lGuifmwZbSM-3M,28742
+ricsdl/backend/__init__.py,sha256=IJNEFxq0UJ2tTg0-v-uiExCvfLi163Q1SGQ1p2nCA2g,2184
+ricsdl/backend/dbbackend_abc.py,sha256=G7qrcIc4-JyOEXUrX55kx85IxPwPVVRmPC_S2zdE8uc,4776
+ricsdl/backend/fake_dict_db.py,sha256=WTcelK1bQZiBLyt2iK7MS7z4bj7p5Io4jvHDOH_6o_E,6637
+ricsdl/backend/redis.py,sha256=2HfmARcr6EYPs-NRa2ae-htRvT2HzP068puscsRBYYo,12283
+ricsdl-2.0.2.dist-info/LICENSES.txt,sha256=Be51OYL6mYcG-1HHV6WnbFNxLxLPDpxrTtSBBLkz0gE,1349
+ricsdl-2.0.2.dist-info/METADATA,sha256=wOGhcxDYPcHP1OvZrvk0BYJY9GfRk1Y9HAI1lvHl2rc,2782
+ricsdl-2.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ricsdl-2.0.2.dist-info/top_level.txt,sha256=N3zDclpK5sUN0HDu8ZiW1xcv9TuSeLY0mGP7bg_dbX8,16
+ricsdl-2.0.2.dist-info/RECORD,,
