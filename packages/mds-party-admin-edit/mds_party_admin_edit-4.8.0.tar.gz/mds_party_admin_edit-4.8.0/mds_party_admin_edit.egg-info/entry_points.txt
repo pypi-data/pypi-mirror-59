@@ -1,0 +1,4 @@
+ 
+    [trytond.modules]
+    party_admin_edit = trytond.modules.party_admin_edit
+    
