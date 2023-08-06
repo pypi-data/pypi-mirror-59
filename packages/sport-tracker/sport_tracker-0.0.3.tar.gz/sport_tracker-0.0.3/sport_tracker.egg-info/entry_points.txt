@@ -1,0 +1,3 @@
+[console_scripts]
+sport_tracker = sport_tracker.__main__:main
+

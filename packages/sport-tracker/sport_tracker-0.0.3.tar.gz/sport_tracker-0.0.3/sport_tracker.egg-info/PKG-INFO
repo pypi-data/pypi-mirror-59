@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: sport-tracker
+Version: 0.0.3
+Summary: CLI Sport Diary
+Home-page: UNKNOWN
+Author: Katarina Bulkova
+Author-email: bulkova.katarina@gmail.com
+License: GPL
+Description: UNKNOWN
+Platform: linux
+Requires-Python: >=3.7
