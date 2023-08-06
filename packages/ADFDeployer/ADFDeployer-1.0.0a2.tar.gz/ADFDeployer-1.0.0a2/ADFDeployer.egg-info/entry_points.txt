@@ -1,0 +1,3 @@
+[console_scripts]
+adf-deployer = ADFDeployer.runner:main
+

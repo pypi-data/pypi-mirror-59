@@ -1,0 +1,11 @@
+README.md
+setup.py
+ADFDeployer/__init__.py
+ADFDeployer/deployer.py
+ADFDeployer/runner.py
+ADFDeployer.egg-info/PKG-INFO
+ADFDeployer.egg-info/SOURCES.txt
+ADFDeployer.egg-info/dependency_links.txt
+ADFDeployer.egg-info/entry_points.txt
+ADFDeployer.egg-info/requires.txt
+ADFDeployer.egg-info/top_level.txt
