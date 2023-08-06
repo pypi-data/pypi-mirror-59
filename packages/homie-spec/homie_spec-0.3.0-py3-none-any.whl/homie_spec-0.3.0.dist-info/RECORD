@@ -1,0 +1,10 @@
+homie_spec/__init__.py,sha256=ofrOdO9vnnGWEzQX_p5sa4e5cF2JycCHpTzgd0gUbzQ,743
+homie_spec/devices.py,sha256=9OoA_G9NLjCeXtOYjPSDe7_P4_k73jL7fsudBOLkcvA,5550
+homie_spec/messages.py,sha256=gJwKtEqe_2_kxvkCLvjxvIdiTbNr3azHeeOeSEaCkY8,1646
+homie_spec/nodes.py,sha256=7esD-g9Kn9wbvFyuv8GMWnq5uoKqU8IsklqrabKS_VQ,2805
+homie_spec/properties.py,sha256=nTJw6GoOgIK0z10jlEm8CIw5v5k1tJhdOjsEvsCIhyI,4496
+homie_spec/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+homie_spec-0.3.0.dist-info/LICENSE,sha256=XjtN7uc1X1eguUodsojKzabFCGkSbxcK3UoSa6B0pwM,1063
+homie_spec-0.3.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+homie_spec-0.3.0.dist-info/METADATA,sha256=rSJEpSp4YUT1G3sK44jqy8XLrMcRUQHw17NsLKHnJoI,4921
+homie_spec-0.3.0.dist-info/RECORD,,
