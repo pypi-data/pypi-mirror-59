@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: topsis-101703170
+Version: 0.0.1
+Summary: A Python package implementing TOPSIS technique.
+Home-page: UNKNOWN
+Author: Diksha Jain
+Author-email: djain_be17@thapar.edu
+License: MIT
+Description: #Topsis Package
+        A Python package to implement topsis on a given dataset.
+        ##Usage
+        Following query on terminal will provide you the best and worst decisions for the dataset.
+        ```
+        python topsis.py dataset_sample.csv 1,1,1,1 0,1,1,0
+        ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
