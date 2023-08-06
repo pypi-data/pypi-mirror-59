@@ -1,0 +1,10 @@
+vfi/__init__.py,sha256=UlCwR_avxFUTuvA5-GVTDP_zjzfBB9A8tUUf2eTtjc8,96
+vfi/_version.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+vfi/_vfi.py,sha256=K_uy4aMDricsQyvxNs5j_VF5badIjs--h2bWXLUGMvw,5904
+vfi/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vfi/tests/test_common.py,sha256=MUJz0O4Z2O1sbQDhJNX99FtPrT3hRY9Nbdfb88C8G-0,523
+vfi-0.1.1.dist-info/LICENSE,sha256=BcsiDCW8m5oGSIuzq93fREhuEkFMXOci2e2OvVapGCY,1100
+vfi-0.1.1.dist-info/METADATA,sha256=F6PGd-BIye1ECl60PD_qY-YErdGN-uz0TBYUZQwjJhM,4549
+vfi-0.1.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+vfi-0.1.1.dist-info/top_level.txt,sha256=bcVbZkBMnyMcep5WOMogu-QqlWmCAZFFvhKFtIRxfNQ,4
+vfi-0.1.1.dist-info/RECORD,,
