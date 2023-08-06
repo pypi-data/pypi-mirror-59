@@ -1,0 +1,1 @@
+https://git.ligo.org/gwinc/pygwinc.git#egg=pygwinc
