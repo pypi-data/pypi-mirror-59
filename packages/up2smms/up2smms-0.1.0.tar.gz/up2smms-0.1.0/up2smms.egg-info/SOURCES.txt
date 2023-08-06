@@ -1,0 +1,9 @@
+README.rst
+setup.py
+up2smms.py
+up2smms.egg-info/PKG-INFO
+up2smms.egg-info/SOURCES.txt
+up2smms.egg-info/dependency_links.txt
+up2smms.egg-info/not-zip-safe
+up2smms.egg-info/requires.txt
+up2smms.egg-info/top_level.txt
