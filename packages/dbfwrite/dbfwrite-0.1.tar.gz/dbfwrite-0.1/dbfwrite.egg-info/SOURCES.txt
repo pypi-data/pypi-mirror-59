@@ -1,0 +1,11 @@
+README.md
+dbfwrite
+setup.py
+dbfwrite/__init__.py
+dbfwrite/dftodbf.py
+dbfwrite.egg-info/PKG-INFO
+dbfwrite.egg-info/SOURCES.txt
+dbfwrite.egg-info/dependency_links.txt
+dbfwrite.egg-info/requires.txt
+dbfwrite.egg-info/top_level.txt
+dbfwrite.egg-info/zip-safe

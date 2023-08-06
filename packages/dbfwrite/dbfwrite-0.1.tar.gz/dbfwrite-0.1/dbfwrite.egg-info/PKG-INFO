@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: dbfwrite
+Version: 0.1
+Summary: A package for converting dataframe to DBF file
+Home-page: https://github.com/vanelwy
+Author: Wenyu Li
+Author-email: vanelwy@gmail.com
+License: UNKNOWN
+Description: # Package name: dbfwrite
+        # Author: Wenyu Li
+        # Email: vanelwy@gmail.com
+        # Url: https://github.com/vanelwy
+        # Version: 0.1
+        # Reference code source: http://code.activestate.com/recipes/362715-dbf-reader-and-writer/
+        # Function: convert dataframe into dbf file
+        # import package: from dbfwrite import dftodbf
+        # Function: dftodbf.dbfwrite(df,dbffilepath)
+          df:dataframe
+          dbffilepath: the filename and path you want to save dataframe as dbf file
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
