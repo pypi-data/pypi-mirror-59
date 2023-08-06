@@ -1,0 +1,11 @@
+dammy/__init__.py,sha256=ZJYUjuQ9xRsVskcoPE9HJvXpcBccw0rhrYRplpOtkt4,108
+dammy/core.py,sha256=az79VsB9uebu6eZUB3MYC8vL4yl0FcK42pW9MsDYskw,9929
+dammy/db.py,sha256=0h3Vs1C8Ku1NryZubzPG-GjFnd0aR_jPQWjUOGZ2BAw,75
+dammy/stdlib.py,sha256=vdCVbVQ_yvKfn7KiYn2ze2PhybJKhnPXQEowuOTRKd0,6973
+dammy/data/car_models.json,sha256=1jr_Aymvgu7hTA61b45JcpHFqRFYLS8hP8qYgjdKL4U,3044
+dammy/data/countries.json,sha256=1ZYhLZDfFN5IsQmgYexj1mKjVON7pif00YAiBNYdwRo,6590
+dammy/data/names.json,sha256=qMeIM3VXIN_c4haF5gRf8KIFvhXBBQnwuScH2Na8bIo,33994
+dammy-0.0.3.dist-info/METADATA,sha256=ffsIAwO0uco4m8vFlEJN-iEYUtQ-ls5kZRmlUx5ys-8,3680
+dammy-0.0.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+dammy-0.0.3.dist-info/top_level.txt,sha256=qKXei0aFxnHr_O4Xseqw7h6bxOkwHJUStufbn0zn4eY,6
+dammy-0.0.3.dist-info/RECORD,,
