@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+simplesql.egg-info/PKG-INFO
+simplesql.egg-info/SOURCES.txt
+simplesql.egg-info/dependency_links.txt
+simplesql.egg-info/entry_points.txt
+simplesql.egg-info/top_level.txt
