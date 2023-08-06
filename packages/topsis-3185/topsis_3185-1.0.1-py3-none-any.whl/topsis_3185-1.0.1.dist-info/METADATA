@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: topsis-3185
+Version: 1.0.1
+Summary: A Python package to get topsis.
+Home-page: UNKNOWN
+Author: Eshika Mahajan
+Author-email: eshikamahajan21@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.0.1)
+
+Topsis analysis of a csv file
+
+

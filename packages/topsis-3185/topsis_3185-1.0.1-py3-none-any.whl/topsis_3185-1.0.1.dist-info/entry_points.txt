@@ -1,0 +1,3 @@
+[console_scripts]
+topsis_3185 = topsis_pack_3185.cli:main
+
