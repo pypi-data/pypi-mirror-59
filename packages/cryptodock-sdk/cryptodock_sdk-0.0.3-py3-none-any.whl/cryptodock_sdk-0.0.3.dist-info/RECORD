@@ -1,0 +1,13 @@
+sdk/__init__.py,sha256=8PHz_f-srB3qHPIeJW0-DVMcVczB9LhIAyf6zV111nY,77
+sdk/__main__.py,sha256=2-Mvx4MoIyJFeHTn7797C6cHgE_PDZEi5mUrxsUcE3M,210
+sdk/cryptodock_sdk.py,sha256=oiulRtjwjFUBWmj0xuK0WP-CoaTTGzTo326xotHEC7w,413
+sdk/controllers/__init__.py,sha256=umtre4Ma5UbrzwJNCphnWI0FVujnLCKJ8R4mwMdqLzs,149
+sdk/controllers/coinbasepro.py,sha256=RgiRmoysasgY2lFIZ8Ylf6Sd-pb4NlTsxVpt9uVNxHk,5476
+sdk/controllers/kucoin.py,sha256=VfK-2yz4P6JwfiU5GaGIuXKclJsBKFL-FsL00LdyUfQ,1915
+sdk/controllers/local.py,sha256=gf7UF910Kkr3YbnsvVHRhXuiJs2HM4tQ-bx7c4OaFqg,1823
+cryptodock_sdk-0.0.3.dist-info/LICENCE.md,sha256=aHCzxcdVdQv8k5nuylAKtkjv1LtB96tvK2INiw9bp78,1073
+cryptodock_sdk-0.0.3.dist-info/METADATA,sha256=CcY5TbJoRdit_c2TczHc223Q0L8xe7_vSaMqfNFRX5k,1915
+cryptodock_sdk-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+cryptodock_sdk-0.0.3.dist-info/entry_points.txt,sha256=Q2rF1-KCR87xQ2mOsIpOZS03X3vftOqUiDAynMKrdAk,79
+cryptodock_sdk-0.0.3.dist-info/top_level.txt,sha256=JuXS55gRP3EzGKmJgbLfVfUolO3cM_u69k3qvutnBuw,4
+cryptodock_sdk-0.0.3.dist-info/RECORD,,
