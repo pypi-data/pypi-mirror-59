@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+src/biotdg/__init__.py
+src/biotdg.egg-info/PKG-INFO
+src/biotdg.egg-info/SOURCES.txt
+src/biotdg.egg-info/dependency_links.txt
+src/biotdg.egg-info/entry_points.txt
+src/biotdg.egg-info/not-zip-safe
+src/biotdg.egg-info/requires.txt
+src/biotdg.egg-info/top_level.txt

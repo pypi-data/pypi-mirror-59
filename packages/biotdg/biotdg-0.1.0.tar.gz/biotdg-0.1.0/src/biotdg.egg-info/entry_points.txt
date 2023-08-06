@@ -1,0 +1,3 @@
+[console_scripts]
+biotdg = biotdg:main
+
