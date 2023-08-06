@@ -1,0 +1,7 @@
+README.md
+setup.py
+moduconfig/__init__.py
+moduconfig.egg-info/PKG-INFO
+moduconfig.egg-info/SOURCES.txt
+moduconfig.egg-info/dependency_links.txt
+moduconfig.egg-info/top_level.txt
