@@ -1,0 +1,7 @@
+README.md
+setup.py
+translate_hub/__init__.py
+translate_hub.egg-info/PKG-INFO
+translate_hub.egg-info/SOURCES.txt
+translate_hub.egg-info/dependency_links.txt
+translate_hub.egg-info/top_level.txt
