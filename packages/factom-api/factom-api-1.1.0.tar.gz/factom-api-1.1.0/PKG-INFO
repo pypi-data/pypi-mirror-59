@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: factom-api
+Version: 1.1.0
+Summary: Python client library for the Factom API
+Home-page: https://github.com/FactomProject/factom-api
+Author: Ben Homnick
+Author-email: bhomnick@gmail.com
+License: MIT License
+Description: UNKNOWN
+Platform: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Security
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Monitoring
