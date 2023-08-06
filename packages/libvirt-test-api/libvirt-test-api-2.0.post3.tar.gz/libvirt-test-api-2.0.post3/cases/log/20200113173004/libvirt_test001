@@ -1,0 +1,438 @@
+Checking Testing Environment... 
+    Linux bogon 5.3.16-300.fc31.x86_64 #1 SMP Fri Dec 13 17:59:04 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+    Virsh command line tool of libvirt: 5.6.0
+    libvirtd (libvirt) 5.6.0
+    Default URI: qemu:///system
+    QEMU emulator version 4.1.1 (qemu-4.1.1-1.fc31)
+Copyright (c) 2003-2019 Fabrice Bellard and the QEMU Project developers
+
+Start Testing:
+    Case Count: 20
+    Log File: log/20200113173004/libvirt_test001
+
+    storage:define_netfs_pool
+
+-------------------------------------------------   storage:define_netfs_pool  -------------------------------------------------
+[17:30:04] 20106 DEBUG                    (storage_common:17) netfs_pool xml file path: /etc/libvirt/storage/netfs_pool.xml
+[17:30:04] 20106 DEBUG                    (storage_common:20) Check: /etc/libvirt/storage/netfs_pool.xml does exist.
+[17:30:04] 20106 DEBUG                    (storage_common:27) Undefine netfs_pool successful.
+[17:30:04] 20106 DEBUG                    (define_netfs_pool:36) storage pool xml:
+<pool type="netfs">
+  <name>netfs_pool</name>
+  <source>
+    <host name="127.0.0.1"/>
+    <dir path="/shared/test_API_nfs"/>
+    <format type="nfs"/>
+  </source>
+  <target>
+    <path>/tmp/netfs</path>
+  </target>
+</pool>
+
+[17:30:04] 20106 INFO                     (define_netfs_pool:41) original storage pool define number: 0
+[17:30:04] 20106 DEBUG                    (storage_common:11) current define storage pool: []
+[17:30:04] 20106 DEBUG                    (storage_common:12) current active storage pool: ['Downloads', 'lnie', 'default', 'tmp', 'libvirt']
+[17:30:04] 20106 INFO                     (define_netfs_pool:45) define netfs_pool storage pool
+[17:30:04] 20106 INFO                     (define_netfs_pool:48) current storage pool define number: 1
+[17:30:04] 20106 DEBUG                    (storage_common:11) current define storage pool: ['netfs_pool']
+[17:30:04] 20106 DEBUG                    (storage_common:12) current active storage pool: ['Downloads', 'lnie', 'default', 'tmp', 'libvirt']
+[17:30:04] 20106 DEBUG                    (storage_common:41) netfs_pool xml file path: /etc/libvirt/storage/netfs_pool.xml
+[17:30:04] 20106 INFO                     (define_netfs_pool:51) define netfs_pool storage pool is successful
+-----------------------------------------------   storage:define_netfs_pool PASS  -----------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:find_netfs_pool_sources
+
+----------------------------------------------   storage:find_netfs_pool_sources  ----------------------------------------------
+[17:30:04] 20106 DEBUG                    (find_netfs_pool_sources:78) storage source spec xml:
+<source>
+  <host name="127.0.0.1"/>
+  <format type="nfs"/>
+</source>
+
+[17:30:04] 20106 INFO                     (find_netfs_pool_sources:80) find pool sources of netfs type
+[17:30:04] 20106 INFO                     (find_netfs_pool_sources:82) pool sources xml description is:
+ <sources>
+  <source>
+    <host name='127.0.0.1'/>
+    <dir path='/shared/test_API_nfs'/>
+    <format type='nfs'/>
+  </source>
+  <source>
+    <host name='127.0.0.1'/>
+    <dir path='/shared'/>
+    <format type='nfs'/>
+  </source>
+</sources>
+
+[17:30:04] 20106 DEBUG                    (find_netfs_pool_sources:38) pool source info: {'nfs': ['/shared/test_API_nfs', '/shared']}
+[17:30:04] 20106 DEBUG                    (find_netfs_pool_sources:46) showmount command output list is: ['/shared/test_API_nfs', '/shared']
+[17:30:04] 20106 INFO                     (find_netfs_pool_sources:64) pool sources list match.
+[17:30:04] 20106 INFO                     (find_netfs_pool_sources:89) pool sources check succeed
+--------------------------------------------   storage:find_netfs_pool_sources PASS  --------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:build_netfs_pool
+
+--------------------------------------------------   storage:build_netfs_pool  --------------------------------------------------
+[17:30:04] 20106 DEBUG                    (build_netfs_pool:27) b'/tmp/netfs' directory is existent
+[17:30:04] 20106 DEBUG                    (build_netfs_pool:54) b'/tmp/netfs' directory has be built
+[17:30:04] 20106 DEBUG                    (build_netfs_pool:16) current define storage pool: ['netfs_pool']
+[17:30:04] 20106 DEBUG                    (build_netfs_pool:18) current active storage pool: ['Downloads', 'lnie', 'default', 'tmp', 'libvirt']
+[17:30:04] 20106 INFO                     (build_netfs_pool:59) build netfs_pool storage pool
+[17:30:04] 20106 DEBUG                    (build_netfs_pool:16) current define storage pool: ['netfs_pool']
+[17:30:04] 20106 DEBUG                    (build_netfs_pool:18) current active storage pool: ['Downloads', 'lnie', 'default', 'tmp', 'libvirt']
+[17:30:04] 20106 DEBUG                    (build_netfs_pool:27) b'/tmp/netfs' directory is existent
+[17:30:04] 20106 INFO                     (build_netfs_pool:64) build netfs_pool storage pool is successful
+-----------------------------------------------   storage:build_netfs_pool PASS  -----------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:activate_pool
+
+---------------------------------------------------   storage:activate_pool  ---------------------------------------------------
+[17:30:09] 20106 INFO                     (activate_pool:42) activating netfs_pool storage pool is SUCCESSFUL!!!
+-------------------------------------------------   storage:activate_pool PASS  -------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:create_netfs_volume
+
+------------------------------------------------   storage:create_netfs_volume  ------------------------------------------------
+[17:30:09] 20106 INFO                     (create_netfs_volume:49) the poolname is netfs_pool, volname is test_api_volume,                  volfomat is qcow2, capacity is 1G
+[17:30:09] 20106 DEBUG                    (create_netfs_volume:18) the xml description of pool is <pool type='netfs'>
+  <name>netfs_pool</name>
+  <uuid>941b42c8-4df0-4e88-b57e-3edd3549b80b</uuid>
+  <capacity unit='bytes'>126290493440</capacity>
+  <allocation unit='bytes'>91766128640</allocation>
+  <available unit='bytes'>34524364800</available>
+  <source>
+    <host name='127.0.0.1'/>
+    <dir path='/shared/test_API_nfs'/>
+    <format type='nfs'/>
+  </source>
+  <target>
+    <path>/tmp/netfs</path>
+    <permissions>
+      <mode>0755</mode>
+      <owner>0</owner>
+      <group>0</group>
+      <label>system_u:object_r:nfs_t:s0</label>
+    </permissions>
+  </target>
+</pool>
+
+[17:30:09] 20106 INFO                     (create_netfs_volume:69) before create the new volume, current volume list is []
+[17:30:09] 20106 INFO                     (create_netfs_volume:72) and using virsh command to                  ouput the volume information in the pool netfs_pool
+[17:30:09] 20106 DEBUG                    (create_netfs_volume:33)  Name   Path
+--------------
+[17:30:09] 20106 DEBUG                    (create_netfs_volume:75) volume xml:
+<volume>
+  <name>test_api_volume</name>
+  <capacity unit="G">1</capacity>
+  <allocation>0</allocation>
+  <target>
+    <path>/tmp/netfs/test_api_volume</path>
+    <format type="qcow2"/>
+  </target>
+</volume>
+
+[17:30:09] 20106 INFO                     (create_netfs_volume:78) create test_api_volume volume
+[17:30:09] 20106 INFO                     (create_netfs_volume:85) volume create successfully, and output the volume information
+[17:30:09] 20106 DEBUG                    (create_netfs_volume:33)  Name              Path
+-----------------------------------------------
+ test_api_volume   /tmp/netfs/test_api_volume
+----------------------------------------------   storage:create_netfs_volume PASS  ----------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:vol_resize_delta
+
+--------------------------------------------------   storage:vol_resize_delta  --------------------------------------------------
+[17:30:09] 20106 INFO                     (vol_resize_delta:25) the poolname is test_api_pool, volname is test_api_volume
+[17:30:09] 20106 INFO                     (vol_resize_delta:27) the capacity given is 2G
+[17:30:09] 20106 DEBUG                    (vol_resize_delta:30) the capacity to byte is 2147483648
+[17:30:09] 20106 ERROR                    (vol_resize_delta:73) libvirt call failed: Storage pool not found: no storage pool with matching name 'test_api_pool'
+-----------------------------------------------   storage:vol_resize_delta FAIL  -----------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:vol_resize_delta
+
+--------------------------------------------------   storage:vol_resize_delta  --------------------------------------------------
+[17:30:09] 20106 INFO                     (vol_resize_delta:25) the poolname is test_api_pool, volname is test_api_volume
+[17:30:09] 20106 INFO                     (vol_resize_delta:27) the capacity given is 2M
+[17:30:09] 20106 DEBUG                    (vol_resize_delta:30) the capacity to byte is 2097152
+[17:30:09] 20106 ERROR                    (vol_resize_delta:73) libvirt call failed: Storage pool not found: no storage pool with matching name 'test_api_pool'
+-----------------------------------------------   storage:vol_resize_delta FAIL  -----------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:vol_resize_delta
+
+--------------------------------------------------   storage:vol_resize_delta  --------------------------------------------------
+[17:30:09] 20106 INFO                     (vol_resize_delta:25) the poolname is test_api_pool, volname is test_api_volume
+[17:30:09] 20106 INFO                     (vol_resize_delta:27) the capacity given is 4096K
+[17:30:09] 20106 DEBUG                    (vol_resize_delta:30) the capacity to byte is 4194304
+[17:30:09] 20106 ERROR                    (vol_resize_delta:73) libvirt call failed: Storage pool not found: no storage pool with matching name 'test_api_pool'
+-----------------------------------------------   storage:vol_resize_delta FAIL  -----------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:pool_lookup_by_volume
+
+-----------------------------------------------   storage:pool_lookup_by_volume  -----------------------------------------------
+[17:30:09] 20106 INFO                     (pool_lookup_by_volume:20) The given pool name is netfs_pool
+[17:30:09] 20106 INFO                     (pool_lookup_by_volume:21) The given vol name is test_api_volume
+[17:30:09] 20106 INFO                     (pool_lookup_by_volume:26) The given volume path is /tmp/netfs/test_api_volume
+[17:30:09] 20106 INFO                     (pool_lookup_by_volume:37) The pool name is netfs_pool from API
+---------------------------------------------   storage:pool_lookup_by_volume PASS  ---------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:list_volumes
+
+----------------------------------------------------   storage:list_volumes  ----------------------------------------------------
+[17:30:09] 20106 INFO                     (list_volumes:116) the poolname is netfs_pool
+[17:30:09] 20106 INFO                     (list_volumes:130) the volume list is ['test_api_volume']
+[17:30:09] 20106 DEBUG                    (list_volumes:67) get volumes from listVolumes is ['test_api_volume']
+[17:30:09] 20106 DEBUG                    (list_volumes:49) the xml description of pool is <pool type='netfs'>
+  <name>netfs_pool</name>
+  <uuid>941b42c8-4df0-4e88-b57e-3edd3549b80b</uuid>
+  <capacity unit='bytes'>126290493440</capacity>
+  <allocation unit='bytes'>91766329344</allocation>
+  <available unit='bytes'>34524164096</available>
+  <source>
+    <host name='127.0.0.1'/>
+    <dir path='/shared/test_API_nfs'/>
+    <format type='nfs'/>
+  </source>
+  <target>
+    <path>/tmp/netfs</path>
+    <permissions>
+      <mode>0755</mode>
+      <owner>0</owner>
+      <group>0</group>
+      <label>system_u:object_r:nfs_t:s0</label>
+    </permissions>
+  </target>
+</pool>
+
+[17:30:09] 20106 INFO                     (list_volumes:70) the pool path is /tmp/netfs
+[17:30:09] 20106 INFO                     (list_volumes:71) the pool type is netfs
+[17:30:09] 20106 DEBUG                    (list_volumes:96) get volumes from poolpath is ['test_api_volume']
+[17:30:09] 20106 INFO                     (list_volumes:97) compare the volume list under poolpath and list from API
+[17:30:09] 20106 INFO                     (list_volumes:133) get the right volumes list successfully
+-------------------------------------------------   storage:list_volumes PASS  -------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:vol_clone
+
+-----------------------------------------------------   storage:vol_clone  -----------------------------------------------------
+[17:30:09] 20106 INFO                     (vol_clone:42) the poolname is netfs_pool, volname is test_api_volume
+[17:30:09] 20106 INFO                     (vol_clone:43) the clone volume name is test_clone_volume
+[17:30:09] 20106 DEBUG                    (vol_clone:52) volume xml:
+<?xml version="1.0" ?><volume type="file">
+  <name>test_clone_volume</name>
+  <key>/tmp/netfs/test_api_volume</key>
+  <source>
+  </source>
+  <capacity unit="bytes">1073741824</capacity>
+  <allocation unit="bytes">200704</allocation>
+  <physical unit="bytes">196624</physical>
+  <target>
+    <path>/tmp/netfs/test_api_volume</path>
+    <format type="qcow2"/>
+    <permissions>
+      <mode>0600</mode>
+      <owner>0</owner>
+      <group>0</group>
+      <label>system_u:object_r:nfs_t:s0</label>
+    </permissions>
+    <timestamps>
+      <atime>1578907809.763191614</atime>
+      <mtime>1578907809.761191588</mtime>
+      <ctime>1578907809.763191614</ctime>
+    </timestamps>
+  </target>
+</volume>
+[17:30:09] 20106 INFO                     (vol_clone:55) clone volume test_clone_volume from source volume test_api_volume
+[17:30:09] 20106 DEBUG                    (vol_clone:64) new cloned volume path is: /tmp/netfs/test_clone_volume
+[17:30:09] 20106 INFO                     (vol_clone:66) cloned volume path exist
+[17:30:09] 20106 INFO                     (vol_clone:72) clone succeed
+---------------------------------------------------   storage:vol_clone PASS  ---------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:list_volumes
+
+----------------------------------------------------   storage:list_volumes  ----------------------------------------------------
+[17:30:09] 20106 INFO                     (list_volumes:116) the poolname is netfs_pool
+[17:30:09] 20106 INFO                     (list_volumes:130) the volume list is ['test_api_volume', 'test_clone_volume']
+[17:30:09] 20106 DEBUG                    (list_volumes:67) get volumes from listVolumes is ['test_api_volume', 'test_clone_volume']
+[17:30:09] 20106 DEBUG                    (list_volumes:49) the xml description of pool is <pool type='netfs'>
+  <name>netfs_pool</name>
+  <uuid>941b42c8-4df0-4e88-b57e-3edd3549b80b</uuid>
+  <capacity unit='bytes'>126290493440</capacity>
+  <allocation unit='bytes'>91766128640</allocation>
+  <available unit='bytes'>34524364800</available>
+  <source>
+    <host name='127.0.0.1'/>
+    <dir path='/shared/test_API_nfs'/>
+    <format type='nfs'/>
+  </source>
+  <target>
+    <path>/tmp/netfs</path>
+    <permissions>
+      <mode>0755</mode>
+      <owner>0</owner>
+      <group>0</group>
+      <label>system_u:object_r:nfs_t:s0</label>
+    </permissions>
+  </target>
+</pool>
+
+[17:30:09] 20106 INFO                     (list_volumes:70) the pool path is /tmp/netfs
+[17:30:09] 20106 INFO                     (list_volumes:71) the pool type is netfs
+[17:30:09] 20106 DEBUG                    (list_volumes:96) get volumes from poolpath is ['test_api_volume', 'test_clone_volume']
+[17:30:09] 20106 INFO                     (list_volumes:97) compare the volume list under poolpath and list from API
+[17:30:09] 20106 INFO                     (list_volumes:133) get the right volumes list successfully
+-------------------------------------------------   storage:list_volumes PASS  -------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:delete_netfs_volume
+
+------------------------------------------------   storage:delete_netfs_volume  ------------------------------------------------
+[17:30:09] 20106 DEBUG                    (delete_netfs_volume:61) volume key: /tmp/netfs/test_clone_volume
+[17:30:09] 20106 INFO                     (delete_netfs_volume:22) current storage volume number: 2
+[17:30:09] 20106 DEBUG                    (delete_netfs_volume:16) current storage volume list: ['test_api_volume', 'test_clone_volume']
+[17:30:09] 20106 INFO                     (delete_netfs_volume:67) delete test_clone_volume storage volume
+[17:30:09] 20106 INFO                     (delete_netfs_volume:22) current storage volume number: 1
+[17:30:09] 20106 DEBUG                    (delete_netfs_volume:16) current storage volume list: ['test_api_volume']
+[17:30:09] 20106 DEBUG                    (delete_netfs_volume:30) volume file path: /tmp/netfs/test_clone_volume
+[17:30:09] 20106 INFO                     (delete_netfs_volume:72) delete test_clone_volume storage volume is successful
+----------------------------------------------   storage:delete_netfs_volume PASS  ----------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:list_volumes
+
+----------------------------------------------------   storage:list_volumes  ----------------------------------------------------
+[17:30:09] 20106 INFO                     (list_volumes:116) the poolname is netfs_pool
+[17:30:09] 20106 INFO                     (list_volumes:130) the volume list is ['test_api_volume']
+[17:30:09] 20106 DEBUG                    (list_volumes:67) get volumes from listVolumes is ['test_api_volume']
+[17:30:09] 20106 DEBUG                    (list_volumes:49) the xml description of pool is <pool type='netfs'>
+  <name>netfs_pool</name>
+  <uuid>941b42c8-4df0-4e88-b57e-3edd3549b80b</uuid>
+  <capacity unit='bytes'>126290493440</capacity>
+  <allocation unit='bytes'>91765927936</allocation>
+  <available unit='bytes'>34524565504</available>
+  <source>
+    <host name='127.0.0.1'/>
+    <dir path='/shared/test_API_nfs'/>
+    <format type='nfs'/>
+  </source>
+  <target>
+    <path>/tmp/netfs</path>
+    <permissions>
+      <mode>0755</mode>
+      <owner>0</owner>
+      <group>0</group>
+      <label>system_u:object_r:nfs_t:s0</label>
+    </permissions>
+  </target>
+</pool>
+
+[17:30:09] 20106 INFO                     (list_volumes:70) the pool path is /tmp/netfs
+[17:30:09] 20106 INFO                     (list_volumes:71) the pool type is netfs
+[17:30:09] 20106 DEBUG                    (list_volumes:96) get volumes from poolpath is ['test_api_volume']
+[17:30:09] 20106 INFO                     (list_volumes:97) compare the volume list under poolpath and list from API
+[17:30:09] 20106 INFO                     (list_volumes:133) get the right volumes list successfully
+-------------------------------------------------   storage:list_volumes PASS  -------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:delete_netfs_volume
+
+------------------------------------------------   storage:delete_netfs_volume  ------------------------------------------------
+[17:30:09] 20106 DEBUG                    (delete_netfs_volume:61) volume key: /tmp/netfs/test_api_volume
+[17:30:09] 20106 INFO                     (delete_netfs_volume:22) current storage volume number: 1
+[17:30:09] 20106 DEBUG                    (delete_netfs_volume:16) current storage volume list: ['test_api_volume']
+[17:30:09] 20106 INFO                     (delete_netfs_volume:67) delete test_api_volume storage volume
+[17:30:09] 20106 INFO                     (delete_netfs_volume:22) current storage volume number: 0
+[17:30:09] 20106 DEBUG                    (delete_netfs_volume:16) current storage volume list: []
+[17:30:09] 20106 DEBUG                    (delete_netfs_volume:30) volume file path: /tmp/netfs/test_api_volume
+[17:30:09] 20106 INFO                     (delete_netfs_volume:72) delete test_api_volume storage volume is successful
+----------------------------------------------   storage:delete_netfs_volume PASS  ----------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:list_volumes
+
+----------------------------------------------------   storage:list_volumes  ----------------------------------------------------
+[17:30:09] 20106 INFO                     (list_volumes:116) the poolname is netfs_pool
+[17:30:09] 20106 INFO                     (list_volumes:130) the volume list is []
+[17:30:09] 20106 DEBUG                    (list_volumes:67) get volumes from listVolumes is []
+[17:30:09] 20106 DEBUG                    (list_volumes:49) the xml description of pool is <pool type='netfs'>
+  <name>netfs_pool</name>
+  <uuid>941b42c8-4df0-4e88-b57e-3edd3549b80b</uuid>
+  <capacity unit='bytes'>126290493440</capacity>
+  <allocation unit='bytes'>91765727232</allocation>
+  <available unit='bytes'>34524766208</available>
+  <source>
+    <host name='127.0.0.1'/>
+    <dir path='/shared/test_API_nfs'/>
+    <format type='nfs'/>
+  </source>
+  <target>
+    <path>/tmp/netfs</path>
+    <permissions>
+      <mode>0755</mode>
+      <owner>0</owner>
+      <group>0</group>
+      <label>system_u:object_r:nfs_t:s0</label>
+    </permissions>
+  </target>
+</pool>
+
+[17:30:09] 20106 INFO                     (list_volumes:70) the pool path is /tmp/netfs
+[17:30:09] 20106 INFO                     (list_volumes:71) the pool type is netfs
+[17:30:09] 20106 DEBUG                    (list_volumes:96) get volumes from poolpath is []
+[17:30:09] 20106 INFO                     (list_volumes:97) compare the volume list under poolpath and list from API
+[17:30:09] 20106 INFO                     (list_volumes:133) get the right volumes list successfully
+-------------------------------------------------   storage:list_volumes PASS  -------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:destroy_pool
+
+----------------------------------------------------   storage:destroy_pool  ----------------------------------------------------
+[17:30:09] 20106 INFO                     (destroy_pool:17) destroy pool netfs_pool SUCCESS , 
+[17:30:09] 20106 INFO                     (destroy_pool:19) netfs_pool doesn't seem to be an active poolname anymore, 
+[17:30:09] 20106 INFO                     (destroy_pool:54) netfs_pool is destroyed!!!
+-------------------------------------------------   storage:destroy_pool PASS  -------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:undefine_pool
+
+---------------------------------------------------   storage:undefine_pool  ---------------------------------------------------
+[17:30:09] 20106 INFO                     (undefine_pool:51) original storage pool define number: 1
+[17:30:09] 20106 DEBUG                    (undefine_pool:14) current define storage pool: ['netfs_pool']
+[17:30:09] 20106 DEBUG                    (undefine_pool:15) current active storage pool: ['Downloads', 'lnie', 'default', 'tmp', 'libvirt']
+[17:30:09] 20106 INFO                     (undefine_pool:55) undefine netfs_pool storage pool
+[17:30:09] 20106 INFO                     (undefine_pool:58) current storage pool define number: 0
+[17:30:09] 20106 DEBUG                    (undefine_pool:14) current define storage pool: []
+[17:30:09] 20106 DEBUG                    (undefine_pool:15) current active storage pool: ['Downloads', 'lnie', 'default', 'tmp', 'libvirt']
+[17:30:09] 20106 DEBUG                    (undefine_pool:23) netfs_pool xml file path: /etc/libvirt/storage/netfs_pool.xml
+[17:30:09] 20106 INFO                     (undefine_pool:61) undefine netfs_pool storage pool is successful
+-------------------------------------------------   storage:undefine_pool PASS  -------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:create_netfs_pool
+
+-------------------------------------------------   storage:create_netfs_pool  -------------------------------------------------
+[17:30:09] 20106 INFO                     (create_netfs_pool:19) poolnames is: ['Downloads', 'lnie', 'default', 'tmp', 'libvirt']
+[17:30:09] 20106 INFO                     (create_netfs_pool:24) check_pool_create netfs_pool storage pool pass
+[17:30:09] 20106 DEBUG                    (create_netfs_pool:75) storage pool xml:
+<pool type="netfs">
+  <name>netfs_pool</name>
+  <source>
+    <host name="127.0.0.1"/>
+    <dir path="/shared/test_API_nfs"/>
+    <format type="nfs"/>
+  </source>
+  <target>
+    <path>/mnt</path>
+  </target>
+</pool>
+
+[17:30:09] 20106 INFO                     (create_netfs_pool:78) Creating netfs_pool storage pool
+[17:30:09] 20106 DEBUG                    (create_netfs_pool:59) current define storage pool: []
+[17:30:09] 20106 DEBUG                    (create_netfs_pool:60) current active storage pool: ['Downloads', 'lnie', 'default', 'tmp', 'libvirt', 'netfs_pool']
+[17:30:09] 20106 INFO                     (create_netfs_pool:19) poolnames is: ['Downloads', 'lnie', 'default', 'tmp', 'libvirt', 'netfs_pool']
+[17:30:09] 20106 INFO                     (create_netfs_pool:83) creating netfs_pool storage pool is                          successful in libvirt
+[17:30:09] 20106 INFO                     (create_netfs_pool:42) src host: 127.0.0.1 src path: /shared/test_API_nfs tgt path: /mnt
+[17:30:09] 20106 INFO                     (create_netfs_pool:85) creating netfs_pool storage pool is SUCCESSFUL!!!
+-----------------------------------------------   storage:create_netfs_pool PASS  -----------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:destroy_pool
+
+----------------------------------------------------   storage:destroy_pool  ----------------------------------------------------
+[17:30:09] 20106 INFO                     (destroy_pool:17) destroy pool netfs_pool SUCCESS , 
+[17:30:09] 20106 INFO                     (destroy_pool:19) netfs_pool doesn't seem to be an active poolname anymore, 
+[17:30:09] 20106 INFO                     (destroy_pool:54) netfs_pool is destroyed!!!
+-------------------------------------------------   storage:destroy_pool PASS  -------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+
+Summary:
+    Total:20 [Pass:17 Fail:3 Skip:0]

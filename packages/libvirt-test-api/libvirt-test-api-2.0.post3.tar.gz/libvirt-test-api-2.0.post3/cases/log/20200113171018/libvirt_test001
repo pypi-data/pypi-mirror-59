@@ -1,0 +1,89 @@
+Checking Testing Environment... 
+    Linux bogon 5.3.16-300.fc31.x86_64 #1 SMP Fri Dec 13 17:59:04 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+    Virsh command line tool of libvirt: 5.6.0
+    libvirtd (libvirt) 5.6.0
+    Default URI: qemu:///system
+    QEMU emulator version 4.1.1 (qemu-4.1.1-1.fc31)
+Copyright (c) 2003-2019 Fabrice Bellard and the QEMU Project developers
+
+Start Testing:
+    Case Count: 20
+    Log File: log/20200113171018/libvirt_test001
+
+    storage:define_netfs_pool
+
+-------------------------------------------------   storage:define_netfs_pool  -------------------------------------------------
+[17:10:19] 18418 DEBUG                    (storage_common:17) netfs_pool xml file path: /etc/libvirt/storage/netfs_pool.xml
+[17:10:19] 18418 DEBUG                    (define_netfs_pool:36) storage pool xml:
+<pool type="netfs">
+  <name>netfs_pool</name>
+  <source>
+    <host name="127.0.0.1"/>
+    <dir path="/shared/test_API_nfs"/>
+    <format type="nfs"/>
+  </source>
+  <target>
+    <path>/tmp/netfs</path>
+  </target>
+</pool>
+
+[17:10:19] 18418 INFO                     (define_netfs_pool:41) original storage pool define number: 0
+[17:10:19] 18418 DEBUG                    (storage_common:11) current define storage pool: []
+[17:10:19] 18418 DEBUG                    (storage_common:12) current active storage pool: ['Downloads', 'lnie', 'default', 'tmp', 'libvirt']
+[17:10:19] 18418 INFO                     (define_netfs_pool:45) define netfs_pool storage pool
+[17:10:19] 18418 INFO                     (define_netfs_pool:48) current storage pool define number: 1
+[17:10:19] 18418 DEBUG                    (storage_common:11) current define storage pool: ['netfs_pool']
+[17:10:19] 18418 DEBUG                    (storage_common:12) current active storage pool: ['Downloads', 'lnie', 'default', 'tmp', 'libvirt']
+[17:10:19] 18418 DEBUG                    (storage_common:41) netfs_pool xml file path: /etc/libvirt/storage/netfs_pool.xml
+[17:10:19] 18418 INFO                     (define_netfs_pool:51) define netfs_pool storage pool is successful
+-----------------------------------------------   storage:define_netfs_pool PASS  -----------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:find_netfs_pool_sources
+
+----------------------------------------------   storage:find_netfs_pool_sources  ----------------------------------------------
+[17:10:19] 18418 DEBUG                    (find_netfs_pool_sources:78) storage source spec xml:
+<source>
+  <host name="127.0.0.1"/>
+  <format type="nfs"/>
+</source>
+
+[17:10:19] 18418 INFO                     (find_netfs_pool_sources:80) find pool sources of netfs type
+[17:10:22] 18418 INFO                     (find_netfs_pool_sources:82) pool sources xml description is:
+ <sources>
+  <source>
+    <host name='127.0.0.1'/>
+    <dir path='/shared/test_API_nfs'/>
+    <format type='nfs'/>
+  </source>
+  <source>
+    <host name='127.0.0.1'/>
+    <dir path='/shared'/>
+    <format type='nfs'/>
+  </source>
+</sources>
+
+[17:10:22] 18418 DEBUG                    (find_netfs_pool_sources:38) pool source info: {'nfs': ['/shared/test_API_nfs', '/shared']}
+[17:10:22] 18418 DEBUG                    (find_netfs_pool_sources:46) showmount command output list is: ['/shared/test_API_nfs', '/shared']
+[17:10:22] 18418 INFO                     (find_netfs_pool_sources:64) pool sources list match.
+[17:10:22] 18418 INFO                     (find_netfs_pool_sources:89) pool sources check succeed
+--------------------------------------------   storage:find_netfs_pool_sources PASS  --------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:build_netfs_pool
+
+--------------------------------------------------   storage:build_netfs_pool  --------------------------------------------------
+[17:10:22] 18418 DEBUG                    (build_netfs_pool:27) b'/tmp/netfs' directory is existent
+[17:10:22] 18418 DEBUG                    (build_netfs_pool:54) b'/tmp/netfs' directory has be built
+[17:10:22] 18418 DEBUG                    (build_netfs_pool:16) current define storage pool: ['netfs_pool']
+[17:10:22] 18418 DEBUG                    (build_netfs_pool:18) current active storage pool: ['Downloads', 'lnie', 'default', 'tmp', 'libvirt']
+[17:10:22] 18418 INFO                     (build_netfs_pool:59) build netfs_pool storage pool
+[17:10:22] 18418 DEBUG                    (build_netfs_pool:16) current define storage pool: ['netfs_pool']
+[17:10:22] 18418 DEBUG                    (build_netfs_pool:18) current active storage pool: ['Downloads', 'lnie', 'default', 'tmp', 'libvirt']
+[17:10:22] 18418 DEBUG                    (build_netfs_pool:27) b'/tmp/netfs' directory is existent
+[17:10:22] 18418 INFO                     (build_netfs_pool:64) build netfs_pool storage pool is successful
+-----------------------------------------------   storage:build_netfs_pool PASS  -----------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+    storage:activate_pool
+
+---------------------------------------------------   storage:activate_pool  ---------------------------------------------------
+-------------------------------------------------   storage:activate_pool FAIL  -------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
