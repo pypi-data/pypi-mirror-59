@@ -1,0 +1,23 @@
+ansicolor>=0.2.4
+chardet>=2.3.0
+setuptools>=36.2.2
+
+[:python_version < "3.4"]
+enum34>=1.0.4
+pathlib>=1.0.1
+
+[:python_version < "3.5"]
+PyYAML<=5.2
+
+[:python_version < "3.6"]
+typing>=3.6.2
+
+[:python_version >= "3.5"]
+PyYAML>=3.11
+
+[testing]
+pytest
+pytest-cov
+
+[testing:python_version < "3.3"]
+mock
