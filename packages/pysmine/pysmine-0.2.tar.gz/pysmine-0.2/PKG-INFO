@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pysmine
+Version: 0.2
+Summary: BDD decorators for python unittest Test Runner
+Home-page: https://github.com/user/luisgrases
+Author: Luis Grases
+Author-email: luisgrases@gmail.com
+License: MIT
+Download-URL: https://github.com/luisgrases/pysmine/archive/v_02.tar.gz
+Description: UNKNOWN
+Keywords: BDD,testing,nested,tests,behavior,driven,development
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
