@@ -1,0 +1,9 @@
+setup.py
+matrix_revolution/__init__.py
+matrix_revolution/matrix_format.py
+matrix_revolution/operations.py
+matrix_revolution.egg-info/PKG-INFO
+matrix_revolution.egg-info/SOURCES.txt
+matrix_revolution.egg-info/dependency_links.txt
+matrix_revolution.egg-info/not-zip-safe
+matrix_revolution.egg-info/top_level.txt
