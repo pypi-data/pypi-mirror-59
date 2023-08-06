@@ -1,0 +1,3 @@
+setuptools
+string-color
+beautifulsoup4
