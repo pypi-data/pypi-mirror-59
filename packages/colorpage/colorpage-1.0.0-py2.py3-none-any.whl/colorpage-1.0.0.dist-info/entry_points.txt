@@ -1,0 +1,6 @@
+[console_scripts]
+colorpage = colorpage:main
+shipwright = colorpage.shipwright:main
+shipwright3 = colorpage.shipwright:main
+shipwright3.7 = colorpage.shipwright:main
+
