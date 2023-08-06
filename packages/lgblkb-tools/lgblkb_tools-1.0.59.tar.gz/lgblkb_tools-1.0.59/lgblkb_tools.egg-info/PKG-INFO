@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lgblkb-tools
+Version: 1.0.59
+Summary: Some useful tools for everyday routine coding improvisation)
+Home-page: https://github.com/lgblkb/lgblkb_tools
+Author: Dias Bakhtiyarov
+Author-email: dbakhtiyarov@nu.edu.kz
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
