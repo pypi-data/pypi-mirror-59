@@ -1,0 +1,10 @@
+README.md
+setup.py
+pciids/__init__.py
+pciids/pciids.py
+pciids/sysfs.py
+pciids_ilker_manap.egg-info/PKG-INFO
+pciids_ilker_manap.egg-info/SOURCES.txt
+pciids_ilker_manap.egg-info/dependency_links.txt
+pciids_ilker_manap.egg-info/requires.txt
+pciids_ilker_manap.egg-info/top_level.txt
