@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: catslab
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://finance.rescala.jp
+Author: RV
+Author-email: yo-maruya@rescala.jp
+License: MIT
+Project-URL: Bug Reports, https://github.com/rv-rescala/catsgmo/issues
+Project-URL: Source, https://github.com/rv-rescala/catsgmo
+Description: # What is?
+        
+        catslab is a library for financial engineering.
+        
+        # Sample
+        
+        Please check sample folder.
+        
+        
+        # Author
+        1. Yoshihisa Maruya <yo-maruya@rescala.jp>
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
