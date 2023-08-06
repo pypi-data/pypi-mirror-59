@@ -1,0 +1,8 @@
+README.md
+setup.py
+solve/__init__.py
+solve/version.py
+solve.egg-info/PKG-INFO
+solve.egg-info/SOURCES.txt
+solve.egg-info/dependency_links.txt
+solve.egg-info/top_level.txt
