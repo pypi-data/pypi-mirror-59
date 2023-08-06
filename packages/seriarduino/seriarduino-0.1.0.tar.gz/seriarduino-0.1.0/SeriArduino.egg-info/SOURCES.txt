@@ -1,0 +1,12 @@
+setup.py
+SeriArduino.egg-info/PKG-INFO
+SeriArduino.egg-info/SOURCES.txt
+SeriArduino.egg-info/dependency_links.txt
+SeriArduino.egg-info/requires.txt
+SeriArduino.egg-info/top_level.txt
+seriarduino/__init__.py
+seriarduino.egg-info/PKG-INFO
+seriarduino.egg-info/SOURCES.txt
+seriarduino.egg-info/dependency_links.txt
+seriarduino.egg-info/requires.txt
+seriarduino.egg-info/top_level.txt
