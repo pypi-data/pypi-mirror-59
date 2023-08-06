@@ -1,0 +1,14 @@
+mwtext/__init__.py,sha256=b38YcSBxLGAf02LkxG8qEAtFtAqZqsU_zYRtoDgxc9U,92
+mwtext/about.py,sha256=eT3RjM-bzcpdUXNzWr6DjuQ5FXyxd89iExyfEWI3xgs,380
+mwtext/mwtext.py,sha256=AK-ch9MBCqmppzpXml1uNKisqFtMZCWwy4oxYLj4l-4,274
+mwtext/wikitext_preprocessor.py,sha256=mkffZhhHP3dZUcqF23LF218a6WAnHYFJieqepL2N28g,5006
+mwtext/utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mwtext/utilities/preprocess_text.py,sha256=LhsGRJBfF6zfn5gh_gFZovyjgPUkrlxT_EkvrXj5aw8,2401
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_wikitext_preprocessor.py,sha256=z2i57vCTG-FK9HZx4FF3jTvQw1c1Vdz4ng6yt_MYfn8,10905
+mwtext-0.0.1.dist-info/LICENSE,sha256=YAkA8iW42paPJoubuzgC7SaiQuf5TaWZB6E9PH9wxtw,1081
+mwtext-0.0.1.dist-info/METADATA,sha256=mRAmTJB9JdIgJyDOzOfUKeRxu9Y0EgkyvR7BzQ4bszQ,1118
+mwtext-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+mwtext-0.0.1.dist-info/entry_points.txt,sha256=nycxHg9Q1x6mChcFICTL5x4Rt7DJQgYJ5MigkjvweWE,47
+mwtext-0.0.1.dist-info/top_level.txt,sha256=AfCiEk7Br4IXtytfc6w3rrlMO6UivmBV3bKBi0DTxrk,13
+mwtext-0.0.1.dist-info/RECORD,,
