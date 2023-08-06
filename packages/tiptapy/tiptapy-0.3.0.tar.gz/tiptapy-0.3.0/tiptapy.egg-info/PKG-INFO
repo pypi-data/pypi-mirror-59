@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: tiptapy
+Version: 0.3.0
+Summary: Library that generates HTML output from JSON export of tiptap editor
+Home-page: https://github.com/scrolltech/tiptapy
+Author: Shekhar Tiwatne
+Author-email: pythonic@gmail.com
+License: http://www.opensource.org/licenses/mit-license.php
+Description: # tiptapy
+        Library that generates HTML output from JSON export of tiptap editor
+        
+        ``` {.sourceCode .python}
+        import tiptapy
+        
+        s = """
+        {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "This is some inserted text. 👋"
+                }
+              ]
+            }
+          ]
+        }
+        """
+        
+        out = tiptapy.to_html(s)
+        print(out)
+        # '<p>This is some inserted text. 👋</p>'
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
