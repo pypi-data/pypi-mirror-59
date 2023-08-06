@@ -1,0 +1,8 @@
+README.md
+setup.py
+bayinf/__init__.py
+bayinf/version.py
+bayinf.egg-info/PKG-INFO
+bayinf.egg-info/SOURCES.txt
+bayinf.egg-info/dependency_links.txt
+bayinf.egg-info/top_level.txt
