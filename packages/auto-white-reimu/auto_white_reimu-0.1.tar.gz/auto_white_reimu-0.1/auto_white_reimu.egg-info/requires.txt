@@ -1,0 +1,8 @@
+numpy
+bitstruct
+requests
+Jinja2
+
+[test]
+pytest
+pandas
