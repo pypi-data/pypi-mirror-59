@@ -1,0 +1,14 @@
+pywebcrawler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywebcrawler/__main__.py,sha256=M4pW7CMjtwMQ3LfXH4GTtz6mwWxWHKzZUAI0uxzW1zY,8076
+pywebcrawler/colorify.py,sha256=4mDOcnBPYVXF3B41SLkIcYQnVMwomi0Vcbed3dxV6XQ,1181
+pywebcrawler/link_finder.py,sha256=x1QuR732S9VPf8XbeWoEQxy5TlvzfuMaqxgKDRKTM7I,2901
+pywebcrawler/requester.py,sha256=8Ms-426CBAendtK3XqYiF29hmqBx6rsq4mltZyWGKuY,2895
+pywebcrawler/spider.py,sha256=3HhSCzA4yr1pV8QWHL_GbEB7c0_8tiVwRq93S1Tk4rQ,5235
+pywebcrawler/utilities.py,sha256=II39oMBKbfP89kaHRkc0eTaaEHDMM0UvLLkF2U_p0DE,2170
+pywebcrawler/data/mimetypes.txt,sha256=msMAHwK2Mms_bK-yOTfNPmUp0CWXUhh1OYZlybz5RJM,18790
+pywebcrawler/data/useragents.txt,sha256=60nQl-nKjpX1GQtaQGTYRSmUkYononG0qC4F-TiPsoo,32456
+pywebcrawler-0.0.1.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+pywebcrawler-0.0.1.dist-info/METADATA,sha256=F6p7rJFEK8NJhM_NADmkLANPG-Tg5QHE_10Cm0TEJEA,2555
+pywebcrawler-0.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pywebcrawler-0.0.1.dist-info/top_level.txt,sha256=fyFvbnjcIMfmuPwKkG3lHJ4Pkf_G4FIp8W3EMyOKHP8,13
+pywebcrawler-0.0.1.dist-info/RECORD,,
