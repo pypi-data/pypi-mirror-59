@@ -1,0 +1,16 @@
+pykeybasebot/__init__.py,sha256=MdNSTssxxBLMqYTxNOGqVF_I4B7l54nkSI6GT9JHcLA,88
+pykeybasebot/bot.py,sha256=3rora-Onj7ORaL9boKWLZLi-AHHehmjDVAKt5f3HH7s,6593
+pykeybasebot/chat_client.py,sha256=MFoxUbdIByz4Huu-dKKHE4i9R81xCvXCnXNMkHx2M7c,4320
+pykeybasebot/cli.py,sha256=fSPpp8_W8NDF-uCx_V9rdjrpxuMA5BiWYQ1lRgUciB8,2754
+pykeybasebot/errors.py,sha256=VKyaKYGDDdoKJ9BnRo-gnkABrhQDL_H4Gr1CudqzbUE,784
+pykeybasebot/kbevent.py,sha256=PyOaHYOpXCsuxq5S33x0LyIR4bOXebwtfymSCHdYFpY,622
+pykeybasebot/kvstore_client.py,sha256=aIySCHRrmm52cZ6fLwC8maxKHEkKXKleO1UhxSTRDik,3364
+pykeybasebot/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pykeybasebot/types/chat1/__init__.py,sha256=_by9FTGDArJLFg2PjLIhxGRP9BLnDQO7VZF9qd6W3MM,141631
+pykeybasebot/types/gregor1/__init__.py,sha256=EaYGp8nXE6WQ3eGu65fwzQzF9dYSTaurArTo7rZgyRc,5910
+pykeybasebot/types/keybase1/__init__.py,sha256=4wV9sC84k3z-fg_n9LsMhkuBrji6jI7hdr9r0TgNF94,237516
+pykeybasebot/types/stellar1/__init__.py,sha256=6VbO6Q25tHXgfrE8aqCmDzrrPzPPSCLL0kgPsYm6aXo,59089
+pykeybasebot-0.2.0.dist-info/LICENSE,sha256=YE25OJY98TqIDiTtNgbEZAkdOopEIQp7quMGbUTdT1o,1472
+pykeybasebot-0.2.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+pykeybasebot-0.2.0.dist-info/METADATA,sha256=MXLqgDdM4r4XpMcyiSr1OJwGVShtx6-eYW2VTXAUSlI,6888
+pykeybasebot-0.2.0.dist-info/RECORD,,
