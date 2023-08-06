@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: homeassistant-magiwand
+Version: 0.1.0
+Summary: Allow MagiQuest Wands to call into HomeAssistant Webhooks
+Home-page: https://gitlab.com/rveach/homeassistant-magiwand
+Author: Ryan Veach
+Author-email: rveach@gmail.com
+License: MIT
+Download-URL: https://gitlab.com/rveach/homeassistant-magiwand/-/archive/master/homeassistant-magiwand-master.tar.gz
+Description: # homeassistant-magiwand
+        
+        I'll write documentation real soon.
+        
+Keywords: wand,magiquest,IR,HomeAssistant
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

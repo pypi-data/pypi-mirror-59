@@ -1,0 +1,9 @@
+README.md
+ha_wand_service.py
+setup.py
+ha_magiwand/__init__.py
+homeassistant_magiwand.egg-info/PKG-INFO
+homeassistant_magiwand.egg-info/SOURCES.txt
+homeassistant_magiwand.egg-info/dependency_links.txt
+homeassistant_magiwand.egg-info/requires.txt
+homeassistant_magiwand.egg-info/top_level.txt
