@@ -1,0 +1,13 @@
+PyQt5
+opencv-python
+tqdm
+joblib
+scipy
+matplotlib
+imutils
+numpy>=1.16
+pascal-voc-tools
+pascal-voc-writer
+pytest-qt
+pyrealsense2
+python-pcl
