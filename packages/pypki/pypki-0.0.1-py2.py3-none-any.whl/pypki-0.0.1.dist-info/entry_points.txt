@@ -1,0 +1,3 @@
+[console_scripts]
+pki = pki.cli:main
+
