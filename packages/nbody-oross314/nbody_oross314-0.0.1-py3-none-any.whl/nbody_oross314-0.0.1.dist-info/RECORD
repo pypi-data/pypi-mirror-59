@@ -1,0 +1,10 @@
+geometry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geometry/patch.py,sha256=xBsNtiX3RWMnMn4hBlVafi2fS78W-EMblgcnILDzZHQ,593
+geometry/sample.py,sha256=1USudRBqJKJpECkYUcG9BURt3DvYf2i96qohyYs5fQ4,815
+geometry/spherical_to_cartesian.py,sha256=pQMQDi3VTbEegRZJpRTy6dvV6SU9y0dQi8pzqp1N3RI,704
+geometry/vector_generator.py,sha256=KHqm5cdCwfUfLl6cWP0Lv-SPw5-1MJxRZGsGE_RU8PY,2922
+nbody_oross314-0.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+nbody_oross314-0.0.1.dist-info/METADATA,sha256=nGjKt_5SqU5ZNp_zTtxrK2NgS8FP5W3XBGsbqmH-6gw,537
+nbody_oross314-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+nbody_oross314-0.0.1.dist-info/top_level.txt,sha256=RWbWhWYclEM-OFtXLCB4eLv-jxNnlJB-NPC2YM587Fo,9
+nbody_oross314-0.0.1.dist-info/RECORD,,
