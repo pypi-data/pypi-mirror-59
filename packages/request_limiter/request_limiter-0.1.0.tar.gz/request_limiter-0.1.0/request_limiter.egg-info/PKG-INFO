@@ -1,0 +1,68 @@
+Metadata-Version: 1.2
+Name: request-limiter
+Version: 0.1.0
+Summary: Request limiter contains a decorator to limit the rate of http request
+Home-page: https://github.com/matibek/request_limiter
+Author: Mati Bekuma Terefe
+Author-email: matibek@gmail.com
+License: MIT license
+Description: ===============
+        Request Limiter
+        ===============
+        
+        
+        .. image:: https://img.shields.io/pypi/v/request_limiter.svg
+                :target: https://pypi.python.org/pypi/request_limiter
+        
+        .. image:: https://img.shields.io/travis/matibek/request_limiter.svg
+                :target: https://travis-ci.org/matibek/request_limiter
+        
+        .. image:: https://readthedocs.org/projects/request-limiter/badge/?version=latest
+                :target: https://request-limiter.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        Request limiter contains a decorator to limit the rate of http request
+        
+        
+        * Free software: MIT license
+        * Documentation: https://request-limiter.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * A decorator to limit django http request
+        * A strategy to limit request per interval using requester IP
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2020-01-14)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: request_limiter
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
