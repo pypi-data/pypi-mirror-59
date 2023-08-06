@@ -1,0 +1,8 @@
+README.md
+setup.py
+TaritTopsis.egg-info/PKG-INFO
+TaritTopsis.egg-info/SOURCES.txt
+TaritTopsis.egg-info/dependency_links.txt
+TaritTopsis.egg-info/top_level.txt
+package/__init__.py
+package/topsis.py
