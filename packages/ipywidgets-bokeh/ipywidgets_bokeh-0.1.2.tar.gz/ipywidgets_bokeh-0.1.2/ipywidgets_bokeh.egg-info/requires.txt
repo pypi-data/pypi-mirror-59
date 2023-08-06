@@ -1,0 +1,2 @@
+bokeh>=2.0.0dev5
+ipywidgets>=7.5.0
