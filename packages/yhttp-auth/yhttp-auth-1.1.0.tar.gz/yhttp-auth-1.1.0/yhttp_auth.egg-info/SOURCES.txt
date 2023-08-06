@@ -1,0 +1,12 @@
+README.md
+setup.py
+yhttp/extensions/auth/__init__.py
+yhttp/extensions/auth/authentication.py
+yhttp/extensions/auth/cli.py
+yhttp/extensions/auth/setup.py
+yhttp/extensions/auth/token.py
+yhttp_auth.egg-info/PKG-INFO
+yhttp_auth.egg-info/SOURCES.txt
+yhttp_auth.egg-info/dependency_links.txt
+yhttp_auth.egg-info/requires.txt
+yhttp_auth.egg-info/top_level.txt
