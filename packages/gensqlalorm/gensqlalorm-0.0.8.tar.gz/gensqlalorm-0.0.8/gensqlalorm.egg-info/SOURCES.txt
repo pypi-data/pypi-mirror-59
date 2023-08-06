@@ -1,0 +1,11 @@
+README.md
+setup.py
+gensqlalorm/__init__.py
+gensqlalorm/__main__.py
+gensqlalorm.egg-info/PKG-INFO
+gensqlalorm.egg-info/SOURCES.txt
+gensqlalorm.egg-info/dependency_links.txt
+gensqlalorm.egg-info/entry_points.txt
+gensqlalorm.egg-info/requires.txt
+gensqlalorm.egg-info/top_level.txt
+gensqlalorm.egg-info/zip-safe
