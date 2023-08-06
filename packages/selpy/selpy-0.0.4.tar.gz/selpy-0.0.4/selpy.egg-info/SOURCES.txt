@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+selpy/__init__.py
+selpy.egg-info/PKG-INFO
+selpy.egg-info/SOURCES.txt
+selpy.egg-info/dependency_links.txt
+selpy.egg-info/requires.txt
+selpy.egg-info/top_level.txt
+selpy/bin/selpy.py
+selpy/src/__init__.py
+selpy/src/driver.py
+selpy/src/locator.py
+selpy/src/store.py
+selpy/src/variable.py
