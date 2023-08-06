@@ -1,0 +1,15 @@
+client/Animation.py,sha256=l4x7_bCdILl431orbtM03mQ4IxdFNpA_uADGTNocP24,1794
+client/AnimationData.py,sha256=FWejcXs0tt5s8Ok1Gn-bEUgRv7B9TpuhuV4NZ2WNqMU,4188
+client/AnimationSender.py,sha256=X8lkU8WkZcG9NvJ49dncJvK2RVvdCgzQYDTjvsCzK-Q,1616
+client/ColorContainer.py,sha256=ZawafZkFqRp0tDapaTAJMerodUOjkX3tRmcrj7mk0uA,1456
+client/Direction.py,sha256=EyISMsMZNwRKYFMXreJL771oQGaUtxtI8Ar3CDYQndI,1229
+client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/client/test_animation_data.py,sha256=NGvIgL0ZBB7e1ew3zMrkWs7h82HzXJSMlOkBFrbQ5eo,6161
+test/client/test_animation_sender.py,sha256=GKENDjXcu7XQuVtr3lP-rIIAYdmf8lMF5P9qQxetWtU,1327
+test/client/test_colorcontainer.py,sha256=eGLmeSv7IzY22v1kPBe9OcJe-me38iR3-Ts9Hrbj0ys,1372
+animatedledstrip_client-0.6.dist-info/METADATA,sha256=ZGXTCjDz7XsRwviS94wJ5WtEPtigzzsK0lkA6vFhiTc,337
+animatedledstrip_client-0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+animatedledstrip_client-0.6.dist-info/top_level.txt,sha256=QX5lakJ615jlXL2ItrrMZrmlB3fiAiM9hPmUFS4ukN0,12
+animatedledstrip_client-0.6.dist-info/RECORD,,

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: animatedledstrip-client
+Version: 0.6
+Summary: Helper library for connecting to an AnimatedLEDStripServer to run animations on a LED strip
+Home-page: https://github.com/AnimatedLEDStrip/AnimatedLEDStripClient
+Author: Max Narvaez
+Author-email: mnmax.narvaez3@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+UNKNOWN
+
+
