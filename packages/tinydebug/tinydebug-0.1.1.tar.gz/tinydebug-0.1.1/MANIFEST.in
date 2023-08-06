@@ -1,0 +1,4 @@
+include tinydebug/TestSuite/test_config.json
+include tinydebug/video_config.yaml
+include tinydebug/fonts/*
+include tinydebug/color_themes/*
