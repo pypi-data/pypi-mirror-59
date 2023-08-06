@@ -1,0 +1,3 @@
+[console_scripts]
+topsis = topsis_yash_saxena.topsis:main
+
