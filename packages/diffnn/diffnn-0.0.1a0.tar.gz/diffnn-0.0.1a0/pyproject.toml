@@ -1,0 +1,24 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "diffnn"
+author = "David Shriver"
+author-email = "dls2fc@virginia.edu"
+# home-page="https://github.com/dlshriver/DiffNN"
+description-file="README.md"
+requires=[
+    "numpy==1.18",
+    "onnx==1.6",
+    "torch==1.3",
+    "torchvision==0.4",
+]
+requires-python=">=3.6"
+
+[tool.flit.metadata.requires-extra]
+dev = ["black", "flit"]
+doc = ["sphinx"]
+
+[tool.flit.scripts]
+diffnn = "diffnn.__main__:_main"
