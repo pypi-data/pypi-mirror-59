@@ -1,0 +1,16 @@
+gwpopulation/.version,sha256=LVHTFhd2JufSUvHdwEuAVeijUwB0zYvtwRw7fYExSwg,51
+gwpopulation/__init__.py,sha256=eSwjLJnW4eKdAuoJSOT0KkdN0q6y5iujRfEaXltkW5o,1707
+gwpopulation/conversions.py,sha256=BDCmsfwRaWNMeMDC5sKAax5Dp_mUrHIKRGMFm83D4_w,1986
+gwpopulation/cupy_utils.py,sha256=-t0OQ5Zde4rRnI3xyUVdpJN41iyR6cvN-dXAHXbz8Cs,7523
+gwpopulation/hyperpe.py,sha256=TmiVX9lyPejjgnrloqzyB9hOyUH9MC4t-y85Lu5NMsM,10608
+gwpopulation/utils.py,sha256=kUkEDZGnd-RnhJ3TWBimcCoXkKR0AL7uGMb1SjY9Sr8,1828
+gwpopulation/vt.py,sha256=ZGhlywgsba6SmzEXwS24uzp_GXjy0fLDVoSzbb-tTYo,1032
+gwpopulation/models/__init__.py,sha256=KA5shD4EQQ5nXt6uv-q14JPeE8FI-Hx8hIqmt1qd5_Q,35
+gwpopulation/models/mass.py,sha256=h6muHmGf1QIdkrBHfkFeUua7derEJvfWAluhCIj7AM4,13857
+gwpopulation/models/redshift.py,sha256=2No-_ScC2OQMFN-c4WZUpr70AIHIOuShsamXm5TgCkg,1418
+gwpopulation/models/spin.py,sha256=2DXLCzd00Vd7feiWOZZRW0hxtqMnyyciRFCfcMYRVcg,2797
+gwpopulation-0.5.0.dist-info/LICENSE.md,sha256=0Og_JO6tFN7YQteULez3MB4mwDSvC6Uxaf2Ztgq9v7Q,1068
+gwpopulation-0.5.0.dist-info/METADATA,sha256=5JVJZBb9-R5Lr2ckXcRDkfoD1kRCqSjrVDrMuSQkl4M,2219
+gwpopulation-0.5.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+gwpopulation-0.5.0.dist-info/top_level.txt,sha256=KJ-f1LFc-wuSQbPDfvsktx7Cpo-JIs48fPqQWwrVLNQ,13
+gwpopulation-0.5.0.dist-info/RECORD,,
