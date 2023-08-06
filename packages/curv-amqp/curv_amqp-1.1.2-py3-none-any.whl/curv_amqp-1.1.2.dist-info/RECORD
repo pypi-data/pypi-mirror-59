@@ -1,0 +1,12 @@
+curv_amqp/__init__.py,sha256=5SgGjThsHu_ITn8V83BvCziqCwxdXxTQqcC3KQMHPfM,22
+curv_amqp/channel.py,sha256=725qT4hbaqBXw_Kijkm674WJLbJoaOXJDLtL1aodiSw,8935
+curv_amqp/connection.py,sha256=8mM8kYz95MBsmzC9q9bcpbBjOXceOuelN1AO4qURviM,5999
+curv_amqp/consumer.py,sha256=MNhCrD3HBnZhozWx4EAclmthgB8RPxQiXlQGdvVO1DA,12802
+curv_amqp/exceptions.py,sha256=_klU5bL9tcajn3eM5MNJ3zGa4woKqjH7lcTjtRZTMNE,384
+curv_amqp/publisher.py,sha256=iryGPoRR76IU4GyfXYoWnXW0xcaWlCvwpWOTQmZM--Y,3249
+curv_amqp/timestamp.py,sha256=tIvn3C03RPgOxnMBRRom3Hu959UpL3r9bqAOV-P9dsk,399
+curv_amqp-1.1.2.dist-info/LICENSE,sha256=-FzwZrU99jXJGQy7NX2RgDH_CUN7ONzLurAY38aIrI8,1067
+curv_amqp-1.1.2.dist-info/METADATA,sha256=YZbQIBzF-NsAj9DnXb4fu4MKvJtMWzVT0gyPsuhMpCw,4652
+curv_amqp-1.1.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+curv_amqp-1.1.2.dist-info/top_level.txt,sha256=KnvkKKfB5JtBAfMc1e6YTwlE1BcJNyvM0eazFQCk1ZQ,10
+curv_amqp-1.1.2.dist-info/RECORD,,
