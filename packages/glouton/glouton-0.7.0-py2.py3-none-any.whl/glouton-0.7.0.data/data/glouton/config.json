@@ -1,0 +1,17 @@
+{
+    "DEFAULT": {
+        "NETWORK_API_URL": "https://network.satnogs.org/api/",
+        "DB_API_URL": "https://db.satnogs.org/api/",
+        "DB_API_KEY": "646df86591d4db9ea26906cc648340642546d941",
+        "HTTPS_PROXY": "",
+        "HTTP_PROXY": ""
+    },
+    "MODULES": {
+        "PAYLOAD": [],
+        "WATERFALL": [],
+        "DEMODDATA": [],
+        "FRAME": [],
+        "FOR_ALL_OBSERVATION": []
+    },
+    "LOGFILE": "gl.log"
+}
