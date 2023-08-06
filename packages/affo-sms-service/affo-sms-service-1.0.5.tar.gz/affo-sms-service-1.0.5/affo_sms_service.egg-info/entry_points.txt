@@ -1,0 +1,3 @@
+[console_scripts]
+affo-sms-service = affo_sms_service.cli:manager.run
+

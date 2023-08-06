@@ -1,0 +1,47 @@
+openapi: 3.0.0
+info:
+  title: AFFO SMS Service API
+  version: "1.0"
+paths:
+  /sms/:
+    post:
+      summary: Send an SMS message
+      description: ""
+      operationId: affo_sms_service.api.sms.create
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SMSMessage"
+        description: An SMS message
+        required: true
+      responses:
+        "201":
+          description: An SMS message was successfully sent
+servers:
+  - url: /api/v1.0
+components:
+  schemas:
+    SMSMessage:
+      type: object
+      required:
+        - user_id
+        - message
+        - phone
+        - from
+      properties:
+        user_id:
+          description: A user identifier in the service
+          type: string
+        message:
+          description: A message
+          type: string
+        phone:
+          description: A phone of the user
+          type: string
+        from:
+          description: A sender
+          type: string
+        retry:
+          description: A user retries to receive an SMS message
+          type: boolean

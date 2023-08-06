@@ -1,0 +1,20 @@
+[default]
+DEBUG = true
+TWILIO_ACCOUNT_SID = ""
+TWILIO_AUTH_TOKEN = ""
+TWILIO_FALLBACK_FROM_PHONE = ""
+TWILIO_PHONE = ""
+TWLIIO_SENDER = ""
+CLICKATELL_API_KEY = ""
+
+[development]
+DATABASE_URI = "sqlite://"
+TWILIO_ACCOUNT_SID = "dummy"
+TWILIO_AUTH_TOKEN = "dummy"
+TWILIO_FALLBACK_FROM_PHONE = "dummy"
+TWILIO_PHONE = "dummy"
+TWLIIO_SENDER = "dummy"
+CLICKATELL_API_KEY = "dummy"
+
+[production]
+DEBUG = false
