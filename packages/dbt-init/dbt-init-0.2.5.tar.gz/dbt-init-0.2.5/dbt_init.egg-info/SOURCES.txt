@@ -1,0 +1,15 @@
+README.md
+setup.py
+core/__init__.py
+core/main.py
+dbt_init.egg-info/PKG-INFO
+dbt_init.egg-info/SOURCES.txt
+dbt_init.egg-info/dependency_links.txt
+dbt_init.egg-info/entry_points.txt
+dbt_init.egg-info/requires.txt
+dbt_init.egg-info/top_level.txt
+starter-project/.gitignore
+starter-project/README.md
+starter-project/dbt_project.yml
+starter-project/packages.yml
+starter-project/sample.profiles.yml
