@@ -1,0 +1,9 @@
+pod_billing/__init__.py,sha256=YuCJFEy41fmIMlpsSVDlb22R_k2aUCqFGSELbVsaU_Q,36
+pod_billing/json_schema.json,sha256=f_c8_ggD463V_Z5OrNwA1YiygJlgs9eTGQLjQF9iHu4,82461
+pod_billing/pod_billing.py,sha256=DaP6G9aKWcIMNkreJspE-VGTwDrIrcDJw2AwNDCAiBY,22356
+pod_billing/services.ini,sha256=AJ7STZel_DBqAEwxMSBoiWMu9qmqqtHvcvIUxEIKrDM,1242
+pod_billing/version.py,sha256=605yx8orMkJSezm9hAztWIYx6XQEzqDnLjExQGze7Fk,23
+pod_billing-1.0.0.dist-info/METADATA,sha256=GcsNuBldvbJxEHTw5irlCIXacUbBUiP56MVEpz4aXpY,1664
+pod_billing-1.0.0.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+pod_billing-1.0.0.dist-info/top_level.txt,sha256=ZWULmQXSk9McPCVJe-Z084LFeNG_nUlrdL6-b7DEqp4,12
+pod_billing-1.0.0.dist-info/RECORD,,
