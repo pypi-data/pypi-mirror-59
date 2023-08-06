@@ -1,0 +1,8 @@
+rsgt/__init__.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+rsgt/augmentation.py,sha256=YGSEInSw5IEKuh7lGkAN8yypIBBS_-Dz5fLZqT_GUdE,2991
+rsgt/normalization.py,sha256=ukugo8XsQKhtJiZy8OpnT-BBret60H72mebFLnoEbAk,947
+rsgt-1.0.0.dist-info/LICENSE,sha256=ch1-sKt9wPW-clH4aIYfezCeS5VDuggr1hzYNMruN90,1150
+rsgt-1.0.0.dist-info/METADATA,sha256=30_YoeD0-DosREvfeIhHHf4i6mVBMyA6L1-NKvYcsiE,1087
+rsgt-1.0.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+rsgt-1.0.0.dist-info/top_level.txt,sha256=27o66YkIpafIA2uMbh1nqANWCfScRVIIumLSrcCSEy0,5
+rsgt-1.0.0.dist-info/RECORD,,
