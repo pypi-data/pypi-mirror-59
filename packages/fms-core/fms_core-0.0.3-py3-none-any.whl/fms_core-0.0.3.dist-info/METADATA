@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fms-core
+Version: 0.0.3
+Summary: The core functions that Canaan FMS and other miner management systems needed to communicate with and control Avalon miners.
+Home-page: https://github.com/Canaan-Creative/fms-core
+Author: Canaan
+Author-email: 
+License: Apache-2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+Requires-Dist: kaitaistruct
+
+# fms-core
+
+The core functions that Canaan FMS and other miner management systems needed to communicate with and control Avalon miners.
+
+These code can be used as reference about how to communicate with Avalon miners. This package can be used directly in your Python projects.
+
+Any feedback are welcome.
+

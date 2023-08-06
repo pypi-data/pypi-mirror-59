@@ -1,0 +1,15 @@
+fmsc/__init__.py,sha256=bMSCATZA6K7HlSxBUyq0HC4ywd-aKtHLoL-M-XC8Sck,764
+fmsc/__main__.py,sha256=gfYIz-8pMbZLo1Bd9QvaennBPFOvRySja3NeSikpyPY,3254
+fmsc/aioupgrade.py,sha256=zc9e3cyHlOA2XyRd0xd8DM2i7pxFrPkaSMNJ_4H9KjA,20326
+fmsc/aupfile.py,sha256=10yCbm4fuNJefY-9PFvJckXKfBwNoZZ207k6tLY_UxU,8369
+fmsc/aupparser.py,sha256=jfaGzGjFNS_RY22UlNNCd4Pnq1UuLZXTjpuY2l3-n2E,4520
+fmsc/cgminerapi.py,sha256=ZVXggC3a46OhGSqa1xISBRRtE6Jq9pYpyVWPvSXAu9A,35381
+fmsc/cliprogressbar.py,sha256=U6lbceGmMWd4KGn7Rp04ZLxX4kzpeqLLn6euYgfv-JI,1397
+fmsc/upgrade.py,sha256=LlVeKuWfOQ6ei7QrjyRpdH_stpWHg7DUSj3TOX8WmC0,1684
+fmsc/utils.py,sha256=K04aOMMAZBD6YCEQsPuVFqEtLvKRfkPwMRlBHAhWLXg,8598
+fms_core-0.0.3.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+fms_core-0.0.3.dist-info/METADATA,sha256=yUENnlq4cMuZ31Fb_POtTBFnW9G1T1xvgBhm3MWbtx8,801
+fms_core-0.0.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+fms_core-0.0.3.dist-info/entry_points.txt,sha256=UGTy7n53Avi43XZNyyD4W8EJAJo6CY3vK2k5O-nsQmU,45
+fms_core-0.0.3.dist-info/top_level.txt,sha256=Sh0vCuDxyiIxM27PxjW6-R8TqZAOEOr5CMOSntfaFoA,5
+fms_core-0.0.3.dist-info/RECORD,,
