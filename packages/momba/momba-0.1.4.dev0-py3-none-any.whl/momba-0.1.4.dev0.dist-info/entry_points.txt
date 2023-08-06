@@ -1,0 +1,3 @@
+[console_scripts]
+moml=momba.moml.__main__:main
+
