@@ -1,0 +1,12 @@
+cloudpickle
+psutil
+pyyaml
+six
+cffi>=1.4.0
+
+[spark]
+h5py>=2.9
+numpy
+petastorm>=0.7.7
+pyarrow>=0.15.0
+pyspark>=2.3.2
