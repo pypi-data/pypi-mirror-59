@@ -1,0 +1,11 @@
+auxlibx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auxlibx/np_utils.py,sha256=FrO8YWSzRve2JAI-Xibp1u0jTuAUERkn5A_2gAuhrrk,160
+auxlibx/pd_utils.py,sha256=TjBH_uBoVPSjhOPBK-xEn23yVqW27TIq-NwC4DogDjQ,158
+auxlibx/plot_utils.py,sha256=mlyGz4Cy7SBIJAZTsjbfHcYIx4MmuuzY_NnYL4zPcl8,204
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_lib.py,sha256=BW2rn8kk2Tm0Ec1q3IRyITu2y5fPZ4J_nRTMBxvf-P4,563
+auxlibx-0.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+auxlibx-0.0.1.dist-info/METADATA,sha256=032vkyOjGrp0VS3qQ9X0tFDcfYsXGTrLlM3MnfxR8kI,904
+auxlibx-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+auxlibx-0.0.1.dist-info/top_level.txt,sha256=c4AQNmXTAgDkhh7wTT2gCQo2LqCaKFLOjwSsbYOtxDQ,14
+auxlibx-0.0.1.dist-info/RECORD,,
