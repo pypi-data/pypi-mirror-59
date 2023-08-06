@@ -1,0 +1,10 @@
+{
+    "axis_annot_invalid": "corrupted tt_axis_annot axis annotation tuple.\n{}",
+    "axis_annot_none": "dataframe index for {} axis annotation bar is incompatible with heatmap dataframe index and column.\n{}\n{}",
+    "file_type": "incompatible output file type.\npossible file types are html and png.",
+    "root_unknown": "unknown s_root {}.\nknown are left, right, top, bottom.",
+    "root_unknown_j": "unknown s_root {}.\nknown are left, top.",
+    "x_axis_unique": "df_matrix dataframe column labels are not unique.\n{}",
+    "y_axis_unique": "df_matrix dataframe index labels are not unique.\n{}",
+    "the_last_of_us": "nop"
+}
