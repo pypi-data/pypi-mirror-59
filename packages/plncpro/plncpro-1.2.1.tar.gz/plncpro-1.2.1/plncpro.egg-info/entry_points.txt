@@ -1,0 +1,3 @@
+[console_scripts]
+plncpro = plncpro.__main__:main
+
