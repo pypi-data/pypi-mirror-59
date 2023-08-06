@@ -1,0 +1,2 @@
+include whitepaper/_include/*
+include version.yml
