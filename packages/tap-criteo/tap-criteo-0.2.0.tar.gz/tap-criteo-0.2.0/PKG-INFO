@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tap-criteo
+Version: 0.2.0
+Summary: Singer.io tap for extracting data/metadata from the Criteo Marketing API
+Home-page: http://singer.io
+Author: judah.rand@fospah.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Provides-Extra: dev

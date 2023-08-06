@@ -1,0 +1,6 @@
+singer-python==5.9.0
+criteo-marketing==1.0.159
+
+[dev]
+tox
+pylint
