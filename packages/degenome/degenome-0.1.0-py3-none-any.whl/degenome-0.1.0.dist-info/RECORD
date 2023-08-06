@@ -1,0 +1,8 @@
+degenome/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+degenome/dge_to_ideogram.py,sha256=WKMkb8Lwbrh5z_iIbfzAgRp0dEhygQgFii_IfbbcH7Y,12331
+degenome/gtf_to_gen_pos.py,sha256=aX1UXBopZlELf45gR57x7jEZzfrQwS6PKbraoAxMaxo,6802
+degenome-0.1.0.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+degenome-0.1.0.dist-info/METADATA,sha256=WDtSxuPKtTm4RpvxZEQebYD7XzELPcWEU3Qvi9xCwJU,1288
+degenome-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+degenome-0.1.0.dist-info/top_level.txt,sha256=FXleeeV8FMzV3VBWn5-0a4SlCjd8d5S01ZsOyZS2VSI,9
+degenome-0.1.0.dist-info/RECORD,,
