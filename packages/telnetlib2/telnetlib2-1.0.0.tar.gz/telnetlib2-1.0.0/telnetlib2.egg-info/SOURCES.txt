@@ -1,0 +1,7 @@
+README.md
+setup.py
+telnetlib2/__init__.py
+telnetlib2.egg-info/PKG-INFO
+telnetlib2.egg-info/SOURCES.txt
+telnetlib2.egg-info/dependency_links.txt
+telnetlib2.egg-info/top_level.txt
