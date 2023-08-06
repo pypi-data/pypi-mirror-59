@@ -1,0 +1,10 @@
+syntax: glob
+.idea/
+dist/
+.tox/
+.coverage
+*.egg
+python_verbal.egg-info\PKG-INFO
+build/
+python_verbal.egg-info/
+*.pyc

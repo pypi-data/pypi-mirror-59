@@ -1,0 +1,7 @@
+pyyaml
+pymongo
+psutil>=2.1.1
+argh
+tornado
+coverage
+pyzmq
