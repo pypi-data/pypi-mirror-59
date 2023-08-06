@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: TRAPpy
+Version: 6.0.0
+Summary: Trace Analysis and Plotting
+Home-page: http://arm-software.github.io/trappy
+Author: ARM-TRAPPY
+Author-email: trappy@arm.com
+License: Apache v2
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Operating System Kernels :: Linux
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Dist: future
+Requires-Dist: numpy
+Requires-Dist: pandas (>=0.15.0)
+Requires-Dist: pyparsing
+Provides-Extra: notebook
+Requires-Dist: ipython (>=3.0.0) ; extra == 'notebook'
+Requires-Dist: jupyter (>=1.0.0) ; extra == 'notebook'
+Requires-Dist: matplotlib (>=1.3.1) ; extra == 'notebook'
+
+TRAPpy is a framework written in python for
+analysing and plotting FTrace data by converting it into standardised
+PANDAS DataFrames (tabular times series data representation).The goal is to
+allow developers easy and systematic access to FTrace data and leverage
+the flexibility of PANDAS for the analysis.
+
+TRAPpy also provides functionality to build complex statistical analysis
+based on the underlying FTrace data.
+
+
