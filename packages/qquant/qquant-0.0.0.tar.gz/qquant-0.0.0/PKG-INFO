@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: qquant
+Version: 0.0.0
+Summary: qquant
+Home-page: http://pypi.org/project/qquant
+License: UNKNOWN
+Description: bayinf
+        =======================
+        
+        A library for Bayesian Inference
+        
+        
+        
+        ## Installation
+        
+        ```
+            pip install --upgrade bayinf
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown

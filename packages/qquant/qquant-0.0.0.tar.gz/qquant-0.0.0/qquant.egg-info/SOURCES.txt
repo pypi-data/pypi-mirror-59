@@ -1,0 +1,8 @@
+README.md
+setup.py
+qquant/__init__.py
+qquant/version.py
+qquant.egg-info/PKG-INFO
+qquant.egg-info/SOURCES.txt
+qquant.egg-info/dependency_links.txt
+qquant.egg-info/top_level.txt
