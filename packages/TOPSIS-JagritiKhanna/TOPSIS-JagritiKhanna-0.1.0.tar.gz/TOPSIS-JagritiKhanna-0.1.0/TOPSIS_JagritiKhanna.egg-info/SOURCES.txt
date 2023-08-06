@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+TOPSIS_JagritiKhanna.egg-info/PKG-INFO
+TOPSIS_JagritiKhanna.egg-info/SOURCES.txt
+TOPSIS_JagritiKhanna.egg-info/dependency_links.txt
+TOPSIS_JagritiKhanna.egg-info/entry_points.txt
+TOPSIS_JagritiKhanna.egg-info/requires.txt
+TOPSIS_JagritiKhanna.egg-info/top_level.txt
+TOPSIS_package/cli.py
