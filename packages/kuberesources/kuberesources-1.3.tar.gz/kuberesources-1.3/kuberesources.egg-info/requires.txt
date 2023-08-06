@@ -1,0 +1,5 @@
+kubernetes>=11.0.0.b2
+pick
+adal
+colorama
+progress
