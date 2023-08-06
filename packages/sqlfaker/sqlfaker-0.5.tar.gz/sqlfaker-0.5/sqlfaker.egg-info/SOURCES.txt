@@ -1,0 +1,26 @@
+.gitignore
+.gitlab-ci.yml
+Functionality test.ipynb
+LICENSE
+Makefile
+README.md
+make.bat
+requirements.txt
+setup.py
+source/conf.py
+source/index.rst
+source/_static/fake.png
+sqlfaker/__init__.py
+sqlfaker/column.py
+sqlfaker/database.py
+sqlfaker/foreign_key.py
+sqlfaker/functions.py
+sqlfaker/primary_key.py
+sqlfaker/sql_dictionary.py
+sqlfaker/table.py
+sqlfaker.egg-info/PKG-INFO
+sqlfaker.egg-info/SOURCES.txt
+sqlfaker.egg-info/dependency_links.txt
+sqlfaker.egg-info/top_level.txt
+static/img/class_model.png
+testing/test.py

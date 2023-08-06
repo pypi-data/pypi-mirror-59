@@ -1,0 +1,59 @@
+install_requirements:
+  stage: build
+  script:
+  - pip3 install -r requirements.txt
+  only:
+  - master
+  - tags
+  tags:
+  - sphinx
+
+run_tests:
+  stage: build
+  script:
+  - mkdir badges
+  - python3 testing/test.py
+  - echo "$RUNNERPASSWORD" | sudo -S cp badges/* /var/www/html/documentation/sqlfaker/badges
+  only:
+  - master
+  - tags
+  tags:
+  - sphinx
+  artifacts:
+    paths:
+      - badges/dbsetup.svg
+      - badges/errors.svg
+      - badges/failures.svg
+      - badges/tests.svg
+      - badges/total.svg
+      - test_1.sql
+      - test_2.sql
+
+do_documentation:
+  stage: build
+  script:
+  - sphinx-apidoc -o . sqlfaker
+  - sphinx-build -M html source build
+  - echo "$RUNNERPASSWORD" | sudo -S cp -r build/html/* /var/www/html/documentation/sqlfaker
+  only:
+  - master
+  - tags
+  tags:
+  - sphinx
+  artifacts:
+    paths:
+      - build/
+
+pipupload:
+  stage: deploy
+  script:
+    - python3 setup.py sdist bdist_wheel
+    - twine upload --username=$PIP_USERNAME --password=$PIP_PASSWORD --skip-existing dist/*
+  only:
+  - master
+  - tags
+  tags:
+  - sphinx
+  artifacts:
+    paths:
+      - dist/

@@ -1,0 +1,58 @@
+# Data Structure Creation with `sqlfaker`
+
+`sqlfaker` is a python library that can be used to generate relational data structures and fill these structures with fake data.
+
+## Installation
+
+`sqlfaker` can be installed via pip from [pypi.org](https://pypi.org/). Just run the following command in your terminal or command prompt.
+
+```shell
+pip install sqlfaker
+```
+
+## Class structure
+
+This projet lets you define relational data structures that are build upon the concepts of `Database`, `Table` and `Column`.
+
+A `Database` can have multiple `Table` objects which again can each have multible `Column` objects. There are two classes that inherit from the `Column` class - `ForeignKey` and `PrimaryKey`. These allow you to create key colums.
+
+## Usage example
+
+`sqlfaker` can be used to generate a new database. So far, the `Database` class only supports MySQL/MariaDB syntax (when it comes to SQL-Export). New database types will be implemented over time.
+
+```python
+from sqlfaker.database import Database
+
+# add database
+my_db = Database(db_name="campusdb")
+
+# add tables
+my_db.add_table(table_name="student", n_rows=500)
+my_db.add_table(table_name="studyprogram", n_rows=15)
+```
+
+`sqlfaker` can be used to also specify the schema of the tables. This is supported by three methods: `add_primary_key`, `add_column` and `add_foreign_key`. Depending on the type of column that should be created, the add methods need different parameters.
+
+> The order of column creation must follow consider their interdependencies (much like in SQL). If you e.g. create a foreign key column, you need to create the referenced primary key column first.
+
+```python
+# add columns to studyprogram table
+my_db.tables["studyprogram"].add_primary_key(column_name="studyprogram_id")
+my_db.tables["studyprogram"].add_column(column_name="shortname", data_type="varchar(50)", data_target="name")
+my_db.tables["studyprogram"].add_column(column_name="startdate", data_type="date", data_target="date")
+
+# add columns to student table
+my_db.tables["student"].add_primary_key(column_name="student_id")
+my_db.tables["student"].add_column(column_name="firstname", data_type="varchar(50)", data_target="first_name")
+my_db.tables["student"].add_column(column_name="lastname", data_type="varchar(50)", data_target="last_name")
+my_db.tables["student"].add_foreign_key(column_name="studiengang_id", target_table="studiengang", target_column="studiengang_id")
+```
+
+As soon as the database structure has been defined, `sqlfaker` can be used to generate data and then export the complete (or also parts of the) sql script to disk. The syntax of all generated SQL scripts follows MySQL/MariaDB.
+
+>`data_target` is used to specify the type of fake data that is generated to fill the respective column. `sqlfaker` uses Python `faker` for fake data generation. You can therefore reference all `faker` data types as `data target`. See `faker`'s [documentation](https://faker.readthedocs.io/en/master/) for more details.
+
+```python
+my_db.generate_data()
+my_db.export_sql("test.sql")
+```

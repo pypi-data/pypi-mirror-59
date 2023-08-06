@@ -1,0 +1,11 @@
+.ipynb_checkpoints
+__pycache__
+dist
+sqlfaker.egg-info
+
+Untitled*
+*.sql
+_build
+build
+badges
+.pypirc
