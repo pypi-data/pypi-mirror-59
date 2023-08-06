@@ -1,0 +1,3 @@
+[console_scripts]
+work_toto = work_toto.cli:main
+
