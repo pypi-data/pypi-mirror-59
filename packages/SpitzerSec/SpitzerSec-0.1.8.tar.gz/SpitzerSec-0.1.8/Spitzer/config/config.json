@@ -1,0 +1,12 @@
+{
+    "ip":["10.10.10.0/24", "The ip-adress or CIDR to scan"],
+    "nmapFlags": ["-sC", "Flags used by nmap (-sV and -Pn are added automatically)"],
+    "ports":["top1", "amount of ports to scan, top1 equals top1000 and top10 equals top10000. options: top1, top10, all, list or an format accepted by nmap"],
+    "wordlist":["common", "wordlist for dirb"],
+    "interface": ["tun0", "The interface that can reach the ip"],
+    "verbose": ["2", "The verbosity of the tools. Options: -1, 0, 1 etc. -1 is no output, anything above 0 is the amount of added v's"],
+    "times": ["2","Amount of times to run Masscan"],
+    "rate": ["10000", "Rate for Masscan to use"],
+    "threads": ["5", "The amount of threads the multiprocessed tool use"],
+    "categories":["safe", "safe, heavy and/or intrusive. Defines how heavy the exploits can go"]
+}
