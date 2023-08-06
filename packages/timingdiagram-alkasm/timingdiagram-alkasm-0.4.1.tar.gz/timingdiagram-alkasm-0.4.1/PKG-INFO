@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: timingdiagram-alkasm
+Version: 0.4.1
+Summary: Temporal boolean algebra.
+Home-page: https://github.com/alkasm/timingdiagram
+Author: Alexander Reynolds
+Author-email: ar@reynoldsalexander.com
