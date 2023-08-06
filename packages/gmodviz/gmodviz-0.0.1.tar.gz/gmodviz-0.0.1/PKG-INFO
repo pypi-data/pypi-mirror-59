@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: gmodviz
+Version: 0.0.1
+Summary: TYPE YOUR DESCRIPTION HERE
+Home-page: https://github.com/jdecid/gmodviz
+Author: Josep de Cid
+Author-email: josep.de.cid@gmail.com
+License: MIT
+Download-URL: https://github.com/jdecid/gmodviz/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: Generative,Model,Visualization,Visualizer,Viewer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
