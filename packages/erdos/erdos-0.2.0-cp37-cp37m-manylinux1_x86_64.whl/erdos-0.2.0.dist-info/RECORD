@@ -1,0 +1,13 @@
+erdos-0.2.0.dist-info/WHEEL,sha256=AhV6RMqZ2IDfreRJKo44QWYxYeP-0Jr0bezzBLQ1eog,109
+erdos-0.2.0.dist-info/METADATA,sha256=yC_mLEd5aaHcMt9R7V6bn4FRhWsBSifmYCudUJV42pI,169
+erdos-0.2.0.dist-info/top_level.txt,sha256=xeNpjhTbY_qtfHBPb5RC39Ns_ZX7qKYBomEPto-5CDA,6
+erdos-0.2.0.dist-info/RECORD,,
+erdos/internal.cpython-37m-x86_64-linux-gnu.so,sha256=1QYEt-lBmqkADW5XHX-xmbgyj3WUds9ajNMoengvUZ8,4831892
+erdos/__init__.py,sha256=KizRQCtNGPvXbry-VGbu4GKBwzTsZlYmFAQtn-b2Qkk,5574
+erdos/internal.cpython-36m-x86_64-linux-gnu.so,sha256=-xvwWJgWkCzTLR71bjjomUduFfGR7P2uWt5fDF9E650,4831946
+erdos/streams.py,sha256=IzWyuIrowsd15wZw31wKyV_89iEQalTcrM1qzrr4RSk,5867
+erdos/operator.py,sha256=k2zhGTKN3-l79XhZAh-3-EDHrchsiu0qjjLYX8jp6Pg,856
+erdos/utils.py,sha256=VDVdLk3o2B92lUmhL0XgMnn3g2oXcuLTiUpRlMX6fSs,960
+erdos/message.py,sha256=Icoo40ZuKoxm_2gObfqbAS8a2QdBKbUVuJgo3qa-6as,964
+erdos/internal.cpython-35m-x86_64-linux-gnu.so,sha256=OO0u1gghr9qfUJYgMPcSDRZHQGJlzQyLp4xSn0SJRl8,4832011
+erdos/timestamp.py,sha256=e-miiYyIBuFlSfQcsqy6CuDilQtLBSNaN9f_ETLdcs0,2198
