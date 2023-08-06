@@ -1,0 +1,47 @@
+name: {{ project.name }}
+
+profile: {{ project.profile_name }}
+
+version: '1.0'
+
+require-dbt-version: ">=0.14.0"
+
+source-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+data-paths: ["data"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets:
+    - "target"
+    - "dbt_modules"
+
+{% if project.warehouse == 'bigquery' %}
+{# Currently we don't have any best practice BQ configurations #}
+
+{% elif project.warehouse == 'postgres' -%}
+{# Currently we don't have any best practice PG configurations #}
+
+{% elif project.warehouse == 'redshift' -%}
+models:
+  bind: false
+
+on-run-end:
+  - {% raw %}"{{ grant_select_on_schemas(schemas, ['transformer','reporter']) }}"{% endraw %}
+
+{% elif project.warehouse == 'snowflake' %}
+
+quoting:
+  database: false
+  identifier: false
+  schema: false
+
+models:
+  transient: true
+
+on-run-end:
+  - {% raw %}"{{ grant_select_on_schemas(schemas, 'reporter') }}"{% endraw %}
+  - {% raw %}"{{ grant_select_on_schemas(schemas, 'transformer') }}"{% endraw %}
+
+{% endif %}
