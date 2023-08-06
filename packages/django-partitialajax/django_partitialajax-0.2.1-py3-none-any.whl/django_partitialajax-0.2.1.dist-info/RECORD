@@ -1,0 +1,13 @@
+partitialajax/__init__.py,sha256=9vxbqLShijl-5xbdSyezzDGTf1ia1K281LVbxxQwNB4,62
+partitialajax/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+partitialajax/apps.py,sha256=lEl0mSyknchcrc-Xp54EfE2VDRw-KhT-oakl3ZikvNc,136
+partitialajax/mixin.py,sha256=Vm-i6FlPq7NddEypvov2wuXNww1mxQGBfPJk9pFMnG0,5207
+partitialajax/static/partitialajax/index.js,sha256=RSxqF23iK5vyAKkwbnYaqixWB4j2cCA-vLq5y-zT2qc,6249
+partitialajax/templates/partitialajax/partitial_include.html,sha256=8yQmsm77nLBDX-cqfS3gA_5sUyUu0iMKbKbbfdU5JUg,585
+partitialajax/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+partitialajax/templatetags/partitialajax.py,sha256=ImcHexNxGN-2DyN3LTVSIoMh93nhW-cx-pBG-eG0HNc,2008
+django_partitialajax-0.2.1.dist-info/LICENSE,sha256=UZlfpOrSkqGQsR_XnY00rjof2hbrw_-6062b-UKZAWc,1056
+django_partitialajax-0.2.1.dist-info/METADATA,sha256=d9AOfbbg7sgzF3LNDYzTx76491rgLo9IoMd-CnL23M8,1853
+django_partitialajax-0.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_partitialajax-0.2.1.dist-info/top_level.txt,sha256=gaDXQ2oo2ewhQApQaJl5qFyiZuSXX2gv23t9pB4ep5g,14
+django_partitialajax-0.2.1.dist-info/RECORD,,
