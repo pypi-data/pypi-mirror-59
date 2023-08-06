@@ -1,0 +1,38 @@
+{% extends "aristotle_mdr/stewards/base.html" %}
+{% load i18n bootstrap3 %}
+
+
+{% block title %}New Collection | {{ stewardship_organisation }}{% endblock %}
+{% block page_title %}{{ stewardship_organisation }} | New Collection{% endblock %}
+
+{% block steward_content %}
+    <h2>
+      New Metadata Collection
+    </h2>
+
+    {% if not creating_subcollection %}
+    <p>
+      You are creating a base level collection.
+      If you want to create a sub collection, navigate to the parent and create from there
+    </p>
+    {% endif %}
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        
+        {% if parent_collection %}
+            <label>Parent Collection</label>
+            <div class="form-group">
+                <a href="{% url 'aristotle:stewards:group:collection_detail_view' stewardship_organisation.slug parent_collection.id %}" target="_blank">
+                  {{ parent_collection.name }}
+                </a>
+            </div>
+        {% endif %}
+        
+        {% bootstrap_form_errors form %}
+        {% bootstrap_form form %}
+
+        <a class="btn btn-default" href="{{group.get_absolute_url}}">Back</a>
+        <button type="Submit" class="btn btn-primary">Create new Collection</button>
+    </form>
+{% endblock %}
