@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pytest-tezos
+Version: 0.0.1.dev12
+Summary: pytest-ligo
+Home-page: https://yourlabs.io/oss/pytest-tezos
+Author: James Pic
+Author-email: jamespic@gmail.com
+License: MIT
+Description: pytest-ligo
+        ~~~~~~~~~~~
+        
+        Py.test plugin which adds a tezos fixture to encapsulate boilerplate business
+        logic. Refer to ``test_pytest_tezos.py`` for example usage.
+        
+        Install with pip, ie::
+        
+            pip install pytest-tezos
+        
+        Run an auto baking sandbox on localhost::
+        
+            docker run -p 8732:8732 yourlabs/tezos
+        
+        For CI configuration, refer to ``.gitlab-ci.yml``.
+Keywords: cli tezos
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Plugins
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: System
+Requires-Python: >=3
+Description-Content-Type: text/x-rst
