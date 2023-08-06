@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ndx-labmetadata-giocomo
+Version: 0.0.1
+Summary: LabMetaData.
+Home-page: UNKNOWN
+Author: Luiz Tauffer and Ben Dichter
+Author-email: ben.dichter@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Requires-Dist: pynwb
+
+UNKNOWN
+
+
