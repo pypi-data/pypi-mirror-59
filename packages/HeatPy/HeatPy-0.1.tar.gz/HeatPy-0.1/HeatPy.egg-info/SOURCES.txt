@@ -1,0 +1,6 @@
+README.md
+setup.py
+HeatPy.egg-info/PKG-INFO
+HeatPy.egg-info/SOURCES.txt
+HeatPy.egg-info/dependency_links.txt
+HeatPy.egg-info/top_level.txt
