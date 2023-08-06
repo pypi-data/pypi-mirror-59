@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+topsis_by_van/__init__.py
+topsis_by_van/topsis_by_van.py
+topsis_by_van.egg-info/PKG-INFO
+topsis_by_van.egg-info/SOURCES.txt
+topsis_by_van.egg-info/dependency_links.txt
+topsis_by_van.egg-info/requires.txt
+topsis_by_van.egg-info/top_level.txt
