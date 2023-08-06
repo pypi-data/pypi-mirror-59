@@ -1,0 +1,10 @@
+README.rst
+setup.py
+src/omero_rois/__init__.py
+src/omero_rois/library.py
+src/omero_rois.egg-info/PKG-INFO
+src/omero_rois.egg-info/SOURCES.txt
+src/omero_rois.egg-info/dependency_links.txt
+src/omero_rois.egg-info/requires.txt
+src/omero_rois.egg-info/top_level.txt
+src/omero_rois.egg-info/zip-safe
