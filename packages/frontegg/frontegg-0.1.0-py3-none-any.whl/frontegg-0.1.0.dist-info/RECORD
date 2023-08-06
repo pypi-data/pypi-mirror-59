@@ -1,0 +1,8 @@
+frontegg/__init__.py,sha256=tMwtSf8eaEZJfhLQ6zyzcZ3AMp5c4VCz8hyieVztB9Q,218
+frontegg/_mixins.py,sha256=Xgmb9Njdvn-Fk1oKZlnfefCTqCh8DwzTCq0qRv799nA,7713
+frontegg/client.py,sha256=cl_Q23t--A8BI7cYe6xbD8rJNGfrjhOzjrMtIfRlj3o,7278
+frontegg/flask.py,sha256=Vl5-WG-4aHVmgw5gQdQa_YEkRKlVv3vLUo8daEaSIQU,4761
+frontegg/permissions.py,sha256=yzCKJJK_FXYrqdpAqb-p39tSO0NlV_ZRrleF5m_cGws,1492
+frontegg-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+frontegg-0.1.0.dist-info/METADATA,sha256=awuyDuPVxvKVGDwGiUrkm36xNd0fV0HQOInifNG4t6o,6389
+frontegg-0.1.0.dist-info/RECORD,,
