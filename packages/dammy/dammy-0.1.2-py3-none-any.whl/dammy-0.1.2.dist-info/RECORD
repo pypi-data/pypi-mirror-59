@@ -1,0 +1,14 @@
+dammy/__init__.py,sha256=ypv76sJ4YHqhjpo5gpNr5YvMWKxVxaJ2oov6OxiL6j8,307
+dammy/core.py,sha256=q1LsOBBYtDIctPw5XE0bYuTcqYvP7-U9ydaWtsfctyU,25923
+dammy/db.py,sha256=O7o6gqFcwUhtGWsXt-F6rxH528AK-cdQGxkTSM7V_fA,230
+dammy/exceptions.py,sha256=n3d-UbCFQgJ_-WH-Vvqbw2q42oLD0UEw_5Va-wDEo40,1772
+dammy/functions.py,sha256=2Bw58ujcJj3djknsfU_x1x3AnakDBB54RWLk0jqBjzM,1090
+dammy/stdlib.py,sha256=Oajgl7uajbahg8Si81bUSKfaOpxQLX6J_qiL54ib6UI,11140
+dammy/data/car_models.json,sha256=1jr_Aymvgu7hTA61b45JcpHFqRFYLS8hP8qYgjdKL4U,3044
+dammy/data/countries.json,sha256=1ZYhLZDfFN5IsQmgYexj1mKjVON7pif00YAiBNYdwRo,6590
+dammy/data/names.json,sha256=qMeIM3VXIN_c4haF5gRf8KIFvhXBBQnwuScH2Na8bIo,33994
+dammy-0.1.2.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+dammy-0.1.2.dist-info/METADATA,sha256=UGr-G3EJ5B-L1uEHb_58yFmcqSBeHiyFkBlHqEV3EEI,4429
+dammy-0.1.2.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+dammy-0.1.2.dist-info/top_level.txt,sha256=qKXei0aFxnHr_O4Xseqw7h6bxOkwHJUStufbn0zn4eY,6
+dammy-0.1.2.dist-info/RECORD,,
