@@ -1,0 +1,60 @@
+#Jarvis 
+
+**Status**
+[![Build status](https://dev.azure.com/cubbei/JarvisCore/_apis/build/status/JarvisCore-PiP%20Publish)](https://dev.azure.com/cubbei/JarvisCore/_build/latest?definitionId=1)
+
+
+This is the repository for Jarvis, the twitch bot.
+
+##Getting Started
+
+The simplest way to get started is to create a new file, with the basic code below:
+
+```python
+from jarviscore.client import Client
+
+jarvis = Client(nick="yourbotsname", 
+    token="yourbotstoken",
+    channels=['a list', 'of channels', 'to connect to'])
+jarvis.start()
+```
+
+##Custom Commands
+
+You can create your own custom commands and interactions for your bot using the Jarvis Core. 
+Create a folder called `Commands` in the same location as your bot file like so,
+```
++-- root
+|   |-- bot.py
+|   +-- Commands
+|       |-- command1.py
+|       +-- command2.py
+```
+
+Then, copy the following boiler plate text to get started. This example implements a simple ping command.
+**Note:** All Commands need to implement `setup()` and `teardown()`, both take channel as a parameter.
+
+```python
+from jarviscore import Command, Log
+from jarviscore.message import CommandMessage
+
+log = Log("CORE:Ping", verbose="log")
+class Ping(Command):
+
+    def __init__(self, channel):
+        Command.__init__(self, "Ping")
+        self.channel = channel
+    
+    def on_command(self, data: CommandMessage):
+        if "ping" == data.KEYWORD:
+            self.channel.send("pong")
+
+
+def setup(channel):
+    channel.load_command(Ping(channel))
+    log.log(f"[{channel.name}]: Loaded Module Ping")
+
+def teardown(channel):
+    log.log(f"[{channel.name}]: Removed Module Ping")
+
+```
