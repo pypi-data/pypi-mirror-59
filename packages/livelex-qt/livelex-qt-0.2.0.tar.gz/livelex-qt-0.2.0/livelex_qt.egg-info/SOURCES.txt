@@ -1,0 +1,11 @@
+ChangeLog
+MANIFEST.in
+README.rst
+setup.py
+livelex_qt.egg-info/PKG-INFO
+livelex_qt.egg-info/SOURCES.txt
+livelex_qt.egg-info/dependency_links.txt
+livelex_qt.egg-info/top_level.txt
+livelexqt/__init__.py
+livelexqt/pkginfo.py
+livelexqt/qtdocument.py
