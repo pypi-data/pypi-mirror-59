@@ -1,0 +1,8 @@
+pyyaml
+pystache
+xmltodict
+jinja2
+pylama
+pylama-pylint
+wheel
+gitpython
