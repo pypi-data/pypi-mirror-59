@@ -1,0 +1,6 @@
+aiohttp
+asyncio
+click
+requests
+jsonpickle
+xmltodict
