@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: battery-bot-telegram
+Version: 0.1.2
+Summary: Telegram bot that notifies when battery is low
+Author: Tomasz Walotek
+Author-email: tomasz.walotek@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: psutil (>=5.6,<6.0)
+Requires-Dist: python-telegram-bot (>=12.2,<13.0)
+Description-Content-Type: text/markdown
+
+# Telegram battery bot.
+
+Monitors laptop battery level and sends a message on Telegram when it drop below specified level.
+
+## Usage:
+
+    batbot -t TELEGRAM_TOKEN -u TELEGRAM_USER [-b BATTERY_THRESHOLD] [-f CHECK_FREQUENCY]
+    batbot -c CONFIG_FILE
+    batbot --help
+
+## Options:
+
+    -t, --telegram-token=TELEGRAM_TOKEN         Telegram bot token
+    -u, --telegram-user=TELEGRAM_USER           Telegram user ID
+    -b, --battery-threshold=BATTERY_THRESHOLD   Battery level alert threshold [default: 10]
+    -f, --check-frequency=CHECK_FREQUENCY       Level check frequency [default: 60]
+    -c, --config=CONFIG_FILE                    Read config from file
+    --help                                      Show this screen
+
+## Config file format:
+
+    [bot]
+    telegram_token = TELEGRAM_TOKEN
+    telegram_user = TELEGRAM_USER
+    battery_threshold = BATTERY_THRESHOLD
+    check_frequency = CHECK_FREQUENCY
+

@@ -1,0 +1,3 @@
+[console_scripts]
+batbottg=battery_bot_telegram:run_bot
+
