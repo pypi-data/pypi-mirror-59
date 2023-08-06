@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: django_swappable_tasks
+Version: 0.1.1
+Summary: Switch between asynchronous task handlers in your django without in seconds.
+Home-page: https://github.com/jerryshikanga/django_swappable_tasks
+Author: Jerry Shikanga
+Author-email: jerryshikanga@gmail.com
+License: gpl-3.0
+Download-URL: https://github.com/jerryshikanga/django_swappable_tasks/archive/v0.1.1.tar.gz
+Description: UNKNOWN
+Keywords: Django,Tasks,Asynchronous,Handlers,Swap,Google Cloud Tasks
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
