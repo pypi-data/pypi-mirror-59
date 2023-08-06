@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sparkql
+Version: 0.1.0
+Summary: sparkql: Apache Spark SQL DataFrame schema management for sensible humans
+Home-page: https://github.com/mattjw/sparkql
+Author: Matt J Williams
+Author-email: mattjw@mattjw.net
+Requires-Python: >=3.6.8,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: dataclasses (>=0.7.0,<0.8.0); python_version >= "3.6" and python_version < "3.7"
+Requires-Dist: pyspark (==2.4.1)
+Project-URL: Repository, https://github.com/mattjw/sparkql
