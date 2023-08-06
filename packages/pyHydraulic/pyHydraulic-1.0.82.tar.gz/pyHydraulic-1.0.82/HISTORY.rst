@@ -1,0 +1,102 @@
+====================================================================
+0.History
+====================================================================
+
+V1.0.82
+
+ **1.Fixed the bug of hydraulic sketcher for not displaying icons. (*/w *)**
+
+ **2.Add QQ technology discussion group in this description document.**
+     
+====================================================================
+Project description for pyHydraulic
+====================================================================
+
+Create social share component pyHydraulic based on `github <https://github.com/nanjing-institute-of-technology/pyHydraulic>`_
+
+*************
+1.GetStarted
+*************
+
+Installation is easy::
+
+ $ pip install pyHydraulic
+
+****************************************************
+2.Run the hydraulic Sketcher to draw schematics
+****************************************************
+
+Hydraulic sketcher is a tool similar to visio.It has been integrated
+in this package. Type the following code to call the tool independently.
+
+.. code-block:: python
+
+    from pyHydraulic.hydraulicSketcher import hydraulicSketcher
+
+    hydraulicSketcher.run()
+
+Next,you'll see the following software interface.
+
+.. image :: https://note.youdao.com/yws/public/resource/2d6ebb7e4e1aa8e32796b5917b780a8d/xmlnote/0EA04601A1BB4181A58FBAA9489DF7F1/41067
+
+The tool itself is also based on the pyHydraulic package. However, there are still some functions to be improved. A tutorial on using the tool will be provided later in GitHub.
+
+*************
+3.Example
+*************
+
+In the coming days, I will give the instruction documents to give you some instructions on how to draw
+the hydraulic schematic diagram and load it in the interface of the measurement and
+control system For more demonstrations, please click the website below.
+
+`GIF Demo for this tool <https://note.youdao.com/ynoteshare1/index.html?id=2d6ebb7e4e1aa8e32796b5917b780a8d&type=note>`_
+
+*************
+3.Links
+*************
+
+* Documentation (To be complete)
+
+* PyPI (To be complete)
+
+**************************
+4.Authors and contact me
+**************************
+
+Maintainer:
+
+* Bruce Lee (Nanjing institute of technology, lee@njit.edu.cn),
+
+* Zhuoli Shi (Beijing Jiao tong University)
+
+if you are also interested in this project, please join the QQ chat group below.
+
+.. image :: https://note.youdao.com/yws/public/resource/2d6ebb7e4e1aa8e32796b5917b780a8d/xmlnote/95712EA9666C4130B2A60D730DE8F606/41086
+
+
+See also the list of contributors who participated in this project.
+
+*************
+5.Donations
+*************
+
+So Ineed some donations from all of you.Your support is my motivation to make the package work better. My Wechat Pay and Alipay accounts are as follows:
+
+.. image :: https://note.youdao.com/yws/public/resource/2d6ebb7e4e1aa8e32796b5917b780a8d/xmlnote/78CB33E8EC054B3C8548DDBD73C793CC/41081
+
+-------------------------------------------------------------------------------
+
+.. image :: https://note.youdao.com/yws/public/resource/2d6ebb7e4e1aa8e32796b5917b780a8d/xmlnote/FAE9FCE824FB443CA6198ABC4FB655A5/41083
+
+*************
+5.License
+*************
+
+This project is licensed under th eMIT License (see the LICENSE file for details).
+
+
+*************************
+5.Acknowledgement
+*************************
+
+Special thanks to Mr.PavelKrupala. His excellent tutorials have helped build this package a lot.
