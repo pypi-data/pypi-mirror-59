@@ -1,0 +1,16 @@
+openimu/__init__.py,sha256=9v7m2fimOQ8CG-mooIYC-rbv3NnOysD-Zuc6eAEe6pU,687
+openimu/__main__.py,sha256=jybETfciZrQLsw7kQbLUswcSXHPWCt5zq44ALhk_DsA,460
+openimu/bootloader_input_packet.py,sha256=LDtx-nSwQhl8DeI1ASFk4QoNInR4DQ4UrXFIRWOCAJE,1847
+openimu/commands.py,sha256=_vPWxhrcq2lLlpn2sxgtExPMRU965SDhNatG-1_T1eE,8433
+openimu/file_storage.py,sha256=xqzYU0jYomDY5D2nL0_E997D0HDtOSxZnTTEj8gdKrg,8441
+openimu/global_vars.py,sha256=X84twwESeODV1aWC2F-QGnP_XVDphrRzIlHjH4DHBWI,149
+openimu/imu_input_packet.py,sha256=aukmm7k9fW-uapYn1NSQjEaOVg7IE-0vt-kp2KKvizE,2586
+openimu/openimu.py,sha256=jWmScgt-P0KYlXYGkQ3oDRSp9jKiSu__o7aS1XVRU28,38868
+openimu/predefine.py,sha256=GgjGuksVPtU7nCqymlDzR7RY6-KJbmHuck_Q7jJYMjw,1102
+openimu/server.py,sha256=j316mLknK6vjBiqCeylU4Gha5vNx8rhCQfw_uDiw3R8,10855
+openimu-1.0.4.data/data/openimu.json,sha256=OznL1QxsjXEe09GsrSDCHtlan367CsDzxcPWyXQtOdU,9184
+openimu-1.0.4.dist-info/METADATA,sha256=S2ddkzl-IBAYkm8zRl-SvzggyNnar4a2d4jN_pvscVU,904
+openimu-1.0.4.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+openimu-1.0.4.dist-info/entry_points.txt,sha256=3gCWi0AApWbkyIrcnEaY6ji90FA9asfFduw5QZzItv4,51
+openimu-1.0.4.dist-info/top_level.txt,sha256=3cUyNY13ZNMpQ9aWD6BUwq3OwwZbDyu7uaB4rhONY_E,8
+openimu-1.0.4.dist-info/RECORD,,
