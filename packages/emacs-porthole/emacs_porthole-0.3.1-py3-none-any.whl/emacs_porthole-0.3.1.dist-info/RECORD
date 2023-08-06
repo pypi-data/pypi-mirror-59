@@ -1,0 +1,11 @@
+emacs_porthole/__init__.py,sha256=xwBCwsMzh_agdITrYiYMwBvwOqF_7ZjcCBOWI-9BAoU,307
+emacs_porthole/core.py,sha256=AMWyPvOQxBsfE8DpdFZC-a0Bcq7jgjRlEgyqZ_B3RNY,12514
+emacs_porthole/exceptions.py,sha256=t7KvcI_KwQz05CCSLZmTO_HkQitePq11rJryUdLFvCc,1950
+emacs_porthole/json_rpc.py,sha256=2NqS9bqeKAIvQMdf8DNtPAGrtUKZ-oXQdvu2y9zaxr8,8227
+emacs_porthole/utils.py,sha256=zLNJlC8dgTaQ7lxN-jHuxj0HTYT20itEH03fGcHhiBg,203
+emacs_porthole-0.3.1.dist-info/AUTHORS,sha256=uR7Gte2CRSN1vXcO9ve-KmnpGlGRbDO6VB9SGt6K7aA,29
+emacs_porthole-0.3.1.dist-info/LICENSE.txt,sha256=8PYpOeqr3T-_mb9FBqTQhdbuKXWniJjaHb3sTenOG5Q,1075
+emacs_porthole-0.3.1.dist-info/METADATA,sha256=H-nY_TlIgoociE69vjUVx7wft0wVTiwX0JHvTABlWOU,1037
+emacs_porthole-0.3.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+emacs_porthole-0.3.1.dist-info/top_level.txt,sha256=Rr9hKmEAe8A3TR0nULa3xjHdBfqI9qM6jCJOTjQ3twE,15
+emacs_porthole-0.3.1.dist-info/RECORD,,
