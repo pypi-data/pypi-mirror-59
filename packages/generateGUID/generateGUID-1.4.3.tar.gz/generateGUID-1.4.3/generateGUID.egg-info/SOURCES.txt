@@ -1,0 +1,17 @@
+README.md
+setup.py
+generateGUID/__init__.py
+generateGUID/generate_GUID.py
+generateGUID/strip_accents.py
+generateGUID.egg-info/PKG-INFO
+generateGUID.egg-info/SOURCES.txt
+generateGUID.egg-info/dependency_links.txt
+generateGUID.egg-info/top_level.txt
+generateGUID/scripts/__init__.py
+generateGUID/scripts/generate_GUID_Bash.py
+generateGUID/scripts/generate_GUID_Bash_ARGS.py
+generateGUID/scripts/generate_GUID_Bash_CSV.py
+generateGUID/tests/__init__.py
+generateGUID/tests/test_GUID.py
+generateGUID/tests/test_GUID2.py
+generateGUID/tests/test_GUID_Bash.py
