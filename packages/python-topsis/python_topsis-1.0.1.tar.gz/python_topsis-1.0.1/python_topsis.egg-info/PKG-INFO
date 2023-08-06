@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: python-topsis
+Version: 1.0.1
+Summary: TOPSIS Algorithm in Python(UCS633).
+Home-page: https://github.com/Ayushgupta03
+Author: Ayush Gupta
+Author-email: guptayush0022@gmail.com
+License: UNKNOWN
+Description:  
+        Implementation of TOPSIS in Python UCS633
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
