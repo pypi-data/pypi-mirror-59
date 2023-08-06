@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: discord-sentry-reporting
+Version: 1.0.0
+Summary: A small compatibility library that provides functionality to report errors from discord.py to Sentry.
+Home-page: https://github.com/RDIL/bluejay
+Author: Reece Dunham
+Author-email: me@rdil.rocks
+License: MIT
+Description: # Discord.py Sentry Reporting
+        
+        This is a small compatibility library that provides functionality to report errors from discord.py to Sentry.
+        
+        ## Usage
+        
+        ```python
+        from discord_sentry_reporting import use_sentry
+        
+        use_sentry(discord_client_object)  # it is typically named client or bot
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
