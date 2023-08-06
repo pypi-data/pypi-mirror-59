@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: bayinf
+Version: 0.0.0
+Summary: Bayesian Inference
+Home-page: http://github.com/bayinf/bayinf/
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+
+bayinf
+=======================
+
+A library for Bayesian Inference
+
+
+
+## Installation
+
+```
+    pip install --upgrade bayinf
+```
+
+
