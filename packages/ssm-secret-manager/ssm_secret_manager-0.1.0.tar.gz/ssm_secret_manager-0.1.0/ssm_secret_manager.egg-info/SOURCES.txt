@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+secret_manager/__init__.py
+secret_manager/main.py
+ssm_secret_manager.egg-info/PKG-INFO
+ssm_secret_manager.egg-info/SOURCES.txt
+ssm_secret_manager.egg-info/dependency_links.txt
+ssm_secret_manager.egg-info/requires.txt
+ssm_secret_manager.egg-info/top_level.txt
