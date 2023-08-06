@@ -1,0 +1,12 @@
+.PHONY: venv build test
+
+venv_create:
+	virtualenv -p {{ python_version }} venv
+
+
+build:
+	source ./venv/bin/activate && \
+	pip install -r requirements.txt
+
+test:
+	PYTHONPATH=${PWD} pytest --log-cli-level=DEBUG tests
