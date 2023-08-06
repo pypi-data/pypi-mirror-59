@@ -1,0 +1,5 @@
+cwlgen>=0.4.0
+illusional.wdlgen>=0.2.7
+ruamel.yaml
+tabulate
+path.py
