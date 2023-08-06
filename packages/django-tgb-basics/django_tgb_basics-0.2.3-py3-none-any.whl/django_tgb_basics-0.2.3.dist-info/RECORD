@@ -1,0 +1,14 @@
+django-tgb-basics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django-tgb-basics/backends.py,sha256=vvfHRvg2LUWBcVnoQ_P7ciKptychqXlgn39PjcGPQxA,1065
+django-tgb-basics/permissions.py,sha256=ZRACYuEbXHvYNp4arzlSJLkGdhHjCV06jFkuHyjTdAo,1410
+django-tgb-basics/validators.py,sha256=QzSeffpRJoAblmXi-OrgZY5KNZhhJiMv2XB7hMt1OX8,3190
+django-tgb-basics/viewsets.py,sha256=k2voFrnpmerqN38zoyvrU3AVaGXPfk94LYM79EWFtJw,1479
+django-tgb-basics/soft_deletion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django-tgb-basics/soft_deletion/managers.py,sha256=LnlO1pSWdgDtxsFtcejX6As6RkiyIT6s_2x9BglikRc,1005
+django-tgb-basics/soft_deletion/models.py,sha256=fDf7s-HFZ0BY4YqFm9jaYAx_cdg36Aru_jm4UVKjzNc,2741
+django-tgb-basics/soft_deletion/querysets.py,sha256=RBW0K26tRUszthN_FemyQIY0heXOm38vljRvGwpl22U,1494
+django_tgb_basics-0.2.3.dist-info/LICENSE,sha256=lCb-yZiQgy2_i3Ivim8GQpnlIZuZCO6BLXVzB_R8HK8,1072
+django_tgb_basics-0.2.3.dist-info/METADATA,sha256=6gLunc0fl-XqVcjwOADUrUE66rOYTTNIORuorWtweYc,1987
+django_tgb_basics-0.2.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_tgb_basics-0.2.3.dist-info/top_level.txt,sha256=myV4mITPOg32dTgR5_KV0zOR6qlc4SNiAF6QQSgCm-A,18
+django_tgb_basics-0.2.3.dist-info/RECORD,,
