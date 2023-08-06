@@ -1,0 +1,9 @@
+README.md
+setup.py
+iot-manager/__init__.py
+iot-manager/__main__.py
+iot-manager/iot_manager.py
+iot_manager.egg-info/PKG-INFO
+iot_manager.egg-info/SOURCES.txt
+iot_manager.egg-info/dependency_links.txt
+iot_manager.egg-info/top_level.txt
