@@ -1,0 +1,13 @@
+openfisca_nsw_base/__init__.py,sha256=1LUwnNQet1GJNxxLl3XAtiBJ1fIR88eursqZhCAL880,1127
+openfisca_nsw_base/entities.py,sha256=5dTVmzRS93INwHgC5ErACSvYnOtL43uHSRPQVAFHc8w,2878
+openfisca_nsw_base/parameters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openfisca_nsw_base/reforms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openfisca_nsw_base/situation_examples/__init__.py,sha256=qG5gi-s03huEe4AJZxXC8epd9vGu_nBXU6a5aMKVMdU,317
+openfisca_nsw_base-0.8.0.data/data/share/openfisca/openfisca_nsw_base/CHANGELOG.md,sha256=USC-sHknrDP1S--NW26j3lGDUYb9IPyDCLcIn29sH3A,2695
+openfisca_nsw_base-0.8.0.data/data/share/openfisca/openfisca_nsw_base/LICENSE,sha256=2N5ReRelkdqkR9a-KP-y-shmcD5P62XoYiG-miLTAzo,34519
+openfisca_nsw_base-0.8.0.data/data/share/openfisca/openfisca_nsw_base/README.md,sha256=5y-S0SfxGWCQnUPNlqDVuaZe89NEetSk9oT9OB_bO0M,7627
+openfisca_nsw_base-0.8.0.dist-info/LICENSE,sha256=2N5ReRelkdqkR9a-KP-y-shmcD5P62XoYiG-miLTAzo,34519
+openfisca_nsw_base-0.8.0.dist-info/METADATA,sha256=HYtEfR7Z_CCCORfn4TqRZnxJNxiCiDlRG0BNDmXRRsE,939
+openfisca_nsw_base-0.8.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+openfisca_nsw_base-0.8.0.dist-info/top_level.txt,sha256=1p3ihAL5RHd6ph3QHPqEeNlfasL0pKCzJ8dCew9xAmo,19
+openfisca_nsw_base-0.8.0.dist-info/RECORD,,
