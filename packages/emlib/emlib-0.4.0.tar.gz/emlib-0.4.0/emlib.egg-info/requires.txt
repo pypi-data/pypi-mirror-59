@@ -1,0 +1,13 @@
+appdirs
+bpf4
+cachetools
+ctcsound
+decorator
+music21
+notifydict
+numpy
+pillow
+scipy
+sndfileio
+sounddevice
+tabulate
