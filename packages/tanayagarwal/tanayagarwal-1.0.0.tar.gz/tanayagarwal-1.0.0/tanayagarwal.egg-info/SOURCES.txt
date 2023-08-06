@@ -1,0 +1,6 @@
+README.md
+setup.py
+tanayagarwal.egg-info/PKG-INFO
+tanayagarwal.egg-info/SOURCES.txt
+tanayagarwal.egg-info/dependency_links.txt
+tanayagarwal.egg-info/top_level.txt
