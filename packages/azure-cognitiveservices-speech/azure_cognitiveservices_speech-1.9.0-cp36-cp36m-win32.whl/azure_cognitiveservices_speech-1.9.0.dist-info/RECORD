@@ -1,0 +1,17 @@
+azure/cognitiveservices/speech/Microsoft.CognitiveServices.Speech.core.dll,sha256=d3TtlEUUVNeacxJmxWfvKoVSOmQ-6nZ7cOZfqw68Y9g,1705024
+azure/cognitiveservices/speech/Microsoft.CognitiveServices.Speech.extension.kws.dll,sha256=H3EBmOP2sfW007SF0gSVkn9kRhWiWpfGWYj3S505MGs,674368
+azure/cognitiveservices/speech/__init__.py,sha256=rDoyeO94m3PKspuXBqMkyhs299vGre7Wv36-N4e-Poc,1762
+azure/cognitiveservices/speech/_speech_py_impl.pyd,sha256=9alamaLsZSmwXvN5Q9NmUlVynlG6oscmpzNIgyYEzc4,1248320
+azure/cognitiveservices/speech/audio.py,sha256=LGofu63PyYHyKGP1SVZCLL0Gd2R6GNhBDy_BdugQvGw,10113
+azure/cognitiveservices/speech/intent.py,sha256=8PTETrB_0_wnS0gv-6AGBaD6qnbQLjd1HuJQJvuF_mI,10507
+azure/cognitiveservices/speech/speech.py,sha256=pm4IhC8_Pv0Kf6cWIAoQcuygQIt5C-tXmfmVcqGCeb0,52436
+azure/cognitiveservices/speech/speech_py_impl.py,sha256=9UQoq_kx-PuZRU5sDlr-9QDzPGZUaQnb1TyTCUP5hJw,228644
+azure/cognitiveservices/speech/translation.py,sha256=h1yvxp0NkxoC-6v6UPZWQRU3SMh3XXebCBq-GxCfFQo,12024
+azure/cognitiveservices/speech/version.py,sha256=lMBPQsKff702jhFXyjRitckE1W5UgbWRTJqLcK6jf_s,75
+azure_cognitiveservices_speech-1.9.0.dist-info/METADATA,sha256=dNa3gQ3njjYtchM9ex5aLEFcAqUyEAb0PH9Qqt-y9WE,1432
+azure_cognitiveservices_speech-1.9.0.dist-info/REDIST.txt,sha256=21cC952eBjypxvcFNEERyzqni2llQUAyz_J9nVJYuh4,1021
+azure_cognitiveservices_speech-1.9.0.dist-info/ThirdPartyNotices.md,sha256=3neJJTHUEXNFyqcQETGTw09e3FmjwD-u2FpOX1imuT8,25652
+azure_cognitiveservices_speech-1.9.0.dist-info/WHEEL,sha256=JzwLJJKKKvfM5aa8ugjHzCZbTNPVJ6p0eHfrxsgrcE8,102
+azure_cognitiveservices_speech-1.9.0.dist-info/license.md,sha256=fh1hn1CN1xZ7XHIm5hgk3-tlUuSyPQ_MR7KlU3P_kXk,15024
+azure_cognitiveservices_speech-1.9.0.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6
+azure_cognitiveservices_speech-1.9.0.dist-info/RECORD,,
