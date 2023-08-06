@@ -1,0 +1,13 @@
+dphon/__init__.py,sha256=b6-WiVk0Li5MaV2rBnHYl104TsouINojSWKqHDas0js,22
+dphon/cli.py,sha256=Iftpbke621dRm7OKM1JX6e6bWxUtZYDM_rV1rAYFbLQ,1897
+dphon/lib.py,sha256=OE0qzKcdqvoi1_ThJahU5XjEl4MexVQHyfwpNHz05zw,9645
+dphon/data/bs_dict.json,sha256=MlDm4DELbGJgIYGj0y_TToIfDSevQ4WiA-InYfQwDhI,489131
+dphon/data/dummy_dict.json,sha256=xZfW4f2BrQ5WZo5eSXnWS2WwX76esh9Jfr8tQPqz0gA,354021
+dphon/data/dummy_initgroup_dict.json,sha256=7mifKhjSW1O7m4dUzGUG9rYzEMcNi-YZl7IRriEr2mI,423
+dphon/data/schuessler_dict.json,sha256=mzIl-pwqpRT-6FVEAghqbhAfmkgCDL8L_UA0gI_isRw,222637
+dphon-1.1.0.dist-info/LICENSE,sha256=cOx2TWqEhLaQGjygw9d8Ly1C2I1_lk_NiVsagLtQmvU,1073
+dphon-1.1.0.dist-info/METADATA,sha256=ydJPPx6l0plI069wrv9J2zGQDcDZM6tbW9JBG5e5kw4,5628
+dphon-1.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+dphon-1.1.0.dist-info/entry_points.txt,sha256=QIPECMil9N0BiChvKZ9hUOOZQWmc0ZnrLCDB9v7nxKw,41
+dphon-1.1.0.dist-info/top_level.txt,sha256=O3eWH7s3ZYSE2hgl-7QslOe-6d90YDOduknD5xvYyco,6
+dphon-1.1.0.dist-info/RECORD,,
