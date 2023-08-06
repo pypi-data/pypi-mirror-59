@@ -1,0 +1,7 @@
+README.md
+loki_oracle.py
+setup.py
+loki_oracle.egg-info/PKG-INFO
+loki_oracle.egg-info/SOURCES.txt
+loki_oracle.egg-info/dependency_links.txt
+loki_oracle.egg-info/top_level.txt
