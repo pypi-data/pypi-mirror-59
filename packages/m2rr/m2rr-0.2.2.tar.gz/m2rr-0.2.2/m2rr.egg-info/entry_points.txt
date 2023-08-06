@@ -1,0 +1,3 @@
+[console_scripts]
+m2rr = m2rr:main
+
