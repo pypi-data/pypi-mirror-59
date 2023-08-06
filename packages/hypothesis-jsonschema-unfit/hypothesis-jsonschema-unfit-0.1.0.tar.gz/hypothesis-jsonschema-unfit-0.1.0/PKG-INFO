@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: hypothesis-jsonschema-unfit
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/kiwicom/hypothesis-jsonschema-unfit
+License: MIT
+Author: Dmitry Dygalo
+Author-email: dadygalo@kiwi.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: hypothesis_jsonschema (>=0.9.13,<1.0)
+Project-URL: Repository, https://github.com/kiwicom/hypothesis-jsonschema-unfit
+Description-Content-Type: text/x-rst
+
+hypothesis-jsonschema-invalid
+=============================
+
+An experimental project for the generation of JSON data that does NOT match the given JSON schema.
+
+.. code:: python
+
+    from hypothesis import given
+    from hypothesis_jsonschema_unfit import not_from_schema
+
+    SCHEMA = {
+        "items": {
+            "type": "object",
+            "required": ["key1", "key2"],
+            "properties": {"key1": {"type": "string"}, "key2": {"type": "integer"}},
+        },
+        "type": "array",
+        "minItems": 4,
+    }
+
+    @given(not_from_schema(SCHEMA))
+    def test(instance):
+        ...
+
