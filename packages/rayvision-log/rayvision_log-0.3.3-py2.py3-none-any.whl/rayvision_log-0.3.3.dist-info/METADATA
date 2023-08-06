@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: rayvision-log
+Version: 0.3.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Rayvision
+Author-email: developer@rayvision.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: appdirs
+Requires-Dist: concurrent-log-handler
+Requires-Dist: pyyaml (>=5.1.2)
+
+UNKNOWN
+
+
