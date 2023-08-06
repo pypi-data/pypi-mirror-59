@@ -1,0 +1,8 @@
+remote_kernel_provider>=0.3.0
+jupyter_kernel_mgmt>=0.5.1
+entrypoints
+requests
+yarn-api-client>=1.0
+
+[kerberos]
+requests_kerberos
