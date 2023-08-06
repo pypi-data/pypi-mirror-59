@@ -1,0 +1,8 @@
+README.md
+setup.py
+codebeamer/__init__.py
+codebeamer/client.py
+codebeamer_client.egg-info/PKG-INFO
+codebeamer_client.egg-info/SOURCES.txt
+codebeamer_client.egg-info/dependency_links.txt
+codebeamer_client.egg-info/top_level.txt

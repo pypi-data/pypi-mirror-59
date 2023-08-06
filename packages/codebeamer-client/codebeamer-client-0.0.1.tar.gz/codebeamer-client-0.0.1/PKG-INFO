@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: codebeamer-client
+Version: 0.0.1
+Summary: Client for the CodeBeamer REST API
+Home-page: https://github.com/godardth/codebeamer
+Author: Theophile Godard
+Author-email: theo.godard@gmail.com
+License: MIT
+Description: # codebeamer
+        Client for the Codebeamer REST API
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
