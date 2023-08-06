@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+src/pyneutralino/__init__.py
+src/pyneutralino/neutralino-linux
+src/pyneutralino/neutralino-mac
+src/pyneutralino/neutralino-win.exe
+src/pyneutralino/neutralino.py
+src/pyneutralino.egg-info/PKG-INFO
+src/pyneutralino.egg-info/SOURCES.txt
+src/pyneutralino.egg-info/dependency_links.txt
+src/pyneutralino.egg-info/top_level.txt
+src/pyneutralino/app/index.html
+src/pyneutralino/app/settings.json
