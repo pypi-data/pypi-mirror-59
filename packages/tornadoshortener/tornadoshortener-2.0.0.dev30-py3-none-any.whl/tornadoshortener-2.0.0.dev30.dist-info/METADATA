@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tornadoshortener
+Version: 2.0.0.dev30
+Summary: UNKNOWN
+Home-page: https://github.com/nellessen/tornado-shortener
+Author: David Nellessen
+Author-email: davidnellessen@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: hashids (==1.2.0)
+Requires-Dist: redis (==3.3.11)
+Requires-Dist: tornado (==6.0.3)
+
+UNKNOWN
+
+
