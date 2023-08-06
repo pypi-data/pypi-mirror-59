@@ -1,0 +1,12 @@
+setup.py
+ja_ginza_dict/__init__.py
+ja_ginza_dict.egg-info/PKG-INFO
+ja_ginza_dict.egg-info/SOURCES.txt
+ja_ginza_dict.egg-info/dependency_links.txt
+ja_ginza_dict.egg-info/top_level.txt
+ja_ginza_dict/sudachidict/char.def
+ja_ginza_dict/sudachidict/rewrite.def
+ja_ginza_dict/sudachidict/sudachi.json
+ja_ginza_dict/sudachidict/system.dic
+ja_ginza_dict/sudachidict/system.dic.tar.xz
+ja_ginza_dict/sudachidict/unk.def
