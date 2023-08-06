@@ -1,0 +1,8 @@
+README.rst
+setup.py
+haihonglicom_test_package/__init__.py
+haihonglicom_test_package/test.py
+haihonglicom_test_package.egg-info/PKG-INFO
+haihonglicom_test_package.egg-info/SOURCES.txt
+haihonglicom_test_package.egg-info/dependency_links.txt
+haihonglicom_test_package.egg-info/top_level.txt
