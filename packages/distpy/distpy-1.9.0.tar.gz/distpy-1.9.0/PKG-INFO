@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: distpy
+Version: 1.9.0
+Summary: distpy : Processing for distributed fibre-optic sensor data
+Home-page: https://github.com/Schlumberger/distpy
+Author: Michael J. Williams
+Author-email: miw@slb.com
+License: ../LICENSE
+Description: UNKNOWN
+Keywords: DAS,DTS,hDVS,DVS
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
