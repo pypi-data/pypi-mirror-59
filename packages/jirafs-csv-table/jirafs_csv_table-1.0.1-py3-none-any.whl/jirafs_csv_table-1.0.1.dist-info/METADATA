@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jirafs-csv-table
+Version: 1.0.1
+Summary: Include tables in your Jira comments or description using a local CSV file.
+Home-page: https://github.com/coddingtonbear/jirafs-csv-table
+Author: Adam Coddington
+Author-email: me@adamcoddington.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
+
