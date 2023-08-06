@@ -1,0 +1,9 @@
+README.md
+setup.py
+svreal/__init__.py
+svreal/files.py
+svreal.egg-info/PKG-INFO
+svreal.egg-info/SOURCES.txt
+svreal.egg-info/dependency_links.txt
+svreal.egg-info/not-zip-safe
+svreal.egg-info/top_level.txt
