@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jwst-coronagraph-visibility
+Version: 0.4.0
+Summary: JWST coronagraphic target observability calculator
+Home-page: https://github.com/spacetelescope/jwst_coronagraph_visibility
+Author: Space Telescope Science Institute
+License: MIT
+Project-URL: JWST Help Desk, https://jwsthelp.stsci.edu
+Description: long_description
+Keywords: jwst astro astronomy observation coronagraph
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Provides-Extra: dev
