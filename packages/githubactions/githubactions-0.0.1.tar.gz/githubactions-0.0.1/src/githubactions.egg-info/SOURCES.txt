@@ -1,0 +1,17 @@
+.gitignore
+Makefile
+README.md
+pytest.ini
+requirements.txt
+setup.py
+tox.ini
+src/githubactions/__init__.py
+src/githubactions/command.py
+src/githubactions/constants.py
+src/githubactions/core.py
+src/githubactions.egg-info/PKG-INFO
+src/githubactions.egg-info/SOURCES.txt
+src/githubactions.egg-info/dependency_links.txt
+src/githubactions.egg-info/top_level.txt
+tests/unit/__init__.py
+tests/unit/test_core.py
