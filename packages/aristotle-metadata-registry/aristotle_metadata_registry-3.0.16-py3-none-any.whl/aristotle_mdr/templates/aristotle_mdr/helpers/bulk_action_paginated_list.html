@@ -1,0 +1,10 @@
+<form action="{% url 'aristotle:bulk_action' %}?next={{ request.path }}" method="POST">
+    {% csrf_token %}
+    {% if js_select_all %}
+        {% include "aristotle_mdr/helpers/select_all.html" with total_queryset_size=total_queryset_size item=model.get_verbose_name_plural %}
+        {% include "aristotle_mdr/helpers/paginated_list.html" with delete=delete js_select_all=True edit=edit %}
+    {% else %}
+        {% include "aristotle_mdr/helpers/paginated_list.html" with delete=delete edit=edit allow_select_all=False %}
+    {% endif %}
+        {% include "aristotle_mdr/helpers/list_action_bar.html" with wrap=True %}
+</form>

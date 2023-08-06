@@ -1,0 +1,15 @@
+{% extends "aristotle_mdr/user/userHome.html" %}
+{% load i18n %}
+
+{% block sidebar %}
+    {% include "aristotle_mdr/user/userSideBar.html" with activeTab='steward_orgs' %}
+{% endblock %}
+
+{% block page %}
+<h1><i class="fa fa-sitemap"></i> {% block title %}Stewardship Organisations{% endblock %}</h1>
+This is a list of all Stewardship Organisations you are a member of.
+<hr>
+    <section id="workgroups">
+        {% include "aristotle_mdr/helpers/paginated_organisation_list.html" with page=object_list show_all=True show_stewardship_organisations=True %}
+</section>
+{% endblock %}
