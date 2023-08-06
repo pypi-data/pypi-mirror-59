@@ -1,0 +1,11 @@
+slackclient==2.5.0
+
+[docs]
+Sphinx
+sphinx-rtd-theme
+sphinx-autodoc-typehints
+
+[testing]
+pytest
+pytest-cov
+coverage
