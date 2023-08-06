@@ -1,0 +1,10 @@
+README.rst
+setup.py
+pytest_tezos/TestTypes.py
+pytest_tezos/__init__.py
+pytest_tezos.egg-info/PKG-INFO
+pytest_tezos.egg-info/SOURCES.txt
+pytest_tezos.egg-info/dependency_links.txt
+pytest_tezos.egg-info/entry_points.txt
+pytest_tezos.egg-info/requires.txt
+pytest_tezos.egg-info/top_level.txt
