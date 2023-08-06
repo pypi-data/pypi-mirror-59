@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/coriander/__init__.py
+src/coriander.egg-info/PKG-INFO
+src/coriander.egg-info/SOURCES.txt
+src/coriander.egg-info/dependency_links.txt
+src/coriander.egg-info/requires.txt
+src/coriander.egg-info/top_level.txt
+tests/__pycache__/conftest.cpython-37-pytest-5.3.3.pyc
+tests/__pycache__/test_agent.cpython-37-pytest-5.3.3.pyc
+tests/__pycache__/test_context.cpython-37-pytest-5.3.3.pyc
+tests/__pycache__/test_skill.cpython-37-pytest-5.3.3.pyc
