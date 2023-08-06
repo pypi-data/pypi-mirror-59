@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: ya-music-to-tg-channel-downloader-pkg-arsdev
+Version: 0.0.2
+Summary: Script for downloading yamusic to tg channel
+Home-page: https://github.com/arsdev2/Yandex-Music-To-Tg-Channel-Downloader
+Author: Arsen Denisuk
+Author-email: senjka4@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst; charset=UTF-8
+
+Yandex-Music-To-Tg-Channel-Downloader
+=====================================
+
+РЎРєР°С‡Р°РµС‚ РјСѓР·С‹РєСѓ РёР· СЏРЅРґРµРєСЃ РјСѓР·С‹РєРё СЃРѕ РІСЃРµС… РїР»РµР№Р»РёСЃС‚РѕРІ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ Рё Р·Р°РіСЂСѓР·РёС‚ РІ С‚РµР»РµРіСЂР°РјРј РєР°РЅР°Р»
+
+.. image:: https://img.shields.io/pypi/v/yandex-music.svg
+   :target: https://pypi.org/project/yandex-music/
+   :alt: Р’РµСЂСЃРёСЏ РїР°РєРµС‚Р° PyPi
+
+.. image:: https://img.shields.io/badge/python-3.6%20|%203.7%20|%203.8-blue.svg
+   :target: https://pypi.org/project/yandex-music/
+   :alt: РџРѕРґРґРµСЂР¶РёРІР°РµРјС‹Рµ Python РІРµСЂСЃРёРё
+
+.. image:: https://codecov.io/gh/MarshalX/yandex-music-api/branch/development/graph/badge.svg
+   :target: https://github.com/arsdev2/Yandex-Music-To-Tg-Channel-Downloader
+   :alt: РџРѕРєСЂС‹С‚РёРµ РєРѕРґР° С‚РµСЃС‚Р°РјРё
+
+.. image:: https://api.codacy.com/project/badge/Grade/27011a5a8d9f4b278d1bfe2fe8725fed
+   :target: https://github.com/arsdev2/Yandex-Music-To-Tg-Channel-Downloader
+   :alt: РљР°С‡РµСЃС‚РІРѕ РєРѕРґР°
+
+.. image:: https://github.com/MarshalX/yandex-music-api/workflows/Full%20test/badge.svg
+   :target: https://github.com/arsdev2/Yandex-Music-To-Tg-Channel-Downloader
+   :alt: РЎС‚Р°С‚СѓСЃ С‚РµСЃС‚РѕРІ
+
+.. image:: https://img.shields.io/badge/license-LGPLv3-lightgrey.svg
+   :target: https://www.gnu.org/licenses/lgpl-3.0.html
+   :alt: Р›РёС†РµРЅР·РёСЏ LGPLv3
+
+
+==========
+How to use
+==========
+
+РњРёРЅ. РІРµСЂСЃРёСЏ Python - 3.6
+
+
+Р”Р»СЏ СЂР°Р±РѕС‚С‹ РЅСѓР¶РЅРѕ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ СЌС‚Сѓ Р±РёР±Р»РёРѕС‚РµРєСѓ
+
+Р—Р°РїСѓСЃС‚РёС‚СЊ РєРѕРјР°РЅРґСѓ
+
+.. code:: shell
+
+    $ pip install yandex-music --upgrade
+
+Р’ С„Р°Р№Р»Рµ config.ini РІРїРёСЃР°С‚СЊ СЃРІРѕР№ С‚РѕРєРµРЅ РѕС‚ Р±РѕС‚Р°, Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ РѕС‚ СЏРЅРґРµРєСЃ РјСѓР·С‹РєРё
+
+
+Р”РѕР±Р°РІРёС‚СЊ Р±РѕС‚Р° РЅР° РєР°РЅР°Р» РєР°Рє Р°РґРјРёРЅР°
+
+
+Р”Р»СЏ РїРµСЂРІРѕРіРѕ Р·Р°РїСѓСЃРєР° РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ run_first_time.sh(РёР»Рё run_first_time.bat РґР»СЏ Windows)
+
+
+Р”Р»СЏ СЃР»РµРґСѓСЋС‰РёС… - run.bat (РёР»Рё run.sh РґР»СЏ Linux)
+
+РџРѕСЃР»Рµ РїРµСЂРІРѕРіРѕ Р·Р°РїСѓСЃРєР° СЃРєСЂРёРїС‚Р°, РєР°РЅР°Р» РјРѕР¶РЅРѕ Р·Р°РєСЂС‹РІР°С‚СЊ.
+
+
+
