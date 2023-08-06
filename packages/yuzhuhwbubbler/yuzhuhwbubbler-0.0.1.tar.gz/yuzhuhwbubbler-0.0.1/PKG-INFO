@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: yuzhuhwbubbler
+Version: 0.0.1
+Summary: A bubbler sort package
+Home-page: https://github.com/e0431421/bubblewangyuzhu
+Author: Yuzhu Wang
+Author-email: 15151843600@163.com
+License: UNKNOWN
+Description: ## Bubbler
+        This is a sample package to sort an array using bubble sort. 
+        
+        ## Usage
+        - Create Virtual Environment
+        ```sh
+        pip install virtualenv
+        virtualenv -p python3 .
+        source bin/activate
+        ```
+        - Install Package
+        ```sh
+        pip install yuzhuhwq5public==0.0.1
+        ```
+        - Use as Module
+        ```py
+        
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
