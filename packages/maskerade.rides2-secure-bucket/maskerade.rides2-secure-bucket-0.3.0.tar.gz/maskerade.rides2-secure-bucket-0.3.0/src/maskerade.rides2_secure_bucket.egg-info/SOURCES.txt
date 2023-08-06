@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/maskerade.rides2_secure_bucket.egg-info/PKG-INFO
+src/maskerade.rides2_secure_bucket.egg-info/SOURCES.txt
+src/maskerade.rides2_secure_bucket.egg-info/dependency_links.txt
+src/maskerade.rides2_secure_bucket.egg-info/requires.txt
+src/maskerade.rides2_secure_bucket.egg-info/top_level.txt
+src/maskerade/rides2_secure_bucket/__init__.py
+src/maskerade/rides2_secure_bucket/py.typed
+src/maskerade/rides2_secure_bucket/_jsii/__init__.py
+src/maskerade/rides2_secure_bucket/_jsii/rides2-secure-bucket@0.3.0.jsii.tgz
