@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: vgpedestrian
+Version: 1.0.1
+Summary: This package implements a visibility graph algorithm to calculate pedestrian ways for open spaces.
+Home-page: https://git.kinf.wiai.uni-bamberg.de/KinfProjektWS1920/Group4
+Author: Lennart Thamm, Maximilian Thum, Niklas Kriegel, Olha Muzhylovsk
+Author-email: Niklas-Armin.Kriegel@stud.uni-bamberg.de
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
