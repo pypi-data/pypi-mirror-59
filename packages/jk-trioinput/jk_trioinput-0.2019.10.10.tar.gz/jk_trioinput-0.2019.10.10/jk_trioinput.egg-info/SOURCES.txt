@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+jk_trioinput/ConsoleInputHistory.py
+jk_trioinput/TextBufferWithCursor.py
+jk_trioinput/TextRenderer.py
+jk_trioinput/__init__.py
+jk_trioinput/input.py
+jk_trioinput.egg-info/PKG-INFO
+jk_trioinput.egg-info/SOURCES.txt
+jk_trioinput.egg-info/dependency_links.txt
+jk_trioinput.egg-info/not-zip-safe
+jk_trioinput.egg-info/requires.txt
+jk_trioinput.egg-info/top_level.txt
