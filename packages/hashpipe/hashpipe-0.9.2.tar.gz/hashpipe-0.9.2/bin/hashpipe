@@ -1,0 +1,8 @@
+#!/usr/bin/python3 -u
+# PYTHON_ARGCOMPLETE_OK
+
+"""Hashpipe entry point."""
+
+import hashpipe
+
+hashpipe.main()
