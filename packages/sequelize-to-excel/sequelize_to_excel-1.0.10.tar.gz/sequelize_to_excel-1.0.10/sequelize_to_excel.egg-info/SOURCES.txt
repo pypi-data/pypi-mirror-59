@@ -1,0 +1,8 @@
+README.rst
+sequelize_to_excel.py
+setup.cfg
+setup.py
+sequelize_to_excel.egg-info/PKG-INFO
+sequelize_to_excel.egg-info/SOURCES.txt
+sequelize_to_excel.egg-info/dependency_links.txt
+sequelize_to_excel.egg-info/top_level.txt
