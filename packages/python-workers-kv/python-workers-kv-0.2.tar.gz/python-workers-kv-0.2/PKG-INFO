@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: python-workers-kv
+Version: 0.2
+Summary: A Cloudflare Workers KV API Wrapper made with Python.
+Home-page: https://github.com/maguayo/python-workers-kv
+Author: Marcos Aguayo
+Author-email: marcos@aguayo.es
+License: MIT
+Download-URL: https://github.com/maguayo/python-workers-kv/archive/master.zip
+Description: UNKNOWN
+Keywords: cloudflare,workers,kv,workers kv
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
