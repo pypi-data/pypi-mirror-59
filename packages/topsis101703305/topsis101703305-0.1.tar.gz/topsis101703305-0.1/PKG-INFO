@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: topsis101703305
+Version: 0.1
+Summary: TOPSIS for PyPi
+Home-page: https://github.com/Lakshya-Pandey/topsis
+Author: Lakshya Pandey
+Author-email: your.email@domain.com
+License: MIT
+Download-URL: https://github.com/Lakshya-Pandey/topsis/archive/v_0.1.tar.gz
+Description: UNKNOWN
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
