@@ -1,0 +1,6 @@
+[console_scripts]
+bscc = bscc:main
+shipwright = bscc.shipwright:main
+shipwright3 = bscc.shipwright:main
+shipwright3.7 = bscc.shipwright:main
+

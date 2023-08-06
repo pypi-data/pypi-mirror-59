@@ -1,0 +1,15 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+data/data_file
+src/bscc/__init__.py
+src/bscc/package_data.dat
+src/bscc/shipwright.py
+src/bscc.egg-info/PKG-INFO
+src/bscc.egg-info/SOURCES.txt
+src/bscc.egg-info/dependency_links.txt
+src/bscc.egg-info/entry_points.txt
+src/bscc.egg-info/not-zip-safe
+src/bscc.egg-info/requires.txt
+src/bscc.egg-info/top_level.txt
