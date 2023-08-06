@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: robotpy-commands-v1
+Version: 2020.1.2.1
+Summary: WPILib command framework
+Home-page: https://github.com/robotpy/robotpy-commands
+Author: RobotPy Development Team
+Author-email: robotpy@googlegroups.com
+License: BSD-3-Clause
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: wpilib (<2021.0.0,>=2020.1.2.3)
+
+robotpy-commands-v1
+===================
+
+Python wrappers around the old WPILib commands library. 
+
+TODO
+
+
