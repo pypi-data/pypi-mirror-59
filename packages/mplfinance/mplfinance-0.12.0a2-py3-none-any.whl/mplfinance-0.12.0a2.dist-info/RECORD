@@ -1,0 +1,11 @@
+mplfinance/__init__.py,sha256=QNGAHBBOzzhtuLuf8MePjwtdzQSpO_ZUdm2Uc-J5JjQ,144
+mplfinance/_arg_validators.py,sha256=vw4ZdhDjuHdbsorBIfKj4lswa5-qmi-ul4KuIWZIyWA,2165
+mplfinance/_utils.py,sha256=qtw-l-G2QuQ78rMpqheOcVQCKKwmge6Tk-na8H1AEI8,10548
+mplfinance/_version.py,sha256=5qAp1Qm-CFJoNhAFbHJZjr2YJ3HupOV_pIBgH2suxTA,282
+mplfinance/original_flavor.py,sha256=b8Rw8WDACaO-bbkObE4_Uht8pbV5d6wIzs8iUhgR3Vg,27278
+mplfinance/plotting.py,sha256=H3IG7a6PgBCyzQ3QLU_Ko8NTavZbCYSH4v5-qQcklgc,17977
+mplfinance-0.12.0a2.dist-info/LICENSE,sha256=cAV3AMLvbSqhUWqcFZCTuKqy3Mgrm-QnDoX33RBrE3g,2381
+mplfinance-0.12.0a2.dist-info/METADATA,sha256=EFwCdnyQ5Qh1P8NA9AS1HObznD-qFuxd31zbdZl2Tto,15926
+mplfinance-0.12.0a2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mplfinance-0.12.0a2.dist-info/top_level.txt,sha256=WEDNbmkoAWUka12rOy-fTe2lV97q0iNhDpdoWnxliOw,11
+mplfinance-0.12.0a2.dist-info/RECORD,,
