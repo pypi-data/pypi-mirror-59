@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: firegorest
+Version: 0.1.0
+Summary: Some utilties to work with Google Firestore API.
+Home-page: https://github.com/sunshine-tech/FireGoRest.git
+License: Apache-2.0
+Keywords: google,cloud,firestore,functions
+Author: Nguyễn Hồng Quân
+Author-email: ng.hong.quan@gmail.com
+Maintainer: Nguyễn Hồng Quân
+Maintainer-email: ng.hong.quan@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet
+Classifier: Topic :: Utilities
+Requires-Dist: importlib_metadata (>=1.4.0,<2.0.0)
+Requires-Dist: iso8601 (>=0.1.12,<0.2.0)
+Project-URL: Repository, https://github.com/sunshine-tech/FireGoRest.git
+Description-Content-Type: text/x-rst
+
+==========
+FireGoRest
+==========
+
+
+Some utilties to work with Google Firestore API.
+
+First utility is ``firegorest.tidy_doc``, to make a neat data dictionary from the `event`_ passed by Google Cloud runtime to your cloud function.
+
+Install
+-------
+
+    pip install firegorest
+
+
+Example
+-------
+
+.. code-block:: python
+
+    from logbook import Logger
+    from firegorest import tidy_doc
+    from firegorest.types import GCFContext
+
+    logger = Logger(__name__)
+
+
+    def act_on_customer_change(event: dict, context: GCFContext):
+        try:
+            logger.info('Old Value: {}', tidy_doc(event['oldValue']['fields']))
+        except KeyError:
+            pass
+        try:
+            logger.info('New Value: {}', tidy_doc(event['value']['fields']))
+        except KeyError:
+            pass
+        resource = context.resource
+        logger.debug('Resource: {}', resource)
+        return True
+
+
+
+.. _event: https://cloud.google.com/functions/docs/calling/cloud-firestore#event_structure
+
