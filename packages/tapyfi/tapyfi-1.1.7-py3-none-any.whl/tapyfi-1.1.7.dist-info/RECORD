@@ -1,0 +1,13 @@
+tapyfi/OHLCObject.py,sha256=zdu_V443s5sOMZBtHxOnoSOYrAHPieJvcIzO87KX-iM,1004
+tapyfi/__init__.py,sha256=iwjMOe9dLv0n9nZ69GftNGkwxKJWmuIbrCtLWcivfUM,90
+tapyfi/__main__.py,sha256=kUoQay5aJF1zB4ypTINDfgepFka-Y2u9V0YWh5dOGgw,167
+tapyfi/Helpers/MAs.py,sha256=qiEaK_W0H3ixzcaGtIQBNC-WC7yyrJXsVpkokbjw2fA,1329
+tapyfi/Helpers/__init__.py,sha256=sat-T1NG9o75uBoTYY8BtYbhHhEWzbahOWx2t613RZ8,105
+tapyfi/Indicators/RSI.py,sha256=fp2B1pW78TVjvmIb8QVgWh-LRkGI1tRHK-E-RD8QwFg,671
+tapyfi/Indicators/__init__.py,sha256=Uksh6bZz7G_XUoiGnj5QQBo1dOJ7diBtImJz-Ojqoc4,117
+tapyfi-1.1.7.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tapyfi-1.1.7.dist-info/METADATA,sha256=KLrgTp8KKCFIfa7h6RKMCN_s_Km1i5dq3yYskJqNSoo,451
+tapyfi-1.1.7.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+tapyfi-1.1.7.dist-info/entry_points.txt,sha256=2tZqJYkQFK4b9X3gwr4tRCfQtBg8i3FK3DANeUpkQXE,49
+tapyfi-1.1.7.dist-info/top_level.txt,sha256=GdlgdkP9Di8_0oCJhbrpT5qmtvrVfaqFFvn1SGAxIew,7
+tapyfi-1.1.7.dist-info/RECORD,,
