@@ -1,0 +1,46 @@
+# exceldirreader
+
+It reads multiple excel files in a directory and returns a dataframe with all tables appended
+
+## Getting Started
+
+After installing it, import the package:
+
+```
+import exceldirreader
+```
+
+Instantiate an object:
+
+```
+reader = exceldirreader.Reader("your_directory_path")
+```
+
+Read the files by calling the function read_files and passing a dictionary where the keys are the file names and the values are the worksheet names:
+```
+my_dict = {
+    "file1.xlsx":"SheetX",
+    "file2.xlsx":"SheetY",
+    "file3.xlsx":"SheetZ"
+}
+final_dataframe = reader.read_files(my_dict)
+```
+
+### Installing
+
+In your virtual environment, in the command line:
+
+```
+pipenv install excelsdirectoryreader
+```
+
+## Built With
+
+* [Pandas](https://pandas.pydata.org/pandas-docs/stable/)
+* [xlrd](https://xlrd.readthedocs.io/en/latest/)
+
+## Author
+
+* **Afonso Schulz Albrecht** - *Initial work* - [schulzalbrecht](https://github.com/schulzalbrecht)
+
+
