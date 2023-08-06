@@ -1,0 +1,3 @@
+[console_scripts]
+django-orm = django_orm_layer:main
+

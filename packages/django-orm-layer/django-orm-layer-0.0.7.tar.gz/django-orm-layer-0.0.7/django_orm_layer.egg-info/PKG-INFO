@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: django-orm-layer
+Version: 0.0.7
+Summary: django orm layer
+Home-page: UNKNOWN
+Author: Illyasviel
+License: UNKNOWN
+Description: use django orm standalone
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6, <4
