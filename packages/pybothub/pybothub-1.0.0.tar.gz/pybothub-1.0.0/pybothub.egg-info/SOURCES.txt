@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+bothub/__init__.py
+bothub/bothub.py
+pybothub.egg-info/PKG-INFO
+pybothub.egg-info/SOURCES.txt
+pybothub.egg-info/dependency_links.txt
+pybothub.egg-info/requires.txt
+pybothub.egg-info/top_level.txt
