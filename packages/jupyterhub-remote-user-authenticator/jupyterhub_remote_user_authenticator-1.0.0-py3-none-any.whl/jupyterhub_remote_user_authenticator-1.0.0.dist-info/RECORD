@@ -1,0 +1,7 @@
+remote_user_authenticator/__init__.py,sha256=OLW8WAuQZaqGJB4d_ltCGvdje31Os0OHiMf0_1RhpDs,231
+remote_user_authenticator/remote_user_authenticator.py,sha256=TvpiCKcfAmoKj_BEPIBgDFHY7zM2fT02W0Ybotdi9RA,1471
+jupyterhub_remote_user_authenticator-1.0.0.dist-info/LICENCE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+jupyterhub_remote_user_authenticator-1.0.0.dist-info/METADATA,sha256=O3VJebioFcYJTteAIN0GmGmHa9utNKId4E7qB2oC-JM,318
+jupyterhub_remote_user_authenticator-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+jupyterhub_remote_user_authenticator-1.0.0.dist-info/top_level.txt,sha256=KLdkqhJuqjKbACTsvcna2dp0MKo6gLFvLCZP3w3-LxY,26
+jupyterhub_remote_user_authenticator-1.0.0.dist-info/RECORD,,
