@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+catkin_sphinx.egg-info/PKG-INFO
+catkin_sphinx.egg-info/SOURCES.txt
+catkin_sphinx.egg-info/dependency_links.txt
+catkin_sphinx.egg-info/top_level.txt
+src/catkin_sphinx/ShLexer.py
+src/catkin_sphinx/__init__.py
+src/catkin_sphinx/cmake.py
+src/catkin_sphinx/theme/ros-theme/theme.conf
+src/catkin_sphinx/theme/ros-theme/static/pygments.css
+src/catkin_sphinx/theme/ros-theme/static/sphinxdoc.css
