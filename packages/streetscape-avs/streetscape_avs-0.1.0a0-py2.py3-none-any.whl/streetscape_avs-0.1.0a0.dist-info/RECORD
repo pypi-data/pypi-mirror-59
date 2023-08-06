@@ -1,0 +1,15 @@
+streetscape_avs/__init__.py,sha256=9cgGuvctLsO9IwiUYdwD_tlMKt1jRr18B6AmASgEumc,310
+streetscape_avs/_version.py,sha256=nZ27WLDG7iROxfHgBuVMdtfmxqkYw-ILLi_ci49Phpk,281
+streetscape_avs/simpleserver.py,sha256=r0OBN5869YIuMaJcgow9h5hNJDcz6g2TCNOhHDhJg1w,1447
+streetscape_avs/streetscape_avs.py,sha256=klvBFMyCz_ReGBOc4kMTar3MVlzkeX_c300uzRm1Wx4,692
+streetscape_avs/static/extension.js,sha256=L7tSckc8PyScVosqf1wKiT3LmW7QQi6uqoqesfMuslw,3328
+streetscape_avs/static/index.js,sha256=efWmHzaGdbVgFdq2rJvwrpwGxe8_UjvLIjidOJ549EY,8478407
+streetscape_avs/static/index.js.map,sha256=Rr-bf7AtqOIG5vAhyIzvurXj_Yvq-rTQF21tKvnUMi0,9331472
+streetscape_avs-0.1.0a0.data/data/etc/jupyter/nbconfig/notebook.d/streetscape-jupyter.json,sha256=jogdQMRCoALyaprdwJ-eB4TFgrIUpmw16V3CjSCmxuM,73
+streetscape_avs-0.1.0a0.data/data/share/jupyter/nbextensions/streetscape-jupyter/extension.js,sha256=L7tSckc8PyScVosqf1wKiT3LmW7QQi6uqoqesfMuslw,3328
+streetscape_avs-0.1.0a0.data/data/share/jupyter/nbextensions/streetscape-jupyter/index.js,sha256=efWmHzaGdbVgFdq2rJvwrpwGxe8_UjvLIjidOJ549EY,8478407
+streetscape_avs-0.1.0a0.data/data/share/jupyter/nbextensions/streetscape-jupyter/index.js.map,sha256=Rr-bf7AtqOIG5vAhyIzvurXj_Yvq-rTQF21tKvnUMi0,9331472
+streetscape_avs-0.1.0a0.dist-info/METADATA,sha256=jaxr-z-T08m-H0zD7KOdfYlgcHfrKFSuik-mgdXPk4g,710
+streetscape_avs-0.1.0a0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+streetscape_avs-0.1.0a0.dist-info/top_level.txt,sha256=IH3Dxh8C9rSLMeEU_H9DjsnGFWb95Inz1FIkSKiYCmQ,16
+streetscape_avs-0.1.0a0.dist-info/RECORD,,
