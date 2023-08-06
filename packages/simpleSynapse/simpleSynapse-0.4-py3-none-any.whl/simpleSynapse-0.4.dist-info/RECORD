@@ -1,0 +1,14 @@
+simpleSynapse/__init__.py,sha256=8ZkjGPDW98roth-OTsIBHWWDn3k-Y-HUZuS17VdwAj8,19
+simpleSynapse/command_line.py,sha256=l94KXtcBlwAhyE5oHQWx9bXnGe-KwAOUEdfKpl9hVTw,148
+simpleSynapse/pull.py,sha256=3GHdZMjFPnfGilS05bKugV6qTQ40EIJFPIOClH-1HxU,1109
+simpleSynapse/pull_cli.py,sha256=fpedAiixaLm8ygDmJd-rGlMCGBXbOUMErdgOWW8x0rE,542
+simpleSynapse/push.py,sha256=8e0KUUZ-_RWxVwkRWlQ26jZ28wohtCknOlE5m9O9WXM,1124
+simpleSynapse/push_cli.py,sha256=P-L-_l7KLxr2hx60VCPBnYrq-x1G8gip06zAooObHd0,1104
+simpleSynapse/run.py,sha256=md3X6SV3W2HGWn2vOiBsOqK7b4qLY18L8LgkREbX-GU,7720
+simpleSynapse/simpleSynapse.py,sha256=c62fTR9Mw7BHp2oQlBn0Cv8-exPtL0AQ2a27xJXoq1M,5274
+simpleSynapse/simpleSynapsePull.py,sha256=eYF4-OprsGwgm9ampzW6vm53wPPZXiz8TZfh0vj0bmk,551
+simpleSynapse-0.4.dist-info/METADATA,sha256=qoDrP-0ZjFRc2uxZnTex0UhgqmrBW0FCb9zTT8Y6wuE,345
+simpleSynapse-0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+simpleSynapse-0.4.dist-info/entry_points.txt,sha256=JiQz7ScB13pORd7Of8TAGJi6WOy-Mmqsr1ufKUxdOGs,107
+simpleSynapse-0.4.dist-info/top_level.txt,sha256=8OkhZMyQRsADzarh-oNL4MaRz44W0XjaxjJPTYjHsnE,14
+simpleSynapse-0.4.dist-info/RECORD,,

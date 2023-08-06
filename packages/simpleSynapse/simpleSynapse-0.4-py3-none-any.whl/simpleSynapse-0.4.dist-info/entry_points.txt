@@ -1,0 +1,4 @@
+[console_scripts]
+simpleSynapsePull = simpleSynapse.pull:main
+simpleSynapsePush = simpleSynapse.push:main
+
