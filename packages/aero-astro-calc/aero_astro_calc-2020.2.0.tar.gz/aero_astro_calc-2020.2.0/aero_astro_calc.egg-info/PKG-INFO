@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: aero-astro-calc
+Version: 2020.2.0
+Summary: A small python library with functions to assist engineers.
+Home-page: https://gitlab.com/MisterBiggs/aero-astro-calc
+Author: Anson Biggs
+Author-email: anson@ansonbiggs.com
+License: UNKNOWN
+Description: # Aero-Astro-Calc
+        
+        A small python library with functions to assist engineers.
+        
+        ## Getting Started
+        
+        - Install using pip:
+        
+        ```
+        pip install aero-astro-calc
+        ```
+        
+        - Import into your Python project
+        
+        ```python
+        from aero_astro_calc import PlaneStress
+        ```
+        
+        ## Usage
+        
+        Make plane stress object:
+        
+        ```python
+        stress = PlaneStress(80, -40, 25)
+        ```
+        
+        View the stress on a 2D plane:
+        
+        ```python
+        stress.plane()
+        ```
+        
+        ![Plane Stress example](images/PlaneStress.png)
+        
+        View Mohr's circle of the stresses:
+        
+        ```python
+        stress.mohr()
+        ```
+        
+        ![Mohr's Circle Example](images/MohrsCircle.png)
+        
+        ## Contact
+        
+        Anson Biggs - [anson@ansonbiggs.com](mailto:anson@ansonbiggs.com) - [@Anson_3D](https://twitter.com/Anson_3D)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
