@@ -1,0 +1,12 @@
+vup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vup/generate.py,sha256=dgw7U7NUye0G18DU8Qxi8ABl2MsDnccJcoZLT3k_rY0,4081
+vup/init.py,sha256=Q_IxhVVKGJRAWTufxRQ100iIQ0ZiofFeTj-z3DZoFN0,1903
+vup/main.py,sha256=_Di8Ur4ooRuy5f3P-bdJSKOKdADwvDADjRo_UCTZOMI,2501
+vup/setting.py,sha256=9tHe2vx_MbOaYJ-YAsVd728Dhr_lQ1cfURFlrrjWICA,4577
+vup/update.py,sha256=GXMiiN9PiJPP8thcU0lAny4wjj72K4gAVrfdwWknMJU,690
+vup-1.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+vup-1.1.1.dist-info/METADATA,sha256=ROhHXcQqZMNQBBAjSKNtRU-jNWAAPnjScnCaVnB1IOU,2006
+vup-1.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+vup-1.1.1.dist-info/entry_points.txt,sha256=y9QJfUDm9Y85_LYVkGMCkklIcQmuL8UqrPcBPIeXGmU,39
+vup-1.1.1.dist-info/top_level.txt,sha256=tNUiLOAaEFxzi7Y2Em8uZJeqxjGrnc3_7fA1Iwydhdc,4
+vup-1.1.1.dist-info/RECORD,,
