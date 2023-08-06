@@ -1,0 +1,15 @@
+felixlib/__init__.py,sha256=YCCKoZx5pCengoUr4e_Zgk34hzTj2utC_E_9zGIBKRQ,20
+felixlib/__main__.pyd,sha256=60AT0dID-lDJsi1tXmmyRcRnzoWUEBrKGiNCp188YEo,27648
+felixlib/ansys.pyd,sha256=QEJU_uwHwI7JCfXG388Xl6zuGrznAOqHTOQACsuwBgM,189440
+felixlib/const.pyd,sha256=a1Qqyukx4oZQw-Kyj1WalJGBP5WaAJ3LOii8VMsYtg4,24576
+felixlib/cython_build.pyd,sha256=6LmcI7VnrK_UcvBw7IGrZgNs_mqAHO3draAdYO_2bto,94720
+felixlib/data_analysis.pyd,sha256=A6J7Z8JRLkma6SmfnL1fVLAsIz4NI4FYRSJqUcqebp4,33280
+felixlib/flask_common.pyd,sha256=1pEBnlgZOWpfNdqLsM50xul85SSf76DfXAtg14duRvU,99328
+felixlib/general.pyd,sha256=H93It07fOl1Annc13yHtmVfcKbf6d_5B7GgCHjT1U7M,265728
+felixlib/inventor.pyd,sha256=PEadvjJO2NbXFOe6torVsN0bFA5OrhpUFFB3Yu0kE8o,124416
+felixlib/pyi_build.pyd,sha256=oqfwtAfT8Aug4iqmrch952wcIG6-l8Xcitc-T5z12aM,154112
+felixlib/sg_common.pyd,sha256=kSbU2cAe1m-eo-pfllQHZw39m96hy1S-m3HtWLfmV_E,58880
+felixlib-0.0.6.dist-info/LICENSE,sha256=UUoHCQ7hLM3mVE-IrK87iwwpBy-FDdvrijMUDQ-prJw,49
+felixlib-0.0.6.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+felixlib-0.0.6.dist-info/METADATA,sha256=YyvBkvN7iVBxFEpxisFAOh8DHpnN1IhmsNSZC3jrAF4,774
+felixlib-0.0.6.dist-info/RECORD,,
