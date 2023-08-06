@@ -1,0 +1,12 @@
+aio_geojson_flightairmap/__init__.py,sha256=fhzw92aUe5DMD3Kt9ZDvDInbXegd_kWUP3HR3wS-wm4,137
+aio_geojson_flightairmap/__version__.py,sha256=EexiuRIcwLIDRW4CblUlA29gZKRQyMMtPth4A3M1ch4,53
+aio_geojson_flightairmap/consts.py,sha256=wo6JXS3mHuqy4sPquKMuImhczHg1YGgmx0K9mSuUNT4,420
+aio_geojson_flightairmap/feed.py,sha256=WCioqcbcLWAU6tUO1I5gpDTtAjoiWDxVVSeiyCTjBow,1722
+aio_geojson_flightairmap/feed_entry.py,sha256=3NNwpZCMmsLGjZZjYrMpfAtV1Z5nFQppgafAzNyqCQQ,2036
+aio_geojson_flightairmap/feed_manager.py,sha256=nA0RUoSH_hY9dKMYmk92AF1d6cfOctTgZu2rhvICoSo,857
+aio_geojson_flightairmap/test.py,sha256=uThOmrmMkNO7f-CcrLhESgbXQkj0DI_QtcG8ZhEf_0s,725
+aio_geojson_flightairmap-0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aio_geojson_flightairmap-0.3.dist-info/METADATA,sha256=x3WsPuCu3Lt9dw0O6kREaYVbYlq--5RBt5sWkgpeKpA,6756
+aio_geojson_flightairmap-0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+aio_geojson_flightairmap-0.3.dist-info/top_level.txt,sha256=pztrOLJIRceirQO-PSTTLkIP_o9MHmwj8GRrkraLO-4,25
+aio_geojson_flightairmap-0.3.dist-info/RECORD,,
