@@ -1,0 +1,14 @@
+recursivenodes/__init__.py,sha256=MMcz1p8ase3KLq5BC__QUMJPqufgwn_-GJm0X5R5Z1Y,199
+recursivenodes/conftest.py,sha256=aYXNnXDq9Z5snE3LKBDIk202CuXZMC7xEg-g0oAe_qU,198
+recursivenodes/lebesgue.py,sha256=hTmi_HTarRRvnVo5XE_oCHvjVQMzUofEbASRIGRKDMY,20133
+recursivenodes/lebesgue_constants.csv,sha256=lXKMWp1KSZYwDAWVptx0Wo1jf-6mNLnFn9kZsQTZGo8,3730
+recursivenodes/more_lebesgue_constants.csv,sha256=0zcrKfnbjBg7FCkZ2Qu5SDbRWn8CDHczwt02URPfB7A,8156
+recursivenodes/nodes.py,sha256=8RCF1Z5-D9NVU8gwmDHfDJoRxEHamL-iYEeWW0edfXc,27512
+recursivenodes/polynomials.py,sha256=7bux_agooIKFEl3YbjaRi0wieW_A6T5fOPq6o0b0X-A,16786
+recursivenodes/quadrature.py,sha256=WyQTodZGKAcUeT-8aDT1N6ucZA6xC06D5eCmQUo_h4E,4927
+recursivenodes/utils.py,sha256=DUHlFqWA-jTtRxJf9GmKXJX7m8LiI6xNzsFyc6gbBnE,4166
+recursivenodes-0.1.0.dist-info/LICENSE,sha256=VDk9nJB5us0lMi2T3V74fEmIaBYwRY7M9PLCRWQIX08,1056
+recursivenodes-0.1.0.dist-info/METADATA,sha256=4U7eOHNHngtNJR3fPUzB48nm-FQDBphB-LHvh8tJm4k,2327
+recursivenodes-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+recursivenodes-0.1.0.dist-info/top_level.txt,sha256=ruXCs7dWUcgmjAParzTJsJwlevqRlo5Pq-G-521bfwU,15
+recursivenodes-0.1.0.dist-info/RECORD,,
