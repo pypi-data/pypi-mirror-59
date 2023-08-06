@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.6"
+  - "3.7"
+dist: xenial
+sudo: true
+install:
+  - pip install -U scikit-learn
+  - pip install -U .
+# command to run tests
+script:
+  - python setup.py test # or py.test for Python versions 3.5 and below
