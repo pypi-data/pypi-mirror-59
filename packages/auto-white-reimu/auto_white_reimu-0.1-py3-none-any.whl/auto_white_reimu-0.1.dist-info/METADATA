@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: auto-white-reimu
+Version: 0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Ledenel
+Author-email: ledenelintelli@gmail.com
+License: GPL
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: bitstruct
+Requires-Dist: requests
+Requires-Dist: Jinja2
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pandas ; extra == 'test'
+
+UNKNOWN
+
+
