@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+keras_layernorm_rnn/__init__.py
+keras_layernorm_rnn/layernorm_simplernn.py
+keras_layernorm_rnn/layernorm_simplernn_test.py
+keras_layernorm_rnn.egg-info/PKG-INFO
+keras_layernorm_rnn.egg-info/SOURCES.txt
+keras_layernorm_rnn.egg-info/dependency_links.txt
+keras_layernorm_rnn.egg-info/not-zip-safe
+keras_layernorm_rnn.egg-info/requires.txt
+keras_layernorm_rnn.egg-info/top_level.txt
