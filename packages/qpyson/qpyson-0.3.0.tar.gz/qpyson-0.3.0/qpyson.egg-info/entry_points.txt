@@ -1,0 +1,3 @@
+[console_scripts]
+qpyson = qpyson.cli:run_main
+
