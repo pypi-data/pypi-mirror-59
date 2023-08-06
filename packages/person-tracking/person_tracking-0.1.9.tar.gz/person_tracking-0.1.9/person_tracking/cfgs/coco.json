@@ -1,0 +1,37 @@
+{"model_stuff": {"model_name": "yolov3", "exp_name": "exp_1"},
+ "detection": {
+     "input_size": 416,
+     "use_pretrained_weights_loc": "/imagehdd/pretrained_weights/Object_detection_pretrained_weights/coco_pretrained_yolov3.pth"
+ },
+ "classification": {"classify": false,
+		    "weights_loc": "/mnt/nfshome1/FRACTAL/sarang.pande/code_modifications/dl_exploration/weights/resnet_2_1.0.pth",
+		    "num_classes": 2
+ },
+ "face_detection": false,
+ "tracking":{"max_cosine_distance" : 0.6,
+             "metric": "cosine",
+	     "nn_budget": null,
+             "max_iou_distance": 0.9,
+             "n_init": 1,
+             "max_age": 30,
+             "weights_loc": "/imagehdd/internal_projects/person_tracking/person_reid_deep_sort.t7"},
+ "heatmap": false,
+ "data": {
+     "labels_data": "data/coco/labels.txt",
+     "num_classes": 80
+ },
+ "arch": {
+     "strides": [32, 16, 8],
+     "anchor_ratios": [[[116, 90], [156, 198], [373, 326]],
+                    [[30, 61], [62, 45], [59, 119]], 
+                    [[10, 13], [16, 30], [33, 23]]],
+     "scale": 3
+ },
+ "device": {
+     "use_gpu": true,
+     "use_data_parallel": false,
+     "device_ids": [0,1],
+     "use_visdom": true
+ },
+ "inference": true
+}
