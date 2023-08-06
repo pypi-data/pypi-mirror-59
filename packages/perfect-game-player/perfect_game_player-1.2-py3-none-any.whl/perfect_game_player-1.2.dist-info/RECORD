@@ -1,0 +1,10 @@
+pgameplayer/__init__.py,sha256=YjeQfzYbcTCfmS2kZTLBEqhjcmrikhooH-N0jq9OjgU,24
+pgameplayer/minimax_tree.py,sha256=q1_MB5fd73H7d3vkHYg1ZVh5gWs6VxzO523b1Toz_Ok,4170
+pgameplayer/solvers/__init__.py,sha256=zQZ0SU5REj2vKQBKaqMcdQSLPTheVwNQPZLpmneX2yA,37
+pgameplayer/solvers/connect4.py,sha256=j1b65rirZsgY8Ltd6F3W7tbtO3QGfWdaUAzU9fgDyrQ,4658
+pgameplayer/solvers/tictactoe.py,sha256=fW1HMBV4sbVVpj9o85P4sxuiHC4cvqL19mqnN8199_k,6479
+perfect_game_player-1.2.dist-info/LICENSE,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+perfect_game_player-1.2.dist-info/METADATA,sha256=kuT2p0I_5J2uYKikpTs9vFatJbXn0xb16-rcxJet-9c,270
+perfect_game_player-1.2.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+perfect_game_player-1.2.dist-info/top_level.txt,sha256=hOQx-K1_FNdbupEJf3IitpL4q4V59upjstBmcW8SJhM,12
+perfect_game_player-1.2.dist-info/RECORD,,
