@@ -1,0 +1,12 @@
+cssbeautifier/__init__.py,sha256=DRjTgzDQyHf5U6sCBbPFbRaaqYBYWHvH3g3LfRt7Iy4,7328
+cssbeautifier/css/__init__.py,sha256=VZswWST_1Q1lxBL971CcfY6dQ0CMmUq8r3269HWFOwg,16
+cssbeautifier/css/beautifier.py,sha256=DRQe3aC-ZFXJq6A7vk-B5L2LaS69af8gbowhVU_jLec,18687
+cssbeautifier/css/options.py,sha256=NI1NC9jkscgd6gvGzTdunUXQV5ARuKWsJTXL_rjwXeg,1830
+cssbeautifier/tests/__init__.py,sha256=VZswWST_1Q1lxBL971CcfY6dQ0CMmUq8r3269HWFOwg,16
+cssbeautifier/tests/generated/__init__.py,sha256=VZswWST_1Q1lxBL971CcfY6dQ0CMmUq8r3269HWFOwg,16
+cssbeautifier/tests/generated/tests.py,sha256=9-XEyyhg7o7kH-EUSu4ASjFeLKplgeCeuAq6mX3ZQvM,315416
+cssbeautifier-1.10.3.dist-info/METADATA,sha256=sIb2tPcErIBcjfkX3YAYyX4UjZcnoXbhF-XIl6UipZQ,394
+cssbeautifier-1.10.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+cssbeautifier-1.10.3.dist-info/entry_points.txt,sha256=HLDSnyx24eBnKbWSn4nxL1wkqIZTp6RWK630G4bLsgo,53
+cssbeautifier-1.10.3.dist-info/top_level.txt,sha256=WPIuPJWonkP6P6sIaBSu_Y38SFW9E8KBiP_21JzYaBU,14
+cssbeautifier-1.10.3.dist-info/RECORD,,
