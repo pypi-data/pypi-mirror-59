@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: affo-email-client
+Version: 1.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/affoio/affo-email-client
+Author: Aleksey Dalekin
+Author-email: ald@affo.io
+License: BSD
+Keywords: email service client
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+Requires-Dist: simple-rest-client (>=0.5.4)
+
+|Build Status| |Code Style|
+
+AFFO Email Client
+=================
+
+A simple python interface for the email service.
+
+Installation
+------------
+
+============ =============================================
+**Version**  1.0.1
+**Web**      https://affo.io/
+**Download** https://pypi.org/affoio/affo-email-client/
+**Source**   https://github.com/affoio/affo-email-client/
+**Keywords** python, email, service, client
+============ =============================================
+
+::
+
+   pip install python-email-client
+
+Usage
+-----
+
+The example below shows how you get an inform
+
+.. code:: python
+
+   import affo_email_client
+
+   client = affo_email_client.Client(api_root_url="https://localhost/api/v1.0/")
+   client.message.create(body={
+       "from_": "from@example.com",
+       "to": ["to@example.com"],
+       "subject": "Hello",
+       "html": "",
+       "text": "",
+       "tag": "test"
+   })
+
+.. |Build Status| image:: https://travis-ci.org/affoio/affo-email-client.svg?branch=master
+   :target: https://travis-ci.org/affoio/affo-email-client
+.. |Code Style| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/psf/black
+
+
