@@ -1,0 +1,7 @@
+README.md
+setup.py
+bentley_ottmann/__init__.py
+bentley_ottmann.egg-info/PKG-INFO
+bentley_ottmann.egg-info/SOURCES.txt
+bentley_ottmann.egg-info/dependency_links.txt
+bentley_ottmann.egg-info/top_level.txt
