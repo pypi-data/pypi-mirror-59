@@ -1,0 +1,9 @@
+README.md
+course_spider.py
+setup.py
+cloudacademy_crawler.egg-info/PKG-INFO
+cloudacademy_crawler.egg-info/SOURCES.txt
+cloudacademy_crawler.egg-info/dependency_links.txt
+cloudacademy_crawler.egg-info/entry_points.txt
+cloudacademy_crawler.egg-info/requires.txt
+cloudacademy_crawler.egg-info/top_level.txt
