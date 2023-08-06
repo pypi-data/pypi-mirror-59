@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cv2utils
+Version: 0.0.5
+Summary: Face detector wrapper
+Home-page: https://github.com/luizcarloscf/cv2utils.git
+Author: Luiz Carlos Cosmi Filho
+Author-email: luizcarloscosmifilho@gmail.com
+License: MIT
+Description: Face detector wrapper
+Platform: UNKNOWN
