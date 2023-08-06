@@ -1,0 +1,5 @@
+lesscli
+requests
+pyperclip
+sqlalchemy
+mysql-connector
