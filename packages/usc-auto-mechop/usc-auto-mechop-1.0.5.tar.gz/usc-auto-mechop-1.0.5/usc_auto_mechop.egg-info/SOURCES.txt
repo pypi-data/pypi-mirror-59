@@ -1,0 +1,14 @@
+setup.py
+auto_mechop/__init__.py
+auto_mechop/__main__.py
+auto_mechop/cli.py
+auto_mechop/google_drive.py
+auto_mechop/gui.py
+auto_mechop/runner.py
+auto_mechop/semester.py
+auto_mechop/submit.py
+auto_mechop/util.py
+usc_auto_mechop.egg-info/PKG-INFO
+usc_auto_mechop.egg-info/SOURCES.txt
+usc_auto_mechop.egg-info/dependency_links.txt
+usc_auto_mechop.egg-info/top_level.txt
