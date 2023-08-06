@@ -1,0 +1,3 @@
+[console_scripts]
+experimaestro = experimaestro.__main__:main
+
