@@ -1,0 +1,40 @@
+
+
+Examples using ``pydicom.in_py2``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Very simple app to display unicode person names.">
+
+.. only:: html
+
+ .. figure:: /auto_examples/images/thumb/sphx_glr_show_charset_name_thumb.png
+
+     :ref:`sphx_glr_auto_examples_show_charset_name.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_show_charset_name.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="sudo apt install tix-dev sudo pip install -U pydicom python3 dicomtree.py file.dcm Or in file b...">
+
+.. only:: html
+
+ .. figure:: /auto_examples/images/thumb/sphx_glr_dicomtree_thumb.png
+
+     :ref:`sphx_glr_auto_examples_dicomtree.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_dicomtree.py`

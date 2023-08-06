@@ -1,0 +1,22 @@
+
+
+Examples using ``pydicom.dataset.FileDataset.OtherPatientIDsSequence``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example is a starting point to anonymize DICOM data.">
+
+.. only:: html
+
+ .. figure:: /auto_examples/metadata_processing/images/thumb/sphx_glr_plot_anonymize_thumb.png
+
+     :ref:`sphx_glr_auto_examples_metadata_processing_plot_anonymize.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_metadata_processing_plot_anonymize.py`

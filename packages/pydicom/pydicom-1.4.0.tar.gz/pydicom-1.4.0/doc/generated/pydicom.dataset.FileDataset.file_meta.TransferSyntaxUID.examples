@@ -1,0 +1,22 @@
+
+
+Examples using ``pydicom.dataset.FileDataset.file_meta.TransferSyntaxUID``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to write a DICOM file from scratch using pydicom. This example does not ...">
+
+.. only:: html
+
+ .. figure:: /auto_examples/input_output/images/thumb/sphx_glr_plot_write_dicom_thumb.png
+
+     :ref:`sphx_glr_auto_examples_input_output_plot_write_dicom.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_input_output_plot_write_dicom.py`

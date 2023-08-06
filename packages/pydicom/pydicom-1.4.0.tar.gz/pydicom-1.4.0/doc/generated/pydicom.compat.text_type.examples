@@ -1,0 +1,22 @@
+
+
+Examples using ``pydicom.compat.text_type``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="sudo apt install tix-dev sudo pip install -U pydicom python3 dicomtree.py file.dcm Or in file b...">
+
+.. only:: html
+
+ .. figure:: /auto_examples/images/thumb/sphx_glr_dicomtree_thumb.png
+
+     :ref:`sphx_glr_auto_examples_dicomtree.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_dicomtree.py`
