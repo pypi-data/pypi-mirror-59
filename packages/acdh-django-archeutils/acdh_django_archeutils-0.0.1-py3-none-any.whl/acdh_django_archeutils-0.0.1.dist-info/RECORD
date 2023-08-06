@@ -1,0 +1,15 @@
+archeutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+archeutils/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+archeutils/apps.py,sha256=p7xQ4xatc92HlTwE2y4XzvsugBSPFRn9V7B8aAGLAX0,95
+archeutils/arche_rdf_views.py,sha256=V39j6TH0YxfEFgtUNEF0jlBpVwASl5ppVBZZfW6TqrM,1289
+archeutils/configs.py,sha256=PcJxuv2erAVdi6gQcdVcG2lLKRqGp3HLAAdDHThQM1M,2275
+archeutils/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+archeutils/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+archeutils/urls.py,sha256=GZKlfO1F3V-6yuLAOKvE8wBXQbMk3wRc3eX-bu40J08,315
+archeutils/utils.py,sha256=qA51043u3p9Vb9yTRTLou9nh6e0_70pnR-4IIU-xygc,7050
+archeutils/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+acdh_django_archeutils-0.0.1.dist-info/LICENSE.txt,sha256=c4kpGImrRpwNVGy5QIT9SNS9wpLRSKbHtb5tUFmH1ec,1141
+acdh_django_archeutils-0.0.1.dist-info/METADATA,sha256=Xt5Nnl3BFbYyB0LZM7yWTLt2FpplmoOmI9zeXtLNz0c,1283
+acdh_django_archeutils-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+acdh_django_archeutils-0.0.1.dist-info/top_level.txt,sha256=HsnwZSUBrJ0i-P60t-NgBoxgxNxm51XgRaq-NU0hmfg,11
+acdh_django_archeutils-0.0.1.dist-info/RECORD,,
