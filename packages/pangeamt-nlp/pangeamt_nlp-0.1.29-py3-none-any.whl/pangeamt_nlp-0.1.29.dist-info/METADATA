@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pangeamt-nlp
+Version: 0.1.29
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Pangeamt
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: neologdn
+Requires-Dist: sacremoses
+Requires-Dist: lxml
+Requires-Dist: PyYAML
+Requires-Dist: subword-nmt
+Requires-Dist: chardet
+Requires-Dist: pycld2
+
+# pangeamt-nlp
+
+
