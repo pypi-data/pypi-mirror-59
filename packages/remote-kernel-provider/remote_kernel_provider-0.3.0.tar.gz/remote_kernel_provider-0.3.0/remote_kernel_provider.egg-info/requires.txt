@@ -1,0 +1,8 @@
+ipython_genutils>=0.2.0
+jupyter_core>=4.6.1
+jupyter_kernel_mgmt>=0.5.1
+paramiko>=2.4.0
+pexpect>=4.2.0
+pycrypto>=2.6.1
+tornado>=5.1
+traitlets>=4.3.3
