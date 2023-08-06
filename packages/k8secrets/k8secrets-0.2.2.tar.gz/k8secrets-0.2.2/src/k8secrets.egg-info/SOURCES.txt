@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+src/k8secrets/__init__.py
+src/k8secrets/__main__.py
+src/k8secrets/generator.py
+src/k8secrets/py.typed
+src/k8secrets/secrets.py
+src/k8secrets.egg-info/PKG-INFO
+src/k8secrets.egg-info/SOURCES.txt
+src/k8secrets.egg-info/dependency_links.txt
+src/k8secrets.egg-info/entry_points.txt
+src/k8secrets.egg-info/top_level.txt
