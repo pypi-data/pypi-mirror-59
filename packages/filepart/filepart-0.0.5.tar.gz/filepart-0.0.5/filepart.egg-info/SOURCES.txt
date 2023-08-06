@@ -1,0 +1,13 @@
+README.md
+setup.py
+bin/filepart
+filepart/__init__.py
+filepart/__main__.py
+filepart/build.py
+filepart/split.py
+filepart/utils.py
+filepart/wizard.py
+filepart.egg-info/PKG-INFO
+filepart.egg-info/SOURCES.txt
+filepart.egg-info/dependency_links.txt
+filepart.egg-info/top_level.txt
