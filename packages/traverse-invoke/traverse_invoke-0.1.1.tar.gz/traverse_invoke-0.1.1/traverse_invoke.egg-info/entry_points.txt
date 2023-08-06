@@ -1,0 +1,3 @@
+[console_scripts]
+traverse_invoke = traverse_invoke.cli:main
+
