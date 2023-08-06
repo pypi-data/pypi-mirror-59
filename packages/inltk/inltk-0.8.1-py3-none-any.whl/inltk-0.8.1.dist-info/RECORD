@@ -1,0 +1,13 @@
+inltk/__init__.py,sha256=x1KRac_K1cnsRCXtQso83mCtd8uTg3n-z--g8oucoE4,14
+inltk/config.py,sha256=Ll-PTXEL6Sp2zt0NA83R5My6zknxHSLfCWJNA1pKro8,4258
+inltk/const.py,sha256=TGamfCUaxcWMLeVIxakJ3tZo9lKmyjCgezJaIrrwhCg,56
+inltk/download_assets.py,sha256=T-vxliCgIDSv9jwZKAp-L3dQrOZkp8goWocRIy63rWM,2187
+inltk/inltk.py,sha256=xf8ppo4FRmPxkJkkwbT4r1uoCUsmLDkotpyUu-ER4cI,6650
+inltk/tokenizer.py,sha256=83wTg5dwtb1NyX_Umle5bz9IklQoL-4DMXfKQpTgJTI,4103
+inltk/utils.py,sha256=r909TmWN7JhAmb5kxkV-4bENyVo58oxT0Hz370gRehs,476
+inltk-0.8.1.dist-info/LICENSE,sha256=LCXzFP0RdUyTahlo-QFMAHFi2pI924o87XF6GVYhdyc,1062
+inltk-0.8.1.dist-info/METADATA,sha256=cRCneI6TvV_rxVaclVfUni2Yv79bdqUcgfW5K0Qxgvk,18348
+inltk-0.8.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+inltk-0.8.1.dist-info/dependency_links.txt,sha256=Y84Ai6bsDMs2auTQY4JsWzVbE3YPTl5FQ3qeBs_peh4,76
+inltk-0.8.1.dist-info/top_level.txt,sha256=oSliXBLVNBGKI7xBMKmc-R_ieSDXmEOVN9jjGMMgeB8,6
+inltk-0.8.1.dist-info/RECORD,,
