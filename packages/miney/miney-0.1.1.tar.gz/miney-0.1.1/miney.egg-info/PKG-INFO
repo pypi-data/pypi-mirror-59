@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: miney
+Version: 0.1.1
+Summary: The python interface to minetest
+Home-page: https://github.com/miney-py/miney
+Author: Robert Lieback
+Author-email: robertlieback@zetabyte.de
+License: UNKNOWN
+Description: # miney - The python interface to minetest
+        
+        Miney connects to the apisocket mod on a minetest server over network or internet.
+        
+        ## Status: Beta - Prepairing first official release
+        
+        The sourcecode is online for contribution and external services like appveyor.
+        
+        ## Requirement
+        
+        * Python 3.6+ (tested on 3.7)
+        * A minetest-server with [mineysocket](https://github.com/Administerium/mineysocket) mod
+        
+        ## Todos
+        
+        - [ ] Documentation: Installation instructions for different OS
+        - [ ] Documentation: Preparations for first run
+        - [ ] Minetest: Precompiled minetest distribution bundled with luasocket and cjson for windows
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Games/Entertainment
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
