@@ -1,0 +1,66 @@
+Metadata-Version: 1.1
+Name: octopy
+Version: 0.0.2
+Summary: Github API Wrapper
+Home-page: https://github.com/monzita/octopy
+Author: Monika Ilieva
+Author-email: hidden@hidden.com
+License: MIT License
+Description: Octopy
+        -------
+        
+        .. image:: https://i.postimg.cc/3RzsdX06/logo-new.png  
+        
+        .. |version| image:: https://img.shields.io/pypi/v/octopy?color=green&style=flat-square
+        
+        .. |license| image:: https://img.shields.io/pypi/l/octopy?color=blue&style=flat-square
+        
+        .. |pyversion| image:: https://img.shields.io/pypi/pyversions/octopy?color=blueviolet&style=flat-square
+        
+        |version| |license| |pyversion|
+        
+        A Github API Wrapper
+        
+        Installation
+        *************
+        
+        >>> pip install octopy
+        
+        Documentation
+        **************
+        
+        `Can be found here. <https://github.com/monzita/octopy/wiki>`_ 
+        
+        To Do
+        **************
+        
+        * `Documentation <https://github.com/monzita/octopy/wiki>`_
+        * Tests
+        
+        Example
+        *******
+        
+        >>> from octopy import OctopyClient
+        >>>
+        >>> client = OctopyClient(token='token')
+        >>>
+        >>> events = client.activity.events.all()
+        >>> events[0].id
+        12345678
+        >>> events[0].public
+        True
+        >>> events[0].actor.login
+        username
+        
+        
+        LICENSE
+        *******
+        
+        MIT
+        
+Keywords: octopy github wrapper api python3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
