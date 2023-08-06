@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: InfiniteTrends
+Version: 0.1
+Summary: An upgraded Google Trends API that can query infinitely many terms.
+Home-page: https://www.ashernoel.io
+Author: Asher Noel
+Author-email: asher13a@gmail.com
+License: MIT
+Download-URL: https://github.com/ashernoel/InfiniteTrends/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: Google Trends,Interest,Viral,Related
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
