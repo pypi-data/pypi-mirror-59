@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: projectowl
+Version: 0.3.20
+Summary: Utility library for building python app
+Home-page: https://github.com/flyfj/projectowl.git
+Author: Jie Feng
+Author-email: jiefeng@perceptance.io
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
