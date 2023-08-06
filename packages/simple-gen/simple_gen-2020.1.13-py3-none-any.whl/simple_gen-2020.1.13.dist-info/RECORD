@@ -1,0 +1,12 @@
+packages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packages/gen.py,sha256=YeX3CB_lr50ftn0cFwSbeSovyaXEYiyi7FTuIUMYlN0,849
+packages/group.py,sha256=e83UweJSU7NWBfJ6ktxYXauBihYNgqwLVEFc6C1ELJ4,812
+packages/j.py,sha256=KSc2qAma_kCHmy3RfjjmgSWzqx9D5WO1g0P-cKAHj7Y,132
+tests/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/conftest.py,sha256=HOAi2HjyeUTw6dUHRF0E0yiVwrmZJ9fYWOeEjMVq208,105
+tests/test_feature.py,sha256=f1YTfV1YuT9Itkol1wc1Nr1QGPlNU5feD29t31SaIBw,133
+simple_gen-2020.1.13.dist-info/METADATA,sha256=gbaAd1heKIlnikQEFFCzmLShNSL99sba-O7eiVcUsNY,231
+simple_gen-2020.1.13.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+simple_gen-2020.1.13.dist-info/entry_points.txt,sha256=Qp87Aj_ZmeVdD7lC-OB1OY26tAx6b5q-fxiLU3A8c3c,175
+simple_gen-2020.1.13.dist-info/top_level.txt,sha256=W8FWbM3A0CCNEnCaMxZSQ4KtphPYdWkbDYO1WZNUdFE,15
+simple_gen-2020.1.13.dist-info/RECORD,,
