@@ -1,0 +1,14 @@
+dammy/__init__.py,sha256=r9Ocxkbn153IXly4cKmgCPXagUrsn2U9Ne9x68PM7aY,316
+dammy/core.py,sha256=Rvsc6dxboqu9fsysu67lrVDRgkDgwYGNLAAAhOq-ulA,39810
+dammy/db.py,sha256=2LB6TueKDHTehCnWy8G_QHdWaONeaU7SDPKEB1eg3fA,218
+dammy/exceptions.py,sha256=ivwLTrGSuIB4ujkGeuDYBBVltqmRK-Hi6z7-HltYuQs,2575
+dammy/functions.py,sha256=2Bw58ujcJj3djknsfU_x1x3AnakDBB54RWLk0jqBjzM,1090
+dammy/stdlib.py,sha256=k6L9peMq7nzaRR1ly7O0fiKhE4GynPx16K3Ja8F69DY,10135
+dammy/data/car_models.json,sha256=1jr_Aymvgu7hTA61b45JcpHFqRFYLS8hP8qYgjdKL4U,3044
+dammy/data/countries.json,sha256=1ZYhLZDfFN5IsQmgYexj1mKjVON7pif00YAiBNYdwRo,6590
+dammy/data/names.json,sha256=qMeIM3VXIN_c4haF5gRf8KIFvhXBBQnwuScH2Na8bIo,33994
+dammy-0.1.3.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+dammy-0.1.3.dist-info/METADATA,sha256=RhbL-r3s-EKsHRFTp989AunSQpj_acBOoPNvCeRLG9A,5876
+dammy-0.1.3.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+dammy-0.1.3.dist-info/top_level.txt,sha256=qKXei0aFxnHr_O4Xseqw7h6bxOkwHJUStufbn0zn4eY,6
+dammy-0.1.3.dist-info/RECORD,,
