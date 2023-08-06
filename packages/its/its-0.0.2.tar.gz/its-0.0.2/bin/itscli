@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+
+import click
+import os
+import yaml
+import its
+
+@click.group()
+def cli():
+    pass
+
+
+@cli.command()
+def init():
+    its.Its(os.getcwd(), True)
+    click.echo('init')
+    click.echo('mkdir .its')
+
+
+@cli.group(invoke_without_command=True)
+@click.option('--id', type=int, required=False)
+@click.pass_context
+def issue(ctx, id):
+    its_obj = its.Its(os.getcwd(), False)
+    issue = its_obj.issues().get(id)
+    ctx.obj = (its_obj, issue)
+    if ctx.invoked_subcommand is not None:
+        return
+
+    if issue is not None:
+        click.echo("issue: {issue}".format(issue=issue))
+    else:
+        click.echo(ctx.get_help())
+
+
+@issue.command()
+# @click.argument('id', type=int, required=True)
+@click.argument('title', type=str, required=True)
+@click.pass_obj
+def new(ctx, title):
+    ctx[0].issues().add(its.Issue(title))
+    click.echo("new")
+
+
+@issue.command()
+@click.pass_obj
+def list(ctx):
+    click.echo("list:")
+    click.echo(ctx[0].issues().all())
+
+
+@issue.group()
+@click.pass_obj
+def add(issue):
+    pass
+
+
+@add.command()
+@click.argument('comment', type=str)
+@click.pass_obj
+def comment(issue, comment):
+    click.echo("add to: {id}".format(id=issue.id))
+    click.echo("comment: {comment}".format(comment=comment))
+
+
+@add.command()
+@click.argument('label', type=str)
+@click.pass_obj
+def label(issue, label):
+    click.echo("add to: {id}".format(id=issue.id))
+    click.echo("label: {label}".format(label=label))
+
+
+if __name__ == '__main__':
+    cli()
