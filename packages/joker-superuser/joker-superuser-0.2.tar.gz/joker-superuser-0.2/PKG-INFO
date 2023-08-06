@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: joker-superuser
+Version: 0.2
+Summary: UNKNOWN
+Home-page: https://github.com/frozflame
+Author: frozflame
+Author-email: anonym@example.com
+License: GNU General Public License (GPL)
+Description: UNKNOWN
+Keywords: sysadmin
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
