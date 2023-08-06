@@ -1,0 +1,4 @@
+supyr_struct>=1.4.0
+arbytmap
+threadsafe_tkinter
+tkcolorpicker
