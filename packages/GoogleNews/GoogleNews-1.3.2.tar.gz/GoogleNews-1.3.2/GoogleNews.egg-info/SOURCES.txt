@@ -1,0 +1,15 @@
+.DS_Store
+.gitignore
+LICENSE
+README.md
+setup.py
+GoogleNews/.DS_Store
+GoogleNews/__init__.py
+GoogleNews.egg-info/PKG-INFO
+GoogleNews.egg-info/SOURCES.txt
+GoogleNews.egg-info/dependency_links.txt
+GoogleNews.egg-info/requires.txt
+GoogleNews.egg-info/top_level.txt
+dist/GoogleNews-1.3.0.tar.gz
+dist/GoogleNews-1.3.2-py3-none-any.whl
+dist/GoogleNews-1.3.2.tar.gz
