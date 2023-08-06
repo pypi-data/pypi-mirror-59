@@ -1,0 +1,8 @@
+README.md
+setup.py
+get_sms/__init__.py
+getsms.egg-info/PKG-INFO
+getsms.egg-info/SOURCES.txt
+getsms.egg-info/dependency_links.txt
+getsms.egg-info/requires.txt
+getsms.egg-info/top_level.txt
