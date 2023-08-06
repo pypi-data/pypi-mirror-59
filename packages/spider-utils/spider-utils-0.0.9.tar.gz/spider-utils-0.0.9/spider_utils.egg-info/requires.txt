@@ -1,0 +1,8 @@
+requests
+fake_useragent
+tqdm
+loguru
+
+[dev]
+wheel
+twine
