@@ -1,0 +1,3 @@
+[console_scripts]
+insh = insh.insh:main
+

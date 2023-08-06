@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: insh
+Version: 1.2
+Summary: Insults You When You Get An Error
+Home-page: https://github.com/TheSpeedX/insulter
+Author: TheSpeedX
+Author-email: ggspeedx29@gmail.com
+License: MIT
+Download-URL: https://github.com/TheSpeedX/insulter/archive/master.zip
+Description: ish  (insulter shell)
+        =========
+        
+        Insults You Whenever You Get An Error !!!
+        
+        Installation
+        =========
+        
+        `pip install insh`
+        
+        ## Usage
+        
+        ```
+        Usage: insh <commands>
+        
+        ```
+        
+        TODO
+        =========
+        
+        -> Add A Shell
+        
+        
+        Note
+        ----
+        
+        Its Heavily Under Work.... Report Any Bugs
+        
+        Made With â™¥ By SpeedX
+        
+Keywords: shell,funny,insult,python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Description-Content-Type: text/markdown
