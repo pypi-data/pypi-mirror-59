@@ -1,0 +1,11 @@
+README.md
+setup.py
+dagtools/__init__.py
+dagtools/convert.py
+dagtools.egg-info/PKG-INFO
+dagtools.egg-info/SOURCES.txt
+dagtools.egg-info/dependency_links.txt
+dagtools.egg-info/not-zip-safe
+dagtools.egg-info/top_level.txt
+dagtools/tests/__init__.py
+dagtools/tests/test_convert.py
