@@ -1,0 +1,12 @@
+pymongo
+bidict
+
+[dev]
+pip
+pytest>4
+pytest-cov
+pre-commit
+yapf
+prospector
+pylint
+twine
