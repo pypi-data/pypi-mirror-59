@@ -1,0 +1,10 @@
+autorank/__init__.py,sha256=LNlG_aa2zdLT_a18Bfpq796O2O4wqAEQjZBMaqsDFh8,44
+autorank/_util.py,sha256=1stSzzq-0v8IqHULMvLhf_egSIXVGOVCXvyGWq4PiP0,14645
+autorank/autorank.py,sha256=_h-SB8oNPrMRImAoZIcHR-U813_AEwUOFa2NXW59ppU,30786
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_autorank.py,sha256=K2zwtiB2nJiv-KrJOek3Lc5vuwwNNoGR19FIRWys7sY,12150
+autorank-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+autorank-0.3.0.dist-info/METADATA,sha256=OtI2Zh4_VjKBDjM5TRqd9adM6nzhMw7oDyKYi6IOO9g,11411
+autorank-0.3.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+autorank-0.3.0.dist-info/top_level.txt,sha256=WqAAeW6YPg7vKP6u-WL_BSzIVKH8PuZ2fncKEVpOZdc,15
+autorank-0.3.0.dist-info/RECORD,,
