@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: kt-toposis
+Version: 1.0.7
+Summary: A Python package to get toposis rankings for any table.
+Home-page: https://github.com/kartikeytiwari37/Toposis.git
+Author: Kartikey Tiwari
+Author-email: kartikeytiwari37@gmail.com
+License: MIT
+Description: ### UCS633 Project Submission
+        * **Name** - *Kartikey Tiwari* 
+        * **Roll no.** - *101703282* 
+        
+        # kt-toposis
+        
+        kt-toposis is a Python package for displaying ranking of all criteria using Topsis technique to get good computational efficiency and ability to measure the relative performance for each alternative in a simple mathematical form. 
+        
+        ## Topsis Description
+        
+        Technique for Order Preference by Similarity to an Ideal Solution (TOPSIS) is one of the multi-criteria models in making decision which is known for its  simplicity, rationality, comprehensibility and good computational efficiency. Multi-criteria decision making (MCDM) refers to making choice of the best alternative from among a finite set of decision alternatives in terms of multiple, usually conflicting criteria.
+        
+        ## Getting Started
+        
+        These instructions will help you to install and use this package for general use. 
+        
+        ## Prerequisites
+        
+        Your csv file should not have categorical data
+        
+        
+        ##Installation
+        
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+        
+        ```bash
+        pip install kt-toposis
+        ```
+        
+        ## Usage
+        You can import it either in Python IDLE or run directly through command prompt
+        
+        ### For Command Prompt
+        
+        If you want to use this package on "data.csv" file with 4 columns. You need to change the directory where "data.csv" is stored then. Here -w represents weights which signifies weight of each feature or column in our dataset and -i represents impacts which signifies impact of each column or feature in our data. If a feature is good we will use + to denote else we will use -
+        
+        ```bash
+        kt-toposis data.csv -w 1 1 1 1 -i + + - +
+        ```
+        You can use the following command for help
+        
+        ```bash
+        kt-toposis -h
+        ```
+        
+        ### For Python IDLE
+        
+        ```python
+        from kt_toposis.topsis import top
+        top(X,weights,impacts)
+        
+        #X should be a matrix
+        #impacts should be a list of string + for positive impact - for negative impact
+        #weights should be a list of int or float
+        ```
+        ### Sample dataset
+        
+        
+        |Singer ID	   |Sur     |Taal	|Laaye	|Pitch	|Pace|
+        | ------------ |:------:|:-----:| -----:|------:|:---:       
+        |S1	0.79	   | 0.79   | 0.62	|1.25	|60.89	|11  |
+        |S2	0.66	   | 0.66   | 0.44	|2.89	|3.07	|20  | 
+        |S3	0.56	   | 0.56   |0.31	|1.57	|62.87	|16  | 
+        |S4	0.82	   | 0.82   |0.67	|2.68	|70.19	|16  |
+        |S5	0.75	   | 0.75   |0.56	|1.3	|80.39	|20  |
+        
+        ```python
+        kt-toposis Book1.csv -w 1 1 1 1 1 -i + + + + +
+        ```
+        
+        ### Result
+        
+        ```python
+          Topsis Selection
+        Models     | Rank
+        -----------------------
+        1          | 3
+        2          | 5
+        3          | 4
+        4          | 1
+        5          | 2
+        Successfully executed
+        ```
+        
+        ## Contributing
+        Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+        
+        Please make sure to update tests as appropriate.
+        
+        ## License
+        [MIT](https://choosealicense.com/licenses/mit/)
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
