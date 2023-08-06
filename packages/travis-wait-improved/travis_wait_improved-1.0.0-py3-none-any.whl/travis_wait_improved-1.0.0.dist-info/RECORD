@@ -1,0 +1,9 @@
+travis_wait_improved/__init__.py,sha256=g5Qy7py2B59v4yvCN-8XoyBKjk4f1tvr-gN4pgZUZ68,102
+travis_wait_improved/_version.py,sha256=X5gxeFwiA7_Z72Wh3ftWBB2HiZEP0f00XP5HJg88mFI,74
+travis_wait_improved/sherpa.py,sha256=DJjdIUAO2apwRCGd6uZ3cQ6CkaVfLlv6fDiRhrRWKzk,4650
+travis_wait_improved-1.0.0.dist-info/LICENSE,sha256=Nv_Z3AhdUpp-YOEnbXOuWgMLAgMT5sVAhZOmrirzlnM,6555
+travis_wait_improved-1.0.0.dist-info/METADATA,sha256=CskUXAzPnzvDjhFiXFu7ddTc1yGwNqQ1hm75ABerdiw,3448
+travis_wait_improved-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+travis_wait_improved-1.0.0.dist-info/entry_points.txt,sha256=waSA7UFCEkcoaofCVIMAUmZ7DJjziUAO_7mPu_mDR4o,75
+travis_wait_improved-1.0.0.dist-info/top_level.txt,sha256=yYPpLQkYUrFVx3pFfgJNqTVmmBtUuXBxF8qhZdL-3Jo,21
+travis_wait_improved-1.0.0.dist-info/RECORD,,
