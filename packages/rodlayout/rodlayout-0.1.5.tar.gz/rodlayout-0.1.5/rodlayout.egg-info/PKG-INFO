@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: rodlayout
+Version: 0.1.5
+Summary: A python wrapper for the Skill objects in virtuoso
+Home-page: UNKNOWN
+Author: Niels Buwen
+Author-email: dev@niels-buwen.de
+License: UNKNOWN
+Description: Canvas Backend to Cadence Rod Objects 
+        =====================================
+        
+        [![PyPI version](https://badge.fury.io/py/rodlayout.svg)](https://badge.fury.io/py/rodlayout)
+        ![status](https://github.com/unihd-cag/rodlayout/workflows/Python%20package/badge.svg)
+        
+        Install
+        -------
+        
+        ```bash
+        pip install rodlayout
+        ```
+        
+        Read more in the [full documentation](https://unihd-cag.github.io/rodlayout/).
+        
+        
+        ```python
+        from skillbridge import Workspace
+        from geometry import Rect, Group
+        
+        from rodlayout import Canvas, Layer
+        
+        Workspace.open().make_current()
+        
+        
+        r = Rect[0:2, 0:4, Layer('M1', 'drawing')]
+        
+        c = Canvas()
+        c.append(r)
+        
+        rod, = c.draw()
+        print(rod)  # rect@...
+        
+        r2 = Rect[0:4, 0:2, Layer('M2', 'drawing')]
+        c = Canvas()
+        c.append(Group([r, r2]))
+        db, = c.draw()
+        
+        print(db)  # figGroup@...
+        
+        
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Description-Content-Type: text/markdown
