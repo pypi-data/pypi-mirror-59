@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: CookieAnalysis
+Version: 0.1
+Summary: Analyizer and a possible exploiter for sessions tokens etc
+Home-page: https://github.com/D-E-F-E-A-T/Cookie-Analyzer-and-Session-Hijack/
+Author: D-E-F-E-A-T
+Author-email: pchackers18@gmail.com
+License: MIT
+Download-URL: https://github.com/D-E-F-E-A-T/Cookie-Analyzer-and-Session-Hijack/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: SESSION,COOKIE,TOKENS,CSRF
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
