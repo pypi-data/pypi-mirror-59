@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: rsgt
+Version: 1.0a1
+Summary: Implementaton of random smooth grayvalue transformations for training grayvalue independent neural networks
+Home-page: https://github.com/nlessmann/rsgt
+License: UNKNOWN
+Description: ![Test status](https://github.com/nlessmann/rsgt/workflows/Tests/badge.svg)
+        
+        # Random Smooth Grayvalue Transformations
+        
+        Usage:
+        
+        ```python
+        import numpy as np
+        from rsgt.augmentation import random_smooth_grayvalue_transform
+        
+        image = np.zeros(shape=(64, 64, 64))
+        new_image = random_smooth_grayvalue_transform(image)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
