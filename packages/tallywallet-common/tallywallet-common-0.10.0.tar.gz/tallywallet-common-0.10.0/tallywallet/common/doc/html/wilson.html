@@ -1,0 +1,640 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>A simple Keen Monetary Circuit simulation &mdash; Tallywallet manual v0.10.0</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API Reference" href="api.html" />
+    <link rel="prev" title="A tutorial on currency exchange" href="selinger.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Tallywallet
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.10.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="finance.html">The time value of money</a></li>
+<li class="toctree-l1"><a class="reference internal" href="selinger.html">A tutorial on currency exchange</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">A simple Keen Monetary Circuit simulation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#why-you-shouldn-t-use-tallywallet-in-an-economic-simulation">Why you shouldn’t use Tallywallet in an economic simulation…</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#and-why-you-might-do">…and why you might do</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#debunking-economics">Debunking economics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#double-entry-paradigm">Double-entry paradigm</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ledger-simulation-example">Ledger simulation example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-tallywallet.common.debunking">How it works</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#typical-output">Typical output</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Tallywallet</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>A simple Keen Monetary Circuit simulation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/wilson.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="a-simple-keen-monetary-circuit-simulation">
+<h1>A simple Keen Monetary Circuit simulation<a class="headerlink" href="#a-simple-keen-monetary-circuit-simulation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="why-you-shouldn-t-use-tallywallet-in-an-economic-simulation">
+<h2>Why you shouldn’t use Tallywallet in an economic simulation…<a class="headerlink" href="#why-you-shouldn-t-use-tallywallet-in-an-economic-simulation" title="Permalink to this headline">¶</a></h2>
+<p>Book-keeping is a contemplative activity which usually requires a
+human being to make judgements on how best to present accounts.</p>
+<p>A numerical simulation of an economy is a different thing. You want it
+to go as fast as it can, and to optimise for speed is to do away with
+such features as balanced accounting.</p>
+<p>So, while Tallywallet’s <cite>Ledger</cite> class is designed for interactive use,
+a computational simulation in Python would most likely choose
+<cite>collections.Counter</cite> to store numerical values.</p>
+</div>
+<div class="section" id="and-why-you-might-do">
+<h2>…and why you might do<a class="headerlink" href="#and-why-you-might-do" title="Permalink to this headline">¶</a></h2>
+<p>But there are some scenarios where Tallywallet’s features could aid in
+simulation. Here is one.</p>
+<div class="section" id="debunking-economics">
+<h3>Debunking economics<a class="headerlink" href="#debunking-economics" title="Permalink to this headline">¶</a></h3>
+<p>Economic crises have become frequent events in the last 80 years. The
+lack of a coherent narrative to explain them has led to controversy in
+the academic profession as rival schools challenge or defend the
+orthodoxy of neoclassical economic theory.</p>
+<p>One longstanding opponent of neoclassical theory, an Australian professor
+called <a class="reference external" href="http://www.debtdeflation.com/blogs">Steve Keen</a>, wrote a book called
+<cite>Debunking economics: The naked Emperor dethroned?</cite> (the reference for
+this example is the 2011 edition, particularly chapters 13-18).</p>
+<p>As an Engineer familiar with the mathematics of electronic control systems,
+Keen saw many deficiencies in the static approach of neoclassical
+macroeconomics. He presented an alternative; to treat the economy as a natural
+system capable of dynamic instability.</p>
+<p>Professor Keen incorporated ideas from Marx, Schumpeter, Keynes and Minsky,
+to create what he called the <cite>Monetary Circuit Model</cite>. Far from being
+complicated, this approach feels quite natural to someone who has written
+software to simulate industrial processes.</p>
+<p>Keen’s simulation uses simple rules but is nonetheless capable of predicting
+the kind of phenomena seen in financial downturns. These are not explained
+by orthodox economic models.</p>
+</div>
+<div class="section" id="double-entry-paradigm">
+<h3>Double-entry paradigm<a class="headerlink" href="#double-entry-paradigm" title="Permalink to this headline">¶</a></h3>
+<p>In 2012, the UK-based blogger <a class="reference external" href="http://www.3spoken.co.uk">Neil Wilson</a> wrote a critique of Keen’s new
+model. Wilson was concerned that Keen’s work had too much Engineering about
+it.</p>
+<p>While supportive of the approach, Wilson felt that the model’s ignorance of
+accounting concepts prevented its acceptance by the financial community.</p>
+<p>In the article <a class="reference external" href="http://www.3spoken.co.uk/2011/12/double-entry-view-on-keen-circuit-model.html">Double entry view on Keen Circuit Model</a>, Wilson reviews
+Keen’s dynamic circuit model. He proposes some modifications to make it more
+recognisable to a reader familiar with the double-entry accounting system
+used by banks and businesses.</p>
+</div>
+</div>
+<div class="section" id="ledger-simulation-example">
+<h2>Ledger simulation example<a class="headerlink" href="#ledger-simulation-example" title="Permalink to this headline">¶</a></h2>
+<p>This example will use Tallywallet to recreate Keen’s simulation. But we’ll
+also incorporate Wilson’s recommendations to maintain a balanced ledger.</p>
+<p>Wilson’s description of the model is captured here in this table.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 4%" />
+<col style="width: 20%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"></th>
+<th class="head" colspan="2"><p>Bank assets</p></th>
+<th class="head" colspan="3"><p>Bank liabilities</p></th>
+<th class="head"><p>Bank equity</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>ID</p></th>
+<th class="head"><p>Operation</p></th>
+<th class="head"><p>Licence value</p></th>
+<th class="head"><p>Loan ledger</p></th>
+<th class="head"><p>Vault</p></th>
+<th class="head"><p>Firms</p></th>
+<th class="head"><p>Workers</p></th>
+<th class="head"><p>Safe</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>01</p></td>
+<td><p>Grant Licence</p></td>
+<td><p><strong>+</strong> Licence value</p></td>
+<td></td>
+<td><p><strong>-</strong> Licence value</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>02</p></td>
+<td><p>Lend Money</p></td>
+<td></td>
+<td></td>
+<td><p><strong>+</strong> Lend money</p></td>
+<td><p><strong>-</strong> Lend money</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>03</p></td>
+<td><p>Record loan</p></td>
+<td><p><strong>-</strong> Lend money</p></td>
+<td><p><strong>+</strong> Lend money</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>04</p></td>
+<td><p>Charge Interest</p></td>
+<td></td>
+<td></td>
+<td><p><strong>+</strong> Interest charge</p></td>
+<td></td>
+<td></td>
+<td><p><strong>-</strong> Interest charge</p></td>
+</tr>
+<tr class="row-odd"><td><p>05</p></td>
+<td><p>Record Interest</p></td>
+<td><p><strong>-</strong> Interest charge</p></td>
+<td><p><strong>+</strong> Interest charge</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>06</p></td>
+<td rowspan="2"><p>Repay Loan and Interest</p></td>
+<td rowspan="2"></td>
+<td rowspan="2"></td>
+<td rowspan="2"><p><strong>-</strong> Loan repayment</p>
+<p><strong>-</strong> Interest charge</p>
+</td>
+<td rowspan="2"><p><strong>+</strong> Loan repayment</p>
+<p><strong>+</strong> Interest charge</p>
+</td>
+<td rowspan="2"></td>
+<td rowspan="2"></td>
+</tr>
+<tr class="row-odd"><td></td>
+</tr>
+<tr class="row-even"><td><p>07</p></td>
+<td rowspan="2"><p>Record Loan and Interest Repayment</p></td>
+<td rowspan="2"><p><strong>+</strong> Loan repayment</p>
+<p><strong>+</strong> Interest charge</p>
+</td>
+<td rowspan="2"><p><strong>-</strong> Loan repayment</p>
+<p><strong>-</strong> Interest charge</p>
+</td>
+<td rowspan="2"></td>
+<td rowspan="2"></td>
+<td rowspan="2"></td>
+<td rowspan="2"></td>
+</tr>
+<tr class="row-odd"><td></td>
+</tr>
+<tr class="row-even"><td><p>08</p></td>
+<td><p>Pay Firm Deposit Interest</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><strong>-</strong> Firm interest</p></td>
+<td></td>
+<td><p><strong>+</strong> Firm interest</p></td>
+</tr>
+<tr class="row-odd"><td><p>09</p></td>
+<td><p>Pay Worker Deposit Interest</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><strong>-</strong> Worker interest</p></td>
+<td><p><strong>+</strong> Worker interest</p></td>
+</tr>
+<tr class="row-even"><td><p>10</p></td>
+<td><p>Hire Workers</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><strong>+</strong> Pay workers</p></td>
+<td><p><strong>-</strong> Pay workers</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>Workers’ Consumption</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><strong>-</strong> Workers’ consumption</p></td>
+<td><p><strong>+</strong> Workers’ consumption</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>12</p></td>
+<td><p>Bankers’ Consumption</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><strong>-</strong> Bankers’ consumption</p></td>
+<td></td>
+<td><p><strong>+</strong> Bankers’ consumption</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="module-tallywallet.common.debunking">
+<span id="how-it-works"></span><h3>How it works<a class="headerlink" href="#module-tallywallet.common.debunking" title="Permalink to this headline">¶</a></h3>
+<p>The <cite>tallywallet.common.debunking</cite> module presents Keen’s simulation
+according to Wilson’s perspective of balanced accounting.</p>
+<p>You run it as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python -m tallywallet.common.debunking
+</pre></div>
+</div>
+<p>Or, to make use of the advanced options, read the help like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python -m tallywallet.common.debunking --help
+</pre></div>
+</div>
+<dl class="function">
+<dt id="tallywallet.common.debunking.banking_licence">
+<code class="sig-prename descclassname">tallywallet.common.debunking.</code><code class="sig-name descname">banking_licence</code><span class="sig-paren">(</span><em class="sig-param">ldgr</em>, <em class="sig-param">val</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tallywallet/common/debunking.html#banking_licence"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tallywallet.common.debunking.banking_licence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wilson’s suggestion is to formalise the ability of a bank
+to create money. His first step (not present in Keen) is
+to capture this value as an asset.</p>
+<ol class="arabic simple">
+<li><p>Grant licence</p></li>
+</ol>
+</dd></dl>
+
+<dl class="function">
+<dt id="tallywallet.common.debunking.bank_loan">
+<code class="sig-prename descclassname">tallywallet.common.debunking.</code><code class="sig-name descname">bank_loan</code><span class="sig-paren">(</span><em class="sig-param">ldgr</em>, <em class="sig-param">dt</em>, <em class="sig-param">pa=Decimal('0.5')</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tallywallet/common/debunking.html#bank_loan"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tallywallet.common.debunking.bank_loan" title="Permalink to this definition">¶</a></dt>
+<dd><p>These two steps create a debit against the licence and
+a corresponding addition to the loans book. The firms’
+account is credited, reducing the balance in the vault.</p>
+<ol class="arabic simple" start="2">
+<li><p>Lend money</p></li>
+<li><p>Record loan</p></li>
+</ol>
+</dd></dl>
+
+<dl class="function">
+<dt id="tallywallet.common.debunking.bank_charge">
+<code class="sig-prename descclassname">tallywallet.common.debunking.</code><code class="sig-name descname">bank_charge</code><span class="sig-paren">(</span><em class="sig-param">ldgr</em>, <em class="sig-param">dt</em>, <em class="sig-param">pa=Decimal('0.05')</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tallywallet/common/debunking.html#bank_charge"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tallywallet.common.debunking.bank_charge" title="Permalink to this definition">¶</a></dt>
+<dd><p>This operation is a significant departure from Keen’s original.</p>
+<p>In the real world, a Bank will want to reduce its liabilities
+at every opportunity. Interest is charged immediately as revenue
+which reduces the level in the vault. The interest is issued as a
+loan so the ledger goes up and the value is deducted from the licence.</p>
+<ol class="arabic simple" start="4">
+<li><p>Charge interest</p></li>
+<li><p>Record interest</p></li>
+</ol>
+</dd></dl>
+
+<dl class="function">
+<dt id="tallywallet.common.debunking.firms_repayment">
+<code class="sig-prename descclassname">tallywallet.common.debunking.</code><code class="sig-name descname">firms_repayment</code><span class="sig-paren">(</span><em class="sig-param">ldgr</em>, <em class="sig-param">dt</em>, <em class="sig-param">interest</em>, <em class="sig-param">pa=Decimal('0.1')</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tallywallet/common/debunking.html#firms_repayment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tallywallet.common.debunking.firms_repayment" title="Permalink to this definition">¶</a></dt>
+<dd><p>The interest calculated in the previous step is debited from
+the firms’ account. At the same time, part of the principal
+of the loan is paid off too. The total reappears in the vault,
+reducing the loan book and accruing value back to the licence.</p>
+<ol class="arabic simple" start="6">
+<li><p>Repay Loan and Interest</p></li>
+<li><p>Record Loan and Interest Repayment</p></li>
+</ol>
+</dd></dl>
+
+<dl class="function">
+<dt id="tallywallet.common.debunking.nonbank_interest">
+<code class="sig-prename descclassname">tallywallet.common.debunking.</code><code class="sig-name descname">nonbank_interest</code><span class="sig-paren">(</span><em class="sig-param">ldgr</em>, <em class="sig-param">dt</em>, <em class="sig-param">paF=Decimal('0.02')</em>, <em class="sig-param">paW=Decimal('0.003')</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tallywallet/common/debunking.html#nonbank_interest"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tallywallet.common.debunking.nonbank_interest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Keen’s original model only paid interest on the firms’ account.
+Wilson added interest for workers too. In order to maintain the
+equivalence of the two simulations, I have adjusted the workers’
+interest rate so that the steady state output after ten years is
+close to that described in Keen’s book. This corresponds to a rate
+of 0.3% on a worker’s current account which, though low, has been
+observed in the UK in recent times.</p>
+<ol class="arabic simple" start="8">
+<li><p>Pay firm deposit interest</p></li>
+<li><p>Pay worker deposit interest</p></li>
+</ol>
+</dd></dl>
+
+<dl class="function">
+<dt id="tallywallet.common.debunking.firms_wages">
+<code class="sig-prename descclassname">tallywallet.common.debunking.</code><code class="sig-name descname">firms_wages</code><span class="sig-paren">(</span><em class="sig-param">ldgr</em>, <em class="sig-param">dt</em>, <em class="sig-param">pa=Decimal('3')</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tallywallet/common/debunking.html#firms_wages"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tallywallet.common.debunking.firms_wages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Keen models the cost of production entirely as workers’
+wages. There is no mention of capital. Clearly this is
+a simplification which we can elaborate at another opportunity.</p>
+<ol class="arabic simple" start="10">
+<li><p>Hire Workers</p></li>
+</ol>
+</dd></dl>
+
+<dl class="function">
+<dt id="tallywallet.common.debunking.nonfirms_consumption">
+<code class="sig-prename descclassname">tallywallet.common.debunking.</code><code class="sig-name descname">nonfirms_consumption</code><span class="sig-paren">(</span><em class="sig-param">ldgr</em>, <em class="sig-param">dt</em>, <em class="sig-param">paB=Decimal('1')</em>, <em class="sig-param">paW=Decimal('26')</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tallywallet/common/debunking.html#nonfirms_consumption"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tallywallet.common.debunking.nonfirms_consumption" title="Permalink to this definition">¶</a></dt>
+<dd><p>This operation is as Keen defined it, since it doesn’t impact
+the loan ledger or the licence asset which Wilson introduced.</p>
+<ol class="arabic simple" start="11">
+<li><p>Workers’ Consumption</p></li>
+<li><p>Bankers’ Consumption</p></li>
+</ol>
+</dd></dl>
+
+<dl class="function">
+<dt id="tallywallet.common.debunking.simulate">
+<code class="sig-prename descclassname">tallywallet.common.debunking.</code><code class="sig-name descname">simulate</code><span class="sig-paren">(</span><em class="sig-param">samples</em>, <em class="sig-param">initial=100000000</em>, <em class="sig-param">interval=3600</em>, <em class="sig-param">ledger=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tallywallet/common/debunking.html#simulate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tallywallet.common.debunking.simulate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run the simulation by repeating the operations described above.
+At the end of every cycle, the equality of the
+Fundamental Accounting Equation is tested. A warning is raised if
+the equality fails.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>samples</strong> – A sequence of times. At each of these the simulation
+will print out the state of the Ledger. The simulation
+will stop after the final sample time has passed.</p></li>
+<li><p><strong>initial</strong> – The initial value of the banking licence.</p></li>
+<li><p><strong>interval</strong> – The value of the simulation timestep in seconds.</p></li>
+<li><p><strong>ledger</strong> – An existing Ledger object. If None is passed, a new
+one will be created.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>This routine is a generator which yields <a class="reference external" href="http://code.google.com/p/rson/">RSON</a> strings.
+The final return value is the ledger object used during
+the simulation.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="typical-output">
+<h3>Typical output<a class="headerlink" href="#typical-output" title="Permalink to this headline">¶</a></h3>
+<p>By default the program replicates the behaviour described in <cite>Debunking</cite>.
+It begins with a debt supply of $100,000,000 and runs for ten years.
+The output matches to three significant figures that published by Keen.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{}</span>
+    <span class="n">header</span><span class="p">:</span><span class="n">version</span><span class="p">:</span> <span class="mf">0.005</span>
+<span class="p">{}</span>
+    <span class="n">ledger</span><span class="p">:</span><span class="n">columns</span><span class="p">:</span>    <span class="p">[</span>
+            <span class="p">[</span><span class="n">licence</span><span class="p">,</span> <span class="n">USD</span><span class="p">,</span> <span class="n">asset</span><span class="p">],</span>
+            <span class="p">[</span><span class="n">loans</span><span class="p">,</span> <span class="n">USD</span><span class="p">,</span> <span class="n">asset</span><span class="p">],</span>
+            <span class="p">[</span><span class="n">vault</span><span class="p">,</span> <span class="n">USD</span><span class="p">,</span> <span class="n">liability</span><span class="p">],</span>
+            <span class="p">[</span><span class="n">firms</span><span class="p">,</span> <span class="n">USD</span><span class="p">,</span> <span class="n">liability</span><span class="p">],</span>
+            <span class="p">[</span><span class="n">workers</span><span class="p">,</span> <span class="n">USD</span><span class="p">,</span> <span class="n">liability</span><span class="p">],</span>
+            <span class="p">[</span><span class="n">safe</span><span class="p">,</span> <span class="n">USD</span><span class="p">,</span> <span class="n">income</span><span class="p">],</span>
+            <span class="p">[</span><span class="n">USD</span> <span class="n">trading</span> <span class="n">account</span><span class="p">,</span> <span class="n">USD</span><span class="p">,</span> <span class="n">trading</span><span class="p">]</span>
+        <span class="p">]</span>
+    <span class="n">ledger</span><span class="p">:</span><span class="n">ref</span><span class="p">:</span> <span class="n">USD</span>
+
+<span class="p">{}</span>
+    <span class="n">note</span><span class="p">:</span>
+        <span class="n">Keen</span> <span class="n">Money</span> <span class="n">Circuit</span> <span class="k">with</span> <span class="n">balanced</span> <span class="n">accounting</span>
+    <span class="n">ts</span><span class="p">:</span>
+        <span class="mi">0</span>
+<span class="p">[</span> <span class="mf">100000000.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">100000000.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">]</span>
+
+<span class="p">{}</span>
+    <span class="n">ts</span><span class="p">:</span>
+        <span class="mi">3600</span>
+<span class="p">[</span> <span class="mf">99994276.62</span><span class="p">,</span> <span class="mf">5723.38</span><span class="p">,</span> <span class="mf">99994276.62</span><span class="p">,</span> <span class="mf">5721.40</span><span class="p">,</span> <span class="mf">1.96</span><span class="p">,</span> <span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">]</span>
+
+<span class="p">{}</span>
+    <span class="n">ts</span><span class="p">:</span>
+        <span class="mi">31449600</span>
+<span class="p">[</span> <span class="mf">62400370.51</span><span class="p">,</span> <span class="mf">37599629.49</span><span class="p">,</span> <span class="mf">62400370.51</span><span class="p">,</span> <span class="mf">33389071.04</span><span class="p">,</span> <span class="mf">3733551.18</span><span class="p">,</span> <span class="mf">477007.26</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">]</span>
+
+<span class="p">{}</span>
+    <span class="n">ts</span><span class="p">:</span>
+        <span class="mi">62899200</span>
+<span class="p">[</span> <span class="mf">41765575.22</span><span class="p">,</span> <span class="mf">58234424.78</span><span class="p">,</span> <span class="mf">41765575.22</span><span class="p">,</span> <span class="mf">51200784.95</span><span class="p">,</span> <span class="mf">5832702.36</span><span class="p">,</span> <span class="mf">1200937.47</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">]</span>
+
+<span class="p">{}</span>
+    <span class="n">ts</span><span class="p">:</span>
+        <span class="mi">94348800</span>
+<span class="p">[</span> <span class="mf">30441134.47</span><span class="p">,</span> <span class="mf">69558865.53</span><span class="p">,</span> <span class="mf">30441134.47</span><span class="p">,</span> <span class="mf">60821254.87</span><span class="p">,</span> <span class="mf">6966230.99</span><span class="p">,</span> <span class="mf">1771379.68</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">]</span>
+
+<span class="p">{}</span>
+    <span class="n">ts</span><span class="p">:</span>
+        <span class="mi">125798400</span>
+<span class="p">[</span> <span class="mf">24226245.65</span><span class="p">,</span> <span class="mf">75773754.35</span><span class="p">,</span> <span class="mf">24226245.65</span><span class="p">,</span> <span class="mf">66043064.02</span><span class="p">,</span> <span class="mf">7581387.75</span><span class="p">,</span> <span class="mf">2149302.57</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">]</span>
+
+<span class="p">{}</span>
+    <span class="n">ts</span><span class="p">:</span>
+        <span class="mi">157248000</span>
+<span class="p">[</span> <span class="mf">20815495.07</span><span class="p">,</span> <span class="mf">79184504.93</span><span class="p">,</span> <span class="mf">20815495.07</span><span class="p">,</span> <span class="mf">68887106.37</span><span class="p">,</span> <span class="mf">7916392.69</span><span class="p">,</span> <span class="mf">2381005.88</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">]</span>
+
+<span class="p">{}</span>
+    <span class="n">ts</span><span class="p">:</span>
+        <span class="mi">188697600</span>
+<span class="p">[</span> <span class="mf">18943664.38</span><span class="p">,</span> <span class="mf">81056335.62</span><span class="p">,</span> <span class="mf">18943664.38</span><span class="p">,</span> <span class="mf">70439795.64</span><span class="p">,</span> <span class="mf">8099272.33</span><span class="p">,</span> <span class="mf">2517267.65</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">]</span>
+
+<span class="p">{}</span>
+    <span class="n">ts</span><span class="p">:</span>
+        <span class="mi">220147200</span>
+<span class="p">[</span> <span class="mf">17916397.80</span><span class="p">,</span> <span class="mf">82083602.20</span><span class="p">,</span> <span class="mf">17916397.80</span><span class="p">,</span> <span class="mf">71288870.80</span><span class="p">,</span> <span class="mf">8199273.09</span><span class="p">,</span> <span class="mf">2595458.32</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">]</span>
+
+<span class="p">{}</span>
+    <span class="n">ts</span><span class="p">:</span>
+        <span class="mi">251596800</span>
+<span class="p">[</span> <span class="mf">17352630.66</span><span class="p">,</span> <span class="mf">82647369.34</span><span class="p">,</span> <span class="mf">17352630.66</span><span class="p">,</span> <span class="mf">71753705.00</span><span class="p">,</span> <span class="mf">8254017.40</span><span class="p">,</span> <span class="mf">2639646.94</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">]</span>
+
+<span class="p">{}</span>
+    <span class="n">ts</span><span class="p">:</span>
+        <span class="mi">283046400</span>
+<span class="p">[</span> <span class="mf">17043233.47</span><span class="p">,</span> <span class="mf">82956766.53</span><span class="p">,</span> <span class="mf">17043233.47</span><span class="p">,</span> <span class="mf">72008380.09</span><span class="p">,</span> <span class="mf">8284010.14</span><span class="p">,</span> <span class="mf">2664376.30</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">]</span>
+
+<span class="p">{}</span>
+    <span class="n">ts</span><span class="p">:</span>
+        <span class="mi">314496000</span>
+<span class="p">[</span> <span class="mf">16873435.32</span><span class="p">,</span> <span class="mf">83126564.68</span><span class="p">,</span> <span class="mf">16873435.32</span><span class="p">,</span> <span class="mf">72147986.47</span><span class="p">,</span> <span class="mf">8300451.11</span><span class="p">,</span> <span class="mf">2678127.10</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api.html" class="btn btn-neutral float-right" title="API Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="selinger.html" class="btn btn-neutral float-left" title="A tutorial on currency exchange" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014, Thuswise Ltd
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

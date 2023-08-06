@@ -1,0 +1,11 @@
+
+[dev]
+pep8>=1.6.2
+
+[docbuild]
+sphinx>=1.6.1
+sphinx-argparse>=0.2.0
+sphinx_rtd_theme>=0.2.4
+
+[test]
+rson>=0.9
