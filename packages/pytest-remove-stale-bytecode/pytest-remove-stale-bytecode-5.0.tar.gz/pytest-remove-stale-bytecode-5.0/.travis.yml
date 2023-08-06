@@ -1,0 +1,15 @@
+language: python
+dist: xenial
+python:
+  - 3.5
+  - 3.6
+  - 3.7
+  - 3.8
+  - pypy3
+install: pip install tox-travis coverage coveralls
+script: tox
+after_success:
+  - coverage combine
+  - coveralls
+cache:
+  pip: true
