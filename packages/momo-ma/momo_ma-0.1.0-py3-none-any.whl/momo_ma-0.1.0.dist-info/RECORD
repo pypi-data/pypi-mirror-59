@@ -1,0 +1,10 @@
+momo/__init__.py,sha256=qRUMKPQvPv_f5yV-t2VskRZwACACZ11j_MroAXc4VjA,179
+momo/__main__.py,sha256=vkpslVobOU8E6WmASCE_Jg2rylOmX8cXql4-mEplyEw,483
+momo/cli.py,sha256=L23_gzRg9bs3vfc2VhkZuG8H1mQVPsV1PZWcvtx-XoU,4702
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_01.py,sha256=ljKjCXc6mvlN1OWnOmIlyYeKVQhhN2ExTce12HZDDb0,207
+momo_ma-0.1.0.dist-info/METADATA,sha256=_WJ9pNi89oSvjvhqAkPULS3UcE4q7wjuGM5LhpuY1yY,1260
+momo_ma-0.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+momo_ma-0.1.0.dist-info/entry_points.txt,sha256=strkuRRGt7KDipbcQ7SNzHKAfZJidcA4gzyzhE5SgP0,50
+momo_ma-0.1.0.dist-info/top_level.txt,sha256=LrYpRE9PvcPsDK956Q079pSQz4UgL5koz2nev8wwQrY,11
+momo_ma-0.1.0.dist-info/RECORD,,
