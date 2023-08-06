@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: midi-webmixer
+Version: 0.0.1
+Summary: A web based GUI to control a audio mixer via midi messages
+Home-page: UNKNOWN
+Author: Adam Cathersides
+Author-email: adamcathersides@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Requires-Dist: flask
+Requires-Dist: flask-restful
+Requires-Dist: python-rtmidi
+Requires-Dist: netifaces
+Requires-Dist: click
+Requires-Dist: redis
+
+UNKNOWN
+
+

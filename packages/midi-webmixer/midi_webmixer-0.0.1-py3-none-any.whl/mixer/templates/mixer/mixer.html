@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block title %}{{mix}} Mixer{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post" id="myForm">
+        <input type="range" orient="vertical" min="1" max="127" class="slider" value="{{channel_map[mix]['channel1']['value']}}" name="channel1" id="1" onchange='sendChannel(this.id, this.value)'>
+        <label for="channel1">1 {{channel_names['1']}}</label>
+        <input type="range" orient="vertical" min="1" max="127" class="slider" value="{{channel_map[mix]['channel2']['value']}}" name="channel2" id="2" onchange='sendChannel(this.id, this.value)'>
+        <label for="channel2">2 {{channel_names['2']}}</label>
+        <input type="range" orient="vertical" min="1" max="127" class="slider" value="{{channel_map[mix]['channel3']['value']}}" name="channel3" id="3" onchange='sendChannel(this.id, this.value)'>
+        <label for="channel3">3 {{channel_names['3']}}</label>
+        <input type="range" orient="vertical" min="1" max="127" class="slider" value="{{channel_map[mix]['channel4']['value']}}" name="channel4" id="4" onchange='sendChannel(this.id, this.value)'>
+        <label for="channel4">4 {{channel_names['4']}}</label>
+        <input type="range" orient="vertical" min="1" max="127" class="slider" value="{{channel_map[mix]['channel5']['value']}}" name="channel5" id="5" onchange='sendChannel(this.id, this.value)'>
+        <label for="channel5">5 {{channel_names['5']}}</label>
+        <input type="range" orient="vertical" min="1" max="127" class="slider" value="{{channel_map[mix]['channel6']['value']}}" name="channel6" id="6" onchange='sendChannel(this.id, this.value)'>
+        <label for="channel6">6 {{channel_names['6']}}</label>
+        <input type="range" orient="vertical" min="1" max="127" class="slider" value="{{channel_map[mix]['channel7']['value']}}" name="channel7" id="7" onchange='sendChannel(this.id, this.value)'>
+        <label for="channel7">7 {{channel_names['7']}}</label>
+        <input type="range" orient="vertical" min="1" max="127" class="slider" value="{{channel_map[mix]['channel8']['value']}}" name="channel8" id="8" onchange='sendChannel(this.id, this.value)'>
+        <label for="channel8">8 {{channel_names['8']}}</label>
+        <input type="range" orient="vertical" min="1" max="127" class="slider" value="{{channel_map[mix]['channel9']['value']}}" name="channel9" id="9" onchange='sendChannel(this.id, this.value)'>
+        <label for="channel9">9 {{channel_names['9']}}</label>
+        <input type="range" orient="vertical" min="1" max="127" class="slider" value="{{channel_map[mix]['channel10']['value']}}" name="channel10" id="10" onchange='sendChannel(this.id, this.value)'>
+        <label for="channel10">10 {{channel_names['10']}}</label>
+        <input type="range" orient="vertical" min="1" max="127" class="slider" value="{{channel_map[mix]['channel11']['value']}}" name="channel12" id="11" onchange='sendChannel(this.id, this.value)'>
+        <label for="channel11">11 {{channel_names['11']}}</label>
+        <input type="range" orient="vertical" min="1" max="127" class="slider" value="{{channel_map[mix]['channel12']['value']}}" name="channel12" id="12" onchange='sendChannel(this.id, this.value)'>
+        <label for="channel12">12 {{channel_names['12']}}</label>
+    <script>
+        function sendChannel(channel, val) {
+            navigator.sendBeacon('http://{{rest_host}}:{{rest_port}}/mixer/{{mix}}/' + channel + '/' + val, val);
+        }
+    </script>
+  </form>
+{% endblock %}
