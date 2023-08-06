@@ -1,0 +1,3 @@
+[console_scripts]
+Top-3606 = Top_3606.topsis3606:main
+
