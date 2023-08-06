@@ -1,0 +1,10 @@
+Classification
+**************
+
+
+.. toctree::
+
+   maxrank
+   maxdiff
+
+
