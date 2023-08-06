@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: tabelog-robot
+Version: 0.1.0
+Summary: Scriping library for tabelog.com
+Home-page: UNKNOWN
+Author: rv
+Author-email: yo-maruya@rescala.jp
+License: MIT
+Project-URL: Bug Reports, https://github.com/rv-rescala/catscore/issues
+Project-URL: Source, https://github.com/rv-rescala/catscore
+Keywords: crawler,scriping
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: catscore
+Requires-Dist: bs4
+Requires-Dist: selenium
+Requires-Dist: lxml
+Requires-Dist: pandas
+
+# kakaku_robot
+
+Kakaku lobot is a scraping library for https://kakaku.com/
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install kakaku_robot
+```
+
+## Usage
+
+```python
+from kakaku_robot.site.ranking import Ranking
+result = Ranking().ranking.all_category_ranking(pandas=True)
+result.to_csv("kakau_rank.csv")
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
