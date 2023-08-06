@@ -1,0 +1,7 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/encrypt_decrypt.py,sha256=gdjP7645PWvSUSrH0NCK3x5HJlKlzFhd0RMJo0FE9Bw,1626
+src/read_email.py,sha256=8E0wQUP1ilyPyZ_rMjq6ljYkiNcGzIJIjFkbcTHfE8M,5477
+email_reader-1.0.11.dist-info/METADATA,sha256=17rY9peqG-weMVISfohvRJSsoNLwZSfnz1Mvr46_2-k,1513
+email_reader-1.0.11.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+email_reader-1.0.11.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+email_reader-1.0.11.dist-info/RECORD,,
