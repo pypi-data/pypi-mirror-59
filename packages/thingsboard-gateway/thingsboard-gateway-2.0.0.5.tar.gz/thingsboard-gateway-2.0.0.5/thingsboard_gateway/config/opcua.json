@@ -1,0 +1,30 @@
+{
+  "server": {
+    "name": "OPC-UA Default Server",
+    "url": "192.168.1.113:4840/server/",
+    "scanPeriodInMillis": 10000,
+    "timeoutInMillis": 5000,
+    "security": "Basic128Rsa15",
+    "identity": {
+      "type": "anonymous"
+    },
+    "mapping": [
+      {
+        "deviceNodePattern": "Device\\d*$",
+        "deviceNamePattern": "${server.deviceName}",
+        "attributes": [
+          {
+            "key": "batteryLevel",
+            "path": "${Battery.Level}"
+          }
+        ],
+        "timeseries": [
+          {
+            "key": "Humidity",
+            "path": "${humidity_value}"
+          }
+        ]
+      }
+    ]
+  }
+}
