@@ -1,0 +1,64 @@
+### UCS633 Project Submission
+* **Name** - *Haymant Mangla*
+* **Roll no.** - *101703228*
+
+# topsis-hm
+
+topsis-hm is a Python package for displaying ranking of all criteria using Topsis technique to get good computational efficiency and ability to measure the relative performance for each alternative in a simple mathematical form.
+
+## Topsis Description
+
+Technique for Order Preference by Similarity to an Ideal Solution (TOPSIS) is one of the multi-criteria models in making decision which is known for its  simplicity, rationality, comprehensibility and good computational efficiency. Multi-criteria decision making (MCDM) refers to making choice of the best alternative from among a finite set of decision alternatives in terms of multiple, usually conflicting criteria.
+
+## Getting Started
+
+These instructions will help you to install and use this package for general use.
+
+## Prerequisites
+
+Your csv file should not have categorical data
+
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install topsis-hm
+```
+
+## Usage
+You can import it either in Python IDLE or run directly through command prompt
+
+### For Command Prompt
+
+If you want to use this package on "data.csv" file with 4 columns. You need to change the directory where "data.csv" is stored then. Here -w represents weights which signifies weight of each feature or column in our dataset and -i represents impacts which signifies impact of each column or feature in our data. If a feature is good we will use + to denote else we will use -
+
+```bash
+toposis-hm data.csv -w 1 1 1 1 -i + + - +
+```
+You can use the following command for help
+
+```bash
+topsis-hm -h
+```
+
+### For Python IDLE
+
+```python
+from topsis-hm.topsis import top
+top(X,weights,impacts)
+
+#X should be a matrix
+#impacts should be a list of string + for positive impact - for negative impact
+#weights should be a list of int or float
+```
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
