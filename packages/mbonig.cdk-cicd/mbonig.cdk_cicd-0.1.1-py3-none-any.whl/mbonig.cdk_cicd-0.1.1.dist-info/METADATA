@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: mbonig.cdk-cicd
+Version: 0.1.1
+Summary: A CDK Construct that creates a CodePipeline that will build and deploy a CDK Stack
+Home-page: https://github.com/mbonig/cdk-cicd.git
+Author: Matthew Bonig<matthew.bonig@gmail.com>
+License: MIT
+Project-URL: Source, https://github.com/mbonig/cdk-cicd.git
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Typing :: Typed
+Classifier: License :: OSI Approved
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: jsii (~=0.21.1)
+Requires-Dist: publication (>=0.0.3)
+Requires-Dist: aws-cdk.aws-codebuild (<2.0.0,>=1.20.0)
+Requires-Dist: aws-cdk.aws-codepipeline (<2.0.0,>=1.20.0)
+Requires-Dist: aws-cdk.aws-codepipeline-actions (<2.0.0,>=1.20.0)
+Requires-Dist: aws-cdk.aws-events (<2.0.0,>=1.20.0)
+Requires-Dist: aws-cdk.aws-events-targets (<2.0.0,>=1.20.0)
+Requires-Dist: aws-cdk.aws-s3 (<2.0.0,>=1.20.0)
+Requires-Dist: aws-cdk.core (<2.0.0,>=1.20.0)
+
+# CDK CodePipeline Stack (pre-release)
+
+The purpose of this Construct is to build a CodePipeline stack that builds and deploys a CDK Stack.
+
+This construct is still in development and as such you should use with caution.
+
+# What it creates
+
+This will create a CodePipeline pipeline that builds a CDK module and then deploys it to CloudFormation as a Stack.
+
+## Usage
+
+Refer to the [bin/automation.ts](bin/automation.ts) for an example.
+
+## Properties [lib/cdk-cicd-props.ts](lib/cdk-cicd-props.ts)
+
+| prop | description | usage
+| --- | --- | ---
+| stackName | The CloudFormation Stack to create/update | must be a valid CFN stack name (e.g. some-stack-name)
+| sourceAction | The Source IAction for CodePipeline | Rather than try to account for all source situations, you just provide your own. The factory function is given the Artifact to use as the output target in your Action. If you don't use this artifact, the construct will fail construction.
+| createBuildSpec | A Factory that returns a BuildSpec object to use | Refer to the [lib/buildspec-factory.ts] for creating these. You can create your own buildspec if you'd like but there are certain requirements.
+| additionalPolicyStatements | Any additional PolicyStatements you'd like to add to the CodeBuild project Role | Useful if you're going to be making AWS API calls from within your CDK 'synth' process during the build.
+
+## Contribute
+
+Always open to any suggestions or help in making this better. Open an Issue.
+
+## License
+
+MIT
+
+
