@@ -1,0 +1,17 @@
+tpPyUtils
+Qt.py
+tpDccLib
+aenum
+scandir
+
+[:python_version <= "3.4"]
+PySide
+
+[:python_version > "3.4"]
+PySide2
+
+[dev]
+wheel
+
+[test]
+pytest
