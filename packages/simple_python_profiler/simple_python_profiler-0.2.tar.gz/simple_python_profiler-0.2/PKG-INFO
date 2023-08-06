@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: simple_python_profiler
+Version: 0.2
+Summary: A simple cli-based profiler for Python
+Home-page: https://github.com/jeshan/simple-python-profiler
+Author: Jeshan G. BABOOA
+Author-email: j@jeshan.co
