@@ -1,0 +1,3 @@
+google-cloud-pubsub
+google-cloud-logging
+faust[rocksdb,uvloop,fast,redis]
