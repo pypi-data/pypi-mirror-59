@@ -1,0 +1,10 @@
+README.md
+setup.py
+max31855/__init__.py
+max31855/k_type_lin.py
+max31855/max31855.py
+pyMAX31855.egg-info/PKG-INFO
+pyMAX31855.egg-info/SOURCES.txt
+pyMAX31855.egg-info/dependency_links.txt
+pyMAX31855.egg-info/requires.txt
+pyMAX31855.egg-info/top_level.txt
