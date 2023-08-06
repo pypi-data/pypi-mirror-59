@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Topsis-manav
+Version: 0.0.1
+Summary: A python package to implement Topsis approach
+Home-page: https://github.com/pypa/Topsis
+Author: Manavbir singh gill
+Author-email: mgill_be17@thapar.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) originated in the 1980s as a multi-criteria decision making method. TOPSIS chooses the alternative of shortest Euclidean distance from the ideal solution, and greatest distance from the negative-ideal solution.
+
+
