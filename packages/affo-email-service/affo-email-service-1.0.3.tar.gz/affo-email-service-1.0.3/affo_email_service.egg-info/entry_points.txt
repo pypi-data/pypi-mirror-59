@@ -1,0 +1,3 @@
+[console_scripts]
+affo-email-service = affo_email_service.cli:manager.run
+
