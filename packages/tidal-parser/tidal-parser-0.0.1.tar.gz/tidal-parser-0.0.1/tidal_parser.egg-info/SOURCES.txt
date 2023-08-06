@@ -1,0 +1,8 @@
+README.md
+setup.py
+tidal_parser/__init__.py
+tidal_parser/tidal_parser.py
+tidal_parser.egg-info/PKG-INFO
+tidal_parser.egg-info/SOURCES.txt
+tidal_parser.egg-info/dependency_links.txt
+tidal_parser.egg-info/top_level.txt
