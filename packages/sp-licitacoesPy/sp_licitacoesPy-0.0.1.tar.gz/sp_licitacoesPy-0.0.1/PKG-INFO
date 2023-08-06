@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sp_licitacoesPy
+Version: 0.0.1
+Summary: Python3 Wrapper para API de licitações da Prefeitura de São Paulo
+Home-page: https://github.com/PzanettiD/sp_licitacoesPy
+Author: PzanettiD
+Author-email: zanetti.pepe@gmail.com
+License: UNKNOWN
+Description: # sp_licitacoesPy
+        ## python3 wrapper para API de licitações da Prefeitura de São Paulo
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

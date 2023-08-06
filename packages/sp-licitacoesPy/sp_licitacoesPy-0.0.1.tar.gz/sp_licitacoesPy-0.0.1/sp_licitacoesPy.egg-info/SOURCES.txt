@@ -1,0 +1,8 @@
+README.md
+setup.py
+sp_licitacoesPy/__init__.py
+sp_licitacoesPy/licitacoes.py
+sp_licitacoesPy.egg-info/PKG-INFO
+sp_licitacoesPy.egg-info/SOURCES.txt
+sp_licitacoesPy.egg-info/dependency_links.txt
+sp_licitacoesPy.egg-info/top_level.txt
