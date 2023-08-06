@@ -1,0 +1,5 @@
+[console_scripts]
+twol-comp = twol.twol:main
+twol-discov = twol.twdiscov:main
+twol-examples2fst = twol.twexamp:main
+
