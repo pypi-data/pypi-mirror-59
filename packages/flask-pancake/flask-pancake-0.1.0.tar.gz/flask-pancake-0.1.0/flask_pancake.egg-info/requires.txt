@@ -1,0 +1,6 @@
+flask>=1.0
+flask-redis>=0.4.0
+cached-property<2,>=1.5
+
+[testing]
+pytest<5.4,>=5.3
