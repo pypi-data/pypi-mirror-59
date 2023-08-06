@@ -1,0 +1,5 @@
+graft src/collective
+graft src/appy
+graft docs
+include *.rst
+global-exclude *.pyc
