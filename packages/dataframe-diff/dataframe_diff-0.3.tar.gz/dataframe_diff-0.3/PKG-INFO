@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: dataframe_diff
+Version: 0.3
+Summary: Compare two dataframes and return column-wise difference and additional record
+Home-page: https://github.com/yogiadi/dataframe_diff
+Author: Aditya Yogi
+Author-email: adityayoginiet@gmail.com
+License: MIT
+Download-URL: https://github.com/yogiadi/pd_df_compare/archive/v_03.tar.gz
+Description: Compare two dataframes and return column-wise difference and additional record
+Keywords: pandas,dataframe,compare,dataframe_diff,dataframe difference
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
