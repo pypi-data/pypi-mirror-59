@@ -1,0 +1,3 @@
+[gui_scripts]
+sportmg = sportmg.qt.main:main
+
