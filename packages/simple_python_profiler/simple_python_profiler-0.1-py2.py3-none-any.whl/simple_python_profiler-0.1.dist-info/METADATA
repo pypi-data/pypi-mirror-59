@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: simple_python_profiler
+Version: 0.1
+Summary: A simple cli-based profiler for Python
+Home-page: https://github.com/jeshan/simple-python-profiler
+License: UNKNOWN
+Author: Jeshan G. BABOOA
+Author-email: j@jeshan.co
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: recursive-decorator >=1,<2
+Requires-Dist: loguru <1
