@@ -1,0 +1,17 @@
+ink8/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ink8/cli.py,sha256=9vkOBBQrVX0_ueoqGsUZJsBFLsc3GLlW3esVoeCVaV8,3588
+ink8-1.13.data/data/kubernetes/basic-svc.yml.j2,sha256=jVhzvfSZn7A7VwpV1fGQV-ZIQBrPzvSWZsTk6rfrGEU,1414
+ink8-1.13.data/data/kubernetes/kong.yml.j2,sha256=E9GJHZOkUdmBTJs_8b1u-SzyaBb29SdURzXItUc7n4I,17150
+ink8-1.13.data/data/kubernetes/namespace.yml.j2,sha256=TQOxqqfdbUSZItcfJjhMOYfRGi8yn-Ux1iSUrS7osqg,70
+ink8-1.13.data/data/kubernetes/postgres.yml.j2,sha256=XGz3yFkJrPTM-KuWSUJkyVNGXdvrYc5I-UDS6NmEzJ0,1469
+ink8-1.13.data/data/kubernetes/prometheus.yml,sha256=R0x3RDMxHiyfXo32g_F6nw2DZGbEh9gkbjgjdaqhYOM,11036
+ink8-1.13.data/data/kubernetes/redis.yml.j2,sha256=x8qqgwdNwmOCcW7ude3v156632TrYeODZHO8qQS1Qw4,1990
+ink8-1.13.data/data/kubernetes/routes.yml.j2,sha256=EljYtEjM0boqPRgJPTUWsrLSkgFljMakBQT_Amsyfs0,347
+ink8-1.13.data/data/kubernetes/scylla-operator.yml,sha256=ewn_t61WByq9nsgMWGygpwYoBgItHxER8roX93TyiKQ,8437
+ink8-1.13.data/data/kubernetes/scylla.yml,sha256=gILBuQp9ppEZJJCidc0K0tSIxw8clEnA1nsKh-gEkV4,1774
+ink8-1.13.data/data/kubernetes/vault.yml.j2,sha256=g9L3YZ2J8_vO0QeZ-j-Unvx2dah_zpLkTa1-7nRp3yw,861
+ink8-1.13.dist-info/METADATA,sha256=mslErctlfeTwwhyJ64n2Cu5TqHltBC0ooa9BV_E_G3s,394
+ink8-1.13.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ink8-1.13.dist-info/entry_points.txt,sha256=86Za9ePQQsBtrG2oyVq53azaWg9j4ZBeWg9aLSZEnCY,40
+ink8-1.13.dist-info/top_level.txt,sha256=bkAA3NoS0FUgwlYaIZQWmQ6_PChtWmvrKkMcTMOhfbo,5
+ink8-1.13.dist-info/RECORD,,
