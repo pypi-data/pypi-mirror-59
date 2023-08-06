@@ -1,0 +1,8 @@
+README.md
+setup.py
+dataclass_plus/__init__.py
+dataclass_plus/dataclass_plus.py
+dataclass_plus.egg-info/PKG-INFO
+dataclass_plus.egg-info/SOURCES.txt
+dataclass_plus.egg-info/dependency_links.txt
+dataclass_plus.egg-info/top_level.txt
