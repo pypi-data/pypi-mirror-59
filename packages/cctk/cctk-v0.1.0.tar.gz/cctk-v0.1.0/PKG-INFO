@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: cctk
+Version: v0.1.0
+Summary: computational chemistry toolkit
+Home-page: https://github.com/ekwan/cctk
+Author: Corin Wagen and Eugene Kwan
+Author-email: corin.wagen@gmail.com
+License: Apache 2.O
+Download-URL: https://github.com/ekwan/cctk/archive/v0.1.0.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
