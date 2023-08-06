@@ -1,0 +1,4 @@
+aiohttp
+asyncio
+auth0-python
+pyjwt
