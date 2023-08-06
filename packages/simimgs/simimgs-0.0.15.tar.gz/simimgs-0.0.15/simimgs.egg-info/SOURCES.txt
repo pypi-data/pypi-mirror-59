@@ -1,0 +1,9 @@
+README.md
+setup.py
+simimgs/__init__.py
+simimgs/__main__.py
+simimgs.egg-info/PKG-INFO
+simimgs.egg-info/SOURCES.txt
+simimgs.egg-info/dependency_links.txt
+simimgs.egg-info/requires.txt
+simimgs.egg-info/top_level.txt
