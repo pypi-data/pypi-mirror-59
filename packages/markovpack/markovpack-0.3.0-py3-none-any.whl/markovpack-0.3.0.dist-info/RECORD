@@ -1,0 +1,11 @@
+markovpack/__init__.py,sha256=kfqcVEBQycwvY85lvo85nOtBG4OMC3727mkT27hjaMk,525
+markovpack/commands/__init__.py,sha256=8HisME7ze-D7n9v2r8bOuPVea7EAM8rLjvGA9yybBVQ,264
+markovpack/commands/markov.py,sha256=SJZpb4l-uy_q70_snGrbpOLMfASzQRY99zHyj07HEz0,1883
+markovpack/events/__init__.py,sha256=7fFmtdU50bsCmncOPFhxh4YauOca7ACgA59iO2uFn-o,207
+markovpack/stars/__init__.py,sha256=g91MtK1luIrLj8Xtl3T-ZMYQmkIbalrob2yK-YNjX-Y,381
+markovpack/tables/__init__.py,sha256=VavSG_IQR3sTyi_B_qICAZAWGu9_5cNQ1i1DMePLAsg,203
+markovpack/version.py,sha256=eD88sbHNXDiT3cU7xKn_-BHPeV8uIiItnGoMhDNZIGI,19
+markovpack-0.3.0.dist-info/LICENSE.txt,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+markovpack-0.3.0.dist-info/WHEEL,sha256=0LqClw0y45nNGWtOkoSiM9aN5p1kS5vGsVfoCyuJCNA,85
+markovpack-0.3.0.dist-info/METADATA,sha256=xXoRXCMADo67b6P2CGh2pEURwtKJ3TZ4iHdmkPEogBU,1559
+markovpack-0.3.0.dist-info/RECORD,,
