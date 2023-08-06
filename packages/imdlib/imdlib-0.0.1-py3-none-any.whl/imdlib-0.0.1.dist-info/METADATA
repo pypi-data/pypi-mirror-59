@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: imdlib
+Version: 0.0.1
+Summary: A tool for handling IMD gridded data
+Home-page: https://github.com/iamsaswata/imdlib
+Author: Saswata Nandi
+Author-email: iamsaswata@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (==0.25.3)
+Requires-Dist: python-dateutil-2.8.1
+Requires-Dist: pytz (==2019.3)
+Requires-Dist: numpy (==1.18.1)
+Requires-Dist: six (==1.14.0)
+Requires-Dist: xarray (==0.14.1)
+
+# imdlib
+
+This is a python package to handle binary grided data from Indian Meterological department (IMD).
+
+## Installation
+
+> pip install imdlib
+
+## Documentation
+
+[Tutorial](https://saswatanandi.github.io/softwares/imdlib)
+
+## License
+
+imdlib is available under the open source  [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
