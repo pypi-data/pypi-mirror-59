@@ -1,0 +1,17 @@
+partitialajax/__init__.py,sha256=9vxbqLShijl-5xbdSyezzDGTf1ia1K281LVbxxQwNB4,62
+partitialajax/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+partitialajax/apps.py,sha256=lEl0mSyknchcrc-Xp54EfE2VDRw-KhT-oakl3ZikvNc,136
+partitialajax/exceptions.py,sha256=VBy_68tb543L1T4SWdHWFTWn-4fdSQhuTJAC_SfwYXE,95
+partitialajax/mixin.py,sha256=Vm-i6FlPq7NddEypvov2wuXNww1mxQGBfPJk9pFMnG0,5207
+partitialajax/static/partitialajax/index.js,sha256=2vJmdllalx-xb3uuDx-9T1owiMZq_r6NH0TactQTaSA,6289
+partitialajax/templates/partitialajax/partitial_include.html,sha256=iwnpcJ8FY03ILmfLn56J6BQTg4nNtIvCDO_hKDA6UcI,641
+partitialajax/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+partitialajax/templatetags/partitialajax.py,sha256=SETooeu4BmAmWnkcAqP1gCr_sc0XPC5x6ZEWkKH2Wfg,2697
+partitialajax/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+partitialajax/tests/test_html.py,sha256=n1KUbNkBvDQIvSnEGfyCgxBoLxQwYcSZ5kNDAFQvg7A,5001
+partitialajax/tests/test_templatetag.py,sha256=3ZFmkM8yvUey9erWkfAfU40QAbErgLmPolyr25H31Wo,1849
+django_partitialajax-0.2.2.dist-info/LICENSE,sha256=UZlfpOrSkqGQsR_XnY00rjof2hbrw_-6062b-UKZAWc,1056
+django_partitialajax-0.2.2.dist-info/METADATA,sha256=YqIMfvSEfHAaM6i2iF3M6p-dIdAJuQZMdAid1u2z0Ao,1853
+django_partitialajax-0.2.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_partitialajax-0.2.2.dist-info/top_level.txt,sha256=gaDXQ2oo2ewhQApQaJl5qFyiZuSXX2gv23t9pB4ep5g,14
+django_partitialajax-0.2.2.dist-info/RECORD,,
