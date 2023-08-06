@@ -1,0 +1,7 @@
+README.md
+setup.py
+placaEcuador/__init__.py
+placaEcuador.egg-info/PKG-INFO
+placaEcuador.egg-info/SOURCES.txt
+placaEcuador.egg-info/dependency_links.txt
+placaEcuador.egg-info/top_level.txt
