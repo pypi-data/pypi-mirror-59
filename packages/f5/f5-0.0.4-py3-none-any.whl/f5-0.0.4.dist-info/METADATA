@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: f5
+Version: 0.0.4
+Summary: Use F5 to build more powerful Tornado apps
+Home-page: https://github.com/brendanberg/f5
+Author: Brendan Berg
+Author-email: brendan@berg.industries
+License: MIT
+Download-URL: https://github.com/brendanberg/f5/archive/v0.0.2.tar.gz
+Keywords: tornado orm rest api
+Platform: UNKNOWN
+Requires-Dist: msgpack
+Requires-Dist: tornado
+
+UNKNOWN
+
+
