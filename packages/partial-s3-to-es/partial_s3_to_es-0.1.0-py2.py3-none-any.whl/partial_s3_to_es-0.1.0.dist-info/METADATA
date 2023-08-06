@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: partial-s3-to-es
+Version: 0.1.0
+Summary: Restore selected logs from S3 to Elasticsearch
+Home-page: https://github.com/bloodpet/partial_s3_to_es
+Author: Emanuel Gardaya Calso
+Author-email: pypi@bloodpet.com
+License: MIT license
+Keywords: partial_s3_to_es
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Requires-Dist: Click (>=7.0)
+Requires-Dist: elasticsearch (<8.0.0,>=7.0.0)
+Requires-Dist: boto3 (>=1.10.49)
+Requires-Dist: python-configuration (>=0.5.0)
+
+=============================================
+Partial Restore from S3 logs to Elasticsearch
+=============================================
+
+
+.. image:: https://img.shields.io/pypi/v/partial_s3_to_es.svg
+        :target: https://pypi.python.org/pypi/partial_s3_to_es
+
+.. image:: https://img.shields.io/travis/bloodpet/partial_s3_to_es.svg
+        :target: https://travis-ci.org/bloodpet/partial_s3_to_es
+
+.. image:: https://readthedocs.org/projects/partial-s3-to-es/badge/?version=latest
+        :target: https://partial-s3-to-es.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+Restore selected logs from S3 to Elasticsearch
+
+
+* Free software: MIT license
+* Documentation: https://partial-s3-to-es.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2020-01-09)
+------------------
+
+* First release on PyPI.
+
+

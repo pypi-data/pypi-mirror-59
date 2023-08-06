@@ -1,0 +1,4 @@
+[console_scripts]
+partial_s3_to_es = partial_s3_to_es.cli:main
+s3_to_es = partial_s3_to_es.cli:main
+

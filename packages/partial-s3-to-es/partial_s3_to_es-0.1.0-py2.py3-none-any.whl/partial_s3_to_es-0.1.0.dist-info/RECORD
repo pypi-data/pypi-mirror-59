@@ -1,0 +1,10 @@
+partial_s3_to_es/__init__.py,sha256=vl3HoFLWrimiEd0soQG7lGObI2BS-KLO_zIw-rqJgvQ,171
+partial_s3_to_es/cli.py,sha256=4fpwVLcqZfBJhW7IEGMn_4I9ZJYxEhudy-Irstgkp-o,1786
+partial_s3_to_es/partial_s3_to_es.py,sha256=CsihUKNcQE63JvAv_XhNIUmzTK3MTTZv0Ioe9armvSc,3029
+partial_s3_to_es-0.1.0.dist-info/AUTHORS.rst,sha256=24omENsL0EqVbFZNDRu-n5DyoAPOKz_rYOCKqKN9Pmo,164
+partial_s3_to_es-0.1.0.dist-info/LICENSE,sha256=Enc-oXt6e-8Ug_wGauF6SH1RzpFq0aUmcktIY_MPFaQ,1080
+partial_s3_to_es-0.1.0.dist-info/METADATA,sha256=_qAeDx8ddda9lCkfX-eFXEP7o7qMhHsltmqKddlTuks,2041
+partial_s3_to_es-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+partial_s3_to_es-0.1.0.dist-info/entry_points.txt,sha256=rrQFyH9a96iWYCrO8rUvbwJInXrDJ06nmZJ2cxB-8fs,101
+partial_s3_to_es-0.1.0.dist-info/top_level.txt,sha256=DYq7N6djKh6NnpLDMwEMUuyfHL7oh-JvC0dOiGyULmE,17
+partial_s3_to_es-0.1.0.dist-info/RECORD,,
