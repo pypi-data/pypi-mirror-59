@@ -1,0 +1,14 @@
+{% load static aparnik %}
+<script>
+    function redirect(url_app) {
+        var frame = document.createElement('iframe');
+        frame.src = url_app;
+        frame.style.display = 'none';
+        document.body.appendChild(frame);
+        setTimeout(function () {
+            document.body.removeChild(frame);
+        }, 4);
+    }
+
+    redirect('{% application_identifier %}://?url={{ app_url }}');
+</script>
