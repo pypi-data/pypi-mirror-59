@@ -1,0 +1,11 @@
+zinc-cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zinc-cli/zinc.py,sha256=ATYRr7tttTVj7wMgSOaBRLoKIVGoqmnr_wynjR5VrA0,88
+zinc-cli/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zinc-cli/cli/app_interface.py,sha256=rAcEhcu9komvdUKBG67DtlEcaOMlBPlOsnKXR95hMxs,350
+zinc-cli/cli/app_menu.py,sha256=nICQjVOCcgW5FPNmYT2h4HVWmarMsmnC8cpWffCFDAM,904
+zinc-cli/cli/cli_command.py,sha256=k-rDcNt-wkD9EwEjJ6zEEQD3AgnaEdQpI-LrKrFIUhw,65
+zinc_cli-0.0.12.data/scripts/zinc,sha256=wq_yoRqC0hTaqZovCFdbod2-xvtnt35We7flTkRXx5U,121
+zinc_cli-0.0.12.dist-info/METADATA,sha256=p_QgFJcNG9ai71aM4E21sta-lx4fbjAjKn3PhAI3t3k,474
+zinc_cli-0.0.12.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+zinc_cli-0.0.12.dist-info/top_level.txt,sha256=Nkw-uf2Tll_axaOWG6LgLD9dp-nxi-2oixGE48RhcIc,9
+zinc_cli-0.0.12.dist-info/RECORD,,
