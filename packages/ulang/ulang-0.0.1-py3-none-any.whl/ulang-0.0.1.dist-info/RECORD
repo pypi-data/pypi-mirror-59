@@ -1,0 +1,12 @@
+ulang/__init__.py,sha256=ZnCyrOpUU8S2gdPpT86iOHYHcncBgB8TmsA-oWnBU5o,115
+ulang/version.py,sha256=Q8raD6k02z4DoYniAz3iui5d6EdM1el95SMTLXJbeCA,18
+ulang/shell/__init__.py,sha256=tIIEIJdxCGBZuWo3hTU-1JwjBAVQcd6pbigPslT90OA,48
+ulang/shell/usage.py,sha256=2EE9EeC_KAcnXcJkN14nJw2pr1ei1ym_0m6xLde3WEY,188
+ulang/src/temp.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ulang-0.0.1.dist-info/LICENSE,sha256=OJmOGH-nQCBzb5J4a2TMgJTnGzKzQmEdUwpJSBZ5vc0,1069
+ulang-0.0.1.dist-info/METADATA,sha256=qpYNaj7I2FQyriW-vV2AF0e2cCW085q0aJcOo3C_ekI,2534
+ulang-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ulang-0.0.1.dist-info/entry_points.txt,sha256=nr4gJB0AmTWoKs3oqTl4e8_4hoW2QycXpHE950oKd88,43
+ulang-0.0.1.dist-info/top_level.txt,sha256=Q5TL-7XFC74QkaYY_v0q5U3gEsZM9I7Hpz4axFo8t20,6
+ulang-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ulang-0.0.1.dist-info/RECORD,,
