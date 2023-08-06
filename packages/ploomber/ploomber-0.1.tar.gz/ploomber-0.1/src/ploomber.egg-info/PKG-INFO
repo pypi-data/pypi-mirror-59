@@ -1,0 +1,41 @@
+Metadata-Version: 1.1
+Name: ploomber
+Version: 0.1
+Summary: A Python library for developing great data pipelines
+Home-page: https://github.com/ploomber/ploomber
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: A license
+Description: ploomber
+        ========
+        
+        .. image:: https://travis-ci.org/ploomber/ploomber.svg?branch=master
+            :target: https://travis-ci.org/ploomber/ploomber.svg?branch=master
+        
+        
+        
+        Examples are available in the `examples/` directory
+        
+        CHANGELOG
+        =========
+        
+        0.1
+        ---
+        
+        * First release
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
