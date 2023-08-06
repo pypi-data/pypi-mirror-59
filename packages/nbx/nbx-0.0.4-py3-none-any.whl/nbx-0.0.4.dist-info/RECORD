@@ -1,0 +1,15 @@
+nbx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nbx/_nbdev.py,sha256=p060xlYmCNSNIF_DCZ2SwAv0m39BUUsOslQSoKbgV4E,1289
+nbx/om.py,sha256=95qBeBaxIv4XwzarlTa2jLuImerNdxC17OGnJoe-wow,7702
+nbx/pspace.py,sha256=bVUS7ZQsxS_yWJbJXmSoM8rNO64INd-ZdF_ZKc0Zm_M,3120
+nbx/templ.py,sha256=zc1gdN6y21qB4I54i9_PoRAhwDP-yfapGi-rKyK1Hdo,1141
+nbx/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_nbx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_nbx/experiment.py,sha256=B_R1Zxxx8C1sd0lXij_pRtTjKt7G4PJXepSMzhb4YP4,739
+test_nbx/wrapper.py,sha256=I3jBv7LG9lZFPmSiyNjG77ait6EdvmkJexJpb1CZmBI,950
+nbx-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nbx-0.0.4.dist-info/METADATA,sha256=p6DPE_LZtxQTNM73o1Fz8Qqee_KiGVHtBhqz4gsFlUk,6748
+nbx-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+nbx-0.0.4.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+nbx-0.0.4.dist-info/top_level.txt,sha256=qjl86ViBkEFoLVvs446lPj4iKtiw71X1x3vYD7zxlwk,13
+nbx-0.0.4.dist-info/RECORD,,
