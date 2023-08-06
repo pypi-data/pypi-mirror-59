@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+gpugrap/__init__.py
+gpugrap/get_idle.py
+gpugrap/gpuinfo.py
+gpugrap.egg-info/PKG-INFO
+gpugrap.egg-info/SOURCES.txt
+gpugrap.egg-info/dependency_links.txt
+gpugrap.egg-info/requires.txt
+gpugrap.egg-info/top_level.txt
