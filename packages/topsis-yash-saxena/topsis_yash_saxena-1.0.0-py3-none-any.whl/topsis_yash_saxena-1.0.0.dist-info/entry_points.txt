@@ -1,0 +1,3 @@
+[console_scripts]
+topsis-yash-saxena = topsis_yash_saxena.cli:main
+
