@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: ntcp-1.0
+Version: 0.1.0
+Summary: A Python package to calculate EUD based NTCP.
+Home-page: https://github.com/ThirumuruganE/ntcp
+Author: Thirumurugan Elango
+Author-email: thiru20@protonmail.com
+License: GPLv3+
+Description: ![icon](https://user-images.githubusercontent.com/26036836/72178678-6447d280-3409-11ea-9e48-6bb0e41f82db.png)
+        # EUD based NTCP Calculator
+        EUD based Normal Tissue Complication Probability
+        ## Introduction
+        This program based on EUD phenomenological model by Niemierko.\
+        Using logistic function the NTCP is calculated by Niemierko\
+        inspired by his work and also a free Matlab calculator and radbiomod calculator this program has been created.\
+        "This is purely for research and not for clinical use"
+        
+        
+        ## type ntcp in terminal
+        
+        ## How to run
+        type 'ntcp' in terminal
+        
+        #### In Ubuntu this program just runs with double click
+        run the code <sudo chmod u+x ntcp.py> from the directory in which the python file is placed to double click and run the program.
+        and also change the preference as seen below in file manager
+        ![readme1](https://user-images.githubusercontent.com/26036836/72175217-a10fcb80-3401-11ea-93a5-133efdac63db.png)
+        
+        
+        #### In case of other OS run the program from terminal.
+        
+        ## How to use
+        1. Take the region of interest(e.g.optic chiasm) "Differential DVH" values i.e. volume and dose in .xls format. The name of column should be in lower case as shown below.(volume and dose)
+        
+        ![readme](https://user-images.githubusercontent.com/26036836/72164318-79ae0400-33eb-11ea-9239-f1817b7794f4.png)
+        
+        2. Import the .xls file.
+        3. Select parameters from menu either emami et al, or Gay and niemierko.
+        4. click calculate
+        5. In case of manual calculation enter all the parameters and click manual input button
+        6. before next manual. click clear button and enter the parameters from first.
+        7. again click manual input button.
+        8. click calculate.
+        
+        ## References
+        1. RADBIOMOD: A simple program for utilising biological modelling in radiotherapy plan evaluation
+        Chang, Joe H. et al.
+        Physica Medica: European Journal of Medical Physics, Volume 32, Issue 1, 248 - 254
+        2. Wu, Q., Mohan, R., Niemierko, A., & Schmidt-Ullrich, R. (2002). Optimization of intensity-modulated radiotherapy plans based on the equivalent uniform dose. International Journal of Radiation Oncology* Biology* Physics, 52(1), 224-235.
+        3. Gay, H. A., & Niemierko, A. (2007). A free program for calculating EUD-based NTCP and TCP in external beam radiotherapy. Physica Medica, 23(3-4), 115-125.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown

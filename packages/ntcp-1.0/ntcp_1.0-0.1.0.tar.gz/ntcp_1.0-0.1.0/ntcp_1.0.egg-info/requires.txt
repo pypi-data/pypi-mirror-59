@@ -1,0 +1,6 @@
+numpy
+Cython
+pandas
+xlrd
+matplotlib
+PrettyTable

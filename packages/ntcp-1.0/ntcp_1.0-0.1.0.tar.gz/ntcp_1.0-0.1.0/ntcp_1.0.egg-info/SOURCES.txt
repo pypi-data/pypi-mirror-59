@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ntcp/icon.gif
+ntcp/ntcp.py
+ntcp/readme.png
+ntcp_1.0.egg-info/PKG-INFO
+ntcp_1.0.egg-info/SOURCES.txt
+ntcp_1.0.egg-info/dependency_links.txt
+ntcp_1.0.egg-info/entry_points.txt
+ntcp_1.0.egg-info/requires.txt
+ntcp_1.0.egg-info/top_level.txt

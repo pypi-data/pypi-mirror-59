@@ -1,0 +1,3 @@
+include LICENSE README.md 
+include ntcp/readme.png 
+include ntcp/icon.gif
