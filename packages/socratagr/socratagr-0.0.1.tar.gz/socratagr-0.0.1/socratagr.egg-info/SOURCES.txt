@@ -1,0 +1,9 @@
+README.md
+setup.py
+socratagr/__init__.py
+socratagr/grsocrata.py
+socratagr/main.py
+socratagr.egg-info/PKG-INFO
+socratagr.egg-info/SOURCES.txt
+socratagr.egg-info/dependency_links.txt
+socratagr.egg-info/top_level.txt
