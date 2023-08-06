@@ -1,0 +1,7 @@
+README.md
+qemu-ga-exec
+setup.py
+qemu_ga_exec.egg-info/PKG-INFO
+qemu_ga_exec.egg-info/SOURCES.txt
+qemu_ga_exec.egg-info/dependency_links.txt
+qemu_ga_exec.egg-info/top_level.txt
