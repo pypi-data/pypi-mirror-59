@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: vverma21
+Version: 0.0.1
+Summary: Topsis for mcdm
+Home-page: UNKNOWN
+Author: Vishesh Verma
+Author-email: vverma1_be17@thapar.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+TOPSIS for MCDM done in python for UCS633 by Vishesh Verma(101703622) COE-13
+
+
