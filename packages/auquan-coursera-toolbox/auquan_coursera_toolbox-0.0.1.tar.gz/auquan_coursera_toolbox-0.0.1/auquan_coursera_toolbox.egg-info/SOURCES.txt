@@ -1,0 +1,11 @@
+README.md
+setup.py
+auquan_coursera_toolbox/__init__.py
+auquan_coursera_toolbox/problem1_trading_params.py
+auquan_coursera_toolbox/problem4_trading_params.py
+auquan_coursera_toolbox/update_check.py
+auquan_coursera_toolbox.egg-info/PKG-INFO
+auquan_coursera_toolbox.egg-info/SOURCES.txt
+auquan_coursera_toolbox.egg-info/dependency_links.txt
+auquan_coursera_toolbox.egg-info/requires.txt
+auquan_coursera_toolbox.egg-info/top_level.txt

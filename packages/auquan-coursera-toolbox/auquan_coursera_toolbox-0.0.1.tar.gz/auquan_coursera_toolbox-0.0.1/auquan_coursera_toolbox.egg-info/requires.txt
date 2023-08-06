@@ -1,0 +1,11 @@
+auquan_qq1_toolbox
+tqdm
+requests
+plotly
+numpy
+pandas
+bs4
+scipy
+sklearn
+lxml
+auquan_toolbox
