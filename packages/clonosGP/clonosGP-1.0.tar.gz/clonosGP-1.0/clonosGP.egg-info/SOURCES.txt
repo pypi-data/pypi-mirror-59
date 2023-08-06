@@ -1,0 +1,14 @@
+README.md
+setup.py
+clonosGP/__init__.py
+clonosGP/aux.py
+clonosGP/main.py
+clonosGP/model_factory.py
+clonosGP/sim.py
+clonosGP/stats.py
+clonosGP/viz.py
+clonosGP.egg-info/PKG-INFO
+clonosGP.egg-info/SOURCES.txt
+clonosGP.egg-info/dependency_links.txt
+clonosGP.egg-info/requires.txt
+clonosGP.egg-info/top_level.txt
