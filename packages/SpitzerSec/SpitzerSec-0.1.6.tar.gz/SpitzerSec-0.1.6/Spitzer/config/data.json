@@ -1,0 +1,42 @@
+{
+    "services":{
+        "ftp":["ftp", "ftp-anon"],
+        "ssh":[""],
+        "telnet":[""],
+        "smtp":[""],
+        "http":["websploit"],
+        "rpcbind":["netdisk", "nfs-showmount"],
+        "netbios-ssn":["netdisk"],
+    	"https":["websploit"],        
+        "microsoft-ds":["netdisk"]
+        
+    },
+
+    "web":[
+        "spider",
+        "headers",
+        "testssl"
+    ],
+
+    "extensions":{
+        "apache":"html,php",
+        "iis":"asp"
+    },
+
+    "queries":{
+        "host":"CREATE TABLE IF NOT EXISTS host ( id interger PRIMARY KEY, ip text)",
+        "finding":"CREATE TABLE IF NOT EXISTS finding ( id integer PRIMARY KEY, hostid integer, find text, FOREIGN KEY (hostid) REFERENCES host(id))",
+        "webpage":"CREATE TABLE IF NOT EXISTS webpage ( id integer PRIMARY KEY, hostid integer, page text, FOREIGN KEY (hostid) REFERENCES host(id))"
+    },
+
+    "dirbust": "True",
+    "testssl": "/opt/spitzer/testssl/testssl.sh",
+    "burp": "/opt/BurpSuitePro/burpsuite_pro.jar",
+    "securityheaders":"/opt/spitzer/securityheaders.py",
+    "busterlist": {
+        "common": "/usr/share/dirb/wordlists/common.txt",
+        "big": "/usr/share/dirb/wordlists/big.txt",
+        "apache": "/usr/share/dirp/worlists/vulns/apache.txt",
+        "test": "/root/test.txt"
+    }
+}
