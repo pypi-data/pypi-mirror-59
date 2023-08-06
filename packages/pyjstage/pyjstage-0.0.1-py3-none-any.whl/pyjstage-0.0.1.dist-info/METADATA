@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyjstage
+Version: 0.0.1
+Summary: J-STAGE API wrapper for Python
+Home-page: https://github.com/matsurih/pyjstage
+Author: matsurih
+Author-email: pipikapu@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: certifi (==2019.11.28)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.8)
+Requires-Dist: lxml (==4.4.2)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: urllib3 (==1.25.7)
+
+UNKNOWN
+
+
