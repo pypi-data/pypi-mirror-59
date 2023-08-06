@@ -1,0 +1,3 @@
+[console_scripts]
+ofxprocessor=ofx_processor.main:cli
+
