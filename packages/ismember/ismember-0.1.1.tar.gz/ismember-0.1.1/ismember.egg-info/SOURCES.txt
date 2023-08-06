@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ismember/__init__.py
+ismember/ismember.py
+ismember.egg-info/PKG-INFO
+ismember.egg-info/SOURCES.txt
+ismember.egg-info/dependency_links.txt
+ismember.egg-info/requires.txt
+ismember.egg-info/top_level.txt
+ismember/utils/__init__.py
