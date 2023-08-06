@@ -1,0 +1,3 @@
+[console_scripts]
+fmsc = fmsc.__main__:main
+

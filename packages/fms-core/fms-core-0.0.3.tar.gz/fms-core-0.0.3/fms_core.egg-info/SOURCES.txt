@@ -1,0 +1,17 @@
+README.md
+setup.py
+fms_core.egg-info/PKG-INFO
+fms_core.egg-info/SOURCES.txt
+fms_core.egg-info/dependency_links.txt
+fms_core.egg-info/entry_points.txt
+fms_core.egg-info/requires.txt
+fms_core.egg-info/top_level.txt
+fmsc/__init__.py
+fmsc/__main__.py
+fmsc/aioupgrade.py
+fmsc/aupfile.py
+fmsc/aupparser.py
+fmsc/cgminerapi.py
+fmsc/cliprogressbar.py
+fmsc/upgrade.py
+fmsc/utils.py
