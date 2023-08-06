@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/scripts/zinc
+src/zinc-cli/__init__.py
+src/zinc-cli/zinc.py
+src/zinc-cli/cli/__init__.py
+src/zinc-cli/cli/app_interface.py
+src/zinc-cli/cli/app_menu.py
+src/zinc-cli/cli/cli_command.py
+test/test_zinc.py
+zinc_cli.egg-info/PKG-INFO
+zinc_cli.egg-info/SOURCES.txt
+zinc_cli.egg-info/dependency_links.txt
+zinc_cli.egg-info/top_level.txt
