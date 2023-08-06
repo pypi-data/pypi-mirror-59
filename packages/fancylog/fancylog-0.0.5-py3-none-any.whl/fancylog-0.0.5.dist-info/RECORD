@@ -1,0 +1,12 @@
+fancylog/__init__.py,sha256=TVxKKgo7RxHGb53wEg_AtuTXL1ShFcXBWBvTput2Psk,488
+fancylog/fancylog.py,sha256=NRpEsq4gPAWde6DUfk-Q3HScNNxYlk8Pw3ozKWymVG4,8350
+fancylog/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fancylog/tools/git.py,sha256=iA35IYfcmk19Lapr3JgpUnDogL2s6l0IIpRgMulBBkw,1600
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/tests/test_DUMMY.py,sha256=aKpSc1LqB82XsL8ThkW4U83vj9ccOBJ5dktjs5XOu2Y,38
+fancylog-0.0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fancylog-0.0.5.dist-info/METADATA,sha256=-BkMz7H1CB9sdO2Ann781uiV9auEeQsN15qeL2lvQpU,743
+fancylog-0.0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+fancylog-0.0.5.dist-info/top_level.txt,sha256=GFp44EEm8bUWaC5rQuY1bVRzRlMlMHBjKJ-uY6abt2U,15
+fancylog-0.0.5.dist-info/RECORD,,
