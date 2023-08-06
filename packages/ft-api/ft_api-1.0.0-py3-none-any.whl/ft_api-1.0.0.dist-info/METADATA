@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ft-api
+Version: 1.0.0
+Summary: api for 42
+Home-page: http://github.com/YutaUra/42-api
+Author: Yuta Ura
+Author-email: yuuta3594@outlook.jp
+License: MIT
+Requires-Dist: requests (==2.22.0)
+
+# 42 API Module
+
+
