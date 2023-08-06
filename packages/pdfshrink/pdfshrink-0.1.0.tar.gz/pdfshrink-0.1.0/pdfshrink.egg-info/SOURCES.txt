@@ -1,0 +1,9 @@
+README.md
+setup.py
+pdfshrink/__init__.py
+pdfshrink.egg-info/PKG-INFO
+pdfshrink.egg-info/SOURCES.txt
+pdfshrink.egg-info/dependency_links.txt
+pdfshrink.egg-info/entry_points.txt
+pdfshrink.egg-info/requires.txt
+pdfshrink.egg-info/top_level.txt

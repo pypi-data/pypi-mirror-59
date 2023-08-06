@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pdfshrink
+Version: 0.1.0
+Summary: Script of shrink PDF files (wrapper around GhostScript)
+Home-page: https://github.com/tdegeus/pdfshrink
+Author: Tom de Geus
+Author-email: tom@geus.me
+License: MIT
+Description: Script of shrink PDF files (wrapper around GhostScript)
+Keywords: PDF,GhostScript
+Platform: UNKNOWN
