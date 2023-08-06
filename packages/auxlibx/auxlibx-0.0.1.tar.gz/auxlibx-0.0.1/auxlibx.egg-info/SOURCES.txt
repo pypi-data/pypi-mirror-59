@@ -1,0 +1,13 @@
+README.md
+setup.py
+auxlibx/__init__.py
+auxlibx/np_utils.py
+auxlibx/pd_utils.py
+auxlibx/plot_utils.py
+auxlibx.egg-info/PKG-INFO
+auxlibx.egg-info/SOURCES.txt
+auxlibx.egg-info/dependency_links.txt
+auxlibx.egg-info/requires.txt
+auxlibx.egg-info/top_level.txt
+tests/__init__.py
+tests/test_lib.py
