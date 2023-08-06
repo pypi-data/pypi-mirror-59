@@ -1,0 +1,108 @@
+#!python
+# Prints out a menu of all the options the user has
+def printMenu():
+	print()
+	print('A. How many characters are in the string?')
+	print('B. How many letters are in the string?')
+	print('C. How many vowels are in the string?')
+	print('D. Is the string a palindrome?')
+	print('E. What is the Caesar Cipher (shift 3) of the string?')
+	print('F. New string')
+	print('Q. Quit?')
+    
+
+# Whitespace is a character according to Unicode
+# Counts the number of characters in the string
+def lengthChar(Words):
+	print('There are {} characters in the string'.format(len(Words)))
+
+# Uses Unicode numbers to see if each character in string is a letter
+def numLetters(Words):
+	Words = Words.lower()
+	Words = Words.replace(' ', '')
+	count = 0 
+	for char in Words:
+		if (ord(char) >= 97) and (ord(char) <= 122):
+			count += 1
+	print('There are {} letters in the string'.format(count))
+
+# Uses a list of vowels to check and count number of vowels in string
+def numVowels(Words):
+	vowels = ['a', 'e', 'i', 'o', 'u']
+	count = 0
+	for char in Words:
+		if char in vowels:
+			count +=1
+	print('There are {} vowels in the string'.format(count))
+
+# Creates a reverse of the string and then compares it to original
+def palindrome(Words):
+	revString = ''
+	length = len(Words)
+	for i in range(length-1, -1, -1):
+		revString += Words[i]
+	if revString == Words:
+		print('Yes your string is a palindrome')
+	else:
+		print('Not a palindrome')
+
+# Adds 3 to the ordinal of the original charactar then adds it to newWord
+def caesar(Words):
+	newWord = ''
+	for char in Words:
+		if ord(char) >= 97 and ord(char) <= 119:
+			newWord += chr(ord(char) + 3)
+		elif char == ' ':
+			newWord += ' '
+		elif ord(char) >= 120 and ord(char) < 123:
+			newWord += chr(ord(char) - 23)
+		else:
+			print('Please put in letters only')
+			break
+	else:
+		print(newWord)
+
+def newString():
+	new = input('What do you want the new string to be? ')
+	return new
+
+# Ends the program
+def Quit():
+	print('Please come again')
+	quit()
+
+# Creates the selection logic for the menu
+def doOperation(selection):
+	if selection == 'A':
+		lengthChar(yourString)
+	elif selection == 'B':
+		numLetters(yourString)
+	elif selection == 'C':
+		numVowels(yourString)
+	elif selection == 'D':
+		palindrome(yourString)
+	elif selection == 'E':
+		caesar(yourString)
+	elif selection == 'Q':
+		Quit()
+	elif selection == 'F':
+		None
+	else:
+		print('Please choose A, B, C, D, E or Q next time')
+
+# String is inputted and menu is printed
+yourString = input('Please type out a string\n>>>')
+printMenu()
+print('-'*50)
+print('\nYour string is ---{}---'.format(yourString))
+print('-'*50)
+
+# Loop that continues the doOperation() function until quit()
+while True:
+	response = input('\nYour choice? ')
+	if response.upper() == 'F':
+		yourString = input('What do you want the new string to be? ')
+		print('-'*50)
+		print('\nYour new string is ---{}---'.format(yourString))
+		print('-'*50)
+	doOperation(response.upper())
