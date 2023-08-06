@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: kube-manifest-lint
+Version: 0.1.3
+Summary: Kubernetes manifest linter using JSON Schema
+Home-page: https://codeberg.org/hjacobs/kube-manifest-lint
+License: GPL-3.0+
+Author: Henning Jacobs
+Author-email: henning@jacobs1.de
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: PyYAML (>=5.3,<6.0)
+Requires-Dist: jsonschema (>=3.2.0,<4.0.0)
+Project-URL: Repository, https://codeberg.org/hjacobs/kube-manifest-lint
+Description-Content-Type: text/markdown
+
+# Kubernetes Manifest Linter
+
+[![Build Status](https://travis-ci.com/hjacobs/kube-manifest-lint.svg?branch=master)](https://travis-ci.com/hjacobs/kube-manifest-lint)
+[![PyPI](https://img.shields.io/pypi/v/kube-manifest-lint)](https://pypi.org/project/kube-manifest-lint/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/kube-manifest-lint)
+![License](https://img.shields.io/github/license/hjacobs/kube-manifest-lint)
+
+Validate Kubernetes YAML manifests against JSON schema.
+
+Usage:
+
+```
+pip3 install kube-manifest-lint
+kube-manifest-lint my-deployment.yaml
+```
+
