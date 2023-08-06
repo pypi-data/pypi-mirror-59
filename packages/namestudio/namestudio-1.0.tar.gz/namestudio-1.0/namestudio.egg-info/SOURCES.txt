@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+namestudio/__init__.py
+namestudio/api.py
+namestudio/utils.py
+namestudio.egg-info/PKG-INFO
+namestudio.egg-info/SOURCES.txt
+namestudio.egg-info/dependency_links.txt
+namestudio.egg-info/requires.txt
+namestudio.egg-info/top_level.txt
