@@ -1,0 +1,11 @@
+pandas
+numpy
+scipy
+operator
+itertools
+numpy-groupies
+numba
+datetime
+python-dateutil
+ipython
+html
