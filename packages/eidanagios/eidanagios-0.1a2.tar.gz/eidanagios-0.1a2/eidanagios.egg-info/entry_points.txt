@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        check_EIDA_auth=eidanagios.check_EIDA_auth:main
+    
