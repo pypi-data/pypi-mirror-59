@@ -1,0 +1,7 @@
+vagrant/__init__.py,sha256=P1tTAAc1A6hFnnf7pNFF9h19fQNdGF29_bh9oGtI_rg,46019
+vagrant/compat.py,sha256=zonGqKCtLY29Y_zXXeEe9uTPebG6AGclmDO7COsSvog,506
+vagrant/test.py,sha256=KJ3lsuZ5mDdNc20Dp0qTK-8CH5RCvyNmRHT7cpogjgQ,3435
+vagrantpy-0.6.0.dist-info/METADATA,sha256=i6oqJVep1vY3GQLkd4pd3HHlXlHlVpz6tgyKye2RYSY,8559
+vagrantpy-0.6.0.dist-info/RECORD,,
+vagrantpy-0.6.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+vagrantpy-0.6.0.dist-info/top_level.txt,sha256=bQFqooeZAVJUjwpBQEjC7e6n-EtIKTyrIVBvhmSfebg,8
