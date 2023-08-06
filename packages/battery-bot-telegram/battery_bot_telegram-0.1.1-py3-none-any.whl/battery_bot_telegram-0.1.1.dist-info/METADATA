@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: battery-bot-telegram
+Version: 0.1.1
+Summary: Telegram bot that notifies when battery is low
+Author: Tomasz Walotek
+Author-email: tomasz.walotek@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: psutil (>=5.6,<6.0)
+Requires-Dist: python-telegram-bot (>=12.2,<13.0)
