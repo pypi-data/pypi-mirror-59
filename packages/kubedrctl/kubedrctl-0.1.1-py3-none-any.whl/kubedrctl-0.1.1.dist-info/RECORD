@@ -1,0 +1,11 @@
+kubedrctl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kubedrctl/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kubedrctl/cli/context.py,sha256=N2bSEIWbpsPjSblZTzAcRY2z0v0FX3KDX3d0LhmPwlg,177
+kubedrctl/cli/kubedrctl.py,sha256=k06P0WelsqNaE2RpVlHBVYQ_JOcDzd9VV4jxhpL62Dw,2014
+kubedrctl/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kubedrctl/common/util.py,sha256=uiEy_ZHCh5HiR0tWRgDO5Daq0tIZj-tzaOxc8ZrtzUc,1147
+kubedrctl-0.1.1.dist-info/METADATA,sha256=GvhW8YNfS8gQIL3w5__actv6-hGPaR3DBxeoVSE1FSs,1724
+kubedrctl-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+kubedrctl-0.1.1.dist-info/entry_points.txt,sha256=WLOEm6Bkpzc9lsxO7h58JCpRkhWkfmuaF7avjQbPIDw,60
+kubedrctl-0.1.1.dist-info/top_level.txt,sha256=QDll2HNwiCxPO0_gFoACDkE0V7Xe35DUYAPlMn6jnVY,10
+kubedrctl-0.1.1.dist-info/RECORD,,
