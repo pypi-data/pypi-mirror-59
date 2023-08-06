@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/pynwb/ndx_labmetadata_giocomo/__init__.py
+src/pynwb/ndx_labmetadata_giocomo/test.py
+src/pynwb/ndx_labmetadata_giocomo.egg-info/PKG-INFO
+src/pynwb/ndx_labmetadata_giocomo.egg-info/SOURCES.txt
+src/pynwb/ndx_labmetadata_giocomo.egg-info/dependency_links.txt
+src/pynwb/ndx_labmetadata_giocomo.egg-info/not-zip-safe
+src/pynwb/ndx_labmetadata_giocomo.egg-info/requires.txt
+src/pynwb/ndx_labmetadata_giocomo.egg-info/top_level.txt
+src/pynwb/ndx_labmetadata_giocomo/spec/ndx-labmetadata-giocomo.extensions.yaml
+src/pynwb/ndx_labmetadata_giocomo/spec/ndx-labmetadata-giocomo.namespace.yaml

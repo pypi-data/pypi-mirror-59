@@ -1,0 +1,29 @@
+groups:
+- neurodata_type_def: LabMetaData_ext
+  neurodata_type_inc: LabMetaData
+  doc: type for storing lab metadata
+  attributes:
+  - name: acquisition_sampling_rate
+    dtype: float
+    doc: acquisition sampling rate in Hz
+  - name: number_of_electrodes
+    dtype: int
+    doc: number of electrodes on the probe
+  - name: file_path
+    dtype: text
+    doc: filepath for where the raw data is saved
+  - name: bytes_to_skip
+    dtype: int
+    doc: the number of bytes at the beginning of the file to skip
+  - name: raw_data_dtype
+    dtype: text
+    doc: data type (dtype) of raw voltage data
+  - name: high_pass_filtered
+    dtype: bool
+    doc: binary variable as to whether raw data was high-pass filtered or not
+  - name: movie_start_time
+    dtype: float
+    doc: the time the mouse visualization movie started playing
+  - name: subject_brain_region
+    dtype: text
+    doc: the name of the brain region where the electrode probe is recording from
