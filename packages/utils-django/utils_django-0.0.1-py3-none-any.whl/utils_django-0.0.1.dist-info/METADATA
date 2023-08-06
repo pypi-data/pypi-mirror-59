@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: utils-django
+Version: 0.0.1
+Summary: Gerenciador de importação.
+Home-page: https://gitlab.com/semus/integracao_externa/utils_django
+Author: Paulo Roberto Cruz
+Author-email: paulo.cruz9@gmail.com
+License: BSD
+Download-URL: https://gitlab.com/semus/integracao_externa/utils_django
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Security
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: Django (>=3.0)
+
+Classes uteis para o desenvolvimento de projeto usando djando
+
+
