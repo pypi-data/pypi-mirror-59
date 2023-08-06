@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: Topsis_lovish_101703312
+Version: 0.1
+Summary: This library has got the implementation of topsis approach
+Home-page: https://github.com/lovishjindal2503/TOPSIS_project1/tree/master/Topsis_lovish_101703312
+Author: Lovish Jindal
+Author-email: lovishjindal2503@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: topsis,lovish,101703312
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
