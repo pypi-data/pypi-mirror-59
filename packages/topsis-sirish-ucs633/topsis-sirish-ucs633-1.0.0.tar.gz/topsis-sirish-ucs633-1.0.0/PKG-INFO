@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: topsis-sirish-ucs633
+Version: 1.0.0
+Summary: A python package to implement topsis(MCDM)
+Home-page: https://github.com/sirishbhu/topsis
+Author: Sirish Bhuolia
+Author-email: sirishbhudolia88@gmail.com
+License: UNKNOWN
+Description: This is a python package to implement Topsis(Multi Criteria Decision Making)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

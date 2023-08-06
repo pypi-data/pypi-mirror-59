@@ -1,0 +1,8 @@
+README.md
+setup.py
+mypackage/__init__.py
+mypackage/topsis.py
+topsis_sirish_ucs633.egg-info/PKG-INFO
+topsis_sirish_ucs633.egg-info/SOURCES.txt
+topsis_sirish_ucs633.egg-info/dependency_links.txt
+topsis_sirish_ucs633.egg-info/top_level.txt
