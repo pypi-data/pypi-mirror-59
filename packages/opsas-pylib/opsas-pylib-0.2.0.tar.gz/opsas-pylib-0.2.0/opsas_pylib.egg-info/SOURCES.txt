@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+opsas_pylib.egg-info/PKG-INFO
+opsas_pylib.egg-info/SOURCES.txt
+opsas_pylib.egg-info/dependency_links.txt
+opsas_pylib.egg-info/requires.txt
+opsas_pylib.egg-info/top_level.txt
