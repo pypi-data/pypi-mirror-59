@@ -1,0 +1,16 @@
+README.md
+setup.py
+macrobond_api_constants/CalendarDateMode.py
+macrobond_api_constants/CalendarMergeMode.py
+macrobond_api_constants/MetadataValueType.py
+macrobond_api_constants/SeriesFrequency.py
+macrobond_api_constants/SeriesMissingValueMethod.py
+macrobond_api_constants/SeriesPartialPeriodsMethod.py
+macrobond_api_constants/SeriesToHigherFrequencyMethod.py
+macrobond_api_constants/SeriesToLowerFrequencyMethod.py
+macrobond_api_constants/SeriesWeekdays.py
+macrobond_api_constants/__init__.py
+macrobond_api_constants.egg-info/PKG-INFO
+macrobond_api_constants.egg-info/SOURCES.txt
+macrobond_api_constants.egg-info/dependency_links.txt
+macrobond_api_constants.egg-info/top_level.txt
