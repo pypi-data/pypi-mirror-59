@@ -1,0 +1,10 @@
+README.md
+setup.py
+goda/__init__.py
+goda.egg-info/PKG-INFO
+goda.egg-info/SOURCES.txt
+goda.egg-info/dependency_links.txt
+goda.egg-info/top_level.txt
+goda/cleaner/__init__.py
+goda/collector/__init__.py
+goda/standard/__init__.py

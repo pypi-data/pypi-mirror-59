@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: goda
+Version: 0.0.1
+Summary: Python library to work with government open data
+Home-page: https://github.com/Charles-Darwing-Data-Community/goda
+Author: Pablo Sierra
+Author-email: pavelsjo@gmail.com
+License: UNKNOWN
+Description: --------------------------------------------------------
+        # goda: Python library to work with government open data
+        
+        ## What is it?
+        
+        Description...
+        
+        ## Main Features
+         
+        Description...
+        
+        ## Where to get it
+        Description...
+        
+        ## Dependencies
+        
+        - [pandas](https://pandas.pydata.org/index.html)
+        - [geopandas](geopandas)
+        
+        ## License
+        
+        [BSD 3](https://github.com/Charles-Darwing-Data-Community/goda/blob/master/LICENSE)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
