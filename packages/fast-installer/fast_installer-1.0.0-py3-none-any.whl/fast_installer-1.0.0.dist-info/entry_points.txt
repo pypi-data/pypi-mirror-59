@@ -1,0 +1,3 @@
+[console_scripts]
+fastinstall = fast_installer:main
+

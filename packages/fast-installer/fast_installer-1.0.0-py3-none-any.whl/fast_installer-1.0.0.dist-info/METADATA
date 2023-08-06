@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fast-installer
+Version: 1.0.0
+Summary: fast pythonic installer for projects using yaml config
+Home-page: UNKNOWN
+Author: Elran Shefer
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: fast installer
+Platform: UNKNOWN
+Requires-Dist: attrdict
+Requires-Dist: docopt
+Requires-Dist: inquirer
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+
