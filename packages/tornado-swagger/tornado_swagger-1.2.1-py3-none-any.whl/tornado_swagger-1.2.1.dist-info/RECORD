@@ -1,0 +1,12 @@
+tornado_swagger/__init__.py,sha256=kmfHpHo2YhSrigutlRQs8qXIR8nEm-D-c8lScQQN64M,22
+tornado_swagger/_builders.py,sha256=Ql6nglM9u8PO4_ZJHLHpBIF4cszA7Wt9I5wrs5WjZlM,4514
+tornado_swagger/_handlers.py,sha256=tjRBcJ0A-EU17OgiWib6kh9SjSZ1orDrBM_O0g4VIz0,269
+tornado_swagger/model.py,sha256=VXMRTKngltTGtMRT1N_qkjdkRetMGKmqEHvM0qzHJcI,350
+tornado_swagger/setup.py,sha256=VswH4qm21Lj1KvAMVc2XPB-4HqQc5AEOtHwEe6593vk,2372
+tornado_swagger/swagger_ui/ui.jinja2,sha256=CnbGavcQE2qc9lhUv17pI-iXVCZQbe_kbD7BWaq1fxU,1612
+tornado_swagger/templates/swagger.yaml,sha256=i5u2d4dgxIuNn9xUQomSSSVovcdwNdlT5zhejswte-8,315
+tornado_swagger-1.2.1.dist-info/LICENSE,sha256=e90hMcIOQxJqet2EiYXPUn6KwzVV4orFaRahBRQWSyI,1061
+tornado_swagger-1.2.1.dist-info/METADATA,sha256=9qCxpUAM8lDYV7TAQcc9hSLj5xk1laLKAUFD07P9m4A,4832
+tornado_swagger-1.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tornado_swagger-1.2.1.dist-info/top_level.txt,sha256=p9sUvLmNimKCYAgemJqfa8XUG7-RopCWwmrG6fCnzvA,16
+tornado_swagger-1.2.1.dist-info/RECORD,,
