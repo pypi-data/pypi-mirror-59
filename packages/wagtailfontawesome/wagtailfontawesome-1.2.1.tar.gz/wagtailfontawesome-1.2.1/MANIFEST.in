@@ -1,0 +1,3 @@
+recursive-include wagtailfontawesome/static *
+recursive-include wagtailfontawesome/templates *
+recursive-include wagtailfontawesome/templatetags *
