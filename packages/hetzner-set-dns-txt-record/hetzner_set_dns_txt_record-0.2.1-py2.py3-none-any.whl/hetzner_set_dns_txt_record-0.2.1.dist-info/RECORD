@@ -1,0 +1,8 @@
+hetzner_set_dns_txt_record/__init__.py,sha256=12tOQh_mHLXFrZbYt9bEbSaIz5dFWRcLmxX0_IyvTQ8,19
+hetzner_set_dns_txt_record/api.py,sha256=Z6n4X71wfZdciweIGe6yCmrlM2hky4F4TvVtPuBKSFE,4758
+hetzner_set_dns_txt_record-0.2.1.data/scripts/hetzner_set_dns_txt.py,sha256=_k4OLcxuKvoz0ZEV2jcS_Ch1hU--wq7Q7W89jFL3HBI,4532
+hetzner_set_dns_txt_record-0.2.1.dist-info/LICENSE.md,sha256=1CEIdqP_O5KCZaG2jdJG1CzJOpLboWxYuMPvd4NWAyY,734
+hetzner_set_dns_txt_record-0.2.1.dist-info/METADATA,sha256=i-6N0t62QFUHz9HPEO3JMJNTnEt4Z2l7OP04myy8kh4,725
+hetzner_set_dns_txt_record-0.2.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+hetzner_set_dns_txt_record-0.2.1.dist-info/top_level.txt,sha256=z9Kn7-CxD-Rw9p0FA1ECyiko3ACWbDWdEg2xttZ2278,27
+hetzner_set_dns_txt_record-0.2.1.dist-info/RECORD,,
