@@ -1,0 +1,8 @@
+README.md
+setup.py
+tpsisar18/__init__.py
+tpsisar18/topsis.py
+tpsisar18.egg-info/PKG-INFO
+tpsisar18.egg-info/SOURCES.txt
+tpsisar18.egg-info/dependency_links.txt
+tpsisar18.egg-info/top_level.txt
