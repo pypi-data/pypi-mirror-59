@@ -1,0 +1,4 @@
+#!/bin/sh
+cd /var/lib/pagermaid
+source venv/bin/activate
+exec chpst -u pagermaid:pagermaid:wheel:tty:video /usr/bin/env python3 -m pagermaid
