@@ -1,0 +1,11 @@
+photosynthesis_metrics/__init__.py,sha256=V-ZYtKl_FCJRmqsbp_Lz4bBXf7vyDqPTsbaD82bj7yw,70
+photosynthesis_metrics/fid.py,sha256=bsG8yxMUeeABIcxNhZZbzO4HBC3MPO1FFPhU3tCWtM8,1414
+photosynthesis_metrics/kid.py,sha256=unyDWt7gcqFlvpIW3mVk0Bpvemk34mrhf6Bx5rJ3PJ0,5324
+photosynthesis_metrics/ssim.py,sha256=imNrjy-SzTg3WITF2yhd-1F5e0-5k1TkLvgC0IUShhI,22896
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ssim.py,sha256=0QpbaWyAmWAm0RBhBaUPjjkUCJt87GvGButBzXyrvj8,10118
+photosynthesis_metrics-0.0.2.dist-info/LICENSE,sha256=9Jsm75Py4WAgpRVHXigFioWiTOsvnF6mVT5clqoQcoM,1076
+photosynthesis_metrics-0.0.2.dist-info/METADATA,sha256=vrqPaqBqjzry-NOpQu-x8x8raAGBH79jbh88nXb19Z0,4938
+photosynthesis_metrics-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+photosynthesis_metrics-0.0.2.dist-info/top_level.txt,sha256=TzoBf2DIRUAsiTTPiYOHGddkYdGEPgVwD7tuinwGpHU,29
+photosynthesis_metrics-0.0.2.dist-info/RECORD,,
