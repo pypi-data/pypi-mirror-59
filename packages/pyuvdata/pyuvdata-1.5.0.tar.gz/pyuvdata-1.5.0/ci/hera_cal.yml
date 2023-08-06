@@ -1,0 +1,19 @@
+name: hera_cal
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - aipy
+  - astropy
+  - cached-property
+  - h5py
+  - astropy-healpix
+  - matplotlib
+  - pytest
+  - numpy
+  - pandas
+  - pyyaml
+  - scikit-learn
+  - scipy
+  - six
+  - basemap
