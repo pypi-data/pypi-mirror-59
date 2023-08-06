@@ -1,0 +1,3 @@
+[console_scripts]
+url-to-desktop = src.conversor:main
+

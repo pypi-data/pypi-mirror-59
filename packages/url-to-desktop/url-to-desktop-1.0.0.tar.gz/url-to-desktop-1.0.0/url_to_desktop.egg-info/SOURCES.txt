@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/__init__.py
+src/conversor.py
+url_to_desktop.egg-info/PKG-INFO
+url_to_desktop.egg-info/SOURCES.txt
+url_to_desktop.egg-info/dependency_links.txt
+url_to_desktop.egg-info/entry_points.txt
+url_to_desktop.egg-info/requires.txt
+url_to_desktop.egg-info/top_level.txt
