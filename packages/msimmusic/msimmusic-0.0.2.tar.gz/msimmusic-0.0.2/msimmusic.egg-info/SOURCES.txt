@@ -1,0 +1,8 @@
+README.md
+setup.py
+msimmusic/__init__.py
+msimmusic/msimmusic.py
+msimmusic.egg-info/PKG-INFO
+msimmusic.egg-info/SOURCES.txt
+msimmusic.egg-info/dependency_links.txt
+msimmusic.egg-info/top_level.txt
