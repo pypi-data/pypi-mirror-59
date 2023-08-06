@@ -1,0 +1,12 @@
+ocr/DetectChars.py,sha256=cT5rbU54gjMYsIDshBZNGSbAxHgwGjtHdN0qQXw-2Rc,22793
+ocr/DetectPlates.py,sha256=aYtcUMTt_fLY_7u0fn4rxOYm_yN1cOkL2lGIe7Z67Hs,10370
+ocr/Main.py,sha256=Q93HwmFY4BNoG2-ASYR8jRdBmnFdUlf4_gRu1o4nmNg,7182
+ocr/PossibleChar.py,sha256=b9anKRfCXyWGsU4uu40DZXo3AyF7PIjDJEPcU7Q_xm4,1240
+ocr/PossiblePlate.py,sha256=22qVwjfxQYjpBwUQ1Y5kWCGOT13xBlFKRoZ_H9Wc6i0,526
+ocr/Preprocess.py,sha256=bbMkJtBmwsYRPyc9XiAdJNVs27OZB7cAaQ9ufIJFtYU,2124
+ocrzzz-1.0.0.dist-info/LICENSE,sha256=ibQO6WNqw08tQcaFjYKt_vmmNBCkFa_ee05YLnEwHaM,1033
+ocrzzz-1.0.0.dist-info/METADATA,sha256=92MhlgZfdXyegqLIe_RM-ewYNaf0CFofi1m3Nm9dzxc,532
+ocrzzz-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ocrzzz-1.0.0.dist-info/entry_points.txt,sha256=ggQe8M9_DYAtMSYGVkPY2sFe5Dz3ta3XEeosWLq0vUo,39
+ocrzzz-1.0.0.dist-info/top_level.txt,sha256=KyNJgRLJaoLguntMg1qobvoOzL2HjR8AZvH6i15mAow,4
+ocrzzz-1.0.0.dist-info/RECORD,,

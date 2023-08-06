@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ocrzzz
+Version: 1.0.0
+Summary: A Python package to get ocr.
+Home-page: https://github.com/utkarsh-pro/ocr
+Author: Test
+Author-email: test@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+
+The video pretty much explains it all:
+https://www.youtube.com/watch?v=fJcl6Gw1D8k
+
+
