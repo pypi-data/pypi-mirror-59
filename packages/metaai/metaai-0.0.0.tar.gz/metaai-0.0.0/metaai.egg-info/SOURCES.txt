@@ -1,0 +1,8 @@
+README.md
+setup.py
+metaai/__init__.py
+metaai/version.py
+metaai.egg-info/PKG-INFO
+metaai.egg-info/SOURCES.txt
+metaai.egg-info/dependency_links.txt
+metaai.egg-info/top_level.txt
