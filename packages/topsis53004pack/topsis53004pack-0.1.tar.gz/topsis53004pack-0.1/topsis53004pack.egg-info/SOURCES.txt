@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+topsis53004pack/__init__.py
+topsis53004pack/topsispack.py
+topsis53004pack.egg-info/PKG-INFO
+topsis53004pack.egg-info/SOURCES.txt
+topsis53004pack.egg-info/dependency_links.txt
+topsis53004pack.egg-info/not-zip-safe
+topsis53004pack.egg-info/top_level.txt

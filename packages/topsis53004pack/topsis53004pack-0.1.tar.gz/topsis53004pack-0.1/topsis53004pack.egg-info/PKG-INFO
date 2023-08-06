@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: topsis53004pack
+Version: 0.1
+Summary: Library that implements the "The Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS)"
+Home-page: https://github.com/Ashutosh2088/topsis53004pack
+Author: Ashutosh Rattan
+Author-email: ashutosh544@gmail.com
+License: MIT
+Download-URL: https://github.com/Ashutosh2088/topsis53004pack/archive/v0.1.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
