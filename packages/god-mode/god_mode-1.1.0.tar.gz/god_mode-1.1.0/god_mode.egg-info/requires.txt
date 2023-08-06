@@ -1,0 +1,4 @@
+pyAesCrypt==0.4.2
+colorama==0.4.1
+PyYAML==3.13
+binaryornot==0.4.4
