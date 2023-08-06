@@ -1,0 +1,5 @@
+[console_scripts]
+crypt = god_mode.crypt:main
+crypt2 = god_mode.crypt2.main
+god-mode = god_mode.crypt2.main
+
