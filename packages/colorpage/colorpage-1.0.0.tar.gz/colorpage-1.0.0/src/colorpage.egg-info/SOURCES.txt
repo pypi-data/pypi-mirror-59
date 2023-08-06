@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+data/data_file
+src/colorpage/__init__.py
+src/colorpage/package_data.dat
+src/colorpage/shipwright.py
+src/colorpage.egg-info/PKG-INFO
+src/colorpage.egg-info/SOURCES.txt
+src/colorpage.egg-info/dependency_links.txt
+src/colorpage.egg-info/entry_points.txt
+src/colorpage.egg-info/not-zip-safe
+src/colorpage.egg-info/requires.txt
+src/colorpage.egg-info/top_level.txt
