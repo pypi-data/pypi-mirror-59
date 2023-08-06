@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+insulter.egg-info/PKG-INFO
+insulter.egg-info/SOURCES.txt
+insulter.egg-info/dependency_links.txt
+insulter.egg-info/entry_points.txt
+insulter.egg-info/top_level.txt

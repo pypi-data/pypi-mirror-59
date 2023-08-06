@@ -1,0 +1,3 @@
+[console_scripts]
+ish = insulter:main
+
