@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ADFDeployer
+Version: 1.0.0a2
+Summary: Continuously deploy an Azure Data Factory repository.
+Home-page: https://github.com/ProRailBDAP/adf-deployer
+Author: ProRail DataTeam
+Author-email: d&a_datateam@prorail.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Version Control :: Git
+Description-Content-Type: text/markdown
+Requires-Dist: azure-common (>=1.1.24)
+Requires-Dist: requests (>=2.22.0)
+
+# ADF Deployer
+Deploys changes to an Azure Data Factory instance.
+
+## Requirements
+ - Python 3.x
+
+
