@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: stormreply.cdk-openapi
+Version: 0.0.6
+Summary: @stormreply/cdk-openapi
+Home-page: https://github.com/stormreply/cdk-openapi.git
+Author: Henning Teek<h.teek@reply.com>
+License: Apache-2.0
+Project-URL: Source, https://github.com/stormreply/cdk-openapi.git
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Typing :: Typed
+Classifier: License :: OSI Approved
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: jsii (~=0.21.1)
+Requires-Dist: publication (>=0.0.3)
+Requires-Dist: aws-cdk.core (<2.0.0,>=1.20.0)
+
+# cdk-openapi
+
+An AWS CDK construct which generates API Gateway exposed Lambda functions
+from an OpenAPI specification in your stack.
+
+## Usage
+
+### JavaScript
+
+Install via npm:
+
+```shell
+$ npm i @stormreply/cdk-openapi
+```
+
+Add to your CDK stack:
+
+```python
+# Example automatically generated without compilation. See https://github.com/aws/jsii/issues/826
+from stormreply.cdk_openapi import OpenAPI, OpenAPIProps
+
+api = OpenAPI(self, "SampleAPI",
+    api="api.yaml"
+)
+```
+
+### Python
+
+Install via pip:
+
+```shell
+$ pip install stormreply.cdk-openapi
+```
+
+Add to your CDK stack:
+
+```python
+from stormreply.cdk_openapi import (
+    OpenAPI,
+    OpenAPIProps,
+)
+
+api = OpenAPI(
+    self, "SampleAPI", {
+      api='api.yaml'
+    }
+)
+```
+
+## License
+
+Apache 2.0
+
+
