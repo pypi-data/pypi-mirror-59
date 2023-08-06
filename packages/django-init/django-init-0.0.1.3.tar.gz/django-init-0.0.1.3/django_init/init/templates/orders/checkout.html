@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+{% load thumbnail static seo i18n %}
+
+{% block meta_seo %}
+    {% meta_seo page %}
+{% endblock %}
+
+{% block content %}
+    <div id="content">
+        <div class="container">
+            <ul class="breadcrumb justify-content-md-end justify-content-center">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Checkout - Address</li>
+            </ul>
+            <div class="box text-center">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <h1>Checkout - Address</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="checkout" class="col-lg-9">
+                    <div class="box">
+                        <form method="get" action="checkout2.html">
+                            <ul class="nav nav-pills nav-fill">
+                                <li class="nav-item"><a href="shop-checkout1.html" class="nav-link active"><i
+                                        class="fa fa-map-marker"></i><br>Address</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link disabled"><i
+                                        class="fa fa-truck"></i><br>Delivery Method</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link disabled"><i
+                                        class="fa fa-money"></i><br>Payment Method</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link disabled"><i class="fa fa-eye"></i><br>Order
+                                    Review</a></li>
+                            </ul>
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="firstname">Firstname</label>
+                                            <input id="firstname" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="lastname">Lastname</label>
+                                            <input id="lastname" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.row-->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="company">Company</label>
+                                            <input id="company" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="street">Street</label>
+                                            <input id="street" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.row-->
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="form-group">
+                                            <label for="city">City</label>
+                                            <input id="city" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="form-group">
+                                            <label for="zip">ZIP</label>
+                                            <input id="zip" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="form-group">
+                                            <label for="state">State</label>
+                                            <select id="state" class="form-control"></select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="form-group">
+                                            <label for="country">Country</label>
+                                            <select id="country" class="form-control"></select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="phone">Telephone</label>
+                                            <input id="phone" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input id="email" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.row-->
+                            </div>
+                            <div class="box-footer">
+                                <div class="pull-left"><a href="basket.html" class="btn btn-outline-white-secondary"><i
+                                        class="fa fa-chevron-left"></i>Back to basket</a></div>
+                                <div class="pull-right">
+                                    <button type="submit" class="btn btn-outline-white-primary">Continue to Delivery
+                                        Method<i class="fa fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.box-->
+                </div>
+                <!-- /.col-lg-9-->
+                <div class="col-lg-3">
+                    <div id="order-summary" class="box">
+                        <div class="box-header">
+                            <h3>Order summary</h3>
+                        </div>
+                        <p class="text-muted">Shipping and additional costs are calculated based on the values you have
+                            entered.</p>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td>Order subtotal</td>
+                                    <th>$446.00</th>
+                                </tr>
+                                <tr>
+                                    <td>Shipping and handling</td>
+                                    <th>$10.00</th>
+                                </tr>
+                                <tr>
+                                    <td>Tax</td>
+                                    <th>$0.00</th>
+                                </tr>
+                                <tr class="total">
+                                    <td>Total</td>
+                                    <th>$456.00</th>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-3-->
+            </div>
+        </div>
+    </div>
+{% endblock %}
