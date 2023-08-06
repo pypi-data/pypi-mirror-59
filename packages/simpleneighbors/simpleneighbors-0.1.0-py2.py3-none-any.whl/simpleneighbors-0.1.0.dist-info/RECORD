@@ -1,0 +1,12 @@
+simpleneighbors/__init__.py,sha256=1l-WasnOZTi8sz2HI2hObPR5MGNMZuyOUGKqaFAVg7E,12230
+simpleneighbors/benchmark.py,sha256=eGuLPrQ6mzy3kBOf-ESK14KiIs0AilUfUYy8D08K_m0,1567
+simpleneighbors/backends/__init__.py,sha256=B6VRSVWkSJhNMywtn30WZNWNLEX5vhYNjKGwPPiV6t8,971
+simpleneighbors/backends/annoy_.py,sha256=hvV2NSn5MP2iOhasHx3nyfMBRYME1r0vgqtT4TL3FJQ,1049
+simpleneighbors/backends/base.py,sha256=1_ATvpHzx5JvYlFFRNalU-HblGaep8ZRHEy5xl_NloY,663
+simpleneighbors/backends/bruteforcepurepython.py,sha256=IgqcTPGnOZb3BIf9u_oY10C5Ef3j-kllbQa9TDEI3P0,2098
+simpleneighbors/backends/sklearn_.py,sha256=9zNqDxnDiEFAQXSk4IkvN6eX6B1wNvpIcH0RHYecr8Q,2161
+simpleneighbors-0.1.0.dist-info/LICENSE.txt,sha256=Tba9LKQLc8NWNRiuyistq0zVltZG4x1k5WBj_f3buuw,1488
+simpleneighbors-0.1.0.dist-info/METADATA,sha256=ZiSak8tFLGvorAbcsHYd8Lo4sY3ZbzcDKA0Ixd3tTPQ,6187
+simpleneighbors-0.1.0.dist-info/RECORD,,
+simpleneighbors-0.1.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+simpleneighbors-0.1.0.dist-info/top_level.txt,sha256=xx2U1ZOofeK0HTdfvsHOSSd7brmpc0_v0bZ2Lyrrtf8,16
