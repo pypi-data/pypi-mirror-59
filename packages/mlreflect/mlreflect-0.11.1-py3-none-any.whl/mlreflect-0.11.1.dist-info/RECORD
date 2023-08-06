@@ -1,0 +1,16 @@
+mlreflect/__init__.py,sha256=_S5sc0JrqTvIJ7MUHELZtGuQ2afyxN5rvEkdeD9nR4k,558
+mlreflect/data_generator.py,sha256=1chRcWOiC52esOVWC39szAvdtMzlyc-tF6otZ0hocs8,18403
+mlreflect/h5_tools.py,sha256=ND_YX_tnCFK-JGweQVVR0aFGuVoD75opw7kBTOG6Uvo,2458
+mlreflect/label_names.py,sha256=WjgmzJDNNKw-G9f61R8QPny0Iaw_X2vL6UhCBDxau6E,1324
+mlreflect/performance_tools.py,sha256=zQ47CoUXwNsyjuiYh0_tRM8_c5cwsEJ4KpSgmy8lMZg,472
+mlreflect/prediction.py,sha256=A5HWaus7K6J1nbqbAIU9FU6jACp_FbCEqW8en92OF9s,2486
+mlreflect/preprocessing.py,sha256=4yT1uq5sjgKhRNxua-VHhIybqxGu8fQAoJ2LrkRrv8A,10654
+mlreflect/reflectivity.py,sha256=AO8NDmceDmIpRf1zwk_-021yjyAuAPcONKuoEGaSbGA,4922
+mlreflect/models/__init__.py,sha256=wlkYBGZ5vc-T1SQ2bvFu009P1xBDf4wM0MHmmLgB7u8,100
+mlreflect/models/model_helpers.py,sha256=t90FTc5LYqbshox5dthqvh0eUzHkjssBLMqeYv4JDc4,1182
+mlreflect/models/simple_model.py,sha256=kHb9-X9gSVJqY9fajnLRDnY2irrfmBseobuErc30RRc,2438
+mlreflect-0.11.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mlreflect-0.11.1.dist-info/METADATA,sha256=HTxbL1fixdkWyF1dJSIpiTsZYpp0ceux8P-yPEfIyyE,354
+mlreflect-0.11.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mlreflect-0.11.1.dist-info/top_level.txt,sha256=wuxx7oVxbgxjWiUq0qRsNta-1Ljr8BKuwp6FH1BMaZw,10
+mlreflect-0.11.1.dist-info/RECORD,,
