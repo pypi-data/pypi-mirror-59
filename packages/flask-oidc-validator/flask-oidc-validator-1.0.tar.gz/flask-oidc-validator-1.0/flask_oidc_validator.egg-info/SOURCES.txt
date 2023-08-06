@@ -1,0 +1,11 @@
+README.md
+setup.py
+flask_oidc_validate/IdTokenValidatorForClient.py
+flask_oidc_validate/IdTokenValidatorForRs.py
+flask_oidc_validate/OidcConfig.py
+flask_oidc_validate/__init__.py
+flask_oidc_validate/tools.py
+flask_oidc_validator.egg-info/PKG-INFO
+flask_oidc_validator.egg-info/SOURCES.txt
+flask_oidc_validator.egg-info/dependency_links.txt
+flask_oidc_validator.egg-info/top_level.txt
