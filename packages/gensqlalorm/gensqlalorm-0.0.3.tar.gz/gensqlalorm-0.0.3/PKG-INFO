@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: gensqlalorm
+Version: 0.0.3
+Summary: a generate sqlarchemy models utils
+Home-page: https://github.com/SUT-GC/gen-sqla-orm
+Author: gouchao
+Author-email: sutgouc@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
