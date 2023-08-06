@@ -1,0 +1,13 @@
+sqlfaker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlfaker/column.py,sha256=wP8iI21hqcDwBKeuR4pKqVN5wOg6oAHhuKpYHtsjlKM,3221
+sqlfaker/database.py,sha256=wMjtMDZFcPGs9iqa82B2RNnAVZzAWLOiGIV_noURmdc,6088
+sqlfaker/foreign_key.py,sha256=8GaLXHF5oGccEFSvq31V8Qkk9sAiuO9MtIlksKXMF-E,3490
+sqlfaker/functions.py,sha256=do-lCGnKR_A4DzjdB9SyH8Sfx8a0iGI7BCeGe2vwGeQ,3291
+sqlfaker/primary_key.py,sha256=o48az0hP9qbogdKhEZ8A-quEpAqoN2Qql2-z_Ig9D6U,1325
+sqlfaker/sql_dictionary.py,sha256=Yng224n0kn91VLSC5zpYcZuPZ_x6MEnBVzYWKrcB3i4,105
+sqlfaker/table.py,sha256=2QXhlSh4TWIJ8vzN1ObpOhNte1fE0GSaBtoDI4HfEdI,6145
+sqlfaker-0.5.dist-info/LICENSE,sha256=xEdLKph7cbi4TXKdYReO5_J4Y8weUwFMuLcVdQbikFw,1095
+sqlfaker-0.5.dist-info/METADATA,sha256=ZD7C4JBeoxiGlLdmr0IfiAH2pYucgiLm1a4Lby-Iik0,3492
+sqlfaker-0.5.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+sqlfaker-0.5.dist-info/top_level.txt,sha256=HsqGLoofMQ7Ykp1Coj27qFQuk0ZSyV-sHyeTebI4E5c,9
+sqlfaker-0.5.dist-info/RECORD,,
