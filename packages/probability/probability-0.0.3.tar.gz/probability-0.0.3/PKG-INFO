@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: probability
+Version: 0.0.3
+Summary: Probability in Python 3
+Home-page: https://github.com/vahndi/probability
+Author: Vahndi Minah
+Author-email: UNKNOWN
+License: MIT
+Download-URL: https://github.com/vahndi/probability/archive/v_0.0.3.tar.gz
+Description: UNKNOWN
+Keywords: python,probability
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
