@@ -1,0 +1,13 @@
+rodlayout/__init__.py,sha256=m6dEJY2xpn8BE6if8d4U6EtIWryZmu7olRIKY56Zu2w,129
+rodlayout/canvas.py,sha256=GyQqAtuRRAopWWoFLID4Gtx7R7tVzA0mcet3ojHIqCo,3015
+rodlayout/layer.py,sha256=Ak-jnnIzFEWJlBdJ0ujAvUx9ImBnVsHxin0_YnLJaTc,235
+rodlayout/proxy.py,sha256=zEtLBywBxeuwRzEWTF5oj9UNpqbsmPN1ykKB8E_EgLA,6166
+rodlayout/transform.py,sha256=bgXCNNoZf0FBo_hMASOJr_tVrzz6DIUF0N_NBr_u17E,446
+rodlayout/version.py,sha256=DQiXHqQ3C29f_--ye7aVMDPnITrl9M0zMU42LYY48zE,22
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_create.py,sha256=esFqdiA7Vq_t68XoYeUso1mlAsHxPwntLQ6iF5-_mBQ,4423
+rodlayout-0.1.5.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+rodlayout-0.1.5.dist-info/METADATA,sha256=EgVu9dRh3wIJipG76yMbTDI0u6HZEwTHVxCqYn8n7ZI,1562
+rodlayout-0.1.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+rodlayout-0.1.5.dist-info/top_level.txt,sha256=lfWykC4PjiyjfEiiidjznSpGxncP3u54eZRQISmlO88,16
+rodlayout-0.1.5.dist-info/RECORD,,
