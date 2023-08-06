@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+rubix_cube/__init__.py
+rubix_cube/cube.py
+rubix_cube/cube_game.py
+rubix_cube/plot_cube_2d.py
+rubix_cube/plot_cube_3d.py
+rubix_cube.egg-info/PKG-INFO
+rubix_cube.egg-info/SOURCES.txt
+rubix_cube.egg-info/dependency_links.txt
+rubix_cube.egg-info/requires.txt
+rubix_cube.egg-info/top_level.txt
+rubix_cube/tests/__init__.py
+rubix_cube/tests/test_cube_game.py
+rubix_cube/util/__init__.py
