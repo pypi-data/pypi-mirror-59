@@ -1,0 +1,15 @@
+jassign/__init__.py,sha256=lWvFZKZwR3anF0rUw8rpdjvWIvLrFPYoT4f1-_DVg1I,20
+jassign/jassign.py,sha256=XvJqHSc2mwad1bNPE-gfkSG5FhkR09i-MS9xooGq_z0,1447
+jassign/jassign_pdf.py,sha256=DXhqnLKjLVnby6ODXlNBz1S_2RH8sOSIPF27MFGIWhs,536
+jassign/test.tplx,sha256=9U1YGA1kk00xhsFDcpV-OkgV-gzgu3S4AUG099ik8qI,749
+jassign/to_ok.py,sha256=4WL991jGAUTmbxQnu5EI8M8iHGEiWQo2WV2y9iEGSbo,13043
+jassign/to_pdf.py,sha256=5k_wtRtYBDl1IJkH_r25O3IHaPjyp7DYFx5Y0LFYZ-g,8958
+tests/__init__.py,sha256=C-XfGd1wNZywgHowvWm45J9_iVWAj4MkCeeQGG5ZMuM,12
+tests/test_export.py,sha256=b_QhpXt74lEJ23LS7bbcMcDprgHEDL7cdB1-JKJAcY4,772
+tests/test_strip.py,sha256=fKfAV1Qjn14j-5-u-GxTKdZJ87a74nVT_0RFsmabJuc,1303
+dsassign-0.0.7.dist-info/LICENSE,sha256=7oPYfWWvfIQiT4vBUtdRHNVNI2YTz8gxK14zKAkOehE,1059
+dsassign-0.0.7.dist-info/METADATA,sha256=bnKWuzEUxWBESWuzgE2GixgxHTqP_LpUyvGnLjFVYRo,5097
+dsassign-0.0.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dsassign-0.0.7.dist-info/entry_points.txt,sha256=3gCkylFHZur870wXoCkTt7B_j5XOtX5_pkHGtCfeCu0,91
+dsassign-0.0.7.dist-info/top_level.txt,sha256=r2ijPh80iqku9YnTZR5NV50UFJXoEtuRgz9Sf9qpbEg,14
+dsassign-0.0.7.dist-info/RECORD,,

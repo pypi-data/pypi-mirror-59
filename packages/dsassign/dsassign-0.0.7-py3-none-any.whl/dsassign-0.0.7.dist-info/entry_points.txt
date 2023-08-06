@@ -1,0 +1,4 @@
+[console_scripts]
+dsassign = jassign.jassign:main
+dsassign-pdf = jassign.jassign_pdf:main
+
