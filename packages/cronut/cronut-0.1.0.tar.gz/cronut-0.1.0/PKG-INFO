@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: cronut
+Version: 0.1.0
+Summary: Tasty event processing with Kafka
+Home-page: https://gitlab.com/myNameIsPatrick/cronut
+Author: Patrick Godwin
+Author-email: patrick.godwin@psu.edu
+License: BSD 3-Clause
+Description: Cronut
+        ======
+        
+        **cronut** is a barebones event processing library using Kafka.
+        
+        ## Quickstart
+        
+        ```python
+        from collections import deque
+        import json
+        
+        from cronut import App
+        
+        d = deque(maxlen=30)
+        
+        app = App('myapp', broker='kafka://localhost:9096')
+        
+        @app.process('topic1')
+        def stateless(message):
+            event = json.loads(message.value())
+            print(event)
+        
+        @app.process('topic2', state=d)
+        def stateful(message, state):
+            event = json.loads(message.value())
+            state.appendleft(event)
+        
+        @app.timer(interval=0.1, state=d)
+        def retrieve(state):
+            event = state.pop()
+            print(event)
+        
+        @app.timer(interval=0.1)
+        def greet():
+            print('howdy')
+        
+        app.start()
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: BSD License
+Description-Content-Type: text/markdown
