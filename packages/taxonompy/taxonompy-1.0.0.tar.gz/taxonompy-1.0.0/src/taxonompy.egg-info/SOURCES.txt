@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+src/taxonompy/__init__.py
+src/taxonompy/taxon.py
+src/taxonompy.egg-info/PKG-INFO
+src/taxonompy.egg-info/SOURCES.txt
+src/taxonompy.egg-info/dependency_links.txt
+src/taxonompy.egg-info/not-zip-safe
+src/taxonompy.egg-info/top_level.txt
+src/taxonompy/parser/__init__.py
+src/taxonompy/parser/xmlparser.py

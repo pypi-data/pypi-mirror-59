@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: taxonompy
+Version: 1.0.0
+Summary: Dedicated library to parse NCBI taxonomy files
+Home-page: https://gitlab.com/ncbipy/taxonompy.git
+Author: Jan P Buchmann
+Author-email: jpb@members.fsf.org
+License: LGPL
+Description: UNKNOWN
+Keywords: bioinformatics NCBI Entrez
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Development Status :: 5 - Production/Stable
