@@ -1,0 +1,14 @@
+rsi/__init__.py,sha256=bpMw7p8iL07c9bwPwxfGefpA8qpP6iGAk5GyrgV7riY,161
+rsi/citizen.py,sha256=WnzddD5X6UEfLLpy7G_fcRVKqajloe-HgF35dlSito4,3361
+rsi/conf.py,sha256=wMyJRAp26azamHM9ZhYx66aWHGLEdTUhepjdHXYT9CU,56
+rsi/org.py,sha256=mDe8uHf-o_Ia46gYZVfTWzQF8BcbC-wWGwTSPpCtdOE,7224
+rsi/session.py,sha256=macSMW9Kc3Naeilua3GP9ZN8u90VklCTPKYVX2oGynE,5532
+rsi/shipmatrix.py,sha256=7tA4D4qZoj62LQvNplQD9by6GyIXGT5Z3FN3IuiSyIg,7037
+rsi/utils.py,sha256=Y0dQicT_jTHeCUtmerywSDIXek4cqznOOlbHy3EnmrI,234
+pyrsi-0.1.10.dist-info/AUTHORS.rst,sha256=e8CJZpXBnsXPM9qfAEJzN0_-UBxjCq-JFhb23T6vQIg,167
+pyrsi-0.1.10.dist-info/LICENSE,sha256=CwPU0RRxsLK7rSVVCgJyD7ljZWvJohl8yAJdttyhiPQ,1094
+pyrsi-0.1.10.dist-info/METADATA,sha256=VSnHwzwwqQPfjPQ9P3Vdl2EYN2vm5O-jkFvt_FiPKww,3156
+pyrsi-0.1.10.dist-info/WHEEL,sha256=aEiWNTQcG6AiGGAYQ9qHTifyKRnmFJvDeTI0hP5aohY,116
+pyrsi-0.1.10.dist-info/top_level.txt,sha256=0EYwjz6nYT4nFBm5Jsob-OdTM8c83P5ch74aE4KHp20,4
+pyrsi-0.1.10.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+pyrsi-0.1.10.dist-info/RECORD,,
