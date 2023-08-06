@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: subkey
+Version: 0.1.0-alpha.3
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Project-Url: https://github.com/zatoichi-labs/py-subkey
+Summary: Python API for working with Substrate keypairs
+Author: Zatoichi Labs <admin@zatoichi-labs.com>
+Author-Email: Zatoichi Labs <admin@zatoichi-labs.com>
+License: GPL-3.0-only
+Requires-Python: >=3.8,<4
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Subkey
+Utilities for working with all valid Substrate keytypes
+
+## Inspiration
+Signification inspiration for this library is credited to:
+- https://github.com/paritytech/substrate (The subkey utility)
+- https://github.com/polkadot-js/common (`@polkadot/keyring`)
+
