@@ -1,0 +1,11 @@
+justext>=2.2.0
+lxml>=4.4.1
+requests>=2.22.0
+
+[all]
+cchardet>=2.0.0
+htmldate>=0.6.0
+langid>=1.1.6
+
+[metadata]
+htmldate>=0.6.0
