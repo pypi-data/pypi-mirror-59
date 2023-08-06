@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: seqtables
+Version: 0.1
+Summary: Package for efficient analysis of next generation sequencing amplicon data using numpy and dataframes
+Home-page: https://github.com/cchrysostomou/seqtables
+Author: Constantine Chrysostomou
+Author-email: cchrysos1@gmail.com
+License: MIT
+Download-URL: https://github.com/cchrysostomou/seqtables/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: NGS,Next generation sequencing,dataframe,protein engineering,amplicon,numpy,variant analysis,sequence logo,enrichment
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
