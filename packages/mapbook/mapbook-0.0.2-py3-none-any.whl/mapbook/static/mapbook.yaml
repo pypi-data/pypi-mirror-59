@@ -1,0 +1,17 @@
+Type: Jupyter Notebook Extension
+Compatibility: 3.x, 4.x, 5.x, 6.x
+Name: MapBook
+Main: main.js
+Link: README.md
+Description: |
+  Allowed to create have Windows Layout manage. 
+  Especially useful for visilization maps, charts etc.
+Parameters:
+- name: mapbook.enable_on_load
+  input_type: checkbox
+  description: enable mapbook on notebook load
+  default: true
+- name: mapbook.add_toolbar_button
+  input_type: checkbox
+  description: add a toolbar button to toggle mapbook on and off for all Markdown/Raw cells
+  default: true
