@@ -1,0 +1,9 @@
+README.md
+setup.py
+lineExtractor/__main__.py
+lineExtractor.egg-info/PKG-INFO
+lineExtractor.egg-info/SOURCES.txt
+lineExtractor.egg-info/dependency_links.txt
+lineExtractor.egg-info/entry_points.txt
+lineExtractor.egg-info/not-zip-safe
+lineExtractor.egg-info/top_level.txt
