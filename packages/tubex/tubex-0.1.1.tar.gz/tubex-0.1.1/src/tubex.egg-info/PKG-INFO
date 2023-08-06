@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: tubex
+Version: 0.1.1
+Summary: Command Line Interface to download and tag MP3 from youtube
+Home-page: https://github.com/ricky-lim/tubex
+Author: Ricky Lim
+Author-email: rlim.email@gmail.com
+License: UNKNOWN
+Description: # Tubex
+        
+        Command Line Interface to download and tag MP3 from youtube.
+        
+        ```
+        tubex download <youtube_playlist_url> --album <album_name> --artist <artist_name>
+        ```
+        
+        ## Example
+        ```bash
+        $ pipx install tubex
+        
+        $ tubex download https://www.youtube.com/playlist?list=PLSdmnemG6jbv1-GRf23jwDsYWkjz7mblP \
+          --album test --artist mixed
+         
+        # Enjoy the music (e.g using `vlc`)
+        $ vlc tubex_out
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
