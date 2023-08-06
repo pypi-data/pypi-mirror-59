@@ -1,0 +1,9 @@
+README.md
+setup.py
+mcos/__init__.py
+mcos/mcos.py
+mcos.egg-info/PKG-INFO
+mcos.egg-info/SOURCES.txt
+mcos.egg-info/dependency_links.txt
+mcos.egg-info/requires.txt
+mcos.egg-info/top_level.txt
