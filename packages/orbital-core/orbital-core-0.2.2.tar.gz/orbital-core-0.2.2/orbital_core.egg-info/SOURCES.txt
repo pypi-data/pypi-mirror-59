@@ -1,0 +1,6 @@
+orbital_core.egg-info/PKG-INFO
+orbital_core.egg-info/SOURCES.txt
+orbital_core.egg-info/dependency_links.txt
+orbital_core.egg-info/entry_points.txt
+orbital_core.egg-info/requires.txt
+orbital_core.egg-info/top_level.txt
