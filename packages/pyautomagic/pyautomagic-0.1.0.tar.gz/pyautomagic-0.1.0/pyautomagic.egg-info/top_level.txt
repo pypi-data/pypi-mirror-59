@@ -1,0 +1,2 @@
+pyautomagic
+tests

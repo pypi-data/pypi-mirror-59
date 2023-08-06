@@ -1,0 +1,1 @@
+git+https://github.com/NeuroDataDesign/pyautomagic#egg=pyautomagic
