@@ -1,0 +1,4 @@
+cryptography~=2.0
+
+[dev]
+unittest-data-provider==1.0.1
