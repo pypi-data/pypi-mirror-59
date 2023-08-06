@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: cogbooks
+Version: 0.9.1
+Summary: Use jupytext to convert instructor markdown files to student notebooks
+Home-page: https://github.com/CogWorksBWSI/Cogbooks
+Author: Petar Griggs
+Author-email: marrs2k@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
