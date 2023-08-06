@@ -1,0 +1,34 @@
+pypama
+-------
+ 
+
+This package provides a pattern matching for list of objects. Just as Regex provides regular expression for
+strings, this package provides regular expression for other type of lists.
+
+An example is worth a thousand words: assume you have a list
+
+>>> example_list = ['a', 'a', 1, '', None, 'b', 'c',  'e']
+
+For some reason, you know that there is an int and a None, and you
+want to extract that number and the 2 strings following the None
+
+>>> from pypama import build_pattern, is_int, is_none
+>>> g = build_pattern((~is_int).star(False), '(', is_int, ')', '.*', is_none, '(',ANY,ANY, ')')
+>>> g.match(example_list).groups()
+[[1], ['b', 'c']]
+
+
+
+  - (~is_int) will matching anything that's not an integer
+  - .star(False): equivalent to \*? in regular expression: repeat as many as necessary
+  - parenthesis are for capturing groups
+  - .\* is short for ANY.star() (match anything, repeatedly)
+  
+Therefore the pattern above reads as follow: match anything that's not an int, repeatedly, 
+until you find an int that you capture in group 1. Then match anything until you
+find a None. That must be followed by two elements that you capture in group 2.
+  
+  
+This is therefore very similar to the ```re``` package, but applied to a list and with 
+matching that goes beyond strings.
+    
