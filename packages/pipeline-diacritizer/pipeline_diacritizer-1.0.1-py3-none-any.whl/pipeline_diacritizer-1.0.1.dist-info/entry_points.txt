@@ -1,0 +1,3 @@
+[console_scripts]
+pipeline_diacritizer = pipeline_diacritizer.pipeline_diacritizer:main
+
