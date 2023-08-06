@@ -1,0 +1,12 @@
+locus_processing/__init__.py,sha256=TN3rnF5AKMJJujY6qXECsOPqKoO3zs3Rv0XsS4FOM84,674
+locus_processing/cli.py,sha256=TPD97q-CL0gk4xFil26ajkrYNZBHfCPaf2FxYD7wAlA,5299
+locus_processing/lookups.py,sha256=xAh1hkyfBez_7OPfcpnmlij5oH52zWQHT1odQ5K4gBQ,1834
+locus_processing/models.py,sha256=m2Hr-Tr3O1HGstQmMtUBUMT-GPZuNluqMhTe5Bo6s3A,7975
+locus_processing/schemas.py,sha256=i2nLqtKkfV_386v61P9_S1CDm-8tiRmarqj7WsqiHCI,3141
+locus_processing/utils.py,sha256=tmtAnvTHuYnnJN-tz4LMHcwjGA7BmQT85tPy_jMy9yo,377
+locus_processing-0.0.3.dist-info/LICENSE,sha256=eJEVYoDiOoznDxcyPsIx6jtW4nM0z0RtE0yUP39nJgY,1048
+locus_processing-0.0.3.dist-info/METADATA,sha256=4YD0vlknUI9MkD0DP3Cc30CKB5vgP4088eZdRVakqOs,747
+locus_processing-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+locus_processing-0.0.3.dist-info/entry_points.txt,sha256=EevmayAcAQGhtxkQsxQtusY_opBHQ7vOVLTpJ02r7tg,171
+locus_processing-0.0.3.dist-info/top_level.txt,sha256=GEE8Q4HplNLAi8ea_XpJpZphj289VigjJclZ7CTiT4U,17
+locus_processing-0.0.3.dist-info/RECORD,,
