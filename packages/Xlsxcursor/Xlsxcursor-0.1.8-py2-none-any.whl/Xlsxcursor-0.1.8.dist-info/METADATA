@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Xlsxcursor
+Version: 0.1.8
+Summary: Xlsxcursor for xlsxwriter.
+Home-page: https://github.com/KokocGroup/xslxcursor
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Download-URL: https://github.com/KokocGroup/xslxcursor/tarball/v0.1.8
+Platform: UNKNOWN
+Requires-Dist: xlsxwriter
+
+UNKNOWN
+
+
