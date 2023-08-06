@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Topsis_Arsh
+Version: 0.0.2
+Summary: Topsis package
+Home-page: https://github.com/BhullarArsh/Topsis
+Author: ARSHPREET SINGH
+Author-email: arshpreet15.99@gmail.com
+License: UNKNOWN
+Description: Topsis stands for The Technique for Order of Preference by Similarity to Ideal Solution. It is used for multi-criteria decision making.Topsis is based on the concept that the chosen alternative should have the shortest geometric distance from the positive ideal solution and the longest geometric distance from the negative ideal solution.
+        The user needs to give the name of the dataset on which Topsis is to be performed and the weights and impacts.The impacts should contain only '+' and '-' signs.
+        python Arsh_Topsis.py Dataset weights impacts
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
