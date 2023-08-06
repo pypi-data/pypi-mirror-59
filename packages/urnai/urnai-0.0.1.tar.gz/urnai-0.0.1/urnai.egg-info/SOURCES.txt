@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+urnai/__main__.py
+urnai/urnai_cmd.py
+urnai.egg-info/PKG-INFO
+urnai.egg-info/SOURCES.txt
+urnai.egg-info/dependency_links.txt
+urnai.egg-info/entry_points.txt
+urnai.egg-info/requires.txt
+urnai.egg-info/top_level.txt
