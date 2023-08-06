@@ -1,0 +1,1 @@
+{"generator": "bdist_wheel (0.24.0)", "summary": "Watch Pokemon in python3.", "metadata_version": "2.0", "name": "pokemon-tv", "version": "0.2", "extensions": {"python.details": {"project_urls": {"Home": "https://github.com/davFaithid/pokemon-tv"}, "contacts": [{"name": "davFaithid", "role": "author"}], "document_names": {"description": "DESCRIPTION.rst"}}}, "license": "GPL-3.0"}
