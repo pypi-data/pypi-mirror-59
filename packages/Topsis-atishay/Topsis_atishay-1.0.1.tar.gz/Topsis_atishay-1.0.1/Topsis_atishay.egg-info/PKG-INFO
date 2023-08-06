@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Topsis-atishay
+Version: 1.0.1
+Summary: A Python package to implement topsis function
+Home-page: UNKNOWN
+Author: Atishay
+Author-email: Atishay21@gmail.com
+License: UNKNOWN
+Description: Implementation of TOPSIS in Python UCS633
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
