@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: arxiv_pdf
+Version: 0.0.1
+Summary: download arxiv papers
+Home-page: UNKNOWN
+Author: Wanghaibo
+Author-email: dasuda2015@163.com
+License: MIT Licence
+Description: download arxiv papers
+Keywords: pip,arxiv
+Platform: any
