@@ -1,0 +1,9 @@
+README.md
+pautomount.py
+setup.py
+pautomount.egg-info/PKG-INFO
+pautomount.egg-info/SOURCES.txt
+pautomount.egg-info/dependency_links.txt
+pautomount.egg-info/entry_points.txt
+pautomount.egg-info/requires.txt
+pautomount.egg-info/top_level.txt

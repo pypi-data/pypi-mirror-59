@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pautomount
+Version: 1.0.0
+Summary: A daemon for automounting and/or executing actions on hotplug of removable drives
+Home-page: https://github.com/CRImier/pautomount
+Author: Arsenijs Picugins
+Author-email: crimier@yandex.ru
+License: UNKNOWN
+Download-URL: https://github.com/CRImier/pautomount/archive/1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: linux,partitions,automount,usb,flash drives
+Platform: UNKNOWN
