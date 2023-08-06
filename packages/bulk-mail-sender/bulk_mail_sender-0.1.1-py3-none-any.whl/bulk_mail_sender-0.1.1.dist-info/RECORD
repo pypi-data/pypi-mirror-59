@@ -1,0 +1,9 @@
+bulk_mail_sender/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bulk_mail_sender/main.py,sha256=nCtewDfdjNuTwVtx8StZgNREDQX7yRnyrvvYcf2SMHQ,2699
+bulk_mail_sender/sendmail.py,sha256=OcD-hgUqVi2tWY6uMCWgcWxgAO8zTpDqCUTwCHWX5io,1382
+bulk_mail_sender-0.1.1.dist-info/LICENSE,sha256=T3ligNzkChRbfrBzfU91JjbgL6ng_pL2Qn38fdPtwSc,1074
+bulk_mail_sender-0.1.1.dist-info/METADATA,sha256=wev5-bhPbKrwOImKd3tmAoqgtXkrYPTgpAbUMZunvoI,1375
+bulk_mail_sender-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+bulk_mail_sender-0.1.1.dist-info/entry_points.txt,sha256=9S8nJAfuRryAZ2DOfSA2RXsqmBy1SIsurIo8peOBEKk,65
+bulk_mail_sender-0.1.1.dist-info/top_level.txt,sha256=HUZJNe5GWnxdfgHjf2NB7ngLrYMawbEB3g_HW8tCJ-s,17
+bulk_mail_sender-0.1.1.dist-info/RECORD,,
