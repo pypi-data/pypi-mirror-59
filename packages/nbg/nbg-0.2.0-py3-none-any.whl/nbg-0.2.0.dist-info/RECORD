@@ -1,0 +1,17 @@
+nbg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nbg/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nbg/base/auth.py,sha256=1FRvPZPyy0mHcTnrJo3d-Hm4C6rr8lOfB4wCpFE-05A,3811
+nbg/base/auth_test.py,sha256=vIiOt97yTgMaK1l_CBv3RbqgPPmfd6Whx9Z73cKoOdo,539
+nbg/base/client.py,sha256=Nfm6zdlNI6cC3kLHffT7Gc-RsZNWGOX8SgCoBRMIMK8,2058
+nbg/base/decorators.py,sha256=y8Qh_VO49aAu98kYaw1vDziGdKmjWGDlLVJzyhL482w,355
+nbg/base/decorators_test.py,sha256=IO8jKpju6cVPcvHB1G5Y08kQzfaQ-moEpMdd4ROSCjg,664
+nbg/base/environment.py,sha256=g6zECxffwRN_US1X223ybKpUtXJIFE2_0nX3oXQkB_A,1947
+nbg/base/environment_test.py,sha256=ZZDb9V46qRG7RaAarWoh6Fy9frmIKl9X9vcLs159KmI,1754
+nbg/base/exceptions.py,sha256=P18UrIjLNw6z7Uu5mG4EfcD6Xgssef8lfVXsG643DTY,2460
+nbg/base/resources.py,sha256=4KfkOnfcvp8HUbFHen2IPKdtMjVRMMo26TZRhUNvVjE,1785
+nbg/base/resources_test.py,sha256=x97pmb9Zuyo4vAXPJYj7wLDqDu0KhfW0hCT6CR_WiYI,3343
+nbg/base/utils.py,sha256=6I8pZAhVEwGyffkxQr7jKVuXetjZfT6GUpM8Fn9bAJc,821
+nbg/base/utils_test.py,sha256=HUWEnhaIKAnqweaaJxEmIJhGEXHBh5GITaTn9Fo8jg4,1488
+nbg-0.2.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+nbg-0.2.0.dist-info/METADATA,sha256=bKkey84AbWTC-pbWuapetoWtKJu68z7LEOhOK9kgOXw,2640
+nbg-0.2.0.dist-info/RECORD,,
