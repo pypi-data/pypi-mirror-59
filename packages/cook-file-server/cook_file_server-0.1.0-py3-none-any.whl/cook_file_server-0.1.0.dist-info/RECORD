@@ -1,0 +1,11 @@
+cook/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cook/__main__.py,sha256=41dqNFF7QKOFvMy5FXGyE6m-XdRm12XcW82DYK8m-jw,2049
+cook/file_server.py,sha256=2TjyE1CcjU8vw_YbuTZ4LdwK4TIcKKZyvdDxgua5wKw,5531
+cook/version.py,sha256=76rw3Isk4beFNHW4F_LCcO_fvITe8z627sSaT_CNLZA,18
+cook_file_server-0.1.0.dist-info/DESCRIPTION.rst,sha256=7np3Ppb7FSOBf-90C0qRNqboHsqqVYWx6B5ChBNUy78,135
+cook_file_server-0.1.0.dist-info/METADATA,sha256=oxaE29Avp4ZYaL-epcmMRTdKJY7lAqfEzoFQ2PZ__J8,392
+cook_file_server-0.1.0.dist-info/RECORD,,
+cook_file_server-0.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+cook_file_server-0.1.0.dist-info/entry_points.txt,sha256=kB_JNz732VpE85ve6t17Oh3NQYnJbl0cSb6XpcrPKtU,51
+cook_file_server-0.1.0.dist-info/metadata.json,sha256=zT-Vs8-VxksTYj_ONdMKsdgFCNrTOKKWdjz48eVuZPc,524
+cook_file_server-0.1.0.dist-info/top_level.txt,sha256=ewNQIn2oRSYV98vAsUnw88u2Q8XHKhAz70ed2PEdR2c,5
