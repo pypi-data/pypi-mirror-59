@@ -1,0 +1,7 @@
+README.md
+setup.py
+test/test_zinc.py
+zinc_cli.egg-info/PKG-INFO
+zinc_cli.egg-info/SOURCES.txt
+zinc_cli.egg-info/dependency_links.txt
+zinc_cli.egg-info/top_level.txt
