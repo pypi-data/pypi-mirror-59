@@ -1,0 +1,13 @@
+[d3m.primitives]
+classification.gaussian_classification.JHU = jhu_primitives.gclass:GaussianClassification
+data_preprocessing.largest_connected_component.JHU = jhu_primitives.lcc:LargestConnectedComponent
+data_transformation.adjacency_spectral_embedding.JHU = jhu_primitives.ase:AdjacencySpectralEmbedding
+data_transformation.laplacian_spectral_embedding.JHU = jhu_primitives.lse:LaplacianSpectralEmbedding
+data_transformation.load_graphs.JHU = jhu_primitives.load_graphs:LoadGraphs
+graph_clustering.gaussian_clustering.JHU = jhu_primitives.gclust:GaussianClustering
+graph_matching.seeded_graph_matching.JHU = jhu_primitives.sgm:SeededGraphMatching
+link_prediction.data_conversion.JHU = jhu_primitives.link_pred_graph_reader:LinkPredictionGraphReader
+link_prediction.rank_classification.JHU = jhu_primitives.link_pred_rc:LinkPredictionRankClassifier
+vertex_nomination.spectral_graph_clustering.JHU = jhu_primitives.sgc:SpectralGraphClustering
+vertex_nomination.spectral_vertex_nomination.JHU = jhu_primitives.sgvn:SingleGraphVertexNomination
+
