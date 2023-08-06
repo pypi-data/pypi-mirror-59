@@ -1,0 +1,11 @@
+itk_elastix_opencl-0.5.0.dist-info/RECORD,,
+itk_elastix_opencl-0.5.0.dist-info/top_level.txt,sha256=K3Bo2NX2FvAd7ExrYg0rKrdBucaB6n6elW5QBc_g8FA,4
+itk_elastix_opencl-0.5.0.dist-info/METADATA,sha256=8S4EahsDdxwtC2wBYJuFSDhNt8cDl2LoyOrpMmk28C4,1647
+itk_elastix_opencl-0.5.0.dist-info/WHEEL,sha256=6AcMtUKU5URlvzUTY47Ffv2ZFfmgQIOOkXOwaHWfRXI,102
+itk/itkElastixRegistrationMethodPython.py,sha256=pW_UdI0Y0ddPoeuGYZA4T05N9mavydOhyl_Q1ZsOt0E,112992
+itk/itkTransformixFilterPython.py,sha256=5jjhEU3X72YgHoW_IUpJ_VLZUCUcjfFKoe6qQZ_JKdg,74480
+itk/elxParameterObjectPython.py,sha256=_HtDWlYV3N7SYl_r4Rg_GwJjD5W6qQ82bDfJr39Q9wM,17947
+itk/_ElastixPython.so,sha256=h3qVAJCf5SS3qRj7Afq3pPXACM0UHVB2SHuPje0hlUw,74015072
+itk/ElastixPython.py,sha256=7O4tX1_PW7S6-E1kThkspvd2IHB5yaxW8JfIcKPo-Wk,3261
+itk/.libs/libOpenCL-a4ace450.so.1,sha256=EGXtd-7VYnUHiDIjFgy6AQja3N0-9mr8SHXAKF9ui1o,48984
+itk/Configuration/ElastixConfig.py,sha256=ndLWmE_Z4PSq1mueIZiFvVQT2D1ayWE-KYtx8XQYUR4,1365
