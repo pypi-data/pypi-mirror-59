@@ -1,0 +1,159 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree"
+      },
+      "ZincBookings-IntegTestProject": {
+        "id": "ZincBookings-IntegTestProject",
+        "path": "ZincBookings-IntegTestProject",
+        "children": {
+          "GetFreeSlots": {
+            "id": "GetFreeSlots",
+            "path": "ZincBookings-IntegTestProject/GetFreeSlots",
+            "children": {
+              "ServiceRole": {
+                "id": "ServiceRole",
+                "path": "ZincBookings-IntegTestProject/GetFreeSlots/ServiceRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "ZincBookings-IntegTestProject/GetFreeSlots/ServiceRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                              ]
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "Code": {
+                "id": "Code",
+                "path": "ZincBookings-IntegTestProject/GetFreeSlots/Code",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "ZincBookings-IntegTestProject/GetFreeSlots/Code/Stage"
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "ZincBookings-IntegTestProject/GetFreeSlots/Code/AssetBucket"
+                  }
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "ZincBookings-IntegTestProject/GetFreeSlots/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
+                  "aws:cdk:cloudformation:props": {
+                    "code": {
+                      "s3Bucket": {
+                        "Ref": "AssetParameterse5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7fS3Bucket51E99055"
+                      },
+                      "s3Key": {
+                        "Fn::Join": [
+                          "",
+                          [
+                            {
+                              "Fn::Select": [
+                                0,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParameterse5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7fS3VersionKey577B25CD"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Fn::Select": [
+                                1,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParameterse5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7fS3VersionKey577B25CD"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "handler": "lambda_handler.handler",
+                    "role": {
+                      "Fn::GetAtt": [
+                        "GetFreeSlotsServiceRole02E312C8",
+                        "Arn"
+                      ]
+                    },
+                    "runtime": "python3.7"
+                  }
+                }
+              }
+            }
+          },
+          "AssetParameters": {
+            "id": "AssetParameters",
+            "path": "ZincBookings-IntegTestProject/AssetParameters",
+            "children": {
+              "e5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7f": {
+                "id": "e5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7f",
+                "path": "ZincBookings-IntegTestProject/AssetParameters/e5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7f",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "ZincBookings-IntegTestProject/AssetParameters/e5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7f/S3Bucket"
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "ZincBookings-IntegTestProject/AssetParameters/e5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7f/S3VersionKey"
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "ZincBookings-IntegTestProject/AssetParameters/e5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7f/ArtifactHash"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "version": "1.16.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "ZincBookings-IntegTestProject": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "ZincBookings-IntegTestProject.template.json"
+      },
+      "metadata": {
+        "/ZincBookings-IntegTestProject": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.e5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7f",
+              "id": "e5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7f",
+              "packaging": "zip",
+              "sourceHash": "e5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7f",
+              "s3BucketParameter": "AssetParameterse5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7fS3Bucket51E99055",
+              "s3KeyParameter": "AssetParameterse5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7fS3VersionKey577B25CD",
+              "artifactHashParameter": "AssetParameterse5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7fArtifactHash2660B9EF"
+            },
+            "trace": [
+              "Stack.addFileAsset (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/core/lib/stack.js:352:23)",
+              "new Asset (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ZincBookings-IntegTestProject/GetFreeSlots/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetFreeSlotsServiceRole02E312C8",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/aws-iam/lib/role.js:36:22)",
+              "new Function (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/aws-lambda/lib/function.js:59:35)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ZincBookings-IntegTestProject/GetFreeSlots/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetFreeSlots2C707173",
+            "trace": [
+              "new Function (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/aws-lambda/lib/function.js:69:26)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ZincBookings-IntegTestProject/AssetParameters/e5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7f/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7fS3Bucket51E99055",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:11:36)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/core/lib/stack.js:342:22)",
+              "new Asset (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ZincBookings-IntegTestProject/AssetParameters/e5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7f/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7fS3VersionKey577B25CD",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:15:35)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/core/lib/stack.js:342:22)",
+              "new Asset (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ZincBookings-IntegTestProject/AssetParameters/e5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7f/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse5c470153c436aee465c2b9ce1df8823c819b5cfcae3cc26de4881b8362e1a7fArtifactHash2660B9EF",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:19:38)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/core/lib/stack.js:342:22)",
+              "new Asset (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-DAgx2s/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "obj._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:49)",
+              "Kernel._wrapSandboxCode (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8222:20)",
+              "Kernel._create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7762:26)",
+              "Kernel.create (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7509:21)",
+              "KernelHost.processRequest (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/krin/miniconda3/lib/python3.7/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/cx-api": "1.21.1",
+      "@aws-cdk/core": "1.21.1",
+      "@aws-cdk/region-info": "1.21.1",
+      "@aws-cdk/aws-iam": "1.21.1",
+      "@aws-cdk/aws-cloudwatch": "1.21.1",
+      "@aws-cdk/aws-kms": "1.21.1",
+      "@aws-cdk/aws-ssm": "1.21.1",
+      "@aws-cdk/aws-ec2": "1.21.1",
+      "@aws-cdk/aws-events": "1.21.1",
+      "@aws-cdk/aws-logs": "1.21.1",
+      "@aws-cdk/aws-s3": "1.21.1",
+      "@aws-cdk/assets": "1.21.1",
+      "@aws-cdk/aws-s3-assets": "1.21.1",
+      "@aws-cdk/aws-sqs": "1.21.1",
+      "@aws-cdk/aws-lambda": "1.21.1",
+      "jsii-runtime": "Python/3.7.3"
+    }
+  }
+}
