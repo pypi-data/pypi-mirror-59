@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<form col="2">
+    <label name="csvtext"/>
+    <field name="csvtext"/>
+    <label name="account_cat"/>
+    <field name="account_cat"/>
+    <label name="attribute_set"/>
+    <field name="attribute_set"/>
+</form>
