@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+# :Project:   SoL -- GitLab CI configuration
+# :Created:   dom 05 ago 2018 10:53:40 CEST
+# :Author:    Lele Gaifax <lele@metapensiero.it>
+# :License:   GNU General Public License version 3 or later
+# :Copyright: © 2018 Lele Gaifax
+#
+
+before_script:
+  - pip install --no-cache-dir -r requirements/test.txt
+  - make -f Makefile.i18n compile-catalogs
+
+python3.6:
+  image: python:3.6
+  script:
+    - pytest
+
+python3.7:
+  image: python:3.7
+  coverage: '/\d+%$/'
+  script:
+    - pytest

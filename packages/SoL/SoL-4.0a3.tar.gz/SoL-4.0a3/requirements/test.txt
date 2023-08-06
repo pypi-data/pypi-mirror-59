@@ -1,0 +1,9 @@
+-r base.txt
+
+metapensiero.sqlalchemy.dbloady==2.9
+coverage==4.5.4
+pytest-cov==2.8.1
+pytest==5.3.1
+webtest==2.0.33
+
+-e .
