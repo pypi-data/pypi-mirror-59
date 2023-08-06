@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: videofig
+Version: 1.0.1
+Summary: Lightweight image sequence visualization utility based on matplotlib
+Home-page: https://github.com/bilylee/videofig
+Author: Bily Lee
+Author-email: bily.lee@qq.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
