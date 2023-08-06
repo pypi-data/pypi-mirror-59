@@ -1,0 +1,7 @@
+README.md
+setup.py
+burrowswheeler/__init__.py
+burrowswheeler.egg-info/PKG-INFO
+burrowswheeler.egg-info/SOURCES.txt
+burrowswheeler.egg-info/dependency_links.txt
+burrowswheeler.egg-info/top_level.txt

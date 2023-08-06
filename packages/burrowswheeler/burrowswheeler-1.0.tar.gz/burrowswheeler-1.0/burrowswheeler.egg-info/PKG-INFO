@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: burrowswheeler
+Version: 1.0
+Summary: Python implementation of the Burrows-Wheeler transform
+Home-page: https://github.com/fepe55/burrows-wheeler
+Author: Fepe Laser
+Author-email: fepe55@gmail.com
+License: UNKNOWN
+Description: # Burrows-Wheeler
+        Python implementation of the Burrows-Wheeler transform
+        
+        https://en.wikipedia.org/wiki/Burrows%E2%80%93Wheeler_transform
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
