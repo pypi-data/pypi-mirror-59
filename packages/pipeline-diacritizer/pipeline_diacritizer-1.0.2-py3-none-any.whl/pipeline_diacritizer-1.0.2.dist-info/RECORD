@@ -1,0 +1,10 @@
+pipeline_diacritizer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipeline_diacritizer/dataset_preprocessing.py,sha256=Up4hgBQtlioPgTuetAJap-uia5bJtAwWoGLPjUje2Hg,12720
+pipeline_diacritizer/diacritization_model.py,sha256=cO_CaCBSfZMh4GGVx7bWQzjpSivsr-EQ_BE2K8H2ABs,28251
+pipeline_diacritizer/pipeline_diacritizer.py,sha256=vvkJSv-_V9am32jlyC_Q8HkasOUtxPGnnHES823BoAk,17576
+pipeline_diacritizer-1.0.2.dist-info/LICENSE.txt,sha256=XTNEjpc8ZhakBUpMl-0oPWRt_l3P0WAJcWWipTviMms,1068
+pipeline_diacritizer-1.0.2.dist-info/METADATA,sha256=V8oFpWRAxiABjI18iaNDXfTm5X2115j8kb7I8VsHoic,3965
+pipeline_diacritizer-1.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pipeline_diacritizer-1.0.2.dist-info/entry_points.txt,sha256=dbgTsKapD165G557R_GrQCojxrmRq08VlbBlANKUyKY,89
+pipeline_diacritizer-1.0.2.dist-info/top_level.txt,sha256=JHQNDPEwob9wNj__LwgHQTyciBIEP7WfxLtCvzr8Bgk,21
+pipeline_diacritizer-1.0.2.dist-info/RECORD,,
