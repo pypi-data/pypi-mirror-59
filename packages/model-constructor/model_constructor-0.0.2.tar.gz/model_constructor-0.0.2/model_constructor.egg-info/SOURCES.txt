@@ -1,0 +1,15 @@
+README.md
+setup.py
+model_constructor/__init__.py
+model_constructor/_nbdev.py
+model_constructor/constructor.py
+model_constructor/layers.py
+model_constructor/resnet.py
+model_constructor/xresnet.py
+model_constructor.egg-info/PKG-INFO
+model_constructor.egg-info/SOURCES.txt
+model_constructor.egg-info/dependency_links.txt
+model_constructor.egg-info/entry_points.txt
+model_constructor.egg-info/not-zip-safe
+model_constructor.egg-info/requires.txt
+model_constructor.egg-info/top_level.txt
