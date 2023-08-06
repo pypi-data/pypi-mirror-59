@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ckan_cloud_operator
+Version: 0.0.3
+Summary: CKAN Cloud Kubernetes operator
+Home-page: https://github.com/datopian/ckan-cloud-operator
+Author: Viderum
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
