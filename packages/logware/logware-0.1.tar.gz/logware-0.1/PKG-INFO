@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: logware
+Version: 0.1
+Summary: Simple request logging middleware
+Home-page: https://github.com/GiridharSamanth/python-logware
+Author: Giridhar
+Author-email: samanth.giridhar@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
