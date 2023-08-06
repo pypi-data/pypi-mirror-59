@@ -1,0 +1,11 @@
+README.md
+setup.py
+bulk_mail_sender/__init__.py
+bulk_mail_sender/main.py
+bulk_mail_sender/sendmail.py
+bulk_mail_sender.egg-info/PKG-INFO
+bulk_mail_sender.egg-info/SOURCES.txt
+bulk_mail_sender.egg-info/dependency_links.txt
+bulk_mail_sender.egg-info/entry_points.txt
+bulk_mail_sender.egg-info/requires.txt
+bulk_mail_sender.egg-info/top_level.txt
