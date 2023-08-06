@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+topsispy/__init__.py
+topsispy/topsis.py
+topsispy.egg-info/PKG-INFO
+topsispy.egg-info/SOURCES.txt
+topsispy.egg-info/dependency_links.txt
+topsispy.egg-info/requires.txt
+topsispy.egg-info/top_level.txt
