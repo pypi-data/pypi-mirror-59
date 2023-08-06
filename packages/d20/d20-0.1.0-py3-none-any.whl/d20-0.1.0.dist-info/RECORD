@@ -1,0 +1,17 @@
+d20/__init__.py,sha256=6bEi-HbBPdsEeidf9SLnC21aixNve3mRJTuFxCqbdCg,220
+d20/dice.py,sha256=1IGNo5Ny94UhRZIxR45aj-jhn3VmlP4cj7O2TjoH05s,4797
+d20/diceast.py,sha256=EH4AxpFwm0v6IyiNsvUfvjQbZ9krf9HDY96920dXB7Q,7771
+d20/errors.py,sha256=1mKoy1MCrOPDJGBaYBUcsaLIqdXP0nV5CghgUW3aJDo,629
+d20/models.py,sha256=10_DQolaLy6PqPztzgYnrSttiZxFFfOSh403uvBXAbU,12523
+d20/stringifiers.py,sha256=481AM8t_KDwZShrCoSaLFmdBxKTUEIROJyJXzI8nteU,4168
+dice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dice/dice.py,sha256=as4-E_pp0Dh2G4Wc4CMnjaUjJ77wo3ttUwI4cD8nqLc,4659
+dice/diceast.py,sha256=EH4AxpFwm0v6IyiNsvUfvjQbZ9krf9HDY96920dXB7Q,7771
+dice/errors.py,sha256=1mKoy1MCrOPDJGBaYBUcsaLIqdXP0nV5CghgUW3aJDo,629
+dice/models.py,sha256=10_DQolaLy6PqPztzgYnrSttiZxFFfOSh403uvBXAbU,12523
+dice/stringifiers.py,sha256=481AM8t_KDwZShrCoSaLFmdBxKTUEIROJyJXzI8nteU,4168
+d20-0.1.0.dist-info/LICENSE,sha256=Fzvu32_DafLKKn2mzxhEdlmrKZzAsigDZ87O7uoVqZI,1067
+d20-0.1.0.dist-info/METADATA,sha256=zdcU3ag9U1R3ya8UpnLFfBnrN4F0m1snXm0qGq-VpjQ,1343
+d20-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+d20-0.1.0.dist-info/top_level.txt,sha256=Fm3PnbTtCVuhRSeW0cMKtbMslmLqLLgpDRk2gJQrrGM,4
+d20-0.1.0.dist-info/RECORD,,
