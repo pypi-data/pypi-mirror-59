@@ -1,0 +1,13 @@
+cimren_wkmeans_geo-1.0.6.dist-info/DESCRIPTION.rst,sha256=dcoinqwQa1HoOdERk-_mHkP3j9D_QVixAxqySbiMHRA,1484
+cimren_wkmeans_geo-1.0.6.dist-info/METADATA,sha256=--5_I-bmTBYRSC4X6HS4WNo-PXcerkJndsLUvYwtGow,3320
+cimren_wkmeans_geo-1.0.6.dist-info/RECORD,,
+cimren_wkmeans_geo-1.0.6.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+cimren_wkmeans_geo-1.0.6.dist-info/metadata.json,sha256=mR_VWw3kcUciYjgleMNKNZdku0bsNjRVB-pXJaQ8i-4,1597
+cimren_wkmeans_geo-1.0.6.dist-info/top_level.txt,sha256=6azQpJMGk69qboCMgN9CWUzvVOVhHWawWO8X97mpS-Y,28
+wkmeans_geo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wkmeans_geo/wkmeans_clustering.py,sha256=41ESGAvioy_5GHSpLy984TQCeZJSBfOSzihOzYRaHKk,4881
+wkmeans_geo/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wkmeans_geo/src/clusters.py,sha256=2huyjb6xeywUQsA-0LHeC2gOYgBJrbYxzdBMimz0dOI,2601
+wkmeans_geo/src/data.py,sha256=HLp991aDUAwslpTBL7Re4QtVAXJNLjAdL63e9FGtU2Q,1048
+wkmeans_geo/src/initiation.py,sha256=M4ttaE_bwJgYXZlcxCCeiq8g4eZua4FdqYZhZuqCNos,1487
+wkmeans_geo/src/optimization_model.py,sha256=21cjjRHaDN9wWUIiDuo7hdUxuq7YtWqmOgNAxAoEeqU,4134
