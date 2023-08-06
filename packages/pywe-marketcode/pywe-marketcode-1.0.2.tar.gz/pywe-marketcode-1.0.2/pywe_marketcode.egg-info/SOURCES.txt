@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+pywe_marketcode/__init__.py
+pywe_marketcode/pywemarketcode.py
+pywe_marketcode.egg-info/PKG-INFO
+pywe_marketcode.egg-info/SOURCES.txt
+pywe_marketcode.egg-info/dependency_links.txt
+pywe_marketcode.egg-info/requires.txt
+pywe_marketcode.egg-info/top_level.txt
