@@ -1,0 +1,2 @@
+TOPSIS for MCDM
+Implementation of TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) for MCDM(Multiple Criteria Decision Making) in python done for UCS633 (Data Analytics & Visualisation) by Vivek Khanduja(101703624). 
