@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: topsis-yash-saxena
+Version: 1.0.0
+Summary: A Python pip package to apply topsis approach to rank the entries in a dataset
+Home-page: https://github.com/yashsaxena972/topsis
+Author: Yash Saxena
+Author-email: yash972saxena@gmail.com
+License: MIT
+Description: Topsis
+        A Python pip package to apply topsis approach to rank the entries of a dataset based on different attributes.
+        
+        Usage
+        $python <programName> <dataset> <weights array> <impacts array>
+        
+        Example
+        $python programName.py data.csv '1,1,1,1' '+,+,-,+'
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
