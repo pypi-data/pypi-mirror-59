@@ -1,0 +1,20 @@
+CHANGES
+=======
+
+0.1.0
+-----
+
+* replace pypi info
+* use apt addon in travis to install bindeps
+* temp remove install\_packages
+* add bindep dep to know what is missing
+* styling and link corrections (#3)
+* Change environment
+* add fonts through bindep
+* try enabling zuul checks
+* fix scaling of telekom logo in PDF
+* modify pdf template
+* remove community link to prevent mapping errors
+* Read telekom logo from techblog
+* initial push
+* Initial commit
