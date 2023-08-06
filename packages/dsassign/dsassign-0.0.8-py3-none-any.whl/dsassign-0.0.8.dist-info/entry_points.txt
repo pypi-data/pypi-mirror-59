@@ -1,0 +1,4 @@
+[console_scripts]
+dsassign = dsassign.dsassign:main
+dsassign-pdf = dsassign.dsassign_pdf:main
+

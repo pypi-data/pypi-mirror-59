@@ -1,0 +1,15 @@
+dsassign/__init__.py,sha256=lWvFZKZwR3anF0rUw8rpdjvWIvLrFPYoT4f1-_DVg1I,20
+dsassign/dsassign.py,sha256=XvJqHSc2mwad1bNPE-gfkSG5FhkR09i-MS9xooGq_z0,1447
+dsassign/dsassign_pdf.py,sha256=DXhqnLKjLVnby6ODXlNBz1S_2RH8sOSIPF27MFGIWhs,536
+dsassign/test.tplx,sha256=9U1YGA1kk00xhsFDcpV-OkgV-gzgu3S4AUG099ik8qI,749
+dsassign/to_ok.py,sha256=1UwtfALEe5xooa3bl-ZG7JwoapoPSEOtXxojBHwWCkY,13045
+dsassign/to_pdf.py,sha256=5k_wtRtYBDl1IJkH_r25O3IHaPjyp7DYFx5Y0LFYZ-g,8958
+tests/__init__.py,sha256=C-XfGd1wNZywgHowvWm45J9_iVWAj4MkCeeQGG5ZMuM,12
+tests/test_export.py,sha256=cA8cka2wEIcNYW8cV05Pl2Fg9xNjx0dGH7SZU0HTEFU,773
+tests/test_strip.py,sha256=APPrp6Bfovg2XCqqAlBIQMDLIgJuWozaQ9WDbH4u4B4,1304
+dsassign-0.0.8.dist-info/LICENSE,sha256=7oPYfWWvfIQiT4vBUtdRHNVNI2YTz8gxK14zKAkOehE,1059
+dsassign-0.0.8.dist-info/METADATA,sha256=G4GEFCkwe2vgr79zjPFEHp6AVPOFKqUVQnbtv6UsNFE,5142
+dsassign-0.0.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dsassign-0.0.8.dist-info/entry_points.txt,sha256=xjxiP6XI-U7zPMOUKoKz5-AemBsniVEKIcnRYS6Bbdk,95
+dsassign-0.0.8.dist-info/top_level.txt,sha256=SnKRmIWrmIu-iZGH2xqibL22IVZdJnv0NaEYMeyMwX4,15
+dsassign-0.0.8.dist-info/RECORD,,
