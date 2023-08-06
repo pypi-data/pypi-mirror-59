@@ -1,0 +1,8 @@
+mysqlx_connector/__init__.py,sha256=BCnNFLK1QHxzKpV9eAooMj2_IyQ1v6A7lDU4PSAx-nI,25
+mysqlx_connector/database.py,sha256=_-a7mEHsx0Wyrn91prduF5y4vZSmW0HL7mmDFdtQ-VM,1304
+mysqlx_connector/table.py,sha256=auiBPURXZGaGLgoVtPOkjTj6mQbhoNsclsuRsvGMqkw,1156
+mysqlx_connector-0.0.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mysqlx_connector-0.0.6.dist-info/METADATA,sha256=UPAgvf100SqiVFcaCroVkK8Rc6PNW0FR6ni819RBzLg,1316
+mysqlx_connector-0.0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mysqlx_connector-0.0.6.dist-info/top_level.txt,sha256=9vh5aXllHBVP7ic93pg8QAgYDy2lk51UxLzTqB2sfOQ,17
+mysqlx_connector-0.0.6.dist-info/RECORD,,
