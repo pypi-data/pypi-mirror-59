@@ -1,0 +1,12 @@
+cimico/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cimico/example.py,sha256=oMEMoWRE1SAUz342OhbOabkgO8mmXTkIbc_MlhT1SkU,454
+cimico/generatevid.py,sha256=53hMpJSoufBiavXfb2JjSbkpQzQuHZhcgZ_G9M6j4E4,5715
+cimico/main.py,sha256=sCSwAGod2w4AYoPsHtRr6TRQYAHs7M3GXfHcOtwzwZU,11030
+cimico/outputjson.py,sha256=5ASs0yjb1eQT0r3QWmdEpwyZNXzWlppIynVNW_TIw_E,4245
+cimico/testsuite.py,sha256=BUUJLsAmvuRcTNDd_68SSdc4JvOJCDc6U2BJJN8WUfQ,2831
+cimico/writetojson.py,sha256=b3AP4-XDUOruprMwgXbY3WEZL4fyRqUFa04NBrhDeo4,376
+cimico-1.0.0.dist-info/LICENSE,sha256=o-6N4U-h6TPxFddTBLRVVe50vHfhjaOVaNXC3L_ACAY,1067
+cimico-1.0.0.dist-info/METADATA,sha256=bczqU3hLjOn1OKTZWmoB2drti2VHu0DEieN2522Qx40,716
+cimico-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+cimico-1.0.0.dist-info/top_level.txt,sha256=XFxinfWpF6qt4L3Aezuhe-_BLStfwb2NduPrhrDcpz4,7
+cimico-1.0.0.dist-info/RECORD,,
