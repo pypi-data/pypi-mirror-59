@@ -1,0 +1,3 @@
+[console_scripts]
+scheme8 = scheme8.__main__:main
+
