@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: accipio
+Version: 0.2
+Summary: TensorFlow made easy!
+Home-page: UNKNOWN
+Author: Anders Matre
+Author-email: andersmatre2001@gmail.com
+License: Apache License 2.0
+Description: Package containing a wide range of functions to make TensorFlow easy to use with little to no previous knowledge of AI!
+Keywords: AI
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

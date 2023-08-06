@@ -1,0 +1,5 @@
+tensorflow
+beautifulsoup4
+matplotlib
+numpy
+Pillow

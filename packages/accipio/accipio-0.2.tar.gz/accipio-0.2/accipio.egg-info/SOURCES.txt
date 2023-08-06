@@ -1,0 +1,13 @@
+README.md
+setup.py
+accipio/__init__.py
+accipio/ai.py
+accipio/data.py
+accipio/images.py
+accipio/utils.py
+accipio/visuals.py
+accipio.egg-info/PKG-INFO
+accipio.egg-info/SOURCES.txt
+accipio.egg-info/dependency_links.txt
+accipio.egg-info/requires.txt
+accipio.egg-info/top_level.txt
