@@ -1,0 +1,3 @@
+[console_scripts]
+secretfy = secretfy_template.manager:main
+
