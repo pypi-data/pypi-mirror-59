@@ -1,0 +1,15 @@
+seplot/__init__.py,sha256=4W8VliAYUP1KY2gLJ_YDy2TmcXYVm-PY7XikQD_bFwA,2
+seplot/kw_dictionaries.py,sha256=sYQvzo6jt_PaZT5pCkCEUGGCrSFSr8gjlNwvweTCGrM,459
+seplot/seplot.py,sha256=sVy7UMAceU3KzZI9Ix4E-KG08hpJEzfZ96w7MnHFIZE,41791
+seplot/style_dictionaries.py,sha256=9seLRdgEns8edyiw8FRUnhEiFF80HbERcAOPA6W4wSQ,2118
+seplot-1.2.2.data/scripts/kw_dictionaries.py,sha256=sYQvzo6jt_PaZT5pCkCEUGGCrSFSr8gjlNwvweTCGrM,459
+seplot-1.2.2.data/scripts/seplot,sha256=qin5WDTYbGoc0oIRRPRG7to5C4Yk41KhConvnhSqOTQ,25
+seplot-1.2.2.data/scripts/seplot.py,sha256=3cn8vWO0I1yvks45fAr_QklGi9kGLtNxlys20y5pxeQ,41777
+seplot-1.2.2.data/scripts/style_dictionaries.py,sha256=9seLRdgEns8edyiw8FRUnhEiFF80HbERcAOPA6W4wSQ,2118
+sio_tools/__init__.py,sha256=94diE0H9x64uZ5vyDtFF1lpJ4rzVOZI68E3qogghU6Q,25
+sio_tools/sio_tools.py,sha256=7gDyDJK6iXjzV6CzpTpHiuaQOULndAiEwNSuHCcAzNQ,12543
+seplot-1.2.2.dist-info/LICENCE.md,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+seplot-1.2.2.dist-info/METADATA,sha256=yetzTO1fGNr5CCFri7gnndnyYW3tfNQYoU9oeaa8yBo,9161
+seplot-1.2.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+seplot-1.2.2.dist-info/top_level.txt,sha256=WIhJBHDoSleTC1HJtxkAmcm9bkxxfitZvuERbJO-r0Q,17
+seplot-1.2.2.dist-info/RECORD,,
