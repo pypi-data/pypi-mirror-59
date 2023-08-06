@@ -1,0 +1,8 @@
+karpet/__init__.py,sha256=g2eDjSOKvuynwLryyQbX-QWCxiDmwdV2v2xL-VEMKZk,33
+karpet/core.py,sha256=tT_na81C3lm2nAK4VaaqKVFocBg-MQXT115ULv-BbwM,17850
+karpet/meta.py,sha256=gC_vjQphfSjNkG-s-FgrcHynuqNUdc6DTvivQauapU8,20
+karpet/utils.py,sha256=6jcOQVSruXUcSYwR3uOAMVRVC5hnFCl5B5SLfTy39B0,244
+karpet-0.3.dist-info/LICENSE,sha256=CrzfULkRhYiw22n1cx8Rydee5HFFof_zA4fSI2K7vdY,1059
+karpet-0.3.dist-info/WHEEL,sha256=KvY1g7zIOl4mQEMkderYQrWQRhoTqMOhqr9g8hbxY54,85
+karpet-0.3.dist-info/METADATA,sha256=9-M6Mu7laKKPwwerrJ1YX0N9tCE6wXIxAfyI4QF_yvA,7517
+karpet-0.3.dist-info/RECORD,,
