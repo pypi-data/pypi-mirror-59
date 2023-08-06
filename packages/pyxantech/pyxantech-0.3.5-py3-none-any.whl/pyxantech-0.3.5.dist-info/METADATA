@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyxantech
+Version: 0.3.5
+Summary: Python API for RS232 communication to Xantech multi-zone amplifiers
+Home-page: https://github.com/rsnodgrass/pyxantech
+Author: Ryan Snodgrass
+Author-email: rsnodgrass@gmail.com
+License: MIT
+Download-URL: https://github.com/rsndograss/pyxantech/archive/0.3.5.tar.gz
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pyserial (>=3.4)
+Requires-Dist: pyserial-asyncio (>=0.4)
+
+UNKNOWN
+
+
