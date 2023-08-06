@@ -1,0 +1,11 @@
+Django<2.3,>=2.1
+Wagtail<2.8,>=2.6
+
+[google_translate]
+googletrans<3.0,>=2.4
+
+[pofile]
+polib<2.0,>=1.1
+
+[testing]
+dj-database-url==0.5.0
