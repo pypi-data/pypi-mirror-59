@@ -1,0 +1,7 @@
+neologdn
+sacremoses
+lxml
+PyYAML
+subword-nmt
+chardet
+pycld2
