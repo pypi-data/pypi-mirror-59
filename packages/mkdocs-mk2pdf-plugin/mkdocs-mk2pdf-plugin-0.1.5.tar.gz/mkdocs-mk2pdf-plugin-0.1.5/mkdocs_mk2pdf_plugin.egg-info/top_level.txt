@@ -1,0 +1,1 @@
+mkdocs_mk2pdf_plugin

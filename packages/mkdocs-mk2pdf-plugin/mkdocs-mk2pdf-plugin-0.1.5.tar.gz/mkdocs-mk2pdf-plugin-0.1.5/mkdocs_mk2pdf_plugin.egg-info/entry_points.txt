@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+mk2pdf-export = mkdocs_mk2pdf_plugin.plugin:MK2PdfPlugin
+

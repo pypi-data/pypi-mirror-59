@@ -1,0 +1,14 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+mkdocs_mk2pdf_plugin/__init__.py
+mkdocs_mk2pdf_plugin/plugin.py
+mkdocs_mk2pdf_plugin/renderer.py
+mkdocs_mk2pdf_plugin/utils.py
+mkdocs_mk2pdf_plugin.egg-info/PKG-INFO
+mkdocs_mk2pdf_plugin.egg-info/SOURCES.txt
+mkdocs_mk2pdf_plugin.egg-info/dependency_links.txt
+mkdocs_mk2pdf_plugin.egg-info/entry_points.txt
+mkdocs_mk2pdf_plugin.egg-info/requires.txt
+mkdocs_mk2pdf_plugin.egg-info/top_level.txt
