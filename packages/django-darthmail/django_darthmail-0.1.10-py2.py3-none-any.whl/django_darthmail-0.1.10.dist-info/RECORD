@@ -1,0 +1,11 @@
+django_darthmail/__init__.py,sha256=VzP40DijhPwMBIkkzaE74XvkvRbMnAoXT_grv5vD740,464
+django_darthmail/apps.py,sha256=BH701Znf4pvy9fDoN2jjsCSM2vayqJKIpN9TvVN_04M,171
+django_darthmail/backends.py,sha256=2HhQla4xre2vIY9Nyef_5DATi46R0rlPq3TRvu-UYtg,2192
+django_darthmail/client.py,sha256=e4-Jr4jOCxiUuYvvcc1UVSoobhU_y50D4p6MKT2RYCc,5768
+django_darthmail/message.py,sha256=AsRozjiYRiy4dUuvleER1QrpQwsGkiJm_PNAxruA-8A,1851
+django_darthmail/serializers.py,sha256=1S4EdGJ1OVRAHGF5RmypZM67OVYPBUtuAdHx94g7FvA,3721
+django_darthmail/tests.py,sha256=1lM42obUCLVe4dWIhC3XgJmtdMO8eGN7XyJiW96BbRg,127
+django_darthmail-0.1.10.dist-info/METADATA,sha256=COjtF-zziduuKsUl4mGLuHt2TOlPIYb_EK-ixWpy_No,1628
+django_darthmail-0.1.10.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+django_darthmail-0.1.10.dist-info/top_level.txt,sha256=1vpADlPp6NbZaJLmlA0QQUdIi-WTnzNOr2EndZepZ44,17
+django_darthmail-0.1.10.dist-info/RECORD,,
