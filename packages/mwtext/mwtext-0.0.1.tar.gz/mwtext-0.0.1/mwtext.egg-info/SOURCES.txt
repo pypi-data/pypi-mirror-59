@@ -1,0 +1,16 @@
+README.md
+setup.py
+mwtext/__init__.py
+mwtext/about.py
+mwtext/mwtext.py
+mwtext/wikitext_preprocessor.py
+mwtext.egg-info/PKG-INFO
+mwtext.egg-info/SOURCES.txt
+mwtext.egg-info/dependency_links.txt
+mwtext.egg-info/entry_points.txt
+mwtext.egg-info/requires.txt
+mwtext.egg-info/top_level.txt
+mwtext/utilities/__init__.py
+mwtext/utilities/preprocess_text.py
+tests/__init__.py
+tests/test_wikitext_preprocessor.py
