@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+Personne.egg-info/PKG-INFO
+Personne.egg-info/SOURCES.txt
+Personne.egg-info/dependency_links.txt
+Personne.egg-info/entry_points.txt
+Personne.egg-info/top_level.txt
+test/test.py
+test/test_Personne.py
