@@ -1,0 +1,7 @@
+legimens
+matplotlib
+numpy
+requests
+mpld3
+trio
+trio-websocket
