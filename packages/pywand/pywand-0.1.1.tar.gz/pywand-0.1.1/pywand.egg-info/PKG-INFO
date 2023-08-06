@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pywand
+Version: 0.1.1
+Summary: Read IR codes from MagiQuest Wands
+Home-page: https://gitlab.com/rveach/wand
+Author: Ryan Veach
+Author-email: rveach@gmail.com
+License: MIT
+Download-URL: https://gitlab.com/rveach/wand/-/archive/master/wand-master.tar.gz
+Description: # pywands
+        
+        This library was written to help identify MagiQuest Wands.
+        
+        Config is done via an ini file.
+        
+        Output is typically in the form of a generator.
+        
+        I'm working on more documentation.
+        
+        Also, thanks to lots of kind people sharing their work on the internet. A future revision will include links.
+        
+        ## Installation, Setup, and Config
+        
+        #### tldr:
+        
+        - Enable your infrared device
+        - `pip install pywand`
+        - Edit `/etc/wand_config.ini`
+        
+        
+        #### More details available in the wiki:
+        
+        - [Installation and Pre-Reqs](https://gitlab.com/rveach/wand/-/wikis/Installation-and-Pre-Reqs)
+        - [Configuration](https://gitlab.com/rveach/wand/-/wikis/pywand-Configuration)
+        
+Keywords: wand,magiquest,IR
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
