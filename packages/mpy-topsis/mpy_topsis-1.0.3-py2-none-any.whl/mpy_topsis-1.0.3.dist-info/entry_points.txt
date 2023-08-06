@@ -1,0 +1,3 @@
+[console_scripts]
+mpy-topsis = mpy_topsis.pro1:topsis
+
