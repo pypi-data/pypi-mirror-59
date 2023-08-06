@@ -1,0 +1,29 @@
+{% extends "admin/change_form.html" %}
+{% load i18n staticfiles admin_list %}
+
+{% block after_related_objects %}
+    {% if change %}
+        <div class="inline-group">
+            <fieldset class="module">
+                <h2>{% trans 'Пункты меню' %}</h2>
+                {% if results %}
+                    <form id="changelist-form" method="post"{% if cl.formset.is_multipart %}
+                          enctype="multipart/form-data"{% endif %} novalidate>
+                        {% csrf_token %}
+                        {% if cl.formset %}
+                            <div>{{ cl.formset.management_form }}</div>
+                        {% endif %}
+                        {% result_list cl %}
+                    </form>
+                {% endif %}
+            </fieldset>
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block object-tools-items %}
+    <li>
+        <a href="add/">{% trans 'Добавить пункт меню' %}</a>
+    </li>
+    {{ block.super }}
+{% endblock %}

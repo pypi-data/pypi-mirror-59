@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: django-init
+Version: 0.0.1.5
+Summary: A small example package
+Home-page: UNKNOWN
+Author: Example Author
+Author-email: author@example.com
+License: BSD-3-Clause
+Project-URL: Documentation, https://docs.djangoproject.com/
+Project-URL: Funding, https://www.djangoproject.com/fundraising/
+Project-URL: Source, https://github.com/django/django
+Project-URL: Tracker, https://code.djangoproject.com/
+Description: # Example Package
+        
+        This is a simple example package. You can use to write your content.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7

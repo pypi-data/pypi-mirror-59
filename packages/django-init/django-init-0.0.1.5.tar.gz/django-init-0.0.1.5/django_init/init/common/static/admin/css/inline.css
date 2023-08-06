@@ -1,0 +1,8 @@
+/* удалить название обьекта в inline */
+.inline-group .tabular tr.has_original td {
+    padding-top: 8px;
+}
+
+.original {
+    display: none;
+}
