@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyartifacts
+Version: 0.12.3
+Summary: Lightweight ForensicArtifacts library
+Home-page: https://github.com/forensicanalysis/artifactlib
+Author: Demian Kellermann
+Author-email: demian.kellermann@siemens.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: jsonschema
+Requires-Dist: pyyaml
+Requires-Dist: networkx
+
+UNKNOWN
+
+
