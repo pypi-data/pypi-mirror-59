@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: py-viper
+Version: 0.1.0.dev1
+Summary: Python viper
+Home-page: https://github.com/shaneing/python-viper
+Author: shaneing
+Author-email: z.shane.ing@gamil.com
+License: UNKNOWN
+Description: # Python Viper
+        
+        This project was inspired by [spf13/viper](https://github.com/spf13/viper).
+        
+        ## Installation
+        
+        ```
+        pip install py-viper
+        ```
+        
+        ## Usage
+        
+        ### Using viper.bind_flags in fire
+        
+        ```python
+        import fire
+        import viper
+        
+        
+        @viper.bind_flags(flags=[
+            viper.Flag(name='name', value='foo', usage='Indicate name'),
+        ])
+        def hello():
+            return "Hello %s!" % viper.get('name')
+        
+        
+        if __name__ == '__main__':
+            fire.Fire(hello)
+        ```
+        
+        ### Reading config by viper
+        
+        ```python
+        viper.set_config_path(_absolute_path('test.yml'))
+        viper.read_config()
+        self.assertEqual('foo', viper.get('hello.name'))
+        ```
+        
+        ## TODO
+        
+        - [ ] Read remote config
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
