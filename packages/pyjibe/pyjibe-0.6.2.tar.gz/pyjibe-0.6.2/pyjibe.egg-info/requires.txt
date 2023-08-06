@@ -1,0 +1,5 @@
+afmformats>=0.5.0
+appdirs
+nanite>=1.4.0
+matplotlib
+pyqt5
