@@ -1,0 +1,14 @@
+dammy/__init__.py,sha256=JdPhTALWt0hxtOZV1ReU8-yZ-7vyaS0qHH07gLgXCY8,358
+dammy/core.py,sha256=d2BwuidgBV3WIb7kNpN7xjHHrLGBXDoWoPAKx2-s2EY,18885
+dammy/db.py,sha256=zXXhDyJiKao8yvAd7613g0zlUiMaj3a21nWvFIjyVaI,212
+dammy/exceptions.py,sha256=3T0dfKp22er4XQ7QsZwYiWGY9eUSWbAd7RiQtMW-L50,517
+dammy/functions.py,sha256=epfyejCroCpPiVZF_w_ooCq61cQrMhVJ_AT-AY5J4X4,684
+dammy/stdlib.py,sha256=OvIjabdPU30IHLxxjzJemrOUdB9WHNbUJzXoCX3mjaY,7017
+dammy/data/car_models.json,sha256=1jr_Aymvgu7hTA61b45JcpHFqRFYLS8hP8qYgjdKL4U,3044
+dammy/data/countries.json,sha256=1ZYhLZDfFN5IsQmgYexj1mKjVON7pif00YAiBNYdwRo,6590
+dammy/data/names.json,sha256=qMeIM3VXIN_c4haF5gRf8KIFvhXBBQnwuScH2Na8bIo,33994
+dammy-0.1.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+dammy-0.1.1.dist-info/METADATA,sha256=MwctH7a287oZcOSyv3QLLotlMoRk_kl0mOhLZXIF4Gk,3895
+dammy-0.1.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+dammy-0.1.1.dist-info/top_level.txt,sha256=qKXei0aFxnHr_O4Xseqw7h6bxOkwHJUStufbn0zn4eY,6
+dammy-0.1.1.dist-info/RECORD,,
