@@ -1,0 +1,8 @@
+cimren_wkmeans_geo-1.0.1.dist-info/DESCRIPTION.rst,sha256=dcoinqwQa1HoOdERk-_mHkP3j9D_QVixAxqySbiMHRA,1484
+cimren_wkmeans_geo-1.0.1.dist-info/METADATA,sha256=a9L8DWUyUWNyAZSMjjT4gCXxBMNS0nuI44inu89OZXc,3320
+cimren_wkmeans_geo-1.0.1.dist-info/RECORD,,
+cimren_wkmeans_geo-1.0.1.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+cimren_wkmeans_geo-1.0.1.dist-info/metadata.json,sha256=Ja8nxTwvx-Gc916fAKq-lS4WBrAD-FrTaYhW2MXXFCg,1597
+cimren_wkmeans_geo-1.0.1.dist-info/top_level.txt,sha256=p2Fi1bKDLnt6Zy_nUNWLlRNOFTl-t0S0Fy8PlRb2M6k,12
+wkmeans_geo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wkmeans_geo/wkmeans_clustering.py,sha256=iJbP7NDgPVESSj8HTLccAyMlh2sBczTQx1Qx6MquSPo,4748
