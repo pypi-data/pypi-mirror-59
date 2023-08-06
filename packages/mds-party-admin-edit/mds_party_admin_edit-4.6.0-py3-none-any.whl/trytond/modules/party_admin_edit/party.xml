@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+
+        <record model="res.group" id="group_party_edit_fields">
+            <field name="name">Party Edit Fields</field>
+        </record>
+
+    </data>
+</tryton>

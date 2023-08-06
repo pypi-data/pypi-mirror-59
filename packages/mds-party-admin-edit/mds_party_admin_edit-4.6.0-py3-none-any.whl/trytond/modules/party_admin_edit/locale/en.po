@@ -1,0 +1,7 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "model:res.group,name:group_party_edit_fields"
+msgid "Party Edit Fields"
+msgstr "Party Edit Fields"
