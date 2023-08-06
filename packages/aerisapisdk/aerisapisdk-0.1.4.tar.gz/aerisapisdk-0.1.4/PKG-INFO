@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aerisapisdk
+Version: 0.1.4
+Summary: 
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Requires-Dist: pycodestyle (>=2.5.0,<3.0.0)
+Requires-Dist: requests (>=2.22,<3.0)
