@@ -1,0 +1,7 @@
+README.md
+setup.py
+packages/__init__.py
+topsispkg.egg-info/PKG-INFO
+topsispkg.egg-info/SOURCES.txt
+topsispkg.egg-info/dependency_links.txt
+topsispkg.egg-info/top_level.txt
