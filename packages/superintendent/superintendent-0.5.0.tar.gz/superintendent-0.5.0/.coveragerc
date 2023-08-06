@@ -1,0 +1,17 @@
+[run]
+include =
+    src/**/*.py
+
+[report]
+# Regexes for lines to exclude from consideration
+exclude_lines =
+    # Have to re-enable the standard pragma
+    pragma: no cover
+    pass
+    __repr__
+    __version__
+
+[paths]
+source =
+    src/superintendent/
+    /**/site-packages/superintendent/
