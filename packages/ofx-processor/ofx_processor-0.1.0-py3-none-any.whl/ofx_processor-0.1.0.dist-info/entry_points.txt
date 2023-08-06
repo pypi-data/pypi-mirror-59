@@ -1,0 +1,3 @@
+[console_scripts]
+cleantoots=ofx_processor.main:cli
+
