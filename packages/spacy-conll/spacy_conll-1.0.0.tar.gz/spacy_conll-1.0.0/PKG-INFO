@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: spacy_conll
+Version: 1.0.0
+Summary: A custom pipeline component for spaCy that can convert any parsed Doc and its sentences into CoNLL-U format. Also provides a command line entry point.
+Home-page: https://github.com/BramVanroy/spacy_conll
+Author: Bram Vanroy, Raquel G. Alhama
+Author-email: bramvanroy@hotmail.com, rgalhama@gmail.com
+License: BSD 2
+Project-URL: Bug Reports, https://github.com/BramVanroy/spacy_conll/issues
+Project-URL: Source, https://github.com/BramVanroy/spacy_conll
+Description: UNKNOWN
+Keywords: nlp spacy spacy-extension conll conllu tagging
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Text Processing
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
