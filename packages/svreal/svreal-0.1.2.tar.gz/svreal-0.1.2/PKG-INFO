@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: svreal
+Version: 0.1.2
+Summary: Library for working with fixed-point numbers in SystemVerilog
+Home-page: https://github.com/sgherbst/svreal
+Author: Steven Herbst
+Author-email: sgherbst@gmail.com
+License: MIT
+Download-URL: https://github.com/sgherbst/svreal/archive/v0.1.2.tar.gz
+Description: UNKNOWN
+Keywords: fixed-point,fixed point,verilog,system-verilog,system verilog,synthesizable,fpga
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
