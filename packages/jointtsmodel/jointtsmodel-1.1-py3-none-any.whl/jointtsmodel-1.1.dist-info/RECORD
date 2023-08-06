@@ -1,0 +1,14 @@
+jointtsmodel/JST.py,sha256=4CqgxQzhG-nVigQmN-VC0S3P0pAyfFT8iWPNSstpnNg,17016
+jointtsmodel/RJST.py,sha256=9DxCMa6uK23dXKljUCm0MVMp5CmkqS4f0E4-8Upvb1s,16991
+jointtsmodel/TSM.py,sha256=XWkbR8f7zmCy0wUIOTFpemE763TNpUKVDeMO6EmgxBw,16709
+jointtsmodel/__init__.py,sha256=J0mFbS_nXgN3QozaI6meb4Q40WlaCC0iAOSa8YKRchM,87
+jointtsmodel/base.py,sha256=OE_xr5_v0nNh9bwoGbFJHQTdksjdLuZKMsys5jvr3tE,19168
+jointtsmodel/sLDA.py,sha256=LSxJ4NtZYC1tA-BLLTpTmsJKYW0fNgy9oSqnWNu_ZLQ,17232
+jointtsmodel/utils.py,sha256=OEYYY6f8CQvA2wfilSp946XYwfFx6XiIqf7UZGdc5uk,6285
+jointtsmodel/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jointtsmodel/test/test.py,sha256=IovQnSN7caP1sWm3uotf12rzL55hLDjU6ZRWt4ggMOg,2526
+jointtsmodel-1.1.dist-info/LICENSE,sha256=cxqYarm5ZF3rULF1ul5nmJ56jQHXKCwtF9qNwj1sjhE,1067
+jointtsmodel-1.1.dist-info/METADATA,sha256=b08TiIdLpeZWPKeXo4MPOsegmdzaXFlC0BeuJ7KmXxs,3905
+jointtsmodel-1.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+jointtsmodel-1.1.dist-info/top_level.txt,sha256=liIK_OHajlAeg9kC5enA0UTRsioEUuidSZ_U0DyF4oo,13
+jointtsmodel-1.1.dist-info/RECORD,,
