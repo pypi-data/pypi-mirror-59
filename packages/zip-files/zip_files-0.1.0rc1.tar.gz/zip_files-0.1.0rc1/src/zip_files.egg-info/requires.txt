@@ -1,0 +1,17 @@
+
+[dev]
+coverage<5.0
+coveralls
+flake8
+gitpython
+isort
+ipython
+pre-commit
+pdbpp
+pylint
+pytest
+pytest-cov
+pytest-xdist
+twine
+wheel
+black
