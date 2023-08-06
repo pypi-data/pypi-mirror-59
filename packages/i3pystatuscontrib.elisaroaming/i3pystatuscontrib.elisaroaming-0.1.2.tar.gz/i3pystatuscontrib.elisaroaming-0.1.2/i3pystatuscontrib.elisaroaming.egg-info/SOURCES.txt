@@ -1,0 +1,10 @@
+README.md
+setup.py
+i3pystatuscontrib.elisaroaming.egg-info/PKG-INFO
+i3pystatuscontrib.elisaroaming.egg-info/SOURCES.txt
+i3pystatuscontrib.elisaroaming.egg-info/dependency_links.txt
+i3pystatuscontrib.elisaroaming.egg-info/not-zip-safe
+i3pystatuscontrib.elisaroaming.egg-info/requires.txt
+i3pystatuscontrib.elisaroaming.egg-info/top_level.txt
+i3pystatuscontrib/elisaroaming/ElisaRoaming.py
+i3pystatuscontrib/elisaroaming/__init__.py
