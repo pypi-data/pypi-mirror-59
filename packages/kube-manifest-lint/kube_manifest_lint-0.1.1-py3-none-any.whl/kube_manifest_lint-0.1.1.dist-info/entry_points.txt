@@ -1,0 +1,3 @@
+[console_scripts]
+kube-manifest-lint=kube_manifest_lint:main.main
+
