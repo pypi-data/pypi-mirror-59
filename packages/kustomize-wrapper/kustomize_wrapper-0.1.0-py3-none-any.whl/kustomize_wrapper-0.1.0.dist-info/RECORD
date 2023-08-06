@@ -1,0 +1,13 @@
+kustomize/__init__.py,sha256=x5n_7pTCOduaZqSjtkShu6yf9QiyTndrTrrWJ3ocEJ8,231
+kustomize/__main__.py,sha256=g5dfWEtV-QFXiWlIGHiyhAAePfOKzTsi0MmK_fW8DNI,143
+kustomize/cli.py,sha256=rHFsqI8G5Zg83sBhe4fjcoMhTRwUcKcsd10eYnGkYlQ,836
+kustomize/util.py,sha256=ePeT1ZqHI-QcbkHlowPZF9XpQPb8EzGXyhutFapI0t8,304
+kustomize/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kustomize/commands/apply.py,sha256=GlVtEGt-092cez9JPxfY87kbLEwYxadL0yXQodrVBY4,454
+kustomize/commands/lint.py,sha256=5jEnbZvl3DWxlSjUcDfrqKIUJyiy1daUhkIXYMRAtig,458
+kustomize/commands/version.py,sha256=JeiNjsjMLjOZPJZaaE3FM3NrtxdQCkCM2AL9txuGP6M,379
+kustomize_wrapper-0.1.0.dist-info/METADATA,sha256=OfmyCPefNjLWhZx8Eh8KHjG-PZilf9RxCTsH65e30yw,3099
+kustomize_wrapper-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+kustomize_wrapper-0.1.0.dist-info/entry_points.txt,sha256=jKCOV2ifknvtWGbi1HdI186AAdjBL130Uu5C0Zf97Is,50
+kustomize_wrapper-0.1.0.dist-info/top_level.txt,sha256=w34v4LLK5yH4XgU6RN4t1H7_-rPvCqU_BPGncEpKMd4,10
+kustomize_wrapper-0.1.0.dist-info/RECORD,,
