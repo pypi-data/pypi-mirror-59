@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kube-manifest-lint
+Version: 0.1.2
+Summary: Kubernetes manifest linter using JSON Schema
+License: GPL-3.0+
+Author: Henning Jacobs
+Author-email: henning@jacobs1.de
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: PyYAML (>=5.3,<6.0)
+Requires-Dist: jsonschema (>=3.2.0,<4.0.0)
