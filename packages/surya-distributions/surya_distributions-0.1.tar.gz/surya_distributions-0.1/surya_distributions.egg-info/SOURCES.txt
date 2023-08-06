@@ -1,0 +1,10 @@
+setup.py
+surya_distributions/Binomialdistribution.py
+surya_distributions/Gaussiandistribution.py
+surya_distributions/Generaldistribution.py
+surya_distributions/__init__.py
+surya_distributions.egg-info/PKG-INFO
+surya_distributions.egg-info/SOURCES.txt
+surya_distributions.egg-info/dependency_links.txt
+surya_distributions.egg-info/not-zip-safe
+surya_distributions.egg-info/top_level.txt
