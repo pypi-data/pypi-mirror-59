@@ -1,0 +1,9 @@
+django_theme_installer-0.1.0.data/scripts/theme_cli.py,sha256=5We9ze6GQ9hbcNrwveKzfSTc-MjZqTq7wFE2TdRytgI,1024
+theme_installer/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+theme_installer/constants.py,sha256=-EzR_w7LlaDueb1cW1LFX8_PPx3GrKGpVvx5j9lR6PE,172
+theme_installer/core.py,sha256=9GR12rTplpTgkXPhyVhZH_vSGj8z9Z0Q1YZcHs8y1nM,6124
+django_theme_installer-0.1.0.dist-info/LICENSE,sha256=xpgHZ-WzAKnYVQGIUAimS-ep-_R8F5GC0Aeq7GLhnAs,1065
+django_theme_installer-0.1.0.dist-info/METADATA,sha256=5MbgTtzwZfR43FnF0DvzSi8-t-ur1XHlBMifDC16AxM,1517
+django_theme_installer-0.1.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+django_theme_installer-0.1.0.dist-info/top_level.txt,sha256=1P73DmzJITS4oFx8RNpvJRZLdCJGrVwbN_aA31iYvgo,16
+django_theme_installer-0.1.0.dist-info/RECORD,,
