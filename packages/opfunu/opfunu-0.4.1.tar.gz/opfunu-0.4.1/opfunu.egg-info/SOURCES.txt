@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+opfunu.egg-info/PKG-INFO
+opfunu.egg-info/SOURCES.txt
+opfunu.egg-info/dependency_links.txt
+opfunu.egg-info/requires.txt
+opfunu.egg-info/top_level.txt
