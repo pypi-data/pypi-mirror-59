@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: mercury_oxide
+Version: 0.1.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Rust
+Classifier: Topic :: Text Processing
+Project-Url: https://github.com/thomas9911/mercury_oxide_python
+Summary: Liquid templating engine powered by Liquid-Rust
+Author: thomas9911 <thomastimmer11@hotmail.com>
+Author-Email: thomas9911 <thomastimmer11@hotmail.com>
