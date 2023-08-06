@@ -1,0 +1,7 @@
+README.rst
+locopt.py
+setup.py
+locopt.egg-info/PKG-INFO
+locopt.egg-info/SOURCES.txt
+locopt.egg-info/dependency_links.txt
+locopt.egg-info/top_level.txt
