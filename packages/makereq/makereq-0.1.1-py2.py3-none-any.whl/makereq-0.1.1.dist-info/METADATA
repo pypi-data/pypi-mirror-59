@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: makereq
+Version: 0.1.1
+Summary: Make requirements
+Home-page: https://github.com/RCheese/makereq
+Author: Ruslan Samoylov (RCheese)
+Author-email: ruslan.v.samoylov@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: requirementslib
+
+
+## MAKEREQ
+
+___
+
+Tool for creating requirements.txt from any dep files
+
+___
+
+#### INSTALL:
+
+```shell script
+pip install makereq
+```
+
+___
+
+#### Usage:
+
+```shell script
+makereq /home/user/Project/Pipfile.lock > requirements.txt
+makereq /home/user/Project/Pipfile.lock --dev > requirements-dev.txt
+```
+
+___
+
+#### TODO:
+ * Add pipfile support
+ * Add poetry pyproject.toml support
+ * Add poetry.lock support
+
+
