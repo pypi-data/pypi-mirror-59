@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: soxspipe
+Version: 0.1
+Summary: A python package and command-line tools to The data-reduction pipeline for the SOXS instrument
+Home-page: https://github.com/thespacedoctor/soxspipe
+Author: David Young
+Author-email: davidrobertyoung@gmail.com
+License: MIT
+Download-URL: https://github.com/thespacedoctor/soxspipe/archive/v0.1.zip
+Keywords: soxs, pipeline, data, spectrum
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Requires-Dist: soxspipe
+Requires-Dist: fundamentals
+
+soxspipe
+===========================
+
+[![Documentation Status](https://readthedocs.org/projects/soxspipe/badge/)](http://soxspipe.readthedocs.io/en/latest/?badge)
+
+[![Coverage Status](https://cdn.jsdelivr.net/gh/thespacedoctor/soxspipe@master/coverage.svg)](https://cdn.jsdelivr.net/gh/thespacedoctor/soxspipe@master/coverage.svg@master/htmlcov/index.html)
+
+*The data-reduction pipeline for the SOXS instrument*.
+
+Command-Line Usage
+==================
+
+``` bash
+Documentation for soxspipe can be found here: http://soxspipe.readthedocs.org/en/stable
+
+Usage:
+    soxspipe init
+    soxspipe [-s <pathToSettingsFile>]
+
+Options:
+    init                                   setup the soxspipe settings file for the first time
+    -h, --help                             show this help message
+    -v, --version                          show version
+    -s, --settings <pathToSettingsFile>    the settings file
+```
+
+Documentation
+=============
+
+Documentation for soxspipe is hosted by [Read the
+Docs](http://soxspipe.readthedocs.org/en/stable/) (last
+[stable version](http://soxspipe.readthedocs.org/en/stable/)
+and [latest version](http://soxspipe.readthedocs.org/en/latest/)).
+
+Installation
+============
+
+The easiest way to install soxspipe is to use `pip`:
+
+``` bash
+pip install soxspipe
+```
+
+Or you can clone the [github repo](https://github.com/thespacedoctor/soxspipe) and
+install from a local version of the code:
+
+``` bash
+git clone git@github.com:thespacedoctor/soxspipe.git
+cd soxspipe
+python setup.py install
+```
+
+To upgrade to the latest version of soxspipe use the
+command:
+
+``` bash
+pip install soxspipe --upgrade
+```
+
+Development
+-----------
+
+If you want to tinker with the code, then install in development mode.
+This means you can modify the code from your cloned repo:
+
+``` bash
+git clone git@github.com:thespacedoctor/soxspipe.git
+cd soxspipe
+python setup.py develop
+```
+
+[Pull
+requests](https://github.com/thespacedoctor/soxspipe/pulls)
+are welcomed!
+
+Issues
+------
+
+Please report any issues
+[here](https://github.com/thespacedoctor/soxspipe/issues).
+
+
+
