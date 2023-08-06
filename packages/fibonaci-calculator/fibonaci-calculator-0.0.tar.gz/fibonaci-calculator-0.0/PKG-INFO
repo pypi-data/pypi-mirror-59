@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: fibonaci-calculator
+Version: 0.0
+Summary: Simple fibonacci calculator for python [ O(N) ]
+Home-page: https://github.com/FilipeMSoares/fibonacci-calculator
+Author: Filipe M Soares
+Author-email: fhilipemorandi@hotmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

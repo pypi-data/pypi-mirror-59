@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+fibonaci/__init__.py
+fibonaci/codey.py
+fibonaci_calculator.egg-info/PKG-INFO
+fibonaci_calculator.egg-info/SOURCES.txt
+fibonaci_calculator.egg-info/dependency_links.txt
+fibonaci_calculator.egg-info/not-zip-safe
+fibonaci_calculator.egg-info/top_level.txt
