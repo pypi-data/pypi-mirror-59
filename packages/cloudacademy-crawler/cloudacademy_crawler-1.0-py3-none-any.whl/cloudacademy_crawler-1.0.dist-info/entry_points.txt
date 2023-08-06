@@ -1,0 +1,3 @@
+[console_scripts]
+ca_spider = course_spider:main
+
