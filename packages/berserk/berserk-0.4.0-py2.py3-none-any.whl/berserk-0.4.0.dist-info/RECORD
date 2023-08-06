@@ -1,0 +1,14 @@
+berserk/__init__.py,sha256=dW6OgjqwzABS0VoSZF_rIcI6NM0vqOBQKIfL_dauOdo,691
+berserk/clients.py,sha256=5eRUeSV0VQT3fQs1EiPg211bp0U5y5jGIxQhbhSGRIw,23962
+berserk/enums.py,sha256=KAmEgLrmyNwbiPE75zdar0OwH4ZB9OyxzZ6__UwOMGo,15873
+berserk/formats.py,sha256=IbWhQAOO6txX6O9QNepk3U-IL3Ho63aeWJiYNz_WtlM,4252
+berserk/models.py,sha256=SuorpouwRoV65DzcmDcQyi_vRex9MlE68eCdscubCBM,1685
+berserk/session.py,sha256=pLHlm-2kWZpmWBvZmD6p0VU_-DDNxSFFL2p8sEE72wM,2071
+berserk/utils.py,sha256=2GLE1bagxMtSPgs463KRyixnGqliHCOmVY4_hAfCxpk,2362
+berserk-0.4.0.dist-info/AUTHORS.rst,sha256=znRVQsThgxzcuL3Avw1LDzd-ZNdUFNKPLqC-ji5q6fg,157
+berserk-0.4.0.dist-info/LICENSE,sha256=xSWDYZnWYWHr39xFS74Va6M1nFv5pN9XVXSpHCKfMtI,1548
+berserk-0.4.0.dist-info/METADATA,sha256=v3ivD5arDbMTxGVu0bWbzqxOZe1xroDx7PSFcwWFVmk,4655
+berserk-0.4.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+berserk-0.4.0.dist-info/top_level.txt,sha256=sLSZ5ky1VsHfwBNmyCUfwgzdD5DZBda3ddaQltLM8wM,8
+berserk-0.4.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+berserk-0.4.0.dist-info/RECORD,,
