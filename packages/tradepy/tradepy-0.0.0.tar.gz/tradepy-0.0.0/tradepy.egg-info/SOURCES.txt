@@ -1,0 +1,8 @@
+README.md
+setup.py
+tradepy/__init__.py
+tradepy/version.py
+tradepy.egg-info/PKG-INFO
+tradepy.egg-info/SOURCES.txt
+tradepy.egg-info/dependency_links.txt
+tradepy.egg-info/top_level.txt
