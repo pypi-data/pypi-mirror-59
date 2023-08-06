@@ -1,0 +1,14 @@
+pptx_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pptx_tools/better_abc.py,sha256=TpScpsd_6PJGdq51UpKhXhQQqyOBDryowz2IDz_fw5E,987
+pptx_tools/creator.py,sha256=YH8D9eHjZihC0JK82py7I03F-z-BkSpKFKmjVwfk3Es,12636
+pptx_tools/example.py,sha256=t13Cb4RwDx7lREvJp4cnvwIEt-JRtwwIoln0mjvuJFs,1829
+pptx_tools/font_style.py,sha256=T4X2xs1wZ9E-hdTRRfDXHyw6_YcRk_yMT2hvM5PRGRU,3580
+pptx_tools/paragraph_style.py,sha256=KMhLffGXZA6VsqaVte8xcx0yR7j7MhjKdDKRHZm6V3w,766
+pptx_tools/style_sheets.py,sha256=qY41CUYUSpzIqFc0-AvQfiQotSWnp0lRpJEe-FmGUoQ,1320
+pptx_tools/templates.py,sha256=M8RsSBHH7hC08UqIx8IiRktL5uq-BFVW-p_BOtVtGTM,6206
+pptx_tools/resources/example-template.pptx,sha256=jy6Cpg_mxOKJHv-PlCFMrE3MrA7NHGU0ly-Fpp2pH-w,1898410
+python_pptx_interface-0.0.3.dist-info/LICENSE,sha256=STBgf_e616FRt6-m3UYMLheAVcw05N5d04ZefmRiLNM,1085
+python_pptx_interface-0.0.3.dist-info/METADATA,sha256=lbVqZA3vWQ8U0RB6OBBG9F1Bf6Beqwq-PFtTNZGrzVk,7366
+python_pptx_interface-0.0.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+python_pptx_interface-0.0.3.dist-info/top_level.txt,sha256=jkhGgA6hcz3vGXAL3FhGGfUz0imsgbOV3MjMtl-5nts,11
+python_pptx_interface-0.0.3.dist-info/RECORD,,
