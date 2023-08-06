@@ -1,0 +1,17 @@
+diffnn/__init__.py,sha256=ilmdqmPqfAfP5eC1vA1QpYTNcriuyPiUs10F6mFwVjs,89
+diffnn/__main__.py,sha256=t8a75GsMr24VuZsl7vGYRgbRAOzRQeM3Dftss2_GA5o,1102
+diffnn/__version__.py,sha256=s5glbzerHBWQE4wK-pxvJUrbITW5uUpCxkguS8kmmZw,23
+diffnn/cli.py,sha256=SHFHkRycDiL58zlelcttlaXAPSHsAxs9lxtdj6nUHFk,1706
+diffnn/logging.py,sha256=zwOpyGpQNP2D2Y-awsDJe63dI7vx2btVXtEsjSN1GvY,2398
+diffnn/utils.py,sha256=2y5cC49ZQjWnbPKc5iqOZpPOaVw6bjY8Qu3Vk_hPvxQ,245
+diffnn/nn/__init__.py,sha256=hHVVuYCuO4lTk74ISDmEez1nQNsSYfAaQP-kH8frNsE,822
+diffnn/nn/errors.py,sha256=JRVjmXi1JhbtNd43DbbsWTm3KEeY76lyMWxZz03b_6M,44
+diffnn/nn/onnx/__init__.py,sha256=NbcxMxZkvQ3Da1elc7NtNmpMl3RkSGWUOmaFzjilG-Q,2369
+diffnn/nn/onnx/utils.py,sha256=52CHZ-abQDHukxN9UZrouXZJFBaX_EoTGwbmzggymkc,1150
+diffnn/nn/onnx/pytorch/__init__.py,sha256=JamVDisb1wHEocvdICjuj6HP27N1Phw06iO7l3A9wx0,379
+diffnn/nn/onnx/pytorch/base.py,sha256=doLjiJtZ6N-VheOQnw6smK2kXhQA_C8Fk5g0B7Cgrqk,1215
+diffnn/nn/onnx/pytorch/operations.py,sha256=A5VvoyX0oJMMhXW8xnvPcck6nK_iE0f3pEG4PQ2UL14,1999
+diffnn-0.0.1a0.dist-info/entry_points.txt,sha256=vDUZjMY5Z9f89-edwE76ksgzjzMHsd-70eK8nwgNR90,48
+diffnn-0.0.1a0.dist-info/WHEEL,sha256=W0C0r2jfBMZdb75jfiTB1qBj15B4vwTGGZrLTh2uslc,81
+diffnn-0.0.1a0.dist-info/METADATA,sha256=z4syTBjO5ddonHB1OzuHSLaneV8bsttNqkaAeIhkntM,525
+diffnn-0.0.1a0.dist-info/RECORD,,

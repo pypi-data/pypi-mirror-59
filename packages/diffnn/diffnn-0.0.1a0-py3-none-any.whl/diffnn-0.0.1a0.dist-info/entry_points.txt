@@ -1,0 +1,3 @@
+[console_scripts]
+diffnn=diffnn.__main__:_main
+
