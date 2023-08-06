@@ -1,0 +1,5 @@
+svreal
+msdsl
+jinja2
+pyvcd
+pyserial
