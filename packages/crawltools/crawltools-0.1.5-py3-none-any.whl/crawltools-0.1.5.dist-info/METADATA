@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: crawltools
+Version: 0.1.5
+Summary: Simple crawlers
+Home-page: https://github.com/maybes/crawler
+Author: Jiun Bae
+Author-email: maytryark@gmail.com
+License: MIT
+Download-URL: https://github.com/MaybeS/crawler/releases/latest
+Keywords: crawler,scrapy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >= 3
+Requires-Dist: scrapy
+
+# Crawler
+
+Simple crawler
+
+## Installation
+
+```
+pip install crawltools
+```
+
+## Quick start
+
+**Naver Webtoon crawling**
+
+```
+crawler webtoon --id webtoonid --output path
+```
+
+
