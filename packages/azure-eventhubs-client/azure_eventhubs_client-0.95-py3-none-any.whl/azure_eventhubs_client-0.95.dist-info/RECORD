@@ -1,0 +1,9 @@
+azure_eventhubs_client/__init__.py,sha256=UFG9IKJcm4OlKMWiMY0SNHqDLTmbstKRYJTLymYzR10,108
+azure_eventhubs_client/consumer.py,sha256=FTt0gm9Q_a4NCbzlKDJzLRDwAqbuoP3KxBNVG_uc_Mk,1380
+azure_eventhubs_client/producer.py,sha256=HgLrJPBbsgK_8nwQwm6tV-a3vWtxEjS2TnKAvJg5FqU,577
+azure_eventhubs_client/redis_cache.py,sha256=V4oIsKeF_BNpd6ldILergXxVwzhbg7le5VVdEoUoeTU,841
+azure_eventhubs_client-0.95.dist-info/LICENSE,sha256=GkdRbqCzyfzl0xuXnikUB29xq1Facow45joZM7Z8wAE,1129
+azure_eventhubs_client-0.95.dist-info/METADATA,sha256=ocHx9iErXyPniFrJsbZKNXUHIPFEz48fs627B6zpikw,800
+azure_eventhubs_client-0.95.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+azure_eventhubs_client-0.95.dist-info/top_level.txt,sha256=Pd-hjV0B64Wju8TsobHddbXDXIkWHM5I7I_abv-xBpU,23
+azure_eventhubs_client-0.95.dist-info/RECORD,,
