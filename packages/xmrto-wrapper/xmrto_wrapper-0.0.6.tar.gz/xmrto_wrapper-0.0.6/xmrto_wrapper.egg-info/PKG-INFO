@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: xmrto-wrapper
+Version: 0.0.6
+Summary: Interact with XMR.to, create and track your orders.
+Home-page: https://github.com/normoes/xmrto_wrapper
+Author: Norman Moeschter-Schenck
+Author-email: norman.moeschter@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python

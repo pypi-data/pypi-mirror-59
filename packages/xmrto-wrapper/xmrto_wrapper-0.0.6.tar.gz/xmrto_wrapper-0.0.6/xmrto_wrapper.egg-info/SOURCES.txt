@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+_version.py
+setup.py
+xmrto_wrapper.py
+bin/xmrto_wrapper
+xmrto_wrapper.egg-info/PKG-INFO
+xmrto_wrapper.egg-info/SOURCES.txt
+xmrto_wrapper.egg-info/dependency_links.txt
+xmrto_wrapper.egg-info/requires.txt
+xmrto_wrapper.egg-info/top_level.txt
