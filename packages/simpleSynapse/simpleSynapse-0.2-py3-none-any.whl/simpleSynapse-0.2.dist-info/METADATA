@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: simpleSynapse
+Version: 0.2
+Summary: A simple Synapse organization and maintenance python client script
+Home-page: https://github.com/BruneauLab-GladstoneInstitutes/simpleSynapse
+Author: Andrew Blair
+Author-email: andrew.blair@gladstone.ucsf.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: synapseclient
+
+UNKNOWN
+
+
