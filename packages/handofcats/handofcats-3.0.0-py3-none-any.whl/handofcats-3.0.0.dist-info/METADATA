@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: handofcats
+Version: 3.0.0
+Summary: python function to command translator
+Home-page: https://github.com/podhmo/handofcats
+Author: podhmo
+Author-email: 
+License: mit
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/plain
+Requires-Dist: prestring
+Requires-Dist: typing-extensions
+Requires-Dist: magicalimport
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Provides-Extra: docs
+Provides-Extra: testing
+Requires-Dist: flake8 ; extra == 'testing'
+Requires-Dist: black ; extra == 'testing'
+
+
+
+
+
