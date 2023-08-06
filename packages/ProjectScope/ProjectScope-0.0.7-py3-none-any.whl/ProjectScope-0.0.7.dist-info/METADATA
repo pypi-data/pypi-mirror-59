@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: ProjectScope
+Version: 0.0.7
+Summary: A small project management tool
+Home-page: https://bitbucket.org/CoreyBird/projectscope/src/master/
+Author: Corey Bird
+Author-email: birdcorey@gmail.com
+License: MIT
+Download-URL: https://bitbucket.org/CoreyBird/projectscope/src/master/dist/ProjectScope-0.0.7.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: wxPython
+Requires-Dist: Panda3D
+
+
+Project Scope
+============================================
+
+Welcome to the Project Scope management tool
+--------------------------------------------
+
+--------------------------------------------
+
+This tool is created to help manage the semantic connections in a project. The idea
+is that there are many kinds of data required by a project, and sometimes the organization
+of ideas cannot be effectively conveyed with a hierarchical file system. Therefore this
+tool was written to allow the flexibility in how information is linked together.
+
+This project is written in python, and is biased towards python workflows. There is an
+import system built around the python importer utilities that allows symantic linking
+between python files.
+
+This project is a real work in progress. This was hastily built to solve a problem I was
+having, and as a result many aspects of the project are sub-par.
+
+
+Usage Guide
+-----------
+
+-----------
+
+ToDo
+
+
+Supported Commands:
+-------------------
+
+-------------------
+
+```
+~> python -m ProjectScope Initialize
+```
+Creates a new project in the current working directory.
+
+
+```
+~> python -m ProjectScope Viewer
+```
+Open a 3D project visualizer application. Requires a GUI and a .projectscope database in the current working directory.
+
+```
+~> python -m ProjectScope Upgrade
+```
+Interrogates the database in the current working directory and attemps an upgrade process if the version in the database
+is less than the current version of ProjectScope.
+
+
+Supported Code Accessors:
+-------------------
+
+-------------------
+
+You can import nodes using symanitic paths set up in the Viewer utility from your python code like below:
+```
+import ProjectScope
+ProjectScope.load("import link1/link2/app2")
+```
+
+the ```import ProjectScope``` statement will look for a .projectscope database in the current working directory,
+and if it doesn't find it then it will start recursing up the folder structure looking for a database. Once a
+database is found, it will look up the symantic/absolute path to the file.
+
+
+Roadmap:
+-------------------
+
+-------------------
+
+This roadmap is a living document and outlines the rough priority that new features will be developed in:
+* Add scripts to automate the release process (With the goal of one-click releases)
+* Add interface to get Node paths from python code
+* Fix potential concurrency issues if python code and the Viewer utility are both accessing the database at the same time
+* Add ability to store a full configuration json for each node
+* Add tags to Nodes & Links in the Viewer
+* Add ability to filter Nodes & Links by tag in the viewer
+* Add container nodes that can encapsulate parts of a project, allow to filter by container
+* Add more shapes/objects to the visualizer
+* Add helper controls to layout new nodes faster (ie auto-snap to grid, alignment to existing node tools, etc)
+* Add multiple views so that nodes can be layed out differently for different perspectives on the project
+
