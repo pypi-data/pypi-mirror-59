@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: topsis_3579
+Version: 0.0.1
+Summary: Topsis package in Python
+Home-page:  
+Author: Tanishq Chopra
+Author-email: tanishqtc1980@gmail.com
+License: UNKNOWN
+Description: TOPSIS for MCDM (Multiple criteria decision making)
+        Topsis ( Technique for order for preference by similarity to Ideal solution ) in Python for UCS633 (Data Analytics & Visualization) 
+        complied by Tanishq Chopra, 101703579, TIET, Patiala.  
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
