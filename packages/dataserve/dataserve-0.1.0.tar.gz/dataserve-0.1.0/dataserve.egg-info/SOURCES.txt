@@ -1,0 +1,13 @@
+README.md
+setup.py
+dataserve/DataContainer.py
+dataserve/HTTPDataClient.py
+dataserve/HTTPDataServer.py
+dataserve/ProxyServer.py
+dataserve/__init__.py
+dataserve/http_utils.py
+dataserve.egg-info/PKG-INFO
+dataserve.egg-info/SOURCES.txt
+dataserve.egg-info/dependency_links.txt
+dataserve.egg-info/requires.txt
+dataserve.egg-info/top_level.txt
