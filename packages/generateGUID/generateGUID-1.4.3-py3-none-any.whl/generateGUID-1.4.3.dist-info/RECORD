@@ -1,0 +1,16 @@
+generateGUID/__init__.py,sha256=V0De4X1vsre47B-8mtvafexYPmfWLIdbtV6HiLaRixg,71
+generateGUID/generate_GUID.py,sha256=GeSv5Zeq8Kl2jLSNe-pAqTvxbCiTjZRbsUenyMop6tU,445
+generateGUID/strip_accents.py,sha256=dh4dA6SaNKlvIAabvyxD3cC88HRmEHAvZLui8M2a9Jw,2044
+generateGUID/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+generateGUID/scripts/generate_GUID_Bash.py,sha256=44HZ_BPgLwTY6HxiF3cOH_xOkYU_hGduzXwERitnMmw,359
+generateGUID/scripts/generate_GUID_Bash_ARGS.py,sha256=44HZ_BPgLwTY6HxiF3cOH_xOkYU_hGduzXwERitnMmw,359
+generateGUID/scripts/generate_GUID_Bash_CSV.py,sha256=kXbi5jivIdGWo9Cn6lQDPajSUxyEMDSWdwLvzbDxkBc,442
+generateGUID/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+generateGUID/tests/test_GUID.py,sha256=2AYPq1MtxUOw17JdFsUuvTT1QSZBqMiO3lzb4FPncF4,1480
+generateGUID/tests/test_GUID2.py,sha256=CpqIrWx5T8F4Me-iP4iBLmNWtYD6xyd6dcRwC-7Wupg,2104
+generateGUID/tests/test_GUID_Bash.py,sha256=2AYPq1MtxUOw17JdFsUuvTT1QSZBqMiO3lzb4FPncF4,1480
+generateGUID-1.4.3.dist-info/LICENSE,sha256=ceP0Z717q9JKaaAu79XeO7SnmWgsGEInb3z7sqcoITo,1071
+generateGUID-1.4.3.dist-info/METADATA,sha256=1vpY35KwlntRPoKovfAK-apoBi65it0W9sIio353ncc,1088
+generateGUID-1.4.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+generateGUID-1.4.3.dist-info/top_level.txt,sha256=9MZhMzUEekmW_3iUf6YUDlaJ-SrxAnQSI1sk3XQ9lC4,13
+generateGUID-1.4.3.dist-info/RECORD,,
