@@ -1,0 +1,9 @@
+README.md
+setup.py
+generateGUID/__init__.py
+generateGUID/generate_GUID.py
+generateGUID/strip_accents.py
+generateGUID.egg-info/PKG-INFO
+generateGUID.egg-info/SOURCES.txt
+generateGUID.egg-info/dependency_links.txt
+generateGUID.egg-info/top_level.txt
