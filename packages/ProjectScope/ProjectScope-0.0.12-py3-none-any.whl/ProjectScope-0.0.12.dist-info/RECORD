@@ -1,0 +1,10 @@
+ProjectScope/ProjectScopeViewer.py,sha256=1vjwDKVeXZD3CI1JDjLa7fQoD7LnMD2OITffUKibDVE,70706
+ProjectScope/__init__.py,sha256=Rn85_crzTQ14FstiRzGiUmlSjD7VMx9_o4OgfCR40b4,15613
+ProjectScope/__main__.py,sha256=HHJMbqzwIuk2XKIHl0Hv6cqptQS98YtBiC0I4Czhwjo,2452
+ProjectScope/db_upgrades.py,sha256=8-zM9Odrwb6Jgm6gGhdZDvy_Um870IheoLnbqsybgIo,1424
+ProjectScope/version_info.txt,sha256=dT39oXNqYIofG9CTc-tLbCt87TO9oA6aLHcxESJ05pY,6
+ProjectScope-0.0.12.dist-info/LICENSE,sha256=3Vwpdf3fKPtQE15NesdCsXZQFTxgILdt-eCZS-ua4WQ,1086
+ProjectScope-0.0.12.dist-info/METADATA,sha256=2sS4gw_V1nTjN5LfkqwHn7oJTv4VRMShLh1AAeRMyvM,3907
+ProjectScope-0.0.12.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+ProjectScope-0.0.12.dist-info/top_level.txt,sha256=rp7DC5pek_AODbwqBlFV4yywip32R-2u4kqrPL9cO4o,13
+ProjectScope-0.0.12.dist-info/RECORD,,
