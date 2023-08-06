@@ -1,0 +1,86 @@
+#!python
+
+"""
+packme is a python3 application for generating and running packer templates.
+
+It works by generating packer manifest.json files out of manifest.yml files which contain the packer settings for the image to build.
+"""
+
+import argparse
+import glob
+import os
+import shutil
+import sys
+
+from packme import Packman
+
+def clean_templates_dir(templates_dir):
+    """Removes all manifest.json files, packer_cache and builds directories found in
+    templates directory
+    """
+
+    for template_dir in templates_dir:
+
+        try:
+            os.remove(os.path.join(template_dir,"manifest.json"))
+        except FileNotFoundError:
+            pass
+
+        try:
+            shutil.rmtree(os.path.join(template_dir,"builds"))
+        except FileNotFoundError:
+            pass
+
+        try:
+            shutil.rmtree(os.path.join(template_dir,"packer_cache"))
+        except FileNotFoundError:
+            pass
+
+def parse_args():
+    """Setup and run the argument parser.
+    """
+
+    parser = argparse.ArgumentParser(description="This is packme: a program for generating and running packer configuration(s)")
+    parser.add_argument("--log", "-l", dest="log", action="store_true", help="log packer output")
+    parser.add_argument("--clean", "-c", dest="clean", action="store_true", help="clean up templates directories")
+    parser.add_argument("--debug", "-d", dest="debug", action="store_true", help="debug mode (keep temporary files)")
+    parser.add_argument("--run", "-r", dest="run", action="store_true", help="run packer after json manifest(s) generation")
+    parser.add_argument("--templates-dir", "-t", dest="templates_dir", required=True, help="Templates base directory")
+    parser.add_argument("--selected-templates", "-s", dest="selected_templates", nargs="*", default=["*"], help="run packman on selected template(s)")
+    parser.add_argument("--input", "-i", dest="input_file", help="YAML input file")
+
+    args = parser.parse_args()
+
+    return args
+                
+if __name__ == "__main__":
+
+    # Parse command line arguments and fetch their values
+    args = parse_args()
+    input_file = args.input_file
+    run = args.run
+    templates_dir = args.templates_dir
+    selected_templates = args.selected_templates
+    clean = args.clean
+    debug = args.debug
+    log = args.log
+
+    # If --clean option is set, cleanup the templates dir (builds, packer_cache, manifest.json files and directories)
+    if clean:
+        clean_templates_dir(templates_dir)
+
+    if not input_file:
+        sys.exit(0)
+
+    t = Packman.Packman(input_file, templates_dir)
+
+    t.build(selected_templates=selected_templates, indent=4, separators=(',', ': '))
+
+    if run:
+        t.run(selected_templates=selected_templates, log=log)
+
+    # If --debug option is set, keep temporary files and directories in templates dir (builds, packer_cache, manifest.json)
+    if not debug:
+        clean_templates_dir(templates_dir)
+
+
