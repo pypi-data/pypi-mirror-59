@@ -1,0 +1,7 @@
+MANIFEST.in
+README.rst
+setup.py
+filefield_cache.egg-info/PKG-INFO
+filefield_cache.egg-info/SOURCES.txt
+filefield_cache.egg-info/dependency_links.txt
+filefield_cache.egg-info/top_level.txt
