@@ -1,0 +1,5 @@
+build
+dist
+kubernetes
+venv
+db/db.sqlite3
