@@ -1,0 +1,3 @@
+[console_scripts]
+giphyfun = giphyFun.giphyFun:main
+
