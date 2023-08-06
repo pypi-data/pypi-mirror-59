@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: is-sorted
+Version: 0.0.1
+Summary: tool to check sorting
+Home-page: https://github.com/vonafor/is_sorted
+Author: Yan Mitrofanov
+Author-email: mmxlviii@mail.ru
+License: MIT License
+Description: is_sorted
+        =========
+        
+        *is_sorted* is a tiny tool to check if list (or other iterables) is sorted.
+        
+        Installation
+        ------------
+        
+        .. code-block:: console
+        
+            pip install is_sorted
+        
+        
+        Examples
+        --------
+        
+        .. code-block:: python
+        
+           >>> from is_sorted import is_sorted
+           >>> is_sorted([1, 2, 3, 4, 5, 6])
+           True
+           >>> is_sorted([1, 3, 2, 0])
+           False
+           >>> is_sorted([5, 4, 3, 2, 1], reverse=True)
+           True
+           >>> is_sorted([(1, 2), (2, 0), (3, 9), (4, 5)], key=lambda x: x[0])
+           True
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Provides-Extra: tests
