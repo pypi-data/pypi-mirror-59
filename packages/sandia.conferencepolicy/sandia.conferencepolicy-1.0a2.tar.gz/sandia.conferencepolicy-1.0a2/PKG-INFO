@@ -1,0 +1,149 @@
+Metadata-Version: 2.1
+Name: sandia.conferencepolicy
+Version: 1.0a2
+Summary: Policy product for Sandia multiconference website
+Home-page: https://bitbucket.org/sixfeetup/sandia.conferencepolicy
+Author: T. Kim Nguyen
+Author-email: nguyen@plone.org
+License: GPL version 2
+Project-URL: PyPI, https://pypi.python.org/pypi/sandia.conferencepolicy
+Project-URL: Source, https://bitbucket.org/sixfeetup/sandia.conferencepolicy
+Description: .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+           If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+           This text does not appear on pypi or github. It is a comment.
+        
+        ====================
+        ploneconf2016.policy
+        ====================
+        
+        Developed for use on Plone Conference sites.
+        
+        Installs add-ons needed for the site, primarily:
+        
+        - easyform
+        - Mosaic
+        - social networking sharing
+        
+        Defines Dexterity content types for:
+        
+        - presentations
+        - speakers
+        - training classes
+        
+        We hope that future Plone Conferences will use this or a derived add-on!
+        
+        Examples
+        --------
+        
+        This add-on can be seen in action at the following sites:
+        
+        - https://2016.ploneconf.org
+        - https://2017.ploneconf.org
+        - https://2018.ploneconf.org
+        
+        
+        Documentation
+        -------------
+        
+        Full documentation for end users can be found in the "docs" folder.
+        
+        
+        Translations
+        ------------
+        
+        This product has not yet been translated.
+        
+        
+        
+        Installation
+        ------------
+        
+        Install ploneconf2016.policy by adding it to your buildout::
+        
+            [buildout]
+        
+            ...
+        
+            eggs =
+                ploneconf2016.policy
+        
+        
+        and then running ``bin/buildout``
+        
+        
+        Contribute
+        ----------
+        
+        - Issue Tracker: https://github.com/plone/ploneconf2016.policy/issues
+        - Source Code: https://github.com/plone/ploneconf2016.policy
+        
+        
+        Support
+        -------
+        
+        If you are having issues, please let us know at the Plone forum, https://community.plone.org
+        
+        License
+        -------
+        
+        The project is licensed under the GPLv2.
+        
+        
+        Contributors
+        ============
+        
+        - T. Kim Nguyen, kim@sixfeetup.com
+        
+        
+        Changelog
+        =========
+        
+        
+        1.0a1 (2020-01-15)
+        ------------------
+        
+        - updated to work with Plone 5.2 on Python 3.7
+        - add conference type, add base event-ish default view for conference, add collection behaviour to conference type, add object added event handler, add speakers folder, add talks folder, constrain addable types
+        - constrain types in Conference types, fix subfolder constrains
+        - manually create a template registration form; on conference create, copy the template registration form into it
+        - on installation, import template registration form into site root
+        - use bug fix branch of plone.dexterity to allow template registration form creation
+        - set email address in mailer adapter of copied registration form to event contact email address
+        - create on save handler to update registration form mail recipient_email if event contact email changes
+        - create uninstall profile
+        - show collection at bottom of Conference view
+        - add conference_listing_view (shows list of talks), make conference_view the default
+        - set default collection constraints to list presentations
+        - automatically include sandia.conferencetheme add-on
+        - move login link to footer
+        - hide search viewlet
+        - remove unneeded plone.tiles behavior in Conference type
+        - fix add-on name and URLs in setup.py
+        - change underlying name of add-on
+          [tkimnguyen]
+        
+        0.1 (2016, 2017, 2018)
+        ----------------------
+        
+        - deployed to 2018.ploneconf.org
+        
+        - updates for 2017.ploneconf.org
+          [sneridagh, tkimnguyen]
+        
+        - Initial release for 2016.ploneconf.org.
+          [alecpm, tkimnguyen]
+        
+Keywords: Python Plone
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: Addon
+Classifier: Framework :: Plone :: 5.2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Requires-Python: ==2.7, >=3.6
+Provides-Extra: test
