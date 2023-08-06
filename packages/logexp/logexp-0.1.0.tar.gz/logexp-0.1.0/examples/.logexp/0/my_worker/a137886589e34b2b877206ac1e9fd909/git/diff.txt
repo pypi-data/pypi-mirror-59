@@ -1,0 +1,14 @@
+diff --git a/examples/hello.py b/examples/hello.py
+index 27c5e44..131643f 100644
+--- a/examples/hello.py
++++ b/examples/hello.py
+@@ -12,6 +12,6 @@ class MyWorker(logexp.BaseWorker):
+         with self.storage.open("hello.txt", "w") as f:
+             f.write(self.message)
+ 
+-        report = logexp.Report()
+-        report["foo"] = "bar"
+-        return report
++        #report = logexp.Report()
++        #report["foo"] = "bar"
++        #return report

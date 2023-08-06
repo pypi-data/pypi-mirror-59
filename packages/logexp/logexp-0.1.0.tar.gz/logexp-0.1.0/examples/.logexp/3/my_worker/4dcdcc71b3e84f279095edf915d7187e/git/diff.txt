@@ -1,0 +1,459 @@
+diff --git a/logexp/cli/delete.py b/logexp/cli/delete.py
+index 3793762..0e28bce 100644
+--- a/logexp/cli/delete.py
++++ b/logexp/cli/delete.py
+@@ -3,7 +3,7 @@ from pathlib import Path
+ 
+ from logexp.cli.subcommand import Subcommand
+ from logexp.logstore import LogStore
+-from logexp.settings import DEFAULT_LOGSTORE_DIR
++from logexp.settings import Settings
+ 
+ 
+ @Subcommand.add(
+@@ -17,11 +17,19 @@ class DeleteCommand(Subcommand):
+                                  help="run id")
+         self.parser.add_argument("-f", "--force", action="store_true",
+                                  help="run id")
+-        self.parser.add_argument("-s", "--store", default=DEFAULT_LOGSTORE_DIR,
++        self.parser.add_argument("-s", "--store", type=Path,
+                                  help="path to logstore directory")
++        self.parser.add_argument("--config-file", type=Path,
++                                 help="logexp config file")
+ 
+     def run(self, args: argparse.Namespace) -> None:
+-        store = LogStore(Path(args.store))
++        settings = Settings()
++        if args.config_file is not None:
++            settings.load(args.config_file)
++
++        store_path = args.store or settings.logstore_storepath
++
++        store = LogStore(store_path)
+         runinfo = store.load_run(args.run)
+ 
+         if args.force:
+diff --git a/logexp/cli/init.py b/logexp/cli/init.py
+index 3e8acbe..2342ae8 100644
+--- a/logexp/cli/init.py
++++ b/logexp/cli/init.py
+@@ -1,8 +1,9 @@
+ import argparse
++from pathlib import Path
+ 
+ from logexp.cli.subcommand import Subcommand
+ from logexp.executor import Executor
+-from logexp.settings import DEFAULT_LOGSTORE_DIR
++from logexp.settings import Settings
+ 
+ 
+ @Subcommand.add(
+@@ -12,20 +13,34 @@ from logexp.settings import DEFAULT_LOGSTORE_DIR
+ )
+ class RunCommand(Subcommand):
+     def set_arguments(self):
+-        self.parser.add_argument("-m", "--module", required=True,
+-                                 help="module name")
++
+         self.parser.add_argument("-e", "--experiment", required=True,
+                                  help="experiment id")
+-        self.parser.add_argument("--exec-path",
+-                                 help="execution path", default=".")
+-        self.parser.add_argument("-s", "--store", default=DEFAULT_LOGSTORE_DIR,
++        self.parser.add_argument("--exec-path", type=Path,
++                                 help="execution path")
++        self.parser.add_argument("-m", "--module",
++                                 help="module name")
++        self.parser.add_argument("-s", "--store", type=Path,
+                                  help="path to logstore directory")
++        self.parser.add_argument("--config-file", type=Path,
++                                 help="logexp config file")
+ 
+     def run(self, args: argparse.Namespace) -> None:
++        settings = Settings()
++        if args.config_file is not None:
++            settings.load(args.config_file)
++
++        store_path = args.store or settings.logstore_storepath
++        module = args.module or settings.logexp_module
++        exec_path = args.exec_path or settings.logexp_execpath
++
++        if not module:
++            raise RuntimeError("module is required")
++
+         executor = Executor(
+-            rootdir=args.store,
+-            module=args.module,
+-            execution_path=args.exec_path,
++            rootdir=store_path,
++            module=module,
++            execution_path=exec_path,
+         )
+         experiment_id = executor.init(args.experiment)
+         print(f"experiment id: {experiment_id}")
+diff --git a/logexp/cli/list.py b/logexp/cli/list.py
+index f98f311..0d3921f 100644
+--- a/logexp/cli/list.py
++++ b/logexp/cli/list.py
+@@ -6,7 +6,7 @@ from pathlib import Path
+ from logexp.cli.subcommand import Subcommand
+ from logexp.logstore import LogStore
+ from logexp.metadata.runinfo import RunInfo
+-from logexp.settings import DEFAULT_LOGSTORE_DIR
++from logexp.settings import Settings
+ from logexp.utils.table import Table
+ 
+ 
+@@ -40,7 +40,7 @@ class ListCommand(Subcommand):
+                                  help="experiment id")
+         self.parser.add_argument("-w", "--worker",
+                                  help="worker name")
+-        self.parser.add_argument("-s", "--store", default=DEFAULT_LOGSTORE_DIR,
++        self.parser.add_argument("-s", "--store", type=Path,
+                                  help="path to logstore directory")
+         self.parser.add_argument("-c", "--columns",
+                                  help="show specified columns (comma separated string)")
+@@ -51,9 +51,18 @@ class ListCommand(Subcommand):
+                                 help="sort by specified column")
+         sort_group.add_argument("--desc", action="store_true",
+                                 help="sort by descending order")
++        self.parser.add_argument("--config-file", type=Path,
++                                 help="logexp config file")
++
+ 
+     def run(self, args: argparse.Namespace) -> None:
+-        store = LogStore(Path(args.store))
++        settings = Settings()
++        if args.config_file is not None:
++            settings.load(args.config_file)
++
++        store_path = args.store or settings.logstore_storepath
++
++        store = LogStore(store_path)
+         runinfos = store.get_runs(args.experiment, args.worker)
+ 
+         table = _get_runinfo_table(runinfos, args.max_column_width)
+diff --git a/logexp/cli/logs.py b/logexp/cli/logs.py
+index c7111bf..cfa95ad 100644
+--- a/logexp/cli/logs.py
++++ b/logexp/cli/logs.py
+@@ -4,7 +4,7 @@ from pathlib import Path
+ 
+ from logexp.cli.subcommand import Subcommand
+ from logexp.logstore import LogStore
+-from logexp.settings import DEFAULT_LOGSTORE_DIR
++from logexp.settings import Settings
+ 
+ 
+ @Subcommand.add(
+@@ -18,11 +18,19 @@ class LogsCommand(Subcommand):
+                                  help="experiment id")
+         self.parser.add_argument("-w", "--worker",
+                                  help="worker name")
+-        self.parser.add_argument("-s", "--store", default=DEFAULT_LOGSTORE_DIR,
++        self.parser.add_argument("-s", "--store", type=Path,
+                                  help="path to logstore directory")
++        self.parser.add_argument("--config-file", type=Path,
++                                 help="logexp config file")
+ 
+     def run(self, args: argparse.Namespace) -> None:
+-        store = LogStore(Path(args.store))
++        settings = Settings()
++        if args.config_file is not None:
++            settings.load(args.config_file)
++
++        store_path = args.store or settings.logstore_storepath()
++
++        store = LogStore(store_path)
+         runinfos = store.get_runs(args.experiment, args.worker)
+         runinfo_dicts = [x.to_json() for x in runinfos]
+         print(json.dumps(runinfo_dicts))
+diff --git a/logexp/cli/params.py b/logexp/cli/params.py
+index 996d7d9..c49a7f2 100644
+--- a/logexp/cli/params.py
++++ b/logexp/cli/params.py
+@@ -1,13 +1,13 @@
+ import argparse
+ import importlib
+-import pprint
++import json
+ import sys
+ from pathlib import Path
+ 
+ from logexp.cli.subcommand import Subcommand
+ from logexp.experiment import Experiment
+ from logexp.logstore import LogStore
+-from logexp.settings import DEFAULT_LOGSTORE_DIR
++from logexp.settings import Settings
+ 
+ 
+ @Subcommand.add(
+@@ -24,41 +24,45 @@ class RunCommand(Subcommand):
+                                   help="experiment name")
+         module_group.add_argument("-w", "--worker",
+                                   help="worker name")
+-        module_group.add_argument("--exec-path",
+-                                  help="execution path", default=".")
++        module_group.add_argument("--exec-path", type=Path,
++                                  help="execution path" )
+ 
+         run_group = self.parser.add_argument_group("params from run")
+         run_group.add_argument("-r", "--run",
+                                help="run id")
+-        run_group.add_argument("-s", "--store", default=DEFAULT_LOGSTORE_DIR,
++        run_group.add_argument("-s", "--store", type=Path,
+                                help="path to logstore directory")
++        self.parser.add_argument("--config-file", type=Path,
++                                 help="logexp config file")
+ 
+-    @staticmethod
+-    def _check_args(args: argparse.Namespace) -> None:
+-        is_module = all(
+-            x is not None
+-            for x in [args.module, args.experiment, args.worker]
+-        )
+-        is_run = all(
+-            x is not None
+-            for x in [args.store, args.run]
+-        )
++    def run(self, args: argparse.Namespace) -> None:
++        settings = Settings()
++        if args.config_file is not None:
++            settings.load(args.config_file)
++
++        module = args.module or settings.logexp_module
++
++        # check arguments
++        is_module = all([args.experiment, args.worker, module])
++        is_run = args.run is not None
+         if not (is_module or is_run):
+             raise RuntimeError("some arguments are missing")
+ 
+-    def run(self, args: argparse.Namespace) -> None:
+-        self._check_args(args)
+-
+-        if args.module is not None:
+-            sys.path.append(args.exec_path)
+-            importlib.import_module(args.module)
++        if module:
++            sys.path.append(args.exec_path or str(settings.logexp_execpath))
++            importlib.import_module(module)
+ 
+             experiment = Experiment.get_experiment(args.experiment)
+             worker = experiment.get_worker(args.worker)
+             params = worker.params
+         else:
+-            store = LogStore(Path(args.store))
++            if args.store is None:
++                store_path = settings.logstore_storepath
++            else:
++                store_path = Path(args.store)
++
++            store = LogStore(store_path)
+             runinfo = store.load_run(args.run)
+             params = runinfo.params
+ 
+-        pprint.pprint(params.to_json())
++        print(json.dumps(params.to_json(), indent=2))
+diff --git a/logexp/cli/run.py b/logexp/cli/run.py
+index 78377bf..9cde46c 100644
+--- a/logexp/cli/run.py
++++ b/logexp/cli/run.py
+@@ -1,9 +1,10 @@
+ import argparse
++from pathlib import Path
+ 
+ from logexp.cli.subcommand import Subcommand
+ from logexp.executor import Executor
+ from logexp.metadata.runinfo import RunInfo
+-from logexp.settings import DEFAULT_LOGSTORE_DIR
++from logexp.settings import Settings
+ 
+ 
+ _RUNINFO_SUMMARY_TEMPLATE = """** SUMMARY **
+@@ -40,29 +41,41 @@ def _print_summary(runinfo: RunInfo) -> None:
+ )
+ class RunCommand(Subcommand):
+     def set_arguments(self):
+-
+-        self.parser.add_argument("-m", "--module", required=True,
+-                                 help="module name")
+         self.parser.add_argument("-e", "--experiment", required=True,
+                                  help="experiment id")
+         self.parser.add_argument("-w", "--worker", required=True,
+                                  help="worker name")
+-        self.parser.add_argument("-p", "--params",
++        self.parser.add_argument("-p", "--params", type=Path,
+                                  help="path to params file")
+         self.parser.add_argument("--name",
+                                  help="name this run")
+         self.parser.add_argument("--note",
+                                  help="add some note about this run")
+-        self.parser.add_argument("--exec-path",
+-                                 help="execution path", default=".")
+-        self.parser.add_argument("-s", "--store", default=DEFAULT_LOGSTORE_DIR,
++        self.parser.add_argument("-m", "--module",
++                                 help="module name")
++        self.parser.add_argument("--exec-path", type=Path,
++                                 help="execution path")
++        self.parser.add_argument("-s", "--store", type=Path,
+                                  help="path to logstore directory")
++        self.parser.add_argument("--config-file", type=Path,
++                                 help="logexp config file")
+ 
+     def run(self, args: argparse.Namespace) -> None:
++        settings = Settings()
++        if args.config_file is not None:
++            settings.load(args.config_file)
++
++        module = args.module or settings.logexp_module
++        store_path = args.store or settings.logstore_storepath
++        exec_path = args.exec_path or settings.logexp_execpath
++
++        if not module:
++            raise RuntimeError("module is required")
++
+         executor = Executor(
+-            rootdir=args.store,
+-            module=args.module,
+-            execution_path=args.exec_path,
++            rootdir=store_path,
++            module=module,
++            execution_path=exec_path,
+         )
+         run_info = executor.run(
+             experiment_id=args.experiment,
+diff --git a/logexp/cli/show.py b/logexp/cli/show.py
+index 7109403..0ee3e03 100644
+--- a/logexp/cli/show.py
++++ b/logexp/cli/show.py
+@@ -4,7 +4,7 @@ from pathlib import Path
+ 
+ from logexp.cli.subcommand import Subcommand
+ from logexp.logstore import LogStore
+-from logexp.settings import DEFAULT_LOGSTORE_DIR
++from logexp.settings import Settings
+ 
+ 
+ @Subcommand.add(
+@@ -16,10 +16,18 @@ class ShowCommand(Subcommand):
+     def set_arguments(self):
+         self.parser.add_argument("-r", "--run", required=True,
+                                  help="run id")
+-        self.parser.add_argument("-s", "--store", default=DEFAULT_LOGSTORE_DIR,
++        self.parser.add_argument("-s", "--store", type=Path,
+                                  help="path to logstore directory")
++        self.parser.add_argument("--config-file", type=Path,
++                                 help="logexp config file")
+ 
+     def run(self, args: argparse.Namespace) -> None:
+-        store = LogStore(Path(args.store))
++        settings = Settings()
++        if args.config_file is not None:
++            settings.load(args.config_file)
++
++        store_path = args.store or settings.logstore_storepath()
++
++        store = LogStore(store_path)
+         runinfo = store.load_run(args.run)
+         print(json.dumps(runinfo.to_json(), indent=2))
+diff --git a/logexp/executor.py b/logexp/executor.py
+index 1d0e3b6..ffcb1ed 100644
+--- a/logexp/executor.py
++++ b/logexp/executor.py
+@@ -26,18 +26,18 @@ class Executor:
+             self,
+             rootdir: tp.Union[Path, str],
+             module: str,
+-            execution_path: str = None,
++            execution_path: tp.Union[Path, str],
+     ) -> None:
+         self._store = LogStore(Path(rootdir))
+         self._module = module
+-        self._execution_path = Path(execution_path or os.getcwd()).absolute()
++        self._execution_path = Path(execution_path).absolute()
+ 
+         if execution_path is not None:
+-            sys.path.append(execution_path)
++            sys.path.append(str(execution_path))
+         importlib.import_module(module)
+ 
+     @staticmethod
+-    def _load_params(path: str):
++    def _load_params(path: Path):
+         with open(path, "r") as f:
+             params_dict = json.load(f)
+         return Params.from_json(params_dict)
+@@ -99,7 +99,7 @@ class Executor:
+             self,
+             experiment_id: int,
+             worker_name: str,
+-            params_path: str = None,
++            params_path: Path = None,
+             name: str = None,
+             note: str = None,
+     ) -> RunInfo:
+diff --git a/logexp/settings.py b/logexp/settings.py
+index 0daca63..f4fc108 100644
+--- a/logexp/settings.py
++++ b/logexp/settings.py
+@@ -1,6 +1,47 @@
+ from __future__ import annotations
+ 
++import configparser
+ import os
++from pathlib import Path
+ 
+ 
+ DEFAULT_LOGSTORE_DIR = f"{os.getcwd()}/.logexp"
++
++
++class Settings:
++    @classmethod
++    def _get_default_dict(cls) -> tp.Dict:
++        default_dict = {
++            "logexp": {
++                "module": "",
++                "execution_path": os.getcwd(),
++            },
++            "logstore": {
++                "store_dir": f"{os.getcwd()}/.logexp",
++            },
++        }
++        return default_dict
++
++    def __init__(self) -> None:
++        self._config = configparser.ConfigParser()
++        self._config.read_dict(Settings._get_default_dict())
++        self._config.read([
++            f"{os.getcwd()}/logexp.ini",
++            os.path.expanduser("~/.logexp.ini")
++        ])
++
++    def load(self, filename: Path) -> None:
++        self._config.read(filename)
++
++    @property
++    def logexp_module(self) -> str:
++        module = self._config["logexp"]["module"]
++        return module
++
++    @property
++    def logexp_execpath(self) -> Path:
++        return Path(self._config["logexp"]["execution_path"])
++
++    @property
++    def logstore_storepath(self) -> Path:
++        return Path(self._config["logstore"]["store_dir"])
+diff --git a/tests/cli/test_paramscommand.py b/tests/cli/test_paramscommand.py
+index 9fc18ed..d528310 100644
+--- a/tests/cli/test_paramscommand.py
++++ b/tests/cli/test_paramscommand.py
+@@ -22,7 +22,7 @@ class TestInitCommand:
+ 
+         with tempfile.TemporaryDirectory() as tempdir:
+             args = self.parser.parse_args([
+-                "params", "-s", tempdir, "-m", module,
++                "params", "-m", module,
+                 "-e", experiment_name, "-w", worker_name,
+             ])

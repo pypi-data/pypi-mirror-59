@@ -1,0 +1,281 @@
+diff --git a/examples/hello.py b/examples/hello.py
+index a8f32f0..27c5e44 100644
+--- a/examples/hello.py
++++ b/examples/hello.py
+@@ -11,3 +11,7 @@ class MyWorker(logexp.BaseWorker):
+     def run(self):
+         with self.storage.open("hello.txt", "w") as f:
+             f.write(self.message)
++
++        report = logexp.Report()
++        report["foo"] = "bar"
++        return report
+diff --git a/logexp/__init__.py b/logexp/__init__.py
+index 7bce0be..1b8a14f 100644
+--- a/logexp/__init__.py
++++ b/logexp/__init__.py
+@@ -1,2 +1,3 @@
+ from logexp.experiment import Experiment
+ from logexp.worker import BaseWorker
++from logexp.report import Report
+diff --git a/logexp/cli/run.py b/logexp/cli/run.py
+index 9cde46c..0940082 100644
+--- a/logexp/cli/run.py
++++ b/logexp/cli/run.py
+@@ -1,4 +1,5 @@
+ import argparse
++import json
+ from pathlib import Path
+ 
+ from logexp.cli.subcommand import Subcommand
+@@ -7,7 +8,8 @@ from logexp.metadata.runinfo import RunInfo
+ from logexp.settings import Settings
+ 
+ 
+-_RUNINFO_SUMMARY_TEMPLATE = """** SUMMARY **
++_RUNINFO_SUMMARY_TEMPLATE = """
++** SUMMARY **
+   run_id     : {run_id}
+   name       : {name}
+   module     : {module}
+@@ -16,7 +18,13 @@ _RUNINFO_SUMMARY_TEMPLATE = """** SUMMARY **
+   status     : {status}
+   artifacts  : {artifacts}
+   start_time : {start_time}
+-  end_time   : {end_time}"""
++  end_time   : {end_time}
++"""
++
++_REPORT_TEMPLATE = """
++** WORKER REPORT **
++{repot}
++"""
+ 
+ 
+ def _print_summary(runinfo: RunInfo) -> None:
+@@ -34,6 +42,12 @@ def _print_summary(runinfo: RunInfo) -> None:
+     print(summary)
+ 
+ 
++def _print_report(runinfo: RunInfo) -> None:
++    report_dict = runinfo.report.to_json()
++    report_json = json.dumps(report_dict, indent=2)
++    report = _REPORT_TEMPLATE.format(report=report_json)
++    print(report)
++
+ @Subcommand.add(
+     name="run",
+     description="run worker",
+@@ -84,4 +98,6 @@ class RunCommand(Subcommand):
+             name=args.name,
+             note=args.note,
+         )
++
++        _print_report(run_info)
+         _print_summary(run_info)
+diff --git a/logexp/executor.py b/logexp/executor.py
+index 90098ec..3cbb646 100644
+--- a/logexp/executor.py
++++ b/logexp/executor.py
+@@ -16,6 +16,7 @@ from logexp.metadata.runinfo import RunInfo
+ from logexp.metadata.platform import get_platform_info
+ from logexp.metadata.status import Status
+ from logexp.params import Params
++from logexp.report import Report
+ from logexp.version import VERSION
+ from logexp.worker import BaseWorker
+ 
+@@ -50,6 +51,7 @@ class Executor:
+             name: str,
+             status: Status,
+             params: Params,
++            report: Report = None,
+             note: str = None,
+             stdout: str = None,
+             stderr: str = None,
+@@ -74,6 +76,7 @@ class Executor:
+             worker_name=worker.name,
+             status=status,
+             params=params,
++            report=report,
+             storage=storage,
+             platform=get_platform_info(),
+             git=gitinfo,
+@@ -132,7 +135,7 @@ class Executor:
+ 
+         try:
+             with capture() as captured_out:
+-                worker.run()
++                report = worker.run()
+         except KeyboardInterrupt:
+             runinfo.status = Status.INTERRUPTED
+         except Exception as e: # pylint: disable=broad-except
+@@ -141,6 +144,7 @@ class Executor:
+         else:
+             runinfo.status = Status.FINISHED
+         finally:
++            runinfo.report = report
+             runinfo.stdout = captured_out["stdout"]
+             runinfo.stderr = captured_out["stderr"]
+ 
+diff --git a/logexp/logstore.py b/logexp/logstore.py
+index 9b7fa9d..27499f0 100644
+--- a/logexp/logstore.py
++++ b/logexp/logstore.py
+@@ -15,6 +15,7 @@ from logexp.storage import Storage
+ class LogStore:
+     _META_FILE = "meta.json"
+     _PARAMS_FILE = "params.json"
++    _REPORT_FILE = "report.json"
+     _STDOUT_FILE = "stdout.txt"
+     _STDERR_FILE = "stderr.txt"
+     _NOTE_FILE = "note.txt"
+@@ -159,6 +160,11 @@ class LogStore:
+             with open(params_path, "w") as f:
+                 json.dump(params_dict, f)
+ 
++        report = runinfo_dict["report"]
++        if report is not None:
++            with open(run_path / self._REPORT_FILE, "w") as f:
++                json.dump(report, f)
++
+         stdout = runinfo_dict["stdout"]
+         if stdout is not None:
+             with open(run_path / self._STDOUT_FILE, "w") as f:
+@@ -211,6 +217,12 @@ class LogStore:
+         with open(run_path / self._PARAMS_FILE, "r") as f:
+             params_dict = json.load(f)
+ 
++        report_dict: tp.Optional[tp.Dict[str, tp.Any]] = None
++        report_path = run_path / self._REPORT_FILE
++        if report_path.exists():
++            with open(report_path, "r") as f:
++                report_dict = json.load(f)
++
+         stdout: tp.Optional[str] = None
+         stdout_path = run_path / self._STDOUT_FILE
+         if stdout_path.exists():
+@@ -268,6 +280,7 @@ class LogStore:
+             "start_time": meta_dict["start_time"],
+             "end_time": meta_dict["end_time"],
+             "params": params_dict,
++            "report": report_dict,
+             "note": note,
+             "stdout": stdout,
+             "stderr": stderr,
+diff --git a/logexp/metadata/runinfo.py b/logexp/metadata/runinfo.py
+index 4712172..ffcdefa 100644
+--- a/logexp/metadata/runinfo.py
++++ b/logexp/metadata/runinfo.py
+@@ -7,6 +7,7 @@ from pathlib import Path
+ 
+ from logexp.metadata.git import GitInfo
+ from logexp.params import Params
++from logexp.report import Report
+ from logexp.metadata.platform import PlatformInfo
+ from logexp.metadata.status import Status
+ from logexp.storage import Storage
+@@ -36,6 +37,7 @@ class RunInfo:
+     status: Status
+     params: Params
+     storage: Storage
++    report: tp.Optional[Report]
+     platform: PlatformInfo
+     git: tp.Optional[GitInfo]
+     note: tp.Optional[str]
+@@ -57,6 +59,7 @@ class RunInfo:
+             "status": self.status.value,
+             "params": self.params.to_json(),
+             "storage": self.storage.to_json(),
++            "report": self.report.to_json() if self.report else None,
+             "note": self.note,
+             "stdout": self.stdout,
+             "stderr": self.stderr,
+@@ -73,6 +76,10 @@ class RunInfo:
+         if info_dict["git"] is not None:
+             git_info = GitInfo.from_json(info_dict["git"])
+ 
++        report: tp.Optional[Report] = None
++        if info_dict["report"] is not None:
++            report = Report.from_json(info_dict["report"])
++
+         runinfo = RunInfo(
+             version=info_dict["version"],
+             uuid=info_dict["uuid"],
+@@ -85,6 +92,7 @@ class RunInfo:
+             status=Status(info_dict["status"]),
+             params=Params.from_json(info_dict["params"]),
+             storage=Storage.from_json(info_dict["storage"]),
++            report=report,
+             note=info_dict["note"],
+             stdout=info_dict["stdout"],
+             stderr=info_dict["stderr"],
+diff --git a/logexp/params.py b/logexp/params.py
+index 614da3a..d1a090e 100644
+--- a/logexp/params.py
++++ b/logexp/params.py
+@@ -1,9 +1,7 @@
+ from __future__ import annotations
+-import typing as tp
+ 
+ from logexp.utils.jsondict import JsonDict
+ 
+ 
+ class Params(JsonDict):
+     """parameter dict"""
+-
+diff --git a/logexp/worker.py b/logexp/worker.py
+index c1c605d..c357613 100644
+--- a/logexp/worker.py
++++ b/logexp/worker.py
+@@ -4,6 +4,7 @@ import typing as tp
+ import contextlib
+ 
+ from logexp.params import Params
++from logexp.report import Report
+ from logexp.storage import Storage
+ 
+ 
+@@ -74,5 +75,5 @@ class BaseWorker:
+     def config(self):
+         """define worker parameters"""
+ 
+-    def run(self) -> None:
++    def run(self) -> tp.Optiona[Report]:
+         raise NotImplementedError
+diff --git a/tests/test_logstore.py b/tests/test_logstore.py
+index 145586e..27e0615 100644
+--- a/tests/test_logstore.py
++++ b/tests/test_logstore.py
+@@ -9,6 +9,7 @@ from logexp.experiment import Experiment
+ from logexp.metadata.git import get_git_info
+ from logexp.logstore import LogStore
+ from logexp.params import Params
++from logexp.report import Report
+ from logexp.metadata.platform import get_platform_info
+ from logexp.metadata.status import Status
+ from logexp.metadata.runinfo import RunInfo
+@@ -55,6 +56,7 @@ class TestLogStore:
+                 worker_name=self.worker_name,
+                 status=Status.FINISHED,
+                 params=Params({"test": "params"}),
++                report=Report({"test": "report"}),
+                 storage=store.get_storage(experiment_id, run_id),
+                 platform=get_platform_info(),
+                 git=get_git_info(),
+@@ -92,6 +94,7 @@ class TestLogStore:
+                 worker_name=self.worker_name,
+                 status=Status.FINISHED,
+                 params=Params({"test": "params"}),
++                report=Report({"test": "report"}),
+                 storage=store.get_storage(experiment_id, run_id),
+                 platform=get_platform_info(),
+                 git=get_git_info(),
+@@ -131,6 +134,7 @@ class TestLogStore:
+                 worker_name=self.worker_name,
+                 status=Status.FINISHED,
+                 params=Params({"test": "params"}),
++                report=Report({"test": "report"}),
+                 storage=store.get_storage(experiment_id, run_id),
+                 platform=get_platform_info(),
+                 git=get_git_info(),

@@ -1,0 +1,26 @@
+diff --git a/logexp/cli/__init__.py b/logexp/cli/__init__.py
+index 62dde21..cf680f3 100644
+--- a/logexp/cli/__init__.py
++++ b/logexp/cli/__init__.py
+@@ -3,7 +3,7 @@ import argparse
+ from logexp.version import VERSION
+ from logexp.cli.subcommand import Subcommand
+ from logexp.cli import (
+-    run, init, params, list as list_cmd
++    run, init, params, list as list_cmd, logs
+ )
+ 
+ 
+diff --git a/logexp/metadata/runinfo.py b/logexp/metadata/runinfo.py
+index 9912331..4712172 100644
+--- a/logexp/metadata/runinfo.py
++++ b/logexp/metadata/runinfo.py
+@@ -79,7 +79,7 @@ class RunInfo:
+             name=info_dict["name"],
+             module=info_dict["module"],
+             execution_path=Path(info_dict["execution_path"]),
+-            experiment_id=info_dict["experiment_id"],
++            experiment_id=int(info_dict["experiment_id"]),
+             experiment_name=info_dict["experiment_name"],
+             worker_name=info_dict["worker_name"],
+             status=Status(info_dict["status"]),
