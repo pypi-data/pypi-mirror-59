@@ -1,0 +1,9 @@
+README.md
+setup.py
+channel2index/__init__.py
+channel2index/index.py
+channel2index.egg-info/PKG-INFO
+channel2index.egg-info/SOURCES.txt
+channel2index.egg-info/dependency_links.txt
+channel2index.egg-info/requires.txt
+channel2index.egg-info/top_level.txt
