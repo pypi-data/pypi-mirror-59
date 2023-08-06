@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: uraeus.nmbd.python
+Version: 0.0.1.dev3
+Summary: Numerical simulation environment of constrained multi-body systems in python.
+Home-page: https://github.com/khaledghobashy/uraeus-nmbd-python
+Author: Khaled Ghobashy
+Author-email: khaled.ghobashy@live.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: uraeus.smbd (>=0.0.0.dev1)
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: numba
+Requires-Dist: pandas
+
+# **URAEUS** | NMBD-Py
+
+**Numerical Multi-Body Dynamics in Python** | A numerical simulation environment of constrained multi-body systems.
+
+## Description
+
+**uraeus.nmbd.python** is a numerical simulation environment developed in python, that generates numerical object-oriented code from symbolic models developed in **[uraeus.smbd]( https://github.com/khaledghobashy/uraeus-smbd )**, and provides various numerical solvers for multi-body systems.
+
+*Please visit **[uraeus.smbd]( https://github.com/khaledghobashy/uraeus-smbd )** for more information about **audience** , **fields of applications** and **background**.*
+
+## Features
+
+*ToDo*
+
+## Installation
+
+*ToDo*
+
+## Usage Examples & Tutorials
+
+*ToDo*
+
+### Detailed Example - Spatial Fourbar Mechanism
+
+*ToDo*
+
+## Roadmap
+
+*To be discussed ...*
+
+## Implementation Details
+
+*The **Implementation Details** will be provided in a separate documentation and linked here*
+
+## Theoretical Basis
+
+*The **Theoretical Basis** will be provided in a separate documentation and linked here*
+
+## Support
+
+As the tool is developed and maintained by one developer for now, if you have any inquiries, do not hesitate to contact me at [khaled.ghobashy@live.com](mailto:khaled.ghobashy@live.com) or [kh.ghobashy@gmail.com](mailto:kh.ghobashy@gmail.com)
+
+## References
+
+*ToDo*
+
+## License
+
+*ToDo*
+
