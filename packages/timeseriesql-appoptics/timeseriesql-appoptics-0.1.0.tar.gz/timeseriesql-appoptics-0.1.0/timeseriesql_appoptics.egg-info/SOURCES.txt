@@ -1,0 +1,9 @@
+README.md
+setup.py
+timeseriesql_appoptics/__init__.py
+timeseriesql_appoptics.egg-info/PKG-INFO
+timeseriesql_appoptics.egg-info/SOURCES.txt
+timeseriesql_appoptics.egg-info/dependency_links.txt
+timeseriesql_appoptics.egg-info/not-zip-safe
+timeseriesql_appoptics.egg-info/requires.txt
+timeseriesql_appoptics.egg-info/top_level.txt
