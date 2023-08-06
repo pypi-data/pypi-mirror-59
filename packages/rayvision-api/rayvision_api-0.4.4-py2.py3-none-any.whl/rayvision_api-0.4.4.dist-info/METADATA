@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rayvision-api
+Version: 0.4.4
+Summary: A Python-based API for Using Renderbus cloud rendering service.
+Home-page: https://gitlab.renderbus.com/internal/rayvision_api
+Author: RayVision
+Author-email: developer@rayvision.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: attrs
+Requires-Dist: cattrs
+Requires-Dist: tenacity
+Requires-Dist: future
+Requires-Dist: requests
+Requires-Dist: rayvision-log
+
+UNKNOWN
+
+
