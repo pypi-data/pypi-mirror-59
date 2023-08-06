@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: oapispec
+Version: 0.0.2
+Summary: A library of decorators and functions for generating open api specs
+Home-page: https://github.com/rayepps/oapispec
+Author: Ray Epps
+Author-email: rayharryepps@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/rayepps/oapispec/archive/0.0.2.tar.gz
+Description: # OpenAPI Spec Builder
+        Python library used to generate swagger docs from decorators. Doesn't screw with your requests, doesn't alter your middleware, doesn't put its dirty little hands where they don't belong. You decorate functions, register them on a schema, and generate a swagger doc.
+        
+        ## pypi
+        oapispec
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
