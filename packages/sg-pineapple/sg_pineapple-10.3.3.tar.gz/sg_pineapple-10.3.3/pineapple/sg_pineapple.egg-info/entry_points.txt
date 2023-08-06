@@ -1,0 +1,3 @@
+[console_scripts]
+pineapple_server = pineapple_server.server.webserver:run
+

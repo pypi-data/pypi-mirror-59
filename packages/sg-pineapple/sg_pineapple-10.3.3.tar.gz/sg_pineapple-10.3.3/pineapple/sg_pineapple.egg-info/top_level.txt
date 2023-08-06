@@ -1,0 +1,3 @@
+pineapple_core
+pineapple_nodes
+pineapple_server

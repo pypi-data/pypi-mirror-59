@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: sg_pineapple
+Version: 10.3.3
+Summary: Pineapple software, visual scripting for automating API testing
+Home-page: https://github.com/societe-generale/Pineapple
+Author: SG
+Author-email: 
+License: UNKNOWN
+Project-URL: Bug Reports, https://sgithub.fr.world.socgen/ktollec111518/Pineapple/issues
+Project-URL: Source, https://sgithub.fr.world.socgen/ktollec111518/Pineapple
+Description: UNKNOWN
+Keywords: visual scripting node orchestration scenario api
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Interpreters
+Classifier: Topic :: System :: Benchmark
+Classifier: Topic :: Software Development :: Testing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: tests
