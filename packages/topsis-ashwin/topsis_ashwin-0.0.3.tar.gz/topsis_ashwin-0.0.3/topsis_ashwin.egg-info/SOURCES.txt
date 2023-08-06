@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+topsis_ashwin/__init__.py
+topsis_ashwin/topsis_ashwin.py
+topsis_ashwin/topsis_code.py
+topsis_ashwin.egg-info/PKG-INFO
+topsis_ashwin.egg-info/SOURCES.txt
+topsis_ashwin.egg-info/dependency_links.txt
+topsis_ashwin.egg-info/top_level.txt
