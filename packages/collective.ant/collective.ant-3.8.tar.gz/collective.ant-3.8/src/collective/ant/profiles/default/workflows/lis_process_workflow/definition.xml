@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<dc-workflow workflow_id="lis_process_workflow" title="LIMS Process Workflow" description=" - LIMS production process workflow that is useful. - Things start out as receive, has status [receive | confirm | revoke | start | success | failed | abort]." state_variable="review_state" initial_state="receive" manager_bypass="False">
+ <permission>Access contents information</permission>
+ <permission>Change portal events</permission>
+ <permission>Modify portal content</permission>
+ <permission>View</permission>
+ <state state_id="abort" title="Abort">
+  <description>Experimental abort</description>
+  <exit-transition transition_id="back-experiment"/>
+  <permission-map name="Access contents information" acquired="True">
+  </permission-map>
+  <permission-map name="Change portal events" acquired="True">
+  </permission-map>
+  <permission-map name="Modify portal content" acquired="True">
+  </permission-map>
+  <permission-map name="View" acquired="True">
+  </permission-map>
+ </state>
+ <state state_id="confirm" title="Confirm">
+  <description>The experiment confirmed.</description>
+  <exit-transition transition_id="start"/>
+  <exit-transition transition_id="back-receive"/>
+  <permission-map name="Access contents information" acquired="False">
+   <permission-role>Contributor</permission-role>
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Reader</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Change portal events" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Modify portal content" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="View" acquired="False">
+   <permission-role>Contributor</permission-role>
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Reader</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+ </state>
+ <state state_id="revoke" title="Revoke">
+  <description>The experiment revoke.
+Can only be seen and edited by the owner.</description>
+  <exit-transition transition_id="back-receive"/>
+  <permission-map name="Access contents information" acquired="False">
+   <permission-role>Contributor</permission-role>
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Reader</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Change portal events" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Modify portal content" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="View" acquired="False">
+   <permission-role>Contributor</permission-role>
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Reader</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+ </state>
+ <state state_id="failed" title="Failed">
+  <description>The experiment failed or data detecting failed.
+Can only be seen and edited by the owner.</description>
+  <exit-transition transition_id="back-experiment"/>
+  <permission-map name="Access contents information" acquired="False">
+   <permission-role>Contributor</permission-role>
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Reader</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Change portal events" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Modify portal content" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="View" acquired="False">
+   <permission-role>Contributor</permission-role>
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Reader</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+ </state>
+ <state state_id="experiment" title="Experiment">
+  <description>Experiment in progress</description>
+  <exit-transition transition_id="success"/>
+  <exit-transition transition_id="failed"/>
+  <exit-transition transition_id="abort"/>
+  <exit-transition transition_id="back-confirm"/>
+  <permission-map name="Access contents information" acquired="False">
+   <permission-role>Contributor</permission-role>
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Reader</permission-role>
+   <permission-role>Reviewer</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Change portal events" acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Reviewer</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Modify portal content" acquired="False">
+   <permission-role>Manager</permission-role>
+   <permission-role>Reviewer</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="View" acquired="False">
+   <permission-role>Contributor</permission-role>
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Reader</permission-role>
+   <permission-role>Reviewer</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+ </state>
+ <state state_id="success" title="Success">
+  <description>Data detecting was successful.</description>
+  <exit-transition transition_id="back-experiment"/>
+  <exit-transition transition_id="back-receive"/>
+  <permission-map name="Access contents information" acquired="False">
+   <permission-role>Contributor</permission-role>
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Reader</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Change portal events" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Modify portal content" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="View" acquired="False">
+   <permission-role>Contributor</permission-role>
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Reader</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+ </state>
+ <state state_id="receive" title="Receive">
+  <description>Waiting for confirmation</description>
+  <exit-transition transition_id="confirm"/>
+  <exit-transition transition_id="revoke"/>
+  <exit-transition transition_id="success"/>
+  <permission-map name="Access contents information" acquired="False">
+   <permission-role>Contributor</permission-role>
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Reader</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Change portal events" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="Modify portal content" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+  <permission-map name="View" acquired="False">
+   <permission-role>Contributor</permission-role>
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Reader</permission-role>
+   <permission-role>Site Administrator</permission-role>
+  </permission-map>
+ </state>
+ <transition transition_id="abort" title="Experiment Abort" new_state="abort" trigger="USER" before_script="" after_script="">
+  <description>Abort experiment. You should preferably include a reason for why it was aborted.</description>
+  <action url="%(content_url)s/content_status_modify?workflow_action=abort" category="workflow" icon="">Experiment Abort</action>
+  <guard>
+  </guard>
+ </transition>
+ <transition transition_id="confirm" title="Experiment Confirm" new_state="confirm" trigger="USER" before_script="" after_script="">
+  <description>Experiment Confirm</description>
+  <action url="%(content_url)s/content_status_modify?workflow_action=confirm" category="workflow" icon="">Experiment Confirm</action>
+  <guard>
+  </guard>
+ </transition>
+ <transition transition_id="revoke" title="Experiment Revoke" new_state="revoke" trigger="USER" before_script="" after_script="">
+  <description>Experiment Confirm</description>
+  <action url="%(content_url)s/content_status_modify?workflow_action=revoke" category="workflow" icon="">Experiment Revoke</action>
+  <guard>
+  </guard>
+ </transition>
+ <transition transition_id="start" title="Experiment Start" new_state="experiment" trigger="USER" before_script="" after_script="">
+  <description>Start of experiment</description>
+  <action url="%(content_url)s/content_status_modify?workflow_action=start" category="workflow" icon="">Experiment Start</action>
+  <guard>
+  </guard>
+ </transition>
+ <transition transition_id="failed" title="Experiment Failed" new_state="failed" trigger="USER" before_script="" after_script="">
+  <description>Experiment failed. You should preferably include a reason for why it was failed.</description>
+  <action url="%(content_url)s/content_status_modify?workflow_action=failed" category="workflow" icon="">Experiment Failed</action>
+  <guard>
+  </guard>
+ </transition>
+ <transition transition_id="success" title="Experiment Success" new_state="success" trigger="USER" before_script="" after_script="">
+  <description>Experiment success. Experiment have been completed.</description>
+  <action url="%(content_url)s/content_status_modify?workflow_action=success" category="workflow" icon="">Experiment Success</action>
+  <guard>
+  </guard>
+ </transition>
+ <transition transition_id="back-confirm" title="Fallback Confirm" new_state="confirm" trigger="USER" before_script="" after_script="">
+  <description>Fallback to Confirm.</description>
+  <action url="%(content_url)s/content_status_modify?workflow_action=back-confirm" category="workflow" icon="">Fallback Confirm</action>
+  <guard>
+  </guard>
+ </transition>
+ <transition transition_id="back-experiment" title="Fallback Experiment" new_state="experiment" trigger="USER" before_script="" after_script="">
+  <description>Fallback Experiment</description>
+  <action url="%(content_url)s/content_status_modify?workflow_action=back-experiment" category="workflow" icon="">Fallback Experiment</action>
+  <guard>
+  </guard>
+ </transition>
+ <transition transition_id="back-receive" title="Fallback Receive" new_state="receive" trigger="USER" before_script="" after_script="">
+  <description>Fallback to Receive.</description>
+  <action url="%(content_url)s/content_status_modify?workflow_action=back-receive" category="workflow" icon="">Fallback Receive</action>
+  <guard>
+  </guard>
+ </transition>
+ <worklist worklist_id="reviewer_queue" title="">
+  <description>Reviewer tasks</description>
+  <action url="%(portal_url)s/search?review_state=receive" category="global" icon="">Receive (%(count)d)</action>
+  <guard>
+   <guard-permission>Review portal content</guard-permission>
+  </guard>
+  <match name="review_state" values="receive"/>
+ </worklist>
+ <variable variable_id="action" for_catalog="False" for_status="True" update_always="True">
+  <description>Previous transition</description>
+  <default>
+
+   <expression>transition/getId|nothing</expression>
+  </default>
+  <guard>
+  </guard>
+ </variable>
+ <variable variable_id="actor" for_catalog="False" for_status="True" update_always="True">
+  <description>The ID of the user who performed the previous transition</description>
+  <default>
+
+   <expression>user/getId</expression>
+  </default>
+  <guard>
+  </guard>
+ </variable>
+ <variable variable_id="comments" for_catalog="False" for_status="True" update_always="True">
+  <description>Comment about the last transition</description>
+  <default>
+
+   <expression>python:state_change.kwargs.get('comment', '')</expression>
+  </default>
+  <guard>
+  </guard>
+ </variable>
+ <variable variable_id="review_history" for_catalog="False" for_status="False" update_always="False">
+  <description>Provides access to workflow history</description>
+  <default>
+
+   <expression>state_change/getHistory</expression>
+  </default>
+  <guard>
+   <guard-permission>Request review</guard-permission>
+   <guard-permission>Review portal content</guard-permission>
+  </guard>
+ </variable>
+ <variable variable_id="time" for_catalog="False" for_status="True" update_always="True">
+  <description>When the previous transition was performed</description>
+  <default>
+
+   <expression>state_change/getDateTime</expression>
+  </default>
+  <guard>
+  </guard>
+ </variable>
+</dc-workflow>

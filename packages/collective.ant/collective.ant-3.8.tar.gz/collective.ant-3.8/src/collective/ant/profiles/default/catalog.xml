@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<object name="portal_catalog">
+
+  <index name="sample_id" meta_type="FieldIndex">
+    <indexed_attr value="sample_id"/>
+  </index>
+
+  <index name="barcode" meta_type="FieldIndex">
+    <indexed_attr value="barcode"/>
+  </index>
+
+  <index name="steps" meta_type="FieldIndex">
+    <indexed_attr value="steps"/>
+  </index>
+
+  <index name="gid" meta_type="FieldIndex">
+    <indexed_attr value="gid"/>
+  </index>
+
+  <index name="sample_type" meta_type="FieldIndex">
+    <indexed_attr value="sample_type"/>
+  </index>
+
+  <index name="project_type" meta_type="FieldIndex">
+    <indexed_attr value="project_type"/>
+  </index>
+
+  <index name="submission_company" meta_type="FieldIndex">
+    <indexed_attr value="submission_company"/>
+  </index>
+
+  <index name="sampling_time" meta_type="DateIndex">
+    <property name="index_naive_time_as_local">True</property>
+  </index>
+
+  <index name="received_time" meta_type="DateIndex">
+    <property name="index_naive_time_as_local">True</property>
+  </index>
+
+  <index name="extract_time" meta_type="DateIndex">
+    <property name="index_naive_time_as_local">True</property>
+  </index>
+
+  <index name="qc_time" meta_type="DateIndex">
+    <property name="index_naive_time_as_local">True</property>
+  </index>
+
+  <index name="detect_start_time" meta_type="DateIndex">
+    <property name="index_naive_time_as_local">True</property>
+  </index>
+
+  <index name="detect_end_time" meta_type="DateIndex">
+    <property name="index_naive_time_as_local">True</property>
+  </index>
+
+  <column value="sample_id"/>
+  <column value="barcode"/>
+  <column value="steps"/>
+  <!--<column value="my_meta_column"/>-->
+</object>

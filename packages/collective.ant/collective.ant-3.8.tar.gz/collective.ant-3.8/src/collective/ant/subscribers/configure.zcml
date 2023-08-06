@@ -1,0 +1,53 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="collective.ant">
+
+  -*- extra stuff goes here -*-
+
+<!--
+  <subscriber for="plone.dexterity.interfaces.IDexterityContent
+                   zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+              handler=".anything.handler"
+              />
+-->
+
+  <!-- set object gid -->
+  <subscriber
+    for="collective.ant.content.ant_base.IAntBase
+       zope.lifecycleevent.interfaces.IObjectAddedEvent"
+    handler=".anything.set_gid"
+  />
+  <!-- set object title & text-->
+  <!--
+  <subscriber
+    for="collective.ant.interfaces.IBase
+       zope.lifecycleevent.interfaces.IObjectAddedEvent"
+    handler=".anything.set_searchable_text"
+  />
+  <subscriber
+    for="collective.ant.interfaces.IBase
+       zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+    handler=".anything.set_searchable_text"
+  />
+  -->
+
+  <!-- steps changed event -->
+  <!--
+  <subscriber
+    for="collective.ant.interfaces.IStepsChangedEvent"
+    handler=".anything.steps_changed"
+  />
+  -->
+
+  <!-- review event -->
+  <!--  <subscriber
+    for="collective.ant.interfaces.IBase
+      Products.CMFCore.interfaces.IActionSucceededEvent"
+    handler="collective.ant.subscribers.anything.set_report_date"
+  />
+  <subscriber
+    zcml:condition="installed gene.sms"
+    for="Products.CMFCore.interfaces.IActionSucceededEvent"
+    handler=".handlers.workflow_action"
+  />-->
+</configure>

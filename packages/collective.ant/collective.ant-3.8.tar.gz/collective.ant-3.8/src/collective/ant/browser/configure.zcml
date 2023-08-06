@@ -1,0 +1,82 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.ant">
+
+  <include file="validator.zcml" />
+  <include file="schedule.zcml" />
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+
+  <browser:jbot
+      directory="overrides"
+      layer="collective.ant.interfaces.ICollectiveAntLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="collective.ant"
+      type="plone"
+      directory="static"
+      />
+
+  <!-- Publish static files -->
+  <browser:resourceDirectory
+    name="collective.ant"
+    directory="static"
+  />
+
+  <!-- VIEWS FOR HELPER -->
+  <browser:page
+      for="*"
+      template="templates/stringinterp.pt"
+      name="lis-stringinterp-info"
+      permission="zope.Public"
+      layer="collective.ant.interfaces.ICollectiveAntLayer"
+  />
+
+  <browser:page
+      name="lis_tools"
+      for="*"
+      permission="zope.Public"
+      class=".tools.Tools"
+      allowed_interface="collective.ant.interfaces.ITools"
+      />
+
+  <browser:page
+      name="lis-next-sn"
+      for="*"
+      permission="zope.Public"
+      class=".tools.SerialNumber"
+      />
+
+  <browser:page
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.ExpireRulesControlPanelView"
+      template="templates/controlpanel.pt"
+      name="lis-expire-rules"
+      permission="cmf.ReviewPortalContent"
+      layer="collective.ant.interfaces.ICollectiveAntLayer"
+      />
+
+  <browser:page
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.SubmissionCompanyControlPanelView"
+      template="templates/controlpanel.pt"
+      name="lis-submission-company"
+      permission="cmf.ReviewPortalContent"
+      layer="collective.ant.interfaces.ICollectiveAntLayer"
+      />
+
+  <browser:page
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.SerialNumberControlPanelView"
+      template="templates/controlpanel.pt"
+      name="lis-serial-number"
+      permission="cmf.ReviewPortalContent"
+      layer="collective.ant.interfaces.ICollectiveAntLayer"
+      />
+
+</configure>

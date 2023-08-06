@@ -1,0 +1,871 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      lang="en"
+         metal:use-macro="context/main_template/macros/master"
+         i18n:domain="collective.ant">
+
+<head>
+    <metal:slot fill-slot="style_slot">
+        <tal:span tal:replace="structure view/steps_style | nothing" />
+    </metal:slot>
+</head>
+
+<body>
+
+<metal:bodytext fill-slot="body">
+    <div id="content">
+        <div id="content-core">
+
+            <div class="" tal:attributes="class string:project-${view/project_name}">
+
+                <div class="row">
+                    <div class="col-md-3">
+
+                        <div id="form-searchbox" class="input-group has-feedback">
+                            <label class="control-label sr-only" for="form-SearchableText" i18n:translate="">Full-text
+                                search</label>
+                            <span id="form-SearchableHelp" tabindex="0"
+                                  class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"
+                                  role="button" data-toggle="popover"
+                                  data-trigger="focus" title="Advanced search instructions"
+                                  data-content="" i18n:attributes="title"></span>
+                            <input id="form-SearchableText" type="text" class="form-control"
+                                   placeholder="Full-text search, Enter to submit"
+                                   aria-label="..." aria-describedby="form-SearchableHelp"
+                                     i18n:attributes="placeholder">
+                            <div id="form-SearchField" class="input-group-btn" data-container="body">
+                            <span id="form-SearchableClear" data-for="form-SearchableText"
+                                  class="glyphicon glyphicon-remove form-control-feedback del_searchword"
+                                  aria-hidden="true"></span>
+                                <button type="button" class="btn btn-default" id="form-SearchButton">
+                                    <span i18n:translate="">Search</span></button>
+                            </div>
+                            <span tal:replace="structure context/@@authenticator/authenticator" />
+                        </div>
+                        <!-- /input-group -->
+                    </div>
+                    <div class="col-md-7 form-inline" id="form-SearchSelect">
+                        <select class="form-control" name="steps">
+                            <option value="" i18n:translate="">--Steps--</option>
+                            <tal:block tal:repeat="steps python:view.steps_group.values()">
+                                <option value="type"
+                                         tal:attributes="value python:steps['id']"
+                                         tal:content="python:steps['title']">Steps Title
+                                </option>
+                            </tal:block>
+                        </select>
+                        <select class="form-control" name="review_state">
+                            <option value="" i18n:translate="">--Review state--</option>
+                            <tal:block tal:repeat="states python:view.review_states.values()">
+                                <option value="type"
+                                         tal:attributes="value python:states['id']"
+                                         tal:content="python:states['title']">Review state
+                                </option>
+                            </tal:block>
+                        </select>
+                        <select class="form-control hide" name="gid">
+                            <option value="" i18n:translate="">--Group--</option>
+                            <tal:block tal:repeat="name_title python:view.group_list()">
+                                <option value="type"
+                                         tal:attributes="value python:name_title[0]"
+                                         tal:content="python:name_title[1]">Group title
+                                </option>
+                            </tal:block>
+                        </select>
+                        <select class="form-control" name="project_type"
+                           tal:define="lis_tools context/@@lis_tools;
+                            type_list python:lis_tools.get_vocab_item(view.project_type_vocab)"
+                           tal:condition="python:type_list">
+                            <option value="" i18n:translate="">--Project type--</option>
+                            <tal:block tal:repeat="name_title type_list">
+                                <option value="type"
+                                         tal:attributes="value python:name_title[1]"
+                                         tal:content="python:name_title[1]">Project title
+                                </option>
+                            </tal:block>
+                        </select>
+                        <select class="form-control" name="sample_type"
+                           tal:define="lis_tools context/@@lis_tools;
+                            type_list python:lis_tools.get_vocab_item(view.sample_type_vocab)"
+                           tal:condition="python:type_list">
+                            <option value="" i18n:translate="">--Sample type--</option>
+                            <tal:block tal:repeat="name_title type_list">
+                                <option value="type"
+                                         tal:attributes="value python:name_title[1]"
+                                         tal:content="python:name_title[1]">Sample title
+                                </option>
+                            </tal:block>
+                        </select>
+
+                        <div class="form-date-range" style="display: inline">
+                            <span>
+                                <select class="form-control"
+                                        name="date_field" id="form-date-field"
+                                        class="pat-select2"
+                                        data-pat-select2="placeholder:Date type; allowClear:true; width:10%"
+                                        data-placceholder="Date type"
+                                        data-title="Date type"
+                                         i18n:attributes="data-placceholder; data-title">
+                                    <option value="" i18n:translate="">--Date--</option>
+                                    <option tal:repeat="date_fields view/date_fields"
+                                             tal:attributes="value python:date_fields[0]"
+                                             tal:content="python:date_fields[1]">title
+                                    </option>
+                                </select>
+                            </span>
+                            <label for="form-date-from" class="hide">From</label>
+                            <span class="date-from"><input type="text" id="form-date-from" name="from"
+                                                           placeholder="Start date" i18n:attributes="placeholder">
+                            <span id="form-date-from-clear" data-for="form-date-from"
+                                  class="glyphicon glyphicon-remove form-control-feedback del_searchword"
+                                  aria-hidden="true"></span>
+                                </span>
+                            -
+                            <label for="form-date-to" class="hide">to</label>
+                            <span class="date-to"> <input type="text" id="form-date-to" name="to"
+                                                          placeholder="End date" i18n:attributes="placeholder">
+                            <span id="form-date-to-clear" data-for="form-date-to"
+                                  class="glyphicon glyphicon-remove form-control-feedback del_searchword"
+                                  aria-hidden="true"></span>
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2 form-inline">
+                        <div class="text-right" id="datatable_info"></div>
+                    </div>
+
+                </div>
+
+                <div class="row" style="display: none">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                                                  data-toggle="tab">Home</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a>
+                        </li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
+                                                   data-toggle="tab">Messages</a>
+                        </li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab"
+                                                   data-toggle="tab">Settings</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">a...</div>
+                        <div role="tabpanel" class="tab-pane" id="profile">b...</div>
+                        <div role="tabpanel" class="tab-pane" id="messages">c...</div>
+                        <div role="tabpanel" class="tab-pane" id="settings">d...</div>
+                    </div>
+
+                </div>
+
+                <!--? version 5 -->
+                <div class="row" style="display: none">
+                    <div class="col-md-7 pat-searchbarpattern">
+                        <div class="row">
+                            <div class="col-sm-10 select2-container select2-container-multi search-tag-container">
+                                <ul class="select2-choices">
+                                    <!--?<li class="select2-search-choice">
+                                        <div>Title</div>
+                                        <a href="#" class="select2-search-choice-close" tabindex="-1"></a></li>-->
+                                    <li class="select2-search select2-search-field">
+                                        <input type="text" class="select2-input" id="search_input"
+                                               autocomplete="off" spellcheck="false"></li>
+                                </ul>
+                                <div class="advanced-search">
+                                    <div class="arrow-button" role="button" data-tooltip="显示搜索选项" aria-label="高级搜索选项">
+                                        <div class="arrow"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class=" search-button" aria-label="search" id="search_button">
+                            <span tabindex="0"
+                                  class="search-icon glyphicon glyphicon-search" aria-hidden="true"
+                                  role="button"></span>
+                            </button>
+
+                        </div>
+                        <div class="search-options" style="left: 0; top: 29px;">
+                            <div class="layer" style="width:455px;">
+
+                                <div class="layer-form">
+
+                                    <div class="option-row field-text">
+                                        <span class="field-text">搜索</span>
+                                        <div class="close-button" role="button" tabindex="0">
+                                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                                    </div>
+
+                                    <div class="option-row">
+                                        <label for="search_gid" class=" field-text">分组</label>
+                                        <span class=" option-input">
+                                            <select name="search_gid" id="search_gid"
+                                                    class="pat-select2"
+                                                    data-pat-select2="placeholder:; allowClear:true; width:100%"
+                                                    data-title="Group" i18n:attributes="data-title">
+                                                <option></option>
+                                                <option tal:repeat="name_title python:view.group_list()"
+                                                        value="${python:name_title[0]}">${python:name_title[1]}</option>
+                                            </select>
+                                        </span>
+                                    </div>
+
+                                    <div class="option-row">
+                                        <label
+                                                for="search_steps" i18n:translate=""
+                                                class=" field-text">Steps</label>
+                                        <span class="option-input">
+                                        <select name="search_steps" id="search_steps" multiple="multiple"
+                                                class="pat-select2" data-pat-select2="width:100%;"
+                                                data-title="Steps" i18n:attributes="data-title">
+                                            <option tal:repeat="steps python:view.steps_group.values()" value="id"
+                                                     tal:attributes="value python:steps['id']" tal:content="python:steps['title']">title</option>
+                                       </select>
+                                    </span>
+                                    </div>
+
+                                    <div class="option-row">
+                                        <label for="search_state" i18n:translate="" class=" field-text">Review
+                                            state</label>
+                                        <span class=" option-input">
+                                            <select name="search_state" id="search_state" multiple="multiple"
+                                                    class="pat-select2" data-pat-select2="width:100%;"
+                                                    data-title="Review state"
+                                                     i18n:attributes="data-placceholder; data-title">
+                                                <option tal:repeat="states python:view.review_states.values()"
+                                                         tal:attributes="value python:states['id']"
+                                                         tal:content="python:states['title']">title</option>
+                                           </select>
+                                        </span>
+                                    </div>
+
+                                    <div class="option-row">
+                                        <label for="task_no" i18n:translate="" class=" field-text">Task no</label>
+                                        <span class=" option-input">
+                                            <input type="text" class="input-tag"
+                                                   name="task_no" id="task_no"
+                                                   data-title="Task no" i18n:attributes="data-title"></span>
+                                    </div>
+
+                                    <div class="option-row">
+                                        <label for="detection_filename" i18n:translate="" class=" field-text">Detection
+                                            filename</label>
+                                        <span class=" option-input">
+                                            <input type="text" class="input-tag"
+                                                   name="detection_filename"
+                                                   id="detection_filename"
+                                                   data-title="Detection filename" i18n:attributes="data-title"></span>
+                                    </div>
+
+                                    <div class="option-row">
+                                        <label
+                                                for="include_text" i18n:translate="" class=" field-text">Include
+                                            words</label>
+                                        <span class=" option-input">
+                                            <input type="text" class="input-tag"
+                                                   name="include_text"
+                                                   id="include_text"
+                                                   data-title="Include words" i18n:attributes="data-title"></span>
+                                    </div>
+                                    <div class="option-row">
+                                        <label for="exclude_text" i18n:translate="" class=" field-text">Exclude
+                                            words</label>
+                                        <span class=" option-input">
+                                            <input type="text" class="input-tag"
+                                                   name="exclude_text"
+                                                   id="exclude_text"
+                                                   data-title="Exclude words" i18n:attributes="data-title"></span>
+                                    </div>
+
+                                    <div class="option-row">
+                                        <label for="" class="field-text">日期范围</label>
+
+                                        <span class="option-input">
+                                            <label for="date_field" class="field-text sr-only">date field</label>
+                                            <select name="date_field" id="date_field"
+                                                    class="pat-select2"
+                                                    data-pat-select2="placeholder:Date type; allowClear:true; width:10%"
+                                                    data-placceholder="Date type"
+                                                    data-title="Date type"
+                                                     i18n:attributes="data-placceholder; data-title">
+                                                <option></option>
+                                                <option tal:repeat="date_fields view/date_fields"
+                                                         tal:attributes="value python:date_fields[0]"
+                                                         tal:content="python:date_fields[1]">title</option>
+                                            </select>
+                                        </span>
+
+                                    </div>
+                                    <div class="option-row">
+                                        <label for="start_date" class="field-text sr-only">From</label>
+                                        <input type="text" name="start_date" id="search_start_date"
+                                               class="pat-pickadate"
+                                               data-pat-pickadate='{"time":false, "placeholderDate": "开始日期"}'
+                                               placeholder="Start date" i18n:attributes="placeholder; data-title"
+                                               data-title="start date">
+                                    </div>
+
+                                    <div class="option-row">
+                                        <label for="end_date" class=" field-text sr-only">to</label>
+                                        <div class="">
+                                            <input type="text" name="end_date" id="end_date"
+                                                   class="pat-pickadate"
+                                                   data-pat-pickadate='{"time":false, "placeholderDate": "结束日期"}'
+                                                   placeholder="End date" i18n:attributes="placeholder; data-title"
+                                                   data-title="End date">
+                                        </div>
+                                    </div>
+
+                                    <div class="option-row">
+                                        <span class="field-text">
+                                            <input type="checkbox"> <label>带有附件</label></span>
+                                    </div>
+                                    <div class="option-row">
+                                        <div class="search-button" role="button" id="search_button2"
+                                             data-tooltip="Advanced search" aria-label="搜索" style="user-select: none;"
+                                                 i18n:attributes="data-tooltip">
+                                        <span tabindex="0"
+                                              class="search-icon glyphicon glyphicon-search"
+                                              aria-hidden="true"
+                                              role="button"></span>
+                                        </div>
+                                        <div class="prompt_text pull-right" role="link" tabindex="0">
+                                            <a tal:attributes="href string:$portal_url/@@lis-help">帮助 »</a></div>
+                                    </div>
+                                    <div class="hide">
+                                        <span tal:replace="structure context/@@authenticator/authenticator" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 text-right" id="datatable_info"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-7">
+                        <div class="btn-group" id="selectDropdown">
+                            <button class="btn btn-default" type="button">
+                                <span data-target="indicator" class="glyphicon glyphicon-unchecked"></span>
+                            </button>
+                        </div>
+
+                        <div id="dataBtnGroup" class="btn-group" role="group" aria-label="..."
+                                 tal:define="show python:view.show_step_action">
+
+                            <div class="btn-group"
+                                     tal:define="steps_name string:sample"
+                                     tal:condition="python:show(steps_name)">
+                                <button type="button" aria-expanded="false" data-toggle="dropdown"
+                                        class="btn btn-sample dropdown-toggle"
+                                        title="Sample" i18n:attributes="title">
+                                    <span class="glyphicon glyphicon-record"></span>
+                                    <tal: i18n:translate="">Sample</tal:>
+                                    <span class="caret"></span> <span class="sr-only">More Action</span></button>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a data-target="sample-view" href="#">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        <tal: i18n:translate="">View sample data</tal:>
+                                    </a></li>
+                                    <li><a data-target="sample-import" href="#">
+                                        <span class="glyphicon glyphicon glyphicon-open-file"></span>
+                                        <tal: i18n:translate="">Import sample data</tal:>
+                                    </a></li>
+                                    <li><a data-target="sample-single-add" href="#">
+                                        <span class="glyphicon glyphicon-plus"></span>
+                                        <tal: i18n:translate="">Add single sample</tal:>
+                                    </a></li>
+                                    <li><a data-target="sample-add" href="#">
+                                        <span class="glyphicon glyphicon-plus-sign"></span>
+                                        <tal: i18n:translate="">Add sample data</tal:>
+                                    </a></li>
+                                    <li><a data-target="sample-edit" href="#">
+                                        <span class="glyphicon glyphicon glyphicon-edit"></span>
+                                        <tal: i18n:translate="">Edit sample data</tal:>
+                                    </a></li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-group"
+                                     tal:define="steps_name string:separation"
+                                     tal:condition="python:show(steps_name)">
+                                <button type="button" aria-expanded="false" data-toggle="dropdown"
+                                        class="btn btn-separation dropdown-toggle"
+                                        title="Separation" i18n:attributes="title">
+                                    <span class="glyphicon glyphicon-record"></span>
+                                    <tal: i18n:translate="">Separation</tal:>
+                                    <span class="caret"></span> <span class="sr-only">More Action</span></button>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a data-target="separation-view" href="#">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        <tal: i18n:translate="">View separation data</tal:>
+                                    </a></li>
+                                    <li><a data-target="separation-import" href="#">
+                                        <span class="glyphicon glyphicon glyphicon-open-file"></span>
+                                        <tal: i18n:translate="">Import separation data</tal:>
+                                    </a></li>
+                                    <li><a data-target="separation-add" href="#">
+                                        <span class="glyphicon glyphicon-plus-sign"></span>
+                                        <tal: i18n:translate="">Add separation data</tal:>
+                                    </a></li>
+                                    <li><a data-target="separation-edit" href="#">
+                                        <span class="glyphicon glyphicon glyphicon-edit"></span>
+                                        <tal: i18n:translate="">Edit separation data</tal:>
+                                    </a></li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-group"
+                                     tal:define="steps_name string:extraction"
+                                     tal:condition="python:show(steps_name)">
+                                <button type="button" aria-expanded="false" data-toggle="dropdown"
+                                        class="btn btn-extraction dropdown-toggle"
+                                        title="Extraction" i18n:attributes="title">
+                                    <span class="glyphicon glyphicon-record"></span>
+                                    <tal: i18n:translate="">Extraction</tal:>
+                                    <span class="caret"></span> <span class="sr-only">More Action</span></button>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a data-target="extraction-view" href="#">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        <tal: i18n:translate="">View extraction data</tal:>
+                                    </a></li>
+                                    <li><a data-target="extraction-import" href="#">
+                                        <span class="glyphicon glyphicon glyphicon-open-file"></span>
+                                        <tal: i18n:translate="">Import extraction data</tal:>
+                                    </a></li>
+                                    <li><a data-target="extraction-add" href="#">
+                                        <span class="glyphicon glyphicon-plus-sign"></span>
+                                        <tal: i18n:translate="">Add extraction data</tal:>
+                                    </a></li>
+                                    <li><a data-target="extraction-edit" href="#">
+                                        <span class="glyphicon glyphicon glyphicon-edit"></span>
+                                        <tal: i18n:translate="">Edit extraction data</tal:>
+                                    </a></li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-group"
+                                     tal:define="steps_name string:qc"
+                                     tal:condition="python:show(steps_name)">
+                                <button type="button" aria-expanded="false" data-toggle="dropdown"
+                                        class="btn btn-qc dropdown-toggle"
+                                        title="QC" i18n:attributes="title">
+                                    <span class="glyphicon glyphicon-record"></span>
+                                    <tal: i18n:translate="">QC</tal:>
+                                    <span class="caret"></span> <span class="sr-only">More Action</span></button>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a data-target="qc-view" href="#">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        <tal: i18n:translate="">View QC data</tal:>
+                                    </a></li>
+                                    <li><a data-target="qc-import" href="#">
+                                        <span class="glyphicon glyphicon glyphicon-open-file"></span>
+                                        <tal: i18n:translate="">Import QC data</tal:>
+                                    </a></li>
+                                    <li><a data-target="qc-add" href="#">
+                                        <span class="glyphicon glyphicon-plus-sign"></span>
+                                        <tal: i18n:translate="">Add QC data</tal:>
+                                    </a></li>
+                                    <li><a data-target="qc-edit" href="#">
+                                        <span class="glyphicon glyphicon glyphicon-edit"></span>
+                                        <tal: i18n:translate="">Edit QC data</tal:>
+                                    </a></li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-group"
+                                     tal:define="steps_name string:pcr"
+                                     tal:condition="python:show(steps_name)">
+                                <button type="button" aria-expanded="false" data-toggle="dropdown"
+                                        class="btn btn-pcr dropdown-toggle"
+                                        title="PCR" i18n:attributes="title">
+                                    <span class="glyphicon glyphicon-record"></span>
+                                    <tal: i18n:translate="">PCR</tal:>
+                                    <span class="caret"></span> <span class="sr-only">More Action</span></button>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a data-target="pcr-view" href="#">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        <tal: i18n:translate="">View PCR data</tal:>
+                                    </a></li>
+                                    <li><a data-target="pcr-import" href="#">
+                                        <span class="glyphicon glyphicon glyphicon-open-file"></span>
+                                        <tal: i18n:translate="">Import PCR data</tal:>
+                                    </a></li>
+                                    <li><a data-target="pcr-add" href="#">
+                                        <span class="glyphicon glyphicon-plus-sign"></span>
+                                        <tal: i18n:translate="">Add PCR data</tal:>
+                                    </a></li>
+                                    <li><a data-target="pcr-edit" href="#">
+                                        <span class="glyphicon glyphicon glyphicon-edit"></span>
+                                        <tal: i18n:translate="">Edit PCR data</tal:>
+                                    </a></li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-group"
+                                     tal:define="steps_name string:library"
+                                     tal:condition="python:show(steps_name)">
+                                <button type="button" aria-expanded="false" data-toggle="dropdown"
+                                        class="btn btn-library dropdown-toggle"
+                                        title="Library" i18n:attributes="title">
+                                    <span class="glyphicon glyphicon-record"></span>
+                                    <tal: i18n:translate="">Library</tal:>
+                                    <span class="caret"></span> <span class="sr-only">More Action</span></button>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a data-target="library-view" href="#">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        <tal: i18n:translate="">View library data</tal:>
+                                    </a></li>
+                                    <li><a data-target="library-import" href="#">
+                                        <span class="glyphicon glyphicon glyphicon-open-file"></span>
+                                        <tal: i18n:translate="">Import library data</tal:>
+                                    </a></li>
+                                    <li><a data-target="library-add" href="#">
+                                        <span class="glyphicon glyphicon-plus-sign"></span>
+                                        <tal: i18n:translate="">Add library data</tal:>
+                                    </a></li>
+                                    <li><a data-target="library-edit" href="#">
+                                        <span class="glyphicon glyphicon glyphicon-edit"></span>
+                                        <tal: i18n:translate="">Edit library data</tal:>
+                                    </a></li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-group"
+                                     tal:define="steps_name string:capture"
+                                     tal:condition="python:show(steps_name)">
+                                <button type="button" aria-expanded="false" data-toggle="dropdown"
+                                        class="btn btn-capture dropdown-toggle"
+                                        title="Capture" i18n:attributes="title">
+                                    <span class="glyphicon glyphicon-record"></span>
+                                    <tal: i18n:translate="">Capture</tal:>
+                                    <span class="caret"></span> <span class="sr-only">More Action</span></button>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a data-target="capture-view" href="#">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        <tal: i18n:translate="">View capture data</tal:>
+                                    </a></li>
+                                    <li><a data-target="capture-import" href="#">
+                                        <span class="glyphicon glyphicon glyphicon-open-file"></span>
+                                        <tal: i18n:translate="">Import capture data</tal:>
+                                    </a></li>
+                                    <li><a data-target="capture-add" href="#">
+                                        <span class="glyphicon glyphicon-plus-sign"></span>
+                                        <tal: i18n:translate="">Add capture data</tal:>
+                                    </a></li>
+                                    <li><a data-target="capture-edit" href="#">
+                                        <span class="glyphicon glyphicon glyphicon-edit"></span>
+                                        <tal: i18n:translate="">Edit capture data</tal:>
+                                    </a></li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-group"
+                                     tal:define="steps_name string:detection"
+                                     tal:condition="python:show(steps_name)">
+                                <button type="button" aria-expanded="false" data-toggle="dropdown"
+                                        class="btn btn-detection dropdown-toggle"
+                                        title="Detection" i18n:attributes="title">
+                                    <span class="glyphicon glyphicon-record"></span>
+                                    <tal: i18n:translate="">Detection</tal:>
+                                    <span class="caret"></span> <span class="sr-only">More Action</span></button>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a data-target="detection-view" href="#">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        <tal: i18n:translate="">View detection data</tal:>
+                                    </a></li>
+                                    <li><a data-target="detection-import" href="#">
+                                        <span class="glyphicon glyphicon glyphicon-open-file"></span>
+                                        <tal: i18n:translate="">Import detection data</tal:>
+                                    </a></li>
+                                    <li><a data-target="detection-add" href="#">
+                                        <span class="glyphicon glyphicon-plus-sign"></span>
+                                        <tal: i18n:translate="">Add detection data</tal:>
+                                    </a></li>
+                                    <li><a data-target="detection-edit" href="#">
+                                        <span class="glyphicon glyphicon glyphicon-edit"></span>
+                                        <tal: i18n:translate="">Edit detection data</tal:>
+                                    </a>
+                                </ul>
+                            </div>
+
+                            <div class="btn-group"
+                                     tal:define="steps_name string:result"
+                                     tal:condition="python:show(steps_name)">
+                                <button type="button" aria-expanded="false" data-toggle="dropdown"
+                                        class="btn btn-result dropdown-toggle"
+                                        title="Result" i18n:attributes="title">
+                                    <span class="glyphicon glyphicon-record"></span>
+                                    <tal: i18n:translate="">Result</tal:>
+                                    <span class="caret"></span> <span class="sr-only">More Action</span></button>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a data-target="result-view" href="#" class="hide">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        <tal: i18n:translate="">View Result data</tal:>
+                                    </a></li>
+                                    <li><a data-target="result-import" href="#">
+                                        <span class="glyphicon glyphicon glyphicon-open-file"></span>
+                                        <tal: i18n:translate="">Import Result data</tal:>
+                                    </a></li>
+                                    <li><a data-target="result-add" href="#" class="hide">
+                                        <span class="glyphicon glyphicon-plus-sign"></span>
+                                        <tal: i18n:translate="">Add Result data</tal:>
+                                    </a></li>
+                                    <li><a data-target="result-edit" href="#" class="hide">
+                                        <span class="glyphicon glyphicon glyphicon-edit"></span>
+                                        <tal: i18n:translate="">Edit Result data</tal:>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="refreshBtn" class="btn-group" role="group" aria-label="..." style="display: none;">
+                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom"
+                                    data-target="refresh" title="Refresh">
+                                <span class="glyphicon glyphicon-repeat"></span>
+                            </button>
+                        </div>
+
+                        <div id="manageBtnGroup" class="btn-group">
+
+                            <div class="btn-group">
+                                <button aria-expanded="true" data-toggle="dropdown"
+                                        class="btn btn-default dropdown-toggle"
+                                        type="button" title="Action" i18n:attributes="title">
+                                    <span class="glyphicon glyphicon-tag"></span>
+                                    <tal: i18n:translate="">Action</tal:>
+                                    <span class="caret"></span> <span class="sr-only">Redo/Report</span></button>
+                                <ul role="menu" class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+                                    <li role="presentation"><a data-target="change-steps" href="#">
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                        <tal: i18n:translate="">Change steps</tal:>
+                                    </a></li>
+                                    <li role="presentation"><a data-target="state-transition" href="#">
+                                        <span class="glyphicon glyphicon-transfer"></span>
+                                        <tal: i18n:translate="">State transition</tal:>
+                                    </a></li>
+                                    <li role="presentation"><a data-target="failed-redo" href="#"
+                                                               title="Redo failed item" i18n:attributes="title">
+                                        <span class="glyphicon glyphicon-repeat"></span>
+                                        <tal: i18n:translate="">Failed redo</tal:>
+                                    </a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a data-target="delete" href="#">
+                                        <span class="glyphicon glyphicon-trash"></span>
+                                        <tal: i18n:translate="">Delete records</tal:>
+                                    </a>
+                                    </li>
+                                    <li role="presentation" class="disabled hide"><a data-target="report" href="#">
+                                        <span class="glyphicon glyphicon-file"></span>
+                                        <tal: i18n:translate="">Report</tal:>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="moreBtnGroup" class="btn-group">
+                            <button type="button" aria-expanded="false" data-toggle="dropdown"
+                                    class="btn btn-default dropdown-toggle"
+                                    title="More actions" i18n:attributes="title">
+                                <span class="glyphicon glyphicon-th-large"></span>
+                                <tal: i18n:translate="">More</tal:>
+                                <span class="caret"></span> <span class="sr-only">More Action</span></button>
+                            <ul role="menu" class="dropdown-menu">
+                                <li role="presentation"><a data-target="export-item" href="#">
+                                    <span class="glyphicon glyphicon-export"></span>
+                                    <tal: i18n:translate="">Export Records</tal:>
+                                </a></li>
+                                <!--?
+                                <li role="presentation">
+                                    <a data-target="export-dilution"
+                                       href="#"><span class="glyphicon glyphicon-export"></span>
+                                        <tal: i18n:translate="">Export OT Dilution</tal:>
+                                    </a>
+                                </li>
+    -->
+
+                                <!--?
+                                <li class="divider"></li>
+                                <li><a data-target="remote-fetch" href="#"
+                                       title="Remote fetch data" i18n:attributes="title">
+                                    <span class="glyphicon glyphicon-cloud-download"></span>
+                                    <tal: i18n:translate="">Fetch data</tal:>
+                                </a></li>
+                                <li><a data-target="remote-push" href="#"
+                                       title="Remote push data" i18n:attributes="title"><span
+                                        class="glyphicon glyphicon-cloud-upload"></span>
+                                    <tal: i18n:translate="">Push data</tal:>
+                                </a></li>
+    -->
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 dataTables_wrapper" id="datatable_paginate"></div>
+
+                    <div class="">
+                        <table id="ant_datatable"
+                               class="table table-striped table-bordered table-condensed table-hover ${string:datatablepattern}"
+                               data-datatablepattern="${view/pattern_options}"
+                               style="width: 100%; padding: 0; margin: 0;"
+                                 tal:define="fields_name_title view/fields_name_title;"
+                                 tal:attributes="data-datatablepattern view/pattern_options">
+                            <thead>
+                            <tr>
+                                <th i18n:translate="">Select</th>
+                                <th i18n:translate="">Line number</th>
+                                <th i18n:translate="">Steps</th>
+                                <th i18n:translate="">Review state</th>
+                                <th tal:repeat="name_title fields_name_title" tal:content="python:name_title[1]"
+                                         tal:attributes="data-name python:name_title[0]"
+                                        data-name="name">field title
+                                </th>
+                                <th data-name="created" i18n:translate="">Creation time</th>
+                                <th data-name="modified" i18n:translate="">Modification time</th>
+                                <th i18n:translate="">Action</th>
+                            </tr>
+                            </thead>
+
+                            <tfoot>
+                            <tr>
+                                <th i18n:translate="">Select</th>
+                                <th i18n:translate="">Line number</th>
+                                <th i18n:translate="">Steps</th>
+                                <th i18n:translate="">Review state</th>
+                                <th tal:repeat="name_title fields_name_title" tal:content="python:name_title[1]"
+                                         tal:attributes="data-name python:name_title[0]"
+                                        data-name="name">field title
+                                </th>
+                                <th data-name="created" i18n:translate="">Creation time</th>
+                                <th data-name="modified" i18n:translate="">Modification time</th>
+                                <th i18n:translate="">Action</th>
+                            </tr>
+                            </tfoot>
+
+                            <tbody tal:replace="nothing"></tbody>
+                        </table>
+                    </div>
+
+                    <!-- delete.modal -->
+                    <div class="modal fade" id="delete_modal_dialog" tabindex="-1" role="dialog" data-backdrop="static"
+                         aria-labelledby="delete alert modal dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" i18n:translate="">Alert: delete data!</h4>
+                                </div>
+                                <div class="modal-body alert alert-danger" role="alert" i18n:translate="delete-warning">
+                                    <strong>N</strong> Items will be permanently deleted! Deleted cannot be
+                                    recovered.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-lg btn-danger"
+                                            data-target="delete" i18n:translate="">
+                                        Confirm
+                                    </button>
+                                    <button type="button" class="btn btn-lg btn-default"
+                                            data-dismiss="modal" i18n:translate="">
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+
+                    <!-- upload.modal -->
+                    <div class="modal fade" id="upload_modal_dialog" tabindex="-1" role="dialog" data-backdrop="static"
+                         aria-labelledby="confirm modal dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" i18n:translate="" >Upload Photo File</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form method="post" enctype="multipart/form-data">
+                                        <div class="form-group">
+                                            <label for="form.widgets.result"
+                                                   class="control-label" i18n:translate="">Sample number</label>:<span
+                                                id="result_sample_id"></span>
+                                            <input type="file" class="form-control btn btn-success"
+                                                   name="form.widgets.result">
+                                            <p class="help-block" i18n:translate="file-description">
+                                                Recommended photo size is 250x330 pixels, 300DPI, CMYK color mode, JPG
+                                                file
+                                                format.</p>
+                                        </div>
+                                        <div class="has-success hide">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" name="form.widgets.force">
+                                                    <tal: i18n:translate="">Force</tal:>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="hide">
+                                            <input type="hidden" name="form.widgets.uuid">
+                                            <input type="hidden" name="form.widgets.sample_id">
+                                        </div>
+                                        <div>
+                                            <progress id="progressBarResult" value="0" max="100"
+                                                      style="min-width: 2em; width: 100%; display: none"></progress>
+                                            <div class="col-md-12 _result_info _result_msg"
+                                                 style="display: none;"></div>
+                                            <div class="alert-success" role="alert"></div>
+                                            <div class="alert-danger" role="alert"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-lg btn-success _reload"
+                                            style="display: none;"
+                                            data-dismiss="modal" i18n:translate="">
+                                        View result
+                                    </button>
+                                    <button type="button" class="btn btn-lg btn-danger _failed"
+                                            style="display: none;"
+                                            data-dismiss="modal" i18n:translate="">
+                                        View failed
+                                    </button>
+                                    <button type="button" class="btn btn-lg btn-info _start"
+                                            data-target="remote-fetch|remote-fetch" i18n:translate="">
+                                        Upload
+                                    </button>
+                                    <button type="button" class="btn btn-lg btn-default _cancel"
+                                            data-dismiss="modal" i18n:translate="">
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+
+                    <!-- processing Indicator -->
+                    <div id="ProgressModal" class="modal fade" data-backdrop='false' tabindex="-1">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success progress-bar-striped"></div>
+                        </div>
+                    </div>
+                    <!-- /.processing Indicator -->
+                </div>
+
+            </div>
+        </div>
+</metal:bodytext>
+</body>
+</html>

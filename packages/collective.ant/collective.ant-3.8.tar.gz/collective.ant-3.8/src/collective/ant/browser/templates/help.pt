@@ -1,0 +1,84 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+         metal:use-macro="context/main_template/macros/master"
+         i18n:domain="collective.ant">
+<body>
+
+<metal:bodytext fill-slot="main">
+
+    <section id="content-core">
+        <metal:text define-slot="content-core">
+            <div>
+                <div class="row">
+                    <div class="col-md-4" i18n:translate="">1. Boolean expressions</div>
+                    <div class="col-md-4" i18n:translate="" i18n:attributes="title"
+                         title="A sequence of words without operators implies AND. A search for 'carpet python snakes' translates to 'carpet AND python AND snakes'.">
+                        AND, OR, NOT(synonym a -)
+                    </div>
+                    <div class="col-md-4">
+                        <code><span i18n:attributes="title"
+                                title="This will search for all objects that contain both 'word1' and 'word2'. ">word1 AND word2</span>,
+                            <span i18n:attributes="title"
+                                    title="which would search for occurrences of 'word1' but would exclude documents which contain 'word2'.">word1 -word2</span></code>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" i18n:translate="">2. Parentheses</div>
+                    <div class="col-md-4" i18n:attributes="title"
+                         title="Control search order with parenthetical expressions">( )
+                    </div>
+                    <div class="col-md-4"><code i18n:attributes="title"
+                            title="This will return objects containing 'word1' and 'word2' or just objects that contain the term 'word3'.">(word1
+                        AND word2) OR word3)</code>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" i18n:translate="">3. Wild cards</div>
+                    <div class="col-md-4" i18n:translate="" i18n:attributes="title"
+                         title="Note though that wild cards cannot be at the beginning of a search phrase. '?ope' is an illegal search term and will be ignored.">
+                        * zero or more character, ? one character
+                    </div>
+                    <div class="col-md-4"><code><span i18n:attributes="title"
+                            title="which returns all words that begin with 'Z'">Z*</span>,
+                        <span i18n:attributes="title"
+                                title="which returns all words that begin with 'Zop' and have one more character - just like in a Un*x shell.">Zop?</span>,
+                        <span i18n:attributes="title"
+                                title="Matches words that like 'oad' 'odd'">o?d</span>,
+                        <span i18n:attributes="title"
+                                title="Matches words that like 'book' 'back'">b??k</span>,
+                        <span i18n:attributes="title"
+                                title="Matches words that like 'apple' 'able'">a*le</span>,
+                        <span i18n:attributes="title"
+                                title="Matches words that like 'seek' 'speed'">s*ee?</span></code>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" i18n:translate="">4. Phrase search</div>
+                    <div class="col-md-4" i18n:attributes="title"
+                         title="Double-quoted text implies phrase search">" "
+                    </div>
+                    <div class="col-md-4">
+                        <code i18n:attributes="title"
+                                title="will search for all occurrences of the phrase 'carpet python' or of the word 'frogs'">"carpet
+                            python" OR frogs</code>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" i18n:translate="">5. Mixed together</div>
+                    <div class="col-md-4"><code i18n:attributes="title"
+                            title="will return all objects that contain the terms 'bob' and 'uncle' but will not include any objects that contain words that start with 'Zoo' like 'Zoologist', 'Zoology', or 'Zoo' itself.">((bob
+                        AND uncle) AND NOT Zoo*)</code>
+                    </div>
+                    <div class="col-md-4"><code i18n:attributes="title"
+                            title="will return all objects which contain the word 'snakes' or 'frogs' but do not contain the phrase 'carpet python'.">snakes
+                        OR frogs -"carpet python"</code>
+                    </div>
+                </div>
+            </div>
+        </metal:text>
+    </section>
+
+</metal:bodytext>
+
+</body>
+</html>

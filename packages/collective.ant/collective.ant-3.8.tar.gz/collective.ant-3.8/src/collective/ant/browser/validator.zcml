@@ -1,0 +1,27 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  i18n_domain="collective.ant">
+
+  <!-- Validators -->
+<!--  <adapter
+    factory=".validator.SampleAddValidator"
+  />-->
+<!--
+  <adapter
+    factory=".validator.SampleAddListValidator"
+  />
+-->
+<!--  <adapter
+    factory=".validator.SampleEditListValidator"
+  />
+  <adapter
+    factory=".validator.FailedRedoEditListValidator"
+  />
+  <adapter
+    factory=".validator.StateTransitionListValidator"
+  />-->
+  <!--  <adapter
+      factory=".validator.CustomValidator"
+    />-->
+
+</configure>

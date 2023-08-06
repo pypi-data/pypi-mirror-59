@@ -1,0 +1,23 @@
+<configure
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:schedule="http://namespaces.zope.org/schedule">
+
+  <include package="collective.schedule"/>
+
+  <!-- Task Scheduler -->
+  <browser:page
+    for="Products.CMFCore.interfaces.ISiteRoot"
+    class=".schedule.JobView"
+    attribute="check_expired_job"
+    name="lis-task-check-expired"
+    layer="collective.ant.interfaces.ICollectiveAntLayer"
+    permission="zope.Public"
+  />
+
+  <schedule:job
+    view="lis-task-check-expired"
+    unit="day"
+    at="8:30"
+  />
+
+</configure>

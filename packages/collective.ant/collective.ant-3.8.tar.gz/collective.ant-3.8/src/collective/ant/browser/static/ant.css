@@ -1,0 +1,404 @@
+/**
+ * Filename: main.css
+ * Version: 5.0
+ * Date: 2019-03-1
+ */
+
+/*view|edit form*/
+body[class~='template-view'] #formfield-form-widgets-IRichText-text,
+body[class~='template-view'] #form-widgets-IReportData-result_json,
+body[class~='template-edit'] #formfield-form-widgets-IRichText-text,
+body[class~='template-edit'] #form-widgets-IReportData-result_json,
+body[class~='template-versions_history_form'] #form-widgets-IRichText-text,
+body[class~='template-versions_history_form'] #form-widgets-IReportData-result_json,
+body[class~='template-history'] fieldset:nth-last-child(-n+2) {
+    display: none;
+}
+
+/* table steps */
+/*...*/
+
+/*.result_table td:nth-of-type(2) {
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}*/
+/*
+table.dataTable tr td:first-child:before {
+    content: "\e157";
+    font-family: 'Glyphicons Halflings';
+}
+
+table.dataTable tr.selected td:first-child:before {
+    content: "\e067";
+    font-family: 'Glyphicons Halflings';
+}*/
+
+/* Highlighting rows and columns
+The additional CSS in order to correctly display the table. */
+/*td.highlight {
+    background-color: whitesmoke !important;
+}*/
+
+/*++resource++collective.z3cform.datagridfield/datagridfield.css*/
+/*.datagridwidget-cell > input:only-child { width: auto; }*/
+
+/**/
+
+.gid_box {
+    height: 10px;
+    width: 10px;
+    background-color: #000;
+    display: inline-block;
+}
+
+.gid_box:last-child {
+    margin-right: 4px;
+}
+
+
+/* search view progressbar */
+.processingIndicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    /*height: 40px;*/
+    margin-left: -50%;
+    margin-top: -25px;
+    /*padding-top: 20px;*/
+    text-align: center;
+    font-size: 1.2em;
+    background-color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+#content .dropdown-menu li {
+    list-style: none;
+}
+
+#content .dropdown-menu ul {
+    margin-left: 0;
+}
+
+#content ul {
+    margin-left: 0;
+}
+
+#form-SearchDate {
+    display: inline-block;
+}
+
+.pagination > li {
+    float: left;
+    list-style: none;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* bootstrap */
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-md-8 {
+    padding-left: 0;
+}
+
+.dropdown-menu li.divider {
+    display: block;
+}
+
+/* Searchbox */
+#form-SearchableHelp.form-control-feedback {
+    right: auto;
+    z-index: 4;
+    pointer-events: auto;
+}
+
+.form-control-feedback.del_searchword {
+    left: -32px;
+    pointer-events: auto;
+    cursor: pointer;
+    z-index: 4;
+    font-size: 14px;
+}
+
+#form-searchbox.input-group .form-control {
+    padding-left: 32px;
+}
+
+#form-searchbox {
+    margin-bottom: 4px;
+}
+
+/* Datepicker */
+#form-date-from, #form-date-to {
+    width: 86px;
+    height: 34px;
+    /*padding-right: 34px;*/
+}
+
+.date-from, .date-to {
+    position: relative;
+    display: inline-block;
+}
+
+.date-from #form-date-from-clear, .date-to #form-date-to-clear {
+    right: -6px;
+    left: inherit;
+}
+
+/*** datatable ***/
+
+table th, table td {
+    white-space: nowrap;
+}
+
+table.dataTable tr td:first-child {
+    text-align: center;
+}
+
+#ant_datatable_filter, #ant_datatable_length {
+    display: none;
+}
+
+#ant_datatable_length, #ant_datatable_info {
+    height: 34px;
+    line-height: 34px;
+}
+
+#ant_datatable_length select {
+    vertical-align: middle;
+    width: auto;
+    display: inline-block;
+}
+
+#datatable_paginate {
+    clear: none;
+}
+
+#datatable_paginate .pagination > li {
+    display: inline;
+
+}
+
+/*datagrid*/
+tbody.datagridwidget-body tr.datagridwidget-row {
+    counter-increment: datarow;
+}
+
+tbody.datagridwidget-body tr.datagridwidget-row td.datagridwidget-cell:first-child::before,
+table[id$='-widgets-batch_list'] tbody.datagridwidget-body tr.datagridwidget-row td:nth-child(2)::before {
+    content: "​​​​" counter(datarow) ": ";
+    color: #ff0000;
+}
+
+​​​​
+    /* state-transition-form transition_state radio-widge*/
+form[class*='-state-transition-form'] .option {
+    float: left;
+}
+
+form[class*='-state-transition-form'] .datagridwidget-cell {
+    vertical-align: middle;
+}
+
+form[class*='-state-transition-form'] .datagridwidget-cell .label {
+    color: #333;
+    font-weight: normal;
+}
+
+/*** End datatable ***/
+
+/*** Start import steps ***/
+
+/* import top table */
+#ant-import-steps.steps {
+    height: 32px;
+    margin-bottom: 15px;
+
+}
+
+#ant-import-steps.steps:after {
+    border: none;
+    width: 0;
+}
+
+#ant-import-steps.steps > div {
+    height: 32px;
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-sample {
+    background-color: #feb3ee;
+    border-color: #ddd;
+}
+
+.btn-separation {
+    background-color: #dda0fc;
+    border-color: #ddd;
+}
+
+.btn-extraction {
+    background-color: #e999fc;
+    border-color: #ddd;
+}
+
+.btn-pcr {
+    background-color: #83b5fa;
+    border-color: #ddd;
+}
+
+.btn-library {
+    background-color: #83b5fa;
+    border-color: #ddd;
+}
+
+.btn-qc {
+    background-color: #83b5fa;
+    border-color: #ddd;
+}
+
+.btn-detection {
+    background-color: #fab66d;
+    border-color: #ddd;
+}
+
+.btn-result {
+    background-color: #98fc54;
+    border-color: #ddd;
+}
+
+#ant-import-steps.steps .sample {
+    background: #feb3ee;
+}
+
+#ant-import-steps.steps .separation {
+    background: #d77cba;
+}
+
+#ant-import-steps.steps .extraction {
+    background: #c072fc;
+}
+
+#ant-import-steps.steps .library {
+    background: #83b5fa;
+}
+
+#ant-import-steps.steps .qc {
+    background: #83b5fa;
+}
+
+#ant-import-steps.steps .detection {
+    background: #fab66d;
+}
+
+#ant-import-steps.steps .result {
+    background: #98fc54;
+}
+
+/* import result table */
+
+.resultSteps {
+    padding-top: 0;
+    position: relative;
+}
+
+.resultSteps .alert {
+    line-height: 24px;
+}
+
+.resultSteps .glyphicon {
+    margin-right: 15px;
+}
+
+.resultSteps .progress {
+    overflow: visible;
+}
+
+.resultSteps .progress-bar {
+    position: relative;
+}
+
+.resultSteps .sr-only {
+    clip: auto;
+    width: 300px;
+    height: 64px;
+    position: absolute;
+    top: 20px;
+    color: #000;
+    left: 0;
+    overflow: visible;
+    display: block;
+    text-align: left;
+}
+
+.progress-bar-danger .sr-only {
+    left: auto;
+    right: 0;
+    text-align: right;
+}
+
+/*** End import steps ***/
+
+/*** edit-bar actionMenu indicators ***/
+
+#plone-contentmenu-workflow .state-success {
+    padding: 0 0.5em;
+    background-color: #26ce0d;
+    border: 0.1em solid #26ce0d;
+    color: White !important;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+}
+
+#plone-contentmenu-workflow .state-failed {
+    padding: 0 0.5em;
+    background-color: #fb3d09;
+    border: 0.1em solid #fb3d09;
+    color: White !important;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+}
+
+/*** End edit-bar actionMenu ***/
+
+/*** folder contents list  workflow state colors ***/
+
+#content a:link, dl.portlet a:link, #content a:visited, dl.portlet a:visited {
+    border-bottom: none;
+}
+
+/*** End contents list  ***/
+
+/*** override public.css line 343 ***/
+#content {
+    font-size: 100%;
+}
+
+
+/* progressbar */
+#ProgressModal > .progress {
+    position: relative;
+    top: 50%;
+}
+
+@keyframes slide_progress {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.add_slide_progress {
+    animation: slide_progress 3s forwards;
+}

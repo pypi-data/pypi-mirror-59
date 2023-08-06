@@ -1,0 +1,91 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="collective.ant">
+
+  <!--
+  <adapter
+      factory="collective.ant.adapters.anything.NameFromDatetime"
+      for="collective.ant.content.IBasecontent"
+  />
+  -->
+
+  <!--Substitution-->
+
+  <adapter
+      for="plone.dexterity.interfaces.IDexterityContent"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".stringinterp.TimeNowSubstitution"
+      name="lis_now"
+  />
+
+  <adapter
+      for="plone.dexterity.interfaces.IDexterityContent"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".stringinterp.SampleNumberSubstitution"
+      name="lis_sample_id"
+  />
+
+  <adapter
+      for="plone.dexterity.interfaces.IDexterityContent"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".stringinterp.BarcodeSubstitution"
+      name="lis_barcode"
+  />
+
+  <adapter
+      for="plone.dexterity.interfaces.IDexterityContent"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".stringinterp.UserNameSubstitution"
+      name="lis_name"
+  />
+
+  <adapter
+      for="plone.dexterity.interfaces.IDexterityContent"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".stringinterp.UserPhoneSubstitution"
+      name="lis_phone"
+  />
+
+  <adapter
+      for="plone.dexterity.interfaces.IDexterityContent"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".stringinterp.SubmissionCompanySubstitution"
+      name="lis_company"
+  />
+
+  <adapter
+      for="plone.dexterity.interfaces.IDexterityContent"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".stringinterp.ProjectTypeSubstitution"
+      name="lis_project"
+  />
+
+  <adapter
+      for="plone.dexterity.interfaces.IDexterityContent"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".stringinterp.DetectionPlanSubstitution"
+      name="lis_detection"
+  />
+
+  <adapter
+      for="plone.dexterity.interfaces.IDexterityContent"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".stringinterp.ChipNumberSubstitution"
+      name="lis_chip_num"
+  />
+
+  <adapter
+      for="plone.dexterity.interfaces.IDexterityContent"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".stringinterp.ChipIndexSubstitution"
+      name="lis_chip_idx"
+  />
+
+  <adapter
+      for="plone.dexterity.interfaces.IDexterityContent"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".stringinterp.ExternalNumberSubstitution"
+      name="lis_external_num"
+  />
+
+</configure>

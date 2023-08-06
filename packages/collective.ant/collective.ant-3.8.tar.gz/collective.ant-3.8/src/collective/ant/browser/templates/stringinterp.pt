@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+<head>
+</head>
+
+<body>
+<metal:main fill-slot="main">
+
+    <div id="content-core">
+
+    <h1 i18n:translate="title_contentrules_mailsub">Substitutions</h1>
+
+    <p i18n:translate="description-contentrules-mailsub">
+        Some content in the subject, email source, email recipient and message
+        may be replaced with "$&#123;&#125;" variables from the table below.
+    </p>
+
+    <table class="listing">
+    <thead>
+        <tr>
+            <th i18n:translate="category-contentrules-mailsub">Category</th>
+            <th i18n:translate="variable-contentrules-mailsub">Variable</th>
+            <th i18n:translate="substitution-contentrules-mailsub">Substitution</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tal:block tal:define="sublist here/@@stringinterp_info/substitutionList"
+         tal:repeat="category sublist">
+         <tr tal:repeat="item python:category['items']">
+             <td tal:content="category/category">All Content</td>
+             <td>${<span tal:replace="item/id">url</span>}</td>
+             <td tal:content="item/description">URL</td>
+         </tr>
+    </tal:block>
+    </tbody>
+    </table>
+
+    </div>
+
+</metal:main>
+</body></html>

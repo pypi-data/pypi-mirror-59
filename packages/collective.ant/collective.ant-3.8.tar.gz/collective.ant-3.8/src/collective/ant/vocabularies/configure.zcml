@@ -1,0 +1,47 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="collective.ant">
+
+    <!-- -*- extra stuff goes here -*- -->
+
+    <utility
+      component=".sex.sex"
+      name="collective.ant.sex"
+    />
+
+    <utility
+      component=".indexes.date_index"
+      name="collective.ant.date_index"
+    />
+
+    <utility
+      component=".progress_steps.progress_steps"
+      name="collective.ant.progress_steps"
+    />
+
+    <utility
+      factory=".review_transition.ReviewTransition"
+      name="collective.ant.review_transition"
+    />
+
+    <utility
+      factory=".review_actions.ReviewActions"
+      name="collective.ant.ReviewActions"
+    />
+
+  <utility
+      component=".submission.SubmissionCompanyFactory"
+      name="collective.ant.submission_company"
+    />
+
+  <utility
+    component=".project_type.ProjectTypeFactory"
+    name="collective.ant.project_type"
+  />
+
+  <utility
+    component=".detection_plan.DetectionPlanFactory"
+    name="collective.ant.detection_plan"
+  />
+
+</configure>

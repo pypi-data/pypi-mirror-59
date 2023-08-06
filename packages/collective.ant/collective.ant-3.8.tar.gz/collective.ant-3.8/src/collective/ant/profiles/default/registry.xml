@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<registry>
+  <!-- -*- extra stuff goes here -*- -->
+  <records interface="collective.ant.interfaces.ICollectiveAntSettings" />
+  <records interface="collective.ant.interfaces.IExpireRules" />
+  <records interface="collective.ant.interfaces.ISerialRules" />
+  <records interface="collective.ant.interfaces.ISubmissionCompany" />
+<!--?  <records interface="collective.ant.interfaces.IProjectType" />-->
+
+</registry>

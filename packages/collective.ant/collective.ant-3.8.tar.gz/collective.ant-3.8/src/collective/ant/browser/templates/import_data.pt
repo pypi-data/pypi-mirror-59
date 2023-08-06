@@ -1,0 +1,215 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      lang="en"
+         metal:use-macro="context/main_template/macros/master"
+         i18n:domain="collective.ant">
+<body>
+
+<metal:content-main fill-slot="body">
+    <div id="content">
+        <div id="content-core">
+            <tal:block define="step python:view.step_dict['id'];
+                    steps_length python:len(view.steps_group);
+                    column_width python:12/steps_length;">
+
+                <div id="ant-import-steps" class="row steps">
+                    <tal:steps repeat="steps python:view.steps_group.values()">
+                        <div class="col-xs-12 col-md-${column_width} ${steps_class}"
+                                 tal:define="steps_class python: step if step == steps['id'] else ''"
+                                 tal:attributes="class string:col-xs-12 col-md-${column_width} ${steps_class}"
+                                 tal:content="python:steps['title']">Steps Title
+                        </div>
+                    </tal:steps>
+                </div>
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title" i18n:translate="">Import Data</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="ant-import-form" method="POST" action="#" enctype="multipart/form-data"
+                                 tal:attributes="action context/@@plone_context_state/current_page_url">
+                            <div class="form-group">
+                                <label for="form-widgets-uploadFile" i18n:translate="">File input</label>
+                                <input type="file" class="btn btn-warning"
+                                       id="form-widgets-uploadFile" name="form.widgets.uploadFile"
+                                         tal:attributes="data-backcount view/request/back_count | string:0">
+
+                                <p class="help-block"
+                                         tal:condition="python:view.file_handler and len(view.file_handler)>1">
+                                      <span class="option"
+                                               tal:repeat="item view/file_handler|nothing">
+                                          <label tal:attributes="for string:form-widget-${item/name}">
+                                              <input type="radio"
+                                                       tal:attributes="
+                                                              id string:form-widget-${item/name};
+                                                      value string:${item/name};
+                                                      checked python:view.request.form.get('form.widgets.file_handler') == item['name']"
+                                                     name="form.widgets.file_handler"
+                                                     class="radio-widget"/>
+                                              <span class="label" tal:content="item/title">title</span>
+                                        </label>
+                                      </span>
+                                </p>
+
+                                <p class="help-block">
+                                      <span tal:define="
+                                              view_name python:view.__name__;
+                                                      down_url string:${context/absolute_url}/${view_name}?import-template;"
+                                               i18n:translate="">
+                                          Click to
+                                          <tal:trans i18n:name="download">
+                                              <a href="${down_url}" tal:attributes="href down_url"
+                                                       i18n:translate="" target="_blank">download</a>
+                                          </tal:trans>
+                                          import template.
+                                    </span>
+                                </p>
+                            </div>
+
+                            <div class="has-success">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="all_true" checked="checked"
+                                               id="form-widgets-all_true" name="form.widgets.all_true"
+                                                 tal:attributes="checked view/request/form/form.widgets.all_true | string:checked">
+                                        <tal:label i18n:translate="">Force all success</tal:label>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="has-success">
+                                <div class="checkbox" tal:condition="view/request/form/form.widgets.show_fetch | nothing">
+                                    <label>
+                                        <input type="checkbox" value="disabled_fetch" checked="checked"
+                                               id="form-widgets-disabled_fetch"
+                                               name="form.widgets.disabled_fetch"
+                                                 tal:attributes="checked view/request/form/form.widgets.disabled_fetch | string:checked">
+                                        <tal:label i18n:translate="">Disabled fetch third party data
+                                        </tal:label>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-default btn-lg" value="Cancel"
+                                    id="form-buttons-cancel" name="form.buttons.cancel"
+                                     i18n:attributes="value label_cancel" i18n:translate="">
+                                Back
+                            </button>
+                            <button type="submit" class="btn btn-info btn-lg" value="Import"
+                                    id="form-buttons-import" name="form.buttons.import"
+                                     i18n:attributes="value label_import" i18n:translate="">
+                                Import
+                            </button>
+                            <button type="submit" class="btn btn-default btn-lg" value="Next"
+                                    name="form.buttons.next"
+                                     tal:condition="view/request/form/form.buttons.next | nothing"
+                                     tal:attributes="value view/request/form/form.buttons.next"
+                                     i18n:translate="">
+                                Next
+                            </button>
+                            <span tal:replace="structure context/@@authenticator/authenticator"/>
+                        </form>
+
+                        <hr>
+
+                        <div class="resultSteps"
+                                 tal:define="row_count view/request/back_count | nothing;
+                                        success_count view/request/success_count | nothing;
+                                                failed_count view/request/failed_count | nothing;
+                                                        success_percent  python: row_count and '{:3.2%}'.format(success_count / float(row_count)) or 0;
+                                                                failed_percent  python: row_count and '{:3.2%}'.format(failed_count / float(row_count)) or 0;
+                                                                        success_style  python: row_count and 'width: {0}'.format(success_percent);
+                                                                                failed_style  python: row_count and 'width: {0}'.format(failed_percent);
+                                                                                        success_rate python: '{0} / {1}'.format(success_count, row_count);
+                                                                                                failed_rate python: '{0} / {1}'.format(failed_count, row_count);"
+                                 tal:condition="row_count">
+                            <div i18n:translate="time-report">
+                                duration:<span tal:replace="view/request/duration | nothing"
+                                     i18n:name="time_to_duration"/></div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" style="width: 85%"
+                                         tal:attributes="style success_style">
+                                            <span class="sr-only" i18n:translate=""><tal: i18n:name="success_percent" tal:content="success_percent">80%</tal:> Success
+                                                (<strong i18n:name="success_rate" tal:content="success_rate">0</strong>)</span>
+                                </div>
+                                <div class="progress-bar progress-bar-danger" style="width: 10%"
+                                         tal:attributes="style failed_style">
+                                            <span class="sr-only" i18n:translate=""><tal: i18n:name="failed_percent" tal:content="failed_percent">20%</tal:>% Failed
+                                                (<strong i18n:name="failed_rate" tal:content="failed_rate">0</strong>)</span>
+                                </div>
+                            </div>
+
+                            <div class="table-responsive">
+                                <table class="table table-hover table-striped table-condensed table-bordered"
+                                         tal:define="field_title request/back_title | nothing;
+                                                field_value request/back_value | nothing;">
+                                    <thead>
+                                    <tr>
+                                        <tal:block repeat="title python:field_title">
+                                            <th tal:content="title">field title</th>
+                                        </tal:block>
+                                    </tr>
+                                    </thead>
+                                    <tfoot>
+                                    <tr>
+                                        <tal:block repeat="title python:field_title">
+                                            <th tal:content="title">field title</th>
+                                        </tal:block>
+                                    </tr>
+                                    </tfoot>
+                                    <tbody>
+                                    <tal:tr repeat="values python:field_value">
+                                        <tr class="success warning danger info"
+                                                 tal:attributes="class python:
+                                                values[0]==20 and 'success' or
+                                                values[0]==30 and 'warning' or
+                                                values[0]==40 and 'danger'">
+                                            <td tal:content="python:repeat['values'].number()">NO.</td>
+                                            <tal:td repeat="value python:values[1:]">
+                                                <tal tal:define="subtable python: isinstance(value, (tuple, list))">
+                                                    <td tal:content="value" tal:condition="not: subtable">value</td>
+                                                    <td tal:condition="subtable">
+                                                        <table class="table table-hover table-striped table-condensed table-bordered">
+                                                            <thead>
+                                                            <tr>
+                                                                <th>NO.</th>
+                                                                <th tal:repeat="subtitle python:value[0]" tal:content="python:subtitle.title()">
+                                                                    name
+                                                                </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr tal:repeat="row python:value[1]">
+                                                                <td tal:content="repeat/row/number">NO.</td>
+                                                                <td tal:repeat="val python:row.values()" tal:content="val">
+                                                                    val
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tal>
+                                            </tal:td>
+                                        </tr>
+                                    </tal:tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--? overlays -->
+                <div id="ProgressModal" class="modal fade" data-backdrop='false' tabindex="-1">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped"></div>
+                    </div>
+                </div>
+
+            </tal:block>
+        </div>
+    </div>
+</metal:content-main>
+</body>
+</html>
