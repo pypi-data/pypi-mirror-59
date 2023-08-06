@@ -1,0 +1,10 @@
+include README.rst
+include LICENSE
+include requirements*.txt
+include examples/*.*
+include tests/*.py
+include tests/test_data/*.*
+include tests/test_results/.gitignore
+include beamspy/data/*.txt
+include beamspy/data/databases/*.sql.gz
+include beamspy/data/databases/databases.txt
