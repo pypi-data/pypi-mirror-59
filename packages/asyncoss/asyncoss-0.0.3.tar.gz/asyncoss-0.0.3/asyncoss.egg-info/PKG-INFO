@@ -1,0 +1,57 @@
+Metadata-Version: 1.1
+Name: asyncoss
+Version: 0.0.3
+Summary: A async aliyun OSS library.
+Home-page: UNKNOWN
+Author: jerevia
+Author-email: trilliondawn@gmail.com
+License: MIT
+Description: Async Alibaba Cloud OSS SDK
+        ===========================
+        
+        Based on aiohttp and oss2, Require python3.6+
+        
+        Installing
+        ----------
+        
+        .. code-block:: shell
+        
+            pip install asyncoss
+        
+        
+        Getting started
+        ----------------
+        
+        .. code-block:: python
+        
+            import asyncoss
+            import asyncio
+        
+            endpoint = 'http://oss-cn-beijing.aliyuncs.com'
+        
+            auth = asyncoss.Auth('<Your AccessKeyID>', '<Your AccessKeySecret>')
+        
+            async def main():
+                # The object key in the bucket is story.txt
+                async with asyncoss.Bucket(auth, endpoint, '<your bucket name>') as bucket:
+                    key = 'story.txt'
+        
+                    # Upload
+                    await bucket.put_object(key, 'Ali Baba is a happy youth.')
+        
+                    # Download
+                    result = await bucket.get_object(key)
+                    await result.resp.read()
+        
+                    # Delete
+                    await bucket.delete_object(key)
+        
+            loop = asyncio.get_event_loop()
+            loop.run_until_complete(main())
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
