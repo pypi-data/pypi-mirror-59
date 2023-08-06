@@ -1,0 +1,11 @@
+cutadapt>=2.5
+dnaio
+matplotlib>=3.0
+numpy
+pandas>=0.23
+ruamel.yaml
+scipy>=1.1
+seaborn>=0.9
+snakemake>=4.5
+tinyalign>=0.2
+xopen>=0.8.2
