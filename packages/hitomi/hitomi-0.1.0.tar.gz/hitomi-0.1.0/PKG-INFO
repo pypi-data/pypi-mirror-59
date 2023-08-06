@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: hitomi
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/cleanunicorn/hitomi
+Author: Daniel Luca
+Author-email: daniel.luca@consensys.net
+License: MIT
+Description: # Hitomi
+        
+        Ethereum console for any node.
+        
+        ## Install
+        
+        ```console
+        $ pip install hitomi
+        ```
+        
+        ## Quick start
+        
+        
+        
+        ## Demo
+        
+        
+        ## Why Hitomi?
+        
+        
+        
+        ```
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
