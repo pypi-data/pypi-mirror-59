@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+filefield_cache/__init__.py
+filefield_cache/cache.py
+filefield_cache/widgets.py
+filefield_cache.egg-info/PKG-INFO
+filefield_cache.egg-info/SOURCES.txt
+filefield_cache.egg-info/dependency_links.txt
+filefield_cache.egg-info/top_level.txt
+filefield_cache/templates/filefield_cache/cached_clearable_file_input.html
