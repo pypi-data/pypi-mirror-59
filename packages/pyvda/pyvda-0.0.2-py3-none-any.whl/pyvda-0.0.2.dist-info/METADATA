@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyvda
+Version: 0.0.2
+Summary: Python implementation of the VirtualDesktopAccessor for manipulating Windows 10 virtual desktops.
+Home-page: https://github.com/mrob95/py-VirtualDesktopAccessor
+Author: Mike Roberts
+Author-email: mike.roberts.2k10@googlemail.com
+License: LICENSE.txt
+Platform: UNKNOWN
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pywin32
+
+# py-VirtualDesktopAccessor
+
+
