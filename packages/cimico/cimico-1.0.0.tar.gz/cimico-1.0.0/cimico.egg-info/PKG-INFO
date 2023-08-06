@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cimico
+Version: 1.0.0
+Summary: A simple python debugger that generates a video of the program running along with valuable information.
+Home-page: https://github.com/CCExtractor/cimico
+Author: knightron0
+Author-email: sarthak.robo@gmail.com
+License: UNKNOWN
+Description: # Cimico
+        Hello there!
+        Cimico is a debugger that is written in python which debugs python code!
+        
+        This project was created under CCExtractorDevelopment in Google Code-In 2019
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
