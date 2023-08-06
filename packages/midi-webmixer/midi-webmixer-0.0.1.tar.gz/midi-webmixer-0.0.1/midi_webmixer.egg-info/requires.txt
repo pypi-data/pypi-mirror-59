@@ -1,0 +1,6 @@
+flask
+flask-restful
+python-rtmidi
+netifaces
+click
+redis

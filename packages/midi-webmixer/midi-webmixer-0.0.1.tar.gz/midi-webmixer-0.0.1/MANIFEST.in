@@ -1,0 +1,2 @@
+recursive-include mixer/static *
+recursive-include mixer/templates *
