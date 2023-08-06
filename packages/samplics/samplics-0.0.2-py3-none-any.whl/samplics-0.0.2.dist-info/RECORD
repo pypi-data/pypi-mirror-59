@@ -1,0 +1,17 @@
+samplics/__init__.py,sha256=5wKeKLR0UFQbNRDdw6zT8UgkD6Mev36KKEKWRsF_irE,232
+samplics/estimation/__init__.py,sha256=vWteOVssZy3GutOkt9OUGTvdsoqB559TKAbXkkMXEvM,174
+samplics/estimation/expansion.py,sha256=ixT_2InxvTgXfrHbVTkcT32Ob38-o-wazXvz6tmHczE,19059
+samplics/estimation/regression.py,sha256=-tN6nyJPELcmuyAxAESUo3Tgn8JLuqYkFAW-igRN2Vo,196
+samplics/estimation/replication.py,sha256=qqPyrcITxgGPewSacvRYyWGcS0LT2nf6EZV_BIxQ088,16373
+samplics/sampling/__init__.py,sha256=UAyEVZLneqmF72edvYdTajRWHxSVGVDMsJezl8vQZDo,69
+samplics/sampling/selection.py,sha256=Dya_vEcq7IWrdSh4YGE_swapuUzE2YS-ANsdckElsxg,33484
+samplics/utils/__init__.py,sha256=LQqGmCyC0Cn_PIsmhyJlQN6JAO-BRbSqoH8L4oNbhP4,53
+samplics/utils/checks.py,sha256=6tnuUE6JTPhqPUBNXDEIw8W2Ui_0WhfzsYxFOR8LuCs,2000
+samplics/utils/formats.py,sha256=ZruiSEAYpqx6_yUVvE8c50yp-jksePtmoJCrJfyG0vk,728
+samplics/utils/hadamard.py,sha256=nZo5EQ-MGnh4PYyTdbQ5xW-JJxXY_9BBuYbqWQC6604,5530
+samplics/weighting/__init__.py,sha256=syuJeyQuv7A8sxxjfT1talCBc-htHqjvN9CYwKiYQnw,159
+samplics/weighting/adjustment.py,sha256=2p1K1pyZPdGSTf8Sh4CBula5za9eMcCuPHZokV8hYec,14422
+samplics/weighting/replicates.py,sha256=t-0NfoKfvUGOp_G5bQx087xfUWGc0VrtsNZZVFpR2pc,11026
+samplics-0.0.2.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+samplics-0.0.2.dist-info/METADATA,sha256=GqKJ4ZtO7yrNEe5UEl8h1bDnTW_rS49Q51Dy1or3MjU,4696
+samplics-0.0.2.dist-info/RECORD,,
