@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Level_Up_RPG/__init__.py
+Level_Up_RPG/level_up_rpg.py
+Level_Up_RPG.egg-info/PKG-INFO
+Level_Up_RPG.egg-info/SOURCES.txt
+Level_Up_RPG.egg-info/dependency_links.txt
+Level_Up_RPG.egg-info/entry_points.txt
+Level_Up_RPG.egg-info/top_level.txt

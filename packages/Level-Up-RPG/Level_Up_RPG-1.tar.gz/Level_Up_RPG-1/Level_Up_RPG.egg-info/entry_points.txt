@@ -1,0 +1,3 @@
+[console_scripts]
+Level_Up_RPG = Level_Up_RPG.level_up_rpg:main
+
