@@ -1,0 +1,8 @@
+README.md
+setup.py
+PyFaceplateClient.egg-info/PKG-INFO
+PyFaceplateClient.egg-info/SOURCES.txt
+PyFaceplateClient.egg-info/dependency_links.txt
+PyFaceplateClient.egg-info/top_level.txt
+client/Client.py
+client/__init__.py
