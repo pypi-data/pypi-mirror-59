@@ -1,0 +1,13 @@
+README.md
+setup.py
+Autogovernance.egg-info/PKG-INFO
+Autogovernance.egg-info/SOURCES.txt
+Autogovernance.egg-info/dependency_links.txt
+Autogovernance.egg-info/not-zip-safe
+Autogovernance.egg-info/top_level.txt
+autogovernance/Element.py
+autogovernance/__init__.py
+autogovernance/browser.py
+autogovernance/core.py
+autogovernance/tables.py
+test/test_columnas.py
