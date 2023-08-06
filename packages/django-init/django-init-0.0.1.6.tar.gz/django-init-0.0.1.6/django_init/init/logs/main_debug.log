@@ -1,0 +1,1810 @@
+ERROR:django.request: Internal Server Error: /documents/ (2018-08-07 16:21:00; exception.py:135)
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'get_active_by_slug'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 204, in render
+    template = context.template.engine.get_template(template_name)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: 'get_active_by_slug'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /documents/ (2018-08-07 16:21:05; exception.py:135)
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'get_active_by_slug'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 204, in render
+    template = context.template.engine.get_template(template_name)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: 'get_active_by_slug'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /documents/ (2018-08-07 16:21:13; exception.py:135)
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'get_active_by_slug'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 204, in render
+    template = context.template.engine.get_template(template_name)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: 'get_active_by_slug'. Did you forget to register or load this tag?
+INFO:requests: POST (2018-08-16 12:55:01; views.py:18)
+INFO:requests: POST token='' (2018-08-16 12:55:01; views.py:23)
+INFO:requests: EQUAL TOKEN token='' (2018-08-16 12:55:01; views.py:42)
+ERROR:django.request: Internal Server Error: /feedback/requests/ (2018-08-16 12:55:01; exception.py:135)
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'RequestForm' object has no attribute 'status_code'
+INFO:requests: POST (2018-08-16 12:57:45; views.py:18)
+INFO:requests: POST token='eyy1ku6oiiw0' (2018-08-16 12:57:45; views.py:23)
+INFO:requests: SAVE token='eyy1ku6oiiw0' (2018-08-16 12:57:45; views.py:26)
+INFO:requests: SAVE END (2018-08-16 12:57:45; views.py:40)
+ERROR:django.request: Internal Server Error: /adm/config/robots/1/change/ (2018-08-16 13:49:41; exception.py:135)
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1465, in _changeform_view
+    form = ModelForm(instance=obj)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/config/forms.py", line 15, in __init__
+    with open(os.path.join(settings.BASE_DIR, 'templates/robots.txt'), "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/var/www/servertest/data/www/lmgroup.servertest.pro/templates/robots.txt'
+INFO:requests: POST (2018-08-16 13:50:24; views.py:18)
+INFO:requests: POST token='391wl13lal1c0' (2018-08-16 13:50:24; views.py:23)
+INFO:requests: SAVE token='391wl13lal1c0' (2018-08-16 13:50:24; views.py:26)
+INFO:requests: SAVE END (2018-08-16 13:50:24; views.py:40)
+INFO:requests: POST (2018-08-16 14:08:05; views.py:18)
+INFO:requests: POST token='118a3cak60eo0' (2018-08-16 14:08:05; views.py:23)
+INFO:requests: SAVE token='118a3cak60eo0' (2018-08-16 14:08:05; views.py:26)
+INFO:requests: SAVE END (2018-08-16 14:08:05; views.py:40)
+INFO:reviews-modal: POST (2018-08-16 14:29:15; views.py:18)
+INFO:reviews-modal: POST token='260hpx07fyyo0' (2018-08-16 14:29:15; views.py:23)
+INFO:reviews-modal: SAVE token='260hpx07fyyo0' (2018-08-16 14:29:15; views.py:26)
+INFO:reviews-modal: SAVE END (2018-08-16 14:29:15; views.py:40)
+INFO:requests: POST (2018-08-16 15:15:06; views.py:18)
+INFO:requests: POST token='p67p1mkm87wg' (2018-08-16 15:15:06; views.py:23)
+INFO:requests: SAVE token='p67p1mkm87wg' (2018-08-16 15:15:06; views.py:26)
+INFO:requests: SAVE END (2018-08-16 15:15:06; views.py:40)
+INFO:reviews-modal: POST (2018-08-16 16:54:12; views.py:18)
+INFO:reviews-modal: POST token='3r61qyow7lfcw' (2018-08-16 16:54:12; views.py:23)
+INFO:reviews-modal: SAVE token='3r61qyow7lfcw' (2018-08-16 16:54:12; views.py:26)
+INFO:reviews-modal: SAVE END (2018-08-16 16:54:12; views.py:40)
+ERROR:django.request: Internal Server Error: /adm/sections/article/4/change/ (2018-08-17 10:30:56; exception.py:135)
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/common/abscreated/admin.py", line 79, in save_model
+    obj.save()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/models.py", line 930, in save
+    self, parent, 'last-child', save=False)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 72, in wrapped
+    return method(self, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 591, in _move_node
+    self._move_root_node(node, target, position)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 1200, in _move_root_node
+    raise InvalidMove(_('A node may not be made a child of itself.'))
+mptt.exceptions.InvalidMove: Элемент не может быть потомком самому себе.
+ERROR:django.request: Internal Server Error: /adm/sections/article/4/change/ (2018-08-17 10:31:03; exception.py:135)
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/common/abscreated/admin.py", line 79, in save_model
+    obj.save()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/models.py", line 930, in save
+    self, parent, 'last-child', save=False)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 72, in wrapped
+    return method(self, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 591, in _move_node
+    self._move_root_node(node, target, position)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 1200, in _move_root_node
+    raise InvalidMove(_('A node may not be made a child of itself.'))
+mptt.exceptions.InvalidMove: Элемент не может быть потомком самому себе.
+ERROR:django.request: Internal Server Error: /adm/sections/article/4/change/ (2018-08-17 10:31:49; exception.py:135)
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/common/abscreated/admin.py", line 79, in save_model
+    obj.save()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/models.py", line 930, in save
+    self, parent, 'last-child', save=False)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 72, in wrapped
+    return method(self, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 591, in _move_node
+    self._move_root_node(node, target, position)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 1200, in _move_root_node
+    raise InvalidMove(_('A node may not be made a child of itself.'))
+mptt.exceptions.InvalidMove: Элемент не может быть потомком самому себе.
+ERROR:django.request: Internal Server Error: /adm/sections/article/4/change/ (2018-08-17 10:32:35; exception.py:135)
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/common/abscreated/admin.py", line 79, in save_model
+    obj.save()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/models.py", line 930, in save
+    self, parent, 'last-child', save=False)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 72, in wrapped
+    return method(self, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 591, in _move_node
+    self._move_root_node(node, target, position)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 1200, in _move_root_node
+    raise InvalidMove(_('A node may not be made a child of itself.'))
+mptt.exceptions.InvalidMove: Элемент не может быть потомком самому себе.
+ERROR:django.request: Internal Server Error: /adm/sections/article/4/change/ (2018-08-17 10:32:44; exception.py:135)
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/common/abscreated/admin.py", line 79, in save_model
+    obj.save()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/models.py", line 930, in save
+    self, parent, 'last-child', save=False)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 72, in wrapped
+    return method(self, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 591, in _move_node
+    self._move_root_node(node, target, position)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 1200, in _move_root_node
+    raise InvalidMove(_('A node may not be made a child of itself.'))
+mptt.exceptions.InvalidMove: Элемент не может быть потомком самому себе.
+ERROR:django.request: Internal Server Error: /adm/sections/article/4/change/ (2018-08-17 10:32:59; exception.py:135)
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/common/abscreated/admin.py", line 79, in save_model
+    obj.save()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/models.py", line 930, in save
+    self, parent, 'last-child', save=False)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 72, in wrapped
+    return method(self, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 591, in _move_node
+    self._move_root_node(node, target, position)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 1200, in _move_root_node
+    raise InvalidMove(_('A node may not be made a child of itself.'))
+mptt.exceptions.InvalidMove: Элемент не может быть потомком самому себе.
+ERROR:django.request: Internal Server Error: /adm/sections/article/4/change/ (2018-08-17 10:33:36; exception.py:135)
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/common/abscreated/admin.py", line 79, in save_model
+    obj.save()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/models.py", line 930, in save
+    self, parent, 'last-child', save=False)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 72, in wrapped
+    return method(self, *args, **kwargs)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 591, in _move_node
+    self._move_root_node(node, target, position)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/mptt/managers.py", line 1200, in _move_root_node
+    raise InvalidMove(_('A node may not be made a child of itself.'))
+mptt.exceptions.InvalidMove: Элемент не может быть потомком самому себе.
+ERROR:django.request: Internal Server Error: /documents/ (2018-08-17 14:03:46; exception.py:135)
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'get_active_by_slug_last'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 204, in render
+    template = context.template.engine.get_template(template_name)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: 'get_active_by_slug_last'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /documents/ (2018-08-17 14:03:49; exception.py:135)
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'get_active_by_slug_last'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 204, in render
+    template = context.template.engine.get_template(template_name)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/var/www/servertest/data/www/lmgroup.servertest.pro/env/lib/python3.6/site-packages/django/template/base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: 'get_active_by_slug_last'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /adm/sections/article/ (2018-08-19 23:24:25; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/mnt/projects/Coffee/lmgroupDm/sections/admin.py", line 167, in changelist_view
+    return super(ArticleAdmin, self).changelist_view(request, extra_context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1542, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 78, in __init__
+    self.queryset = self.get_queryset(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 317, in get_queryset
+    filters_use_distinct) = self.get_filters(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 114, in get_filters
+    spec = list_filter(request, lookup_params, self.model, self.model_admin)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/filters.py", line 76, in __init__
+    lookup_choices = self.lookups(request, model_admin)
+  File "/mnt/projects/Coffee/lmgroupDm/sections/admin.py", line 130, in lookups
+    list.append((a.id, a.title()))
+TypeError: 'str' object is not callable
+ERROR:django.request: Internal Server Error: /adm/sections/article/ (2018-08-19 23:24:27; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/mnt/projects/Coffee/lmgroupDm/sections/admin.py", line 167, in changelist_view
+    return super(ArticleAdmin, self).changelist_view(request, extra_context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1542, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 78, in __init__
+    self.queryset = self.get_queryset(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 317, in get_queryset
+    filters_use_distinct) = self.get_filters(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 114, in get_filters
+    spec = list_filter(request, lookup_params, self.model, self.model_admin)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/filters.py", line 76, in __init__
+    lookup_choices = self.lookups(request, model_admin)
+  File "/mnt/projects/Coffee/lmgroupDm/sections/admin.py", line 130, in lookups
+    list.append((a.id, a.title()))
+TypeError: 'str' object is not callable
+ERROR:django.request: Internal Server Error: / (2018-08-20 20:43:55; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/connections.py", line 277, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.ProgrammingError: (1146, "Table 'dev_lmgroup.sections_config_groups' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 321, in render
+    if match:
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/models/query.py", line 254, in __bool__
+    self._fetch_all()
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/models/query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 894, in execute_sql
+    raise original_exception
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 884, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/connections.py", line 277, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'dev_lmgroup.sections_config_groups' doesn't exist")
+ERROR:django.request: Internal Server Error: /adm/sections/sectionconfig/1/change/ (2018-08-20 21:25:05; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1466, in _changeform_view
+    formsets, inline_instances = self._create_formsets(request, obj, change=True)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1801, in _create_formsets
+    for FormSet, inline in self.get_formsets_with_inlines(*get_formsets_args):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 708, in get_formsets_with_inlines
+    yield inline.get_formset(request, obj), inline
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1894, in get_formset
+    can_delete = self.can_delete and self.has_delete_permission(request, obj)
+TypeError: has_delete_permission() takes 2 positional arguments but 3 were given
+ERROR:django.request: Internal Server Error: /adm/sections/sectionconfig/1/change/ (2018-08-20 21:25:07; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1466, in _changeform_view
+    formsets, inline_instances = self._create_formsets(request, obj, change=True)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1801, in _create_formsets
+    for FormSet, inline in self.get_formsets_with_inlines(*get_formsets_args):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 708, in get_formsets_with_inlines
+    yield inline.get_formset(request, obj), inline
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1894, in get_formset
+    can_delete = self.can_delete and self.has_delete_permission(request, obj)
+TypeError: has_delete_permission() takes 2 positional arguments but 3 were given
+ERROR:django.request: Internal Server Error: /adm/sections/sectionconfig/1/change/ (2018-08-20 21:25:08; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1466, in _changeform_view
+    formsets, inline_instances = self._create_formsets(request, obj, change=True)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1801, in _create_formsets
+    for FormSet, inline in self.get_formsets_with_inlines(*get_formsets_args):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 708, in get_formsets_with_inlines
+    yield inline.get_formset(request, obj), inline
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1894, in get_formset
+    can_delete = self.can_delete and self.has_delete_permission(request, obj)
+TypeError: has_delete_permission() takes 2 positional arguments but 3 were given
+ERROR:django.request: Internal Server Error: / (2018-08-20 21:48:15; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/response.py", line 82, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/response.py", line 64, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 969, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 827, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 983, in do_if
+    nodelist = parser.parse(('endif',))
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 969, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 1490, in do_with
+    nodelist = parser.parse(('endwith',))
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 565, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 56: 'else', expected 'endwith'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: / (2018-08-20 21:48:16; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/response.py", line 82, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/response.py", line 64, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 969, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 827, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 983, in do_if
+    nodelist = parser.parse(('endif',))
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 969, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 1490, in do_with
+    nodelist = parser.parse(('endwith',))
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/base.py", line 565, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 56: 'else', expected 'endwith'. Did you forget to register or load this tag?
+INFO:reviews-modal: POST (2018-08-20 22:03:17; views.py:18)
+INFO:reviews-modal: POST token='3h6l70mhhy40' (2018-08-20 22:03:17; views.py:23)
+INFO:reviews-modal: SAVE token='3h6l70mhhy40' (2018-08-20 22:03:17; views.py:26)
+INFO:reviews-modal: SAVE END (2018-08-20 22:03:17; views.py:40)
+INFO:reviews-modal: POST (2018-08-20 22:04:00; views.py:18)
+INFO:reviews-modal: POST token='e3mk17vqrz40' (2018-08-20 22:04:00; views.py:23)
+INFO:reviews-modal: SAVE token='e3mk17vqrz40' (2018-08-20 22:04:00; views.py:26)
+INFO:reviews-modal: SAVE END (2018-08-20 22:04:01; views.py:40)
+INFO:reviews-modal: POST (2018-08-20 22:12:26; views.py:18)
+INFO:reviews-modal: POST token='1ss0pcrs8uv40' (2018-08-20 22:12:26; views.py:23)
+INFO:reviews-modal: SAVE token='1ss0pcrs8uv40' (2018-08-20 22:12:26; views.py:26)
+INFO:reviews-modal: SAVE END (2018-08-20 22:12:26; views.py:40)
+ERROR:django.request: Internal Server Error: /adm/sections/sectionconfigblocks/ (2018-08-21 12:14:59; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/connections.py", line 277, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.ProgrammingError: (1146, "Table 'dev_lmgroup.sections_config_blocks' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1542, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 79, in __init__
+    self.get_results(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 177, in get_results
+    result_count = paginator.count
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/paginator.py", line 79, in count
+    return self.object_list.count()
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/models/query.py", line 364, in count
+    return self.query.get_count(using=self.db)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/models/sql/query.py", line 499, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/models/sql/query.py", line 480, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 894, in execute_sql
+    raise original_exception
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 884, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/MySQLdb/connections.py", line 277, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'dev_lmgroup.sections_config_blocks' doesn't exist")
+INFO:reviews-modal: POST (2018-08-21 13:00:22; views.py:18)
+INFO:requests: POST (2018-08-21 13:10:05; views.py:18)
+INFO:requests: POST (2018-08-21 13:23:10; views.py:18)
+INFO:requests: POST (2018-08-21 13:30:10; views.py:18)
+INFO:requests: POST token='1xwdli8nkqlc0' (2018-08-21 13:30:10; views.py:23)
+INFO:requests: SAVE token='1xwdli8nkqlc0' (2018-08-21 13:30:10; views.py:26)
+INFO:requests: SAVE END (2018-08-21 13:30:11; views.py:40)
+INFO:requests: POST (2018-08-21 13:31:56; views.py:18)
+INFO:requests: POST token='1d8ls2ms63hc0' (2018-08-21 13:31:56; views.py:23)
+INFO:requests: SAVE token='1d8ls2ms63hc0' (2018-08-21 13:31:56; views.py:26)
+INFO:requests: SAVE END (2018-08-21 13:31:56; views.py:40)
+ERROR:django.request: Internal Server Error: /feedback/requests/ (2018-08-21 13:31:56; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'str' object has no attribute 'status_code'
+INFO:contact: POST (2018-08-21 13:50:05; views.py:18)
+INFO:contact: POST token='3qkaxcw57zo00' (2018-08-21 13:50:05; views.py:23)
+INFO:contact: SAVE token='3qkaxcw57zo00' (2018-08-21 13:50:05; views.py:26)
+INFO:contact: SAVE END (2018-08-21 13:50:05; views.py:40)
+INFO:contact: POST (2018-08-21 13:50:26; views.py:18)
+INFO:contact: POST token='20hhlsofjkzk' (2018-08-21 13:50:26; views.py:23)
+INFO:contact: SAVE token='20hhlsofjkzk' (2018-08-21 13:50:26; views.py:26)
+INFO:contact: SAVE END (2018-08-21 13:50:27; views.py:40)
+INFO:contact: POST (2018-08-21 13:52:10; views.py:18)
+INFO:contact: POST token='1n36i4em79r40' (2018-08-21 13:52:10; views.py:23)
+INFO:contact: SAVE token='1n36i4em79r40' (2018-08-21 13:52:10; views.py:26)
+INFO:contact: SAVE END (2018-08-21 13:52:10; views.py:40)
+INFO:contact: POST (2018-08-21 13:54:49; views.py:18)
+INFO:contact: POST (2018-08-21 14:14:26; views.py:18)
+INFO:contact: POST token='1dpfg0ig26o00' (2018-08-21 14:14:26; views.py:23)
+INFO:contact: SAVE token='1dpfg0ig26o00' (2018-08-21 14:14:26; views.py:26)
+INFO:contact: SAVE END (2018-08-21 14:14:26; views.py:40)
+ERROR:django.request: Internal Server Error: /feedback/contact/ (2018-08-21 14:14:26; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/projects/Coffee/lmgroupDm/feedback/views.py", line 57, in contact_back
+    'asdsadad')
+  File "/mnt/projects/Coffee/lmgroupDm/feedback/views.py", line 48, in feedback_form
+    return render(request, template_name_ajax, {form_key_context: form, 'form_name': form_name})
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: asdsadad
+INFO:contact: POST (2018-08-21 14:14:50; views.py:18)
+INFO:contact: POST token='1dpfg0ig26o00' (2018-08-21 14:14:50; views.py:23)
+INFO:contact: SAVE token='1dpfg0ig26o00' (2018-08-21 14:14:50; views.py:26)
+INFO:contact: SAVE END (2018-08-21 14:14:50; views.py:40)
+INFO:contact: POST (2018-08-21 14:15:15; views.py:18)
+INFO:contact: POST token='eifg1mt3uig0' (2018-08-21 14:15:15; views.py:23)
+INFO:contact: SAVE token='eifg1mt3uig0' (2018-08-21 14:15:15; views.py:26)
+INFO:contact: SAVE END (2018-08-21 14:15:15; views.py:40)
+INFO:contact: POST (2018-08-21 14:15:45; views.py:18)
+INFO:contact: POST (2018-08-21 14:15:57; views.py:18)
+INFO:contact: POST token='3lvnqoixl3o00' (2018-08-21 14:15:57; views.py:23)
+INFO:contact: SAVE token='3lvnqoixl3o00' (2018-08-21 14:15:57; views.py:26)
+INFO:contact: SAVE END (2018-08-21 14:15:57; views.py:40)
+INFO:requests: POST (2018-08-21 14:18:49; views.py:18)
+INFO:requests: POST token='3a6vx4bcjk400' (2018-08-21 14:18:49; views.py:23)
+INFO:requests: SAVE token='3a6vx4bcjk400' (2018-08-21 14:18:49; views.py:26)
+INFO:requests: SAVE END (2018-08-21 14:18:49; views.py:40)
+INFO:requests: POST (2018-08-21 14:21:32; views.py:18)
+INFO:requests: POST token='3qkf1ie0d1c00' (2018-08-21 14:21:32; views.py:23)
+INFO:requests: SAVE token='3qkf1ie0d1c00' (2018-08-21 14:21:32; views.py:26)
+INFO:requests: SAVE END (2018-08-21 14:21:33; views.py:40)
+INFO:requests: POST (2018-08-21 14:21:57; views.py:18)
+INFO:requests: POST (2018-08-21 14:23:49; views.py:18)
+INFO:requests: POST token='bzrwpwbl1800' (2018-08-21 14:23:49; views.py:23)
+INFO:requests: SAVE token='bzrwpwbl1800' (2018-08-21 14:23:49; views.py:26)
+INFO:requests: SAVE END (2018-08-21 14:23:49; views.py:40)
+ERROR:django.request: Internal Server Error: /feedback/requests/ (2018-08-21 14:23:49; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'RequestForm' object has no attribute 'status_code'
+INFO:requests: POST (2018-08-21 14:30:33; views.py:18)
+INFO:requests: POST token='1yuyxdl5teqo0' (2018-08-21 14:30:33; views.py:23)
+INFO:requests: SAVE token='1yuyxdl5teqo0' (2018-08-21 14:30:33; views.py:26)
+INFO:requests: SAVE END (2018-08-21 14:30:33; views.py:40)
+INFO:requests: POST (2018-08-21 14:31:15; views.py:18)
+INFO:requests: POST token='dvsuyy614ls0' (2018-08-21 14:31:15; views.py:23)
+INFO:requests: SAVE token='dvsuyy614ls0' (2018-08-21 14:31:15; views.py:26)
+INFO:requests: SAVE END (2018-08-21 14:31:15; views.py:40)
+INFO:requests: POST (2018-08-21 14:31:39; views.py:18)
+INFO:requests: POST token='1tgv3hcbfk1s0' (2018-08-21 14:31:39; views.py:23)
+INFO:requests: SAVE token='1tgv3hcbfk1s0' (2018-08-21 14:31:39; views.py:26)
+INFO:requests: SAVE END (2018-08-21 14:31:40; views.py:40)
+INFO:requests: POST (2018-08-21 14:32:30; views.py:18)
+INFO:requests: POST token='2hpz9m2vmko00' (2018-08-21 14:32:30; views.py:23)
+INFO:requests: SAVE token='2hpz9m2vmko00' (2018-08-21 14:32:30; views.py:26)
+INFO:requests: SAVE END (2018-08-21 14:32:30; views.py:40)
+INFO:requests: POST (2018-08-21 14:33:28; views.py:18)
+INFO:requests: POST token='2ce46u7nnoe80' (2018-08-21 14:33:28; views.py:23)
+INFO:requests: SAVE token='2ce46u7nnoe80' (2018-08-21 14:33:28; views.py:26)
+INFO:requests: SAVE END (2018-08-21 14:33:28; views.py:40)
+INFO:requests: POST (2018-08-21 14:33:47; views.py:18)
+INFO:requests: POST token='2vsj760ribe00' (2018-08-21 14:33:47; views.py:23)
+INFO:requests: SAVE token='2vsj760ribe00' (2018-08-21 14:33:47; views.py:26)
+INFO:requests: SAVE END (2018-08-21 14:33:47; views.py:40)
+INFO:requests: POST (2018-08-21 14:35:09; views.py:18)
+INFO:requests: POST (2018-08-21 14:36:17; views.py:18)
+INFO:requests: POST (2018-08-21 14:46:14; views.py:18)
+ERROR:django.request: Internal Server Error: / (2018-08-21 14:59:44; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/mnt/projects/Coffee/lmgroupDm/sections/views.py", line 18, in get
+    return super(MainView, self).get(request, section_proekt=section_proekt)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/views/generic/base.py", line 155, in get
+    context = self.get_context_data(**kwargs)
+  File "/mnt/projects/Coffee/lmgroupDm/common/views.py", line 68, in get_context_data
+    context.update(base_context(self.request))
+  File "/mnt/projects/Coffee/lmgroupDm/common/views.py", line 47, in base_context
+    context.update(form_context(request))
+  File "/mnt/projects/Coffee/lmgroupDm/common/views.py", line 18, in form_context
+    'form_questions': questions_back(request),  # форма "Задать вопрос"
+NameError: name 'questions_back' is not defined
+INFO:requests: POST (2018-08-21 15:24:04; views.py:18)
+INFO:requests: POST token='2g9sf2btncbo0' (2018-08-21 15:24:04; views.py:23)
+INFO:requests: SAVE token='2g9sf2btncbo0' (2018-08-21 15:24:04; views.py:26)
+INFO:requests: SAVE END (2018-08-21 15:24:04; views.py:40)
+INFO:requests: POST (2018-08-21 15:30:09; views.py:18)
+INFO:requests: POST token='5wy02prp79c0' (2018-08-21 15:30:09; views.py:23)
+INFO:requests: SAVE token='5wy02prp79c0' (2018-08-21 15:30:09; views.py:26)
+INFO:requests: SAVE END (2018-08-21 15:30:09; views.py:40)
+INFO:requests: POST (2018-08-21 15:36:16; views.py:18)
+INFO:requests: POST token='3iaxdpsc6h400' (2018-08-21 15:36:16; views.py:23)
+INFO:requests: SAVE token='3iaxdpsc6h400' (2018-08-21 15:36:16; views.py:26)
+INFO:requests: SAVE END (2018-08-21 15:36:16; views.py:40)
+INFO:requests: POST (2018-08-21 15:42:27; views.py:18)
+INFO:requests: POST token='cpr6wdkymjs0' (2018-08-21 15:42:27; views.py:23)
+INFO:requests: SAVE token='cpr6wdkymjs0' (2018-08-21 15:42:27; views.py:26)
+INFO:requests: SAVE END (2018-08-21 15:42:27; views.py:40)
+INFO:requests: POST (2018-08-21 15:42:30; views.py:18)
+INFO:requests: POST token='1zfs37zor5nk0' (2018-08-21 15:42:30; views.py:23)
+INFO:requests: SAVE token='1zfs37zor5nk0' (2018-08-21 15:42:30; views.py:26)
+INFO:requests: SAVE END (2018-08-21 15:42:30; views.py:40)
+INFO:requests: POST (2018-08-21 15:57:04; views.py:18)
+INFO:requests: POST (2018-08-21 15:57:57; views.py:18)
+INFO:requests: POST token='25i3whyepg5c0' (2018-08-21 15:57:57; views.py:23)
+INFO:requests: SAVE token='25i3whyepg5c0' (2018-08-21 15:57:57; views.py:26)
+INFO:requests: SAVE END (2018-08-21 15:57:57; views.py:40)
+INFO:requests: POST (2018-08-21 16:00:08; views.py:18)
+INFO:requests: POST (2018-08-21 16:03:32; views.py:18)
+INFO:reviews-modal: POST (2018-08-21 16:11:20; views.py:18)
+INFO:reviews-modal: POST (2018-08-21 16:11:56; views.py:18)
+INFO:reviews-modal: POST (2018-08-21 16:14:07; views.py:18)
+INFO:reviews-modal: POST (2018-08-21 16:14:29; views.py:18)
+ERROR:django.request: Internal Server Error: /feedback/reviews_modal/ (2018-08-21 16:14:29; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'ReviewsForm' object has no attribute 'status_code'
+INFO:reviews-modal: POST (2018-08-21 16:14:52; views.py:18)
+INFO:reviews-modal: POST (2018-08-21 16:14:56; views.py:18)
+INFO:reviews-modal: POST token='21nrxvt5omlc0' (2018-08-21 16:14:56; views.py:23)
+INFO:reviews-modal: SAVE token='21nrxvt5omlc0' (2018-08-21 16:14:56; views.py:26)
+INFO:reviews-modal: SAVE END (2018-08-21 16:14:56; views.py:40)
+ERROR:django.request: Internal Server Error: /feedback/reviews_modal/ (2018-08-21 16:14:56; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'ReviewsForm' object has no attribute 'status_code'
+INFO:requests: POST (2018-08-21 16:16:17; views.py:18)
+INFO:requests: POST (2018-08-21 16:16:20; views.py:18)
+INFO:requests: POST token='3m0iwfiukv00' (2018-08-21 16:16:20; views.py:23)
+INFO:requests: SAVE token='3m0iwfiukv00' (2018-08-21 16:16:20; views.py:26)
+INFO:requests: SAVE END (2018-08-21 16:16:20; views.py:40)
+ERROR:django.request: Internal Server Error: /feedback/requests/ (2018-08-21 16:16:20; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'RequestForm' object has no attribute 'status_code'
+INFO:reviews-modal: POST (2018-08-21 16:20:03; views.py:18)
+INFO:reviews-modal: POST (2018-08-21 16:20:05; views.py:18)
+ERROR:django.request: Internal Server Error: /feedback/reviews_modal/ (2018-08-21 16:20:05; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'ReviewsForm' object has no attribute 'status_code'
+INFO:reviews-modal: POST (2018-08-21 16:31:17; views.py:18)
+INFO:reviews-modal: POST token='2m0z00243bk00' (2018-08-21 16:31:17; views.py:23)
+INFO:reviews-modal: SAVE token='2m0z00243bk00' (2018-08-21 16:31:17; views.py:26)
+INFO:reviews-modal: SAVE END (2018-08-21 16:31:17; views.py:40)
+INFO:reviews-modal: POST (2018-08-21 16:31:44; views.py:18)
+INFO:reviews-modal: POST token='1mvwxnuelheo0' (2018-08-21 16:31:44; views.py:23)
+INFO:reviews-modal: SAVE token='1mvwxnuelheo0' (2018-08-21 16:31:44; views.py:26)
+INFO:reviews-modal: SAVE END (2018-08-21 16:31:44; views.py:40)
+INFO:requests: POST (2018-08-21 17:23:07; views.py:18)
+INFO:requests: POST (2018-08-21 17:24:25; views.py:18)
+ERROR:django.request: Internal Server Error: /feedback/requests/ (2018-08-21 17:29:43; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/projects/Coffee/lmgroupDm/feedback/views.py", line 54, in requests_back
+    'feedback/form-contact.html')
+  File "/mnt/projects/Coffee/lmgroupDm/feedback/views.py", line 49, in feedback_form
+    return render(request, form.template_name, {'form': form})
+AttributeError: 'RequestForm' object has no attribute 'template_name'
+INFO:requests: POST (2018-08-21 17:29:56; views.py:18)
+INFO:requests: POST (2018-08-21 17:30:00; views.py:18)
+ERROR:django.request: Internal Server Error: /feedback/requests/ (2018-08-21 17:30:00; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/projects/Coffee/lmgroupDm/feedback/views.py", line 54, in requests_back
+    'feedback/form-contact.html')
+  File "/mnt/projects/Coffee/lmgroupDm/feedback/views.py", line 49, in feedback_form
+    return render(request, form.template_name, {'form': form})
+AttributeError: 'RequestForm' object has no attribute 'template_name'
+INFO:requests: POST (2018-08-21 17:30:51; views.py:18)
+INFO:requests: POST (2018-08-21 17:30:52; views.py:18)
+INFO:requests: POST (2018-08-21 17:31:00; views.py:18)
+INFO:requests: POST (2018-08-21 17:32:30; views.py:19)
+INFO:requests: POST (2018-08-21 17:32:40; views.py:19)
+ERROR:django.request: Internal Server Error: /feedback/requests/ (2018-08-21 17:32:40; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'RequestForm' object has no attribute 'status_code'
+INFO:requests: POST (2018-08-21 17:36:28; views.py:19)
+INFO:requests: POST (2018-08-21 17:36:49; views.py:19)
+ERROR:django.request: Internal Server Error: /feedback/requests/ (2018-08-21 17:36:49; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'RequestForm' object has no attribute 'status_code'
+INFO:requests: POST (2018-08-21 17:37:47; views.py:19)
+INFO:requests: POST token='3vp4jwuglk000' (2018-08-21 17:37:47; views.py:24)
+INFO:requests: SAVE token='3vp4jwuglk000' (2018-08-21 17:37:47; views.py:27)
+INFO:requests: SAVE END (2018-08-21 17:37:47; views.py:41)
+INFO:requests: POST (2018-08-21 17:40:40; views.py:19)
+INFO:requests: POST token='gz08w4985zs0' (2018-08-21 17:40:40; views.py:24)
+INFO:requests: SAVE token='gz08w4985zs0' (2018-08-21 17:40:40; views.py:27)
+INFO:requests: SAVE END (2018-08-21 17:40:41; views.py:41)
+INFO:requests: POST (2018-08-21 17:42:03; views.py:19)
+INFO:requests: POST token='4aa3b3sz29k0' (2018-08-21 17:42:03; views.py:24)
+INFO:requests: SAVE token='4aa3b3sz29k0' (2018-08-21 17:42:03; views.py:27)
+INFO:requests: SAVE END (2018-08-21 17:42:03; views.py:41)
+INFO:requests: POST (2018-08-21 17:45:36; views.py:19)
+INFO:requests: POST token='2vs8u7fcbpc00' (2018-08-21 17:45:36; views.py:24)
+INFO:requests: SAVE token='2vs8u7fcbpc00' (2018-08-21 17:45:36; views.py:27)
+INFO:requests: SAVE END (2018-08-21 17:45:36; views.py:41)
+INFO:requests: POST (2018-08-21 17:48:56; views.py:19)
+INFO:requests: POST token='3mz109caucy00' (2018-08-21 17:48:56; views.py:24)
+INFO:requests: SAVE token='3mz109caucy00' (2018-08-21 17:48:56; views.py:27)
+INFO:requests: SAVE END (2018-08-21 17:48:56; views.py:41)
+INFO:requests: POST (2018-08-21 17:49:11; views.py:19)
+INFO:requests: POST (2018-08-21 18:04:27; views.py:19)
+INFO:requests: POST (2018-08-21 18:04:50; views.py:19)
+ERROR:django.request: Internal Server Error: /feedback/requests/ (2018-08-21 18:04:50; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'RequestForm' object has no attribute 'status_code'
+INFO:requests: POST (2018-08-21 18:05:09; views.py:19)
+INFO:requests: POST (2018-08-21 18:10:06; views.py:19)
+ERROR:django.request: Internal Server Error: /feedback/requests/ (2018-08-21 18:10:06; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'RequestForm' object has no attribute 'status_code'
+INFO:requests: POST (2018-08-21 18:10:49; views.py:19)
+INFO:requests: POST (2018-08-21 18:12:35; views.py:19)
+ERROR:django.request: Internal Server Error: /feedback/requests/ (2018-08-21 18:12:35; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'RequestForm' object has no attribute 'status_code'
+INFO:requests: POST (2018-08-21 18:13:10; views.py:19)
+INFO:requests: POST token='17lk97ryj45c0' (2018-08-21 18:13:10; views.py:24)
+INFO:requests: SAVE token='17lk97ryj45c0' (2018-08-21 18:13:10; views.py:27)
+INFO:requests: SAVE END (2018-08-21 18:13:11; views.py:41)
+INFO:requests: POST (2018-08-21 18:13:50; views.py:19)
+INFO:requests: POST token='2wrsequr95s00' (2018-08-21 18:13:50; views.py:24)
+INFO:requests: SAVE token='2wrsequr95s00' (2018-08-21 18:13:50; views.py:27)
+INFO:requests: SAVE END (2018-08-21 18:13:50; views.py:41)
+INFO:requests: POST (2018-08-21 18:17:15; views.py:19)
+ERROR:django.request: Internal Server Error: /feedback/requests/ (2018-08-21 18:19:08; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'RequestForm' object has no attribute 'status_code'
+INFO:requests: POST (2018-08-21 18:19:18; views.py:19)
+INFO:requests: POST (2018-08-21 18:19:33; views.py:19)
+ERROR:django.request: Internal Server Error: /feedback/requests/ (2018-08-21 18:19:33; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'RequestForm' object has no attribute 'status_code'
+INFO:requests: POST (2018-08-21 18:19:50; views.py:19)
+INFO:requests: POST (2018-08-21 18:20:00; views.py:19)
+ERROR:django.request: Internal Server Error: /feedback/requests/ (2018-08-21 18:20:00; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'RequestForm' object has no attribute 'status_code'
+INFO:requests: POST (2018-08-21 18:21:00; views.py:19)
+INFO:requests: POST (2018-08-21 18:22:36; views.py:19)
+ERROR:django.request: Internal Server Error: /feedback/requests/ (2018-08-21 18:22:36; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'RequestForm' object has no attribute 'status_code'
+INFO:requests: POST (2018-08-22 00:36:31; views.py:19)
+INFO:requests: POST token='2wiain99tqs00' (2018-08-22 00:36:31; views.py:24)
+INFO:requests: SAVE token='2wiain99tqs00' (2018-08-22 00:36:31; views.py:27)
+INFO:requests: SAVE END (2018-08-22 00:36:31; views.py:41)
+INFO:requests: POST (2018-08-22 00:38:53; views.py:19)
+INFO:requests: POST token='16v3z0wr5u0w0' (2018-08-22 00:38:53; views.py:24)
+INFO:requests: SAVE token='16v3z0wr5u0w0' (2018-08-22 00:38:53; views.py:27)
+INFO:requests: SAVE END (2018-08-22 00:38:53; views.py:41)
+ERROR:django.request: Internal Server Error: / (2018-08-22 16:20:13; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/mnt/projects/Coffee/lmgroupDm/sections/views.py", line 18, in get
+    return super(MainView, self).get(request, section_proekt=section_proekt)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/views/generic/base.py", line 155, in get
+    context = self.get_context_data(**kwargs)
+  File "/mnt/projects/Coffee/lmgroupDm/common/views.py", line 68, in get_context_data
+    context.update(base_context(self.request))
+  File "/mnt/projects/Coffee/lmgroupDm/common/views.py", line 47, in base_context
+    context.update(form_context(request))
+  File "/mnt/projects/Coffee/lmgroupDm/common/views.py", line 18, in form_context
+    'form_questions': questions_back(request),  # форма "Задать вопрос"
+NameError: name 'questions_back' is not defined
+INFO:requests: POST (2018-08-22 16:31:57; views.py:18)
+INFO:requests: POST (2018-08-22 16:32:52; views.py:18)
+INFO:requests: POST (2018-08-22 16:34:40; views.py:18)
+INFO:requests: POST (2018-08-22 16:35:22; views.py:18)
+INFO:requests: POST (2018-08-22 16:39:02; views.py:18)
+INFO:requests: POST (2018-08-22 16:39:54; views.py:18)
+INFO:requests: POST (2018-08-22 16:41:51; views.py:18)
+INFO:requests: POST (2018-08-22 16:46:05; views.py:18)
+INFO:requests: POST (2018-08-22 16:46:57; views.py:18)
+INFO:requests: POST (2018-08-22 16:47:00; views.py:18)
+ERROR:django.request: Internal Server Error: /feedback/requests/ (2018-08-22 16:47:00; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'RequestForm' object has no attribute 'status_code'
+INFO:requests: POST (2018-08-22 16:49:06; views.py:18)
+INFO:requests: POST (2018-08-22 16:49:33; views.py:18)
+INFO:requests: POST (2018-08-22 17:02:14; views.py:18)
+INFO:reviews-modal: POST (2018-08-22 17:13:44; views.py:18)
+INFO:reviews-modal: POST (2018-08-22 17:13:49; views.py:18)
+ERROR:django.request: Internal Server Error: /feedback/contact_modal/ (2018-08-22 17:13:49; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'ReviewsForm' object has no attribute 'status_code'
+INFO:reviews-modal: POST (2018-08-22 17:14:11; views.py:18)
+INFO:reviews-modal: POST token='nmxmiqb8um8' (2018-08-22 17:14:11; views.py:23)
+INFO:reviews-modal: SAVE token='nmxmiqb8um8' (2018-08-22 17:14:11; views.py:26)
+INFO:reviews-modal: SAVE END (2018-08-22 17:14:12; views.py:40)
+INFO:reviews-modal: POST (2018-08-22 17:14:13; views.py:18)
+INFO:reviews-modal: POST token='' (2018-08-22 17:14:13; views.py:23)
+INFO:reviews-modal: EQUAL TOKEN token='' (2018-08-22 17:14:13; views.py:42)
+ERROR:django.request: Internal Server Error: /feedback/contact_modal/ (2018-08-22 17:14:13; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'ReviewsForm' object has no attribute 'status_code'
+INFO:reviews-modal: POST (2018-08-22 17:14:48; views.py:18)
+INFO:reviews-modal: POST token='iaonykrq0hs0' (2018-08-22 17:14:48; views.py:23)
+INFO:reviews-modal: SAVE token='iaonykrq0hs0' (2018-08-22 17:14:48; views.py:26)
+INFO:reviews-modal: SAVE END (2018-08-22 17:14:48; views.py:40)
+INFO:reviews-modal: POST (2018-08-22 17:18:19; views.py:18)
+INFO:reviews-modal: POST (2018-08-22 17:18:50; views.py:18)
+INFO:reviews-modal: POST (2018-08-22 17:19:02; views.py:18)
+INFO:reviews-modal: POST token='1linl93449mo0' (2018-08-22 17:19:02; views.py:23)
+INFO:reviews-modal: SAVE token='1linl93449mo0' (2018-08-22 17:19:02; views.py:26)
+INFO:reviews-modal: SAVE END (2018-08-22 17:19:03; views.py:40)
+INFO:requests: POST (2018-08-22 17:25:46; views.py:18)
+INFO:reviews-modal: POST (2018-08-22 17:28:43; views.py:18)
+INFO:reviews-modal: POST (2018-08-22 17:30:51; views.py:18)
+INFO:reviews-modal: POST (2018-08-22 17:31:04; views.py:18)
+ERROR:django.request: Internal Server Error: /feedback/contact_modal/ (2018-08-22 17:31:04; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'ReviewsForm' object has no attribute 'status_code'
+INFO:requests: POST (2018-08-22 17:32:33; views.py:18)
+INFO:requests: POST (2018-08-22 17:34:14; views.py:18)
+INFO:requests: POST token='' (2018-08-22 17:34:14; views.py:23)
+INFO:requests: EQUAL TOKEN token='' (2018-08-22 17:34:14; views.py:42)
+INFO:reviews-modal: POST (2018-08-22 17:34:48; views.py:18)
+INFO:reviews-modal: POST token='' (2018-08-22 17:34:48; views.py:23)
+INFO:reviews-modal: EQUAL TOKEN token='' (2018-08-22 17:34:48; views.py:42)
+INFO:requests: POST (2018-08-22 17:35:49; views.py:18)
+INFO:requests: POST token='' (2018-08-22 17:35:49; views.py:23)
+INFO:requests: EQUAL TOKEN token='' (2018-08-22 17:35:49; views.py:42)
+INFO:requests: POST (2018-08-22 17:37:54; views.py:18)
+INFO:requests: POST token='' (2018-08-22 17:37:54; views.py:23)
+INFO:requests: EQUAL TOKEN token='' (2018-08-22 17:37:54; views.py:42)
+INFO:reviews-modal: POST (2018-08-22 17:41:26; views.py:18)
+INFO:reviews-modal: POST token='' (2018-08-22 17:41:26; views.py:23)
+INFO:reviews-modal: EQUAL TOKEN token='' (2018-08-22 17:41:26; views.py:42)
+INFO:reviews-modal: POST (2018-08-22 17:42:04; views.py:18)
+INFO:reviews-modal: POST token='' (2018-08-22 17:42:04; views.py:23)
+INFO:reviews-modal: EQUAL TOKEN token='' (2018-08-22 17:42:04; views.py:42)
+INFO:reviews-modal: POST (2018-08-22 17:42:51; views.py:18)
+INFO:reviews-modal: POST (2018-08-22 17:43:18; views.py:18)
+INFO:reviews-modal: POST (2018-08-22 17:44:19; views.py:18)
+INFO:reviews-modal: POST (2018-08-22 17:48:08; views.py:18)
+INFO:reviews-modal: POST token='21nk2vocbfnk0' (2018-08-22 17:48:08; views.py:23)
+INFO:reviews-modal: SAVE token='21nk2vocbfnk0' (2018-08-22 17:48:08; views.py:26)
+INFO:reviews-modal: SAVE END (2018-08-22 17:48:08; views.py:40)
+INFO:reviews-modal: POST (2018-08-22 17:50:17; views.py:18)
+INFO:reviews-modal: POST token='2ulv72l4b2c00' (2018-08-22 17:50:17; views.py:23)
+INFO:reviews-modal: SAVE token='2ulv72l4b2c00' (2018-08-22 17:50:17; views.py:26)
+INFO:reviews-modal: SAVE END (2018-08-22 17:50:18; views.py:40)
+INFO:reviews-modal: POST (2018-08-22 17:50:54; views.py:18)
+INFO:reviews-modal: POST (2018-08-22 17:51:41; views.py:18)
+ERROR:django.request: Internal Server Error: /feedback/reviews_modal/ (2018-08-22 17:51:41; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/projects/Coffee/lmgroupDm/feedback/views.py", line 59, in reviews_modal_back
+    'feedback/parts/form-reviews-modal.html')
+  File "/mnt/projects/Coffee/lmgroupDm/feedback/views.py", line 48, in feedback_form
+    return render(request, template_name_ajax, {form_key_context: form, 'form_name': form_name})
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: feedback/parts/form-reviews-modal.html
+INFO:reviews-modal: POST (2018-08-22 17:51:44; views.py:18)
+ERROR:django.request: Internal Server Error: /feedback/reviews_modal/ (2018-08-22 17:51:45; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/projects/Coffee/lmgroupDm/feedback/views.py", line 59, in reviews_modal_back
+    'feedback/parts/form-reviews-modal.html')
+  File "/mnt/projects/Coffee/lmgroupDm/feedback/views.py", line 48, in feedback_form
+    return render(request, template_name_ajax, {form_key_context: form, 'form_name': form_name})
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: feedback/parts/form-reviews-modal.html
+INFO:reviews-modal: POST (2018-08-22 17:54:31; views.py:18)
+ERROR:django.request: Internal Server Error: /feedback/reviews_modal/ (2018-08-22 17:54:31; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/projects/Coffee/lmgroupDm/feedback/views.py", line 59, in reviews_modal_back
+    'feedback/parts/form-reviews-modal.html')
+  File "/mnt/projects/Coffee/lmgroupDm/feedback/views.py", line 48, in feedback_form
+    return render(request, template_name_ajax, {form_key_context: form, 'form_name': form_name})
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: feedback/parts/form-reviews-modal.html
+INFO:reviews-modal: POST (2018-08-22 17:55:12; views.py:18)
+INFO:reviews-modal: POST (2018-08-22 17:55:14; views.py:18)
+ERROR:django.request: Internal Server Error: /feedback/reviews_modal/ (2018-08-22 17:55:14; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'ReviewsForm' object has no attribute 'status_code'
+INFO:reviews-modal: POST (2018-08-22 17:55:26; views.py:18)
+INFO:reviews-modal: POST token='1vsvytpe6f0g0' (2018-08-22 17:55:26; views.py:23)
+INFO:reviews-modal: SAVE token='1vsvytpe6f0g0' (2018-08-22 17:55:26; views.py:26)
+INFO:reviews-modal: SAVE END (2018-08-22 17:55:26; views.py:40)
+INFO:reviews-modal: POST (2018-08-22 17:56:57; views.py:18)
+INFO:reviews-modal: POST (2018-08-22 17:57:08; views.py:18)
+INFO:reviews-modal: POST token='21z6f1z0fb5s0' (2018-08-22 17:57:08; views.py:23)
+INFO:reviews-modal: SAVE token='21z6f1z0fb5s0' (2018-08-22 17:57:08; views.py:26)
+INFO:reviews-modal: SAVE END (2018-08-22 17:57:09; views.py:40)
+ERROR:django.request: Internal Server Error: /feedback/reviews_modal/ (2018-08-22 17:57:09; exception.py:135)
+Traceback (most recent call last):
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 142, in __call__
+    response = self.process_response(request, response)
+  File "/home/pluton/Projects/Coffee/lmgroupDm/env/lib/python3.5/site-packages/django/contrib/redirects/middleware.py", line 27, in process_response
+    if response.status_code != 404:
+AttributeError: 'ReviewsForm' object has no attribute 'status_code'
