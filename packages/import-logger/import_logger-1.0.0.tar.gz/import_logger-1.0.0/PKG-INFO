@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: import-logger
+Version: 1.0.0
+Summary: Emit logs when imports take to much time
+License: MIT
+Author: Iddan Aaronsohn
+Author-email: mail@aniddan.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
