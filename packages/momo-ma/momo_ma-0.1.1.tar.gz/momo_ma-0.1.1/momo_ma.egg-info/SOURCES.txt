@@ -1,0 +1,13 @@
+README.rst
+setup.py
+momo/__init__.py
+momo/__main__.py
+momo/cli.py
+momo_ma.egg-info/PKG-INFO
+momo_ma.egg-info/SOURCES.txt
+momo_ma.egg-info/dependency_links.txt
+momo_ma.egg-info/entry_points.txt
+momo_ma.egg-info/requires.txt
+momo_ma.egg-info/top_level.txt
+tests/__init__.py
+tests/test_01.py
