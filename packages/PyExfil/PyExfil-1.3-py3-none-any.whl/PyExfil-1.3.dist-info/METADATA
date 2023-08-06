@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: PyExfil
+Version: 1.3
+Summary: A Python package for data exfiltration.
+Home-page: https://pyexfil.morirt.com/
+Maintainer: Yuval tisf Nativ
+Maintainer-email: yuval@morirt.com
+License: GPLv3
+Download-URL: https://www.github.com/ytisf/pyexfil
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Environment :: Console
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: requests (>=1.0.0)
+Requires-Dist: impacket (>=0.9.0)
+Requires-Dist: slackclient
+Requires-Dist: progressbar
+Requires-Dist: zlib
+Requires-Dist: numpy
+Requires-Dist: PIL
+Requires-Dist: pytube
+Requires-Dist: hashlib
+Requires-Dist: urllib2
+Requires-Dist: PyCrypto
+Requires-Dist: ftplib
+Requires-Dist: base58
+
+Just go to https://www.github.com/ytisf/pyexfil to see full readme.
+
+
