@@ -1,0 +1,3 @@
+[console_scripts]
+TTopsis = Topsis_UCS633.topsis:main
+
