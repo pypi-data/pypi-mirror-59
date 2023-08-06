@@ -1,0 +1,3 @@
+[console_scripts]
+topsis33 = topsis.cli:main
+
