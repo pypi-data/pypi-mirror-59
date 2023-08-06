@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: owutil
+Version: 0.1.1
+Summary: 
+Home-page: None
+Author: drys262
+Author-email: koeichavez17@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
