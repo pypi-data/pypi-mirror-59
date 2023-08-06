@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+toparu_arushigupta.egg-info/PKG-INFO
+toparu_arushigupta.egg-info/SOURCES.txt
+toparu_arushigupta.egg-info/dependency_links.txt
+toparu_arushigupta.egg-info/top_level.txt
