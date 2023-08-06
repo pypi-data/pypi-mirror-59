@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+colubridae/__init__.py
+colubridae/category.py
+colubridae/sets.py
+colubridae.egg-info/PKG-INFO
+colubridae.egg-info/SOURCES.txt
+colubridae.egg-info/dependency_links.txt
+colubridae.egg-info/top_level.txt
