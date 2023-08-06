@@ -1,0 +1,6 @@
+MANIFEST.in
+README.md
+setup.py
+hashcrack/__init__.py
+hashcrack/cli.py
+hashcrack/static/wordlists/rockyou.txt.xz
