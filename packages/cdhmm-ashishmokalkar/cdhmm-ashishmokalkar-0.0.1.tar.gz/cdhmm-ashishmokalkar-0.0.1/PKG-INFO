@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cdhmm-ashishmokalkar
+Version: 0.0.1
+Summary: Python Library for Continuous Desity Hidden Markov Model which is widely used in Speech Recognition.
+Home-page: https://github.com/ashishmokalkar/cdhmm
+Author: Ashish Mokalkar
+Author-email: ashishmokalkar79@gmail.com
+License: UNKNOWN
+Description: An easy to use python library consisting implementation of Continuous Density Hidden Markov Models.After studying Hidden Markov Models(HMM) for a while now, I have came across many python libraries which implements HMM algorithms like forward,  backward, Viterbi and Baum-Welch. However, most of these libraries work on discrete observations. Continuous Density Hidden Markov Models(CD-HMM) are a type of HMM which consists of Emission probabilities in the form of a distribution like gaussian or uniform distribution. Despite its use in Speech processing, very less codes are available on the internet regarding CD-HMM. This library has implementation of all HMM algorithms applied on continuous density observations.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
