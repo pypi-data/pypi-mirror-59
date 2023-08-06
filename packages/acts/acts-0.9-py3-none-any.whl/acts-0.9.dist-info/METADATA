@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: acts
+Version: 0.9
+Summary: Android Comms Test Suite
+Home-page: http://www.android.com/
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: Apache2.0
+Platform: UNKNOWN
+Requires-Dist: future (>=0.16.0)
+Requires-Dist: mock
+Requires-Dist: numpy
+Requires-Dist: pyserial
+Requires-Dist: pyyaml (>=5.1)
+Requires-Dist: shellescape (>=3.4.1)
+Requires-Dist: protobuf
+Requires-Dist: retry
+Requires-Dist: requests
+Requires-Dist: roman
+Requires-Dist: scapy
+Requires-Dist: pylibftdi
+Requires-Dist: xlsxwriter
+Requires-Dist: mobly
+Requires-Dist: grpcio
+Requires-Dist: Monsoon
+Requires-Dist: paramiko-ng
+
+UNKNOWN
+
+
