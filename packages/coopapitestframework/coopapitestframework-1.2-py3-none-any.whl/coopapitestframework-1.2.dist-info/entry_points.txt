@@ -1,0 +1,3 @@
+[console_scripts]
+yat = apitestframework.apitestmain:main
+
