@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: cmsplugin-contact-form
+Version: 0.2
+Summary: A Django CMS plugin to create functional contact forms.
+Home-page: https://github.com/juliarizza/djangocms_contact_form
+Maintainer: Julia Rizza
+Maintainer-email: contato@juliarizza.com
+License: MIT
+Keywords: django djangocms plugin form contact email
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Framework :: Django
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+
+# cmsplugin-contact-form
+
+Django-CMS contact form plugin with default Django email integration
+
+## Available Fields
+
+The following HTML fields can be added to the form:
+
+- Text
+- Email
+- Phone
+- Date, Time and Datetime
+- Checkbox
+- Radio
+- Text Area
+- Submit
+
+## Installation
+
+Install package:
+
+```
+pip install cmsplugin-contact-form
+```
+
+Add app to `settings.py`:
+
+```
+INSTALLED_APPS = (
+    ...
+    'cmsplugin_contact_form',
+    ...
+    )
+```
+
+Run migration:
+
+```
+python manage.py migrate cmsplugin_contact_form
+```
+
+
