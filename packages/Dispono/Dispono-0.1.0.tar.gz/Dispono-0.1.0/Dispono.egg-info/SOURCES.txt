@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+Dispono.egg-info/PKG-INFO
+Dispono.egg-info/SOURCES.txt
+Dispono.egg-info/dependency_links.txt
+Dispono.egg-info/not-zip-safe
+Dispono.egg-info/requires.txt
+Dispono.egg-info/top_level.txt
+dispono/__init__.py
+dispono/dispono.py
+dispono/static/coding_game.js
+dispono/static/img/logo.svg
