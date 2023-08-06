@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: clifier
+Version: 0.0.3
+Summary: Clifier is a simple, tiny script to generate Argparse commands and subparsersfrom yaml config file.
+License: MIT
+Author: xnuinside
+Author-email: xnuinside@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: PyYAML (>=5.3,<6.0)
