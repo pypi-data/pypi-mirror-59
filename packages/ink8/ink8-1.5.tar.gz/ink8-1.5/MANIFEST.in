@@ -1,0 +1,4 @@
+include *requirements.txt
+include cli.py
+include kubernetes/*
+include examples/*
