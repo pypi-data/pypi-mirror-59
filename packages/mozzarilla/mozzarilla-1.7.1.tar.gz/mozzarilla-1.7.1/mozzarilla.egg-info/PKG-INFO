@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mozzarilla
+Version: 1.7.1
+Summary: A variant of Binilla for editing binary structures for games built with the Blam engine.
+Home-page: https://github.com/MosesofEgypt/mozzarilla
+Author: Devin Bobadilla, Michelle van der Graaf
+Author-email: MosesBobadilla@gmail.com
+License: GPLv3
+Description: Could not read long description from readme.
+Keywords: binilla,binary,data structure
+Platform: POSIX
+Platform: Windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires: reclaimer
+Requires: binilla
+Provides: mozzarilla
+Description-Content-Type: text/markdown
