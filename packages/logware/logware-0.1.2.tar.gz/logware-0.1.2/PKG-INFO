@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: logware
+Version: 0.1.2
+Summary: Logging middleware for python web services
+Home-page: https://github.com/Pratilipi-Labs/python-logware
+Author: Giridhar
+Author-email: samanth.giridhar@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

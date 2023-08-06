@@ -1,0 +1,9 @@
+README.md
+setup.py
+logware/__init__.py
+logware.egg-info/PKG-INFO
+logware.egg-info/SOURCES.txt
+logware.egg-info/dependency_links.txt
+logware.egg-info/not-zip-safe
+logware.egg-info/requires.txt
+logware.egg-info/top_level.txt
