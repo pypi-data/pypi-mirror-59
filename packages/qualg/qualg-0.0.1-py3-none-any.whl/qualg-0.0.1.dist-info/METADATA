@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: qualg
+Version: 0.0.1
+Summary: Symbolic linear algrebra for quantum mechanics
+Home-page: https://github.com/AckslD/QuAlg
+Author: Axel Dahlberg
+Author-email: axel.dahlberg12@gmail.com
+License: Apache-2.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+QuAlg (0.0.1)
+=====================================================
+
+Welcome to QuAlg's README.
+
+To install the package do:
+```bash
+make install
+```
+
+To verify the installation do:
+```
+make verify
+```
+
+
