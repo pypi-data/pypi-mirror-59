@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+pydictobject/__init__.py
+pydictobject/pydictobject.py
+pydictobject.egg-info/PKG-INFO
+pydictobject.egg-info/SOURCES.txt
+pydictobject.egg-info/dependency_links.txt
+pydictobject.egg-info/top_level.txt
