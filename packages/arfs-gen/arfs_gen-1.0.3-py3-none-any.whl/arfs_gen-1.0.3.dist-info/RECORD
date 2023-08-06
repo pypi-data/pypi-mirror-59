@@ -1,0 +1,9 @@
+arfs_gen/__init__.py,sha256=V4svMMt3xLKQ6Qq1IOjGHD0YtZwBIZPVzCVMuBcxVgY,2117
+arfs_gen/gen_data.py,sha256=WTmswdtabN98EMhXZfwsLa5rm5U26iF3Zs71l1uSqrc,10928
+arfs_gen/gen_lupi.py,sha256=lHKguWJ8EugiAZqIfHAY76mZhxrADx8Nrdi1vOjn_gU,9266
+arfs_gen/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arfs_gen/tests/test_toydata.py,sha256=-Z5rELpxjy8Rf0NUxSgwpZBOSv8VPEcUA4-NLgpfktA,6499
+arfs_gen-1.0.3.dist-info/LICENSE,sha256=YcsqHIwQStKK8WHemfJW9lg634M8pEekFx6lFxXHu9A,1075
+arfs_gen-1.0.3.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+arfs_gen-1.0.3.dist-info/METADATA,sha256=fY2cZQiVqHT7r22joFrTnWU3sETK99uuDalQQMv44M0,587
+arfs_gen-1.0.3.dist-info/RECORD,,
