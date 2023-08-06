@@ -1,0 +1,4 @@
+kubernetes
+pick
+adal
+colorama
