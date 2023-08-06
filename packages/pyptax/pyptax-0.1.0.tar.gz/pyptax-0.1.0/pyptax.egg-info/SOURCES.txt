@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyptax/__init__.py
+pyptax/ptax.py
+pyptax.egg-info/PKG-INFO
+pyptax.egg-info/SOURCES.txt
+pyptax.egg-info/dependency_links.txt
+pyptax.egg-info/requires.txt
+pyptax.egg-info/top_level.txt
