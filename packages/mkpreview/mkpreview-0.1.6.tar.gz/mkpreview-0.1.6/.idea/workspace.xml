@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="983d3a82-fd92-478c-9837-2a35bfa18ea1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/cli.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/usage.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/usage.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mkpreview/mkpreview.py" beforeDir="false" afterPath="$PROJECT_DIR$/mkpreview/mkpreview.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Colin Bitterfield &lt;colin@bitterfield.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="ProjectId" id="1WQ0PubkrJZimO18BqVTFpa7Q3z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Python37" type="PythonConfigurationType" factoryName="Python">
+      <module name="mkpreview" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/mkpreview/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mkpreview" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mkpreview/mkpreview.py" />
+      <option name="PARAMETERS" value="-h" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="mkpreview" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/mkpreview/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="983d3a82-fd92-478c-9837-2a35bfa18ea1" name="Default Changelist" comment="" />
+      <created>1579066490427</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579066490427</updated>
+      <workItem from="1579066491889" duration="9622000" />
+      <workItem from="1579117584439" duration="3317000" />
+    </task>
+    <task id="LOCAL-00001" summary="Updates for deployment">
+      <created>1579118837066</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579118837066</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Updates for deployment">
+      <created>1579119151891</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579119151891</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Minor changes for preparing to bump release">
+      <created>1579119855838</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579119855838</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Minor changes for preparing to bump release">
+      <created>1579119928372</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579119928372</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Minor changes for preparing to bump release">
+      <created>1579120095372</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579120095372</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Updates for deployment" />
+    <MESSAGE value="Minor changes for preparing to bump release" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes for preparing to bump release" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="191" key="#Docker" timestamp="1579066518854">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="191" key="#Docker/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579066518854" />
+    <state x="533" y="95" key="#Dockerfile" timestamp="1579066520835">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="533" y="95" key="#Dockerfile/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579066520835" />
+    <state x="440" y="192" key="#Project_Structure" timestamp="1579101113313">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="192" key="#Project_Structure/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579101113313" />
+    <state x="533" y="121" key="#Python_mkpreview" timestamp="1579117334373">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="533" y="121" key="#Python_mkpreview/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579117334373" />
+    <state x="304" y="188" width="1071" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579117528655">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="304" y="188" width="1071" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579117528655" />
+    <state x="304" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1579067527062" />
+    <state x="526" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579120651862">
+      <screen x="0" y="23" width="1680" height="976" />
+    </state>
+    <state x="526" y="321" key="#com.intellij.fileTypes.FileTypeChooser/-1920.23.1920.1057/0.23.1680.976@0.23.1680.976" timestamp="1579120651862" />
+    <state x="673" y="433" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579101063888">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="673" y="433" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579101063888" />
+    <state x="428" y="188" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1579101062090">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="428" y="188" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579101062090" />
+    <state x="585" y="389" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1579101121520">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="585" y="389" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579101121520" />
+    <state x="404" y="116" key="CommitChangelistDialog2" timestamp="1579120095228">
+      <screen x="0" y="23" width="1680" height="976" />
+    </state>
+    <state x="404" y="116" key="CommitChangelistDialog2/-1920.23.1920.1057/0.23.1680.976@0.23.1680.976" timestamp="1579120095228" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1579117558296">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579117558296" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1579113338711" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1579117558294">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579117558294" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1579113338709" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1579117558293">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579117558293" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1579113338708" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1579117558295">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579117558295" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1579113338710" />
+    <state x="328" y="108" key="SettingsEditor" timestamp="1579117466713">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="328" y="108" key="SettingsEditor/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579117466713" />
+    <state x="328" y="108" key="SettingsEditor/-1920.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1579067756396" />
+    <state x="440" y="270" key="Vcs.Push.Dialog.v2" timestamp="1579119863342">
+      <screen x="0" y="23" width="1680" height="976" />
+    </state>
+    <state x="440" y="266" key="Vcs.Push.Dialog.v2/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579066600131" />
+    <state x="440" y="270" key="Vcs.Push.Dialog.v2/-1920.23.1920.1057/0.23.1680.976@0.23.1680.976" timestamp="1579119863342" />
+    <state x="494" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1579117585727">
+      <screen x="0" y="23" width="1680" height="976" />
+    </state>
+    <state x="494" y="345" key="com.intellij.ide.util.TipDialog/-1920.23.1920.1057/0.23.1680.976@0.23.1680.976" timestamp="1579117585727" />
+    <state x="623" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579066555843">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="623" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579066555843" />
+    <state x="520" y="325" key="git4idea.merge.GitPullDialog" timestamp="1579067364083">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="520" y="325" key="git4idea.merge.GitPullDialog/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579067364083" />
+    <state x="567" y="432" key="git4idea.ui.GitResetDialog" timestamp="1579066625501">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="567" y="432" key="git4idea.ui.GitResetDialog/-1920.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1579066625501" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/mkpreview$Python_mkpreview.coverage" NAME="Python_mkpreview Coverage Results" MODIFIED="1579117504207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/mkpreview$Python37.coverage" NAME="Python37 Coverage Results" MODIFIED="1579117533193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mkpreview" />
+  </component>
+</project>
