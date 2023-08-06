@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: discord-text-sanitizer
+Version: 0.0.10
+Summary: Text Sanitization For Discord
+Home-page: https://github.com/mikeshardmind/discord-text-sanitizer
+Author: mikeshardmind
+Author-email: michael@michaelhall.tech
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Communications :: Chat
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Requires-Dist: ftfy
+Requires-Dist: python-bidi
+
+# discord-text-sanitizer
+Text sanitization suitable for discord bots. 
+
+
+### Quick Start
+
+```py
+import discordtextsanitizer as dts
+
+# If using a library which already handles raw @everyone and @here mentions
+discord_safeish = dts.preprocess_text(unsafe_content)
+
+# If interacting directly
+discord_safer = dts.sanitize_mass_mentions(unsafe_content, run_preprocess=True)
+
+# If you're taking in content from users and not services, you may want to use:
+discord_even_safer = dts.sanitize_mass_mentions(
+    unsafe_content, run_preprocess=True, agressive=True
+)
+# or even
+discord_safest = dts.sanitize_mass_mentions(
+    unsafe_content, run_preprocess=True, users=True
+)
+# This may insert more characters, but is still the safest option until discord
+# Fully documents their sanitization.
+
+# Want to cleanup html tag and replace entities?
+# (included for fuller sanitization of web fetched content for discord)
+
+via_lib = dts.preprocess_text(unsafe_content, strip_html=True)
+# or
+direct_interaction = dts.sanitize_mass_mentions(unsafe_content, strip_html=True, run_preprocess=True)
+```
+
+### Why?
+
+Discord sanitizes text, silently changing messages.
+
+The process they use isn't fully documented, and their sanitizer has not been disclosed or open sourced.
+
+This leaves the otherwise correct solutions for filtering mass mentions as not working as people would expect.
+
+### Why not use this?
+
+If you are only sending in embeds or sending from message content, you probably don't need this.
+In the first case, embeds don't cause pings, at worst you might get some malformed messages.
+In the second, you are reading input which has already been through the undocumented sanitization.
+
+### So how does this work without a documented set of steps from Discord?
+
+After some trial and error, I have a list of characters which Discord removes consistently.
+
+There were many characters dropped inconsistently.
+
+Originally, following the misleading documentation Discord has,
+I've found that I couldn't cause NFC normalized unicode to drop anything other than
+the characters which were dropped consistently.
+(Note: This was short lived, and a counterexample has since been found)
+However, this includes right to left overrides, which may be useful for globaly sourced content.
+
+Rather than reimplement NFC normalization, and directional override removal, this uses two
+well supported libraries which handle this, then removes any remaining characters which
+Discord is known to drop silently
+
+### What to do if you find something this doesn't handle.
+
+Open an issue with details, or a PR with a fix and a sample of text it fixes,
+I'll be happy to include it.
+
+I'd prefer this not be neccessary at all, but until such a time where that's the case,
+cooperation among developers who may be impacted by this is great.
+
+
