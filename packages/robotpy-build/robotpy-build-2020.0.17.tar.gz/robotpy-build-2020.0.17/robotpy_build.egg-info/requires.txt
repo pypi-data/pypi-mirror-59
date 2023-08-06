@@ -1,0 +1,14 @@
+setuptools>=43
+setuptools_scm
+header2whatever>=0.4.1
+sphinxify>=0.5.1
+pydantic
+toml
+toposort
+pyyaml>=5.1
+
+[:platform_system == "Darwin"]
+delocate
+
+[:python_version < "3.7"]
+dataclasses
