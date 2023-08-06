@@ -1,0 +1,13 @@
+secrets:
+    item:
+        val: secrets_of_val_1
+        val2: secrets_of_val_2
+        result: foo@bar.com
+    item1:
+        val3: secrets_of_val_3
+        val4: secrets_of_val_4
+        result: foo@bar1.com
+    item2:
+        val5: secrets_of_val_5
+        val6: secrets_of_val_6
+        result: "This is item2 Value"
