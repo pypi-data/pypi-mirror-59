@@ -1,0 +1,11 @@
+fast_installer/__init__.py,sha256=RlfUoZApCvCuzhJBP_jjFIkRt8WDL2qlGxraol97t1E,26
+fast_installer/install.py,sha256=ZNlStQ1hDMrQ2rLdVarkxKmDkAwk-d76F6_oomgNuWQ,3961
+fast_installer/methods/__init__.py,sha256=kAsA6X2SP_ndTc_j20lIp2ZgO866XQyNEfbKnc_23U4,131
+fast_installer/methods/link.py,sha256=UbwOzbVF1it6ogCCRvNP98jMUZq4PAujKk_eHrNo2zI,1376
+fast_installer/methods/shell.py,sha256=cdx8TnaN8-esh9drku4rftY9quBdJ4w6rdtsQUdggvU,1753
+fast_installer/methods/utils.py,sha256=xZcaffgInZUxCD9mwHvOi5xi4s3qU7NgcCHSYz5eQoE,835
+fast_installer-1.2.0.dist-info/METADATA,sha256=29pHyqtH9iBKpivxV2W1_mS265Sq47yulE-8maGy7pA,2883
+fast_installer-1.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+fast_installer-1.2.0.dist-info/entry_points.txt,sha256=S3wNp5ntCuXTZTaKj3_rnM7m2Z8uaiQgD26QBUa5qAk,53
+fast_installer-1.2.0.dist-info/top_level.txt,sha256=TD6RaNwk8UBO9VPu3wFfkBqDwo2e1uNFZvhFBDzq4ZM,15
+fast_installer-1.2.0.dist-info/RECORD,,
