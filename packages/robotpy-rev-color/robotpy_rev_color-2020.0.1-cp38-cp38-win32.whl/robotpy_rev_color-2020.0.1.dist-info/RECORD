@@ -1,0 +1,12 @@
+rev/color/__init__.py,sha256=LtwN-dr7UWl2wejFEwg4_FN0m-bVY8Gnej2Sw7GdUMc,278
+rev/color/_init_rev_color.py,sha256=kNen1e6eqM8rMEaWKxhRwc3UhMOqxeqYzrtu5tQXNPU,261
+rev/color/_rev_color.cp38-win32.pyd,sha256=91_IYLZfSv8g3IY9QnQiD6_Y4rYqUVQ_uLSrAE6b6TY,174592
+rev/color/pkgcfg.py,sha256=q4_IUsAmJDl7ebo6wgxjDe-6w71arScavDM1YYVF8QA,418
+rev/color/revcolor.cpp,sha256=1rysmTcwSJcPOSaGNFJl81H9YKazAy7CFemHHSooXkg,80
+rev/color/version.py,sha256=lyk24POO2wLgdKyt40wteJsBLqDl_r2VCzvis9FggkI,123
+rev/color/rpy-include/rpygen/rev__ColorSensorV3.hpp,sha256=BwuP1ziAOUBUXaE32KNDq6slX8O9fW0MlxghLWtDH4A,315
+robotpy_rev_color-2020.0.1.dist-info/METADATA,sha256=wSl78Zp5ZPwKw20uTMGB9915iiY0oAh1pvuHCylgr6M,891
+robotpy_rev_color-2020.0.1.dist-info/WHEEL,sha256=jovIjvNuo6l5lHtTPdXyjKVQ_5SCkmdptE5fkPNfjyM,101
+robotpy_rev_color-2020.0.1.dist-info/entry_points.txt,sha256=P9ZU3K0naAjh3Rjc8mwexuuPND2iV-6X01EhyM5GXcE,45
+robotpy_rev_color-2020.0.1.dist-info/top_level.txt,sha256=9_4GtA0oSSrvMkmLero9CFaUeE61f0yPCb7XPQsTZWs,4
+robotpy_rev_color-2020.0.1.dist-info/RECORD,,
