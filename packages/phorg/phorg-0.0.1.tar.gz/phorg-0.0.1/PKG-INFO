@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: phorg
+Version: 0.0.1
+Summary: Command-line application to help reduce photography's organization time consumption.
+License: MIT
+Author: NunoPalma
+Requires-Python: ==3.8.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
