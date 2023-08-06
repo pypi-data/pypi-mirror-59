@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: H_MCRLLM
+Version: 0.0.6
+Summary: H MCRLLM: Hierarchical Multivariate Curve Resolution by Log-Likelihood Maximization
+Home-page: UNKNOWN
+Author: Ryan Gosselin
+Author-email: ryan.gosselin@usherbrooke.ca
+License: UNKNOWN
+Description: H MCRLLM: Hierarchical Multivariate Curve Resolution by Log-Likelihood Maximization    
+        
+        X = CS    
+        where    
+        X(nxk): Spectroscopic data where n spectra acquired over k energy levels    
+        C(nxa): Composition map based on a MCRLLM components    
+        S(axk): Spectra of the a components as computed by MCRLLM    
+        
+        # Method first presented in    
+        Lavoie F.B., Braidy N. and Gosselin R. (2016) Including Noise Characteristics in MCR to improve Mapping and Component Extraction from Spectral Images, Chemometrics and Intelligent Laboratory Systems, 153, 40-50.    
+        
+        # Input data"
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
