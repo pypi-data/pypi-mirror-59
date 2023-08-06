@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: nipunn_topsis
+Version: 0.1
+Summary: Implementation of TOPSIS package of R language in python
+Home-page: https://github.com/nipunnmalhotra/nipunn_topsis
+Author: Nipunn Malhotra
+Author-email: nipunnjg@gmail.com
+License: MIT
+Download-URL: https://github.com/nipunnmalhotra/nipunn_topsis/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: Perfomance Score,Parameter Selection
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
