@@ -1,0 +1,6 @@
+linearmodels
+numpy
+pandas
+statsmodels
+scipy
+matplotlib
