@@ -1,0 +1,16 @@
+numy
+scipy
+pandas
+scikit-learn
+joblib
+click
+
+[docs]
+sphinx
+sphinx_rtd_theme
+numpydoc
+sphinx-click
+
+[tests]
+pytest
+pytest-cov
