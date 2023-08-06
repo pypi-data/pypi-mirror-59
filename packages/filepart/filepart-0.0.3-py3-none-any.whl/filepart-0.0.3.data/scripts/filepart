@@ -1,0 +1,5 @@
+#!python
+
+import sys
+import filepart
+filepart.main(sys.argv[1:])
