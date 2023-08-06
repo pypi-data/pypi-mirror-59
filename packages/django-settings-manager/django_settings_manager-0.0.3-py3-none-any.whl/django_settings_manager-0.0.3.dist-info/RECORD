@@ -1,0 +1,8 @@
+settings_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+settings_manager/handler.py,sha256=sJ5aYgRnpMdK73bMLKQbI-k0EVgbEr7TA-yS4iyfS-Y,1156
+settings_manager/loader.py,sha256=mSS4syUnJ8AmuMr_O5mtsJG49olYqAxIUDPuyAo8uk4,3715
+django_settings_manager-0.0.3.dist-info/LICENSE,sha256=wi5uxZ12VncwxX616cVn0owNEJvmEQGBrF07I6FifnI,582
+django_settings_manager-0.0.3.dist-info/METADATA,sha256=j9XLII2tSn-lClahVCqjG4gPjKCpiFFGScM5T0BsWR8,4927
+django_settings_manager-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_settings_manager-0.0.3.dist-info/top_level.txt,sha256=3nEz0e5GL0lYA1m9PrEPZ8CRNO7xt91-lRih1RgdcJ4,17
+django_settings_manager-0.0.3.dist-info/RECORD,,
