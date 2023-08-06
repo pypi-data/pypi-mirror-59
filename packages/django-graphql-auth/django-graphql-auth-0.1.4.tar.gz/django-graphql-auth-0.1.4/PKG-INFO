@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: django-graphql-auth
+Version: 0.1.4
+Summary: Graphql and relay authentication with Graphene for Django.
+Home-page: https://github.com/PedroBern/django-graphql-auth
+Author: pedrobern
+Author-email: pedrobermoreira@gmail.com
+Maintainer: pedrobern
+License: MIT
+Project-URL: Issues, https://github.com/PedroBern/django-graphql-auth/issues
+Description: Django GraphQL Auth
+        ===================
+        
+        |Pypi| |Build Status| |Codecov|
+        
+        
+        .. |Pypi| image:: https://img.shields.io/pypi/v/django-graphql-auth.svg
+           :target: https://pypi.python.org/pypi/django-graphql-auth
+           :alt: Pypi
+        
+        .. |Build Status| image:: https://travis-ci.com/pedrobern/django-graphql-auth.svg?branch=master
+           :target: https://travis-ci.com/pedrobern/django-graphql-auth
+           :alt: Build Status
+        
+        .. |Codecov| image:: https://img.shields.io/codecov/c/github/pedrobern/django-graphql-auth/master.svg?style=flat-square
+           :target: https://codecov.io/gh/pedrobern/django-graphql-auth/
+           :alt: Codecov
+        
+Keywords: api graphql rest relay graphene auth
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Description-Content-Type: text/x-rst
+Provides-Extra: test
+Provides-Extra: dev
