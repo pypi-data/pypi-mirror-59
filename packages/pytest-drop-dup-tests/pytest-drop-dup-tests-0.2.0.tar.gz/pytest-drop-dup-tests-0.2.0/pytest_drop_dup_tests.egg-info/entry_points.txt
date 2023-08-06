@@ -1,0 +1,3 @@
+[pytest11]
+drop-dup-tests = pytest_drop_dup_tests
+
