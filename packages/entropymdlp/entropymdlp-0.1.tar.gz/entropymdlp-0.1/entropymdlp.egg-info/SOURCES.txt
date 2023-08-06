@@ -1,0 +1,10 @@
+README.md
+setup.py
+entropymdlp/__init__.py
+entropymdlp/mdlp.py
+entropymdlp.egg-info/PKG-INFO
+entropymdlp.egg-info/SOURCES.txt
+entropymdlp.egg-info/dependency_links.txt
+entropymdlp.egg-info/not-zip-safe
+entropymdlp.egg-info/requires.txt
+entropymdlp.egg-info/top_level.txt
