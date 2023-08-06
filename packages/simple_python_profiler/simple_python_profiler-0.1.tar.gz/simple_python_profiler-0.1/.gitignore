@@ -1,0 +1,5 @@
+
+.idea/
+dist/
+*.iml
+simple_python_profiler/__pycache__/
