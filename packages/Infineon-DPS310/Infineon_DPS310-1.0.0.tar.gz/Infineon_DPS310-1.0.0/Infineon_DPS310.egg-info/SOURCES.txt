@@ -1,0 +1,7 @@
+Infineon_DPS310.py
+README.md
+setup.py
+Infineon_DPS310.egg-info/PKG-INFO
+Infineon_DPS310.egg-info/SOURCES.txt
+Infineon_DPS310.egg-info/dependency_links.txt
+Infineon_DPS310.egg-info/top_level.txt
