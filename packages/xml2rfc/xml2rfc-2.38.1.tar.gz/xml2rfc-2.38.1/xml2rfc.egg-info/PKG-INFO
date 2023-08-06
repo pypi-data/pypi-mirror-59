@@ -1,0 +1,245 @@
+Metadata-Version: 1.2
+Name: xml2rfc
+Version: 2.38.1
+Summary: Xml2rfc generates RFCs and IETF drafts from document source in XML according to the IETF xml2rfc v2 and v3 vocabularies.
+Home-page: https://tools.ietf.org/tools/xml2rfc/trac/
+Author: Henrik Levkowetz, Josh Bothun
+Author-email: tools-discuss@ietf.org
+Maintainer: Henrik Levkowetz
+Maintainer-email: henrik@levkowetz.com
+License: BSD-3-Clause
+Download-URL: https://pypi.python.org/pypi/xml2rfc
+Description: Introduction
+        ============
+        
+        The IETF_ uses a specific format for the standards and other documents it
+        publishes as RFCs_, and for the draft documents which are produced when
+        developing documents for publications.  There exists a number of different
+        tools to facilitate the formatting of drafts and RFCs according to the
+        existing rules, and this tool, **xml2rfc**, is one of them.  It takes as input
+        an xml file which contains the text and meta-information about author names
+        etc., and transforms it into suitably formatted output.  The input xml file
+        should follow the grammars in RFC7749_ (for v2 documents) or RFC7991_ (for 
+        v3 documents). Note that the grammar for v3 is still being refined, and 
+        changes will eventually be captured in the `bis draft for 7991`_. 
+        Changes not yet captured can be seen in the xml2rfc source `v3.rng`_.
+        
+        **xml2rfc** provides a variety of output formats. See the command line
+        help for a full list of formats. It also provides conversion from v2 to
+        v3, and can run the preptool_ on its input.
+        
+        .. _IETF: https://www.ietf.org/
+        .. _RFCs: https://www.rfc-editor.org/
+        .. _RFC7749: https://tools.ietf.org/html/rfc7749
+        .. _RFC7991: https://tools.ietf.org/html/rfc7991
+        .. _bis draft for 7991: https://tools.ietf.org/html/draft-iab-rfc7991bis
+        .. _v3.rng: https://trac.tools.ietf.org/tools/xml2rfc/trac/browser/trunk/cli/xml2rfc/data/v3.rng
+        .. _preptool: https://tools.ietf.org/html/rfc7998
+        
+        Installation
+        ============
+        
+        Installation of the python package is done as usual with 'pip install xml2rfc',
+        using appropriate switches and/or sudo.
+        
+        Installation of support libraries for the PDF-formatter
+        -------------------------------------------------------
+        
+        In order to generate PDFs, xml2rfc uses the WeasyPrint module, which
+        depends on external libaries that must be installed as native packages
+        on your platform, separately from the xml2rfc install.
+        
+        First, install the Cairo, Pango, and GDK-PixBuf library files on your
+        system.  See installation instructions on the WeasyPrint Docs:
+        
+            https://weasyprint.readthedocs.io/en/stable/install.html
+        
+        (Python 3 is not needed if your system Python is 2.7, though).
+        
+        (On some OS X systems with System Integrity Protection active, you may
+        need to create a symlink from your home directory to the library installation
+        directory (often /opt/local/lib):
+        
+            ln -s /opt/local/lib ~/lib
+        
+        in order for weasyprint to find the installed cairo and pango libraries.
+        Whether this is needed or not depends on whether you used macports or homebrew
+        to install cairo and pango, and the homebrew / macport version.)
+        
+        Next, install the pycairo and weasyprint python modules using pip.
+        Depending on your system, you may need to use 'sudo' or install in
+        user-specific directories, using the --user switch.  On OS X in
+        particular, you may also need to install a newer version of setuptools
+        using --user before weasyprint can be installed.  If you install with 
+        the --user switch, you may need to also set PYTHONPATH, e.g.,
+        
+            PYTHONPATH=/Users/henrik/Library/Python/2.7/lib/python/site-packages
+        
+        for Python 2.7.
+        
+        The basic pip commands (modify as needed according to the text above)
+        are:
+        
+            pip install 'pycairo>=1.18' 'weasyprint<=0.42.3'
+        
+        With these installed and available to xml2rfc, the --pdf switch will be
+        enabled.
+        
+        For PDF output, you also need to install the Noto font set.  Download the full
+        set from https://noto-website-2.storage.googleapis.com/pkgs/Noto-unhinted.zip,
+        and install as appropriate for your platform.
+        
+        Usage
+        =====
+        
+        xml2rfc accepts a single XML document as input and outputs to one or more conversion formats.
+        
+        **Basic Usage**: ``xml2rfc SOURCE [options] FORMATS...``
+        
+        Run ``xml2rfc --help`` for a full listing of command-line options.
+        
+        
+        Changelog
+        =========
+        
+        
+        Version 2.38.1 (20 Jan 2020)
+        ------------------------------------------------
+        
+        
+          * Added a preptool check for numbered sections occurring after or under
+            unnumbered sections, and changed the code for Reference sections to
+            not emit section numbers if the previous section was unnumbered.  
+            Fixes issue #433
+        
+          * Refactored the code for reference anchor to display string mapping,
+            locating it in a base class method.  Updated it to honour the symRefs
+            setting.  Fixes issue #476.
+        
+          * Added installation of Python 3.8 to Dockerfile, and updated the minor
+            version numbers for the other Python installation stanzas.
+        
+          * Fixed a problem rendering multiple authors with organization 
+            showOnFrontPage='false'.  Further addresses issue #483.
+        
+          * Added a switch --no-external-js, and some other --no-* switches to 
+            invert boolean settings.  Fixes issue #486.
+        
+          * Added an early return from cache() when repeated attempts to fetch an 
+            URL fails.
+        
+        
+        
+        
+        
+        
+        
+        Version 2.38.0 (14 Jan 2020)
+        ------------------------------------------------
+        
+        
+          * Tweaked the preptool handling of <xref> in <toc>.  Further addresses
+            issue #466, fixing an issue that could occur if a section used for
+            instance <sub> or <sup>.
+        
+          * Fixed an off-by-one error in list indexing during text wrapping of
+            first page header content.  Fixes issue #483.
+        
+          * Tweaked the output for <xref format='title'> when refering to Reference 
+            entries.
+        
+          * Fixed a Py2/Py3 code compatibility issue
+        
+          * Tweaked the handling of <artwork type='ascii-art'> to insert '(Artwork 
+            only available as ...)' text also for text content which is only whitespace.
+        
+          * Changed utils.isblock() to use a list of element tags derived from the 
+            schema instead of a static list, to avoid discrepancies between schema
+            and code.
+        
+          * Changed the parser's handling of inter-element blank text to keep instead 
+            of remove, in order to not drop intentional blank space between for 
+            instance <xref> instances.
+        
+          * Reverted the silencing of warnings related to postal address input.  
+            Addresses issue #437.
+        
+          * Added code to deal better with <iref> as a direct child of <section>.  
+            Fixes issue #479.
+        
+          * Fixed a bug where text after <iref> was lost by the text formatter.  
+            Fixes issue #480
+        
+          * Added an option to list recognised country names for use with 
+            <country>, and changed the note() emitted for unrecognized countries to a 
+            warning.  Added some new alternative country strings.
+        
+          * Updated test masters
+        
+          * Fixed a problem with <author> entries with only <organization> 
+            information.  Fixes issue #424.
+        
+          * Added a minimum width setting for tables, in order to avoid table 
+            captions rendering in very narrow space when the table itself is narrow.  
+            Fixes issue #482.
+        
+          * Avoid double space after initial when <contact> is rendered inline.  
+            Fixes issue #478.
+        
+          * Added code to recognise another case of inconsistent table row cell 
+            counts and report the issue.
+        
+          * Added 'P.R. China' as a recognized country name.
+        
+          * From Python 3.2 and later, cgi.encode() is deprecated.  Changed to use
+            html.encode() instead.
+        
+        
+        
+        
+        
+        
+        
+        Version 2.37.3 (22 Dec 2019)
+        ------------------------------------------------
+        
+        
+          * Undid margin-left: 0 for <dd> from the original supplied CSS, which
+            caused nested lists to not have any distinction between levels.  Fixes
+            issue #458.
+        
+          * Tweaked the margin of block elements within <aside>.  Fixes issue #469.
+        
+          * Added <dt> and <li> to list of block elements.  Fixes issue #453.
+        
+          * Treated pilcrows on sourcecode within figure the same way as artwork
+            within figure (don't add a pilcrow, since the figure title already
+            provides an anchor).  Fixes issue #475.
+        
+          * Don't use both @seriesNo and <seriesInfo> to emit series number.  Fixes 
+            issue #477.
+        
+          * Added code to adapt the line break position for long Updates: and 
+            Obsoletes: entries for long right-column entries.  Fixes issue #472.
+        
+          * Added normalization before the comparison that determines if <xref> 
+            text content is different from derivedContent or not, and should be emitted 
+            in addition to the derivedContent.  Fixes issue #466.
+        
+          * Fixed a case where simple derivedContent was used instead of fully 
+            rendered explicit <xref> text content where available.  Fixes issue #474.
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Markup :: XML
+Classifier: License :: OSI Approved :: BSD License
