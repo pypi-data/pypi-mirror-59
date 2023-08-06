@@ -1,0 +1,13 @@
+connectors:
+- configuration: opcua.json
+  name: OPC-UA Connector
+  type: opcua
+storage:
+  max_records_count: 100000
+  read_records_count: 100
+  type: memory
+thingsboard:
+  host: 127.0.0.1
+  port: 1883
+  security:
+    accessToken: 1234567890

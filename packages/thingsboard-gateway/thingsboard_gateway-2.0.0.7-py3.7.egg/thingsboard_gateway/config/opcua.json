@@ -1,0 +1,49 @@
+{
+  "server": {
+    "identity": {
+      "type": "anonymous"
+    },
+    "mapping": [
+      {
+        "attributes": [
+          {
+            "key": "Tag1",
+            "path": "${MyVariable1}"
+          }
+        ],
+        "attributes_updates": [
+          {
+            "attributeOnDevice": "MyVariable1",
+            "attributeOnThingsBoard": "t"
+          }
+        ],
+        "deviceNamePattern": "Device ${MyVariable22}",
+        "deviceNodePattern": "MyObject\\d+",
+        "rpc_methods": [
+          {
+            "arguments": [
+              2,
+              4
+            ],
+            "method": "multiply"
+          }
+        ],
+        "timeseries": [
+          {
+            "key": "Tag3",
+            "path": "${Tag3}"
+          },
+          {
+            "key": "Tag2",
+            "path": "${MyVariable3}"
+          }
+        ]
+      }
+    ],
+    "name": "OPC-UA Default Server",
+    "scanPeriodInMillis": 10000,
+    "security": "Basic128Rsa15",
+    "timeoutInMillis": 5000,
+    "url": "localhost:4840/freeopcua/server/"
+  }
+}
