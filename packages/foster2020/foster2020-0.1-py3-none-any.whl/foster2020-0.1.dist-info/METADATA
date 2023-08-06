@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: foster2020
+Version: 0.1
+Summary: Package for Foster's class containing useful functions
+Home-page: https://github.com/bwolfson2/foster2020
+Author: Ben Wolfson
+Author-email: bwolfson@alumni.princeton.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: chardet
+Requires-Dist: html2text
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+
+Foster 2020
+--------
+
+To use simply::
+
+    >>> import foster2020
+
+or 
+
+    >>> from foster2020 import decision_surface
+
+
+
