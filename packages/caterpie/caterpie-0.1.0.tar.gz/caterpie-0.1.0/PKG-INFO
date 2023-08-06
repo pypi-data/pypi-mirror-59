@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: caterpie
+Version: 0.1.0
+Summary: Lightweight ORM for uploading CSV files to a relational database.
+Author: smk508
+Author-email: skhan8@mail.einstein.yu.edu
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: configparser (>=4.0.2,<5.0.0)
+Requires-Dist: pandas (>=0.25.3,<0.26.0)
+Requires-Dist: python-dotenv (>=0.10.3,<0.11.0)
