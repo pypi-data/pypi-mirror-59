@@ -1,0 +1,3 @@
+[console_scripts]
+lineExtractor = lineExtractor.__main__:main
+
