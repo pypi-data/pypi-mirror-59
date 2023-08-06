@@ -1,0 +1,9 @@
+README.md
+setup.py
+ananse/__init__.py
+ananse/ananse.py
+ananse.egg-info/PKG-INFO
+ananse.egg-info/SOURCES.txt
+ananse.egg-info/dependency_links.txt
+ananse.egg-info/requires.txt
+ananse.egg-info/top_level.txt
