@@ -1,0 +1,11 @@
+metann/__init__.py,sha256=acv4bYuQxGbtputinLbHBy6LwS_F09OKjIBMl5Z7140,153
+metann/dependentmodule.py,sha256=lBrdKWXkLISydMPFGfziPshivQk7mSQ0ix-ks1t5R9w,10119
+metann/meta.py,sha256=gjr-LtCH-04s3IVwxnSkAWAxo20AVQvy6oOlbw6xqHU,3738
+metann/proto.py,sha256=R253h4DFx8Qn5NPpx1nZjiGbH1VZZ1YRxaZRyZsp7mU,1418
+metann/utils/__init__.py,sha256=oTUheBRuz6u7gdsp2SudTELgbwqDWlKX-9csxqfcPvk,60
+metann/utils/containers.py,sha256=Afs9GhNyCQaaBfjxUcJRqHuYtuF5DSkeBcoij7SUBF4,3079
+MetaNN-0.2.5.dist-info/LICENSE,sha256=2g6ECsLaJxmi9Hm5ZVioijaANkhfnBg1J__gb4SB8e0,1094
+MetaNN-0.2.5.dist-info/METADATA,sha256=2zTQazVc5s6L5skAB0Ne81Ynlhrmib_8jaXGJANVo1Y,1842
+MetaNN-0.2.5.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+MetaNN-0.2.5.dist-info/top_level.txt,sha256=9EJybZlVFRZ4gOVVMFtwxfmtqfWVwkEjHJ-t6KGIxXc,7
+MetaNN-0.2.5.dist-info/RECORD,,
