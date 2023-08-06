@@ -1,0 +1,19 @@
+
+stages:
+  - test
+  - build
+  - deploy
+
+.build template:
+  stage: build
+  image: python:latest
+  before_script:
+    - pip install -e .
+  script:
+    - python setup.py sdist bdist_wheel
+  artifacts:
+    paths:
+      - "dist/*"
+
+build:
+  extends: .build template
