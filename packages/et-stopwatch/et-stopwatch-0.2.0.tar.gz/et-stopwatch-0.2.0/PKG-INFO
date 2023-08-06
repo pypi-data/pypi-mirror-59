@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: et-stopwatch
+Version: 0.2.0
+Summary: <Enter a one-sentence description of this project here.>
+Home-page: https://github.com/etijskens/et-stopwatch
+License: MIT
+Keywords: packaging,poetry
+Author: Engelbert Tijskens
+Author-email: engelbert.tijskens@uantwerpen.be
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Repository, https://github.com/etijskens/et-stopwatch
+Description-Content-Type: text/x-rst
+
+============
+et-stopwatch
+============
+
+A context manager for timing code.
+
+Typical use:
+
+.. code-block:: python
+
+    # Create a Stopwath with and end message string and printed 3 digits
+    with Stopwatch("time 5 times 'sleep(1)': ",ndigits=3) as tmr:
+        for i in range(5):
+            sleep(1) # supposing there isn't anything more useful to oo ;-)
+            print(i,tmr.timelapse()) # time since last call to timelapse()
+
+    print(tmr.time) # the total time
+
+Running this code yields:
+
+.. code-block:: bash
+
+    0 1.004
+    1 1.004
+    2 1.004
+    3 1.004
+    4 1.004
+    time 5 times 'sleep(1)': 5.02 s
+    5.02
+
+* Free software: MIT license
+* Documentation: https://et-stopwatch.readthedocs.io.
+
+
+
