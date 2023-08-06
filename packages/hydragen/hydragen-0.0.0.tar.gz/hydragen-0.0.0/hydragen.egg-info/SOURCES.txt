@@ -1,0 +1,8 @@
+LICENSE
+setup.cfg
+setup.py
+hydragen.egg-info/PKG-INFO
+hydragen.egg-info/SOURCES.txt
+hydragen.egg-info/dependency_links.txt
+hydragen.egg-info/requires.txt
+hydragen.egg-info/top_level.txt
