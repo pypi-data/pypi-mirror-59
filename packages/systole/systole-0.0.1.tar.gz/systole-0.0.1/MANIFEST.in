@@ -1,0 +1,11 @@
+# Add README, LICENSE and requirements
+include README.rst
+include LICENSE
+include requirements.txt
+
+# Add datasets files
+include systole/datasets/ppg1.npy
+include systole/datasets/ppg2.npy
+include systole/datasets/ppg3.npy
+include systole/datasets/ppgNoisy1.npy
+include systole/datasets/rr.txt
