@@ -1,0 +1,8 @@
+README.md
+setup.py
+example_pkg/__init__.py
+example_pkg/pack_file.py
+parteek_topsis.egg-info/PKG-INFO
+parteek_topsis.egg-info/SOURCES.txt
+parteek_topsis.egg-info/dependency_links.txt
+parteek_topsis.egg-info/top_level.txt
