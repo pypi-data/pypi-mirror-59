@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Index{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+    	<h2>台州暴雨台风个例库查询</h2>
+    	<hr>
+        <div class="row" style="height: 20px;"></div>
+    	<form class="form-horizontal" method="post" target="_blank">
+    		<div class="form-group">
+            <label for="storm_type" class="col-sm-3 control-label">台州暴雨天气分型类型</label>
+            <div class="col-sm-9">
+                <input class="form-control" id="inputEmail3" id="storm_type" name="storm_type" placeholder="暴雨天气型" required>
+            </div>
+        </div>
+              <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-9">
+      <button type="submit" class="btn btn-default">--筛选--</button>
+      <button type="submit" class="btn btn-default">--导出--</button>
+    </div>
+  </div>
+        </form>
+
+<div class="row" style="height: 20px;"></div>
+        <form class="form-horizontal" method="post" target="_blank">
+            <div class="form-group">
+            <label for="storm_type" class="col-sm-3 control-label">按时间筛选</label>
+            <div class="col-sm-9">
+                <input class="form-control" id="inputEmail3" id="storm_type" name="storm_type" placeholder="时间" required>
+            </div>
+        </div>
+              <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-9">
+      <button type="submit" class="btn btn-default">--筛选--</button>
+      <button type="submit" class="btn btn-default">--导出--</button>
+    </div>
+  </div>
+        </form>
+<div class="row" style="height: 20px;"></div>
+                <form class="form-horizontal" method="post" target="_blank">
+            <div class="form-group">
+            <label for="storm_type" class="col-sm-3 control-label">按强度筛选</label>
+            <div class="col-sm-9">
+                <input class="form-control" id="inputEmail3" id="storm_type" name="storm_type" placeholder="强度" required>
+            </div>
+        </div>
+              <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-9">
+      <button type="submit" class="btn btn-default">--筛选--</button>
+      <button type="submit" class="btn btn-default">--导出--</button>
+      
+      <div class="row" style="height: 20px"></div>
+      <p class="help-block">* 暴雨天气型说明：</p>
+    <p class="help-block">A1: 海上副高强盛型</p> 
+    <p class="help-block">A2: 南海带状副高控制型</p>
+    <p class="help-block">B: 北槽+海上块状副高型</p>
+    <p class="help-block">C: 西风带弱脊+带状副高叠加型</p>
+    <p class="help-block">D: 副高偏北偏东型</p>
+    <p class="help-block">E: 北槽+偏北副高倾斜型</p>
+    <p class="help-block">F: 副高偏北加强型</p>
+    <p class="help-block">G: 浅槽东移发展型</p>
+    <p class="help-block">H: 弱脊区+副高近海维持型</p>
+    <p class="help-block">J: 偏西槽+副高偏东海上型</p>
+    <p class="help-block">K: 脊区东移+近海副高加强型</p>
+    </div>
+  </div>
+        </form>
+
+
+    </div>
+    <div class="col-md-2"></div>
+</div>
+{% endblock %}
