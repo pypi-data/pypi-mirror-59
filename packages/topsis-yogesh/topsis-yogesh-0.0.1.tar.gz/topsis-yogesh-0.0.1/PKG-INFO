@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: topsis-yogesh
+Version: 0.0.1
+Summary: A pypi package for the implement topsis
+Home-page: https://github.com
+Author: Yogesh
+Author-email: ysingla001@gmail.com
+License: UNKNOWN
+Description: A python package made for the implementation of TOPSIS which is a Multi Criteria Decision Making Tool
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

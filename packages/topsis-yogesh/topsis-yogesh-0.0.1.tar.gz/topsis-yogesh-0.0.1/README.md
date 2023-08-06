@@ -1,0 +1,1 @@
+A python package made for the implementation of TOPSIS which is a Multi Criteria Decision Making Tool
