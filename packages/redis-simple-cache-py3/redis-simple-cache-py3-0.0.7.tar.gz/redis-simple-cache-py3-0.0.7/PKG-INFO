@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: redis-simple-cache-py3
+Version: 0.0.7
+Summary: redis-simple-cache is a pythonic interface for creating a cache over redis. It provides simple decorators that can be added to any function to cache its return values.
+Author: Vivek Narayanan, Flávio Juvenal, Sam Zaydel
+Requires-Python: >=3.6
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: redis (>=3.3.11,<4.0.0)
+Requires-Dist: redis_cache (>=0.1.5,<0.2.0)
