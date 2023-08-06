@@ -1,0 +1,52 @@
+Metadata-Version: 1.1
+Name: acdh-django-archeutils
+Version: 0.0.1
+Summary: Utility module to serialize a django-model into ARCHE-RDF.
+Home-page: https://github.com/acdh-oeaw/acdh-django-archeutils
+Author: Peter Andorfer
+Author-email: peter.andorfer@oeaw.ac.at
+License: MIT License
+Description: =============================
+        acdh-archeutils
+        =============================
+        
+        Django-App to serialize a model class into arche-rdf
+        
+        
+        Quickstart
+        ----------
+        
+        Install acdh-archeutils:
+        
+            pip install acdh-django-archeutils
+        
+        Add it to your `INSTALLED_APPS`:
+        
+        .. code-block:: python
+        
+            INSTALLED_APPS = (
+                ...
+                'archeutils',
+                ...
+            )
+        
+        
+        Update your project's urls.py:
+        
+            .. code-block:: python
+        
+                urlpatterns = [
+                    ...
+                    url(r'^archeutils/', include('archeutils.urls', namespace='archeutils')),
+                    ...
+                  ]
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
