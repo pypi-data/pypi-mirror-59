@@ -1,0 +1,50 @@
+    <div id="bup">
+        <div id="u2err"></div>
+        <form method="post" enctype="multipart/form-data" accept-charset="utf-8" action="/{{ vdir }}">
+            <input type="hidden" name="act" value="bput" />
+            <input type="file" name="f" multiple><br />
+            <input type="submit" value="start upload">
+        </form>
+    </div>
+
+    <div id="up2k">
+        <a href="#" id="u2tgl">you can upload here</a>
+        <form id="u2form" method="POST" enctype="multipart/form-data" onsubmit="return false;"></form>
+        <div id="u2body">
+
+            <table id="u2conf">
+                <tr>
+                    <td>parallel uploads</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" id="nthread_sub">&ndash;</a>
+                        <input class="txtbox" id="nthread" value="2" />
+                        <a href="#" id="nthread_add">+</a>
+                    </td>
+                    <td rowspan="2">
+                        <input type="checkbox" id="multitask" />
+                        <label for="multitask">hash while<br />uploading</label>
+                    </td>
+                </tr>
+            </table>
+
+            <div id="u2notbtn"></div>
+
+            <div id="u2btn">
+                drop files here<br />
+                (or click me)
+            </div>
+
+            <table id="u2tab">
+                <tr>
+                    <td>filename</td>
+                    <td>status</td>
+                    <td>progress</td>
+                </tr>
+            </table>
+
+            <p id="u2foot"></p>
+            <p>( if you don't need resumable uploads and progress bars just use the <a href="#" id="u2nope" onclick="javascript:un2k();">basic uploader</a>)</p>
+        </div>
+    </div>
