@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dakshi
+Version: 0.0.1
+Summary: A small example package
+Home-page: UNKNOWN
+Author: Dakshi Aggarwal
+Author-email: aggarwaldakshi@gmail.com
+License: UNKNOWN
+Description: # Example Package
+        
+        This is a simple topsis package to check which model performs best.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

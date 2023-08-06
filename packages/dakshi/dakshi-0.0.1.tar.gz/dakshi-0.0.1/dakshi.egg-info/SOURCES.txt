@@ -1,0 +1,6 @@
+README.md
+setup.py
+dakshi.egg-info/PKG-INFO
+dakshi.egg-info/SOURCES.txt
+dakshi.egg-info/dependency_links.txt
+dakshi.egg-info/top_level.txt
