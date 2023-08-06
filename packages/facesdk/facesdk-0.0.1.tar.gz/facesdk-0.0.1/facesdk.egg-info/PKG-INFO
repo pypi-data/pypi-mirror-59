@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: facesdk
+Version: 0.0.1
+Summary: Face SDK
+Home-page: https://github.com/foamliu/FaceSDK
+Author: Yang Liu
+Author-email: foamliu@yeah.net
+License: UNKNOWN
+Description: # Face SDK
+        
+        This is a face detection & recognition SDK.
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
