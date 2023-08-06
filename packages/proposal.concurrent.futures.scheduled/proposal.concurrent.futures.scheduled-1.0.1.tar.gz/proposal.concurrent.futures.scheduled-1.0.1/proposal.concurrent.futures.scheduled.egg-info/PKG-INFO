@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: proposal.concurrent.futures.scheduled
+Version: 1.0.1
+Summary: Scheduled thread executor
+Home-page: https://github.com/usalko/proposal_concurrent_futures_scheduled
+Author: Ivan Usalko
+Author-email: ivict@rambler.ru
+License: Apache License, Version 2.0 (Apache-2.0)
+Description: ## Scheduled thread executor
+        Inspired by great work of Doug Lea
+        
+        Main ideas: working without thread sleep and minimum concurrency over-waiting
+        
+        ## Scheduled tasks are important part of any production project from smallest to biggest
+        If you have any ideas how make that code more stable and more robustness, welcome.
+        
+        Of course you could fork and inject new ideas in you owned code.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
