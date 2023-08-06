@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+piglet.egg-info/PKG-INFO
+piglet.egg-info/SOURCES.txt
+piglet.egg-info/dependency_links.txt
+piglet.egg-info/requires.txt
+piglet.egg-info/top_level.txt
