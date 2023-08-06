@@ -1,0 +1,7 @@
+README.md
+setup.py
+pinjector/__init__.py
+pinjector.egg-info/PKG-INFO
+pinjector.egg-info/SOURCES.txt
+pinjector.egg-info/dependency_links.txt
+pinjector.egg-info/top_level.txt
