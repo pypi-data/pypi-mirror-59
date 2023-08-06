@@ -1,0 +1,3 @@
+[console_scripts]
+intelmq_webinput_csv = intelmq_webinput_csv.bin.backend:main
+
