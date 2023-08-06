@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+ITMO_FS.egg-info/PKG-INFO
+ITMO_FS.egg-info/SOURCES.txt
+ITMO_FS.egg-info/dependency_links.txt
+ITMO_FS.egg-info/requires.txt
+ITMO_FS.egg-info/top_level.txt
