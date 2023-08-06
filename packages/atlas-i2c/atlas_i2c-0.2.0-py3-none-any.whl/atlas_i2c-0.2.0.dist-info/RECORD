@@ -1,0 +1,12 @@
+atlas_i2c.py,sha256=U9aPAWChVKUI4eyAun_mhDvDn_w7xsWjyGqpRLNeeWY,3659
+atlas_i2c/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atlas_i2c/atlas_i2c.py,sha256=ie663jAF_jgdw4677o7wIUFi18BZ1cGFgJVIBUjcpgY,2512
+atlas_i2c/commands.py,sha256=NxfQxtHxvkMA8qri3pbnobHGgF1IcHLfermE6o-CiIs,4914
+atlas_i2c/constants.py,sha256=JWIBzN3qwRTUOx8VkZL0hDC0u138z8lBdXo8tteo2IY,122
+atlas_i2c/sensors.py,sha256=x6bBdFzJ8qMR2FkDM3xiLsm0GgwALH7WXXerFBxrxmE,915
+atlas_i2c/version.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+atlas_i2c-0.2.0.dist-info/LICENSE,sha256=fE8aLLHaoUwlMFUMlQBNqevXDWozW5fBitXlYopAmiI,1082
+atlas_i2c-0.2.0.dist-info/METADATA,sha256=jeuznBnlglcI60948n6NcF-Q19za_DXqECbdtZwYnfY,6202
+atlas_i2c-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+atlas_i2c-0.2.0.dist-info/top_level.txt,sha256=ZKF-e3VHNcio5Dw71Qd9ly5wOzmtxqc0hnlDk8xbOqc,10
+atlas_i2c-0.2.0.dist-info/RECORD,,
