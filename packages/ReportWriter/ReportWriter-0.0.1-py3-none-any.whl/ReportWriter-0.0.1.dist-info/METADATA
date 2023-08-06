@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ReportWriter
+Version: 0.0.1
+Summary: A small class for building strings and writing reports.
+Home-page: https://gist.github.com/benjaminsaljooghi/642fc730f4969ea5dba2d5cea360c04b
+Author: Benjamin Saljooghi
+Author-email: benjamin.saljooghi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+A small class for building strings and writing reports.
+
+
