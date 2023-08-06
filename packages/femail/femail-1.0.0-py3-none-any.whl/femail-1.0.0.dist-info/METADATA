@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: femail
+Version: 1.0.0
+Summary: The python (fe)Mail Client
+Home-page: UNKNOWN
+Author: CodewarsNL
+License: UNKNOWN
+Platform: Posix
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6.*
+Requires-Dist: requests
+Requires-Dist: jinja2
+
+UNKNOWN
+
+
