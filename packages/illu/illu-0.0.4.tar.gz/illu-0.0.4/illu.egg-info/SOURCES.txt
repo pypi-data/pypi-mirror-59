@@ -1,0 +1,7 @@
+README.md
+setup.py
+illu.egg-info/PKG-INFO
+illu.egg-info/SOURCES.txt
+illu.egg-info/dependency_links.txt
+illu.egg-info/top_level.txt
+sub/__init__.py
