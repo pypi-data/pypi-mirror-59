@@ -1,0 +1,3 @@
+[console_scripts]
+jno = jno.__main__:main
+
