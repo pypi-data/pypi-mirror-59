@@ -1,0 +1,32 @@
+{
+    "AUROC": [
+        "auroc",
+        "roc_auc_score"
+    ],
+    "AUPRC": [
+        "auprc",
+        "average_precision_score"
+    ],
+    "Accuracy": [
+        "acc",
+        "accuracy",
+        "accuracy_score"
+    ],
+    "Precision": [
+        "precision",
+        "precision_score"
+    ],
+    "Recall": [
+        "recall",
+        "recall_score"
+    ],
+    "Learning rate": [
+        "lr"
+    ],
+    "ReLU": [
+        "relu"
+    ],
+    "SeLU": [
+        "SeLU"
+    ]
+}
