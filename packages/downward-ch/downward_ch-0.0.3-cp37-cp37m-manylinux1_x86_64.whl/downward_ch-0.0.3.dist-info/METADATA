@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: downward-ch
+Version: 0.0.3
+Summary: downward_ch is the Fast-Downward Planning System (www.fast-downward.org) with Critical hop patches
+Home-page: UNKNOWN
+Author: Kuznetsov Andrey A.
+Author-email: andreykyz@gmail.com
+License: GNU General Public License Version 3
+Keywords: semantic planning pddl fast downward planner fast-downward domain-independent
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: C++
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Scientific/Engineering
+
+The Fast-Downward Planning System (www.fast-downward.org) with Critical hop patches by Andrey Gryaznov
+
+
