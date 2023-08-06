@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: yuzhuhwbubbler
+Version: 0.0.2
+Summary: A bubbler sort package
+Home-page: https://github.com/e0431421/bubblewangyuzhu
+Author: Yuzhu Wang
+Author-email: 15151843600@163.com
+License: UNKNOWN
+Description: ## Bubbler
+        This is a sample package to sort an array using bubble sort. 
+        
+        ## Usage
+        - Create Virtual Environment
+        ```sh
+        pip install virtualenv
+        virtualenv -p python3 .
+        source bin/activate
+        ```
+        - Install Package
+        ```sh
+        pip install yuzhuhwbubbler==0.0.1
+        ```
+        - Use as Module
+        ```py
+        from yuzhuhwbubbler import bubbleSort
+        
+        arr = [31, 2, 11, 23, 8, 7, 11,14,20]
+         
+        bubbleSort(arr)
+         
+        print ("sorted:")
+        for i in range(len(arr)):
+            print ("%d" %arr[i]),
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
