@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: acdh-django-filechecker
+Version: 0.0.1
+Summary: Django-App to store, edit, enrich and serialize the results of repo-file-checker
+Home-page: https://github.com/acdh-oeaw/acdh-django-filechecker
+Author: Peter Andorfer
+Author-email: peter.andorfer@oeaw.ac.at
+License: MIT License
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: acdh-django-archeutils (>=0.0.1)
+Requires-Dist: acdh-django-netvis (>=0.1.1)
+Requires-Dist: Django (>=3.0)
+Requires-Dist: django-mptt (>=0.10.0rdflib>=4.2.2)
+
+=============================
+acdh-django-filechecker
+=============================
+
+Django-App to store, edit, enrich and serialize the results of https://github.com/acdh-oeaw/repo-file-checker
+
+
+Quickstart
+----------
+
+Install acdh-django-filechecker:
+
+    pip install acdh-django-filechecker
+
+Add it to your `INSTALLED_APPS`:
+
+.. code-block:: python
+
+    INSTALLED_APPS = (
+        ...
+        'filechecker',
+        ...
+    )
+
+
+Update your project's urls.py:
+
+.. code-block:: python
+
+    urlpatterns = [
+        ...
+        url(r'^filechecker-rdf/', include('filechecker.fc_arche_urls', namespace='filechecker-rdf')),
+        url(r'^filechecker/', include('filechecker.urls', namespace='filechecker')),
+        ...
+      ]
+
+
