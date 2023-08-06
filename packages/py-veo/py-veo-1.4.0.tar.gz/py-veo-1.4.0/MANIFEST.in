@@ -1,0 +1,8 @@
+include veo/*.py
+include veo/*.c
+include veo/*.so
+include README.md
+include examples/Makefile
+recursive-include examples *.py
+recursive-include examples *.c
+recursive-include examples *.f90
