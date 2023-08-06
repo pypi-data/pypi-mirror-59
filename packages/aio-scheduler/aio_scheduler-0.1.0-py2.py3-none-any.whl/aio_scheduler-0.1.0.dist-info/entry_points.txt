@@ -1,0 +1,3 @@
+[console_scripts]
+aio_scheduler = aio_scheduler.cli:cli
+
