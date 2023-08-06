@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: papolarity
+Version: 0.0.3a2
+Summary: Papolarity is a tool to analyze polarity of transcriptomic alignments such as Ribo-seq and RNA-seq.
+Home-page: https://github.com/autosome-ru/papolarity
+Author: Ilya Vorontsov
+Author-email: vorontsov.i.e@gmail.com
+License: Papolarity is licensed under WTFPL, but if you prefer more standard licenses, feel free to treat it as MIT license
+Description: Papolarity is a tool to analyze polarity of transcriptomic alignments such as Ribo-seq and RNA-seq.
+Keywords: bioinformatics NGS coverage alignment polarity Ribo-seq RNA-seq
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7, <3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
