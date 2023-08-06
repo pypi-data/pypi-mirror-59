@@ -1,0 +1,8 @@
+graph_tensor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+graph_tensor/graph/__init__.py,sha256=31UR4uUDEuUdRgPH8f0n6B1qQTKhI48dShpx8mBpwDs,22
+graph_tensor/graph/atom.py,sha256=cXcgPnf6kkP6zpkiFksETJo2q2ng_Ry9HRZVccww3uM,2967
+graph_tensor-0.0.4.dist-info/LICENSE,sha256=JoTeFzAOCkNGhvHsf4r2BFIHpLRXo_4EsrnOZV58XVA,17098
+graph_tensor-0.0.4.dist-info/METADATA,sha256=bWeA-MYP2DuQ_jg2RZEICT698BUL18I3UN36a0c-Ecs,2518
+graph_tensor-0.0.4.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+graph_tensor-0.0.4.dist-info/top_level.txt,sha256=1TJgdxD-1Kw9a3o0y4mnsZMPhvvuMXQBY58afE-gEiU,13
+graph_tensor-0.0.4.dist-info/RECORD,,
