@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: coriander
+Version: 0.1.2
+Summary: A simple library for intent classification and named-entity recognition using templates.
+Home-page: UNKNOWN
+Author: Vyacheslav Rusov
+Author-email: odryfox@gmail.com
+License: BSD-3-Clause
+Project-URL: Code, https://github.com/odryfox/coriander
+Project-URL: Issue tracker, https://github.com/odryfox/coriander/issues
+Description: coriander
+        =========
+        
+        A simple library for intent classification and named-entity recognition using templates.
+        
+        .. image:: https://badge.fury.io/py/coriander.svg
+            :target: https://badge.fury.io/py/coriander
+        
+        .. image:: https://readthedocs.org/projects/coriander/badge/?version=latest
+            :target: https://coriander.readthedocs.io/en/latest/?badge=latest
+            :alt: Documentation Status
+        
+        .. image:: https://travis-ci.org/odryfox/coriander.svg?branch=master
+            :target: https://travis-ci.org/odryfox/coriander
+        
+        .. image:: https://coveralls.io/repos/github/odryfox/coriander/badge.svg?branch=master
+            :target: https://coveralls.io/github/odryfox/coriander?branch=master
+        
+        
+        Installing
+        ----------
+        
+        .. code-block:: text
+        
+            pip install coriander
+        
+Platform: UNKNOWN
+Provides-Extra: dev
+Provides-Extra: docs
