@@ -1,0 +1,4 @@
+neupy_core_base_assembly
+resources
+scripts
+src
