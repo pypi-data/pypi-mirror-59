@@ -1,0 +1,15 @@
+{% extends "aristotle_mdr_browse/base.html" %}
+{% load aristotle_tags aristotle_help util_tags %}
+
+{% block title %}Browsing metadata types under
+{% firstof app.create_page_name app.verbose_name %}
+{% endblock %}
+
+{% block breadcumbs %}
+    <li><a href="{% url 'browse_apps'  %}">Metadata browser</a></li>
+    <li class="active">{% firstof app.create_page_name app.verbose_name %}</li>
+{% endblock %}
+
+{% block object_list %}
+    {% include "aristotle_mdr_browse/helpers/app_list_table.html" with apps=object_list hide_app_head=True show_empty=True %}
+{% endblock %}

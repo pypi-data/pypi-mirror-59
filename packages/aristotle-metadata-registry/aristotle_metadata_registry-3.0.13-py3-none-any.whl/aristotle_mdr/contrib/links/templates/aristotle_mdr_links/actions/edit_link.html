@@ -1,0 +1,38 @@
+{% extends 'aristotle_mdr/base.html' %}
+{% load i18n util_tags %}
+{% load static from staticfiles %}
+{% load render_bundle from webpack_loader %}
+
+{% block title %}Edit link - {{link.root_item.name}}{% endblock %}
+
+{% block webpack_css_bundle %}
+  {% render_bundle 'wizard' 'css' %}
+{% endblock %}
+
+{% block webpack_bundle %}
+  {% render_bundle 'wizard' 'js' %}
+  {% render_bundle 'itemPage' 'js' %}
+{% endblock %}
+
+{% block content %}
+    {% assign link.root_item as item %}
+    <form method="post" action="">{% csrf_token %}
+        <div class="modal-body">
+            {% breadcrumb_list breadcrumbs %}
+
+            <h1>Edit link for item {{item.name}}</h1>
+            {% include 'aristotle_mdr_links/actions/helpers/edit_link_relation_help.html' %}
+
+            <div>
+                <div>
+                    {% include 'aristotle_mdr_links/actions/helpers/link_end_form.html' %}
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <a class="btn btn-default" href="{{ request.GET.next }}">Cancel</a>
+                <input type="submit" class="btn btn-primary" value="Save" />
+            </div>
+        </div>
+    </form>
+{% endblock %}
