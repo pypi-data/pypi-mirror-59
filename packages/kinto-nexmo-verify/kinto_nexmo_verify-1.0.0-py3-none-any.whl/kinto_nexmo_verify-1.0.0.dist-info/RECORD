@@ -1,0 +1,13 @@
+kinto_nexmo_verify/__init__.py,sha256=n5U4qlrWWKDAq_UppQdcT6hqCpT7xMbSXDuwKCm_Lk0,1650
+kinto_nexmo_verify/authentication.py,sha256=m3j-RSc8hWeEi8di2Ngft7GVrHOPjl3ybQLNFuIDN5g,3471
+kinto_nexmo_verify/conf.py,sha256=K5tFXsIEYw4oEY_79J2NJSF6E6yvDMdSCka89JSeUKo,186
+kinto_nexmo_verify/views.py,sha256=3PnlSEIjrXmzGICkLGAUfL5Kfz7MAFGLY9NW4mAj4m0,13225
+kinto_nexmo_verify/tests/__init__.py,sha256=5KKWY-XmHjYcv0K0XhpcY6vYaFib5SmMA2D-azbu_7w,1429
+kinto_nexmo_verify/tests/test_authentication.py,sha256=FZda0LPxQ-NX0vPgEqxwyCgO9KT5uZm_nivIjjil-DM,6285
+kinto_nexmo_verify/tests/test_includeme.py,sha256=nNEnlNIpBc49413ikkPiY0V2ShLWM1XmBlLxj4p1G-E,939
+kinto_nexmo_verify/tests/test_views.py,sha256=zLV_tnl2sqIZzbMvxsPsw983QmmtoWJdoR4nNRo_how,21039
+kinto_nexmo_verify-1.0.0.dist-info/LICENSE,sha256=fafOLSlAkFMOs5ebe2W3yYMeKvpd6mEnrEIOhpOdMqA,572
+kinto_nexmo_verify-1.0.0.dist-info/METADATA,sha256=PWs_8__4zM2piMHpf8t_BUTjMyiX9B6RSPUnMh-lW_M,4977
+kinto_nexmo_verify-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+kinto_nexmo_verify-1.0.0.dist-info/top_level.txt,sha256=EmTRCzCgD06Rf9U3H9riaD4wiJCfUsddWcBtiwi639E,19
+kinto_nexmo_verify-1.0.0.dist-info/RECORD,,
