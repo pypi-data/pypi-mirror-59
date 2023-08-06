@@ -1,0 +1,7 @@
+gitpython
+sqlalchemy
+sqlalchemy-utils
+matplotlib
+python-dateutil
+globber
+beautifultable
