@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "android-arsenal-notifier"
+version = "0.2.0"
+description = ""
+authors = ["flomk <sudogitrekt@gmail.com>"]
+keywords=['android-arsenal', 'py-terminal-notifier', 'terminal-notifier', 'android arsenal', 'android', 'arsenal']
+
+[tool.poetry.dependencies]
+python = "^3.7"
+py-terminal-notifier = "==0.1.0"
+requests = ">2.2-.0"
+selectolax = ">0.2.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+android-arsenal = 'android_arsenal_notifier.android_arsenal:main'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
