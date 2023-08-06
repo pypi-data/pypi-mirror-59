@@ -1,0 +1,16 @@
+azureml/__init__.py,sha256=n0xtZ3iWcoVg5Qognsb7InYAUVAK8s3iaVeHB5GOaNA,251
+azureml/designer/__init__.py,sha256=n0xtZ3iWcoVg5Qognsb7InYAUVAK8s3iaVeHB5GOaNA,251
+azureml/designer/modules/__init__.py,sha256=n0xtZ3iWcoVg5Qognsb7InYAUVAK8s3iaVeHB5GOaNA,251
+azureml/designer/modules/dataio/__init__.py,sha256=Pcz_GcwhmluaKTlKZ3kSdT9foYRlIusS68rHf0DaJ00,24
+azureml/designer/modules/dataio/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azureml/designer/modules/dataio/common/workspaceutil.py,sha256=jOvFSsjpiLEsp9pIlrPD7SpE8qqrzdRubdoEsGfRCRA,740
+azureml/designer/modules/dataio/export_module/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azureml/designer/modules/dataio/export_module/__main__.py,sha256=6Ea5PWNP2fw46aVA9W7qLBLUJfdBQVMMZ4V0lXg9aPg,7995
+azureml/designer/modules/dataio/import_module/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azureml/designer/modules/dataio/import_module/__main__.py,sha256=LfJwU4aOJp0XbkKaEXpdf0kFp3bJnX9xZMjTJwa6c_o,15782
+azureml_designer_dataio_modules-0.0.19.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+azureml_designer_dataio_modules-0.0.19.dist-info/METADATA,sha256=XInAlnUrqiI67ibn89dc_cOgfB4zgNfF3rULRsvZOn0,433
+azureml_designer_dataio_modules-0.0.19.dist-info/RECORD,,
+azureml_designer_dataio_modules-0.0.19.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+azureml_designer_dataio_modules-0.0.19.dist-info/metadata.json,sha256=HRGxhkIc-ekJC5PA-pEkhUKhS2k_6z0BeSafe4S8Ns0,571
+azureml_designer_dataio_modules-0.0.19.dist-info/top_level.txt,sha256=ZOeEa0TAXo6i5wOjwBoqfIGEuxOcKuscGgNSpizqREY,8
