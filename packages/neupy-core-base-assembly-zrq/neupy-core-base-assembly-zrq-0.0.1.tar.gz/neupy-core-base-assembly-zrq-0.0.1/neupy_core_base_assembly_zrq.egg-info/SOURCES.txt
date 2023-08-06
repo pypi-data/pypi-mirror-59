@@ -1,0 +1,10 @@
+README.md
+setup.py
+Mathematical_formula/Mean.py
+Mathematical_formula/Median.py
+Mathematical_formula/Variance.py
+Mathematical_formula/__init__.py
+neupy_core_base_assembly_zrq.egg-info/PKG-INFO
+neupy_core_base_assembly_zrq.egg-info/SOURCES.txt
+neupy_core_base_assembly_zrq.egg-info/dependency_links.txt
+neupy_core_base_assembly_zrq.egg-info/top_level.txt
