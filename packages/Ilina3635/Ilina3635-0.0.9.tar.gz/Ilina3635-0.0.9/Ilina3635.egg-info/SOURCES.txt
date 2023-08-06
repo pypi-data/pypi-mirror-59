@@ -1,0 +1,8 @@
+README.md
+setup.py
+Ilina3635.egg-info/PKG-INFO
+Ilina3635.egg-info/SOURCES.txt
+Ilina3635.egg-info/dependency_links.txt
+Ilina3635.egg-info/top_level.txt
+sub/__init__.py
+sub/main.py
