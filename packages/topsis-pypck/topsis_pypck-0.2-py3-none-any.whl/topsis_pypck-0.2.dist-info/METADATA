@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: topsis-pypck
+Version: 0.2
+Summary: Topsis implementation package
+Home-page: https://github.com/nishchaym/topsis_py
+Author: Nishchay Mahajan
+Author-email: nmahajan_be17@thapar.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+#Package for topsis
+
+Project 1 of course UCS633.
+
+Nishchay Mahajan
+COE 18
+101703377
+
+
