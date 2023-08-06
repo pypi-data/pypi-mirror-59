@@ -1,0 +1,8 @@
+README.md
+setup.py
+magic-auth/__init__.py
+magic_auth.egg-info/PKG-INFO
+magic_auth.egg-info/SOURCES.txt
+magic_auth.egg-info/dependency_links.txt
+magic_auth.egg-info/not-zip-safe
+magic_auth.egg-info/top_level.txt
