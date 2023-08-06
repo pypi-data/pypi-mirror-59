@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pyHydraulic
+Version: 1.0.1
+Summary: pyHydraulic using PyQt5
+Home-page: https://github.com/nanjing-institute-of-technology/pyHydraulic.git
+Author: Bruce Lee
+Author-email: lee@njit.edu.cn
+License: MIT license
+Keywords: pyHydraulic
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: PyQt5 (>=5.9)
+
+Readme
+======
+pyHydraulic using PyQt5, built by Bruce Lee in Nanjing institute of technology
+
+
+=======
+History
+=======
+
+1.0.0 (2020-01-01)
+------------------
+
+* First release as a library
+
+
