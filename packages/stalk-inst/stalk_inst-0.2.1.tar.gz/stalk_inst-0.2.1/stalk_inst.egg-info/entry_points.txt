@@ -1,0 +1,3 @@
+[console_scripts]
+stalk_inst = stalk_inst.core:main
+

@@ -1,0 +1,9 @@
+README.txt
+setup.py
+stalk_inst/__init__.py
+stalk_inst/core.py
+stalk_inst.egg-info/PKG-INFO
+stalk_inst.egg-info/SOURCES.txt
+stalk_inst.egg-info/dependency_links.txt
+stalk_inst.egg-info/entry_points.txt
+stalk_inst.egg-info/top_level.txt
