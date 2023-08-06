@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: ddcmaker
+Version: 0.0.27
+Summary: This is a package for Raspberry pie system of maker  
+Home-page: https://github.com/NocoldBob/robot
+Author: fastbiubiu
+Author-email: fastbiubiu@163.com
+License: UNKNOWN
+Platform: Linux
+Classifier: Topic :: System :: Operating System Kernels :: Linux
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3
+
+# ddcmaker
+
+#### 介绍
+ddcmaker开发专属库,为zsylmaker系列系统提供依赖的第三方库
+
+#### 软件安装 ->python3.5.2以上版本
+pip install ddcmaker
+
+
+
+#### 使用说明
+import ddcmaker
+
+#### 参与贡献
+
+1.快乐风男
+2.fastbiubiu
+3.奔跑的大猪
+
+####代码特性
+2020-01-18更新
+1.新增手动更新接口
+2.添加特别版本号
+3.修复部分AI模块参数异常的处理
+
+####特别寄语
+祝Matthew生日快乐！！！
+
