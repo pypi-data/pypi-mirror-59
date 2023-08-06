@@ -1,0 +1,16 @@
+README.md
+setup.py
+gym_togyzkumalak/__init__.py
+gym_togyzkumalak.egg-info/PKG-INFO
+gym_togyzkumalak.egg-info/SOURCES.txt
+gym_togyzkumalak.egg-info/dependency_links.txt
+gym_togyzkumalak.egg-info/requires.txt
+gym_togyzkumalak.egg-info/top_level.txt
+gym_togyzkumalak/envs/__init__.py
+gym_togyzkumalak/envs/togyzkumalak_discrete.py
+gym_togyzkumalak/envs/togyzkumalak_env.py
+gym_togyzkumalak/togyzkumalak/__init__.py
+gym_togyzkumalak/togyzkumalak/board.py
+gym_togyzkumalak/togyzkumalak/gamer.py
+gym_togyzkumalak/togyzkumalak/kazan.py
+gym_togyzkumalak/togyzkumalak/otau.py
