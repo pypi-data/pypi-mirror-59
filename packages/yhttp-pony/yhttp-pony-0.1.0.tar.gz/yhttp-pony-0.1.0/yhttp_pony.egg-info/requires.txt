@@ -1,0 +1,3 @@
+yhttp<2,>=1.4
+pony
+psycopg2
