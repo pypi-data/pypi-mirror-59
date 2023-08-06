@@ -1,0 +1,10 @@
+bbfcapi/__init__.py,sha256=d4QHYmS_30j0hPN8NmNPnQ_Z0TphDRbu4MtQj9cT9e8,22
+bbfcapi/apilib.py,sha256=oU0OV87czzIFRNHT0rOBSJZx3gaZX5VNS7gDKWI-uJk,283
+bbfcapi/apiweb.py,sha256=-wI1jflE3ceLyBeA_xgArdU78olL-1-3cBhvlL0pNVU,747
+bbfcapi/client.py,sha256=5Wt53f63FBJ1IQpbzvHUVQ3J170MXNOi2KhWKTxL9AQ,673
+bbfcapi/parser.py,sha256=bs08syDbWjcP8-rUUrW1DYFEUFvZzQGDFQ5awAFZqLw,756
+bbfcapi/types.py,sha256=HbVrRZb2Dvo3cZGhVTrVlISrTEa1yrSvZcUoHBUQrjw,382
+bbfcapi-1.0.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+bbfcapi-1.0.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+bbfcapi-1.0.1.dist-info/METADATA,sha256=ZY_5lH4t5ysQVeB-NcbVGr36YuDRF5cZc9yir8Mhg8I,3359
+bbfcapi-1.0.1.dist-info/RECORD,,
