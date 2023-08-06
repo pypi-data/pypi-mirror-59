@@ -1,0 +1,11 @@
+fulljson/__init__.py,sha256=8v7bC8jJB33CyAjkIjwvZEIH6jsDpRWCql37ZDP6c3E,1754
+fulljson/collections.py,sha256=jwIt9AdqlWYcKkNzX2aNpoeYw9TogP6G9DS-NlJ8iFM,2456
+fulljson/decoder.py,sha256=iwmfaDORBI4x-yTtkFw3U7LMiYF7LCwY84jksX1En9I,8829
+fulljson/encoder.py,sha256=8EN5pIGrDpZzsiaoHcfZofjh7fqtECr3gSy0t1J2X8E,4846
+fulljson/errors.py,sha256=y0HpKnQkwCKDnboITFXuXaRCURSODWL43rXFXAkPoUM,574
+fulljson/util.py,sha256=wMYIXb-NdfYEPiiCkD1KE_-ds6LrwEbafL2diYg-B24,4428
+fulljson-0.0.53.dist-info/LICENSE,sha256=WI5JtXXhjcqnIcPllDA1ZtuxNnZ515xjElcILo7z28o,1073
+fulljson-0.0.53.dist-info/METADATA,sha256=Ao4wWfYa4osnpXW2CPz74MK0Cce2ffNaYTPWaz0qskc,3682
+fulljson-0.0.53.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+fulljson-0.0.53.dist-info/top_level.txt,sha256=68VwwcXSMD_kKBwfScOr3uEVGj-7peSm-mQvZq4h9ew,9
+fulljson-0.0.53.dist-info/RECORD,,
