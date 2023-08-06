@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: modelarchive
+Version: 0.0.1.dev7
+Summary: UNKNOWN
+Home-page: https://github.com/seung-lab/modelarchive
+Author: Barak Nehoran
+Author-email: bnehoran@users.noreply.github.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: torch (>=0.4.1)
+Requires-Dist: torchvision
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: h5py
+Requires-Dist: argcomplete
+Requires-Dist: pandas
+Requires-Dist: setuptools
+Requires-Dist: pyyaml
+
+# ModelArchive
+A machine learning package for bundling a trained [PyTorch](https://github.com/pytorch/pytorch) model in an archive directory along with its architecture description, training state, and training history.
+
+See [seung-lab/SEAMLeSS#12](https://github.com/seung-lab/SEAMLeSS/pull/12) and this [overview](https://docs.google.com/presentation/d/105s13_n_K4JCpH3zp_N31uAJEdUVIBevGiMysdVAB9M/edit?usp=sharing) for more details.
+
+Note that this package is experimental and under development.
+
+
+
