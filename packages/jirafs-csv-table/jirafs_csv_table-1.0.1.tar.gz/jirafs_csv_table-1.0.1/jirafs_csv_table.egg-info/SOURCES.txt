@@ -1,0 +1,11 @@
+MANIFEST.in
+readme.rst
+requirements.txt
+setup.py
+jirafs_csv_table/__init__.py
+jirafs_csv_table/plugin.py
+jirafs_csv_table.egg-info/PKG-INFO
+jirafs_csv_table.egg-info/SOURCES.txt
+jirafs_csv_table.egg-info/dependency_links.txt
+jirafs_csv_table.egg-info/entry_points.txt
+jirafs_csv_table.egg-info/top_level.txt

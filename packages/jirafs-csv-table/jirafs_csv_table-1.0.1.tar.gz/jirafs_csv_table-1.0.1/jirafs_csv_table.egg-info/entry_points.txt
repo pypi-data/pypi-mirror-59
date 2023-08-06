@@ -1,0 +1,3 @@
+[jirafs_plugins]
+csv_table = jirafs_csv_table.plugin:Plugin
+
