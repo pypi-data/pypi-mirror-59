@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pip_readme.md
+setup.cfg
+setup.py
+g4epy/__init__.py
+g4epy/console_run_sink.py
+g4epy/g4e.py
+g4epy/notebook_run_sink.py
+g4epy/runner.py
+g4epy/test_env.py
+g4epy/version.py
+g4epy.egg-info/PKG-INFO
+g4epy.egg-info/SOURCES.txt
+g4epy.egg-info/dependency_links.txt
+g4epy.egg-info/top_level.txt

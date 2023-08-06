@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: g4epy
+Version: 0.0.1
+Summary: Geant4Eic api and control through python
+Home-page: https://gitlab.com/jlab-eic/g4e
+Author: Dmitry Romanov
+Author-email: romanov@jlab.org
+License: MIT
+Description: # g4epy
+        
+        Geant4Eic python configuration wrapping
+        
+        https://gitlab.com/jlab-eic/g4e
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
