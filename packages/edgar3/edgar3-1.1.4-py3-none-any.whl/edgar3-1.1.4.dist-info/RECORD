@@ -1,0 +1,9 @@
+edgar3/__init__.py,sha256=TZp7WuoeAsLODA0imYCrH9oZ_dsSyvniWwbCQQE7yVc,38
+edgar3/edgar.py,sha256=AAExWkdtl6Tg5VWMElrnIJWPI5MEPIhElfdXU-F8bDQ,520
+edgar3/edgar_index.py,sha256=4C831r9Oe5HFL4j7XarrN1Z3SRrdPt9xQryae6Uozfo,7456
+edgar3/filing.py,sha256=hFoOPOxLHsQ2AMD1GBf3LMC6vGDQeNcdZm8WCMzMCiQ,1626
+edgar3/filing_13f.py,sha256=QXxYcB-1KQABF9AUpKyVKSFzeBIfxlkjOxjREDbgAOc,3445
+edgar3-1.1.4.dist-info/LICENSE,sha256=zsE1DJ_bz_WKVAi0wrKYwVMwlqO5ezIBCwaYPT_W2Jw,1094
+edgar3-1.1.4.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+edgar3-1.1.4.dist-info/METADATA,sha256=c_EUj8LucGJZpU-7yO4rG7aSKB-fLPjBXz845Tz25q8,386
+edgar3-1.1.4.dist-info/RECORD,,
