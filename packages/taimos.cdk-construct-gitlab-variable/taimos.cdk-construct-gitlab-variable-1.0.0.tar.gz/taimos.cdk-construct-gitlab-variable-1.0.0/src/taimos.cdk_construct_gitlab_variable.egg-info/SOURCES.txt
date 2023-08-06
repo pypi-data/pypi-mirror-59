@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/taimos.cdk_construct_gitlab_variable.egg-info/PKG-INFO
+src/taimos.cdk_construct_gitlab_variable.egg-info/SOURCES.txt
+src/taimos.cdk_construct_gitlab_variable.egg-info/dependency_links.txt
+src/taimos.cdk_construct_gitlab_variable.egg-info/requires.txt
+src/taimos.cdk_construct_gitlab_variable.egg-info/top_level.txt
+src/taimos/cdk_construct_gitlab_variable/__init__.py
+src/taimos/cdk_construct_gitlab_variable/py.typed
+src/taimos/cdk_construct_gitlab_variable/_jsii/__init__.py
+src/taimos/cdk_construct_gitlab_variable/_jsii/cdk-construct-gitlab-variable@1.0.0.jsii.tgz
