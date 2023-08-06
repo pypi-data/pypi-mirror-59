@@ -1,0 +1,14 @@
+pysam
+numpy
+pandas
+venn
+sklearn
+seaborn
+scikit-learn
+rpy2
+rpy2-bioconductor-extensions
+pysam
+jupyter
+gseapy
+bokeh
+igv

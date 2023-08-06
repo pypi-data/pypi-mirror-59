@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: JKBio
+Version: 1.0
+Summary: A useful module for any CompBio
+Home-page: https://github.com/jkobject/JKBio
+Author: Jeremie Kalfon
+Author-email: jkobject@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
