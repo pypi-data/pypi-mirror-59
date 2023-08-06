@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: crispy-models
+Version: 0.1.13
+Summary: Shared code for CRISPy web service
+Home-page: https://github.com/secondarymetabolites/crispy-models/
+Author: Kai Blin
+Author-email: kblin@biosustain.dtu.dk
+License: GNU Affero General Public License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: packaging
+Requires-Dist: twine ; extra == 'packaging'
+Provides-Extra: testing
+Requires-Dist: mockredispy-kblin ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+Data models for the CRISPy web service
+======================================
+
+Redis data models for the CRISPy web service.
+
+These are shared between the web API and the serivce workers.
+
+License
+-------
+This code is released under the GNU Affero General Public license.
+See [`LICENSE.txt`](LICENSE.txt) for details.
+
+
