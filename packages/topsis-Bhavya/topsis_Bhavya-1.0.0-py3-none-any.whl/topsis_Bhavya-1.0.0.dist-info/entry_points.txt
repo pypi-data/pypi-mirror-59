@@ -1,0 +1,3 @@
+[console_scripts]
+topsisB = TOPSIS_package.cli:main
+
