@@ -1,0 +1,4 @@
+[console_scripts]
+hashcat = hashcat.cli:main
+pp64 = hashcat.cli:pp
+
