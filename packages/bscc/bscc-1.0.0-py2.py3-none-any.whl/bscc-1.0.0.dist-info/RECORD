@@ -1,0 +1,10 @@
+bscc/__init__.py,sha256=0WXRa_wecpkxAExeD2e94fU78oWj6H53-7uqvQu8aL8,418
+bscc/package_data.dat,sha256=INlcQA1grNRYi6XRbv8SH7zXMaOww_5I4xoVjwdpYGY,22
+bscc/shipwright.py,sha256=CVcULGfQNR4Rca2lzdx8EdvMVZS5EKcDbNuaGPqLUsI,1403
+bscc-1.0.0.data/data/my_data/data_file,sha256=EweZDmulyhRes16ZGCqb7EZTG8VN32VqYCx4D6AkDe4,9
+bscc-1.0.0.dist-info/LICENSE.txt,sha256=y_twVCzmayrgUBeyTQIQBGXp-a_xCktf9ejx9ZbtOZQ,1095
+bscc-1.0.0.dist-info/METADATA,sha256=4K80_iWrU4GlYgoi1G5SKG0b3IE4Zaxa8Riaqt1PKKI,3900
+bscc-1.0.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+bscc-1.0.0.dist-info/entry_points.txt,sha256=6Owhcz_DCSPYnxyucXQ-4E840U9lLlfiOTeJb9lvC9U,142
+bscc-1.0.0.dist-info/top_level.txt,sha256=L1F63lZiw8BlH3WQtCqFZI2n5Zf2J52rHzstZuX5DoE,5
+bscc-1.0.0.dist-info/RECORD,,
