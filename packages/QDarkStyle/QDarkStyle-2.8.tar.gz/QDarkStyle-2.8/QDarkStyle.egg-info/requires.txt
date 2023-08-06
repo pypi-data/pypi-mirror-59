@@ -1,0 +1,14 @@
+helpdev>=0.6.2
+qtpy>=1.7
+
+[develop]
+qtsass
+watchdog
+
+[docs]
+sphinx
+sphinx_rtd_theme
+
+[example]
+pyqt5
+pyside2
