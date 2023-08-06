@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Topsis_Ranker.egg-info/PKG-INFO
+Topsis_Ranker.egg-info/SOURCES.txt
+Topsis_Ranker.egg-info/dependency_links.txt
+Topsis_Ranker.egg-info/entry_points.txt
+Topsis_Ranker.egg-info/requires.txt
+Topsis_Ranker.egg-info/top_level.txt
+topsis/TOPSIS3410.py
