@@ -1,0 +1,11 @@
+gpam_training/__init__.py,sha256=o4UyDOm-2qViQ6F-qOu2cDwFMeS-2cWu1Mulr6fS88U,251
+gpam_training/cnn_pecas_model.py,sha256=HfzU3Tt66rSZtwECvTSsA0wf34LpYrzYnSPWHvGzOlE,2966
+gpam_training/dataframe_preprocessing.py,sha256=mTBrxMMUGbDdgGRcEEibahMuU8ReMrUU1HMQe_wTYks,9360
+gpam_training/metrics.py,sha256=3WsLg0wDarCh2X59AnxThGtfRtUVq2y5CmHEXODlE78,3221
+gpam_training/multilabel_training.py,sha256=T9TXSuQ_yYNO3VuCUJtlHw1nUN0Cx0xfUZr2rm_0rFQ,6609
+gpam_training/utils.py,sha256=zqlFkogBe0aZLCgiMVEdtNDFrCzllk4udqLqgJj37ZA,3216
+gpam_training/default_vocab/vocab_112_bag.pk,sha256=ix57OlyQoqbGwYgZOiZpnU7sqtv5mVaPpWZL_WIpCZM,1966714
+gpam_training-0.0.7.dist-info/LICENSE,sha256=ieEKJ-VczfHpbzAARBk5cBwN-Qfu4_jjKLNpnH1JyAg,9161
+gpam_training-0.0.7.dist-info/WHEEL,sha256=BO4rLihzJxX3WFgRFhCLEiuIEjpUSRh92PQXyB9DXS0,99
+gpam_training-0.0.7.dist-info/METADATA,sha256=Dfj-NkwvQbZLCBDzgzjMUVeFL-DG1kVE0neJ6hB4_R4,1351
+gpam_training-0.0.7.dist-info/RECORD,,
