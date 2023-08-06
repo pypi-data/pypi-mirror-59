@@ -1,0 +1,9 @@
+trainable_initial_state_rnn/__init__.py,sha256=jYYzPkwQuTgO3d2ceUwZppprhA7332b77-qz7SC-Y4A,471
+trainable_initial_state_rnn/_trainable_initial_state_rnn.py,sha256=XdO81KxZ7n6hkiC-5U4HPfTvyrZWIAJjwuESuRAXzf0,7693
+trainable_initial_state_rnn/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trainable_initial_state_rnn/utils/keras.py,sha256=lwlpuTXia31kIWGmLLX29dzqp4zl-x8qgV_Y6c7_QKg,498
+trainable_initial_state_rnn-0.0.1.dist-info/LICENSE,sha256=4xDDIlOQGudEZeyj13Mh8TFazktrdqJ-DVrhIRAAONY,11386
+trainable_initial_state_rnn-0.0.1.dist-info/METADATA,sha256=cpSmzo4YLivb23qd2-v4l99dTd4rVKpo3vDXSnJu8bE,5289
+trainable_initial_state_rnn-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+trainable_initial_state_rnn-0.0.1.dist-info/top_level.txt,sha256=tu9Fd9v44Y_4jVtvPTmyllscI4lR4vektIAFngoKukA,28
+trainable_initial_state_rnn-0.0.1.dist-info/RECORD,,
