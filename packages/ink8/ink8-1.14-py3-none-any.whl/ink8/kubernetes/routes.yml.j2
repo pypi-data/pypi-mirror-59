@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: api-routes
+  annotations:
+    ingress.kubernetes.io/force-ssl-redirect: "true"
+spec:
+  rules:
+  {% for service in services %}
+  - http:
+      paths:
+      - path: {{ service.path }}
+        backend:
+          serviceName: {{ service.name }}
+          servicePort: 8080
+  {% endfor %}
