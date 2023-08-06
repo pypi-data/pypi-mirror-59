@@ -1,0 +1,15 @@
+ipyannotations/__init__.py,sha256=Vptktl6-ZFnJnu34awcIgcI5K0YotnTNH4vylg2it_k,168
+ipyannotations/images/__init__.py,sha256=5-iBMYPcWdFGYtO7C6prgiZojhIXN_MZXxEGp4FioXY,159
+ipyannotations/images/annotator.py,sha256=PxcM3cwsNjZ0UKWfpl8lygwqip1OzI3-oz82RMwMugc,13313
+ipyannotations/images/canvases/__init__.py,sha256=MIY8qjpxxToTSmsEChAti0mbwXKW2rA7GY_3i5ykWSM,280
+ipyannotations/images/canvases/_abstract.py,sha256=W9vCmIUoxcyQw_xWGb-gLQR12uYKaTtIhmn16UmU9mc,4603
+ipyannotations/images/canvases/color_utils.py,sha256=LaZdLl9nc1Bq6AP4YmvXpWOREPlDhjHEEEFz0TfYPSk,775
+ipyannotations/images/canvases/image_utils.py,sha256=HviFAf3eUHAyExGNgyLkXhuQU5OwseH9bYcSoW5SZRg,622
+ipyannotations/images/canvases/point.py,sha256=sIwLtp9DOWRD_v541gPe6_n7PuAC0UYmy81BfwM9BRg,2599
+ipyannotations/images/canvases/polygon.py,sha256=pOlgf7ODPSnBnb-wxA51OlBWbS_5ILPrlUVjoNmo1uA,5253
+ipyannotations/images/canvases/shapes.py,sha256=kP2hkY9-e_3fCqHCHwrmHvo4c82svIipqh_jw0j9PAM,2288
+ipyannotations/images/canvases/utils.py,sha256=N8fafIwNwdl06rIJHHjOMqu3BIebPgNpAOZGzFxYWHo,3249
+ipyannotations-0.1.1.dist-info/LICENSE,sha256=nGjMG70-oN5oJimtK_DE_6ubadGmbqiFn3nyQJi25ks,1079
+ipyannotations-0.1.1.dist-info/WHEEL,sha256=W0C0r2jfBMZdb75jfiTB1qBj15B4vwTGGZrLTh2uslc,81
+ipyannotations-0.1.1.dist-info/METADATA,sha256=p3uXu0laBq_cs0I2plWjj8SsfFztWqjlGodKlA3K49Y,1122
+ipyannotations-0.1.1.dist-info/RECORD,,

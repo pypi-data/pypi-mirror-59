@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ipyannotations
+Version: 0.1.1
+Summary: Annotate data in jupyter notebooks.
+Home-page: https://github.com/janfreyberg/ipyannotate
+License: UNKNOWN
+Author: Jan Freyberg
+Author-email: jan.freyberg@gmail.com
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: ipywidgets
+Requires-Dist: ipycanvas
+Requires-Dist: palettable
+Requires-Dist: Pillow
+Requires-Dist: numpy
+Requires-Dist: dataclasses; python_version == '3.6'
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: jupyterlab ; extra == "dev"
+Requires-Dist: rope ; extra == "dev"
+Requires-Dist: sphinx>=2.3 ; extra == "doc"
+Requires-Dist: m2r ; extra == "doc"
+Requires-Dist: sphinx_rtd_theme ; extra == "doc"
+Requires-Dist: nbsphinx ; extra == "doc"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: coverage ; extra == "test"
+Requires-Dist: coveralls ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: hypothesis ; extra == "test"
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
