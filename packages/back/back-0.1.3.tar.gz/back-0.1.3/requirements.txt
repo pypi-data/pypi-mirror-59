@@ -1,0 +1,10 @@
+torch
+torchvision
+tensorboard
+pandas
+pillow
+tqdm
+jpeg4py
+scikit-learn==0.21.1
+albumentations
+future==0.17.1
