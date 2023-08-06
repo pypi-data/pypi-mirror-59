@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/magnet/__init__.py
+src/magnet/datastructs.py
+src/magnet/engine.py
+src/magnet/parser.py
+src/magnet/replacer.py
+src/magnet/snowflake.py
+src/magnet4c.egg-info/PKG-INFO
+src/magnet4c.egg-info/SOURCES.txt
+src/magnet4c.egg-info/dependency_links.txt
+src/magnet4c.egg-info/requires.txt
+src/magnet4c.egg-info/top_level.txt

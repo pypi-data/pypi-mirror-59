@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: magnet4c
+Version: 0.0.2
+Summary: Corpora operator for multiple file formats.
+Home-page: http://at.senhacore.xyz:3000/huang825172/Magnet
+Author: huang825172
+Author-email: 1048035187@qq.com
+License: UNKNOWN
+Description: # Magnet
+        
+        多文件格式语料操作库。
+        
+        [详细文档：magnet.md](docs/magnet.md)
+Keywords: corpora parallel file extract replace
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
