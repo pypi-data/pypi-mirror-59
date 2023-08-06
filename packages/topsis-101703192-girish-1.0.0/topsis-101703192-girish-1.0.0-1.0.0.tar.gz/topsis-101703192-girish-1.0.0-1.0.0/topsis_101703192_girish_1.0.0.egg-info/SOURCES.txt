@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+topsis_101703192_girish_1.0.0.egg-info/PKG-INFO
+topsis_101703192_girish_1.0.0.egg-info/SOURCES.txt
+topsis_101703192_girish_1.0.0.egg-info/dependency_links.txt
+topsis_101703192_girish_1.0.0.egg-info/entry_points.txt
+topsis_101703192_girish_1.0.0.egg-info/requires.txt
+topsis_101703192_girish_1.0.0.egg-info/top_level.txt
+topsis_python/topsis.py
