@@ -1,0 +1,15 @@
+AUTHORS.txt
+LICENSE
+MANIFEST.in
+Pipfile
+Pipfile.lock
+README.md
+__init__.py
+mallu.py
+model.py
+santa.py
+setup.py
+mallu.egg-info/PKG-INFO
+mallu.egg-info/SOURCES.txt
+mallu.egg-info/dependency_links.txt
+mallu.egg-info/top_level.txt

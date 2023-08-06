@@ -1,0 +1,6 @@
+include *.in
+include *.lock
+include *.py
+include *.txt
+include LICENSE
+include Pipfile
