@@ -1,0 +1,7 @@
+gpugrap/__init__.py,sha256=hwy1pm6ZUshKZJjV9mot1joHqQnTXVlrkUw-kuDSgdI,50
+gpugrap/get_idle.py,sha256=jUQKIKc8UbY96XKtE-yp50emV-xMnSDeFG2NxQq_bH8,590
+gpugrap/gpuinfo.py,sha256=I2m2HOhmwItk7jDOk2f0jbUiYQkEfEqdR4rMI0_HOg8,291
+gpugrap-0.1.0.dist-info/METADATA,sha256=FcDf1bFvXK_VztTYcR57kJHP2xOA_xm_zC8IqCtmFOs,351
+gpugrap-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+gpugrap-0.1.0.dist-info/top_level.txt,sha256=KIYIwvQCv8RzlNmsw_S7BZr1e7gLJwVmLry-tU_1xaw,8
+gpugrap-0.1.0.dist-info/RECORD,,
