@@ -1,0 +1,11 @@
+README.md
+setup.py
+pywand/__init__.py
+pywand/wandid.py
+pywand/wandreader.py
+pywand.egg-info/PKG-INFO
+pywand.egg-info/SOURCES.txt
+pywand.egg-info/dependency_links.txt
+pywand.egg-info/top_level.txt
+scripts/wands_print_code.py
+scripts/wands_print_name.py
