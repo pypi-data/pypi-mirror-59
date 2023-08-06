@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: gevent-socketio-py3
+Version: 1.0.0
+Summary: SocketIO server based on the Gevent pywsgi server, a Python network library for Python 3
+Home-page: https://github.com/henokalem/gevent-socketio-py3
+Author: Henok Alem
+Author-email: alemaye3@gmai.com
+Maintainer: Henok Alem
+Maintainer-email: alemaye3@gmail.com
+License: BSD
+Download-URL: https://github.com/henokalem/gevent-socketio-py3
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Requires-Dist: gevent (>=1.1rc5)
+Requires-Dist: gevent-websocket
+Requires-Dist: six
+
+UNKNOWN
+
+
