@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: melodiam
+Version: 0.1.0
+Summary: Melodiam - async, 100% tested and type-annotated Spotify Web API wrapper.
+Home-page: https://gitlab.com/harry.sky.vortex/melodiam
+Author: Igor Nehoroshev
+Author-email: mail@neigor.me
+License: MIT License
+Description: Melodiam
+        ========
+        
+        **Melodiam** is a backend for getting data from **Spotify Web API** in real-time.
+        
+        Python 3.7+ required because of use of `dataclasses`.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: lint
+Provides-Extra: test
