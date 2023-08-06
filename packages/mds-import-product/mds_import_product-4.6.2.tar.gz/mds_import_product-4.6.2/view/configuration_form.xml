@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<form col="2">
+    <label name="prodcat"/>
+    <field name="prodcat"/>
+    <label name="attribute_set"/>
+    <field name="attribute_set"/>
+</form>
