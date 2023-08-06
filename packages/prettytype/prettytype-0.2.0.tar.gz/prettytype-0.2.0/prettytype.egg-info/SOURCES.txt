@@ -1,0 +1,7 @@
+README.rst
+setup.py
+prettytype/__init__.py
+prettytype.egg-info/PKG-INFO
+prettytype.egg-info/SOURCES.txt
+prettytype.egg-info/dependency_links.txt
+prettytype.egg-info/top_level.txt
