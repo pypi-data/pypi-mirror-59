@@ -1,0 +1,13 @@
+compress-pickle
+numpy
+pandas
+tqdm
+ucsc-genomes-downloader
+dict_hash
+
+[test]
+validate_version_code
+codacy-coverage
+pytest-cov
+coveralls
+pytest
