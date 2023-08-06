@@ -1,0 +1,21 @@
+endpoints:
+  frac_schedules:
+    enabled: true
+    model: api.models.FracSchedule
+    ignore_unkown: true
+    mappings:
+      aliases:
+        company: operator
+        well_api: api14
+        well_name: wellname
+        frac_start_date: frac_start_date
+        frac_end_date: frac_end_date
+        surface_lat: shllat
+        surface_long: shllon
+        bottomhole_lat: bhllat
+        bottomhole_long: bhllon
+        tvd: tvd
+        target_formation: target_formation
+      dates:
+        - frac_start_date
+        - frac_end_date
