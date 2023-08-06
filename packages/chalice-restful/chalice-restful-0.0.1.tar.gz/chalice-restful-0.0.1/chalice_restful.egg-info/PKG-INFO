@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: chalice-restful
+Version: 0.0.1
+Summary: Provides a more structured way of writing RESTful APIs with Chalice.
+Home-page: https://github.com/JoshuaLight/chalice-restful
+Author: Joshua Light
+Author-email: j.light.developer@gmail.com
+License: MIT
+Description: # Chalice-RESTful
+        
+        Chalice-RESTful provides a more structured way of writing [Chalice](https://github.com/aws/chalice) APIs.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
