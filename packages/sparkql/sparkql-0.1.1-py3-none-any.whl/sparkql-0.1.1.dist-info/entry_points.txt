@@ -1,0 +1,7 @@
+[console_scripts]
+lint=tasks:lint
+reformat=tasks:reformat
+test=tasks:test
+typecheck=tasks:typecheck
+verify-all=tasks:verify_all
+
