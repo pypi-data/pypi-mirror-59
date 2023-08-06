@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pyencrypt-plus
+Version: 1.0.0
+Summary: This is a powerful and simple Python encryption library.
+Home-page: https://github.com/cloudoptlab/pyencrypt-plus
+Author: Cloudopt
+Author-email: support@cloudopt.net
+License: Apache-2.0
+Description: This is a powerful and simple Python encryption library.https://github.com/cloudoptlab/pyencrypt-plus
+Keywords: pip,encrypt,rsa,aes,md5,base64
+Platform: any
