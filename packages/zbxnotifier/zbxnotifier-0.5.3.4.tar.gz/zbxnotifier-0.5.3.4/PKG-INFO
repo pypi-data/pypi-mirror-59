@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: zbxnotifier
+Version: 0.5.3.4
+Summary: Simple Zabbix Notifier Desktop Application
+Home-page: https://github.com/inframates/zbxnotifier
+Author: Daniel Kovacs
+Author-email: kovacsdanielhun@gmail.com
+License: gpl-3.0
+Download-URL: https://github.com/inframates/zbxnotifier/archive/0.5.3.4.tar.gz
+Description: UNKNOWN
+Keywords: Zabbix,desktop,monitoring
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Monitoring
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
