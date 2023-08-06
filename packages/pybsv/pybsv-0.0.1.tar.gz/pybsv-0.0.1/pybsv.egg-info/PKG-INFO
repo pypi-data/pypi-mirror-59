@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pybsv
+Version: 0.0.1
+Summary: An easy to use Python BSV client.
+Home-page: http://github.com/jannainm/pybsv
+Author: jannainm
+Author-email: jannainm@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

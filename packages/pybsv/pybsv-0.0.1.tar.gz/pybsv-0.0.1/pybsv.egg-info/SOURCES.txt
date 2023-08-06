@@ -1,0 +1,9 @@
+README.md
+setup.py
+pybsv/__init__.py
+pybsv.egg-info/PKG-INFO
+pybsv.egg-info/SOURCES.txt
+pybsv.egg-info/dependency_links.txt
+pybsv.egg-info/not-zip-safe
+pybsv.egg-info/requires.txt
+pybsv.egg-info/top_level.txt
