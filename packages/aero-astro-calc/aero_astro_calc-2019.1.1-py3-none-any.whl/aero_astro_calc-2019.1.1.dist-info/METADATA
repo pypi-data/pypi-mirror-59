@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aero-astro-calc
+Version: 2019.1.1
+Summary: A small python library with functions to assist engineers.
+Home-page: https://gitlab.com/MisterBiggs/aero-astro-calc
+Author: Anson Biggs
+Author-email: anson@ansonbiggs.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Aero-Astro-Calc
+
+A small python library with functions to assist engineers.
+
+
