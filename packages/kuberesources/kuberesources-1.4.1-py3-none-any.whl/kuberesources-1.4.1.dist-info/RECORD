@@ -1,0 +1,10 @@
+kuberesources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kuberesources/__main__.py,sha256=_ElWX0oJrow4YRtZEMcoVwjDUcDtg-VmqHv1MphOA-k,790
+kuberesources/entities.py,sha256=i4CMj9-wmtJoCVi7E4xvMWALORoxgGGoA2azLZKB3TE,6367
+kuberesources/helpers.py,sha256=rBG9aBrpC-pGHc3sDgZhvXxlPdkHdWqhJU9gKPCx_9I,1812
+kuberesources-1.4.1.dist-info/LICENSE,sha256=na8WshzEDEdUNYQ08tj_c1g_M41RcxJbyVUQL-YTepE,1066
+kuberesources-1.4.1.dist-info/METADATA,sha256=xa6gGCSrmdbMsMDPNHEPIm2ewl_L57IhUDJON2E4y2M,1425
+kuberesources-1.4.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+kuberesources-1.4.1.dist-info/entry_points.txt,sha256=NT3_3Sv7FNcZSu97iUMJDjR65bK62L-1cwavS0FDzpU,60
+kuberesources-1.4.1.dist-info/top_level.txt,sha256=xFf3XO303k1GhOZfj5ucgff9msrVLYQCZqwD5ONFl_Y,14
+kuberesources-1.4.1.dist-info/RECORD,,

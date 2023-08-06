@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: kuberesources
+Version: 1.4.1
+Summary: Simple utility for getting an overview of set requests and limits in a kubernetes cluster
+Home-page: https://github.com/frodehus/kuberesources
+Author: Frode Hus
+Author-email: frode.hus@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: kubernetes (>=11.0.0b2)
+Requires-Dist: pick
+Requires-Dist: adal
+Requires-Dist: colorama
+
+## Installation
+Install using `pip3 install kuberesources`
+
+# Description
+
+Utility for retrieving the status of resource requests across nodes in a Kubernetes cluster.  
+Useful for planning capacity.
+
+`kresources` gives an overview of the reserved capacity for each node as well as total for the cluster  
+`kresources -v` lists pods' resource requests on each node, as well. 
+
+## Sample output
+![sample output](images/sample.png)
+
+
+## Known issues
+If using Azure AD as authentication, you might run into errors where it fails to authenticate.
+
+Since this script merely loads your kubeconfig, it doesn't do any token refresh or anything like that - so, if when this problem pops up you can just issue a `kubectl <something>` command against your cluster and the tokens should be refreshed and the script can run.
+
+
