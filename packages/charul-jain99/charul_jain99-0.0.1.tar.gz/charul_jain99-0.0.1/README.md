@@ -1,0 +1,1 @@
+This is a simple  package. You can use it when you want to implement topsis directly. 
