@@ -1,0 +1,32 @@
+{
+  "engineType": "Generic",
+  "userStandalone": false,
+  "language": "Python",
+  "name": "CsvLoader",
+  "label": "Csv Loader",
+  "program": "csv_loader.py",
+  "componentClass": "CsvLoader",
+  "group": "Connectors",
+  "useMLOps": false,
+  "includeGlobPatterns" : "__init__.py | csv_loader*",
+  "inputInfo": [],
+  "outputInfo": [
+    {
+        "description": "Pandas DataFrame",
+        "label": "DatFrame[Pandas]",
+        "defaultComponent": "",
+        "type": "pd.dataframe",
+        "group": "data"
+    }
+  ],
+  "arguments": [
+    {
+      "key": "path",
+      "type": "str",
+      "label": "CSV File Path",
+      "description": "Full file path to csv file",
+      "optional": true
+    }
+  ],
+  "version": 1
+}
