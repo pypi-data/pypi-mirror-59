@@ -1,0 +1,10 @@
+README.rst
+setup.py
+pacswg/__init__.py
+pacswg/timer.py
+pacswg/wg.py
+pacswg.egg-info/PKG-INFO
+pacswg.egg-info/SOURCES.txt
+pacswg.egg-info/dependency_links.txt
+pacswg.egg-info/requires.txt
+pacswg.egg-info/top_level.txt
