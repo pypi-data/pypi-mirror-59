@@ -1,0 +1,8 @@
+README.md
+setup.py
+snoweve/__init__.py
+snoweve/snoweve.py
+snoweve.egg-info/PKG-INFO
+snoweve.egg-info/SOURCES.txt
+snoweve.egg-info/dependency_links.txt
+snoweve.egg-info/top_level.txt
