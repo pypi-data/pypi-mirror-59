@@ -1,0 +1,17 @@
+fastapi_utils/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+fastapi_utils/api_model.py,sha256=5rlAzyv6P2lTTb7U59q-_p46rlRM5LeGXWz5YyksHTs,363
+fastapi_utils/api_settings.py,sha256=aOd9bUqOpTYL9cdigfsksjwJ1Sh7GEDswq5zjQyUC0A,1153
+fastapi_utils/camelcase.py,sha256=PZdF7dAEU3u8gHhkeetcZ0WHMdnlzZYDBu57xmxOLSg,529
+fastapi_utils/cbv.py,sha256=LzN6G0ENeKpkXU9C2dXGRqt_QWFJIdEJ8DaVCxQWwnQ,3061
+fastapi_utils/enums.py,sha256=pUXhGnMBx_mbJ5bje3uR5rFzbbskTg3dL2ESjIz8CNs,837
+fastapi_utils/guid_type.py,sha256=2qW15e_fzaZN4g87Gd6EAoaCbcemRC0LRxAZVHjrpsQ,2226
+fastapi_utils/inferring_router.py,sha256=muUwN8GZ2iQnvcUaoQsb7jjW52n8nhyRTt81BSHielw,501
+fastapi_utils/openapi.py,sha256=HwEHQGlUOeMJqSpn0SF8OzmkbDtMy16lyFEAjp-O8Nw,323
+fastapi_utils/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_utils/session.py,sha256=NFd6Wm7ImA30VpQZSsRcM8qWqFZMmS3eukpsn3WFHD8,2315
+fastapi_utils/tasks.py,sha256=OQaGt_MoD7tJ3AVZs2-6lCERy2IVb7y6cPmcK5lWIz0,1919
+fastapi_utils/timing.py,sha256=XN4GLOD_fi_C03pwH4S4IMFxqldulQrznEgu222dJm0,3867
+fastapi_utils-0.1.0.dist-info/LICENSE,sha256=-r2XxA-sDYTOsfo9rLigkh9MOodwzsj5Z3J2Zb3NXPQ,1081
+fastapi_utils-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+fastapi_utils-0.1.0.dist-info/METADATA,sha256=hR4hnfof88iSxtHCVfIIJBkDFdD9kxunCIlVH5oQrB4,3888
+fastapi_utils-0.1.0.dist-info/RECORD,,
