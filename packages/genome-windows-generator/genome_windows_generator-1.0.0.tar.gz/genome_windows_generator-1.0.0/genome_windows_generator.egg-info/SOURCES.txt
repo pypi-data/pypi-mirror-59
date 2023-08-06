@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.py
+genome_windows_generator/__init__.py
+genome_windows_generator/__version__.py
+genome_windows_generator/decorators.py
+genome_windows_generator/genome_windows_generator.py
+genome_windows_generator/noise_generation.py
+genome_windows_generator/noisy_windows_generator.py
+genome_windows_generator/one_hot.py
+genome_windows_generator/tasselize.py
+genome_windows_generator.egg-info/PKG-INFO
+genome_windows_generator.egg-info/SOURCES.txt
+genome_windows_generator.egg-info/dependency_links.txt
+genome_windows_generator.egg-info/requires.txt
+genome_windows_generator.egg-info/top_level.txt
