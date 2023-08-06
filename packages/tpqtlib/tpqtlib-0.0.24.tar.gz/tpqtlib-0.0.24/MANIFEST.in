@@ -1,0 +1,11 @@
+include tpQtLib/resources/*.*
+include tpQtLib/resources/icons/*.*
+include tpQtLib/resources/icons/black/*.*
+include tpQtLib/resources/icons/color/*.*
+include tpQtLib/resources/icons/common/*.*
+include tpQtLib/resources/icons/material/*.*
+include tpQtLib/resources/icons/white/*.*
+include tpQtLib/resources/icons/window/*.*
+include tpQtLib/resources/icons/windows/*.*
+include tpQtLib/resources/styles/*.*
+include tpQtLib/externals/pysideutils/QtUiTools.pyd
