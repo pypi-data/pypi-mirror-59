@@ -1,0 +1,11 @@
+configparser
+pyyaml
+comtypes
+docutils
+six
+
+[dev]
+wheel
+
+[test]
+pytest
