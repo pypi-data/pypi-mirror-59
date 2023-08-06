@@ -1,0 +1,6 @@
+docutils
+google-cloud-pubsub
+google-cloud-firestore
+google-cloud-storage
+jsonschema
+psutil
