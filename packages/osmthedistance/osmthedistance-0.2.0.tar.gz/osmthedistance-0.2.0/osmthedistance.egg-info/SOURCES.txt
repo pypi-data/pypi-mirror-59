@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+requirements-optional.txt
+requirements.txt
+setup.py
+tasks.py
+osmthedistance/__init__.py
+osmthedistance/db.py
+osmthedistance/extractors.py
+osmthedistance/parsetargets.py
+osmthedistance/wayfilters.py
+osmthedistance.egg-info/PKG-INFO
+osmthedistance.egg-info/SOURCES.txt
+osmthedistance.egg-info/dependency_links.txt
+osmthedistance.egg-info/requires.txt
+osmthedistance.egg-info/top_level.txt

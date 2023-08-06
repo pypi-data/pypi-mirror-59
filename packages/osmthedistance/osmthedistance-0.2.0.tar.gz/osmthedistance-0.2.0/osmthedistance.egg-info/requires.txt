@@ -1,0 +1,7 @@
+beautifulsoup4
+haversine
+lxml
+pydash
+pymongo
+requests
+tqdm

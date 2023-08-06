@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: osmthedistance
+Version: 0.2.0
+Summary: Distance-goal routing using OpenStreetMap data
+Home-page: https://github.com/dwinston/osmthedistance
+Author: Donny Winston
+Author-email: dwinston@alum.mit.edu
+License: AGPL
+Description: # osmthedistance
+        > "Go the distance..."
+        > <br>--The Voice, <i>Field of Dreams (1989) </i> 
+        
+        Distance-goal routing using OpenStreetMap (OSM) data
+        
+        *More info coming...*
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
