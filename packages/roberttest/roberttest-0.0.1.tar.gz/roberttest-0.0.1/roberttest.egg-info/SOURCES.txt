@@ -1,0 +1,5 @@
+setup.py
+roberttest.egg-info/PKG-INFO
+roberttest.egg-info/SOURCES.txt
+roberttest.egg-info/dependency_links.txt
+roberttest.egg-info/top_level.txt
