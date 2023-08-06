@@ -1,0 +1,8 @@
+setup.py
+SaeedMatrixCalculation/MatrixCalculation.py
+SaeedMatrixCalculation/__init__.py
+SaeedMatrixCalculation.egg-info/PKG-INFO
+SaeedMatrixCalculation.egg-info/SOURCES.txt
+SaeedMatrixCalculation.egg-info/dependency_links.txt
+SaeedMatrixCalculation.egg-info/not-zip-safe
+SaeedMatrixCalculation.egg-info/top_level.txt
