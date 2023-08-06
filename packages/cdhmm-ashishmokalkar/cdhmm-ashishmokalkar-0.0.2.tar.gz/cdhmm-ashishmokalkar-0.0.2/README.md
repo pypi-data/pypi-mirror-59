@@ -1,0 +1,1 @@
+Python Library for Continuous Desity Hidden Markov Model which is widely used in Speech Recognition.
