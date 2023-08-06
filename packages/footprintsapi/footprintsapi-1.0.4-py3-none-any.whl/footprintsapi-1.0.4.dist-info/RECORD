@@ -1,0 +1,13 @@
+footprintsapi/__init__.py,sha256=gzwYhoztD-Oe5qEkxpgjrq90GCTR69yY-uQviymlbQw,233
+footprintsapi/exceptions.py,sha256=h6Rm9gHS6E4OophlNMkdnHiSomdNUdcFj7z01HwuMEE,3650
+footprintsapi/footprints.py,sha256=kY438xViJKyX6VMFQbsX862uwmePy8VfDo4Mf9m_Dko,4635
+footprintsapi/mixins.py,sha256=Z4afoOQeW2DQ0bNA35uyW0U0Z6MRrk_Dq9aC_UA6RlE,20076
+footprintsapi/models.py,sha256=STnwA8IHpT4dqQUsx2kkqErd99ZoxmJTpruFc1hYa8Y,6798
+footprintsapi/requester.py,sha256=OVMwohQMm9E7lJb9PXh-rboMznPkysEsYbc_m9dqiPk,4720
+footprintsapi/utils.py,sha256=lOabpsCUlav1dAYW2EbVgVNVdtwESHNQHXhwdU_me1Q,5703
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+footprintsapi-1.0.4.dist-info/LICENSE,sha256=9T4uz__qItXR_XANXeyawmZNT4EDQRsaE4ph4sFV5vg,1054
+footprintsapi-1.0.4.dist-info/METADATA,sha256=tVe3joyVg6NTPiWp8gWQYn8xviAMK9zONGWd83y25Kc,10101
+footprintsapi-1.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+footprintsapi-1.0.4.dist-info/top_level.txt,sha256=sOOyNboDPrv8GJsUlRQB1KsXUDhlvKWks3qbaUj_RyI,20
+footprintsapi-1.0.4.dist-info/RECORD,,
