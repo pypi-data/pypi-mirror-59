@@ -1,0 +1,968 @@
+{
+  "distribution": "RedHat",
+  "distribution_version": "6.10",
+  "memory_total": 36151,
+  "memory_free": 2969,
+  "hostname": "eai-prd5-b",
+  "vendor": "VMware, Inc.",
+  "uptime": 1240856,
+  "kernel": "2.6.32-754.25.1.el6.x86_64",
+  "cpu": 12,
+  "space": 12306602631168,
+  "system": null,
+  "devices": [
+    {
+      "name": "loop6",
+      "size": "0.00 Bytes",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "ram14",
+      "size": "16.00 MB",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "ram15",
+      "size": "16.00 MB",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "ram12",
+      "size": "16.00 MB",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "ram13",
+      "size": "16.00 MB",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "ram10",
+      "size": "16.00 MB",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "ram11",
+      "size": "16.00 MB",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "loop3",
+      "size": "0.00 Bytes",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "loop2",
+      "size": "0.00 Bytes",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "loop1",
+      "size": "0.00 Bytes",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "loop0",
+      "size": "0.00 Bytes",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "ram8",
+      "size": "16.00 MB",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "ram9",
+      "size": "16.00 MB",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "ram4",
+      "size": "16.00 MB",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "ram5",
+      "size": "16.00 MB",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "ram6",
+      "size": "16.00 MB",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "ram7",
+      "size": "16.00 MB",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "ram0",
+      "size": "16.00 MB",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "ram1",
+      "size": "16.00 MB",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "ram2",
+      "size": "16.00 MB",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "ram3",
+      "size": "16.00 MB",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "sr0",
+      "size": "1024.00 MB",
+      "label": [],
+      "uuid": [],
+      "vendor": "NECVMWar",
+      "ids": [
+        "ata-VMware_Virtual_IDE_CDROM_Drive_10000000000000000001"
+      ],
+      "model": "VMware IDE CDR10",
+      "host": "IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)",
+      "partitions": []
+    },
+    {
+      "name": "loop5",
+      "size": "0.00 Bytes",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "loop4",
+      "size": "0.00 Bytes",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "dm-2",
+      "size": "5.57 GB",
+      "label": [],
+      "uuid": [
+        "79010481-58b8-46c3-a4ca-14e242dba2d7"
+      ],
+      "vendor": null,
+      "ids": [
+        "dm-name-VolGroup-lv_home",
+        "dm-uuid-LVM-YV66u7cRgtVFV0lgTEQdAV1B1PU6RD962zHLcUueKQPMYjdEyf7DxKbNoEOJG3PB"
+      ],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "dm-0",
+      "size": "50.00 GB",
+      "label": [],
+      "uuid": [
+        "a8d1941e-cf6b-427a-931e-e105210c3668"
+      ],
+      "vendor": null,
+      "ids": [
+        "dm-name-VolGroup-lv_root",
+        "dm-uuid-LVM-YV66u7cRgtVFV0lgTEQdAV1B1PU6RD96ABeUzRII3Hs4KFIy1jX1jVAedHIr3TNS"
+      ],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "dm-1",
+      "size": "3.94 GB",
+      "label": [],
+      "uuid": [
+        "62c78188-92c0-424b-b0d1-bb1e87e36c25"
+      ],
+      "vendor": null,
+      "ids": [
+        "dm-name-VolGroup-lv_swap",
+        "dm-uuid-LVM-YV66u7cRgtVFV0lgTEQdAV1B1PU6RD96fm8NZPb0AFZhw1ywd0eEenGGDzhD2k4W"
+      ],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "sdt",
+      "size": "15.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "scsi-36000c29fdfe74e915e941195f1657350",
+        "wwn-0x6000c29fdfe74e915e941195f1657350"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sdu",
+      "size": "15.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "scsi-36000c2953a0248642249039b8ffb954c",
+        "wwn-0x6000c2953a0248642249039b8ffb954c"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sdv",
+      "size": "15.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "scsi-36000c29da053b9537f2353dc2971df38",
+        "wwn-0x6000c29da053b9537f2353dc2971df38"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sdw",
+      "size": "15.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "lvm-pv-uuid-ANu2UY-ZYi9-LUEW-OlfT-DXV1-dj6y-83qhS0",
+        "scsi-36000c29f1df61b6f3cfd0119fc1c4f9d",
+        "wwn-0x6000c29f1df61b6f3cfd0119fc1c4f9d"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sdp",
+      "size": "1.00 TB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "scsi-36000c29ad9f636d805e4dd948f7aa54f",
+        "wwn-0x6000c29ad9f636d805e4dd948f7aa54f"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sdq",
+      "size": "250.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "scsi-36000c2923a23b72459514a2c753d7dd2",
+        "wwn-0x6000c2923a23b72459514a2c753d7dd2"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sdr",
+      "size": "250.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "scsi-36000c29f044712f67fb8317275afca56",
+        "wwn-0x6000c29f044712f67fb8317275afca56"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sds",
+      "size": "15.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "scsi-36000c299455c38728d1895f3dea6d70e",
+        "wwn-0x6000c299455c38728d1895f3dea6d70e"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": [
+        {
+          "name": "sds1",
+          "size": "5.00 GB",
+          "label": [],
+          "uuid": [],
+          "ids": [
+            "lvm-pv-uuid-Nx4ek7-2eAz-kKKm-8eNe-T09V-IGT9-jdswPx",
+            "scsi-36000c299455c38728d1895f3dea6d70e-part1",
+            "wwn-0x6000c299455c38728d1895f3dea6d70e-part1"
+          ]
+        },
+        {
+          "name": "sds2",
+          "size": "5.00 GB",
+          "label": [],
+          "uuid": [],
+          "ids": [
+            "lvm-pv-uuid-3cYs3e-Y5Dz-1HUB-QLzX-5JQG-uVRW-p29ypt",
+            "scsi-36000c299455c38728d1895f3dea6d70e-part2",
+            "wwn-0x6000c299455c38728d1895f3dea6d70e-part2"
+          ]
+        },
+        {
+          "name": "sds3",
+          "size": "5.00 GB",
+          "label": [],
+          "uuid": [],
+          "ids": [
+            "lvm-pv-uuid-vVTMCh-0F8P-NX1b-vWgz-pNn0-Bf4C-XgzILk",
+            "scsi-36000c299455c38728d1895f3dea6d70e-part3",
+            "wwn-0x6000c299455c38728d1895f3dea6d70e-part3"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sdx",
+      "size": "15.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "lvm-pv-uuid-3BlsJ3-dlBa-xtd5-U4hj-C4IS-PfHB-AckebU",
+        "scsi-36000c29fc1cb3e200cba666a7cb13690",
+        "wwn-0x6000c29fc1cb3e200cba666a7cb13690"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "dm-18",
+      "size": "399.00 GB",
+      "label": [],
+      "uuid": [
+        "a43e9fd4-f87a-4d28-ba43-81ae5f93e17a"
+      ],
+      "vendor": null,
+      "ids": [
+        "dm-name-VG_webm_product-LV_webm_product",
+        "dm-uuid-LVM-Eg3W6jx8MmtEtzQDuhb32NPanYBQnwgevMRi3bOt1GZEiojPFsElvlD0RZFGumN2"
+      ],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "sdy",
+      "size": "15.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "lvm-pv-uuid-RhuFG6-nPbt-fbR3-cdN8-2uPX-c8we-ySmCzR",
+        "scsi-36000c29bb859681c7eb58c3866c0ef01",
+        "wwn-0x6000c29bb859681c7eb58c3866c0ef01"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sdz",
+      "size": "15.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "lvm-pv-uuid-Neu6yi-zqwv-hz9A-O0ff-xJEQ-ktoV-TvFIpn",
+        "scsi-36000c299658bf63ec0b6f1d6b24696e2",
+        "wwn-0x6000c299658bf63ec0b6f1d6b24696e2"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "dm-19",
+      "size": "399.00 GB",
+      "label": [],
+      "uuid": [
+        "b7f0596f-0d3a-4451-abb2-e440ec1ecffc"
+      ],
+      "vendor": null,
+      "ids": [
+        "dm-name-VG_webm_data-LV_webm_data",
+        "dm-uuid-LVM-KXxKKkZ3SPd2GCDeeLBO1qzBRjubgIArXEcBscXcnzxj76Fp0XwmDqPggxmbveWB"
+      ],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "sdd",
+      "size": "1.00 TB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "scsi-36000c291da9c999313042ddabfd5af1c",
+        "wwn-0x6000c291da9c999313042ddabfd5af1c"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sde",
+      "size": "1.00 TB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "scsi-36000c29f819f548379ceb58403dede03",
+        "wwn-0x6000c29f819f548379ceb58403dede03"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sdf",
+      "size": "1.00 TB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "scsi-36000c2973166c2c079c1edb38e0fff07",
+        "wwn-0x6000c2973166c2c079c1edb38e0fff07"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sdg",
+      "size": "10.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "lvm-pv-uuid-13aO0L-bHx7-4Bvi-EpeD-lTTl-x8gP-XSN6UH",
+        "scsi-36000c298a5233174782762f8cb73ab06",
+        "wwn-0x6000c298a5233174782762f8cb73ab06"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sda",
+      "size": "60.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": [
+        {
+          "name": "sda2",
+          "size": "59.51 GB",
+          "label": [],
+          "uuid": [],
+          "ids": [
+            "lvm-pv-uuid-8m2oQh-sW7O-1J0t-JnqU-9X3y-06YV-iuBZVQ"
+          ]
+        },
+        {
+          "name": "sda1",
+          "size": "500.00 MB",
+          "label": [],
+          "uuid": [
+            "1471be51-c987-4e1a-96e2-aabfaca43aea"
+          ],
+          "ids": []
+        }
+      ]
+    },
+    {
+      "name": "sdb",
+      "size": "400.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "lvm-pv-uuid-xWmTqd-C4N8-YOGy-kJAz-uIO5-ApXx-G0FZ76"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sdc",
+      "size": "400.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "lvm-pv-uuid-LmkHIF-JNnX-iX0T-Plsx-lvCI-eeSc-nqsYyv"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sdl",
+      "size": "10.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "lvm-pv-uuid-x0xljB-IMQk-mQyh-hdOA-pxUk-0bB7-R0M7BG",
+        "scsi-36000c299ca587e9255159b21c1d28c33",
+        "wwn-0x6000c299ca587e9255159b21c1d28c33"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sdm",
+      "size": "10.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "lvm-pv-uuid-8qiZFK-FxfU-VqKb-8d4p-nmew-qW6g-rp1Xd6",
+        "scsi-36000c29adaedb99894168d5d08320f89",
+        "wwn-0x6000c29adaedb99894168d5d08320f89"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sdn",
+      "size": "10.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "scsi-36000c29882ed53923db273059203c6cc",
+        "wwn-0x6000c29882ed53923db273059203c6cc"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sdo",
+      "size": "1.00 TB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "scsi-36000c29f4a144fe9c18939ffd21ed14e",
+        "wwn-0x6000c29f4a144fe9c18939ffd21ed14e"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sdh",
+      "size": "10.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "scsi-36000c29fa883330263b60cb7062adf76",
+        "wwn-0x6000c29fa883330263b60cb7062adf76"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": [
+        {
+          "name": "sdh1",
+          "size": "5.00 GB",
+          "label": [],
+          "uuid": [],
+          "ids": [
+            "lvm-pv-uuid-AcUQO9-Il5W-dgNg-xADt-PfZ9-xAdt-bk6PKI",
+            "scsi-36000c29fa883330263b60cb7062adf76-part1",
+            "wwn-0x6000c29fa883330263b60cb7062adf76-part1"
+          ]
+        },
+        {
+          "name": "sdh2",
+          "size": "5.00 GB",
+          "label": [],
+          "uuid": [],
+          "ids": [
+            "lvm-pv-uuid-afZO7Q-O3SQ-O1vp-1zFj-zlQO-uMdY-6LVOVN",
+            "scsi-36000c29fa883330263b60cb7062adf76-part2",
+            "wwn-0x6000c29fa883330263b60cb7062adf76-part2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sdi",
+      "size": "10.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "scsi-36000c29f65ce501aceb64e461a0a705a",
+        "wwn-0x6000c29f65ce501aceb64e461a0a705a"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": [
+        {
+          "name": "sdi2",
+          "size": "5.00 GB",
+          "label": [],
+          "uuid": [],
+          "ids": [
+            "scsi-36000c29f65ce501aceb64e461a0a705a-part2",
+            "wwn-0x6000c29f65ce501aceb64e461a0a705a-part2"
+          ]
+        },
+        {
+          "name": "sdi1",
+          "size": "5.00 GB",
+          "label": [],
+          "uuid": [],
+          "ids": [
+            "lvm-pv-uuid-ZbMPWP-YgaN-ZZSl-TGl2-W5B8-FNo3-TdtK9Y",
+            "scsi-36000c29f65ce501aceb64e461a0a705a-part1",
+            "wwn-0x6000c29f65ce501aceb64e461a0a705a-part1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sdj",
+      "size": "10.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "scsi-36000c29f5892e9effe7df57a06f7a673",
+        "wwn-0x6000c29f5892e9effe7df57a06f7a673"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": [
+        {
+          "name": "sdj2",
+          "size": "5.00 GB",
+          "label": [],
+          "uuid": [],
+          "ids": [
+            "scsi-36000c29f5892e9effe7df57a06f7a673-part2",
+            "wwn-0x6000c29f5892e9effe7df57a06f7a673-part2"
+          ]
+        },
+        {
+          "name": "sdj1",
+          "size": "5.00 GB",
+          "label": [],
+          "uuid": [],
+          "ids": [
+            "scsi-36000c29f5892e9effe7df57a06f7a673-part1",
+            "wwn-0x6000c29f5892e9effe7df57a06f7a673-part1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sdk",
+      "size": "10.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "scsi-36000c295c36b3b73f4f60df74ba1d6e8",
+        "wwn-0x6000c295c36b3b73f4f60df74ba1d6e8"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": [
+        {
+          "name": "sdk1",
+          "size": "5.00 GB",
+          "label": [],
+          "uuid": [],
+          "ids": [
+            "lvm-pv-uuid-paCP4S-SbmB-C9R9-1Vbt-Xw2j-tQtP-apoXqh",
+            "scsi-36000c295c36b3b73f4f60df74ba1d6e8-part1",
+            "wwn-0x6000c295c36b3b73f4f60df74ba1d6e8-part1"
+          ]
+        },
+        {
+          "name": "sdk2",
+          "size": "5.00 GB",
+          "label": [],
+          "uuid": [],
+          "ids": [
+            "lvm-pv-uuid-daTktF-MX83-OV8L-oFQt-CKoV-mUYN-xpyK1a",
+            "scsi-36000c295c36b3b73f4f60df74ba1d6e8-part2",
+            "wwn-0x6000c295c36b3b73f4f60df74ba1d6e8-part2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sdad",
+      "size": "400.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "lvm-pv-uuid-h7h831-pIka-y19n-BWCq-I0Wv-9Asq-ilapMZ"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "loop7",
+      "size": "0.00 Bytes",
+      "label": [],
+      "uuid": [],
+      "vendor": null,
+      "ids": [],
+      "model": null,
+      "host": "",
+      "partitions": []
+    },
+    {
+      "name": "sdac",
+      "size": "400.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "lvm-pv-uuid-G3inyo-MyTU-tzj1-C1Yf-gXwi-IWqR-0im0lJ"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sdaa",
+      "size": "15.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "lvm-pv-uuid-BKDmxR-162i-jHj1-gEvS-ZQCh-GQ6p-ve2PQ6",
+        "scsi-36000c29336bcd3f5474c1cb453b80f1b",
+        "wwn-0x6000c29336bcd3f5474c1cb453b80f1b"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    },
+    {
+      "name": "sdab",
+      "size": "15.00 GB",
+      "label": [],
+      "uuid": [],
+      "vendor": "VMware",
+      "ids": [
+        "lvm-pv-uuid-AHypDX-3ici-wHEM-sEn4-7HeT-DJ8w-rQXlUI",
+        "scsi-36000c298015719b1227aaa87737e25f7",
+        "wwn-0x6000c298015719b1227aaa87737e25f7"
+      ],
+      "model": "Virtual disk",
+      "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+      "partitions": []
+    }
+  ],
+  "networks": [
+    {
+      "hw": "00:50:56:b1:b6:ef",
+      "active": true,
+      "device": "eth7"
+    },
+    {
+      "hw": "00:50:56:b1:c5:35",
+      "active": true,
+      "device": "eth6"
+    },
+    {
+      "hw": "00:50:56:b1:97:53",
+      "active": true,
+      "device": "eth5"
+    },
+    {
+      "hw": "00:50:56:b1:f7:93",
+      "active": false,
+      "device": "eth4"
+    },
+    {
+      "hw": "00:50:56:b1:58:96",
+      "active": true,
+      "device": "eth3"
+    },
+    {
+      "hw": "00:50:56:b1:3a:2d",
+      "active": true,
+      "device": "eth2"
+    }
+  ]
+}
