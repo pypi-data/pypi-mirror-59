@@ -1,0 +1,5 @@
+base58==1.0.3
+bsddb3==6.2.6
+coincurve==13.0.0
+Click==7.0
+pycryptodome==3.9.4
