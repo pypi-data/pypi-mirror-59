@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mpcontribs-client
+Version: 2.0.0
+Summary: client library for MPContribs API
+Home-page: https://github.com/materialsproject/MPContribs/tree/master/mpcontribs-client
+Author: Patrick Huck
+Author-email: phuck@lbl.gov
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography (>=2.8)
+Requires-Dist: fido[tls] (>=4.2.2)
+Requires-Dist: bravado[fido] (>=10.4.3)
+Requires-Dist: service-identity (>=18.1.0)
+Requires-Dist: pyOpenSSL (>=19.1.0)
+
+Small, dynamic python client library to connect to [MPContribs API](https://api.mpcontribs.org) based on Yelp's [bravado](https://bravado.readthedocs.io).
+
+```python
+from mpcontribs.client import load_client
+api_key = "<replace-me>" # API key from https://portal.mpcontribs.org/dashboard
+client = load_client(api_key)
+dir(client) # show available resources
+```
+
+See the [MPContribs Docs](https://mpcontribs.org) for specific usage and examples.
+
+
