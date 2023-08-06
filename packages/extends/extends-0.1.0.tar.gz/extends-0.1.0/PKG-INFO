@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: extends
+Version: 0.1.0
+Summary: A simple Python library that adds a decorator which helps extend functionality classes by new methods without inheritanting them
+Author: Arthur Hakimov
+Author-email: verybigfolder@yandex.ru
+Requires-Python: >=3.5,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
