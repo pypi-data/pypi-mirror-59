@@ -1,0 +1,13 @@
+prodperfect/__init__.py,sha256=kOOuOPJZFMpIVjpkXTAHW3HPPurO0UCrVbDv5d5ZjyQ,87
+prodperfect/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+prodperfect/apps.py,sha256=vLAMUkVyVz4o5sKbqKD8nHkttdyRZby6ffGAEqJ4OLM,97
+prodperfect/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+prodperfect/settings.py,sha256=vQUuM9lDlL1PWdspPyPv0V0m1s2K7e4Dq1od9aeN71M,1027
+prodperfect/views.py,sha256=F42JXgnqFqK0fajXeutyJJxwOszRxoLMNkIhfc4Z7KI,26
+prodperfect/templates/prodperfect/tracking_snippet.html,sha256=9B5keLbHGXqwN0LOqJUgir0qgEgpr323fVYdHzgapf8,1162
+prodperfect/templatetags/__init__.py,sha256=s0Mpadky3YXX_VMzhX1vK1jw6m43YVQQ_Y-LbRBLuOo,57
+prodperfect/templatetags/prodperfect.py,sha256=EwJCpH1GwjCKSG55VxwpRrgQVhowUAEsHhQz8Vogh28,732
+django_prodperfect-0.2.0.dist-info/METADATA,sha256=NMDQTu9nWh0Vis3CP0QuGJCxmrIBr3XMsoxzkPU3UjI,1956
+django_prodperfect-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_prodperfect-0.2.0.dist-info/top_level.txt,sha256=1cl1WYyt-bUvXaAh6u_Q3nWrX4rxTUzGcaJsPipl0Do,12
+django_prodperfect-0.2.0.dist-info/RECORD,,
