@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: spicemodels
+Version: 2.2
+Summary: Convert between .OBJ and .BDS (DSK) files
+Home-page: UNKNOWN
+Author: Alfredo Escalante
+Author-email: alfredoescalante95@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: numpy
+
+UNKNOWN
+
+
