@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: mlpiper
+Version: 1.0.0
+Summary: An ML Pipeline to be executed by 'mlpiper' tool
+Home-page: https://mlpiper.github.io/mlpiper/mlcomp/
+Author: DataRobot
+Author-email: zohar.mizrahi@datarobot.com
+License: Apache License 2.0
+Description: # README
+        
+        This is an example of a machine-learning pipeline that is implemented by the **'mlpiper'** platform.
+        
+        This specific example is no more than a simple sklearn implementation, without using the
+        built-in sklearn Pipeline structure.
+        
+        The pipeline description is provided by the `pipeline/pipeline.json` file.
+        
+        
+        ## Setup
+        
+        1. Browse to `ml_pipeline_examples/mlpiper_example`
+        
+        	* ```> cd ml_pipeline_examples/mlpiper_example```
+        
+        2. Create virtual env, whose name is 'mlpiper', or anything else (If you've already created it, use `workon` to activate it):
+        
+        	* ```> mkvirtualenv --python=3 mlpiper```
+        
+        3. Install 'mlpiper' (Skip if already installed):
+        
+        	* ```> pip install -r requirements.txt```
+        
+        
+        # Run Example
+        
+        (**Note:** Please make sure the environment was setup properly. Refer to ['Setup' section](#Setup) above for more information)
+        
+        1. Browse to `ml_pipeline_examples/mlpiper_example`
+        
+        	* ```> cd ml_pipeline_examples/mlpiper_example```
+        
+        
+        2. Run the `run.sh` script:
+        
+        	* ```> run.sh```
+        
+        
+        # Results
+        
+        ```
+        ...
+        Log Loss: 0.6571923425816221
+        ROC AUC Score: 0.6350086940964011
+        ...
+        real	0m2.199s
+        user	0m2.528s
+        sys		0m0.295s
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Description-Content-Type: text/markdown
