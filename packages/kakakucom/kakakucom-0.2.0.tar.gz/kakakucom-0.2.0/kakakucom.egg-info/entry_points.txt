@@ -1,0 +1,3 @@
+[console_scripts]
+kakakucom = kakakucom.main:main
+
