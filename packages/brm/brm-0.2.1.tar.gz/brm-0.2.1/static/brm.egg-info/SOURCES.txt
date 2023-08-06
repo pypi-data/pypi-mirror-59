@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+static/brm.egg-info/PKG-INFO
+static/brm.egg-info/SOURCES.txt
+static/brm.egg-info/dependency_links.txt
+static/brm.egg-info/top_level.txt
