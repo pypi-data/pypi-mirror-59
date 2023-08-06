@@ -1,0 +1,10 @@
+README.md
+setup.py
+topsis/cli.py
+topsis/tops.py
+topsis_ishaan.egg-info/PKG-INFO
+topsis_ishaan.egg-info/SOURCES.txt
+topsis_ishaan.egg-info/dependency_links.txt
+topsis_ishaan.egg-info/entry_points.txt
+topsis_ishaan.egg-info/requires.txt
+topsis_ishaan.egg-info/top_level.txt
