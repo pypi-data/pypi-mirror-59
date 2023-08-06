@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: githunt
+Version: 1.0.0
+Summary: Browse most stared Github repositories by date from your command line.
+Home-page: https://github.com/SriNandan33/githunt
+Author: Srinivasa Rao
+Author-email: nandusrinivas33.cse@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Click (==7.0)
+Requires-Dist: black (==19.10b0)
+Requires-Dist: colorama (==0.4.3)
+Requires-Dist: pylint (==2.4.4)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: tabulate (==0.8.6)
+
+# githunt
+## Browse most stared repositories by date on Github from your command line
+
+### This libray is inspired by the [Githunt](https://github.com/kamranahmedse/githunt) webapp created by [Kamran Ahmed](https://kamranahmed.info/), you can view it [here](https://kamranahmed.info/githunt/).
+
+## TODO
+[ ] Publish to PyPi as python library.
+
