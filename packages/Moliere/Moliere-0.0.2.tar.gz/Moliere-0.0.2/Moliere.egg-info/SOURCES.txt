@@ -1,0 +1,6 @@
+README.md
+setup.py
+Moliere.egg-info/PKG-INFO
+Moliere.egg-info/SOURCES.txt
+Moliere.egg-info/dependency_links.txt
+Moliere.egg-info/top_level.txt
