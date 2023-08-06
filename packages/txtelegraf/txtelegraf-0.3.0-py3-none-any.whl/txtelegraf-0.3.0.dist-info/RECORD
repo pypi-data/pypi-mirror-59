@@ -1,0 +1,9 @@
+txtelegraf/__init__.py,sha256=emh6GmZB4KUzff-ApZOP_vOVUCYJyqfRsXCJqcqzkh8,898
+txtelegraf/measurement.py,sha256=s_ag1IMV6E3Vr7f8ts8C8sh9g9u3j7GHb52lXuvvmAU,4227
+txtelegraf/tcp.py,sha256=VnjMFNzCJh2xJsFkZjmnT7xQvh6IT3KOELChXUeV8AM,3159
+txtelegraf/udp.py,sha256=FjM2L-yy4zPQ4d5f54DcRW3YkHl-N14QcF0xxk6rehw,2347
+txtelegraf-0.3.0.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+txtelegraf-0.3.0.dist-info/METADATA,sha256=oOiBLQyHiTi9ITST1kBJNQ8K8Gmjd4HQKrDMHmoccaU,1950
+txtelegraf-0.3.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+txtelegraf-0.3.0.dist-info/top_level.txt,sha256=JWSAFvjwqTurGK4GJQEC3dovAIe5PhrxFyDaAqbSuHE,11
+txtelegraf-0.3.0.dist-info/RECORD,,
