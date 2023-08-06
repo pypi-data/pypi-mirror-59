@@ -1,0 +1,3 @@
+[console_scripts]
+pytonik-start = pytonik.cmd.start:main
+
