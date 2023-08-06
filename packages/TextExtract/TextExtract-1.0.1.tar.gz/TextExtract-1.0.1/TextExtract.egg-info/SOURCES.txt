@@ -1,0 +1,8 @@
+README.md
+setup.py
+TextExtract.egg-info/PKG-INFO
+TextExtract.egg-info/SOURCES.txt
+TextExtract.egg-info/dependency_links.txt
+TextExtract.egg-info/top_level.txt
+TextExtractApi/TextExtract.py
+TextExtractApi/__init__.py
