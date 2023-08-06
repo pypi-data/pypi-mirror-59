@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Moliere
+Version: 0.0.4
+Summary: Psycopg wrapper
+Home-page: https://gitlab.com/pmenshih/moliere
+Author: Peter Menshih
+Author-email: p.menshih@gmail.com
+License: UNKNOWN
+Description: # Moliere
+        **Under construction!**
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
