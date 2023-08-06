@@ -1,0 +1,9 @@
+README.md
+setup.py
+code_checker/__init__.py
+code_checker/__main__.py
+static_code_checker.egg-info/PKG-INFO
+static_code_checker.egg-info/SOURCES.txt
+static_code_checker.egg-info/dependency_links.txt
+static_code_checker.egg-info/entry_points.txt
+static_code_checker.egg-info/top_level.txt
