@@ -1,0 +1,11 @@
+socialscan/__init__.py,sha256=XxXhu8-QnuD9hA8Ah0WX5rgpt_DwOQmAwcK-FtpngyQ,22
+socialscan/__main__.py,sha256=tZC2yWbINEdhsc-M7O0vvC3LykJ9G-QvyKNLYKVbLkk,125
+socialscan/cli.py,sha256=RHJfzBH2KT-nSIWN_yiA3MfqXK4VD33XIXTjmJhJtxY,6365
+socialscan/platforms.py,sha256=0GnM_xOcj3ntJTorLSP3zKfsE2XkgJ0AwOjTM5nHSYQ,24238
+socialscan/util.py,sha256=ymphDP27LESUlM4V-gKbwslq39h4I7l9ROvSMRPMPiE,3290
+socialscan-1.1.4.dist-info/LICENSE,sha256=MqfP73QhLITbEL6XIsh1Yn0KZIpTO_PuGmAPcRC2t7c,1065
+socialscan-1.1.4.dist-info/METADATA,sha256=nARjwnEvGfnO8MYfUEZcU0dBupEcvLpd06WeX73xeQM,6649
+socialscan-1.1.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+socialscan-1.1.4.dist-info/entry_points.txt,sha256=8KAW3GFZd-un75BjSdAtlRUUAnS-LHZa9ZorU3lu1ec,57
+socialscan-1.1.4.dist-info/top_level.txt,sha256=pKQPvLlN_oT8dhvbw1YMCJq8g-bg5LorkvfjbaSzf_w,11
+socialscan-1.1.4.dist-info/RECORD,,
