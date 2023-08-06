@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: mental-models
+Version: 0.1.0
+Summary: Extracts human mental models from text and facilitates mental model comparison and contrasting. (See J Diesner 2003)
+Home-page: https://github.com/robinsonkwame/mental_models
+Author: Kwame Porter Robinson
+Author-email: kwamepr@umich.edu
+License: MIT license
+Keywords: mental model,cognitative model,nlp
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: attrs (==19.3.0)
+Requires-Dist: blis (==0.4.1)
+Requires-Dist: catalogue (==0.2.0)
+Requires-Dist: certifi (==2019.11.28)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: cymem (==2.0.3)
+Requires-Dist: idna (==2.8)
+Requires-Dist: more-itertools (==8.0.2)
+Requires-Dist: murmurhash (==1.0.2)
+Requires-Dist: nltk (==3.3.0)
+Requires-Dist: numpy (==1.18.0)
+Requires-Dist: packaging (==19.2)
+Requires-Dist: pandas (==0.25.3)
+Requires-Dist: plac (==1.1.3)
+Requires-Dist: pluggy (==0.13.1)
+Requires-Dist: preshed (==3.0.2)
+Requires-Dist: py (==1.8.1)
+Requires-Dist: pyparsing (==2.4.6)
+Requires-Dist: pytest (==5.3.2)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2019.3)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: scipy (==1.4.1)
+Requires-Dist: six (==1.13.0)
+Requires-Dist: spacy-wordnet (==0.0.4)
+Requires-Dist: spacy (==2.2.3)
+Requires-Dist: srsly (==1.0.0)
+Requires-Dist: thinc (==7.3.1)
+Requires-Dist: tqdm (==4.41.1)
+Requires-Dist: urllib3 (==1.25.7)
+Requires-Dist: wasabi (==0.6.0)
+Requires-Dist: wcwidth (==0.1.8)
+Requires-Dist: zipp (==0.6.0)
+Requires-Dist: importlib-metadata (==1.3.0) ; python_version < "3.8"
+
+# mental_models
+Extracts human mental models from text and facilitates mental model comparison and contrasting. An alternative implementation of "AutoMap," see: J Diesner, K M Carley, "AutoMap1.2 - Extract, analyze, represent, and compare mental models from texts" (2003) for more background details.
+
+# Install
+```
+pip install mental_model
+```
+
+# Build
+This library assumes that several models and datasets are available. You can run the command below to build them.
+
+```
+#  ... need a small language model 
+python3 -m spacy download en_core_web_sm
+# ... adds in WordNet tokenization for spaCy
+python3 -m nltk.downloader wordnet
+python3 -m nltk.downloader omw
+```
+
+
