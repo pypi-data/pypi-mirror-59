@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: nitin_topsis
+Version: 1.0
+Summary: The code is for topsis package which can be used in the models to determine the best model out of the given model
+Home-page: https://github.com/nitindang/
+Author: NITIN DANG
+Author-email: nitindang14@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: topsis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
