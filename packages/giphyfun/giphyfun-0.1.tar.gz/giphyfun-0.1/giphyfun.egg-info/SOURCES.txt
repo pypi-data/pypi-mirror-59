@@ -1,0 +1,10 @@
+README.md
+setup.py
+giphyFun/__init__.py
+giphyFun/giphyFun.py
+giphyfun.egg-info/PKG-INFO
+giphyfun.egg-info/SOURCES.txt
+giphyfun.egg-info/dependency_links.txt
+giphyfun.egg-info/entry_points.txt
+giphyfun.egg-info/requires.txt
+giphyfun.egg-info/top_level.txt
