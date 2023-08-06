@@ -1,0 +1,3 @@
+[console_scripts]
+makereq = makereq:main
+
