@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ambiance_client
+Version: 0.0.1
+Summary: A Python client for the Elixir Ambiance home automation API
+Home-page: https://gitlab.com/bklang/ambiance_client
+Author: Ben Klang
+Author-email: bklang@wirehack.net
+License: UNKNOWN
+Description: Ambiance Client for Python
+        
+        This library implements a Python3 compatible library for interacting with the [Ambiance Server](https://gitlab.com/bklang/ambiance)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
