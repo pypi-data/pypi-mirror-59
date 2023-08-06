@@ -1,0 +1,9 @@
+pystall/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pystall/cli.py,sha256=DKzTSfyvvGHcufFDI8jpvJttlxUYhYlfveNxYfaH0xI,648
+pystall/core.py,sha256=KfnJ7wrt5vIIeuFsgADoefAiFZc5493VN_7KYzLrR0U,23027
+pystall/library.py,sha256=tyRekn4-Riaa4sZXWo0NvQPFne6k-gFBTUXf9uYS0J8,6447
+pystall-0.2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pystall-0.2.1.dist-info/METADATA,sha256=36gflHjbveqUF89CEigIpIE1QpdbZ_UsPkZ18bDVNqY,6176
+pystall-0.2.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pystall-0.2.1.dist-info/top_level.txt,sha256=xMTWcaTm8nE2TP4vB9TUzrerW9AlFu_gSsi4eFnvzZA,8
+pystall-0.2.1.dist-info/RECORD,,
