@@ -1,0 +1,1652 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Package</title>
+    <link rel="stylesheet" href="_static/traditional.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="PyDTMC" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0 right"><a href="index.html">Homepage</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-pydtmc">
+<span id="package"></span><h1>Package<a class="headerlink" href="#module-pydtmc" title="Permalink to this headline">¶</a></h1>
+<dl class="exception">
+<dt id="pydtmc.ValidationError">
+<em class="property">exception </em><code class="sig-prename descclassname">pydtmc.</code><code class="sig-name descname">ValidationError</code><a class="reference internal" href="_modules/pydtmc/exceptions.html#ValidationError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.ValidationError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pydtmc.MarkovChain">
+<em class="property">class </em><code class="sig-prename descclassname">pydtmc.</code><code class="sig-name descname">MarkovChain</code><span class="sig-paren">(</span><em class="sig-param">p</em>, <em class="sig-param">states=None</em>, <em class="sig-param">order=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Defines a Markov chain with given transition matrix and state names.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>p</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code></a>) – the transition matrix.</p></li>
+<li><p><strong>states</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – the name of each state (if omitted, an increasing sequence of integers starting at 1).</p></li>
+<li><p><strong>order</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) – the order of the process (if omitted, 1).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="pydtmc.MarkovChain.absorbing_states">
+<em class="property">property </em><code class="sig-name descname">absorbing_states</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.absorbing_states"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.absorbing_states" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the absorbing states of the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.absorption_probabilities">
+<em class="property">property </em><code class="sig-name descname">absorption_probabilities</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.absorption_probabilities"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.absorption_probabilities" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the absorption probabilities of the Markov chain. If the Markov chain is not <em>absorbing</em> and has no transient states, then None is returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.absorption_times">
+<em class="property">property </em><code class="sig-name descname">absorption_times</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.absorption_times"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.absorption_times" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the absorption times of the Markov chain. If the Markov chain is not <em>absorbing</em>, then None is returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.accessibility_matrix">
+<em class="property">property </em><code class="sig-name descname">accessibility_matrix</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.accessibility_matrix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.accessibility_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the accessibility matrix of the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.adjacency_matrix">
+<em class="property">property </em><code class="sig-name descname">adjacency_matrix</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.adjacency_matrix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.adjacency_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the adjacency matrix of the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.approximation">
+<em class="property">static </em><code class="sig-name descname">approximation</code><span class="sig-paren">(</span><em class="sig-param">size</em>, <em class="sig-param">approximation_type</em>, <em class="sig-param">alpha</em>, <em class="sig-param">sigma</em>, <em class="sig-param">rho</em>, <em class="sig-param">k=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.approximation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.approximation" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method approximates the Markov chain associated with the discretized version of the following first-order autoregressive process:</p>
+<div class="line-block">
+<div class="line"><span class="math notranslate nohighlight">\(y_t = (1 - \rho) \alpha + \rho y_{t-1} + \varepsilon_t\)</span></div>
+<div class="line">with <span class="math notranslate nohighlight">\(\varepsilon_t \overset{i.i.d}{\sim} \mathcal{N}(0, \sigma_{\varepsilon}^{2})\)</span></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – the size of the Markov chain.</p></li>
+<li><p><strong>approximation_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – the approximation type to use (one of adda-cooper, rouwenhorst, tauchen or tauchen-hussey).</p></li>
+<li><p><strong>alpha</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>) – the constant term <span class="math notranslate nohighlight">\(\alpha\)</span>, representing the unconditional mean of the process.</p></li>
+<li><p><strong>sigma</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>) – the standard deviation of the innovation term <span class="math notranslate nohighlight">\(\varepsilon\)</span>.</p></li>
+<li><p><strong>rho</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>) – the autocorrelation coefficient <span class="math notranslate nohighlight">\(\rho\)</span>, representing the persistence of the process across periods.</p></li>
+<li><p><strong>k</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>]) – <ul>
+<li><p>in the Tauchen approximation, the number of standard deviations to approximate out to (if omitted, the value is set to 3);</p></li>
+<li><p>in the Tauchen-Hussey approximation, the standard deviation used for the gaussian quadrature (if omitted, the value is set to an optimal default).</p></li>
+</ul>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[~MarkovChain, <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a tuple whose first element is a Markov chain and whose second element is a vector of nodes.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.8)"><strong>ValueError</strong></a> – if the approximation type is neither Tauchen nor Tauchen-Hussey and <em>k</em> is not equal to None or if the gaussian quadrature fails to converge in the Tauchen-Hussey approach.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.are_communicating">
+<code class="sig-name descname">are_communicating</code><span class="sig-paren">(</span><em class="sig-param">state1</em>, <em class="sig-param">state2</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.are_communicating"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.are_communicating" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method verifies whether the given states of the Markov chain are communicating.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>state1</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]) – the first state.</p></li>
+<li><p><strong>state2</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]) – the second state.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>True if the given states are communicating, False otherwise.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.backward_committor">
+<code class="sig-name descname">backward_committor</code><span class="sig-paren">(</span><em class="sig-param">states1</em>, <em class="sig-param">states2</em><span class="sig-paren">)</span><a class="headerlink" href="#pydtmc.MarkovChain.backward_committor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias of <strong>backward_committor_probabilities</strong>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.backward_committor_probabilities">
+<code class="sig-name descname">backward_committor_probabilities</code><span class="sig-paren">(</span><em class="sig-param">states1</em>, <em class="sig-param">states2</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.backward_committor_probabilities"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.backward_committor_probabilities" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes the backward committor probabilities between the given subsets of the state space defined by the Markov chain.</p>
+<div class="line-block">
+<div class="line"><strong>Aliases:</strong> backward_committor</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>states1</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – the first subset of states.</p></li>
+<li><p><strong>states2</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – the second subset of states.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the backward committor probabilities if the Markov chain is <em>ergodic</em>, None otherwise.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.8)"><strong>ValueError</strong></a> – if the two sets are not disjoint.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.birth_death">
+<em class="property">static </em><code class="sig-name descname">birth_death</code><span class="sig-paren">(</span><em class="sig-param">p</em>, <em class="sig-param">q</em>, <em class="sig-param">states=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.birth_death"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.birth_death" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method generates a birth-death Markov chain of given size and from given probabilities.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>q</strong> (<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>) – the creation probabilities.</p></li>
+<li><p><strong>p</strong> (<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>) – the annihilation probabilities.</p></li>
+<li><p><strong>states</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – the name of each state (if omitted, an increasing sequence of integers starting at 1).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.MarkovChain" title="pydtmc.MarkovChain">~MarkovChain</a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a Markov chain.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.8)"><strong>ValueError</strong></a> – if <em>q</em> and <em>p</em> have a different size or if the vector resulting from the sum of <em>q</em> and <em>p</em> contains any value greater than 1.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.closest_reversible">
+<code class="sig-name descname">closest_reversible</code><span class="sig-paren">(</span><em class="sig-param">distribution</em>, <em class="sig-param">weighted=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.closest_reversible"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.closest_reversible" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes the closest reversible of the Markov chain.</p>
+<div class="line-block">
+<div class="line"><strong>Notes:</strong> the algorithm is described in <a class="reference external" href="http://doi.org/10.1002/nla.1967">Computing the nearest reversible Markov Chain (Nielsen &amp; Weber, 2015)</a>.</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>distribution</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code></a>) – the distribution of the states.</p></li>
+<li><p><strong>weighted</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – a boolean indicating whether to use a weighted Frobenius norm (by default, False).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[~MarkovChain]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a Markov chain if the algorithm finds a solution, None otherwise.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.8)"><strong>ValueError</strong></a> – if a weighted Frobenius norm is used and the distribution contains zero-valued probabilities.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.communicating_classes">
+<em class="property">property </em><code class="sig-name descname">communicating_classes</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.communicating_classes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.communicating_classes" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the communicating classes of the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.conditional_distribution">
+<code class="sig-name descname">conditional_distribution</code><span class="sig-paren">(</span><em class="sig-param">state</em><span class="sig-paren">)</span><a class="headerlink" href="#pydtmc.MarkovChain.conditional_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias of <strong>conditional_probabilities</strong>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.conditional_probabilities">
+<code class="sig-name descname">conditional_probabilities</code><span class="sig-paren">(</span><em class="sig-param">state</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.conditional_probabilities"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.conditional_probabilities" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes the probabilities, for all the states of the Markov chain, conditioned on the process being at a given state.</p>
+<div class="line-block">
+<div class="line"><strong>Aliases:</strong> conditional_distribution</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>state</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]) – the current state.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the conditional probabilities of the Markov chain states.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.cyclic_classes">
+<em class="property">property </em><code class="sig-name descname">cyclic_classes</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.cyclic_classes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.cyclic_classes" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the cyclic classes of the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.cyclic_states">
+<em class="property">property </em><code class="sig-name descname">cyclic_states</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.cyclic_states"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.cyclic_states" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the cyclic states of the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.determinant">
+<em class="property">property </em><code class="sig-name descname">determinant</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.determinant"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.determinant" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the determinant the transition matrix of the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.entropy_rate">
+<em class="property">property </em><code class="sig-name descname">entropy_rate</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.entropy_rate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.entropy_rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the entropy rate of the Markov chain. If the Markov chain is not <em>ergodic</em>, then None is returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.entropy_rate_normalized">
+<em class="property">property </em><code class="sig-name descname">entropy_rate_normalized</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.entropy_rate_normalized"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.entropy_rate_normalized" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the entropy rate, normalized between 0 and 1, of the Markov chain. If the Markov chain is not <em>ergodic</em>, then None is returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.expected_rewards">
+<code class="sig-name descname">expected_rewards</code><span class="sig-paren">(</span><em class="sig-param">steps</em>, <em class="sig-param">rewards</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.expected_rewards"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.expected_rewards" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes the expected rewards of the Markov chain after N steps, given the reward value of each state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>steps</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – the number of steps.</p></li>
+<li><p><strong>rewards</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code></a>) – the reward values.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the expected rewards of each state of the Markov chain.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.expected_transitions">
+<code class="sig-name descname">expected_transitions</code><span class="sig-paren">(</span><em class="sig-param">steps</em>, <em class="sig-param">initial_distribution=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.expected_transitions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.expected_transitions" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes the expected number of transitions performed by the Markov chain after N steps, given the initial distribution of the states.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>steps</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – the number of steps.</p></li>
+<li><p><strong>initial_distribution</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code></a>]) – the initial distribution of the states (if omitted, the states are assumed to be uniformly distributed).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the expected number of transitions on each state of the Markov chain.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.fit_function">
+<em class="property">static </em><code class="sig-name descname">fit_function</code><span class="sig-paren">(</span><em class="sig-param">f</em>, <em class="sig-param">possible_states</em>, <em class="sig-param">quadrature_type='newton-cotes'</em>, <em class="sig-param">quadrature_interval=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.fit_function"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.fit_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method fits a Markov chain using the given transition function and with the given quadrature type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Callable" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code></a>[[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>]) – the transition function of the process.</p></li>
+<li><p><strong>possible_states</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]) – the possible states of the process.</p></li>
+<li><p><strong>quadrature_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – the quadrature type to use for the computation of nodes and weights (one of gauss-chebyshev, gauss-legendre, neiderreiter, newton-cotes, simpson-rule or trapezoid-rule; by default, newton-cotes).</p></li>
+<li><p><strong>quadrature_interval</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]]]) – the quadrature interval to use for the computation of nodes and weights (by default, the interval [0, 1]).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.MarkovChain" title="pydtmc.MarkovChain">~MarkovChain</a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a Markov chain.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.8)"><strong>ValueError</strong></a> – if the Gauss-Legendre quadrature fails to converge or if the Simpson rule quadrature is attempted on an even number of possible states.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.fit_standard">
+<em class="property">static </em><code class="sig-name descname">fit_standard</code><span class="sig-paren">(</span><em class="sig-param">possible_states</em>, <em class="sig-param">walk</em>, <em class="sig-param">fitting_type</em>, <em class="sig-param">k=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.fit_standard"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.fit_standard" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method fits a Markov chain using either the maximum a posteriori approach (MAP) or the maximum likelihood approach (MLE).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>possible_states</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]) – the possible states of the process.</p></li>
+<li><p><strong>walk</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – the observed sequence of states.</p></li>
+<li><p><strong>fitting_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – the type of fitting to use (either map or mle).</p></li>
+<li><p><strong>k</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>]) – <ul>
+<li><p>in the maximum a posteriori approach, the matrix for the a priori distribution (if omitted, a default value of 1 is assigned to each parameter);</p></li>
+<li><p>in the maximum likelihood approach, a boolean indicating whether to apply a Laplace smoothing to compensate for the unseen transition combinations (if omitted, the value is set to False).</p></li>
+</ul>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.MarkovChain" title="pydtmc.MarkovChain">~MarkovChain</a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a Markov chain.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.forward_committor">
+<code class="sig-name descname">forward_committor</code><span class="sig-paren">(</span><em class="sig-param">states1</em>, <em class="sig-param">states2</em><span class="sig-paren">)</span><a class="headerlink" href="#pydtmc.MarkovChain.forward_committor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias of <strong>forward_committor_probabilities</strong>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.forward_committor_probabilities">
+<code class="sig-name descname">forward_committor_probabilities</code><span class="sig-paren">(</span><em class="sig-param">states1</em>, <em class="sig-param">states2</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.forward_committor_probabilities"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.forward_committor_probabilities" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes the forward committor probabilities between the given subsets of the state space defined by the Markov chain.</p>
+<div class="line-block">
+<div class="line"><strong>Aliases:</strong> forward_committor</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>states1</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – the first subset of states.</p></li>
+<li><p><strong>states2</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – the second subset of states.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the forward committor probabilities if the Markov chain is <em>ergodic</em>, None otherwise.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.8)"><strong>ValueError</strong></a> – if the two sets are not disjoint.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.from_dictionary">
+<em class="property">static </em><code class="sig-name descname">from_dictionary</code><span class="sig-paren">(</span><em class="sig-param">d</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.from_dictionary"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.from_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method generates a Markov chain from the given dictionary, whose keys represent state pairs and whose values represent transition probabilities.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>d</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]]) – the dictionary to transform into the transition matrix.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.MarkovChain" title="pydtmc.MarkovChain">~MarkovChain</a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a Markov chain.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.8)"><strong>ValueError</strong></a> – if the transition matrix defined by the dictionary is not valid.</p></li>
+<li><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.from_file">
+<em class="property">static </em><code class="sig-name descname">from_file</code><span class="sig-paren">(</span><em class="sig-param">file_path</em>, <em class="sig-param">file_type='json'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.from_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method reads a Markov chain from the given file.</p>
+<div class="line-block">
+<div class="line">In the <em>json format</em>, data must be structured as an array of objects with the following properties:</div>
+<div class="line"><em>state_from</em> (string)</div>
+<div class="line"><em>state_to</em> (string)</div>
+<div class="line"><em>probability</em> (float or int)</div>
+<div class="line"><br /></div>
+<div class="line">In the <em>text format</em>, every line of the file must have the following format:</div>
+<div class="line"><em>&lt;state_from&gt; &lt;state_to&gt; &lt;probability&gt;</em></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file_path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – the location of the file that defines the Markov chain.</p></li>
+<li><p><strong>file_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – the type of file that defines the Markov chain (either json or text; by default, json).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.MarkovChain" title="pydtmc.MarkovChain">~MarkovChain</a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a Markov chain.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#FileNotFoundError" title="(in Python v3.8)"><strong>FileNotFoundError</strong></a> – if the file does not exist.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#OSError" title="(in Python v3.8)"><strong>OSError</strong></a> – if the file cannot be read or is empty.</p></li>
+<li><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.8)"><strong>ValueError</strong></a> – if the file contains invalid data.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.from_matrix">
+<em class="property">static </em><code class="sig-name descname">from_matrix</code><span class="sig-paren">(</span><em class="sig-param">m</em>, <em class="sig-param">states=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.from_matrix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.from_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method generates a Markov chain with the given state names, whose transition matrix is obtained through the normalization of the given matrix.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>m</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code></a>) – the matrix to transform into the transition matrix.</p></li>
+<li><p><strong>states</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – the name of each state (if omitted, an increasing sequence of integers starting at 1).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.MarkovChain" title="pydtmc.MarkovChain">~MarkovChain</a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a Markov chain.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.fundamental_matrix">
+<em class="property">property </em><code class="sig-name descname">fundamental_matrix</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.fundamental_matrix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.fundamental_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the fundamental matrix of the Markov chain. If the Markov chain has no transient states, then None is returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.hitting_probabilities">
+<code class="sig-name descname">hitting_probabilities</code><span class="sig-paren">(</span><em class="sig-param">states=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.hitting_probabilities"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.hitting_probabilities" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes the hitting probability, for all the states of the Markov chain, to the given set of states.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>states</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>], <code class="docutils literal notranslate"><span class="pre">None</span></code>]) – the set of target states (if omitted, all the states are targeted).</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the hitting probability of each state of the Markov chain.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.identity">
+<em class="property">static </em><code class="sig-name descname">identity</code><span class="sig-paren">(</span><em class="sig-param">size</em>, <em class="sig-param">states=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.identity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.identity" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method generates a Markov chain of given size based on an identity transition matrix.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – the size of the Markov chain.</p></li>
+<li><p><strong>states</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – the name of each state (if omitted, an increasing sequence of integers starting at 1).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.MarkovChain" title="pydtmc.MarkovChain">~MarkovChain</a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a Markov chain.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.is_absorbing">
+<em class="property">property </em><code class="sig-name descname">is_absorbing</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.is_absorbing"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.is_absorbing" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property indicating whether the Markov chain is absorbing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.is_absorbing_state">
+<code class="sig-name descname">is_absorbing_state</code><span class="sig-paren">(</span><em class="sig-param">state</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.is_absorbing_state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.is_absorbing_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method verifies whether the given state of the Markov chain is absorbing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>state</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]) – the target state.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>True if the state is absorbing, False otherwise.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.is_accessible">
+<code class="sig-name descname">is_accessible</code><span class="sig-paren">(</span><em class="sig-param">state_target</em>, <em class="sig-param">state_origin</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.is_accessible"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.is_accessible" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method verifies whether the given target state is reachable from the given origin state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>state_target</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]) – the target state.</p></li>
+<li><p><strong>state_origin</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]) – the origin state.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>True if the target state is reachable from the origin state, False otherwise.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.is_aperiodic">
+<em class="property">property </em><code class="sig-name descname">is_aperiodic</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.is_aperiodic"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.is_aperiodic" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property indicating whether the Markov chain is aperiodic.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.is_canonical">
+<em class="property">property </em><code class="sig-name descname">is_canonical</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.is_canonical"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.is_canonical" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property indicating whether the Markov chain has a canonical form.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.is_cyclic_state">
+<code class="sig-name descname">is_cyclic_state</code><span class="sig-paren">(</span><em class="sig-param">state</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.is_cyclic_state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.is_cyclic_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method verifies whether the given state is cyclic.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>state</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]) – the target state.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>True if the state is cyclic, False otherwise.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.is_ergodic">
+<em class="property">property </em><code class="sig-name descname">is_ergodic</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.is_ergodic"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.is_ergodic" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property indicating whether the Markov chain is ergodic or not.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.is_irreducible">
+<em class="property">property </em><code class="sig-name descname">is_irreducible</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.is_irreducible"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.is_irreducible" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property indicating whether the Markov chain is irreducible.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.is_recurrent_state">
+<code class="sig-name descname">is_recurrent_state</code><span class="sig-paren">(</span><em class="sig-param">state</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.is_recurrent_state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.is_recurrent_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method verifies whether the given state is recurrent.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>state</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]) – the target state.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>True if the state is recurrent, False otherwise.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.is_regular">
+<em class="property">property </em><code class="sig-name descname">is_regular</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.is_regular"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.is_regular" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property indicating whether the Markov chain is regular.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.is_reversible">
+<em class="property">property </em><code class="sig-name descname">is_reversible</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.is_reversible"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.is_reversible" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property indicating whether the Markov chain is reversible.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.is_symmetric">
+<em class="property">property </em><code class="sig-name descname">is_symmetric</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.is_symmetric"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.is_symmetric" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property indicating whether the Markov chain is symmetric.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.is_transient_state">
+<code class="sig-name descname">is_transient_state</code><span class="sig-paren">(</span><em class="sig-param">state</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.is_transient_state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.is_transient_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method verifies whether the given state is transient.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>state</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]) – the target state.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>True if the state is transient, False otherwise.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.kemeny_constant">
+<em class="property">property </em><code class="sig-name descname">kemeny_constant</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.kemeny_constant"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.kemeny_constant" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the Kemeny’s constant of the fundamental matrix of the Markov chain. If the Markov chain is not <em>absorbing</em>, then None is returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.mean_first_passage_times">
+<em class="property">property </em><code class="sig-name descname">mean_first_passage_times</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.mean_first_passage_times"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.mean_first_passage_times" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the mean first passage times of the Markov chain. If the Markov chain is not <em>ergodic</em>, then None is returned.</p>
+<div class="line-block">
+<div class="line"><strong>Aliases:</strong> mfpt</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.mean_first_passage_times_between">
+<code class="sig-name descname">mean_first_passage_times_between</code><span class="sig-paren">(</span><em class="sig-param">states_target</em>, <em class="sig-param">states_origin</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.mean_first_passage_times_between"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.mean_first_passage_times_between" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes the  mean first passage times between the given subsets of the state space.</p>
+<div class="line-block">
+<div class="line"><strong>Aliases:</strong> mfpt_between</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>states_target</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – the subset of target states.</p></li>
+<li><p><strong>states_origin</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – the subset of origin states.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the mean first passage times between the given subsets if the Markov chain is <em>irreducible</em>, None otherwise.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.mean_first_passage_times_to">
+<code class="sig-name descname">mean_first_passage_times_to</code><span class="sig-paren">(</span><em class="sig-param">states=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.mean_first_passage_times_to"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.mean_first_passage_times_to" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes the mean first passage times, for all the states, to the given set of states.</p>
+<div class="line-block">
+<div class="line"><strong>Aliases:</strong> mfpt_to</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>states</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>], <code class="docutils literal notranslate"><span class="pre">None</span></code>]) – the set of target states (if omitted, all the states are targeted).</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the mean first passage times of each state of the Markov chain.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.mfpt">
+<em class="property">property </em><code class="sig-name descname">mfpt</code><a class="headerlink" href="#pydtmc.MarkovChain.mfpt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias of <strong>mean_first_passage_times</strong>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.mfpt_between">
+<code class="sig-name descname">mfpt_between</code><span class="sig-paren">(</span><em class="sig-param">states_target</em>, <em class="sig-param">states_origin</em><span class="sig-paren">)</span><a class="headerlink" href="#pydtmc.MarkovChain.mfpt_between" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias of <strong>mean_first_passage_times_between</strong>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.mfpt_to">
+<code class="sig-name descname">mfpt_to</code><span class="sig-paren">(</span><em class="sig-param">states=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pydtmc.MarkovChain.mfpt_to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias of <strong>mean_first_passage_times_to</strong>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.mixing_rate">
+<em class="property">property </em><code class="sig-name descname">mixing_rate</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.mixing_rate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.mixing_rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the mixing rate of the Markov chain. If the <em>SLEM</em> (second largest eigenvalue modulus) cannot be computed, then None is returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.mixing_time">
+<code class="sig-name descname">mixing_time</code><span class="sig-paren">(</span><em class="sig-param">initial_distribution=None</em>, <em class="sig-param">jump=1</em>, <em class="sig-param">cutoff_type='natural'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.mixing_time"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.mixing_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes the mixing time of the Markov chain, given the initial distribution of the states.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>initial_distribution</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code></a>]) – the initial distribution of the states (if omitted, the states are assumed to be uniformly distributed).</p></li>
+<li><p><strong>jump</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – the number of steps in each iteration (by default, 1).</p></li>
+<li><p><strong>cutoff_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – the type of cutoff to use (either natural or traditional; by default, natural).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the mixing time if the Markov chain is <em>ergodic</em>, None otherwise.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.order">
+<em class="property">property </em><code class="sig-name descname">order</code><a class="headerlink" href="#pydtmc.MarkovChain.order" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the order of the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.p">
+<em class="property">property </em><code class="sig-name descname">p</code><a class="headerlink" href="#pydtmc.MarkovChain.p" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the transition matrix of the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.period">
+<em class="property">property </em><code class="sig-name descname">period</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.period"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.period" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the period of the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.periods">
+<em class="property">property </em><code class="sig-name descname">periods</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.periods"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.periods" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the period of each communicating class defined by the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.pi">
+<em class="property">property </em><code class="sig-name descname">pi</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.pi"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.pi" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the stationary distributions of the Markov chain.</p>
+<div class="line-block">
+<div class="line"><strong>Aliases:</strong> stationary_distributions, steady_states</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.predict">
+<code class="sig-name descname">predict</code><span class="sig-paren">(</span><em class="sig-param">steps</em>, <em class="sig-param">initial_state=None</em>, <em class="sig-param">include_initial=False</em>, <em class="sig-param">output_indices=False</em>, <em class="sig-param">seed=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.predict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method simulates the most probable outcome of a random walk of N steps.</p>
+<div class="line-block">
+<div class="line"><strong>Notes:</strong> in case of probability tie, the subsequent state is chosen uniformly at random among all the equiprobable states.</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>steps</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – the number of steps.</p></li>
+<li><p><strong>initial_state</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="docutils literal notranslate"><span class="pre">None</span></code>]) – the initial state of the prediction (if omitted, it is chosen uniformly at random).</p></li>
+<li><p><strong>include_initial</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – a boolean indicating whether to include the initial state in the output sequence (by default, False).</p></li>
+<li><p><strong>output_indices</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – a boolean indicating whether to the output the state indices (by default, False).</p></li>
+<li><p><strong>seed</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) – a seed to be used as RNG initializer for reproducibility purposes.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the sequence of states produced by the simulation.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.prior_probabilities">
+<code class="sig-name descname">prior_probabilities</code><span class="sig-paren">(</span><em class="sig-param">hyperparameter=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.prior_probabilities"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.prior_probabilities" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes the prior probabilities, in logarithmic form, of the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>hyperparameter</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code></a>]) – the matrix for the a priori distribution (if omitted, a default value of 1 is assigned to each parameter).</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a Markov chain.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.random">
+<em class="property">static </em><code class="sig-name descname">random</code><span class="sig-paren">(</span><em class="sig-param">size</em>, <em class="sig-param">states=None</em>, <em class="sig-param">zeros=0</em>, <em class="sig-param">mask=None</em>, <em class="sig-param">seed=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.random"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.random" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method generates a Markov chain of given size with random transition probabilities.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – the size of the Markov chain.</p></li>
+<li><p><strong>states</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – the name of each state (if omitted, an increasing sequence of integers starting at 1).</p></li>
+<li><p><strong>zeros</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – the number of zero-valued transition probabilities (by default, 0).</p></li>
+<li><p><strong>mask</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code></a>]) – a matrix representing the locations and values of fixed transition probabilities.</p></li>
+<li><p><strong>seed</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) – a seed to be used as RNG initializer for reproducibility purposes.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.MarkovChain" title="pydtmc.MarkovChain">~MarkovChain</a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a Markov chain.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.8)"><strong>ValueError</strong></a> – if the number of zero-valued transition probabilities exceeds the maximum threshold.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.rank">
+<em class="property">property </em><code class="sig-name descname">rank</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.rank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.rank" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the rank of the transition matrix of the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.recurrence_times">
+<em class="property">property </em><code class="sig-name descname">recurrence_times</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.recurrence_times"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.recurrence_times" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the recurrence times of the Markov chain. If the Markov chain has no recurrent states, then None is returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.recurrent_classes">
+<em class="property">property </em><code class="sig-name descname">recurrent_classes</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.recurrent_classes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.recurrent_classes" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the recurrent classes defined by the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.recurrent_states">
+<em class="property">property </em><code class="sig-name descname">recurrent_states</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.recurrent_states"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.recurrent_states" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the recurrent states of the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.redistribute">
+<code class="sig-name descname">redistribute</code><span class="sig-paren">(</span><em class="sig-param">steps</em>, <em class="sig-param">initial_status=None</em>, <em class="sig-param">include_initial=False</em>, <em class="sig-param">output_last=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.redistribute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.redistribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method simulates a redistribution of states of N steps.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>steps</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – the number of steps.</p></li>
+<li><p><strong>initial_status</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code></a>, <code class="docutils literal notranslate"><span class="pre">None</span></code>]) – the initial state or the initial distribution of the states (if omitted, the states are assumed to be uniformly distributed).</p></li>
+<li><p><strong>include_initial</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – a boolean indicating whether to include the initial distribution in the output sequence (by default, False).</p></li>
+<li><p><strong>output_last</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – a boolean indicating whether to the output only the last distributions (by default, True).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the sequence of redistributions produced by the simulation.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.relaxation_rate">
+<em class="property">property </em><code class="sig-name descname">relaxation_rate</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.relaxation_rate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.relaxation_rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the relaxation rate of the Markov chain. If the <em>SLEM</em> (second largest eigenvalue modulus) cannot be computed, then None is returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.sensitivity">
+<code class="sig-name descname">sensitivity</code><span class="sig-paren">(</span><em class="sig-param">state</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.sensitivity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.sensitivity" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes the sensitivity matrix of the stationary distribution with respect to a given state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>state</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]) – the target state.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the sensitivity matrix of the stationary distribution if the Markov chain is <em>irreducible</em>, None otherwise.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.size">
+<em class="property">property </em><code class="sig-name descname">size</code><a class="headerlink" href="#pydtmc.MarkovChain.size" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the size of the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.spectral_gap">
+<em class="property">property </em><code class="sig-name descname">spectral_gap</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.spectral_gap"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.spectral_gap" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the spectral gap of the Markov chain. If the Markov chain is not <em>ergodic</em>, then None is returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.states">
+<em class="property">property </em><code class="sig-name descname">states</code><a class="headerlink" href="#pydtmc.MarkovChain.states" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the states of the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.stationary_distributions">
+<em class="property">property </em><code class="sig-name descname">stationary_distributions</code><a class="headerlink" href="#pydtmc.MarkovChain.stationary_distributions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias of <strong>pi</strong>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.steady_states">
+<em class="property">property </em><code class="sig-name descname">steady_states</code><a class="headerlink" href="#pydtmc.MarkovChain.steady_states" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias of <strong>pi</strong>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.to_canonical">
+<code class="sig-name descname">to_canonical</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pydtmc.MarkovChain.to_canonical" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias of <strong>to_canonical_form</strong>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#pydtmc.MarkovChain" title="pydtmc.MarkovChain">~MarkovChain</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.to_canonical_form">
+<code class="sig-name descname">to_canonical_form</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.to_canonical_form"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.to_canonical_form" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method returns the canonical form of the Markov chain.</p>
+<div class="line-block">
+<div class="line"><strong>Aliases:</strong> to_canonical</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#pydtmc.MarkovChain" title="pydtmc.MarkovChain">~MarkovChain</a></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a Markov chain.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.to_dictionary">
+<code class="sig-name descname">to_dictionary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.to_dictionary"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.to_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method returns a dictionary representing the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a dictionary.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.to_directed_graph">
+<code class="sig-name descname">to_directed_graph</code><span class="sig-paren">(</span><em class="sig-param">multi=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.to_directed_graph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.to_directed_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method returns a directed graph representing the Markov chain.</p>
+<div class="line-block">
+<div class="line"><strong>Aliases:</strong> to_digraph</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>multi</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – a boolean indicating whether the graph is allowed to define multiple edges between two nodes (by default, True).</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">DiGraph</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a directed graph.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.to_file">
+<code class="sig-name descname">to_file</code><span class="sig-paren">(</span><em class="sig-param">file_path</em>, <em class="sig-param">file_type='json'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.to_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.to_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method writes a Markov chain to the given file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file_path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – the location of the file in which the Markov chain must be written.</p></li>
+<li><p><strong>file_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – the type of file that defines the Markov chain (either json or text; by default, json).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#OSError" title="(in Python v3.8)"><strong>OSError</strong></a> – if the file cannot be written.</p></li>
+<li><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.to_graph">
+<code class="sig-name descname">to_graph</code><span class="sig-paren">(</span><em class="sig-param">multi=True</em><span class="sig-paren">)</span><a class="headerlink" href="#pydtmc.MarkovChain.to_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias of <strong>to_directed_graph</strong>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">DiGraph</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.to_lazy">
+<code class="sig-name descname">to_lazy</code><span class="sig-paren">(</span><em class="sig-param">inertial_weights=0.5</em><span class="sig-paren">)</span><a class="headerlink" href="#pydtmc.MarkovChain.to_lazy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias of <strong>to_lazy_chain</strong>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#pydtmc.MarkovChain" title="pydtmc.MarkovChain">~MarkovChain</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.to_lazy_chain">
+<code class="sig-name descname">to_lazy_chain</code><span class="sig-paren">(</span><em class="sig-param">inertial_weights=0.5</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.to_lazy_chain"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.to_lazy_chain" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method returns a lazy chain by adjusting the state inertia of the original process.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>inertial_weights</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code></a>]) – the inertial weights to apply for the transformation (by default, 0.5).</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.MarkovChain" title="pydtmc.MarkovChain">~MarkovChain</a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a Markov chain.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.to_subchain">
+<code class="sig-name descname">to_subchain</code><span class="sig-paren">(</span><em class="sig-param">states</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.to_subchain"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.to_subchain" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method returns a subchain containing all the given states plus all the states reachable from them.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>states</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – the states to include in the subchain.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.MarkovChain" title="pydtmc.MarkovChain">~MarkovChain</a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a Markov chain.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.topological_entropy">
+<em class="property">property </em><code class="sig-name descname">topological_entropy</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.topological_entropy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.topological_entropy" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the topological entropy of the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.transient_classes">
+<em class="property">property </em><code class="sig-name descname">transient_classes</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.transient_classes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.transient_classes" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the transient classes defined by the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.transient_states">
+<em class="property">property </em><code class="sig-name descname">transient_states</code><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.transient_states"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.transient_states" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property representing the transient states of the Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.transition_probability">
+<code class="sig-name descname">transition_probability</code><span class="sig-paren">(</span><em class="sig-param">state_target</em>, <em class="sig-param">state_origin</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.transition_probability"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.transition_probability" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes the probability of a given state, conditioned on the process being at a given specific state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>state_target</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]) – the target state.</p></li>
+<li><p><strong>state_origin</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]) – the origin state.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the transition probability of the target state.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.walk">
+<code class="sig-name descname">walk</code><span class="sig-paren">(</span><em class="sig-param">steps</em>, <em class="sig-param">initial_state=None</em>, <em class="sig-param">final_state=None</em>, <em class="sig-param">include_initial=False</em>, <em class="sig-param">output_indices=False</em>, <em class="sig-param">seed=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.walk"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.walk" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method simulates a random walk of N steps.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>steps</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – the number of steps.</p></li>
+<li><p><strong>initial_state</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="docutils literal notranslate"><span class="pre">None</span></code>]) – the initial state of the walk (if omitted, it is chosen uniformly at random).</p></li>
+<li><p><strong>final_state</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="docutils literal notranslate"><span class="pre">None</span></code>]) – the final state of the walk (if specified, the simulation stops as soon as it is reached even if not all the steps have been performed).</p></li>
+<li><p><strong>include_initial</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – a boolean indicating whether to include the initial state in the output sequence (by default, False).</p></li>
+<li><p><strong>output_indices</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – a boolean indicating whether to the output the state indices (by default, False).</p></li>
+<li><p><strong>seed</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) – a seed to be used as RNG initializer for reproducibility purposes.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the sequence of states produced by the simulation.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pydtmc.MarkovChain.walk_probability">
+<code class="sig-name descname">walk_probability</code><span class="sig-paren">(</span><em class="sig-param">walk</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/markov_chain.html#MarkovChain.walk_probability"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.MarkovChain.walk_probability" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes the probability of a given sequence of states.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>walk</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – the sequence of states.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the probability of the sequence of states.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="pydtmc.plot_eigenvalues">
+<code class="sig-prename descclassname">pydtmc.</code><code class="sig-name descname">plot_eigenvalues</code><span class="sig-paren">(</span><em class="sig-param">mc</em>, <em class="sig-param">dpi=100</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/plotting.html#plot_eigenvalues"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.plot_eigenvalues" title="Permalink to this definition">¶</a></dt>
+<dd><p>The function plots the eigenvalues of the Markov chain on the complex plane.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mc</strong> (<a class="reference internal" href="#pydtmc.MarkovChain" title="pydtmc.MarkovChain"><em>~MarkovChain</em></a>) – the target Markov chain.</p></li>
+<li><p><strong>dpi</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – the resolution of the plot expressed in dots per inch (by default, 100).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="(in Matplotlib v3.1.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Figure</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Axes</span></code>]]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None if Matplotlib is in interactive mode as the plot is immediately displayed, otherwise the handles of the plot.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pydtmc.plot_graph">
+<code class="sig-prename descclassname">pydtmc.</code><code class="sig-name descname">plot_graph</code><span class="sig-paren">(</span><em class="sig-param">mc</em>, <em class="sig-param">nodes_color=True</em>, <em class="sig-param">nodes_type=True</em>, <em class="sig-param">edges_color=True</em>, <em class="sig-param">edges_value=True</em>, <em class="sig-param">dpi=100</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/plotting.html#plot_graph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.plot_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>The function plots the directed graph of the Markov chain.</p>
+<div class="line-block">
+<div class="line"><strong>Notes:</strong> Graphviz and Pydot are not required, but they provide access to extended graphs with additional features.</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mc</strong> (<a class="reference internal" href="#pydtmc.MarkovChain" title="pydtmc.MarkovChain"><em>~MarkovChain</em></a>) – the target Markov chain.</p></li>
+<li><p><strong>nodes_color</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – a boolean indicating whether to display colored nodes based on communicating classes (by default, True).</p></li>
+<li><p><strong>nodes_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – a boolean indicating whether to use a different shape for every node type (by default, True).</p></li>
+<li><p><strong>edges_color</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – a boolean indicating whether to display edges using a gradient based on transition probabilities, valid only for extended graphs (by default, True).</p></li>
+<li><p><strong>edges_value</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – a boolean indicating whether to display the transition probability of every edge (by default, True).</p></li>
+<li><p><strong>dpi</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – the resolution of the plot expressed in dots per inch (by default, 100).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="(in Matplotlib v3.1.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Figure</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Axes</span></code>]]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None if Matplotlib is in interactive mode as the plot is immediately displayed, otherwise the handles of the plot.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pydtmc.plot_redistributions">
+<code class="sig-prename descclassname">pydtmc.</code><code class="sig-name descname">plot_redistributions</code><span class="sig-paren">(</span><em class="sig-param">mc</em>, <em class="sig-param">distributions</em>, <em class="sig-param">initial_status=None</em>, <em class="sig-param">plot_type='projection'</em>, <em class="sig-param">dpi=100</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/plotting.html#plot_redistributions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.plot_redistributions" title="Permalink to this definition">¶</a></dt>
+<dd><p>The function plots a redistribution of states on the given Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mc</strong> (<a class="reference internal" href="#pydtmc.MarkovChain" title="pydtmc.MarkovChain"><em>~MarkovChain</em></a>) – the target Markov chain.</p></li>
+<li><p><strong>distributions</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.17)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>]]) – a sequence of redistributions or the number of redistributions to perform.</p></li>
+<li><p><strong>initial_status</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code></a>, <code class="docutils literal notranslate"><span class="pre">None</span></code>]) – the initial state or the initial distribution of the states (if omitted, the states are assumed to be uniformly distributed).</p></li>
+<li><p><strong>plot_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – the type of plot to display (either heatmap or projection; projection by default).</p></li>
+<li><p><strong>dpi</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – the resolution of the plot expressed in dots per inch (by default, 100).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="(in Matplotlib v3.1.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Figure</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Axes</span></code>]]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None if Matplotlib is in interactive mode as the plot is immediately displayed, otherwise the handles of the plot.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.8)"><strong>ValueError</strong></a> – if the “distributions” parameter represents a sequence of redistributions and the “initial_status” parameter does not match its first element.</p></li>
+<li><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pydtmc.plot_walk">
+<code class="sig-prename descclassname">pydtmc.</code><code class="sig-name descname">plot_walk</code><span class="sig-paren">(</span><em class="sig-param">mc</em>, <em class="sig-param">walk</em>, <em class="sig-param">initial_state=None</em>, <em class="sig-param">plot_type='histogram'</em>, <em class="sig-param">dpi=100</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pydtmc/plotting.html#plot_walk"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pydtmc.plot_walk" title="Permalink to this definition">¶</a></dt>
+<dd><p>The function plots a random walk on the given Markov chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mc</strong> (<a class="reference internal" href="#pydtmc.MarkovChain" title="pydtmc.MarkovChain"><em>~MarkovChain</em></a>) – the target Markov chain.</p></li>
+<li><p><strong>walk</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – a sequence of states or the number of simulations to perform.</p></li>
+<li><p><strong>initial_state</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="docutils literal notranslate"><span class="pre">None</span></code>]) – the initial state of the walk (if omitted, it is chosen uniformly at random).</p></li>
+<li><p><strong>plot_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – the type of plot to display (one of histogram, sequence and transitions; histogram by default).</p></li>
+<li><p><strong>dpi</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – the resolution of the plot expressed in dots per inch (by default, 100).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="(in Matplotlib v3.1.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Figure</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Axes</span></code>]]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None if Matplotlib is in interactive mode as the plot is immediately displayed, otherwise the handles of the plot.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.8)"><strong>ValueError</strong></a> – if the “walk” parameter represents a sequence of states and the “initial_state” parameter does not match its first element.</p></li>
+<li><p><a class="reference internal" href="#pydtmc.ValidationError" title="pydtmc.ValidationError"><strong>ValidationError</strong></a> – if any input argument is not compliant.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0 right"><a href="index.html">Homepage</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Tommaso Belluzzo.
+    </div>
+  </body>
+</html>
