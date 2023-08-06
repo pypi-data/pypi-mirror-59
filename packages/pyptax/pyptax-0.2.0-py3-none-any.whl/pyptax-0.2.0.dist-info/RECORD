@@ -1,0 +1,11 @@
+pyptax/__init__.py,sha256=5X47WyMVOucMbPuVAVbhf5MiSyg9rM9esPqcZ0CFosA,56
+pyptax/client.py,sha256=ms-DjXAB_h8N6DhYgMUXtY4MCKghAopQ5yDphc6MW9g,539
+pyptax/models.py,sha256=hM47dgVbdXwm5AQuuhRNZynssooYOzMW33mcRwfUiQQ,416
+pyptax/ptax.py,sha256=iTYrs__gMfxgly4cs2K4jLGBTBHj-n5Kes5Axjr4PGI,865
+pyptax/resources.py,sha256=8eGMhaHtmVv0VFJR6as4nnhkFewfc35zsdfG5VBYess,528
+pyptax/settings.py,sha256=_U675IqLtJm2K42y6hdFAGk0qzINFGFt1bEfEBgaGn4,141
+pyptax-0.2.0.dist-info/LICENSE,sha256=jdd-EtfbaXduqTlsiCq_aWntQf-2zI7nePqEzTApTVA,1070
+pyptax-0.2.0.dist-info/METADATA,sha256=iGIsqJpL2ne_LAuSXd0Bg4WuC2fxMcKneQ_dlzMjkYk,1877
+pyptax-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyptax-0.2.0.dist-info/top_level.txt,sha256=W0T5IXyQKaEWpmZVE_AsMFgN6NPKVOpDcjZ1Aed1OF4,7
+pyptax-0.2.0.dist-info/RECORD,,
