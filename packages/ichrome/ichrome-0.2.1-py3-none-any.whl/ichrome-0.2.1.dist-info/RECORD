@@ -1,0 +1,12 @@
+ichrome/__init__.py,sha256=uwqI4UgzGbgUDsKyvqcHvZha3g1EI2ycnSgf1ilHGRw,447
+ichrome/__main__.py,sha256=wC20lD7R0tuFDThoVdnt7OSI34QO26Fp8XrPBi-ZHB8,2429
+ichrome/async_utils.py,sha256=R6l9MJZsrBw_wgVTzcR_wW_o9W99gnR7r7urqo-hr4o,33541
+ichrome/base.py,sha256=mLUlCYeN8bv7yYWiL0GTkz9QQ-kD-cTQ9qrhD_qKHSg,985
+ichrome/daemon.py,sha256=7DP6pTHpPvS3yQnJwG6bYkkvCyOhT3XUkES9s_A5SLM,13203
+ichrome/logs.py,sha256=xGjAAzHVfUAEkKKXTazMrx51fqD48NuM9q51mH7R4eA,574
+ichrome/sync_utils.py,sha256=GB0ho-Oe8xId_bB7F4an6W12YXa29WOoUwdPrxtN6go,18616
+ichrome-0.2.1.dist-info/LICENSE,sha256=4bl-rb3nuvHYk6dj9IYbOZO3KG9dGzF3iEHJM5VQYus,1082
+ichrome-0.2.1.dist-info/METADATA,sha256=S_tM9wAt7ymhjLE1HjdUXhZTfIGUPfKsmH5NYyhPb6U,17050
+ichrome-0.2.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+ichrome-0.2.1.dist-info/top_level.txt,sha256=q05m2qZfm8toJUsEe8DjwqqV0YFRdfbq21dqaWdm9cw,8
+ichrome-0.2.1.dist-info/RECORD,,
