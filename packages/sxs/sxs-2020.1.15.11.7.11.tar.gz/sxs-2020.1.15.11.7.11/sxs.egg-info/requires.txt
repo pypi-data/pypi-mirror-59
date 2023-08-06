@@ -1,0 +1,11 @@
+numpy
+h5py
+requests
+requests_toolbelt
+ads
+pylatexenc
+lxml
+feedparser
+tqdm
+pytz
+romspline
