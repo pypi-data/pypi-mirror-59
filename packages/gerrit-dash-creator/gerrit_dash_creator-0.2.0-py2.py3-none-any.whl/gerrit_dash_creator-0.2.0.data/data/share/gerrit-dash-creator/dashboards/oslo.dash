@@ -1,0 +1,40 @@
+[dashboard]
+title = Oslo Review Inbox
+description = Review Inbox for OpenStack Oslo
+foreach = (
+    project:openstack/automaton OR
+    project:openstack/castellan OR
+    project:openstack/cookiecutter OR
+    project:openstack/debtcollector OR
+    project:openstack/devstack-plugin-amqp1 OR
+    project:openstack/devstack-plugin-kafka OR
+    project:openstack/devstack-plugin-pika OR
+    project:openstack/devstack-plugin-zmq OR
+    project:openstack/futurist OR
+    project:openstack/microversion-parse OR
+    project:openstack/mox3 OR
+    project:openstack/openstackdocstheme OR
+    project:openstack/openstack-doc-tools OR
+    project:openstack/os-api-ref OR
+    project:openstack/oslo-cookiecutter OR
+    project:openstack/oslo-specs OR
+    project:^openstack/oslo\..* OR
+    project:openstack/oslotest OR
+    project:openstack/osprofiler OR
+    project:openstack/pbr OR
+    project:openstack/sphinx-feature-classification OR
+    project:openstack/stevedore OR
+    project:openstack/taskflow OR
+    project:openstack/tooz OR
+    project:openstack/whereto )
+  status:open
+  NOT owner:self
+
+[section "Bug Fixes"]
+query = message:"bug: "
+
+[section "Needs final +2"]
+query = label:Code-Review>=2 NOT reviewedby:self limit:50
+
+[section "Other changes"]
+query = NOT label:Code-Review>=2 limit:200

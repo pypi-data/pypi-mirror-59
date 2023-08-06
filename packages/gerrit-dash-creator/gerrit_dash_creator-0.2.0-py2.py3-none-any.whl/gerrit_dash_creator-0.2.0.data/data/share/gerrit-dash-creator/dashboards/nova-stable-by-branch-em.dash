@@ -1,0 +1,31 @@
+[dashboard]
+title = Nova Extended Maintenance Review Inbox
+description = Review Inbox
+foreach = (project:openstack/nova OR project:openstack/python-novaclient) status:open NOT owner:self NOT label:Workflow<=-1 label:Verified>=1,zuul NOT reviewedby:self
+
+[section " stable/queens You are a reviewer, but haven't voted in the current revision"]
+query = NOT label:Code-Review<=-1,self NOT label:Code-Review>=1,self reviewer:self branch:stable/queens
+
+[section "stable/queens Needs final +2"]
+query = label:Code-Review>=2 NOT(reviewerin:stable-maint-core label:Code-Review<=-1) limit:50 NOT label:workflow>=1 branch:stable/queens
+
+[section "stable/queens Passed Zuul, No Negative Core Feedback"]
+query = NOT label:Code-Review>=2 NOT(reviewerin:stable-maint-core label:Code-Review<=-1) limit:50 branch:stable/queens
+
+[section " stable/pike You are a reviewer, but haven't voted in the current revision"]
+query = NOT label:Code-Review<=-1,self NOT label:Code-Review>=1,self reviewer:self branch:stable/pike
+
+[section "stable/pike Needs final +2"]
+query = label:Code-Review>=2 NOT(reviewerin:stable-maint-core label:Code-Review<=-1) limit:50 NOT label:workflow>=1 branch:stable/pike
+
+[section "stable/pike Passed Zuul, No Negative Core Feedback"]
+query = NOT label:Code-Review>=2 NOT(reviewerin:stable-maint-core label:Code-Review<=-1) limit:50 branch:stable/pike
+
+[section " stable/ocata You are a reviewer, but haven't voted in the current revision"]
+query = NOT label:Code-Review<=-1,self NOT label:Code-Review>=1,self reviewer:self branch:stable/ocata
+
+[section "stable/ocata Needs final +2"]
+query = label:Code-Review>=2 NOT(reviewerin:stable-maint-core label:Code-Review<=-1) limit:50 NOT label:workflow>=1 branch:stable/ocata
+
+[section "stable/ocata Passed Zuul, No Negative Core Feedback"]
+query = NOT label:Code-Review>=2 NOT(reviewerin:stable-maint-core label:Code-Review<=-1) limit:50 branch:stable/ocata

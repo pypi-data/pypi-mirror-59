@@ -1,0 +1,30 @@
+[dashboard]
+title = Neutron Priorities Dashboard
+description = Neutron priority reviews
+foreach = (project:openstack/neutron OR
+           project:openstack/neutron-lib OR
+           project:openstack/neutron-tempest-plugin OR
+           project:openstack/python-neutronclient OR
+           project:openstack/neutron-specs OR
+           project:openstack/networking-bagpipe OR
+           project:openstack/networking-bgpvpn OR
+           project:openstack/networking-midonet OR
+           project:openstack/networking-odl OR
+           project:openstack/networking-ovn OR
+           project:openstack/networking-sfc OR
+           project:openstack/neutron-dynamic-routing OR
+           project:openstack/neutron-fwaas OR
+           project:openstack/neutron-fwaas-dashboard OR
+           project:openstack/neutron-vpnaas OR
+           project:openstack/neutron-vpnaas-dashboard OR
+           project:openstack/os-ken OR
+           project:openstack/ovsdbapp) status:open
+
+[section "High Priority Changes"]
+query = label:Review-Priority=2
+
+[section "Priority Changes"]
+query = label:Review-Priority=1
+
+[section "Blocked Reviews"]
+query = label:Review-Priority=-1
