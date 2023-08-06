@@ -1,0 +1,14 @@
+README.md
+setup.py
+cmmnbuild_dep_manager/__init__.py
+cmmnbuild_dep_manager/__main__.py
+cmmnbuild_dep_manager/cmmnbuild_dep_manager.py
+cmmnbuild_dep_manager.egg-info/PKG-INFO
+cmmnbuild_dep_manager.egg-info/SOURCES.txt
+cmmnbuild_dep_manager.egg-info/dependency_links.txt
+cmmnbuild_dep_manager.egg-info/not-zip-safe
+cmmnbuild_dep_manager.egg-info/requires.txt
+cmmnbuild_dep_manager.egg-info/top_level.txt
+cmmnbuild_dep_manager/resolver/__init__.py
+cmmnbuild_dep_manager/resolver/cbng_web.py
+cmmnbuild_dep_manager/resolver/gradle.py

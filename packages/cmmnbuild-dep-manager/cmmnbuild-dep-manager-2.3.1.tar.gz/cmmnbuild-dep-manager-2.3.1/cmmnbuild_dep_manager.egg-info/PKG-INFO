@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cmmnbuild-dep-manager
+Version: 2.3.1
+Summary: Manages CERN's Java dependencies across multiple Python packages
+Home-page: https://gitlab.cern.ch/scripting-tools/cmmnbuild-dep-manager
+Author: CERN MD Scripting Tools Community
+Author-email: MD-scripting-tools@cern.ch
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
