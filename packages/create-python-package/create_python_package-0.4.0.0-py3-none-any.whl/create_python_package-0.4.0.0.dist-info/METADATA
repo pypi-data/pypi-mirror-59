@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: create-python-package
+Version: 0.4.0.0
+Summary: Create the file and folder structure for a Python package
+Home-page: https://github.com/cs01/create-python-package
+Author: Chad Smith
+Author-email: grassfedcode@gmail.com
+License: License :: OSI Approved :: MIT License
+Keywords: package,setup
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: cookiecutter
+
+# create-python-package
+
+<p>
+<a href="https://travis-ci.org/cs01/create-python-package"><img src="https://travis-ci.org/cs01/create-python-package.svg?branch=master" /></a>
+
+<a href="https://pypi.python.org/pypi/pipx/">
+<img src="https://img.shields.io/badge/pypi-0.4.0.0-blue.svg" /></a>
+<a href="https://github.com/ambv/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+</p>
+
+## Overview
+Initialize a new Python package.
+
+## Usage and Installation
+Python 3.6+ is required
+
+Use [pipx](https://github.com/pipxproject/pipx) to execute the latest version of `create-python-package`:
+```
+pipx run create-python-package
+```
+
+## Credits
+`create-python-package` uses [cookiecutter](https://github.com/cookiecutter/cookiecutter) in its implementation, and is basically an alias for it.
+
+Inspired by [create-react-app](https://github.com/facebook/create-react-app).
+
+
