@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+InfiniteTrends/InfiniteTrends.py
+InfiniteTrends.egg-info/PKG-INFO
+InfiniteTrends.egg-info/SOURCES.txt
+InfiniteTrends.egg-info/dependency_links.txt
+InfiniteTrends.egg-info/requires.txt
+InfiniteTrends.egg-info/top_level.txt
