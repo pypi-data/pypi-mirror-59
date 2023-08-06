@@ -1,0 +1,5 @@
+include tpMayaLib/__logging__.ini
+include tpMayaLib/resources/*.*
+include tpMayaLib/resources/icons/*.*
+include tpMayaLib/resources/icons/default/*.*
+include tpMayaLib/resources/icons/color/*.*

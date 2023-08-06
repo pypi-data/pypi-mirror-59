@@ -1,0 +1,10 @@
+euclid
+tpPyUtils
+tpDccLib
+tpQtLib
+
+[dev]
+wheel
+
+[test]
+pytest
