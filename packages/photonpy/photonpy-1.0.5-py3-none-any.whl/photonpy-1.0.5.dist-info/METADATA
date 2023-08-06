@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: photonpy
+Version: 1.0.5
+Summary: CUDA-Based image processing for single molecule localization microscopy
+Home-page: https://github.com/qnano/photonpy
+Author: Jelmer Cnossen
+Author-email: j.p.cnossen@tudelft.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C++
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+Requires-Dist: tifffile
+Requires-Dist: pandas
+Requires-Dist: pptk
+Requires-Dist: h5py
+
+
+A python toolbox for playing around with Point-Spread-Functions models and doing fast single molecule localization microscopy image processing. Features are spot detection and extraction on tiff files, 2D Gaussian fitting with support for SIMFLUX, astigmatic 3D localization, sCMOS camera correction, cubic spline (CSpline) psf models, all implemented in C++/CUDA. Compiled for cuda 10 / windows x64
+
+
