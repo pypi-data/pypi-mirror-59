@@ -1,0 +1,10 @@
+README.md
+setup.py
+aero_astro_calc/PlaneStress.py
+aero_astro_calc/__init__.py
+aero_astro_calc.egg-info/PKG-INFO
+aero_astro_calc.egg-info/SOURCES.txt
+aero_astro_calc.egg-info/dependency_links.txt
+aero_astro_calc.egg-info/top_level.txt
+aero_astro_calc/dependencies/LatexLabel.py
+aero_astro_calc/dependencies/__init__.py
