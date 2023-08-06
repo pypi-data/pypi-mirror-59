@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: rewraa
+Version: 1.6.2
+Summary: A Encrypted Chat program
+Home-page: UNKNOWN
+Author: Javad Shafique
+Author-email: javadscript@gmx.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pycryptodome
+
+
+RewRaa (RSA ENCRYPTED WILD ROUND AES APPLICATION, note i have no idea
+why i choose that name) is a socket-server chat program which uses rsa
+encryption to encrypt an aes key for encrypting/decrypting messages
+
+Imagine the following encryption scheme:
+
+::
+
+    # first transfer aes key
+    (CLIENT) => RSA_PUBLIC => (SERVER)
+    (SERVER) => RSA_ENCRYPTED_AES_KEY => (CLIENT)
+
+            (C) => ENC_DATA => (S)
+                        - BROADCAST -
+                        (C) - (C) - (C) # clients decrypt the message
+
+But working to give each client a seprate aes-key and signing the data
+so you can’t create a fake server that reads all your data.
+
+NOTE: Only connect to trusted servers for now it has a big security flaw
+and the only secure part is if anyone is monitoring your internet
+traffic
+
+
