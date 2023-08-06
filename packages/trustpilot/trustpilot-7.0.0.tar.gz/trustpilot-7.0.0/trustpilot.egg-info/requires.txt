@@ -1,0 +1,17 @@
+Click==6.7
+requests>=2.22.0
+
+[:python_version == "3.6"]
+async_generator==1.10
+
+[:python_version >= "3.6"]
+aiohttp==3.6.2
+
+[async]
+
+[test]
+responses==0.6
+mock
+pytest==3.2.0
+pytest-readme==1.0.0
+aioresponses==0.6.1
