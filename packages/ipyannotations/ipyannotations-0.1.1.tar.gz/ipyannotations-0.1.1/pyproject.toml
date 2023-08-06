@@ -1,0 +1,46 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "ipyannotations"
+author = "Jan Freyberg"
+author-email = "jan.freyberg@gmail.com"
+home-page = "https://github.com/janfreyberg/ipyannotate"
+classifiers = ["License :: OSI Approved :: MIT License"]
+requires-python = ">=3.6"
+requires = [
+    "ipywidgets",
+    "ipycanvas",
+    "palettable",
+    "Pillow",
+    "numpy",
+    "dataclasses; python_version == '3.6'"
+]
+
+
+[tool.flit.metadata.requires-extra]
+test = [
+    "pytest",
+    "coverage",
+    "coveralls",
+    "pytest-cov",
+    "hypothesis"
+]
+dev = [
+    "black",
+    "flake8",
+    "pre-commit",
+    "jupyterlab",
+    "rope"
+]
+doc = [
+    "sphinx>=2.3",
+    "m2r",
+    "sphinx_rtd_theme",
+    "nbsphinx"
+]
+
+
+[tool.black]
+line-length = 79
