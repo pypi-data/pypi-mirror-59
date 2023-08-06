@@ -1,0 +1,6 @@
+dd2nx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dd2nx/test_to_nx.py,sha256=0rl3wM1Twh8jcfPaMCwukhVQf_Jlv4IT4nu10lFEk5Q,517
+dd2nx/to_nx.py,sha256=g5bikuY_pbKUnwBvz3_PElBTcB48p_iLQcJ8KhmreYo,2546
+dd2nx-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+dd2nx-0.1.0.dist-info/METADATA,sha256=l-HpaSlsSiIMWAHJOUDdreZ1OsPSV_Szj3luamNuAgA,815
+dd2nx-0.1.0.dist-info/RECORD,,
