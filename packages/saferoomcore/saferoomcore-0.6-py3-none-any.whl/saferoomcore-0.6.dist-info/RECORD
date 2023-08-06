@@ -1,0 +1,14 @@
+saferoomcore/SafeExceptions.py,sha256=At6-zFGFMyQMlg8xOqX39XeE8mvjjL8hTffXQqvB_Ds,262
+saferoomcore/Safenote.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saferoomcore/ServiceManager.py,sha256=VNLtXz9O2TBnJ9cpzd557l_RYkTuj5Suubq_7e_Fjh0,13009
+saferoomcore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saferoomcore/functions.py,sha256=tk1GtHScpTYrP8t7Agnii4ojuCP4rF7rQLKe433j6eI,769
+saferoomcore/messages.py,sha256=04Yxp0I-JlB5RU2HSlgRTh5Yp83NOtEjB6sAv1fjuZY,273
+saferoomcore/safevars.py,sha256=1wKzOcJTEwJn5ZhzF4tEVZCIKO0zoHybEZ9WFAarRic,132
+saferoomcore/tests.py,sha256=5sINWvTZfIxmMzNIDi_yk6qRZAn7vJL6Q3mHPYQK7Mw,1432
+saferoomcore-0.6.dist-info/LICENSE,sha256=j085mWvHMdhORLh_svPkfFJWR91O3YhuktZDcHFIpgw,1068
+saferoomcore-0.6.dist-info/METADATA,sha256=daDvX8S1OhibICntQDSdoFyZ9fnt8xi2DRmw7RkK_nY,559
+saferoomcore-0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+saferoomcore-0.6.dist-info/dependency_links.txt,sha256=ENNf-Pm4z-hJrGUdT1OYnXov4Q8z8awku4eXZ31uY5U,64
+saferoomcore-0.6.dist-info/top_level.txt,sha256=STgQ4teZseoMqQbIraJVrZxp3HNkrimkyErvKSoDWV4,13
+saferoomcore-0.6.dist-info/RECORD,,
