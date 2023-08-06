@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: yhttp
+Version: 1.0.1
+Summary: A very micro http framework.
+Home-page: http://github.com/yhttp/yhttp
+Author: Vahid Mardani
+Author-email: vahid.mardani@gmail.com
+License: MIT
+Description: # yhttp
+        
+        
+        
+        [![PyPI](http://img.shields.io/pypi/v/yhttp.svg)](https://pypi.python.org/pypi/yhttp)
+        [![Build Status](https://travis-ci.org/yhttp/yhttp.svg?branch=master)](https://travis-ci.org/yhttp/yhttp)
+        [![Coverage Status](https://coveralls.io/repos/github/yhttp/yhttp/badge.svg?branch=master)](https://coveralls.io/github/yhttp/yhttp?branch=master)
+        
+        
+        ## Contribution
+        
+        
+        ### Quickstart
+        
+        wsgi.py
+        
+        
+        ```python
+        
+        app = Applicatin()
+        
+        @app.route('/foos')
+        def get(req, resp):
+            return 'Hello world!'
+        
+        ```
+        
+        
+        ```bash
+        gunicorn wsgi:app
+        ```
+        
+        #### Master branch
+        
+        The master branch is an integration branch where bug fixes/features are 
+        gathered for compiling and functional testing. so it would be unstable.
+        
+        #### Release branch
+        
+        The release branch is where releases are maintained and hot fixes 
+        (with names like release/v2.x.x) are added. Please ensure that all your 
+        production-related work are tracked with the release branches.
+        
+        With this new model, we can push out bug fixes more quickly and achieve 
+        simpler maintenance.
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
