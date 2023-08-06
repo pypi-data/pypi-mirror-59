@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: Topsis-arjav
+Version: 0.1
+Summary: library to perform topsis technique
+Home-page: https://github.com/arjavjain59998
+Author: Arjav Jain
+Author-email: arjavjain59998@gmail.com
+License: MIT
+Download-URL: https://github.com/arjavjain59998/topsis.git
+Description: UNKNOWN
+Keywords: Topsis
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
