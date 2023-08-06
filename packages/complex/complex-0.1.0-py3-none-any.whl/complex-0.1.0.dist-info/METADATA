@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: complex
+Version: 0.1.0
+Summary: Compute complex numbers operations such as addition, substraction, multiplication , division and modulus.
+Home-page: https://github.com/deepak7376/complex
+Author: Deepak Yadav
+Author-email: dky.united@gmail.com
+License: MIT
+Keywords: Complex Operations
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.0
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: math
+
+Complex
+==========
+Compute complex numbers operations such as addition, substraction, multiplication , division and modulus.
+
+:Author: Deepak Yadav
+:Version: 2.0
+:Copyright: This document has been placed in the public domain.
+
+
+
