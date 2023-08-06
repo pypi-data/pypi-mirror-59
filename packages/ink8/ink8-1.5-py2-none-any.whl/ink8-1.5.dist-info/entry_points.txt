@@ -1,0 +1,3 @@
+[console_scripts]
+ink8 = ink8.cli:main
+
