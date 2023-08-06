@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: python-sumo
+Version: 0.2.0
+Summary: **sumo** is a command-line tool to identify molecular subtypes in multi-omics datasets. It implements a novel nonnegative matrix factorization (NMF) algorithm to identify groups of samples that share molecular signatures, and provides tools to evaluate such assignments.
+Home-page: https://github.com/ratan-lab/sumo
+Author: Karolina Sienkiewicz
+Author-email: sienkiewicz2k@gmail.com
+License: UNKNOWN
+Description: **sumo** is a command-line tool to identify molecular subtypes in multi-omics datasets. It implements a novel nonnegative matrix factorization (NMF) algorithm to identify groups of samples that share molecular signatures, and provides tools to evaluate such assignments.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/x-rst
