@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: lazy-rpc
+Version: 0.1.2
+Summary: rpc module
+Home-page: https://github.com/m0cchi/lazy-rpc
+Author: m0cchi
+Author-email: m0cchi@protonmail.com
+License: MIT
+Description: # lazy-rpc
+        rpc module for python.
+        
+        ## features
+        - [ ] SSL/TLS for kafka module
+        
+        ## for developer
+        ### setup
+        ```bash
+        pip install pipenv
+        pipenv install
+        pipenv install --dev
+        docker-compose up --build
+        export PYTHONPATH=$(pwd)
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Provides-Extra: dev
