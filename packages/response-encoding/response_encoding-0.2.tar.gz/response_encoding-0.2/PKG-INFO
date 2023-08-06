@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: response_encoding
+Version: 0.2
+Summary: It calculates response ratio of each category for every Target Label. One column per target class is returned.
+Home-page: https://https://github.com/gunnerVivek/response_encoding
+Author: Vivek Purkayastha
+Author-email: vivpur88@gmail.com
+License: GNU GENERAL PUBLIC LICENSE
+Download-URL: https://github.com/gunnerVivek/response_encoding/archive/v0.2.tar.gz
+Description: UNKNOWN
+Keywords: Data Preprocessing,Response Coding,Data Science
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.6
