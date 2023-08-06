@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: python-graphql-client
+Version: 0.1.0
+Summary: Python GraphQL Client
+Home-page: https://github.com/SMARTeacher/python-graphql-client
+Author: Justin Krinke
+Author-email: opensource@prodigygame.com
+License: MIT
+Keywords: api graphql client
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: aiohttp (==3.6.2)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: asynctest (==0.13.0)
+Provides-Extra: dev
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-black ; extra == 'dev'
+Requires-Dist: flake8-isort ; extra == 'dev'
+
+UNKNOWN
+
+
