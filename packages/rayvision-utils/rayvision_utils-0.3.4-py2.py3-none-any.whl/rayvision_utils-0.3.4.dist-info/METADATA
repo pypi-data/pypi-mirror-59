@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rayvision-utils
+Version: 0.3.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Shenzhen Rayvision Technology Co., Ltd
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: rayvision-log
+Requires-Dist: rayvision-api
+Requires-Dist: future
+Requires-Dist: requests
+Requires-Dist: tenacity
+
+UNKNOWN
+
+
