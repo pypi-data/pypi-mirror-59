@@ -1,0 +1,8 @@
+README.md
+setup.py
+pandas_express/__init__.py
+pandas_express.egg-info/PKG-INFO
+pandas_express.egg-info/SOURCES.txt
+pandas_express.egg-info/dependency_links.txt
+pandas_express.egg-info/requires.txt
+pandas_express.egg-info/top_level.txt
