@@ -1,0 +1,11 @@
+_py3coap.cpython-37m-x86_64-linux-gnu.so,sha256=2_aKAgByXkUBwdi2JZWvywyG07wbsTVYCq_jAATb_kI,4614088
+_py3coap.cpython-37m-x86_64-linux-gnu.h,sha256=Gc3gWCGnsCo2vfLXssaXrLTFmGBBlnG05fxYdQS6AzA,2065
+py3coap-0.7.0.dist-info/top_level.txt,sha256=ayL8ldQ8jIMIg68-t3poXhXhKB9f77erRweKKVifTsU,17
+py3coap-0.7.0.dist-info/WHEEL,sha256=AhV6RMqZ2IDfreRJKo44QWYxYeP-0Jr0bezzBLQ1eog,109
+py3coap-0.7.0.dist-info/RECORD,,
+py3coap-0.7.0.dist-info/METADATA,sha256=OAhPFo0uDWW0oJaF_Y249yN1CA2qE6wGR4oveNxcQKg,415
+py3coap/__init__.py,sha256=KzgdzAKTIq6Qz7wMdjM5r9h_Y_JlSZ2Raq2AWfjjapA,160
+py3coap/errors.py,sha256=6ebNryodH3umNxos6-KMYW8Owe0OjZBjB5-5YpIaSo4,989
+py3coap/py3coap.py,sha256=RNPM7r1P1W8lagK0ZlGhTc8878_F5XkhqdEY2sAlLbU,1600
+py3coap-0.7.0.data/data/src/py3coap/py3coap.h,sha256=ORNDdtvJ_-QrSSJuic5oLNoQh49P-sR3YN3vF5gEqhU,903
+py3coap-0.7.0.data/data/src/py3coap/py3coap.c,sha256=gaDUnqpgcoLrE-MCRMs5kH1pENryUSYvn0AdsNHlhqY,6127
