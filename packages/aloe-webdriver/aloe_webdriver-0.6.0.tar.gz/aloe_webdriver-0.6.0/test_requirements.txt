@@ -1,0 +1,6 @@
+aloe_django
+coverage
+pycodestyle
+pylint>=2.4.3
+setuptools_scm
+Sphinx
