@@ -1,0 +1,8 @@
+gcp_accessor/__init__.py,sha256=gCyoKPkwlCWju1yGAdeXrNuLhb0kyVmd8tBCVIPPrsE,295
+gcp_accessor/bq_accessor.py,sha256=PzL0sCrXBHrWdyessZczXcb1jqI8arrdUxV5w_lMKS8,11452
+gcp_accessor/gcs_accessor.py,sha256=vdnwbzP-iT6tUc6sFA_R_HvF6fqc8142S2xtysN2PX8,4026
+gcp_accessor-0.0.6.dist-info/LICENSE.txt,sha256=ma2g3Sdwhgiwh7recIC2WjMKkVR3r1SlGrs1pWMXYCU,1053
+gcp_accessor-0.0.6.dist-info/METADATA,sha256=abEpdVI7bSExk7xRf9cfTpz_acgijuTMZE2AFKB6RVY,4871
+gcp_accessor-0.0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+gcp_accessor-0.0.6.dist-info/top_level.txt,sha256=HhUV0KWu2AT7-l_t62Ug0t9jksFBoiSKSLG3TzYUuzw,13
+gcp_accessor-0.0.6.dist-info/RECORD,,
