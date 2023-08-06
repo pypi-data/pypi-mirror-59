@@ -1,0 +1,8 @@
+README.md
+setup.py
+worldguess.egg-info/PKG-INFO
+worldguess.egg-info/SOURCES.txt
+worldguess.egg-info/dependency_links.txt
+worldguess.egg-info/requires.txt
+worldguess.egg-info/top_level.txt
+worldguess_pkg/__init__.py
