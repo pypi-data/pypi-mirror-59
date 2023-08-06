@@ -1,0 +1,8 @@
+catsgmo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+catsgmo/demo_stock_binary.py,sha256=lIEqe01YXRHypM86_OhahNPgHmH7_HoffYMf0rWy1N8,13934
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_demo_stock_binary.py,sha256=RLT0wL1xDO4T0k_LJkSHyFt_rbdFLUGFzhu3cubyLj0,2350
+catsgmo-0.1.7.dist-info/METADATA,sha256=eHNuXS0Aw6XdiyzUhloLMtL29qrssKa9Lf1hrEUmkF4,1314
+catsgmo-0.1.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+catsgmo-0.1.7.dist-info/top_level.txt,sha256=y6kHasRv-7WEeJdVCKqLetsQnbXdqe3ba0xrye75wbo,14
+catsgmo-0.1.7.dist-info/RECORD,,
