@@ -1,0 +1,6 @@
+django_db_pooling/__init__.py,sha256=hmKAHQ6CAAvczhttHG3rKN-dJm8SlyApoasCK8FkDfM,31
+django_db_pooling/pooling.py,sha256=-4n8Oo4iQqhx8TvrkU_-8EqDfXsdDamuAfGvAEm166g,3967
+django_db_pooling-0.0.4.dist-info/METADATA,sha256=btoBigYqKiZrGIy5n_o4LfKY00DlkayWjOOE7iUSr1k,3784
+django_db_pooling-0.0.4.dist-info/RECORD,,
+django_db_pooling-0.0.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+django_db_pooling-0.0.4.dist-info/top_level.txt,sha256=ixs8ULMXv6kaLfjmfPiqzNLqJfgY3fUjJb0rV-u8uTw,18
