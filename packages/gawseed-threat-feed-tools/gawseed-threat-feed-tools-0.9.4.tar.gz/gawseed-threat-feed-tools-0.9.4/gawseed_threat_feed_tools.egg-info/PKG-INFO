@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gawseed-threat-feed-tools
+Version: 0.9.4
+Summary: Tools to search network data logs for threat feed data
+Home-page: https://github.com/gawseed/threat-feed-tools
+Author: Wes Hardaker and USC/ISI
+Author-email: opensource@hardakers.net
+License: UNKNOWN
+Description: # Overview
+        
+        TBD
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
