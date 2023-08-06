@@ -1,0 +1,3 @@
+[console_scripts]
+gcf_dev_gen = gcf_dev_gen.cli:main
+
