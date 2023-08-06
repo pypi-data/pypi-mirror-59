@@ -1,0 +1,11 @@
+datascience_toolkits/__init__.py,sha256=ZO68Rm7aLLNbRzDIe0KqyI88x0V-NJcnET74aknrk_o,73
+datascience_toolkits/_nbdev.py,sha256=RIaq2k9qSHYpXpX8wzJmQ0Irenw2OMNjucIher5I-lk,525
+datascience_toolkits/core.py,sha256=zjkEP0Jji6hCh07zYV1GLLlRnQIHz2Hqi_uI3sVI37A,373
+datascience_toolkits/experimental.py,sha256=-TxSXafdcZQGhhR8fQvAfwD4VGLkBUuycF62b0BGOgE,157
+datascience_toolkits/template.py,sha256=wsDkSkPlVN6qjiD_wLX8HSoSuy0Hh93t1tFVHLYRV7s,173
+datascience_toolkits-0.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+datascience_toolkits-0.0.5.dist-info/METADATA,sha256=tzsgT_YFqrqJplQLaT_CagLKH31jcIurdr-IKj8Mt6Q,1660
+datascience_toolkits-0.0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+datascience_toolkits-0.0.5.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+datascience_toolkits-0.0.5.dist-info/top_level.txt,sha256=4Fbli575IASz4ZT1cW0gS44bO3DCbE0qjQw-hVff3Fc,21
+datascience_toolkits-0.0.5.dist-info/RECORD,,
