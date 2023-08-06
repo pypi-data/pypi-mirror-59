@@ -1,0 +1,16 @@
+[
+    "DB",
+    "DB_Object_ID",
+    "DB_Name",
+    "Qualifier",
+    "HPO_ID",
+    "DB_Reference",
+    "Evidence_Code",
+    "Onset modifier",
+    "Frequency",
+    "Sex",
+    "Modifier",
+    "Aspect",
+    "Date_Created",
+    "Assigned_By"
+]
