@@ -1,0 +1,8 @@
+README.md
+setup.py
+frankleetp/__init__.py
+frankleetp/f.py
+frankleetp.egg-info/PKG-INFO
+frankleetp.egg-info/SOURCES.txt
+frankleetp.egg-info/dependency_links.txt
+frankleetp.egg-info/top_level.txt
