@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/TaskBank.egg-info/PKG-INFO
+src/TaskBank.egg-info/SOURCES.txt
+src/TaskBank.egg-info/dependency_links.txt
+src/TaskBank.egg-info/top_level.txt
