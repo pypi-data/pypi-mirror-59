@@ -1,0 +1,16 @@
+
+[all]
+xdoctest
+pytest
+pytest-cov
+coverage
+
+[docs]
+sphinx
+sphinx_rtd_theme
+
+[tests]
+xdoctest
+pytest
+pytest-cov
+coverage
