@@ -1,0 +1,9 @@
+README.md
+setup.py
+waypdf/__init__.py
+waypdf/pdf2image.py
+waypdf/pdf2text.py
+waypdf.egg-info/PKG-INFO
+waypdf.egg-info/SOURCES.txt
+waypdf.egg-info/dependency_links.txt
+waypdf.egg-info/top_level.txt
