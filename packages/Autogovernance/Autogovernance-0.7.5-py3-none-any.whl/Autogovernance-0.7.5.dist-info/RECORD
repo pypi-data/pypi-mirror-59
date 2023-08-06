@@ -1,0 +1,10 @@
+autogovernance/__init__.py,sha256=fXr1lfWE4K6ALidHljmhuSPrLb4Bs6Zs2PIMAHzkq0I,92
+autogovernance/browser.py,sha256=VuGVjsD5HcBUnGC40vu4KJQL-8HmZ4g0cQjT2-mJbds,26398
+autogovernance/core.py,sha256=0yR7bVTfXIpozivtLwWvGrS85G2yg-jVA431gYadEvQ,4240
+autogovernance/element.py,sha256=AAu4puGb7QQT8n-NVb3wgs-eXnqloDsMU6Dagx82xPQ,1784
+autogovernance/tables.py,sha256=S2xTx78cVYHY4Ff_xZvbt2NqhcX-W9DCbnex6RPxNXI,610
+Autogovernance-0.7.5.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+Autogovernance-0.7.5.dist-info/METADATA,sha256=HqKSHCiMSm1NJblFdteq94epprAXrGbmaFIpntY2GJw,2160
+Autogovernance-0.7.5.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+Autogovernance-0.7.5.dist-info/top_level.txt,sha256=r8T5KdLLj2pSTzBpGfV3s3Y-AwrnbMSkBi6ZdEjhGw4,15
+Autogovernance-0.7.5.dist-info/RECORD,,
