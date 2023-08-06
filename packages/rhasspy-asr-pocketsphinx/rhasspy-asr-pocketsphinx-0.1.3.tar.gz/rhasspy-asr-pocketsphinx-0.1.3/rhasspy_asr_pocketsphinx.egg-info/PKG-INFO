@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: rhasspy-asr-pocketsphinx
+Version: 0.1.3
+Summary: UNKNOWN
+Home-page: https://github.com/synesthesiam/rhasspy-asr-pocketsphinx
+Author: Michael Hansen
+Author-email: hansen.mike@gmail.com
+License: UNKNOWN
+Description: # Rhasspy ASR Pocketsphinx
+        
+        [![Continous Integration](https://github.com/rhasspy/rhasspy-asr-pocketsphinx/workflows/Tests/badge.svg)](https://github.com/rhasspy/rhasspy-asr-pocketsphinx/actions)
+        [![PyPI package version](https://img.shields.io/pypi/v/rhasspy-asr-pocketsphinx.svg)](https://pypi.org/project/rhasspy-asr-pocketsphinx)
+        [![Python versions](https://img.shields.io/pypi/pyversions/rhasspy-asr-pocketsphinx.svg)](https://www.python.org)
+        [![GitHub license](https://img.shields.io/github/license/rhasspy/rhasspy-asr-pocketsphinx.svg)](https://github.com/rhasspy/rhasspy-asr-pocketsphinx/blob/master/LICENSE)
+        
+        Automated speech recognition in [Rhasspy](https://github.com/synesthesiam/rhasspy) voice assistant with [Pocketsphinx](https://github.com/cmusphinx/pocketsphinx).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
