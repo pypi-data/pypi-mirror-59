@@ -1,0 +1,15 @@
+sphinxcontrib.datatemplates-0.6.1-py3.7-nspkg.pth,sha256=YYcv3GPokof0Lzq3hZHkJIlfNzBys5lF7Lt7JGRAP04,575
+sphinxcontrib/datatemplates/__init__.py,sha256=BPzBXvr0lrRUYODN_7Xx7KDs92pb67VOtDFKmS7Ym20,546
+sphinxcontrib/datatemplates/cli.py,sha256=zcGHGWBkRKKUHI4JoWQuXcQIpKn1dV7bcMxUf6LITZI,1540
+sphinxcontrib/datatemplates/directive.py,sha256=yKsAQhQrSBgSIhsAY5QVdxslxJwsXIl6k0RaeZUy8Yc,10024
+sphinxcontrib/datatemplates/domain.py,sha256=kB0szkw2ki8KMqN1jHe9w-oMG05ysZWz9ok_tFj1Jes,725
+sphinxcontrib/datatemplates/helpers.py,sha256=HRo6xsD46tI3l8EK9rLWmE2e5cicDvV9b1A6tpBJ4t8,1440
+sphinxcontrib.datatemplates-0.6.1.dist-info/AUTHORS,sha256=MEijkhUjGJo9o_X6aNDLbwl-V5y3Er8suqIDz9suttU,222
+sphinxcontrib.datatemplates-0.6.1.dist-info/LICENSE,sha256=-Ju3qOQ6U6Ka_vnTrHjFuSLjZVk8oS9gLfixlhMbCjc,1519
+sphinxcontrib.datatemplates-0.6.1.dist-info/METADATA,sha256=h4ZVZgpReW5gHeZ_TAUS8Gq0X5pprETvnR9euPXeVCU,3034
+sphinxcontrib.datatemplates-0.6.1.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+sphinxcontrib.datatemplates-0.6.1.dist-info/entry_points.txt,sha256=uciCnoflLBPVttGu-nsRTJSKoArVCh1QoxtB9SEJWZ8,72
+sphinxcontrib.datatemplates-0.6.1.dist-info/namespace_packages.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinxcontrib.datatemplates-0.6.1.dist-info/pbr.json,sha256=ntbr1Km0aHVmIN1hyCjWKSHjQHmepJH18ditZeuWAO0,46
+sphinxcontrib.datatemplates-0.6.1.dist-info/top_level.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinxcontrib.datatemplates-0.6.1.dist-info/RECORD,,
