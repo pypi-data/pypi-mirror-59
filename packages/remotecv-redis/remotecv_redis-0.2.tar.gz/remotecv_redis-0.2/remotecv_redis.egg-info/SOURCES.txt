@@ -1,0 +1,10 @@
+README.md
+setup.py
+remotecv_redis/__init__.py
+remotecv_redis/loader.py
+remotecv_redis.egg-info/PKG-INFO
+remotecv_redis.egg-info/SOURCES.txt
+remotecv_redis.egg-info/dependency_links.txt
+remotecv_redis.egg-info/not-zip-safe
+remotecv_redis.egg-info/requires.txt
+remotecv_redis.egg-info/top_level.txt
