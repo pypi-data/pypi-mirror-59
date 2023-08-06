@@ -1,0 +1,3 @@
+[console_scripts]
+cryptodock_sdk = cryptodock_sdk.sdk.__main__:prove_instance
+
