@@ -1,0 +1,8 @@
+setup.py
+num_calculus/__init__.py
+num_calculus/differentiation.py
+num_calculus.egg-info/PKG-INFO
+num_calculus.egg-info/SOURCES.txt
+num_calculus.egg-info/dependency_links.txt
+num_calculus.egg-info/not-zip-safe
+num_calculus.egg-info/top_level.txt
