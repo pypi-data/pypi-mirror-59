@@ -1,0 +1,8 @@
+calendarweek/__init__.py,sha256=ujUhDEUNOTip_jZtanqEikOVAvg8EAq0AAZsip2xQYY,39
+calendarweek/calendarweek.py,sha256=T9cLhPjnj-9zcleZCuvofGkWfzXPkeZl75lbAaOfqJA,3782
+calendarweek/django.py,sha256=Fg7-lPhN-8MN5cUpT1sJIYt-EHlLV1ofF3lgvQItIlo,4002
+calendarweek/util.py,sha256=bKaDU0kMEcS1iKgAEypfNxYkeApCNSTPj79nf-AJpXU,391
+calendarweek-0.4.2.dist-info/LICENSE,sha256=0wM7ulEMvSaKqTLyewVYIcBn-wEQgBVA7Nl94nniYwE,1152
+calendarweek-0.4.2.dist-info/WHEEL,sha256=0LqClw0y45nNGWtOkoSiM9aN5p1kS5vGsVfoCyuJCNA,85
+calendarweek-0.4.2.dist-info/METADATA,sha256=PQA5iCiLvLn0j_oZT2vTGnbwP8jdYcd5zprDNHv-B2k,971
+calendarweek-0.4.2.dist-info/RECORD,,
