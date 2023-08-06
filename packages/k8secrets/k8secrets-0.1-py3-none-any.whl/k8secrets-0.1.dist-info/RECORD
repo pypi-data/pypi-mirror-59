@@ -1,0 +1,11 @@
+k8secrets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+k8secrets/__main__.py,sha256=Uemxy8Rj79e8S-FpnOHuTFJ47G_jfrVwx8f7czE7gKU,2219
+k8secrets/generator.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+k8secrets/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+k8secrets/secrets.py,sha256=cvfYbbpZBzfyY18Ahp2fuYcsJdR5s0eGAc0quAa2AoA,1887
+k8secrets-0.1.dist-info/LICENSE,sha256=bVomPCGRpPCqRlf4nUjFxXT9CrNRV6x8khwglbDzrb8,1068
+k8secrets-0.1.dist-info/METADATA,sha256=qNb8Gy0hkqewMnWcmXVbn-JSWxSJeAlQsmHRHiBttlg,2467
+k8secrets-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+k8secrets-0.1.dist-info/entry_points.txt,sha256=oo4Qrd2tfwHBhO8-ydxcsFPh6YxiTKlOq1kcAAptTeU,55
+k8secrets-0.1.dist-info/top_level.txt,sha256=wrkzeUs1F9JCa-9JC2hFK_Elv2-7l1Pr3A0_BiryhtU,10
+k8secrets-0.1.dist-info/RECORD,,

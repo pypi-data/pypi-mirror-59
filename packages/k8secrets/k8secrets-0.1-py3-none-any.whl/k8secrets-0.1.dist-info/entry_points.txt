@@ -1,0 +1,3 @@
+[console_scripts]
+k8secrets = k8secrets.__main__:main
+
