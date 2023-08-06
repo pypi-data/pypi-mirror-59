@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: grabgpu
+Version: 0.1.2
+Summary: get idle gpu deivce.
+Home-page: https://github.com/seilna/grabgpu
+Author: seil.na
+Author-email: seil.na@vision.snu.ac.kr
+License: UNKNOWN
+Download-URL: https://github.com/seilna/grabgpu/archive/master.zip
+Description: UNKNOWN
+Keywords: gpu
+Platform: UNKNOWN
+Requires-Python: >=3
