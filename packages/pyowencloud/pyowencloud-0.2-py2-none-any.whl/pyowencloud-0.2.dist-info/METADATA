@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyowencloud
+Version: 0.2
+Summary: Клиент к REST API облака api.owencloud.ru
+Home-page: https://github.com/dontsovcmc/pyowencloud
+Author: Dontsov E.
+Author-email: dontsovcmc@gmail.com
+License: lgpl-3.0
+Platform: linux2
+Platform: win32
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests (>=2.19.1)
+
+# pyowencloud
+Неофициальный клиент к REST API облака https://owencloud.ru
+(Официального не нашёл)
+
+
+
