@@ -1,0 +1,12 @@
+README.md
+setup.py
+algoz/errors.py
+algoz/identification.py
+algoz/location.py
+algoz/welcome.py
+algoz.egg-info/PKG-INFO
+algoz.egg-info/SOURCES.txt
+algoz.egg-info/dependency_links.txt
+algoz.egg-info/entry_points.txt
+algoz.egg-info/requires.txt
+algoz.egg-info/top_level.txt
