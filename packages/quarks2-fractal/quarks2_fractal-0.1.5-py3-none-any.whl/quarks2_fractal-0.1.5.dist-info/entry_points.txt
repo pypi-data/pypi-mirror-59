@@ -1,0 +1,7 @@
+[console_scripts]
+batched_inference=quarks2_fractal.utils.batched_inference:batched_inference
+f1_score=quarks2_fractal.utils.f1_score:f1_score
+infer_img=quarks2_fractal.engine.infer:infer_img_click
+infer_video=quarks2_fractal.engine.infer:infer_video_click
+train=quarks2_fractal.engine.trainer:main
+
