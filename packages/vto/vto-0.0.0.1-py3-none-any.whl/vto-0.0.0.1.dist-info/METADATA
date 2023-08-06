@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: vto
+Version: 0.0.0.1
+Summary: vto
+Home-page: https://github.com/coghost/vto
+Author: lihe
+Author-email: imanux@sina.com
+License: GPL
+Project-URL: Bug Reports, https://github.com/coghost/vto/issues
+Project-URL: Source, https://github.com/coghost/vto
+Keywords: wow,colorful,vivid,awesome,terminal
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+## Vivid Terminal Output
+
+### Todo:
+
+- [ ] colorful text
+- [ ] progressbar
+- [ ] Chart
+- [ ] Animation
+
+
