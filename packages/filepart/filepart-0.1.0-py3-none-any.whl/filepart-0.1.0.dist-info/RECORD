@@ -1,0 +1,12 @@
+filepart/__init__.py,sha256=G4SjdruNIyxsJJ79TLPck4y1KB73SszPRD4sYmHuj8Q,3499
+filepart/__main__.py,sha256=pxUTPchAvZro_jW_tRwq72QVrd0GS-im4zERLDu3E3U,1244
+filepart/build.py,sha256=Vf-2b1XhVleUIosq8sylxKPUl-ChxWgarQ27A_0Hgxc,2453
+filepart/split.py,sha256=LjkAgz3WwYYCq7YuhnMzMjVEE5GA3jE0mER6tOQH3Nw,4190
+filepart/utils.py,sha256=soYZzvXPNe3pxCvWI8gz0PamnwFdSVsIHuiPb9O2R0A,4007
+filepart/wizard.py,sha256=J-drSTPrXypIswLGpDvAvNztsWOt9PuJ5WSRVuQrNPQ,3265
+filepart-0.1.0.data/scripts/filepart,sha256=IP9oEodZD1wAwtm988_8amJmzqaN2q2aOfPM6xV4Suo,64
+filepart-0.1.0.dist-info/LICENSE,sha256=C5OkrUoF_0LIA-ZYdIfbk_Hd5EGiTVXdDNLe4iM2onk,1072
+filepart-0.1.0.dist-info/METADATA,sha256=iBQiPtvnvCGjyn9CklNFk6Q6dV3qN-K3894_OwzmLcI,498
+filepart-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+filepart-0.1.0.dist-info/top_level.txt,sha256=RNsE5LkwFmwkHtxZR_d9IPASod6TPhJBp07K4quIP9c,9
+filepart-0.1.0.dist-info/RECORD,,
