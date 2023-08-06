@@ -1,0 +1,1 @@
+mms-python-client<4
