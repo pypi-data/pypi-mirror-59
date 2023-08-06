@@ -1,0 +1,17 @@
+sipy/__init__.py,sha256=iV_5NxWsBSrSnVbZvFoYwtcbi18hPqTjj2mlcUe4nAg,2278
+sipy/automap.py,sha256=81ACXip10StOui8Ih_hegm6CqQ9Zwq8DldShH1iDdC8,3011
+sipy/config.py,sha256=_vyLYGLsYjrtawYMzZ7L_R6GGxb-kSrTHRmQy9ZyNs8,3246
+sipy/definitions.py,sha256=6j0uk6ipO6bL1CenqgalhvY4gB8jKEbarnLvLSgtyII,5686
+sipy/quantities/__init__.py,sha256=OcZAslR0A_IA-jt1_ZN4NlwdX09Gavf6rNlVnvawkWk,271
+sipy/quantities/base_quantity.py,sha256=PZOC39LgA8dLw4RnaCZOCKEsGylCH-CTpG0vU0y8it0,10639
+sipy/quantities/constants.py,sha256=CkqRY5ICpbteF1nRkpE-WONkA8_qJWAMKxx8gfBsojk,990
+sipy/quantities/defined_quantities.py,sha256=A3IW89iG3BAyDoWiGyjpFrpRWoAP61aI8r-7yruywJ0,851
+sipy/sipy.toml,sha256=aNP8mgtiDqS9YYORkaXq5rfAi4EyelgOR-sKT5qbyw0,1731
+sipy/units/__init__.py,sha256=fBG5ShlVEyGSB4VaRHbgpH9r7FvDQ04_aZtgHCToZR8,403
+sipy/units/base_unit.py,sha256=iYpZJOLqBztLLztGjckE7uhNwbPVCQ_dTXB1tM0w04Q,2423
+sipy/units/defined_units.py,sha256=qI-spg3TlZfkuTXb5_xv3d96HToqrKZuMHuSkA9_fGA,1209
+sipy/units/prefixes.py,sha256=40_IsToXkHLNDZTqiZEg7EKbiDPw1rAD8V_3CTo3yEc,1353
+sipy-0.3.1.dist-info/LICENSE,sha256=3A0QUlH3ajZ5g5kL17_UT61APY9UCPo1ns8R6z1e4CI,1068
+sipy-0.3.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+sipy-0.3.1.dist-info/METADATA,sha256=1kGXudwOwPBEP8rewmT5xBpn5ysrNNZxlkIU_6OuWAI,3437
+sipy-0.3.1.dist-info/RECORD,,
