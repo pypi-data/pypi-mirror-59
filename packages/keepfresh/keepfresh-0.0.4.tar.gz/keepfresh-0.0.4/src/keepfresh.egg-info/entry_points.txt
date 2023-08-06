@@ -1,0 +1,3 @@
+[console_scripts]
+keepfresh = keepfresh.command_line:main [keepfresh]
+
