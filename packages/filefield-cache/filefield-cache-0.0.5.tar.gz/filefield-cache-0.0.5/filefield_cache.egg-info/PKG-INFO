@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: filefield-cache
+Version: 0.0.5
+Summary: Cache Files in Form for files retaining
+Home-page: https://github.com/MaistrenkoAnton/
+Author: Anton Maistrenko
+Author-email: it2015maistrenko@gmail.com
+License: MIT License
+Description: # Django Form File Field cache
+        
+        Quick start
+        -----------
+        
+        1. Add **filefield_cache**  INSTALLED_APPS settings:
+        
+            .. code-block:: python
+        
+                INSTALLED_APPS = (
+                    ...
+        
+                    'filefield_cache',
+                    ...
+                )
+        
+        
+        2. Add Admin form in **admin.py**
+            .. code-block:: python
+        
+                from django.contrib import admin
+                from django.contrib.admin import register
+        
+                from demo.documents.forms import DocumentForm
+                from demo.documents.models import Document
+        
+        
+                @register(Document)
+                class DocumentAdmin(admin.ModelAdmin):
+                    form = DocumentForm
+                    ...
+        
+        
+        3. Create form in **forms.py**.
+            .. code-block:: python
+        
+                from django import forms
+        
+                from filefield_cache.widgets import CachedAdminFileWidget
+                from demo.documents.models import Document
+        
+        
+                class DocumentForm(forms.ModelForm):
+                    file = forms.FileField(widget=CachedAdminFileWidget)
+                    picture = forms.ImageField(widget=CachedAdminFileWidget)
+        
+                    class Meta:
+                        model = Document
+                        fields = '__all__'
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Django :: 3.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
