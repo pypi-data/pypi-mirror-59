@@ -1,0 +1,10 @@
+tts_wrapper/__init__.py,sha256=EEk02hPY8wvXHqTcohc6DHAQ14d582auJIVGUb0bYOs,110
+tts_wrapper/google.py,sha256=gOCHO0EnacYSk35B0UWKb6OjDzzqYwwWkOzrYzvY2qw,1286
+tts_wrapper/microsoft.py,sha256=bUslaxPVODA4Uf_jaAEnAcWYCgz1Te2pJr-V8bnuXvc,1625
+tts_wrapper/polly.py,sha256=PbyRX1xQ7Y8C9uIJp_hPjkcHockuTLET0Gp9OBFW7ts,1366
+tts_wrapper/tts.py,sha256=UqOyVSrc9JIMKgy08S3PqarOiGlFKEpSuO3tvZpmkSA,838
+TTS_Wrapper-0.2.dist-info/LICENSE,sha256=3QjQYM2B9EPX13FC8jqoowTyWhF13B7HwglnNYhiqzI,1079
+TTS_Wrapper-0.2.dist-info/METADATA,sha256=o2hYP8CAm8AHi18bfwjwzucDuZHLiHjh_EkD1vAnhU8,3193
+TTS_Wrapper-0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+TTS_Wrapper-0.2.dist-info/top_level.txt,sha256=F7LmHanUGg7mL-A1IacX75DFsVtZHoua312ybrMIrhw,12
+TTS_Wrapper-0.2.dist-info/RECORD,,
