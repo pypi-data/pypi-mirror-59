@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Bidirectional-Hash-Map
+Version: 1.0
+Summary: This package contains implementation of a bidirectional hash map.
+Home-page: https://github.com/DtjiAppDev/BIDIRECTIONAL_HASH_MAP
+Author: Dtji AppDev
+Author-email: dtjiappdev1999@gmail.com
+License: MIT
+Description: # Bidirectional Hash Map
+        
+        A Python package contains implementation of a Bidirectional Hash Map.
+        
+        ## Usage
+        
+        The class BidirectionalHashMap itself can be used to initialise a
+        bidirectional hash map which is a hash map which has mappings from
+        keys to values and the other way around. Several methods are in the
+        class.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
