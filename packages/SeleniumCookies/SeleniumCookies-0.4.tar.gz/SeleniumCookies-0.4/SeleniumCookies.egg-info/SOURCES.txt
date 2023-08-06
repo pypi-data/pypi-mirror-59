@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+SeleniumCookies/__init__.py
+SeleniumCookies/cookie_injector.py
+SeleniumCookies/wrapper.py
+SeleniumCookies.egg-info/PKG-INFO
+SeleniumCookies.egg-info/SOURCES.txt
+SeleniumCookies.egg-info/dependency_links.txt
+SeleniumCookies.egg-info/requires.txt
+SeleniumCookies.egg-info/top_level.txt
