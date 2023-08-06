@@ -1,0 +1,9 @@
+LxpApi/__init__.py,sha256=Weo_tp9-AEiPZ71PfPmpkGRIWH9_2nTeBI8EReewiyI,92
+LxpApi/lxpapi.py,sha256=Dlx07LBvowAtToZlO4ypIjHbYOROYdimjP45p_uB5fQ,6682
+LxpApi/lxpservice.py,sha256=oIzWPdpEoFoK4WD0DmSTgfoXkOb-SmWGCpY-XZ7m9Zo,5529
+LxpApi/utils.py,sha256=7UJiFqKr_GWcWGS2btz2vGwF3aGOWiwM-epZuDpreN4,2233
+lxpservice-0.0.3.dist-info/METADATA,sha256=tkG0f9BE6OkZcFrrh3hZiEGM8x-FcoqXKGElIM6heUM,8157
+lxpservice-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+lxpservice-0.0.3.dist-info/entry_points.txt,sha256=QISJBYAS23CF8S6F4YY1PaPldATziu0-5TrZfB6-lEM,44
+lxpservice-0.0.3.dist-info/top_level.txt,sha256=MJjJNv22oqz6qhtz2mnRwRlK02Dlx1xTv8yrY0b3gKY,7
+lxpservice-0.0.3.dist-info/RECORD,,
