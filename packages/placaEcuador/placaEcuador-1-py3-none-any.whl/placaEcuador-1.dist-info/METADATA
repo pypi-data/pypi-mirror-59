@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: placaEcuador
+Version: 1
+Summary: A package with a tool to check if you can be on the  road of Quito - Ecuador
+Home-page: https://github.com/alexandro591/Pico-Placa
+Author: Alexandro Tapia
+Author-email: alexandrotapiaflores@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Pico-Placa
+A program build in Python 3 to check if your car can be on the road of Quito, using the the old and new laws of Ecuador for "pico y placa".
+[Github-flavored Markdown](https://github.com/alexandro591/Pico-Placa)
+
