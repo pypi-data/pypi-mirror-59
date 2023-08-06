@@ -1,0 +1,15 @@
+proposal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+proposal/concurrent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+proposal/concurrent/futures/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+proposal/concurrent/futures/scheduled/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+proposal/concurrent/futures/scheduled/delayed_queue.py,sha256=r7BPUKqN4-qaqRwEgz6INI2-YNx7c1NQ7gG7gCkuArU,2803
+proposal/concurrent/futures/scheduled/scheduled_future.py,sha256=rDqvrdX8wb9KON-P7hSEM3-TI0FoWqUPp1n0WtBVLPg,888
+proposal/concurrent/futures/scheduled/scheduled_future_task.py,sha256=EMmJ1SsH6B8wvhMlHz9_qb7dfrCUncaOM7LlvxcYarc,3056
+proposal/concurrent/futures/scheduled/scheduled_thread_pool_executor.py,sha256=3IydOqnKMA3gN5p-MBh4wGbXf7yj2FJ41W6mQegOiLs,4339
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_scheduled_thread_pool_executor.py,sha256=o8tavAOWyifkBMNxaK5d8owdlqv0j0A0EzFBtdnH4GE,4902
+proposal.concurrent.futures.scheduled-1.0.2.dist-info/LICENSE.txt,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+proposal.concurrent.futures.scheduled-1.0.2.dist-info/METADATA,sha256=ocMB710amw4PNd2Xt0Tgx89hpX0LsbXeNFSBVYgqGyc,893
+proposal.concurrent.futures.scheduled-1.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+proposal.concurrent.futures.scheduled-1.0.2.dist-info/top_level.txt,sha256=yn5L9QAxypv6L6f652xQFXtDaE6eYki0QD3Q2QrcpKo,15
+proposal.concurrent.futures.scheduled-1.0.2.dist-info/RECORD,,
