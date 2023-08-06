@@ -1,0 +1,259 @@
+[normalizer]
+type = "bnrml.normalizers.SimpleNormalizer"
+
+    [normalizer.args]
+    prefer = "abbreviation"
+
+        [normalizer.args.normals.Alabama]
+        normal = "Alabama"
+        abbreviation = "AL"
+        aliases = [ "Ala",]
+
+        [normalizer.args.normals.Alaska]
+        normal = "Alaska"
+        abbreviation = "AK"
+        aliases = []
+
+        [normalizer.args.normals.Arizona]
+        normal = "Arizona"
+        abbreviation = "AZ"
+        aliases = [ "Ariz",]
+
+        [normalizer.args.normals.Arkansas]
+        normal = "Arkansas"
+        abbreviation = "AR"
+        aliases = [ "Ark",]
+
+        [normalizer.args.normals.California]
+        normal = "California"
+        abbreviation = "CA"
+        aliases = [ "Calif",]
+
+        [normalizer.args.normals.Colorado]
+        normal = "Colorado"
+        abbreviation = "CO"
+        aliases = [ "Colo",]
+
+        [normalizer.args.normals.Connecticut]
+        normal = "Connecticut"
+        abbreviation = "CT"
+        aliases = [ "Conn",]
+
+        [normalizer.args.normals.Delaware]
+        normal = "Delaware"
+        abbreviation = "DE"
+        aliases = [ "Del",]
+
+        [normalizer.args.normals."District of Columbia"]
+        normal = "District of Columbia"
+        aliases = [ "D C",]
+
+        [normalizer.args.normals.Florida]
+        normal = "Florida"
+        abbreviation = "FL"
+        aliases = [ "Fla",]
+
+        [normalizer.args.normals.Georgia]
+        normal = "Georgia"
+        abbreviation = "GA"
+        aliases = [ "Ga",]
+
+        [normalizer.args.normals.Hawaii]
+        normal = "Hawaii"
+        abbreviation = "HI"
+        aliases = []
+
+        [normalizer.args.normals.Idaho]
+        normal = "Idaho"
+        abbreviation = "ID"
+        aliases = []
+
+        [normalizer.args.normals.Illinois]
+        normal = "Illinois"
+        abbreviation = "IL"
+        aliases = [ "Ill",]
+
+        [normalizer.args.normals.Indiana]
+        normal = "Indiana"
+        abbreviation = "IN"
+        aliases = [ "Ind",]
+
+        [normalizer.args.normals.Iowa]
+        normal = "Iowa"
+        abbreviation = "IA"
+        aliases = []
+
+        [normalizer.args.normals.Kansas]
+        normal = "Kansas"
+        abbreviation = "KS"
+        aliases = [ "Kans",]
+
+        [normalizer.args.normals.Kentucky]
+        normal = "Kentucky"
+        abbreviation = "KY"
+        aliases = [ "Ky",]
+
+        [normalizer.args.normals.Louisiana]
+        normal = "Louisiana"
+        abbreviation = "LA"
+        aliases = [ "La",]
+
+        [normalizer.args.normals.Maine]
+        normal = "Maine"
+        abbreviation = "ME"
+        aliases = []
+
+        [normalizer.args.normals.Maryland]
+        normal = "Maryland"
+        abbreviation = "MD"
+        aliases = [ "Md",]
+
+        [normalizer.args.normals.Massachusetts]
+        normal = "Massachusetts"
+        abbreviation = "MA"
+        aliases = [ "Mass",]
+
+        [normalizer.args.normals.Michigan]
+        normal = "Michigan"
+        abbreviation = "MI"
+        aliases = [ "Mich",]
+
+        [normalizer.args.normals.Minnesota]
+        normal = "Minnesota"
+        abbreviation = "MN"
+        aliases = [ "Minn",]
+
+        [normalizer.args.normals.Mississippi]
+        normal = "Mississippi"
+        abbreviation = "MS"
+        aliases = [ "Miss",]
+
+        [normalizer.args.normals.Missouri]
+        normal = "Missouri"
+        abbreviation = "MO"
+        aliases = [ "Mo",]
+
+        [normalizer.args.normals.Montana]
+        normal = "Montana"
+        abbreviation = "MT"
+        aliases = [ "Mont",]
+
+        [normalizer.args.normals.Nebraska]
+        normal = "Nebraska"
+        abbreviation = "NE"
+        aliases = [ "Nebr", "Neb",]
+
+        [normalizer.args.normals.Nevada]
+        normal = "Nevada"
+        abbreviation = "NV"
+        aliases = [ "Nev",]
+
+        [normalizer.args.normals."New Hampshire"]
+        normal = "New Hampshire"
+        abbreviation = "NH"
+        aliases = [ "N H",]
+
+        [normalizer.args.normals."New Jersey"]
+        normal = "New Jersey"
+        abbreviation = "NJ"
+        aliases = [ "N J",]
+
+        [normalizer.args.normals."New Mexico"]
+        normal = "New Mexico"
+        abbreviation = "NM"
+        aliases = [ "N Mex",]
+
+        [normalizer.args.normals."New York"]
+        normal = "New York"
+        abbreviation = "NY"
+        aliases = [ "N Y",]
+
+        [normalizer.args.normals."North Carolina"]
+        normal = "North Carolina"
+        abbreviation = "NC"
+        aliases = [ "N C",]
+
+        [normalizer.args.normals."North Dakota"]
+        normal = "North Dakota"
+        abbreviation = "ND"
+        aliases = [ "N Dak",]
+
+        [normalizer.args.normals.Ohio]
+        normal = "Ohio"
+        abbreviation = "OH"
+        aliases = []
+
+        [normalizer.args.normals.Oklahoma]
+        normal = "Oklahoma"
+        abbreviation = "OK"
+        aliases = [ "Okla",]
+
+        [normalizer.args.normals.Oregon]
+        normal = "Oregon"
+        abbreviation = "OR"
+        aliases = [ "Oreg", "Ore",]
+
+        [normalizer.args.normals.Pennsylvania]
+        normal = "Pennsylvania"
+        abbreviation = "PA"
+        aliases = [ "Pa",]
+
+        [normalizer.args.normals."Rhode Island"]
+        normal = "Rhode Island"
+        abbreviation = "RI"
+        aliases = [ "R I",]
+
+        [normalizer.args.normals."South Carolina"]
+        normal = "South Carolina"
+        abbreviation = "SC"
+        aliases = [ "S C",]
+
+        [normalizer.args.normals."South Dakota"]
+        normal = "South Dakota"
+        abbreviation = "SD"
+        aliases = [ "S Dak",]
+
+        [normalizer.args.normals.Tennessee]
+        normal = "Tennessee"
+        abbreviation = "TN"
+        aliases = [ "Tenn",]
+
+        [normalizer.args.normals.Texas]
+        normal = "Texas"
+        abbreviation = "TX"
+        aliases = [ "Tex",]
+
+        [normalizer.args.normals.Utah]
+        normal = "Utah"
+        abbreviation = "UT"
+        aliases = []
+
+        [normalizer.args.normals.Vermont]
+        normal = "Vermont"
+        abbreviation = "VT"
+        aliases = [ "Vt",]
+
+        [normalizer.args.normals.Virginia]
+        normal = "Virginia"
+        abbreviation = "VA"
+        aliases = [ "Va",]
+
+        [normalizer.args.normals.Washington]
+        normal = "Washington"
+        abbreviation = "WA"
+        aliases = [ "Wash",]
+
+        [normalizer.args.normals."West Virginia"]
+        normal = "West Virginia"
+        abbreviation = "WV"
+        aliases = [ "W Va",]
+
+        [normalizer.args.normals.Wisconsin]
+        normal = "Wisconsin"
+        abbreviation = "WI"
+        aliases = [ "Wisc", "Wis",]
+
+        [normalizer.args.normals.Wyoming]
+        normal = "Wyoming"
+        abbreviation = "WY"
+        aliases = [ "Wyo",]

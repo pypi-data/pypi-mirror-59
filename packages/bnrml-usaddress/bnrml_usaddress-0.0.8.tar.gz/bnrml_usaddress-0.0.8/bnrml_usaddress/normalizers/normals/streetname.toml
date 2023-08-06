@@ -1,0 +1,4 @@
+[normalizer]
+type = 'bnrml_usaddress.normalizers.streetnames.StreetNameNormalizer'
+
+    [normalizer.args]
