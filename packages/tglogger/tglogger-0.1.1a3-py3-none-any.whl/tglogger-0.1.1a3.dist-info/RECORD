@@ -1,0 +1,9 @@
+tglogger/__init__.py,sha256=aiCHaF6kDgdS3ZEQA9imx0kASoClQZMoAlghKP6ysi0,223
+tglogger/formatter.py,sha256=eAZ3c3alkqpaHJoK6Kqg1HNjfQb6ciC2S44WilBmok8,2180
+tglogger/handler.py,sha256=KiQ4GxTrsMz2GkNj2YmqRc5kXZrh9z2faK1q0ZDNA-k,1426
+tglogger/request.py,sha256=KBuTbzEwOWtFi6ns-Mgw0_UeWtNNlT2UfVOJrkrKi64,2109
+tglogger-0.1.1a3.dist-info/LICENSE.txt,sha256=11gi_3xxIRQ5dCicRy66X8WxH78j1kFo92CwDGYR8QU,551
+tglogger-0.1.1a3.dist-info/METADATA,sha256=Xi-RVV1jXUpK6uL7NHWfKuvbb8mh75s48-ygZXrIE60,5227
+tglogger-0.1.1a3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tglogger-0.1.1a3.dist-info/top_level.txt,sha256=oesQT796c2pmPzjXorxaTdrDvf3W1yA1ykcNUtb7C24,9
+tglogger-0.1.1a3.dist-info/RECORD,,
