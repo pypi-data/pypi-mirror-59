@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tf2-initializer
+Version: 0.1
+Summary: A tf2 project initializer
+Home-page: https://github.com/zankner/tf2-initializer
+Author: Zack Ankner
+Author-email: zackankner@gmail.com
+License: UNKNOWN
+Description: # tf2-initializer 
+        
+        Project sturcture to initialize tf2 projects
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
