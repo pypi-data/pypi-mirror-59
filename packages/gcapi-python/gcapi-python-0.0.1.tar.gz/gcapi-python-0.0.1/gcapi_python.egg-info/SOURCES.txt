@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+gcapi/gcapi_client.py
+gcapi/init.py
+gcapi_python.egg-info/PKG-INFO
+gcapi_python.egg-info/SOURCES.txt
+gcapi_python.egg-info/dependency_links.txt
+gcapi_python.egg-info/requires.txt
+gcapi_python.egg-info/top_level.txt
+tests/init.py
