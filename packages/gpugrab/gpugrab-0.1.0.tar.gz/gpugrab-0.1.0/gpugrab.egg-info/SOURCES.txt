@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+gpugrab/__init__.py
+gpugrab/get_idle.py
+gpugrab/gpuinfo.py
+gpugrab.egg-info/PKG-INFO
+gpugrab.egg-info/SOURCES.txt
+gpugrab.egg-info/dependency_links.txt
+gpugrab.egg-info/requires.txt
+gpugrab.egg-info/top_level.txt
