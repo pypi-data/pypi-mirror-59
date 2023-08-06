@@ -1,0 +1,11 @@
+dataserve/DataContainer.py,sha256=nC2Jlt0PQPlH59vfvGEPQL14R0ZWlryH8cimunlsOq4,804
+dataserve/HTTPDataClient.py,sha256=5YBsv6RffO1-B__ZFe-L1cUdIpeFzHNjpH2dDKg4bXY,1217
+dataserve/HTTPDataServer.py,sha256=La6p_GTaltJG2ivEeXVbnwBpRJ65iYdxF7U-Yc27_KA,3093
+dataserve/ProxyServer.py,sha256=3yfbrhSvhuJkEHIFaQBOavMLjM8zl4d3MdgBViI-Ne0,1394
+dataserve/__init__.py,sha256=TdfBt1rWGTVbnhfCgY7EAQi4p5jCQNQfPZ9Wcei-r08,228
+dataserve/http_utils.py,sha256=5jbOgYIv2YIzUkgkT6iwIjOjNYsk-LvIgjdmmx3JWdM,1139
+dataserve-0.1.0.dist-info/LICENSE,sha256=X5f9xwm8M5jilIYVQn8nXYjWUNiYG4dxumJ2zk2RKmc,1078
+dataserve-0.1.0.dist-info/METADATA,sha256=qoDJijQy5JdOFXlLegp-Y7T1GTuit6lswAfMjza8spk,1726
+dataserve-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+dataserve-0.1.0.dist-info/top_level.txt,sha256=10v7B7Q43sX6zpcz-ggdGZlXNe1P4vy_40r6fphCf0I,10
+dataserve-0.1.0.dist-info/RECORD,,
