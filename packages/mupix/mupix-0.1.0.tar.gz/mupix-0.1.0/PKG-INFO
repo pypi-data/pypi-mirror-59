@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: mupix
+Version: 0.1.0
+Summary: MusicXML Evaluation Tool
+License: GPL-3.0
+Author: Deepio
+Author-email: global2alex@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: attrs (>=19.1,<20.0)
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: lxml (>=4.3,<5.0)
+Requires-Dist: matplotlib (>=3.1,<4.0)
+Requires-Dist: music21 (>=5.5,<6.0)
+Requires-Dist: scipy (>=1.3,<2.0)
+Description-Content-Type: text/markdown
+
+# GANDALF
+![Travis (.com)](https://img.shields.io/travis/com/deepio/gandalf)
+![GitHub tag (latest by date)](https://img.shields.io/github/tag-date/deepio/gandalf)
+![GitHub last commit](https://img.shields.io/github/last-commit/deepio/gandalf)
+![GitHub repo size](https://img.shields.io/github/repo-size/deepio/gandalf)
+
+The Symbolic Music File Evaluation Tool.
+- Written with the newer format strings `python 3.6+`.
+- Will not support `python 2.x`.
+- Read the LICENSE.
+
+### Installation
+From a bash terminal, run these commands
+```bash
+# Install python poetry
+pip3 install --user poetry
+# Create a virtual environment, in this example it is named env
+python3 -m venv env
+# Enter the virtual environment
+. ./env/bin/activate
+# Install gandalf (from the project root)
+poetry install
+```
+
+
+### Usage
+- For up-to-date usage information, run `gandalf` or `gandalf --help`
