@@ -1,0 +1,14 @@
+crc/__about__.py,sha256=ALJhRRS52VJq0lLwHg-Jb5wLiwcIDMUpK6hqMgLNk8M,1142
+crc/__init__.py,sha256=KoE_jyoar1NZ9pskZe9zEDkfiKbFtlqQVLnE-9ywOE0,5088
+crc/_dll.py,sha256=B1ajdZFgHp9LOfB-76_kxW7bX0ygN4i7EQ1iElXEr98,286
+crc/_platform/__init__.py,sha256=nkKsS0yL-427Nvaq-Re5GJHQKJj72uylwZxJROjwmMs,893
+crc/_platform/_linux.py,sha256=f51_994FvYGgVLXwRoVBwfTWKtsrTjixbT_kocvBT90,797
+crc/_platform/_osx.py,sha256=f51_994FvYGgVLXwRoVBwfTWKtsrTjixbT_kocvBT90,797
+crc/_platform/_windows.py,sha256=uSGX4nbmxSK43L5yDZuN4hb6wXDB53mdI5EROiK5c8k,956
+crc/_platform/crc.cp38-win_amd64.pyd,sha256=iZ2rdyUkiIuGTzgNl_YoZXaiTrRopzZqy05ghkhzA-A,131584
+crc_ct-1.0.0rc9.dist-info/LICENSE,sha256=57O-y9f8rNwePqXA-yrz8nb8E292wn9lj6G8PijtIQk,860
+crc_ct-1.0.0rc9.dist-info/METADATA,sha256=FuJ5TBcnhjadRgtpPCPGvi3n9xiods5hDCYMfNnbD5w,4019
+crc_ct-1.0.0rc9.dist-info/WHEEL,sha256=z-ezgbNu1Y2ixypRrBmFDHP9mmiBhiGywozViqVfAIc,105
+crc_ct-1.0.0rc9.dist-info/top_level.txt,sha256=Sjp3wVWQG8_qLNeLkkNYc9X3s7g1nmetgoXfq_yIEZ0,4
+crc_ct-1.0.0rc9.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+crc_ct-1.0.0rc9.dist-info/RECORD,,
