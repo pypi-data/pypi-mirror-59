@@ -1,0 +1,14 @@
+pytest_shell/__init__.py,sha256=4OiF5ZanXLbXHfOrpoHgUb5IaI5Ee5OkZZF-6BzWkjc,175
+pytest_shell/connection.py,sha256=fP7aTACtRcg4hGXzq_7-p5ftVI0mmtkWpXTqb1Y4OsE,8992
+pytest_shell/dialect.py,sha256=9K_j0wYWPt_ASQ_SueI8V6VJ0s16gBFL-jER4hhpaco,3682
+pytest_shell/fs.py,sha256=SEvhiN5A2zZ-Y3fzV7amM3Soo1REUcicGQxQWuQ0OEU,3404
+pytest_shell/shell.py,sha256=pdKg4-egJorWlirsPNvjqy-sLfW3dgXs87KVifTtPco,4257
+pytest_shell/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_shell/tests/test_connection.py,sha256=YU19YM_n3nf4wsZu9gAIw4rWrjn7hLdeYLolffe0Nn0,580
+pytest_shell/tests/test_fs.py,sha256=qivoQvHWWbppxH7B7FUXVCDiAQ2-qNttiNF_kTqvy-E,2016
+pytest_shell/tests/test_shell.py,sha256=Tp129Zohu_EZyv_Ye9Y1qtTPEgijbKObJvto0DmMOjQ,7830
+pytest_shell-0.2.3.dist-info/entry_points.txt,sha256=jqjVSebwTHEFJYt_5aL1SeJyJKU9yiJmb2jiuFMmwNg,31
+pytest_shell-0.2.3.dist-info/LICENSE,sha256=zL9yTVJxm5SgAABaiIDy3DxQJ6i7XfDlG96goMExtso,1081
+pytest_shell-0.2.3.dist-info/WHEEL,sha256=dqElwnlLMc7-lr24lzizalXwnuKWWcPA6D2n0jC3DJ8,87
+pytest_shell-0.2.3.dist-info/METADATA,sha256=AMw7aT6oAzFEtLfAW4CySbAnJn8RQsnKFPN7aYG1BrM,5430
+pytest_shell-0.2.3.dist-info/RECORD,,
