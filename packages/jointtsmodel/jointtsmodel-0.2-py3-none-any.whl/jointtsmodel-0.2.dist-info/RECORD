@@ -1,0 +1,14 @@
+.DS_Store,sha256=VBG55IsSBd1B2DR7PFp2TszBDhVBPuln8I3cFmlwd-Y,6148
+jointtsmodel/JST.py,sha256=5Rnz7gO9nYOWZfZgQ2zeCg27X0tzvQBXzONGRA6JA9o,17717
+jointtsmodel/RJST.py,sha256=Z2XYFYRlXDRmXn8MUKDio1sVcFssUksvzCE4KYWTiNM,16152
+jointtsmodel/__init__.py,sha256=x1mVZuJ2IHdHchlgKqSQTWNkcT--m4wYzoC7DuBbX_8,66
+jointtsmodel/base.py,sha256=e9D9clTHWs883JVl297EcZN9Wyc3U0wvWuQ4TIsTNj0,19278
+jointtsmodel/sLDA.py,sha256=M7wpOLYicIRhETqE1cN1UME5N-l7y_L8zfGO52Kbccs,17959
+jointtsmodel/utils.py,sha256=OEYYY6f8CQvA2wfilSp946XYwfFx6XiIqf7UZGdc5uk,6285
+jointtsmodel/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jointtsmodel/test/test.py,sha256=3UKSisuN-HGTJE5c62jxOjirdmPkqgujzaEn5iK6jGI,2134
+jointtsmodel-0.2.dist-info/LICENSE,sha256=5-DkzMeDlRY5f2HXt6eJvXBvcfAwtgSAl30iMBMmVVc,1170
+jointtsmodel-0.2.dist-info/METADATA,sha256=x_yNfXKZVQlDAHmOI9w2HmTI0lg5bHU_jHqu2l9AGR4,3165
+jointtsmodel-0.2.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+jointtsmodel-0.2.dist-info/top_level.txt,sha256=liIK_OHajlAeg9kC5enA0UTRsioEUuidSZ_U0DyF4oo,13
+jointtsmodel-0.2.dist-info/RECORD,,
