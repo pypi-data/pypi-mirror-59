@@ -1,0 +1,5 @@
+#!/home/ma0/projects/openspeechorg/openspeechcorpus-cli/openspeechcorpus_env/bin/python
+from openspeechcorpus_cli import clean_previous_configuration_execute_from_command_line
+
+if __name__ == "__main__":
+    clean_previous_configuration_execute_from_command_line()
