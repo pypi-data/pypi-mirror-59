@@ -1,0 +1,1 @@
+A Django model that adds `created_at` and `updated_at` fields by default.
