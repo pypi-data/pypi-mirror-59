@@ -1,0 +1,153 @@
+from flask import Flask, g
+{% if sqlalchemy %}
+from sqlalchemy import create_engine
+from sqlalchemy.pool import QueuePool
+from sqlalchemy.orm import sessionmaker, scoped_session
+from sqlalchemy.exc import InvalidRequestError
+{% endif %}
+import yaml
+import os
+
+from .rest.controllers import rest
+{% if socketio %}
+from .events.controllers import *
+from .io import socketio
+{%- endif %}
+{% if mail %}
+from .mail import mail
+{%- endif %}
+
+{%- if sqlalchemy %}
+
+import threading
+
+
+class scoped_pending_session(scoped_session):
+    """
+    Provides additional (comparing to :class:`scoped_session`) tracking of spawned sessions.
+    Will track references to spawned sessions. :func:`scoped_pending_session.remove` will
+    dispose spawned session only if no one is currently used.
+    Uses only threading.local() approach.
+    """
+
+    def __init__(self, session_factory):
+        """Construct a new :class:`.scoped_session`.
+
+        :param session_factory: a factory to create new :class:`.Session`
+         instances. This is usually, but not necessarily, an instance
+         of :class:`.sessionmaker`.
+        """
+        super().__init__(session_factory=session_factory, scopefunc=None)
+        self.ref_count = threading.local()
+        self.ref_count.value = 0
+
+    def __call__(self, **kw):
+
+        try:
+            retval = super().__call__(**kw)
+        except InvalidRequestError as e:
+            # re-raise and do not count
+            raise e
+        else:
+            # spawned new session in use, so count
+            self.ref_count.value += 1
+
+        return retval
+
+    def remove(self):
+
+        # count down until 0, then close
+        self.ref_count.value = self.ref_count.value - 1 if self.ref_count.value > 0 else 0
+
+        if self.ref_count.value == 0:
+            # all references gone down, session can be closed
+            if self.registry.has():
+                self.registry().close()
+            else:
+                # strange, but set ref cnt to 0
+                self.ref_count.value = 0
+            self.registry.clear()
+
+{%- endif %}
+
+
+def create_app():
+    app = Flask(__name__)
+
+    # configuration file should map to a regular dictionary.
+    # inner structures should map to default python objects, like JSON loader
+    with open(os.path.join("app", "config", os.environ.get("FLASK_CONFIG_FILENAME", "config.prod.yaml"))) as f:
+        config_dictionary = yaml.safe_load(f)
+
+    app.config.from_mapping(config_dictionary)
+
+    app.register_blueprint(rest)
+
+    {%- if sqlalchemy %}
+    # flask-sqlalchemy setup
+    db_engine = create_engine(app.config["DATABASE"]["URL"], poolclass=QueuePool,
+                              pool_size=50, max_overflow=5)
+                              # consider adding: isolation_level="READ UNCOMMITTED" to perform dirty reads when using socketio
+
+    SessionFactory = sessionmaker(bind=db_engine)
+    ScopedSession = scoped_pending_session(SessionFactory)
+    {% endif %}
+
+    {%- if socketio and sqlalchemy %}
+    @socketio.register_session_getter
+    def get_db_session():
+        return ScopedSession()
+
+    @socketio.register_session_deleter
+    def close_db_session(session):
+        if session is not None:
+            try:
+                session.commit()
+            except InvalidRequestError:
+                session.rollback()
+
+        ScopedSession.remove()
+    {% endif %}
+    {% if sqlalchemy %}
+    @app.before_request
+    {%- if socketio %}
+    @socketio.before_event
+    {%- endif %}
+    def create_session():
+        g.db_session = ScopedSession()
+    {% endif %}
+    {% if sqlalchemy %}
+    @app.teardown_appcontext
+    {%- if socketio %}
+    @socketio.after_event
+    {%- endif %}
+    def shutdown_session(response_or_exc):
+
+        # weird behaviour: when using app.test_client() and sending request with json=... param,
+        # first a appcontext is popped, triggering this function call without actually triggering
+        # create_session() before. In case when g attributes are not set, ommit db commiting
+        try:
+            session = g.db_session
+        except AttributeError:
+            return
+
+        try:
+            session.commit()
+        except InvalidRequestError:
+            session.rollback()
+
+        ScopedSession.remove()
+    {% endif %}
+    {% if sqlalchemy %}
+    # close all pending conections to ensure that references wont be copied into wsgi workers
+    db_engine.dispose()
+    {% endif %}
+
+    {%- if socketio %}
+    # connect socket_io app
+    socketio.init_app(app)
+    {% endif %}
+
+    return app
+
+
