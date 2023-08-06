@@ -1,0 +1,2 @@
+recursive-include trtbertclient/api *.so
+recursive-include trtbertclient/tokenizer *.txt

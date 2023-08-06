@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: trtbertclient
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Jiangping
+Author-email: jiangping.lei@shopee.com
+License: MIT Licence
+Description: UNKNOWN
+Keywords: pip,trt,tensorrt,client,bert,Jiangping
+Platform: any
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
