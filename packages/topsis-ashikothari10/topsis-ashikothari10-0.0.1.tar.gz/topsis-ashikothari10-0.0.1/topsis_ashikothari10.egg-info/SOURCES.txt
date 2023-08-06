@@ -1,0 +1,10 @@
+README.md
+setup.py
+topsis/__init__.py
+topsis/photogenicFace.py
+topsis/singer.py
+topsis/topsis.py
+topsis_ashikothari10.egg-info/PKG-INFO
+topsis_ashikothari10.egg-info/SOURCES.txt
+topsis_ashikothari10.egg-info/dependency_links.txt
+topsis_ashikothari10.egg-info/top_level.txt
