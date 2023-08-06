@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: saferoomcore
+Version: 0.6
+Summary: List of packages used in Saferoom Enterprise
+Home-page: https://github.com/saferoombiz/saferoomcore
+Author: Alexey Zelenkin
+Author-email: alexey.zelenkin@gmail.com
+License: MIT
+Description: Coming soon
+Keywords: saferoom encryption decryption cms evernote onenote
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
