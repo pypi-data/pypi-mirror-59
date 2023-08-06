@@ -1,0 +1,4 @@
+rangeen>=0.0.1
+Jinja2>=2.10.3
+markdown2>=2.3.8
+htmlmin>=0.1.12

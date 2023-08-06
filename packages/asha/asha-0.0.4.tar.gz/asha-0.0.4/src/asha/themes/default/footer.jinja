@@ -1,0 +1,100 @@
+<footer>
+  <div class="container pt-5 border-bottom">
+    <div class="row">
+      <div class="col-md-3 col-sm-12 mb-3 text-center">
+        <img src="/static/images/logo.jpeg" class="img-fluid"/>
+      </div>
+      <div class="col-md-9 col-sm-12">
+        <div class="col-md-3 col-sm-6 col-6 p-0 float-left mb-3">
+          <h5 class="mb-4 font-weight-bold text-uppercase">Community</h5>
+          <ul class="list-group">
+            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+              <a href="#">More Projects</a>
+            </li>
+            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+              <a href="#">Donate</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-6 p-0 mb-3 float-left">
+          <h5 class="mb-4 font-weight-bold text-uppercase">Developers</h5>
+          <ul class="list-group">
+            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+              <a href="#">Contribute</a>
+            </li>
+            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+              <a href="#">Theme design guidelines</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-6 mb-3 p-0 float-left">
+          <h5 class="mb-4 font-weight-bold text-uppercase">Asha</h5>
+          <ul class="list-group">
+            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+              <a href="#">Documentation</a>
+            </li>
+            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+              <a href="#">Themes</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-6 mb-3 p-0 float-left">
+          <h5 class="mb-4 font-weight-bold text-uppercase">Connect</h5>
+          <ul class="list-group">
+            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+              <a href="https://www.linkedin.com/company/naologic"><i class="fa fa-linkedin mr-1"></i> LinkedIn</a>
+            </li>
+            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+              <a href="https://twitter.com/naologicerp"><i class="fa fa-twitter mr-1"></i> Twitter</a>       
+            </li class="list-group-item bg-transparent border-0 p-0 mb-2">
+            <li class="list-group-item bg-transparent border-0 p-0 mb-2"> 
+              <a href="#"><i class="fa fa-reddit mr-1"></i> Reddit</a>
+            </li>
+            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+              <a href="#"><i class="fa fa-google-plus mr-1"></i> Google+</a>
+            </li>
+            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+              <a href="#"><i class="fa fa-github mr-1"></i> Github</a>  
+            </li>
+            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+              <a href="#"><i class="fa fa-medium mr-1"></i> Medium</a>
+            </li>
+            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+              <a href="#"><i class="fa fa-facebook mr-1"></i> Facebook</a>
+            </li>
+            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+              <a href="#"><i class="fa fa-youtube mr-1"></i> YouTube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="py-4 d-flex justify-content-center align-items-center">
+          <a class="mr-4" href="#">Privacy & terms</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="py-4 d-flex justify-content-center align-items-center">
+          <span class="mr-4">Shanu Khera &COPY 2020</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</footer>
+<script>
+  $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+  });
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $('.nav').addClass('affix');
+    } else {
+      $('.nav').removeClass('affix');
+    }
+  });
+</script>
