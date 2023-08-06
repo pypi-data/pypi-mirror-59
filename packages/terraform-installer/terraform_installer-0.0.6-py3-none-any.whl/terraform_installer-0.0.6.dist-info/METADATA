@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: terraform-installer
+Version: 0.0.6
+Summary: install or upgrade the open source version of terraform.
+Home-page: https://gitlab.com/shindagger/terraform-installer
+Author: Andy Klier
+Author-email: andyklier@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Requires-Dist: string-color
+Requires-Dist: beautifulsoup4
+Requires-Dist: numpy
+Requires-Dist: requests
+
+# Terraform Installer [terraform-installer, ti]  
+
+command line installer for the open source version of [terraform](https://www.terraform.io/)  
+
+## Installation  
+
+```
+pip install terraform-installer  
+```  
+
+### Usage  
+
+```
+# show help and exit  
+ti -h  
+
+# install or upgrade specific platform  
+ti darwin_amd64  
+
+# install a specific version of given platform  
+ti -r 0.12.1  
+```   
+
+
+
