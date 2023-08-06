@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load thumbnail static seo %}
+
+{% block meta_seo %}
+    {% meta_seo page %}
+{% endblock %}
+
+{% block content %}
+    <div id="content">
+        <div class="container">
+            {% include 'include/breadcrumb.html' %}
+            <div class="box text-center">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <h1>{% firstof page.seo_h1 page.seo_title page.title %}</h1>
+                        <p class="text-muted">You currently have 3 item(s) in your cart.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="basket" class="col-lg-12">
+                    <div class="box">
+                        <form method="get" action="checkout1.html">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th colspan="2">Product</th>
+                                        <th>Quantity</th>
+                                        <th>Unit price</th>
+                                        <th>Discount</th>
+                                        <th colspan="2">Total</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><a href="#"><img
+                                                src="https://d19m59y37dris4.cloudfront.net/minimal/2-0/img/detailsquare.jpg"
+                                                alt="White Blouse Armani"></a></td>
+                                        <td><a href="#">White Blouse Armani</a></td>
+                                        <td>
+                                            <input type="number" value="2" class="form-control">
+                                        </td>
+                                        <td>$123.00</td>
+                                        <td>$0.00</td>
+                                        <td>$246.00</td>
+                                        <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#"><img
+                                                src="https://d19m59y37dris4.cloudfront.net/minimal/2-0/img/basketsquare.jpg"
+                                                alt="Black Blouse Armani"></a></td>
+                                        <td><a href="#">Black Blouse Armani</a></td>
+                                        <td>
+                                            <input type="number" value="1" class="form-control">
+                                        </td>
+                                        <td>$200.00</td>
+                                        <td>$0.00</td>
+                                        <td>$200.00</td>
+                                        <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <th colspan="5">Total</th>
+                                        <th colspan="2">$446.00</th>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="box-footer">
+                                <div class="pull-left"><a href="{% url 'sections:section' 'checkout' %}"
+                                                          class="btn btn-outline-white-secondary"><i
+                                        class="fa fa-chevron-left"></i> Continue shopping</a></div>
+                                <div class="pull-right">
+                                    <button class="btn btn-outline-white-secondary"><i class="fa fa-refresh"></i> Update
+                                        cart
+                                    </button>
+                                    <button type="submit" class="btn btn-outline-white-primary">Proceed to checkout<i
+                                            class="fa fa-chevron-right"></i></button>
+                                    <a href="{% url 'sections:section' 'checkout' %}"
+                                                          class="btn btn-outline-white-secondary"><i
+                                        class="fa fa-chevron-left"></i> Continue shopping</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
