@@ -1,0 +1,17 @@
+setuptools>=38.3.0
+
+[dev]
+releasecmd<1,>=0.2.0
+twine
+wheel
+readmemaker>=1.0.0
+sphinx_rtd_theme
+Sphinx
+click
+faker
+pytest
+
+[test]
+click
+faker
+pytest
