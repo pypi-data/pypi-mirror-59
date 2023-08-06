@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: puffin-python-library
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: https://gitlab.com/nickgray1995/puffin-python-library
+Author: Nick Gray
+Author-email: nickgray@liv.ac.uk
+License: Creative Commons Attribution-Noncommercial-Share Alike license
+Description: Puffin dist for puffin compiler
+        
+Platform: UNKNOWN
