@@ -1,0 +1,7 @@
+pandas
+numpy
+autopaths
+plumbing
+lxml
+requests
+tqdm
