@@ -1,0 +1,15 @@
+README.md
+setup.py
+utils/__init__.py
+utils/admin.py
+utils/apps.py
+utils/models.py
+utils/tests.py
+utils/views.py
+utils/migrations/__init__.py
+utils_django.egg-info/PKG-INFO
+utils_django.egg-info/SOURCES.txt
+utils_django.egg-info/dependency_links.txt
+utils_django.egg-info/not-zip-safe
+utils_django.egg-info/requires.txt
+utils_django.egg-info/top_level.txt
