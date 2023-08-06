@@ -1,0 +1,7 @@
+webob
+parse
+jinja2
+whitenoise
+gunicorn
+sqlalchemy
+pymysql
