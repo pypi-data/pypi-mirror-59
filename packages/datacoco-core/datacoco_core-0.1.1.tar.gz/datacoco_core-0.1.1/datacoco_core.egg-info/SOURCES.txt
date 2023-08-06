@@ -1,0 +1,10 @@
+README.rst
+setup.py
+datacoco_core/__init__.py
+datacoco_core/__version__.py
+datacoco_core/config.py
+datacoco_core/logger.py
+datacoco_core.egg-info/PKG-INFO
+datacoco_core.egg-info/SOURCES.txt
+datacoco_core.egg-info/dependency_links.txt
+datacoco_core.egg-info/top_level.txt
