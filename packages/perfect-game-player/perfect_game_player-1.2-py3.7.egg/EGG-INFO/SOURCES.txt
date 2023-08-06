@@ -1,0 +1,12 @@
+README.md
+setup.py
+perfect_game_player.egg-info/PKG-INFO
+perfect_game_player.egg-info/SOURCES.txt
+perfect_game_player.egg-info/dependency_links.txt
+perfect_game_player.egg-info/not-zip-safe
+perfect_game_player.egg-info/top_level.txt
+pgameplayer/__init__.py
+pgameplayer/minimax_tree.py
+pgameplayer/solvers/__init__.py
+pgameplayer/solvers/connect4.py
+pgameplayer/solvers/tictactoe.py
