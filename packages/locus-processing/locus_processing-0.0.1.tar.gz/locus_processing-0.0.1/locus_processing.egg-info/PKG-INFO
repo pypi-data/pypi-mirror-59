@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: locus-processing
+Version: 0.0.1
+Summary: Tools for working with locus definition files
+Home-page: https://git.lumc.nl/PharmacogenomicsPipe/locus_processing
+Author: Sander Bollen
+Author-email: a.h.b.bollen@lumc.nl
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: bioinformatics
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
