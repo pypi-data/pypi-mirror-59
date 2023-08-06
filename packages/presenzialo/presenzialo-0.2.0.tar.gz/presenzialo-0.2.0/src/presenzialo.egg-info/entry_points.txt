@@ -1,0 +1,6 @@
+[console_scripts]
+PRaddress = presenzialo.presenzialo_address:main
+PRid = presenzialo.presenzialo_id:main
+presenzialo = presenzialo.presenzialo:main
+presenziamelo = presenzialo.presenzialo:main
+
