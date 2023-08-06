@@ -1,0 +1,6 @@
+README.md
+setup.py
+pyneutralino.egg-info/PKG-INFO
+pyneutralino.egg-info/SOURCES.txt
+pyneutralino.egg-info/dependency_links.txt
+pyneutralino.egg-info/top_level.txt
