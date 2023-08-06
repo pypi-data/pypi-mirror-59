@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: hetzner-set-dns-txt-record
+Version: 0.2.2
+Summary: A script to change DNS TXT records in the Hetzner robot
+Home-page: https://github.com/neuroforgede/hetzner_set_dns_txt_record
+Author: NeuroForge GmbH & Co. KG
+Author-email: github@neuroforge.de
+License: GNU Affero General Public License
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4 (>=4.8.2)
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: easyzone3 (==1.2.3)
+
+# hetzner_set_dns_txt_record
+python script that can be used to change hetzner DNS TXT entries (intended to be used with a manual auth hook in certbot)
+
+# Installation
+
+```
+pip3 install hetzner_set_dns_txt_record
+```
+
+# Standalone Usage
+
+Set record to a value:
+```
+hetzner_set_dns_txt.py --record=<which TXT record to set, e.g. _acme-challenge> --value=<your-value> --user=<your-hetzner-user> --password=<your-hetzner-password> --domain="<the complete domain you want to set the TXT record for>" --basedomain=<the top level base domain> --verbose
+```
+
+Delete TXT record
+```
+hetzner_set_dns_txt.py --record=<which TXT record to delete, e.g. _acme-challenge> --delete --user=<your-hetzner-user> --password=<your-hetzner-password> --domain="<the complete domain you want to set the TXT record for>" --basedomain=<the top level base domain> --verbose
+```
+
+# Acknowledgements
+
+The method to manipulate the DNS entries in the Hetzner robot is from [hetzner-letsencrypt-wildcard-auto-renew](https://github.com/macskay/hetzner-letsencrypt-wildcard-auto-renew) and
+was improved upon to fit into a more general DNS TXT utility for Hetzner.
+
