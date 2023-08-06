@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: gimbiseo
+Version: 1.4
+Summary: A system of Human-Machine Dialogue
+Home-page: https://git.oschina.net/williamzjc/gimbiseo
+Author: William Song
+Author-email: songcwzjut@163.com
+License: MIT
+Description: See homepage
+Keywords: owlready DLs OWL inference
+Platform: UNKNOWN
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Natural Language :: English
