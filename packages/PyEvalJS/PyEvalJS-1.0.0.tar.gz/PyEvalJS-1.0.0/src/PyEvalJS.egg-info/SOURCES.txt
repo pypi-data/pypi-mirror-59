@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+src/PyEvalJS/__init__.py
+src/PyEvalJS/error.py
+src/PyEvalJS/runtime.py
+src/PyEvalJS/utils.py
+src/PyEvalJS.egg-info/PKG-INFO
+src/PyEvalJS.egg-info/SOURCES.txt
+src/PyEvalJS.egg-info/dependency_links.txt
+src/PyEvalJS.egg-info/top_level.txt
+src/PyEvalJS/libs/linux/libChakraCore.so
+src/PyEvalJS/libs/osx/libChakraCore.dylib
+src/PyEvalJS/libs/windows/x64/ChakraCore.dll
+src/PyEvalJS/libs/windows/x86/ChakraCore.dll

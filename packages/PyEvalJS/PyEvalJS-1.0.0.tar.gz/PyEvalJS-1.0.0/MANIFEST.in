@@ -1,0 +1,4 @@
+include src/PyEvalJS/libs/linux/libChakraCore.so
+include src/PyEvalJS/libs/osx/libChakraCore.dylib
+include src/PyEvalJS/libs/windows/x64/ChakraCore.dll
+include src/PyEvalJS/libs/windows/x86/ChakraCore.dll
