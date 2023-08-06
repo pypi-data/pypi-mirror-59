@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: littlemcmc
+Version: 0.1.0
+Summary: A lightweight and performant implementation of HMC and NUTS in Python, spun out of the PyMC4 project.
+Home-page: https://github.com/eigenfoo/littlemcmc
+Author: George Ho
+Author-email: mail@eigenfoo.xyz
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: joblib (>=0.14.1)
+Requires-Dist: numpy
+Requires-Dist: scipy (>=0.18.1)
+Requires-Dist: tqdm
+
+# LittleMCMC (Pre-release)
+
+![Tests Status](https://github.com/eigenfoo/littlemcmc/workflows/tests/badge.svg)
+![Lint Status](https://github.com/eigenfoo/littlemcmc/workflows/lint/badge.svg)
+[![Coverage Status](https://codecov.io/gh/eigenfoo/littlemcmc/branch/master/graph/badge.svg)](https://codecov.io/gh/eigenfoo/littlemcmc)
+[![Documentation Status](https://readthedocs.org/projects/littlemcmc/badge/?version=latest)](https://littlemcmc.readthedocs.io/en/latest/?badge=latest)
+[![License](https://img.shields.io/github/license/eigenfoo/littlemcmc)](https://github.com/eigenfoo/littlemcmc/blob/master/LICENSE.littlemcmc.txt)
+
+> littlemcmc &nbsp; &nbsp; /lɪtəl ɛm si ɛm si/ &nbsp; &nbsp; _noun_
+>
+> A lightweight and performant implementation of HMC and NUTS in Python, spun
+> out of [the PyMC project](https://github.com/pymc-devs). Not to be confused
+> with [minimc](https://github.com/ColCarroll/minimc).
+
+## License
+
+LittleMCMC is modified from [the PyMC3 and PyMC4
+projects](https://github.com/pymc-devs/), both of which are distributed under
+the Apache-2.0 license. A copy of both projects' license files are distributed
+with LittleMCMC. All modifications from PyMC are distributed under [an identical
+Apache-2.0 license](https://github.com/eigenfoo/littlemcmc/blob/master/LICENSE).
+
+

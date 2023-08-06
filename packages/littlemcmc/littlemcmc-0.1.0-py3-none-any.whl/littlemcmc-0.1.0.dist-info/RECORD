@@ -1,0 +1,16 @@
+littlemcmc/__init__.py,sha256=YUaN24SOJIrQd3LsLU38UfnnSIIRC9mnvBE94FVIwwg,904
+littlemcmc/base_hmc.py,sha256=okqgvMvnMpajNV3eAkZvEpnPxNkeFaXvT-pb2lW7rH4,8807
+littlemcmc/hmc.py,sha256=gZMdLOvaaC7epDs3A4oW0rexnpCnQYqb506W4nLtXU4,6947
+littlemcmc/integration.py,sha256=J3rzprh1E9NKOp47wsZ6lhq-gTUYGgV3B3OJH_40PYY,3662
+littlemcmc/nuts.py,sha256=1h-mV8XXAvfN-hVlkdlogxyaFU0fTUzfrqdvBhdot1A,15782
+littlemcmc/quadpotential.py,sha256=UjR8r7eB7kt6cmnCDlv8vhryv9WLltgUhlzEL_6UmtE,20206
+littlemcmc/report.py,sha256=Dy-JbS79nh8OpfVpEad6de0pgAGUidWhIYkCu2CqriY,1125
+littlemcmc/sampling.py,sha256=mj-jSEr7rKeF_CN5pUuxg7iZLpCPnY0TfI1007R8vSs,7295
+littlemcmc/step_sizes.py,sha256=jOiqJwfn_KkUXuuItxaoqwQgdni9hVFUZudtENhlA28,3996
+littlemcmc-0.1.0.dist-info/LICENSE.pymc3.txt,sha256=BBYdXHRBWnUOemlUZqS3fwfwNLMtjuaoVerJSHXePAs,11728
+littlemcmc-0.1.0.dist-info/LICENSE.pymc4.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+littlemcmc-0.1.0.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+littlemcmc-0.1.0.dist-info/METADATA,sha256=MMDPFEMBXp964FqnXLX_xd284ECzUH9Q_uH04tBVkH4,2216
+littlemcmc-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+littlemcmc-0.1.0.dist-info/top_level.txt,sha256=7Ju2kgHY_VG20WXrq3rO-tJo7d68bWFxosnzC9qeswo,11
+littlemcmc-0.1.0.dist-info/RECORD,,
