@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: Pi20
+Version: 0.1
+Summary: Library that makes use of sensors, motors, and servos in the PiWars Turkey robot kit by HisarCS
+Home-page: UNKNOWN
+Author: Andy Emre Kocak, Rana Taki
+Author-email: emre.kocak@hisarschool.k12.tr, rana.taki@hisarschool.k12.tr
+License: UNKNOWN
+Description: ## PiWars Türkiye 2020: HisarCS tarafından dağıtılan robot kitleri için python kütüphanesi  
+          
+        Bu python kütüphanesi, PiWars Türkiye 2020 katılımcılarının HisarCS tarafınndan hazırlanan robot kitlerindeki yazılımı, sensörleri ve hareketli parçaları kullanmalarını kolaylaştırmak amacıyla yapılmıştır.  
+        
+        
+        ## Kurulum
+        
+        Pi20'yi indirmek için [pip](https://pip.pypa.io/en/stable/) paketleme yöneticisini kullanın.
+        
+        
+        ```
+        $ sudo pip install Pi20
+        ```
+        
+        Alternatif olarak Github'dan indirmek de mümkün.
+        ```bash git clone https://github.com/HisarCS/Pi20.git
+        $ git clone https://github.com/HisarCS/Pi20.git
+        $ cd Pi20
+        $ sudo python setup.py install
+        ```
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
