@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyhubitat/__init__.py
+pyhubitat/maker_api.py
+pyhubitat.egg-info/PKG-INFO
+pyhubitat.egg-info/SOURCES.txt
+pyhubitat.egg-info/dependency_links.txt
+pyhubitat.egg-info/requires.txt
+pyhubitat.egg-info/top_level.txt
+pyhubitat/tests/__init__.py
+pyhubitat/tests/test_api.py
