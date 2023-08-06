@@ -1,0 +1,5 @@
+drf_action_permissions/__init__.py,sha256=l-e_wD1K0DMZnadSVJ9efkyNnHG_PSVhxuObvYMCuaQ,88
+drf_action_permissions/permissions.py,sha256=eH24yWwmKToVVewKl6N-Yj9llHoqJ0NQg-bCEDr93Uo,4314
+drf_action_permissions-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+drf_action_permissions-0.1.1.dist-info/METADATA,sha256=3DzR_031fCkHk3RmXXiPHnIm3cQA1R8A9r4bY-15m6Y,3680
+drf_action_permissions-0.1.1.dist-info/RECORD,,
