@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: spatial_image
+Version: 0.0.1
+Summary: spatial-image
+Home-page: https://github.com/spatial-image/spatial-image
+License: UNKNOWN
+Author: Matt McCormick
+Author-email: matt.mccormick@kitware.com
+Classifier: License :: OSI Approved :: MIT License
