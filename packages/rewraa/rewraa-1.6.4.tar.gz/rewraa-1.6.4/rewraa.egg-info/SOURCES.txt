@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+rewraa.c
+setup.py
+rewraa.egg-info/PKG-INFO
+rewraa.egg-info/SOURCES.txt
+rewraa.egg-info/dependency_links.txt
+rewraa.egg-info/entry_points.txt
+rewraa.egg-info/requires.txt
+rewraa.egg-info/top_level.txt
