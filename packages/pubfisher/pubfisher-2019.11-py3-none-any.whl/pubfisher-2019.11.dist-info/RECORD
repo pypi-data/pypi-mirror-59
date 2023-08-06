@@ -1,0 +1,12 @@
+pubfisher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pubfisher/annotate.py,sha256=3rPZGsjLs0tiKtCcyluoxFkp7Us3stT4hfXnwdu2OGs,3338
+pubfisher/core.py,sha256=a6bwGIC9MBpqkkbQzEYKwyezPD1W5Zv9DKL04SlhWBU,2838
+pubfisher/gi_composites.py,sha256=1TadYA6XJffTHkw_qrJNZC7uxvBNYThghmQvAv04KjQ,9158
+pubfisher/fishers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pubfisher/fishers/googlescholar.py,sha256=psA0rkesHvg8oayyKpcbq8HvvgSAfvJuVxNP-CChjC4,15851
+pubfisher/fishers/share.py,sha256=8AzrPFWBPZm2VtseFllr4Clm5cwA5kV_jUrj9uvtF-Q,11122
+pubfisher-2019.11.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pubfisher-2019.11.dist-info/METADATA,sha256=M6Idg3vEmIa3Ov0FVRZ7h3NmOxKew3R0od8q2puWLY0,2051
+pubfisher-2019.11.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pubfisher-2019.11.dist-info/top_level.txt,sha256=TVXUbg6B4YAT3Z-6A-RZB_yaQwXXhMIebtHKMg3I4O0,10
+pubfisher-2019.11.dist-info/RECORD,,
