@@ -1,0 +1,4 @@
+dbnd==0.24.19
+azure-storage-blob
+
+[tests]
