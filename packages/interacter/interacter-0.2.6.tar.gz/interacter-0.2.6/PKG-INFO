@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: interacter
+Version: 0.2.6
+Summary: gRPC server to remote control robots
+Home-page: https://github.com/ntu-airobo/interacter
+Author: Edwinn Gamborino
+Author-email: r04921098@ntu.edu.tw
+License: MIT
+Download-URL: https://github.com/ntu-airobo/interacter/archive/v_0.2.6.tar.gz
+Description: UNKNOWN
+Keywords: robot,grpc,server
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
