@@ -1,0 +1,3 @@
+[console_scripts]
+oqspy = oqspy.cli:main
+
