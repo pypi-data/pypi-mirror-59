@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: topsis-101753002-Ashish
+Version: 1.0
+Summary: It is a self created package for TOPSIS
+Home-page: UNKNOWN
+Author: Ashish Garg
+Author-email: ashishgarg5013@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: scipy
+Requires-Dist: tabulate
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+This is a simple  package. You can use it when you want to implement topsis directly. 
+
+
