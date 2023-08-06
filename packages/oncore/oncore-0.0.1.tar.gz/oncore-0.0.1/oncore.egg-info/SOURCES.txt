@@ -1,0 +1,9 @@
+README.md
+setup.py
+oncore/__init__.py
+oncore/matcher.py
+oncore/test_matcher.py
+oncore.egg-info/PKG-INFO
+oncore.egg-info/SOURCES.txt
+oncore.egg-info/dependency_links.txt
+oncore.egg-info/top_level.txt
