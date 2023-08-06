@@ -1,0 +1,3 @@
+[console_scripts]
+algoz = algoz.__main__:main
+
