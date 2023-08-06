@@ -1,0 +1,8 @@
+setup.py
+datamodel_analysisor/__init__.py
+datamodel_analysisor/datamodel_analysisor.py
+datamodel_analysisor/xml_models.py
+datamodel_analysisor.egg-info/PKG-INFO
+datamodel_analysisor.egg-info/SOURCES.txt
+datamodel_analysisor.egg-info/dependency_links.txt
+datamodel_analysisor.egg-info/top_level.txt

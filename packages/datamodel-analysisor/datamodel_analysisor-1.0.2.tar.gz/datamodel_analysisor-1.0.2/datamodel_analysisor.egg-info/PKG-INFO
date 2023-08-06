@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: datamodel-analysisor
+Version: 1.0.2
+Summary: 用于中金所技术公司解析Entity.xml UFDataType.xml文件
+Home-page: https://github.com/ITWangZhipeng/datamodel_analysisor
+Author: wangzp@cffex.com.cn
+Author-email: wangzp@cffex.com.cn
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
