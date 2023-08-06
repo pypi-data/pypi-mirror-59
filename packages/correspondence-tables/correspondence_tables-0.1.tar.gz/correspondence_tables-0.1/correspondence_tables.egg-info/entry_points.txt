@@ -1,0 +1,3 @@
+[console_scripts]
+correspondence_tables-cli = correspondence_tables.bin.correspondence_tables_cli:main
+

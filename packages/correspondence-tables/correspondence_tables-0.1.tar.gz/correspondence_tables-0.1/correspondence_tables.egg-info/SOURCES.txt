@@ -1,0 +1,65 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+summary table.md
+correspondence_tables/__init__.py
+correspondence_tables/usepa_to_chemspyder.py
+correspondence_tables.egg-info/PKG-INFO
+correspondence_tables.egg-info/SOURCES.txt
+correspondence_tables.egg-info/dependency_links.txt
+correspondence_tables.egg-info/entry_points.txt
+correspondence_tables.egg-info/requires.txt
+correspondence_tables.egg-info/top_level.txt
+correspondence_tables/bin/__init__.py
+correspondence_tables/bin/correspondence_tables_cli.py
+correspondence_tables/data/raw/BEC_to_SITCv3.csv
+correspondence_tables/data/raw/CN2017_to_SITCv4.csv
+correspondence_tables/data/raw/CN_2017_to_PRODCOM_2017.csv
+correspondence_tables/data/raw/CPA2008_to_ HS2007.csv
+correspondence_tables/data/raw/CPA2008_to_CPCv2.csv
+correspondence_tables/data/raw/CPCv2_to_CPA2008.csv
+correspondence_tables/data/raw/CPCv2_to_FCL.csv
+correspondence_tables/data/raw/CPCv2_to_SITCv4.csv
+correspondence_tables/data/raw/Classifications_v_3_3_17.xlsx
+correspondence_tables/data/raw/EXIOBASE3_USA_EPA.csv
+correspondence_tables/data/raw/EXIOBASExx_to_ecoinvent3.2-elementary_flow_mapping.csv
+correspondence_tables/data/raw/EcoinventAct3.2_to_exiobase2.csv
+correspondence_tables/data/raw/EcoinventElflow3.2_to_ILCD.csv
+correspondence_tables/data/raw/Ecoivent3.2_to_exiobase2.csv
+correspondence_tables/data/raw/Exiobase_to_Bentso.csv
+correspondence_tables/data/raw/Exiobase_to_USEPA.csv
+correspondence_tables/data/raw/Exiobase_v3_3_17_HSUTs_HIOT_product_correspondences.csv
+correspondence_tables/data/raw/FAO_vs_EXIOBASE_prod_classification_correspondence.xlsx
+correspondence_tables/data/raw/FCL_to_CPCv2.csv
+correspondence_tables/data/raw/HS2007_to_CPA2008.csv
+correspondence_tables/data/raw/HS2012_to_SITCv4.csv
+correspondence_tables/data/raw/ISIC REV. 3 - EXIOBASE2.0.xlsx
+correspondence_tables/data/raw/ISIC31_ISIC4.txt
+correspondence_tables/data/raw/ISIC_Rev_4_english_structure.txt
+correspondence_tables/data/raw/ISICv4_to_NACEv2.csv
+correspondence_tables/data/raw/LC_IMPACT_US_EPA.csv
+correspondence_tables/data/raw/NACEv2_to_ISICv4.csv
+correspondence_tables/data/raw/PROCOM2017_to_CN2017.csv
+correspondence_tables/data/raw/SITCv3_to_BEC.csv
+correspondence_tables/data/raw/SITCv4_to_CN2017.csv
+correspondence_tables/data/raw/SITCv4_to_CPCv2.csv
+correspondence_tables/data/raw/SITCv4_to_HS2012.csv
+correspondence_tables/data/raw/US_EPA_radiative_forcing.csv
+correspondence_tables/data/raw/US_EPA_temp_increase.csv
+correspondence_tables/data/raw/bentso_country_codes.csv
+correspondence_tables/data/raw/bentso_technologies.csv
+correspondence_tables/data/raw/bentso_technologies_updated.csv
+correspondence_tables/data/raw/create frictionless data package descriptors.ipynb
+correspondence_tables/data/raw/exiobase act to nace2 section.csv
+correspondence_tables/data/raw/exiobase2_to_NACE2008.csv
+correspondence_tables/data/raw/exiobase2_to_NACE2008_v2.csv
+correspondence_tables/data/raw/exiobase_airborne_emissions.csv
+correspondence_tables/data/raw/exiobase_v3_3_17_activities.csv
+correspondence_tables/data/raw/exiobase_v3_3_17_hsut_products.csv
+correspondence_tables/data/raw/lcimpact_to_US_EPA_names.csv
+correspondence_tables/data/raw/nace rev 1.1 - nace rev 2.xls
+correspondence_tables/data/raw/nace rev 2 - nace rev 1.1.xls
+correspondence_tables/data/raw/stepwise_1-6_exiobase_SP-equivalent.xlsx
