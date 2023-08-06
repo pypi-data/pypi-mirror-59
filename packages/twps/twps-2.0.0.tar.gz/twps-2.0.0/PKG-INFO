@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: twps
+Version: 2.0.0
+Summary: TWPS: (T)ext (W)ith (P)ython (S)nippets preprocessor
+Home-page: https://github.com/inr-kit/twps
+Author: A.Travleev
+Author-email: anton.travleev@gmail.com
+License: GPL
+Download-URL: https://github.com/inr-kit/twps/archive/2.0.0.tar.gz
+Description: UNKNOWN
+Keywords: TEXT,PYTHON,SNIPPETS,TEMPLATE,PREPROCESSOR
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2.7
