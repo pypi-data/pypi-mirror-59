@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: bulk-mail-sender
+Version: 0.1
+Summary: Send emails in bulk with a CSV listing and a email template.
+Home-page: https://github.com/moverest/bulk-mail-sender
+Author: Clément Martinez
+Author-email: clementmartinezdev@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

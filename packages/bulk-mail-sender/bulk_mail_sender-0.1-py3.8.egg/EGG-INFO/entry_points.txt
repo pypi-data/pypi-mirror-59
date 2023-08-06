@@ -1,0 +1,3 @@
+[console_scripts]
+bulk-mail-sender = bulk_mail_sender.main:main
+
