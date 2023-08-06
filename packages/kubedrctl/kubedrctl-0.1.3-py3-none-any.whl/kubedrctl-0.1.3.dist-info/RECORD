@@ -1,0 +1,15 @@
+kubedrctl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kubedrctl/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kubedrctl/cli/context.py,sha256=N2bSEIWbpsPjSblZTzAcRY2z0v0FX3KDX3d0LhmPwlg,177
+kubedrctl/cli/kubedrctl.py,sha256=iNn4RCOkFmoR9spkgp7a8bUJ67cf9a-hGo7xAsp3Ag0,2014
+kubedrctl/cli/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kubedrctl/cli/commands/cmd_list.py,sha256=qeKc95QRpLQ_WLfKbRYHZwPXnqYT_P6LHopLvProwtM,1442
+kubedrctl/cli/commands/cmd_restore.py,sha256=aH6wgCQqdlywTYxtYTZ03bh-9zqXl1q3dNhOtRhDiq4,1597
+kubedrctl/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kubedrctl/common/util.py,sha256=uiEy_ZHCh5HiR0tWRgDO5Daq0tIZj-tzaOxc8ZrtzUc,1147
+kubedrctl-0.1.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+kubedrctl-0.1.3.dist-info/METADATA,sha256=5n0fvyufkjH4gSJhQtqoYhFw3Zv3IhM683824af74PY,1724
+kubedrctl-0.1.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+kubedrctl-0.1.3.dist-info/entry_points.txt,sha256=WLOEm6Bkpzc9lsxO7h58JCpRkhWkfmuaF7avjQbPIDw,60
+kubedrctl-0.1.3.dist-info/top_level.txt,sha256=QDll2HNwiCxPO0_gFoACDkE0V7Xe35DUYAPlMn6jnVY,10
+kubedrctl-0.1.3.dist-info/RECORD,,
