@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: locus-processing
+Version: 0.0.4
+Summary: Tools for working with locus definition files
+Home-page: https://github.com/LUMC/locus_processing
+Author: Sander Bollen
+Author-email: a.h.b.bollen@lumc.nl
+License: UNKNOWN
+Keywords: bioinformatics
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: click (>=6.7)
+Requires-Dist: marshmallow (==2.13.5)
+Requires-Dist: requests (>=2.18.1)
+Requires-Dist: pyyaml (>=3.12)
+
+UNKNOWN
+
+
