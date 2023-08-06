@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: rwave
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/AjxLab/RWave
+Author: Tatsuya Abe
+Author-email: abe12@mccc.jp
+License: MIT
+Keywords: audio wave wav convert mfcc fft fs
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: librosa
+
+RWave
+=====
+
+A utility that handle audio for Python.
+
+
+## Installation
+```sh
+$ pip install rwave
+```
+
+
+## Contributing
+Bug reports and pull requests are welcome on GitHub at [https://github.com/AjxLab/RWave](https://github.com/AjxLab/RWave).
+
+
