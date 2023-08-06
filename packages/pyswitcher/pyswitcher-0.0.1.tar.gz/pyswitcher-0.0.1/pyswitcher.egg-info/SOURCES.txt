@@ -1,0 +1,6 @@
+pyswitcher.py
+setup.py
+pyswitcher.egg-info/PKG-INFO
+pyswitcher.egg-info/SOURCES.txt
+pyswitcher.egg-info/dependency_links.txt
+pyswitcher.egg-info/top_level.txt
