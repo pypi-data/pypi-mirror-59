@@ -1,0 +1,9 @@
+README.md
+setup.py
+freshsalessdk/__init__.py
+freshsalessdk/freshsalessdk.py
+freshsalessdk.egg-info/PKG-INFO
+freshsalessdk.egg-info/SOURCES.txt
+freshsalessdk.egg-info/dependency_links.txt
+freshsalessdk.egg-info/requires.txt
+freshsalessdk.egg-info/top_level.txt
