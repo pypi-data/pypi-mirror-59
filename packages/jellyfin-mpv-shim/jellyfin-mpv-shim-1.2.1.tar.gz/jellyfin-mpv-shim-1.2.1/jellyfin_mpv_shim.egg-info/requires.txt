@@ -1,0 +1,2 @@
+python-mpv
+jellyfin-apiclient-python>=1.0.0
