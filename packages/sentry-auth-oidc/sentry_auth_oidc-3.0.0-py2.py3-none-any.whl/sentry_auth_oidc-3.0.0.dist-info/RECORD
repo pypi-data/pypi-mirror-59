@@ -1,0 +1,12 @@
+oidc/__init__.py,sha256=YV8TG1oW4YTohSL8XonH-ARm46SoGBV-wjOrW-wsi8I,39
+oidc/apps.py,sha256=7AedPbz8x8QYDBHp1w1wG6bff8yXY4WGDwvlwwOCp6U,260
+oidc/constants.py,sha256=NQzpUFQL1nr41RC_EpEOG_BDGaz3f8CaRFb6pPlm6pk,1264
+oidc/provider.py,sha256=baid77BgAX30SDY9VqqfdM0GIynrN3qmw4kpCbvCm0Q,3617
+oidc/views.py,sha256=pKmgYzekBwSnJGAg5vYapRJlx-NtXJvXgC8A8p4ZAHM,3378
+oidc/templates/oidc/configure.html,sha256=vElkcjdSaIjV3gQvfya4OizDqNAMa2MSxhS-kMJ_LsI,146
+sentry_auth_oidc-3.0.0.dist-info/LICENSE,sha256=SMCNJXEW5cIpaWgC_DwSy8QkWqmlWGYcLwRYm7A0Pkc,10848
+sentry_auth_oidc-3.0.0.dist-info/METADATA,sha256=uU-vvn1676zMEfSWtMzDOxJIfxyRadn5O3bSqtI8vSc,2928
+sentry_auth_oidc-3.0.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+sentry_auth_oidc-3.0.0.dist-info/entry_points.txt,sha256=7I4HLw4D_7bTRnYz3iwPLnDGvUP1ypm_gWDdBvEyhVA,39
+sentry_auth_oidc-3.0.0.dist-info/top_level.txt,sha256=HicvOTwxQwzNKdTfkBXQKhmpxx-we5tL_7yTHcCqYvo,5
+sentry_auth_oidc-3.0.0.dist-info/RECORD,,
