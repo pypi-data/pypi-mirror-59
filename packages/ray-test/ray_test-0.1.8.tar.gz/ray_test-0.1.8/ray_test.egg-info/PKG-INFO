@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ray-test
+Version: 0.1.8
+Summary: A Python API for Using Renderbus cloud rendering.
+Home-page: https://github.com/renderbus/rayvision_utils
+Author: Shenzhen Rayvision Technology Co., Ltd
+Author-email: developer@rayvision.com
+License: UNKNOWN
+Description: 
+        rayvision_api
+        =============
+        A Python-based API for Using Renderbus cloud rendering service.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7.10,>=3.6.0
+Description-Content-Type: text/markdown
