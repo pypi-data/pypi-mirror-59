@@ -1,0 +1,13 @@
+README.md
+setup.py
+Statisk.egg-info/PKG-INFO
+Statisk.egg-info/SOURCES.txt
+Statisk.egg-info/dependency_links.txt
+Statisk.egg-info/entry_points.txt
+Statisk.egg-info/requires.txt
+Statisk.egg-info/top_level.txt
+statisk/ImageFilter.py
+statisk/Log.py
+statisk/PyStatisk.py
+statisk/__init__.py
+statisk/test_Log.py
