@@ -1,0 +1,16 @@
+jupyter_telemetry/__init__.py,sha256=ogJG0B_XvGDymWl9di42KRSH_bxryFBJ23HtBm5yKoU,111
+jupyter_telemetry/__version__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyter_telemetry/eventlog.py,sha256=jzRN6ql5bTQjl_eTxUyMmDHd3lRqqjn-g7DStQOt_ag,4791
+jupyter_telemetry/traits.py,sha256=iv_TNvWVi5ydB18DJqRjTckJ6GzG54S47Qrjuf6gy8g,1422
+jupyter_telemetry/sphinxext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyter_telemetry/sphinxext/main.py,sha256=HWyQg5qR3Xp6vVQjWPAD6rzTBVx5GilWLFENH6k-efU,47
+jupyter_telemetry/sphinxext/x.py,sha256=aXuInSsh5nrTpCRMreLnlkMZdPH06XUK03fD9ktBDnk,1977
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_eventlog.py,sha256=v13xQdbbXy7Fib2djmUcQYmH5fy-VyLRru2KIG2JP-s,1041
+tests/test_register_schema.py,sha256=iuYOsClryLnqg03AuInLXdCrBnjkBjvx5GnMKvu6j3I,4043
+tests/test_traits.py,sha256=1BmYCtDKC8dvK305_7iYYuyXX78_a3KW7sj1Gy4FqLk,782
+jupyter_telemetry-0.0.4.dist-info/LICENSE,sha256=Gmmpr3yrXqi75oFqJ4XZCqENvAIGV24rQo1_jXXj5xA,1523
+jupyter_telemetry-0.0.4.dist-info/METADATA,sha256=QxGZmujX3fjL4VxvERh-Voox4uisOX98Mx7eYwUekEM,730
+jupyter_telemetry-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+jupyter_telemetry-0.0.4.dist-info/top_level.txt,sha256=62s6LppkZgEHd9LG4A60K8GckaMD4TPyMJm-tyZerwI,24
+jupyter_telemetry-0.0.4.dist-info/RECORD,,
