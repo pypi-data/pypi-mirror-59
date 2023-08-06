@@ -1,0 +1,3 @@
+[console_scripts]
+gensqlaorm = gensqlaorm.gen_console
+
