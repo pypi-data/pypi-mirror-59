@@ -1,0 +1,6 @@
+uninstallable>0
+
+[dev]
+ipython
+twine
+bump2version
