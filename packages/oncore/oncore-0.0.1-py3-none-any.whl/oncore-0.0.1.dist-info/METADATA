@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: oncore
+Version: 0.0.1
+Summary: Oncore: utilities from OffNote Labs
+Home-page: https://github.com/ofnote/oncore
+Author: Nishant Sinha
+Author-email: nishant@offnote.co
+License: Apache 2.0
+Platform: POSIX
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+
+# Oncore
+
+
+A collection of Python utilities
+
+
+
+## Type matching based Rules
+
+[matcher.py](oncore/matcher.py), [test_matcher.py](oncore/test_matcher.py)
+
+
+
+
