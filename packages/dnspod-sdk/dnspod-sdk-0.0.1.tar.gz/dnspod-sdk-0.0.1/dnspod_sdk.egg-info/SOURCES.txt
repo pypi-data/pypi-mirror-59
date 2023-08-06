@@ -1,0 +1,9 @@
+README.rst
+setup.py
+dnspod_sdk/__init__.py
+dnspod_sdk/client.py
+dnspod_sdk.egg-info/PKG-INFO
+dnspod_sdk.egg-info/SOURCES.txt
+dnspod_sdk.egg-info/dependency_links.txt
+dnspod_sdk.egg-info/requires.txt
+dnspod_sdk.egg-info/top_level.txt
