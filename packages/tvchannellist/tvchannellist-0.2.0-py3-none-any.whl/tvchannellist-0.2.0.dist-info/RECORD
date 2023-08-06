@@ -1,0 +1,13 @@
+tvchannellist/__init__.py,sha256=NheinHQpDgYlJukaJwZg-m4UkrJxmJq9xBmgNRmcKiQ,146
+tvchannellist/__version__.py,sha256=P_G4A5oiPkJb0IuJV-U47aqdM_-aqLwTnh8kG9UeUew,56
+tvchannellist/channel.py,sha256=bpxSb-ob0hpk-Gy3JJKRucRxVonJE3bihu1UOCtF-Vo,2612
+tvchannellist/engine.py,sha256=pohAwWFvPJ3yTTb5rZiy6tN3a4W5RUoif0TNusnK0fY,1505
+tvchannellist/engines/__init__.py,sha256=EJrey0JjUOKz2e9vnYwyh10z3A_Se8zXUGaRKRXiR5A,37
+tvchannellist/engines/it.py,sha256=K7kjpT-SFtDAK31fx-SKDHfosae5eAaSZIhJ4FfqFno,1803
+tvchannellist/engines/us.py,sha256=0z3bYvY4iRmwSxbuUWk8X5sNwp2ql2Bmic8KU4RAsrk,3067
+tvchannellist-0.2.0.data/scripts/channellist,sha256=0NNq5nono-fvRId5kS9IbtScmbKDdVAjNrUIuVPDrBU,2859
+tvchannellist-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tvchannellist-0.2.0.dist-info/METADATA,sha256=nApgsRPBVaGS0Kks6CmHGOktRlpNwH2Nd_7usGlUk8w,2020
+tvchannellist-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tvchannellist-0.2.0.dist-info/top_level.txt,sha256=Fzm5ZrSsEEIFKbEKRbYQIBbGvpxYJsdZIAE6ZM7_bZE,14
+tvchannellist-0.2.0.dist-info/RECORD,,
