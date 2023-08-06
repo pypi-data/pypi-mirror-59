@@ -1,0 +1,10 @@
+README.md
+setup.py
+GusPI/__init__.py
+GusPI/cal.py
+GusPI/scraper.py
+GusPI/supy.py
+GusPI.egg-info/PKG-INFO
+GusPI.egg-info/SOURCES.txt
+GusPI.egg-info/dependency_links.txt
+GusPI.egg-info/top_level.txt
