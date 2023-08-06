@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: backend.ai-cli
+Version: 0.1
+Summary: Backend.AI Command Line Interface
+Home-page: https://backend.ai
+Author: Lablup Inc.
+Author-email: joongi@lablup.com
+License: MIT
+Project-URL: Documentation, https://docs.backend.ai
+Project-URL: Source, https://github.com/lablup/backend.ai-cli
+Project-URL: Tracker, https://github.com/lablup/backend.ai/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Click (>=7.0)
+Provides-Extra: build
+Requires-Dist: wheel (>=0.33.6) ; extra == 'build'
+Requires-Dist: twine (>=1.14.0) ; extra == 'build'
+Provides-Extra: ci
+Provides-Extra: dev
+Requires-Dist: pytest-sugar (>=0.9.2) ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest (>=5.3.0) ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-mock ; extra == 'test'
+Requires-Dist: mypy (>=0.760) ; extra == 'test'
+Requires-Dist: flake8 (>=3.7.9) ; extra == 'test'
+Requires-Dist: codecov ; extra == 'test'
+
+# backend.ai-cli
+
+Unified command-line interface for Backend.AI
+
+
