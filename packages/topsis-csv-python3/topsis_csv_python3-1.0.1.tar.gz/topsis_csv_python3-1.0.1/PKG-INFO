@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: topsis_csv_python3
+Version: 1.0.1
+Summary: Implementation of Topsis
+Home-page: https://github.com/NoOne03/topsis.git
+Author: Prateek Kr Singh
+Author-email: prateekkumarsingh3@gmail.com
+License: UNKNOWN
+Description: # TOPSIS-python3
+        This python code save "ordered.csv" file containing a extra column of Rank.
+        <H2>TOPSIS</H2>
+        Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) originated in the 1980s as a multi-criteria decision making method. TOPSIS chooses the altenrative of shortest Euclidean distance from the idael solution, and fartherst distance from the negative-ideal solution.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
