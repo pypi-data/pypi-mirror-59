@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+dammy/__init__.py
+dammy/core.py
+dammy/db.py
+dammy/stdlib.py
+dammy.egg-info/PKG-INFO
+dammy.egg-info/SOURCES.txt
+dammy.egg-info/dependency_links.txt
+dammy.egg-info/top_level.txt
