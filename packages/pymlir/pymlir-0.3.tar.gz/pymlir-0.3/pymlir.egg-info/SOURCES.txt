@@ -1,0 +1,17 @@
+README.md
+setup.py
+mlir/__init__.py
+mlir/astnodes.py
+mlir/dialect.py
+mlir/parser.py
+mlir/parser_transformer.py
+mlir/visitors.py
+mlir/dialects/__init__.py
+mlir/dialects/affine.py
+mlir/dialects/loop.py
+mlir/dialects/standard.py
+pymlir.egg-info/PKG-INFO
+pymlir.egg-info/SOURCES.txt
+pymlir.egg-info/dependency_links.txt
+pymlir.egg-info/requires.txt
+pymlir.egg-info/top_level.txt
