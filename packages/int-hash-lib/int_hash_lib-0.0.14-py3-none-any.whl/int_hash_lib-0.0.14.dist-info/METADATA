@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: int-hash-lib
+Version: 0.0.14
+Summary: lib to hash data to int
+Home-page: https://bitbucket.org/a_vento/int-hash-lib/src/master/
+Author: MagicScore
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: phonenumbers (<9)
+
+UNKNOWN
+
+
