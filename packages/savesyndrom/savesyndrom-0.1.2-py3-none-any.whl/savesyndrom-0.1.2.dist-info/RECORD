@@ -1,0 +1,12 @@
+savesyndrom/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+savesyndrom/__main__.py,sha256=FfuATw15e3N0eEX5skbP2dGeRnBvAXD64hgLnNxX07k,360
+savesyndrom/activewindow.py,sha256=u08pJgLI3NgsXBL5GHQ8Vs5E2BbsWmqVaUPQZirfblg,1037
+savesyndrom/keylogger.py,sha256=SdGcF5NtdL1WtAWkpxLj3L--4hg7Rtwj0JiPLTCPA_M,6178
+savesyndrom/settings.py,sha256=jczL0c6E2OKeelYKuJHkEENQir1UfRqBzNLO4gBoU7k,6531
+savesyndrom/gui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+savesyndrom/gui/main.py,sha256=gZkaeBHmrZX12MNg51MXy-8PxoRWqVDk9r7tgH5ASVQ,15711
+savesyndrom/gui/show.py,sha256=5UCG7MxL3hxZfFsw4m0ZO9wsSfEctQjnc5WdCUqdJI0,2658
+savesyndrom-0.1.2.dist-info/METADATA,sha256=MjVVogf47tvTZ-vM8SLKF6uxOtvXVYgblMEEN4XyM8E,1126
+savesyndrom-0.1.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+savesyndrom-0.1.2.dist-info/top_level.txt,sha256=5Ad7y5qHCU-EESaldZahj4AFCC4FDohAydkR8d0Ir-Q,12
+savesyndrom-0.1.2.dist-info/RECORD,,
