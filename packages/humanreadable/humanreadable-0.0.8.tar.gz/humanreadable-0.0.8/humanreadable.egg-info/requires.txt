@@ -1,0 +1,13 @@
+setuptools>=38.3.0
+six<2,>=1.10.0
+typepy<2,>=0.6.4
+
+[build]
+twine
+wheel
+
+[release]
+releasecmd<1,>=0.2.0
+
+[test]
+pytest
