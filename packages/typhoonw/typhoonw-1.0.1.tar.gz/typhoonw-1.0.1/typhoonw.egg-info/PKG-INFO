@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: typhoonw
+Version: 1.0.1
+Summary: typhoon analysing website for yyp
+Home-page: UNKNOWN
+Author: dakele
+Author-email: wmxy123@yeah.net
+License: UNKNOWN
+Description: 1. 登录页面
+        2. 数据库表结构初始化
+        3. 数据内容导入和导出
+        4. 数据页面展示
+        5. 数据页面修改
+        
+        ## 创建虚拟环境并激活
+        ```
+        python2 -m virtualenv venv
+        source venv/bin/activate
+        ```
+        ## 安装依赖
+        ```
+        pip install -r requirements.txt
+        ```
+        ## 配置nginx
+        ```
+        //安装nginx
+        yum install -y nginx
+        
+        //添加配置
+        server {
+                listen 6600;
+        
+                root /home/typhoon/;
+                index index.html index.htm;
+        
+                # Make site accessible from http://localhost/
+                server_name dev.wlafit.com;
+        
+                location / {
+                        add_header Access-Control-Allow-Origin * always;
+                        add_header Access-Control-Allow-Methods 'GET, POST, OPTIONS' always;
+                        add_header Access-Control-Allow-Headers 'DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization';
+        
+                        if ($request_method = 'OPTIONS') {
+                           return 204;
+                        }
+        
+                        proxy_pass       http://127.0.0.1:6000;
+                        proxy_set_header X-Real-IP $remote_addr;
+                        proxy_redirect off;
+                        proxy_set_header Host $host:6600;
+                        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                }
+        
+        }
+        
+        //nginx载入配置
+        nginx -s reload
+        ```
+        ## 配置mysql
+        ```
+        //安装mysql
+        
+        //创建表
+        create database typhoonw;
+        //创建用户
+        grant all privileges on typhoonw.* to 'typhoonw'@localhost identified by '1qaz@WSX3edc';
+        ```
+        ## 运行（开发环境）
+        ```
+        export FLASK_APP=typhoonw
+        export FLASK_ENV=development
+        flask run --port 6000
+        ```
+        ### 安装supervisor
+        ```
+        yum install -y epel-release
+        yum install -y supervisor
+        systemctl enable supervisord
+        systemctl start supervisord
+        systemctl status supervisord
+        ```
+        ### /etc/supervisor/conf.d下添加typhoon.conf
+        ```
+        [program:typhoon]
+        command     = /root/typhoon/venv/bin/gunicorn --bind 0.0.0.0:6000 --workers 1 --worker-class gevent typhoonw:create_app()
+        directory   = /root/typhoon
+        user        = root
+        startsecs   = 3
+        
+        redirect_stderr         = true
+        stdout_logfile_maxbytes = 50MB
+        stdout_logfile_backups  = 10
+        stdout_logfile          = /root/typhoon/typhoon.log
+        ```
+        相关路径请自行修改
+        ### 创建日志文件夹
+        ```
+        touch /root/typhoon/typhoon.log
+        ```
+        5.4. supervisorctl reload
+        5.5 supervisorctl start parkingserver
+        5.6 supervisorctl status
+        ## 初始化数据库
+        ```
+        访问 localhost:6000/db
+        ok!
+        
+        访问 localhost:6000/index
+        上传文件
+        ```
+        
+        链接：
+        
+        /auth/login
+        /auth/logout
+        /data/add_item
+        /data/index
+        /data/landing_intro
+        /data/parting_intro
+        /data/query
+        /data/total_data/<string:type_str>
+        /db
+        /hello
+        /static/<path:filename>
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev

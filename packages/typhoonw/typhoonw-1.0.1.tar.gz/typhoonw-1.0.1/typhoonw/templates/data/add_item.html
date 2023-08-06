@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Index{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <h2>添加新的台风个例入库</h2>
+        <hr>
+        <div class="row" style="height: 20px;"></div>
+        <form class="form-horizontal" method="post">
+            <div class="form-group">
+                <label for="num_name" class="col-sm-2 control-label">* 台风编号及名称</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="inputEmail3" id="num_name" name="num_name" placeholder="台风编号及名称" required> 
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="strength" class="col-sm-2 control-label">台风强度</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="inputEmail3" id="strength" name="strength" placeholder="台风强度" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="affect_strength" class="col-sm-2 control-label">影响时强度</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="inputEmail3" id="affect_strength" name="affect_strength" placeholder="影响时强度" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="landing_place" class="col-sm-2 control-label">登陆点</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="inputEmail3" id="landing_place" name="landing_place" placeholder="登陆点" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="affect_period" class="col-sm-2 control-label">影响时间</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="inputEmail3" id="affect_period" name="affect_period" placeholder="影响时间" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="affect_month" class="col-sm-2 control-label">月份</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="inputEmail3" id="affect_month" name="affect_month" placeholder="月份" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="yuhuan_rainfall" class="col-sm-2 control-label">玉环(58667)</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="inputEmail3" id="yuhuan_rainfall" name="yuhuan_rainfall" placeholder="雨量" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="hongjia_rainfall" class="col-sm-2 control-label">洪家(58665)</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="inputEmail3" id="hongjia_rainfall" name="hongjia_rainfall" placeholder="雨量" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="wenling_rainfall" class="col-sm-2 control-label">温岭(58664)</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="inputEmail3" id="wenling_rainfall" name="wenling_rainfall" placeholder="雨量" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="linhai_rainfall" class="col-sm-2 control-label">临海(58660)</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="inputEmail3" id="linhai_rainfall" name="linhai_rainfall" placeholder="雨量" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="xianju_rainfall" class="col-sm-2 control-label">仙居(58652)</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="inputEmail3" id="xianju_rainfall" name="xianju_rainfall" placeholder="雨量" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sanmen_rainfall" class="col-sm-2 control-label">三门(58568)</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="inputEmail3" id="sanmen_rainfall" name="sanmen_rainfall" placeholder="雨量" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="tiantai_rainfall" class="col-sm-2 control-label">天台(58559)</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="inputEmail3" id="tiantai_rainfall" name="tiantai_rainfall" placeholder="雨量" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="watershed_average" class="col-sm-2 control-label">平均面雨量(mm）</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="inputEmail3" id="watershed_average" name="watershed_average" placeholder="平均面雨量" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="path" class="col-sm-2 control-label">路径</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="inputEmail3" id="path" name="path" placeholder="路径" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="rainstorm_type" class="col-sm-2 control-label">暴雨天气型</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="inputEmail3" id="rainstorm_type" name="rainstorm_type" placeholder="暴雨天气型" required>
+                </div>
+            </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">--录入--</button>
+    </div>
+  </div>
+</form>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+{% endblock %}
