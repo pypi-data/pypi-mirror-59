@@ -1,0 +1,14 @@
+basicauth
+beautifulsoup4
+colorlog
+email_validator
+html5lib
+psycopg2-binary
+pyaml
+python-dateutil@ https://github.com/mcarans/dateutil/raw/justforrelease/dist/python_dateutil-2.8.2.dev15%2Bgeb45e83-py2.py3-none-any.whl
+ratelimit
+six>=1.13.0
+sshtunnel
+tabulator>=1.31.2
+typing
+yamlloader
