@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+autopep8 = "*"
+flake8 = "*"
+ipython = "*"
+pytest = "*"
+pytest-cov = "*"
+
+[packages]
+torch = ">=1.2.0"
+lineflow = "*"
+numpy = "*"
+
+[requires]
+python_version = "3.7"
