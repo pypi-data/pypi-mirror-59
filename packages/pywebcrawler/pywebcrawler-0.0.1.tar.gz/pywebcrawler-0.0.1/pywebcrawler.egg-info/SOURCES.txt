@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+pywebcrawler/__init__.py
+pywebcrawler/__main__.py
+pywebcrawler/colorify.py
+pywebcrawler/link_finder.py
+pywebcrawler/requester.py
+pywebcrawler/spider.py
+pywebcrawler/utilities.py
+pywebcrawler.egg-info/PKG-INFO
+pywebcrawler.egg-info/SOURCES.txt
+pywebcrawler.egg-info/dependency_links.txt
+pywebcrawler.egg-info/requires.txt
+pywebcrawler.egg-info/top_level.txt
