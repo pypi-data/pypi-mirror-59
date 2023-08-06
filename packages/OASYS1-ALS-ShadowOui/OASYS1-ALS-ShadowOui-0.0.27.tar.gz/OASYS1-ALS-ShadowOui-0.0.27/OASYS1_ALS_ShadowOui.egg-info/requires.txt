@@ -1,0 +1,3 @@
+setuptools
+shadow4>=0.0.12
+wofry>=0.0.23
