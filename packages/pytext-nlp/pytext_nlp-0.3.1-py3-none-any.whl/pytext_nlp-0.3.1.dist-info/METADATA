@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: pytext-nlp
+Version: 0.3.1
+Summary: pytorch modeling framework and model zoo for text models
+Home-page: https://github.com/facebookresearch/PyText
+Author: Facebook
+Author-email: UNKNOWN
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: absl-py (==0.9.0)
+Requires-Dist: attrs (==19.3.0)
+Requires-Dist: bleach (==3.1.0)
+Requires-Dist: boto3 (==1.11.2)
+Requires-Dist: botocore (==1.14.2)
+Requires-Dist: certifi (==2019.11.28)
+Requires-Dist: cffi (==1.13.2)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: Click (==7.0)
+Requires-Dist: Cython (==0.29.14)
+Requires-Dist: docutils (==0.15.2)
+Requires-Dist: fairseq (==0.9.0)
+Requires-Dist: future (==0.18.2)
+Requires-Dist: grpcio (==1.26.0)
+Requires-Dist: hypothesis (==3.88.3)
+Requires-Dist: idna (==2.8)
+Requires-Dist: importlib-metadata (==1.4.0)
+Requires-Dist: jmespath (==0.9.4)
+Requires-Dist: joblib (==0.14.1)
+Requires-Dist: keyring (==21.1.0)
+Requires-Dist: Markdown (==3.1.1)
+Requires-Dist: more-itertools (==8.1.0)
+Requires-Dist: numpy (==1.18.1)
+Requires-Dist: onnx (==1.5.0)
+Requires-Dist: pandas (==0.25.3)
+Requires-Dist: pkginfo (==1.5.0.1)
+Requires-Dist: portalocker (==1.5.2)
+Requires-Dist: protobuf (==3.11.2)
+Requires-Dist: pycparser (==2.19)
+Requires-Dist: Pygments (==2.5.2)
+Requires-Dist: python-dateutil (==2.8.0)
+Requires-Dist: pytorch-pretrained-bert (==0.6.2)
+Requires-Dist: pytz (==2019.3)
+Requires-Dist: readme-renderer (==24.0)
+Requires-Dist: regex (==2019.11.1)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: s3transfer (==0.3.0)
+Requires-Dist: sacrebleu (==1.4.3)
+Requires-Dist: scipy (==1.4.1)
+Requires-Dist: sentencepiece (==0.1.85)
+Requires-Dist: six (==1.14.0)
+Requires-Dist: tensorboard (==1.14.0)
+Requires-Dist: torch (==1.3.1)
+Requires-Dist: torchtext (==0.5.0)
+Requires-Dist: tqdm (==4.41.1)
+Requires-Dist: twine (==3.1.1)
+Requires-Dist: typing (==3.7.4.1)
+Requires-Dist: typing-extensions (==3.7.4.1)
+Requires-Dist: urllib3 (==1.25.7)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: Werkzeug (==0.16.0)
+Requires-Dist: zipp (==1.0.0)
+
+UNKNOWN
+
+
