@@ -1,0 +1,6 @@
+README.md
+setup.py
+starmf_proxy.egg-info/PKG-INFO
+starmf_proxy.egg-info/SOURCES.txt
+starmf_proxy.egg-info/dependency_links.txt
+starmf_proxy.egg-info/top_level.txt
