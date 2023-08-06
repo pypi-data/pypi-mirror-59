@@ -1,0 +1,13 @@
+README.md
+setup.py
+physoce/__init__.py
+physoce/graph.py
+physoce/io.py
+physoce/oceans.py
+physoce/stats.py
+physoce/tseries.py
+physoce/util.py
+physoce.egg-info/PKG-INFO
+physoce.egg-info/SOURCES.txt
+physoce.egg-info/dependency_links.txt
+physoce.egg-info/top_level.txt
