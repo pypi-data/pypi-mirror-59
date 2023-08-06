@@ -1,0 +1,12 @@
+invenio_oarepo_dc/__init__.py,sha256=Jzb_RfgvXCrm_SQ4AfeGVi1N36YybxnM5mpyxrnihgI,33
+invenio_oarepo_dc/version.py,sha256=8oG9zlt7DJIXxjqteTExf4P5nY5RZhBqbD008UEHOeM,1400
+invenio_oarepo_dc/included_mappings/v6/dcterms-v1.0.0.json,sha256=pvJ2TumALbYuTRc4Y9eZEHGeDG8FosdAENKjXwU9EXs,1235
+invenio_oarepo_dc/jsonschemas/__init__.py,sha256=m7UQhnKgPA2WUOAuo-GU0LXW4g_b3SetqsEjfdDVgsY,468
+invenio_oarepo_dc/jsonschemas/dcterms-v1.0.0.json,sha256=Gi8hQDZhfznS_NjlkJFt-1PBEJzwYH1DRLY9R6pdvEo,1562
+invenio_oarepo_dc/marshmallow/__init__.py,sha256=YBR4ZaehnnS9Am-ngR7mrIDmrCNJDmGGyxJm-LKXyAs,1076
+invenio_oarepo_dc-1.2.1.dist-info/LICENSE,sha256=oxlvOW3GiojF5mcapEzPff39MfADzIw5Qt8iOonks8c,1062
+invenio_oarepo_dc-1.2.1.dist-info/METADATA,sha256=gMwYhtq_bhEuhPxbXwc6KJiosNYPxWRt7Kr4s6g7Rtw,1195
+invenio_oarepo_dc-1.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+invenio_oarepo_dc-1.2.1.dist-info/entry_points.txt,sha256=922hL3iD2tYUUsY9yAmNqJ9b_utiHcGs1wUhjdqla1E,172
+invenio_oarepo_dc-1.2.1.dist-info/top_level.txt,sha256=iwLCzqrrx5B2yuKaAUcg02hpRzranyKyoihCoRXU0-M,18
+invenio_oarepo_dc-1.2.1.dist-info/RECORD,,
