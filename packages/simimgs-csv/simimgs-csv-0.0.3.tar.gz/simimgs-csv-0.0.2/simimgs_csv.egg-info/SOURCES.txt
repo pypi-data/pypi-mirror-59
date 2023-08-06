@@ -1,0 +1,7 @@
+README.md
+setup.py
+simimgs_csv.egg-info/PKG-INFO
+simimgs_csv.egg-info/SOURCES.txt
+simimgs_csv.egg-info/dependency_links.txt
+simimgs_csv.egg-info/requires.txt
+simimgs_csv.egg-info/top_level.txt
