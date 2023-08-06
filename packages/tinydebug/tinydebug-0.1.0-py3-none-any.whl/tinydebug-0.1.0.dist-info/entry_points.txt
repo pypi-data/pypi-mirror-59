@@ -1,0 +1,3 @@
+[console_scripts]
+tinydebug = tinydebug.tinydebug:main
+
