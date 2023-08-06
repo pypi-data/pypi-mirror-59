@@ -1,0 +1,8 @@
+README.md
+anycat
+setup.py
+anycat.egg-info/PKG-INFO
+anycat.egg-info/SOURCES.txt
+anycat.egg-info/dependency_links.txt
+anycat.egg-info/requires.txt
+anycat.egg-info/top_level.txt
