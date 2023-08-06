@@ -1,0 +1,8 @@
+ecode/__init__.py,sha256=FvXZTgNGjtxvZEin8FdvqtMjMl6kcAnx-FjnbyXz5yk,241
+ecode/ecode.py,sha256=ptlYdNXDWVjeLtk3fYUJ8cmnAi0ejMqyS7gIk1tGjHk,4785
+ecode/ecode_decoder.py,sha256=0FRPS7r0xEHmbiexhFl8KJIAj2-IQCvlNpFBDZqs7-I,2003
+ecode/ecode_encoder.py,sha256=hEicjcyEtlAR8VVRdurEehxjM6uhuw0SOqgQober-yY,1432
+ecode-0.1.5.dist-info/LICENSE,sha256=y4uWpN1sUb81DQxgDVQgqHqAI9vXwa_cJOzwrSzk3H0,1072
+ecode-0.1.5.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+ecode-0.1.5.dist-info/METADATA,sha256=tL1vlLvDDza7An0kyhT1Hv-ItGk0AzBQfZmoqOQPYtA,2662
+ecode-0.1.5.dist-info/RECORD,,
