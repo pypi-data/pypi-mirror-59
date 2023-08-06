@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ashu-topsis
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/ashutosh2539/topsis
+Author: Ashutosh Gupta
+Author-email: agupta12_be17@thapar.edu
+License: UNKNOWN
+Download-URL: https://github.com/ashutosh2539/ashu_topsis.git
+Description: TOPSIS Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) originated in the 1980s as a multi-criteria decision making method. TOPSIS chooses the altenrative of shortest Euclidean distance from the idael solution, and fartherst distance from the negative-ideal solution. More details at wikipedia. The TOPSIS algorithm is succintly explained in this paper comparing TOPSIS and VIKOR methods.
+        
+        
+        Just install my package using pip install ashu_topsis , import it and use the class topsis's evaluate function to get the result.
+        
+        The code is included inside too as topsis.py
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
