@@ -1,0 +1,76 @@
+
+
+Examples using ``pydicom.Dataset``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to write a DICOM file from scratch using pydicom. This example does not ...">
+
+.. only:: html
+
+ .. figure:: /auto_examples/input_output/images/thumb/sphx_glr_plot_write_dicom_thumb.png
+
+     :ref:`sphx_glr_auto_examples_input_output_plot_write_dicom.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_input_output_plot_write_dicom.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to read DICOM directory.">
+
+.. only:: html
+
+ .. figure:: /auto_examples/input_output/images/thumb/sphx_glr_plot_read_dicom_directory_thumb.png
+
+     :ref:`sphx_glr_auto_examples_input_output_plot_read_dicom_directory.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_input_output_plot_read_dicom_directory.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This examples illustrates how to work with sequences.">
+
+.. only:: html
+
+ .. figure:: /auto_examples/metadata_processing/images/thumb/sphx_glr_plot_sequences_thumb.png
+
+     :ref:`sphx_glr_auto_examples_metadata_processing_plot_sequences.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_metadata_processing_plot_sequences.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This examples illustrates how to add dictionary items to the &#x27;standard&#x27; DICOM dictionary dynami...">
+
+.. only:: html
+
+ .. figure:: /auto_examples/metadata_processing/images/thumb/sphx_glr_plot_add_dict_entries_thumb.png
+
+     :ref:`sphx_glr_auto_examples_metadata_processing_plot_add_dict_entries.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_metadata_processing_plot_add_dict_entries.py`

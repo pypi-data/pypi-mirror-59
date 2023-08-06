@@ -1,0 +1,58 @@
+
+
+Examples using ``pydicom.dcmread``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Show how to write a DICOM dataset into a byte array and to read it back from a byte array. This...">
+
+.. only:: html
+
+ .. figure:: /auto_examples/images/thumb/sphx_glr_memory_dataset_thumb.png
+
+     :ref:`sphx_glr_auto_examples_memory_dataset.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_memory_dataset.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="sudo apt install tix-dev sudo pip install -U pydicom python3 dicomtree.py file.dcm Or in file b...">
+
+.. only:: html
+
+ .. figure:: /auto_examples/images/thumb/sphx_glr_dicomtree_thumb.png
+
+     :ref:`sphx_glr_auto_examples_dicomtree.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_dicomtree.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example illustrates loading multiple files, sorting them by slice location, building a 3D ...">
+
+.. only:: html
+
+ .. figure:: /auto_examples/image_processing/images/thumb/sphx_glr_reslice_thumb.png
+
+     :ref:`sphx_glr_auto_examples_image_processing_reslice.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_image_processing_reslice.py`

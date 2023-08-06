@@ -1,0 +1,22 @@
+
+
+Examples using ``pydicom.dcmwrite``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Show how to write a DICOM dataset into a byte array and to read it back from a byte array. This...">
+
+.. only:: html
+
+ .. figure:: /auto_examples/images/thumb/sphx_glr_memory_dataset_thumb.png
+
+     :ref:`sphx_glr_auto_examples_memory_dataset.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_memory_dataset.py`

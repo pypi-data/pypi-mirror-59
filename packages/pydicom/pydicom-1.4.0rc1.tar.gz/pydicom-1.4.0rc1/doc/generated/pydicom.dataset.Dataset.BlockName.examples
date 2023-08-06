@@ -1,0 +1,22 @@
+
+
+Examples using ``pydicom.dataset.Dataset.BlockName``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This examples illustrates how to work with sequences.">
+
+.. only:: html
+
+ .. figure:: /auto_examples/metadata_processing/images/thumb/sphx_glr_plot_sequences_thumb.png
+
+     :ref:`sphx_glr_auto_examples_metadata_processing_plot_sequences.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_metadata_processing_plot_sequences.py`
