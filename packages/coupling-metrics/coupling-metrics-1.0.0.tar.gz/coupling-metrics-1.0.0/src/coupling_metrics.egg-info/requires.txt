@@ -1,0 +1,7 @@
+click
+xarray
+dask[complete]
+toolz
+numpy
+netcdf4
+cfgrib
