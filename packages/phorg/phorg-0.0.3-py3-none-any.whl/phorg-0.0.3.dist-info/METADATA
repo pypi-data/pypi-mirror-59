@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: phorg
+Version: 0.0.3
+Summary: Command-line application to help reduce photography's organization time consumption.
+Home-page: https://github.com/NunoPalma/Photography-Organizer
+License: MIT
+Author: NunoPalma
+Requires-Python: ==3.8.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
