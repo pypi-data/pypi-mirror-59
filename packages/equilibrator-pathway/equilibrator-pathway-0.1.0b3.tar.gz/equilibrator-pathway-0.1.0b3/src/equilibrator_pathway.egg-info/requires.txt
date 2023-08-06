@@ -1,0 +1,7 @@
+path>=13.1.0
+pint>=0.10
+numpy>=1.18.0
+uncertainties>=3.1.2
+equilibrator-cache==0.2.6
+component-contribution==0.2.6
+equilibrator-api==0.2.6
