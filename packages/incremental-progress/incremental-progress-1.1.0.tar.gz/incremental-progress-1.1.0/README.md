@@ -1,0 +1,72 @@
+# Incremental Progress
+
+
+This project is intended to be a tool for showing the incremental changes necessary to get something working.
+Incremental Progress takes a copy of the source file and resulting test output for simple projects.
+
+## Configuration
+To configure Incremental Progress, create a config file in the root of your project.
+
+An example can be found in [./example/config.ini](example/config.ini)
+
+Overall the setup is simple.
+
+```
+[DEFAULT]
+test_runner = pipenv run pytest
+monitored_path = ./
+pytest_to_markdown = True
+storage_path = ./step-by-step/
+
+[PROGRESS]
+monitored_files = ['./incremental/processor.py', './setup.py', './incremental/cli.py']
+
+```
+
+Where `monitored_files` is the path from root to the file you are editing and 
+where `test_runner` is the command to run that executes your tests.
+
+
+
+## Use of pytest-md
+[Pytest-md](https://pypi.org/project/pytest-md/) is a package that will write test outputs to an MD file.
+
+This configuration option allows for easy to read results that have the same timestamp as the incremental file.
+
+If this option is not enabled, the results will be written to a file as captured stdout and stderr. 
+
+
+## Historical Information gathering
+
+Incremental Progress will capture a copy of the `source` file and a snapshot of the results of `test_runner` in a temp directory.
+
+This will allow for viewing of the steps you have made during your progress towards functional code.
+
+
+## How to capture your incremental progress
+
+1) Install Incremental Progress `pip install incremental-progress`
+2) Add configuration file. See the configuration section
+3) start Incremental Progress: `incremental-progress`
+
+
+Incremental Progress will run till killed. This is a lightweight process as it uses watches for IO interaction and not 
+direct monitoring.
+
+## Renders
+
+
+### Current:
+- Saves copies of the source file to a directory timestamped.
+- Saves copies of the results of `test_runner` to a directory timestamped.
+
+### Future:
+- Turn the code into syntax highlighted frames for a gif.
+- Turn the results of the test runner into highlighted frames for a gif.
+- Do a left / right with code and tests results as a gif.
+- Monitor all files in a path. Complications on this cause recursion.  
+
+
+### Improvements
+- Use custom class of [DefaultDirWatcher](https://github.com/samuelcolvin/watchgod/blob/f1c0f1f5b33c3e5a8692e8bc7b8cc927e9a806b1/watchgod/watcher.py#L63) 
+to watch for all directories *except* for the `storage_path`
