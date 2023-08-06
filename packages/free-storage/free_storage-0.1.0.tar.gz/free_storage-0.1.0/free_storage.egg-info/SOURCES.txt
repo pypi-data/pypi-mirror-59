@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+free_storage/__init__.py
+free_storage/_cloud_storage.py
+free_storage/_google_drive_file.py
+free_storage/_google_drive_file_system.py
+free_storage/_google_drive_storage.py
+free_storage.egg-info/PKG-INFO
+free_storage.egg-info/SOURCES.txt
+free_storage.egg-info/dependency_links.txt
+free_storage.egg-info/requires.txt
+free_storage.egg-info/top_level.txt
