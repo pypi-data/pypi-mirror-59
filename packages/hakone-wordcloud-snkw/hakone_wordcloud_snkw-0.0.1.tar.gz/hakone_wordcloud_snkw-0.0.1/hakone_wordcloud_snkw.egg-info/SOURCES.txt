@@ -1,0 +1,6 @@
+README.md
+setup.py
+hakone_wordcloud_snkw.egg-info/PKG-INFO
+hakone_wordcloud_snkw.egg-info/SOURCES.txt
+hakone_wordcloud_snkw.egg-info/dependency_links.txt
+hakone_wordcloud_snkw.egg-info/top_level.txt

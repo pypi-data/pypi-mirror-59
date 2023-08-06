@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hakone_wordcloud_snkw
+Version: 0.0.1
+Summary: A word cloud generation sample file for the Hakone Ekiden visualization project
+Home-page: UNKNOWN
+Author: Ken Wakita
+Author-email: wakita@is.titech.ac.jp
+License: UNKNOWN
+Description: # 箱根駅伝可視化プロジェクト向けの Word Cloud のサンプル
+        
+        ```
+        python -m venv ~/.venvs/hakone_wc
+        source ~/.venvs/hakone_wc/bin/activate
+        pip install --upgrade hakone_wordcloud_snkw
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
