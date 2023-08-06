@@ -1,0 +1,11 @@
+README.md
+setup.py
+ScrobblIES/1_Scrape.py
+ScrobblIES/2_Analyse.py
+ScrobblIES/3_Visualise_Maps.py
+ScrobblIES/4_Visualise_Tags.py
+ScrobblIES/__init__.py
+ScrobblIES.egg-info/PKG-INFO
+ScrobblIES.egg-info/SOURCES.txt
+ScrobblIES.egg-info/dependency_links.txt
+ScrobblIES.egg-info/top_level.txt
