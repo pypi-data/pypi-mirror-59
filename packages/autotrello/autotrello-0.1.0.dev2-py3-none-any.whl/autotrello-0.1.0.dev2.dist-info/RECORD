@@ -1,0 +1,12 @@
+autotrello/__init__.py,sha256=5zYDZ9xQuyTPbiuxkHMy-DL3bDdXtgvCLNKng3cwITE,141
+autotrello/_version.py,sha256=E0NeGBnnt3zm4o12EfU0ZDZlG6M0br2oUsBR2UCugwo,117
+autotrello/board_cache.py,sha256=49iCbVx4LLUn74mXX1a8ra8TVNlMb2rt4MLq_XUL4sE,2773
+autotrello/linked_card.py,sha256=ZNqT-SlYFuYmEpGhVPuS9bj-AaJM3OurGj4UqAz4Q5w,178
+autotrello/recurring_board_cache.py,sha256=4iZBnwQnFkik4ndVB3m5SjWDxoao25EkdsmJ1SmuXMo,6752
+autotrello/trello_manipulator.py,sha256=VqzqpJtegVkiHlfxy0PnHWC-yrYzE3rsd04KJ-kLOU4,11097
+autotrello-0.1.0.dev2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+autotrello-0.1.0.dev2.dist-info/METADATA,sha256=GEb8vElhwPR_l_64MVvQcd7fPkduKJqgv5l0wL6awOc,2138
+autotrello-0.1.0.dev2.dist-info/NOTICE,sha256=K7zRByPIUdnAeVilqg4Ga0RJe9kIZ5wfUe2qCrZTshQ,603
+autotrello-0.1.0.dev2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+autotrello-0.1.0.dev2.dist-info/top_level.txt,sha256=jx0ceFB8Za8vcgbwhcupMTFJKaZjsnZTf-yIMYucps4,11
+autotrello-0.1.0.dev2.dist-info/RECORD,,
