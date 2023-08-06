@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aio-odoorpc-base
+Version: 1.0.3
+Summary: Fast, simple Odoo RPC package with sync and async functions to pilot Odoo's jsonrpc API. Check aio-odoorpc for a higher-level, friendlier interface.
+Home-page: https://github.com/mbello/aio-odoorpc-base
+License: CC0-1.0
+Keywords: odoo,odoorpc,asyncio,Odoo RPC API,Odoo jsonrpc,Odoo asyncio,Odoo async,Odoo asynchronous
+Author: mbello
+Author-email: mbello@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Repository, https://github.com/mbello/aio-odoorpc-base
