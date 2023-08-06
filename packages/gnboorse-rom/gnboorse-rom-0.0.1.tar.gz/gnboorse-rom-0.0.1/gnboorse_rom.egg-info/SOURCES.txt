@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+gnboorse_rom.egg-info/PKG-INFO
+gnboorse_rom.egg-info/SOURCES.txt
+gnboorse_rom.egg-info/dependency_links.txt
+gnboorse_rom.egg-info/top_level.txt
+rom/__init__.py
+rom/rom.py
+rom/test_roman_numerals.py
