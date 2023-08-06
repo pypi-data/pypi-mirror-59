@@ -1,0 +1,4 @@
+[console_scripts]
+toolkit_bert_ner_serving = toolkit_bert_ner.runs:start_server
+toolkit_bert_ner_training = toolkit_bert_ner.runs:train_ner
+
