@@ -1,0 +1,3 @@
+[console_scripts]
+kt-toposis = kt_toposis.trial:main
+
