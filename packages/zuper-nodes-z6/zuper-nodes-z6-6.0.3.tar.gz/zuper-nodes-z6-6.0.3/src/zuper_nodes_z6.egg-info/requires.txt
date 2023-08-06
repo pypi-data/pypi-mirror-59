@@ -1,0 +1,8 @@
+compmake
+pyparsing
+PyContracts
+networkx<=2.2
+termcolor
+zuper-ipce-z6
+cbor2
+base58
