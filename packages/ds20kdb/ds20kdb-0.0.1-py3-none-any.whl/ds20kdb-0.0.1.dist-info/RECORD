@@ -1,0 +1,8 @@
+ds20kdb/__init__.py,sha256=RD9KRayRH8eZGHBVEEd_AlNarz1evbLbf8azyNt4wcU,552
+ds20kdb/auth.py,sha256=GMTF9EeI4_Uk9uCIvVaF7uEnDSDcGErUTmevPA3GhtM,1584
+ds20kdb/default.py,sha256=BMUfbeboIId3X8EpIW0kmOmqsn5sbzx6GZTxq3wtJHU,130
+ds20kdb/request.py,sha256=aQ-3ILoBYAeOCPVIQBO3BbRt5CIXhuzZTL9IySU2E9Y,4748
+ds20kdb-0.0.1.dist-info/METADATA,sha256=WfFzKKXSe56_X3dbPTIfaUbMM0kdghMTHAE4c8Gr9Uo,820
+ds20kdb-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ds20kdb-0.0.1.dist-info/top_level.txt,sha256=1cWlhMveMb6oioBpg5qnR49QnEmHI0EHjJgmRPnqZSw,8
+ds20kdb-0.0.1.dist-info/RECORD,,
