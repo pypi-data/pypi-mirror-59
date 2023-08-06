@@ -1,0 +1,17 @@
+setup.cfg
+setup.py
+animatedledstrip_client.egg-info/PKG-INFO
+animatedledstrip_client.egg-info/SOURCES.txt
+animatedledstrip_client.egg-info/dependency_links.txt
+animatedledstrip_client.egg-info/top_level.txt
+client/Animation.py
+client/AnimationData.py
+client/AnimationSender.py
+client/ColorContainer.py
+client/Direction.py
+client/__init__.py
+test/__init__.py
+test/client/__init__.py
+test/client/test_animation_data.py
+test/client/test_animation_sender.py
+test/client/test_colorcontainer.py
