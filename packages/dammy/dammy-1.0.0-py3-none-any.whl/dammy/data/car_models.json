@@ -1,0 +1,187 @@
+{
+    "Audi": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "Q2",
+        "Q3",
+        "Q5",
+        "Q7",
+        "Q8",
+        "R8",
+        "TT"
+    ],
+    "BMW": [
+        "F06 6 Series",
+        "F10 5 Series",
+        "F15 X5",
+        "G06 X6",
+        "G20 3 Series"
+    ],
+    "Bugatti": [
+        "EB110",
+        "Veyron"
+    ],
+    "Chevrolet": [
+        "Bolt",
+        "Camaro",
+        "Corvette",
+        "Impala",
+        "Malibu",
+        "Sonic",
+        "Spark"
+    ],
+    "Citro\u00ebn": [
+        "AX",
+        "BX",
+        "C2",
+        "C3",
+        "C5",
+        "C6",
+        "C8",
+        "Saxo",
+        "Xsara"
+    ],
+    "Dacia": [
+        "Logan",
+        "Sandero"
+    ],
+    "Ferrari": [
+        "208",
+        "308",
+        "Dino",
+        "Testarossa"
+    ],
+    "Fiat": [
+        "500",
+        "500L",
+        "500X",
+        "Qubo",
+        "Spider"
+    ],
+    "Ford": [
+        "Fiesta",
+        "Focus",
+        "Ka",
+        "Mustang"
+    ],
+    "Kia": [
+        "Cadenza",
+        "Forte",
+        "K900",
+        "Optima",
+        "Rio",
+        "Soul",
+        "Stinger"
+    ],
+    "Lexus": [
+        "ES",
+        "GS",
+        "GX",
+        "LS",
+        "LX",
+        "NX",
+        "RX",
+        "UX"
+    ],
+    "Mazda": [
+        "MX-5 Miata",
+        "Mazda3",
+        "Mazda6"
+    ],
+    "Mercedes-Benz": [
+        "A-Class",
+        "C-Class",
+        "E-Class",
+        "S-Class"
+    ],
+    "Opel": [
+        "Agila",
+        "Astra",
+        "Calibra",
+        "Corsa",
+        "Meriva",
+        "Vectra",
+        "Zafira"
+    ],
+    "Peugeot": [
+        "2008",
+        "208",
+        "3008",
+        "308",
+        "4007",
+        "5008",
+        "508",
+        "RCZ"
+    ],
+    "Porsche": [
+        "Boxster",
+        "Carrera",
+        "Cayman",
+        "Speedster",
+        "Spyder",
+        "Targa"
+    ],
+    "Renault": [
+        "Captur",
+        "Clio",
+        "Espace",
+        "Kadjar",
+        "Laguna",
+        "Megane",
+        "Twingo"
+    ],
+    "SEAT": [
+        "Alhambra",
+        "Arona",
+        "Ateca",
+        "Ibiza",
+        "Le\u00f3n",
+        "Tarraco"
+    ],
+    "Suzuki": [
+        "APV",
+        "Alto",
+        "Celerio",
+        "Ciaz",
+        "Jimny",
+        "Swift"
+    ],
+    "Tesla": [
+        "Cybertruck",
+        "Model 3",
+        "Model S",
+        "Model X",
+        "Model Y",
+        "Roadster"
+    ],
+    "Toyota": [
+        "Avalon",
+        "C-HR",
+        "Camry",
+        "Corolla",
+        "Highlander",
+        "Prius",
+        "Yaris"
+    ],
+    "Volkswagen": [
+        "Arteon",
+        "Atlas",
+        "Golf",
+        "Jetta",
+        "Passat",
+        "Polo",
+        "Tiguan"
+    ],
+    "Volvo": [
+        "S60",
+        "S90",
+        "V60",
+        "V90"
+    ]
+}
