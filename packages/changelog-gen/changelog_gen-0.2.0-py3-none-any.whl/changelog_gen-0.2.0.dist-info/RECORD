@@ -1,0 +1,13 @@
+changelog_gen/__init__.py,sha256=_V562fLPeRRhBpP-KrvY34RNdnjwzT_hBEDMclabB8Q,44
+changelog_gen/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+changelog_gen/cli/command.py,sha256=NSUCntJTMejrAEbmKJls4w1XkSaOtBctITBmevyrWn0,3641
+changelog_gen/cli/util.py,sha256=DZBIBfwlxqdisrLhqHp1CIQ8pDtp-Bvejjtr1jh5Bfg,772
+changelog_gen/extractor.py,sha256=OlNEl-0v5puCw2RIEOW8LZCL6Z6pTz_SayETx7lfy28,1389
+changelog_gen/vcs.py,sha256=eW9RPw5GQguKqLvNkpe3-Y4mJ8CYlt-vq0Gq-tu_9mU,1397
+changelog_gen/version.py,sha256=4XCjR8LRlAjK6Pse_YZCtaFqUGLHDpvfCHreB8cDakk,911
+changelog_gen/writer.py,sha256=wkP46eaon58J2ED7RA8UJVQtnrhyM9WndqrJOuylciU,2666
+changelog_gen-0.2.0.dist-info/entry_points.txt,sha256=Vgj8scNHJ1skfrS79xHrceAAV4LSNsHS-Rz_K0c2ekQ,109
+changelog_gen-0.2.0.dist-info/LICENSE,sha256=dX6lidxbITpV4rgpnZ_dj15POhb5uHlh4r9gj8YxkwI,11307
+changelog_gen-0.2.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+changelog_gen-0.2.0.dist-info/METADATA,sha256=zeHZt9mlUmgvzbBPQfDb_uaTJHYeMrPXpMuo4GeXyBc,787
+changelog_gen-0.2.0.dist-info/RECORD,,
