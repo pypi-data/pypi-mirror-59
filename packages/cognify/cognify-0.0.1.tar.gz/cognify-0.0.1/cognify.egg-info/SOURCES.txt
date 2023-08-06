@@ -1,0 +1,15 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+cognify/__init__.py
+cognify/_nbdev.py
+cognify/core.py
+cognify.egg-info/PKG-INFO
+cognify.egg-info/SOURCES.txt
+cognify.egg-info/dependency_links.txt
+cognify.egg-info/entry_points.txt
+cognify.egg-info/not-zip-safe
+cognify.egg-info/top_level.txt
