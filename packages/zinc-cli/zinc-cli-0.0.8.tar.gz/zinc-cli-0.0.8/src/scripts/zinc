@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+import zinc
+
+
+def main():
+    print("Executing script")
+    zinc.main()
+
+
+if __name__ == '__main__':
+    main()
