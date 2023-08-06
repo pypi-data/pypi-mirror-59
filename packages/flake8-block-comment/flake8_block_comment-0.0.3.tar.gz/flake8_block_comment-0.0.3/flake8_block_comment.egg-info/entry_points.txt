@@ -1,0 +1,3 @@
+[flake8.extension]
+B000 = flake8_block_comment:BlockCommentChecker
+
