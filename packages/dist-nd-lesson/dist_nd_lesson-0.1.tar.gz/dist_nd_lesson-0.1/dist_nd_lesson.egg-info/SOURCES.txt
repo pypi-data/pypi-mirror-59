@@ -1,0 +1,10 @@
+setup.py
+dist_nd_lesson/Binomialdistribution.py
+dist_nd_lesson/Gaussiandistribution.py
+dist_nd_lesson/Generaldistribution.py
+dist_nd_lesson/__init__.py
+dist_nd_lesson.egg-info/PKG-INFO
+dist_nd_lesson.egg-info/SOURCES.txt
+dist_nd_lesson.egg-info/dependency_links.txt
+dist_nd_lesson.egg-info/not-zip-safe
+dist_nd_lesson.egg-info/top_level.txt
