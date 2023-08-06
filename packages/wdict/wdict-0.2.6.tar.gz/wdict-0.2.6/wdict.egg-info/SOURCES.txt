@@ -1,0 +1,9 @@
+README.md
+setup.py
+wdict/__init__.py
+wdict/core.py
+wdict.egg-info/PKG-INFO
+wdict.egg-info/SOURCES.txt
+wdict.egg-info/dependency_links.txt
+wdict.egg-info/requires.txt
+wdict.egg-info/top_level.txt
