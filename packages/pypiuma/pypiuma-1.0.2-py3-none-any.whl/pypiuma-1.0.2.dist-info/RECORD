@@ -1,0 +1,12 @@
+pypiuma/__init__.py,sha256=tpYOj7HTIzxKVXqFlcLU7uq0ZOHv021qbYUf0ZOTSzM,36
+pypiuma/core.py,sha256=J21839l38VxSL4iCT2PCXcimZi4IaycUlEE2ixV8Uvw,268
+pypiuma/templatetags/pypiuma_tags.py,sha256=1he09VRODb9BkDeziN0KF70vXQY8u4PVhn6gZq-a_xc,3510
+pypiuma/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypiuma-1.0.2.dist-info/RECORD,,
+pypiuma-1.0.2.dist-info/metadata.json,sha256=MW6G1kHFtBVVhzF4FhBhkLnKwJo2B7lhlUtTnuRpmhk,538
+pypiuma-1.0.2.dist-info/WHEEL,sha256=-aSo8rHuuPDEFzkcqqQ55pDyCjy25bYMLxSiHWKAOTc,92
+pypiuma-1.0.2.dist-info/DESCRIPTION.rst,sha256=h5b2yx4yXUgTckx2rmnTGuQOJdw5YMQuF6D9nNA0K3g,1670
+pypiuma-1.0.2.dist-info/top_level.txt,sha256=_3xoAdP9mp30svx-DfYy807VDKViFKayw8Unojy8sww,14
+pypiuma-1.0.2.dist-info/METADATA,sha256=Ros-vJDaG3rUNqN3UokoJVw3PzpRciVYZjNKByACPY4,2083
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_main.py,sha256=iOwr59DFR5WiepGwFroDgHipuU2MaYYL7RsOuO0YfRs,2121
