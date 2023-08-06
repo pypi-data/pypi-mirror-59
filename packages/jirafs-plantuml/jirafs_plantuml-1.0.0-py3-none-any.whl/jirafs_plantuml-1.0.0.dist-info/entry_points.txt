@@ -1,0 +1,3 @@
+[jirafs_plugins]
+plantuml = jirafs_plantuml.plugin:PlantUML
+
