@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: kakao-i-python
+Version: 0.1
+Summary: python module to use kakao i skill
+Home-page: https://github.com/jil8885/kakao-i-python
+Author: Jeongin Lee
+Author-email: jil8885@hanyang.ac.kr
+License: UNKNOWN
+Keywords: kakao-i
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3
+
+UNKNOWN
+
+

@@ -1,0 +1,10 @@
+SkillPayload/__init__.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+SkillPayload/load.py,sha256=a62fGe3bdvkpbBHjXVTF1ElwB0EXiiMqHiYZwOYREgc,1461
+SkillResponse/__init__.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+SkillResponse/common.py,sha256=PloKocbVN2lG8nTjaB3GiedGMRrwORsaFziduUD4uWs,2348
+SkillResponse/create.py,sha256=soq4hZ5sKyN9Se9iG5GogUlIHAEdMeW04SkM-2jVUns,2739
+SkillResponse/quickreplies.py,sha256=JwbvNeadRpF_QEic4-zXvdITbiUAuuTftf5JRI7VZ30,783
+kakao_i_python-0.1.dist-info/METADATA,sha256=_HnOTM_Om7Wmnxvca3VjEQoz_AyniqJOXfpvytzQQBI,692
+kakao_i_python-0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+kakao_i_python-0.1.dist-info/top_level.txt,sha256=hiUIjaJrnhADLe2q_bOGuUuKW9izhm93mlnWbZVtlzM,27
+kakao_i_python-0.1.dist-info/RECORD,,
