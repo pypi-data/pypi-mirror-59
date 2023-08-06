@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+neuprint/__init__.py
+neuprint/_version.py
+neuprint/client.py
+neuprint/fetch.py
+neuprint/utils.py
+neuprint_python.egg-info/PKG-INFO
+neuprint_python.egg-info/SOURCES.txt
+neuprint_python.egg-info/dependency_links.txt
+neuprint_python.egg-info/requires.txt
+neuprint_python.egg-info/top_level.txt
