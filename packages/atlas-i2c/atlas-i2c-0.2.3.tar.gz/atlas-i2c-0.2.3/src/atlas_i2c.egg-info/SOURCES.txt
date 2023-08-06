@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/atlas_i2c/__init__.py
+src/atlas_i2c/atlas_i2c.py
+src/atlas_i2c/commands.py
+src/atlas_i2c/constants.py
+src/atlas_i2c/sensors.py
+src/atlas_i2c/version.py
+src/atlas_i2c.egg-info/PKG-INFO
+src/atlas_i2c.egg-info/SOURCES.txt
+src/atlas_i2c.egg-info/dependency_links.txt
+src/atlas_i2c.egg-info/top_level.txt
