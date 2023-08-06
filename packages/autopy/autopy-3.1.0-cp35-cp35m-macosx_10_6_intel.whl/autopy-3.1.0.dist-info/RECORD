@@ -1,0 +1,13 @@
+autopy/__init__.py,sha256=bJPnCn6L1d10nhpuixQDLRhPMWC8n_vUehDkCzzXe7Y,277
+autopy/alert.cpython-35m-darwin.so,sha256=DmQldcFP7R_kS1aPHQ6I0dBfZfdooCJGIQ9H397vxfY,1880568
+autopy/bitmap.cpython-35m-darwin.so,sha256=DmQldcFP7R_kS1aPHQ6I0dBfZfdooCJGIQ9H397vxfY,1880568
+autopy/color.cpython-35m-darwin.so,sha256=DmQldcFP7R_kS1aPHQ6I0dBfZfdooCJGIQ9H397vxfY,1880568
+autopy/key.cpython-35m-darwin.so,sha256=DmQldcFP7R_kS1aPHQ6I0dBfZfdooCJGIQ9H397vxfY,1880568
+autopy/mouse.cpython-35m-darwin.so,sha256=DmQldcFP7R_kS1aPHQ6I0dBfZfdooCJGIQ9H397vxfY,1880568
+autopy/screen.cpython-35m-darwin.so,sha256=DmQldcFP7R_kS1aPHQ6I0dBfZfdooCJGIQ9H397vxfY,1880568
+autopy-3.1.0.dist-info/LICENSE-APACHE,sha256=llGXysgI-SHnTvaF0Z0ZC3tXwZeIOMR7CPcRp7bi1hE,11352
+autopy-3.1.0.dist-info/LICENSE-MIT,sha256=UPsVIJ4rcpIGNdLVgz79I0Yz3cucP1uHnA1frKiLHnM,1062
+autopy-3.1.0.dist-info/METADATA,sha256=YLy0l7GbQyH_3aEfUzSRIHmJ2Q5jKitXTMnOLCHwgKA,9323
+autopy-3.1.0.dist-info/WHEEL,sha256=BdYa13sefkHen0XB9IN0lCOeSQrE46zSZzvnFK5xexs,109
+autopy-3.1.0.dist-info/top_level.txt,sha256=XZwopO5i8LsCkf3cJbCQeQLMiBD7XwTozpS9kMDQ_N4,7
+autopy-3.1.0.dist-info/RECORD,,
