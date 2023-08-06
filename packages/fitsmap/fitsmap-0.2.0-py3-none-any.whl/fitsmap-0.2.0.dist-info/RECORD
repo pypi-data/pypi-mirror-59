@@ -1,0 +1,14 @@
+fitsmap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fitsmap/cartographer.py,sha256=r8oMnPBlviLqmrVHkkAdgLJQbjxY57bEiCMgvkMYXgM,10721
+fitsmap/convert.py,sha256=OQKjUGaCQxl4rhz7oxCdA_QO25Vz5URYosbt732zaXU,28105
+fitsmap/support/MarkerCluster.Default.css,sha256=YSWCMtmNZNwqex4CEw1nQhvFub2lmU7vcCKP-XVwwXA,1287
+fitsmap/support/MarkerCluster.css,sha256=YU3qCpj_P06tdPBJGPax0bm6Q1wltfwjsho5TR4-TYc,872
+fitsmap/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fitsmap/tests/helpers.py,sha256=Ofm7TCcM_LG5iU1pK_J6hV95XTkFyoWmL_on5ksiYAw,4299
+fitsmap/tests/test_cartographer.py,sha256=5_Ipq-YhcZv0LXMmjMBzOH1L97vydQRBMM_9cQsDkgA,9871
+fitsmap/tests/test_convert.py,sha256=K3VQOKKy6bNp6k3nCeedoZ6N2LDVekx2Ic1PPZtzb4E,18882
+fitsmap-0.2.0.dist-info/LICENSE,sha256=pX7oyi4ZneJffD_SuUI8uylYbSp3NXMchr7hELloWrE,1063
+fitsmap-0.2.0.dist-info/METADATA,sha256=loSreGqdBmIU6_JUiGbAIfs58TQ83aHB_gZ4yPjrNmo,6990
+fitsmap-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+fitsmap-0.2.0.dist-info/top_level.txt,sha256=cyGGWBm3sKDl90PcE-S1tRzvVYw_KM1BWtQAh9MtjNg,8
+fitsmap-0.2.0.dist-info/RECORD,,
