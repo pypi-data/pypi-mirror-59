@@ -1,0 +1,12 @@
+discogspy/__init__.py,sha256=RRFX2atVtWXPQ3EH7v0uqvRQZ3WvC2LJ7j1GKaZLK8M,42
+discogspy/_nbdev.py,sha256=Qn5E27TneeGl8Dmm_ZPuKc8vNSRQ-tgw6NYEGp6l-eQ,1730
+discogspy/core/__init__.py,sha256=cjh_9HH1NKQzYT-gDw4ZlBHf9rUMoFlRFAf85aRYJFM,80
+discogspy/core/constants.py,sha256=5hza6xzileR-6eltGEatNG41lwHMpxRAjqpvVmhbE_U,1307
+discogspy/core/database_rq.py,sha256=-l4o9Z8hN22xhR1rB-JakH_PtkdnalfHzE25malu1Dw,8980
+discogspy/core/discogs_user.py,sha256=rJcqG7zXaGVAQ-22rqZoGKEFtT4UNFn7nYmT3BQY0Zc,844
+discogspy-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+discogspy-0.0.1.dist-info/METADATA,sha256=GwmnEQFit9smpiK2wcwR9GRei9JOJyxqoCb4HmXvMWw,2884
+discogspy-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+discogspy-0.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+discogspy-0.0.1.dist-info/top_level.txt,sha256=OoBnR6D52oeGUEyKyDArFHt-CKeMdvLRzeLRVEI56PI,10
+discogspy-0.0.1.dist-info/RECORD,,
