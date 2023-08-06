@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+TOPSIS_package/cli.py
+topsis_analysis_irtebat.egg-info/PKG-INFO
+topsis_analysis_irtebat.egg-info/SOURCES.txt
+topsis_analysis_irtebat.egg-info/dependency_links.txt
+topsis_analysis_irtebat.egg-info/entry_points.txt
+topsis_analysis_irtebat.egg-info/requires.txt
+topsis_analysis_irtebat.egg-info/top_level.txt
