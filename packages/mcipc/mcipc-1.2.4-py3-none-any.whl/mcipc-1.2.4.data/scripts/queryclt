@@ -1,0 +1,8 @@
+#!python
+"""A Minecraft Query client."""
+
+from mcipc.cli.query import main
+
+
+if __name__ == '__main__':
+    main()
