@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: gitlab-clone
+Version: 0.1.2
+Summary: Gitlab tool for recursive clone
+Home-page: https://github.com/ArseniyAntonov/gitlab-group-clone
+Author: Arseniy Antonov
+Author-email: arseny.antonov@gmail.com
+License: MIT license
+Keywords: gitlab,gitlab-api
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: requests
+
+# gitlab-group-clone
+Tool for recursive cloning whole gitlab group tree
+
+
+
+
