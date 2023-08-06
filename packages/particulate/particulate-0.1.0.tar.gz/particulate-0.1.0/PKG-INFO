@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: particulate
+Version: 0.1.0
+Summary: Helps you visualize particles so it becomes easier to articulate yourself
+Home-page: https://github.com/sigvaldm/particulate.git
+Author: Sigvald Marholm
+Author-email: marholm@marebakken.com
+License: LGPL
+Description: Particulate
+        ===========
+        
+        Helps you visualize particles so it becomes easier to articulate yourself.
+        
+        Work in progress. Install::
+        
+            pip install .
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
