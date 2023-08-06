@@ -1,0 +1,14 @@
+AUTHORS.rst
+CONTRIBUTING.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+YannCookieCutter.egg-info/PKG-INFO
+YannCookieCutter.egg-info/SOURCES.txt
+YannCookieCutter.egg-info/dependency_links.txt
+YannCookieCutter.egg-info/not-zip-safe
+YannCookieCutter.egg-info/top_level.txt
+docs/conf.py
+docs/index.rst
