@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: PLC_IDE
+Version: 0.0.1
+Summary: PLC PRG EDITOR tool
+Home-page: UNKNOWN
+Author: ren1987yi
+Author-email: ren1987yi@163.com
+License: MIT Licence
+Description: PLC PRG EDITOR tool
+Keywords: pip,pathtool,timetool,magetool,mage
+Platform: any
