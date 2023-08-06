@@ -1,0 +1,3 @@
+[console_scripts]
+qaman = QAManual.command:main
+
