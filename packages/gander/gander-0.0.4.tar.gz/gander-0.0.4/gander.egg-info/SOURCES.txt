@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+gander/__init__.py
+gander/helper_indicators.py
+gander/indicators.py
+gander/plotting.py
+gander.egg-info/PKG-INFO
+gander.egg-info/SOURCES.txt
+gander.egg-info/dependency_links.txt
+gander.egg-info/requires.txt
+gander.egg-info/top_level.txt
+gander/tests/__init__.py
+gander/tests/data_for_tests.py
+gander/tests/test_indicators.py
