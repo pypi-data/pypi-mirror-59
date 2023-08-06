@@ -1,0 +1,11 @@
+README.md
+setup.py
+saasy/__init__.py
+saasy/client.py
+saasy/version.py
+saasy.egg-info/PKG-INFO
+saasy.egg-info/SOURCES.txt
+saasy.egg-info/dependency_links.txt
+saasy.egg-info/not-zip-safe
+saasy.egg-info/requires.txt
+saasy.egg-info/top_level.txt
