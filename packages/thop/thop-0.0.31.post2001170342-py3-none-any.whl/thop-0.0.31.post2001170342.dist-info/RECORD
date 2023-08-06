@@ -1,0 +1,11 @@
+thop/__init__.py,sha256=QA9vOUD89NWU5BnVhZtEme_hbrAg7QPH9qXbZcxkVts,62
+thop/count_hooks.py,sha256=KWQ4pjEuzNS3LftzkdXBUtZqD0I6bTqYzGQZE0vOt2A,3774
+thop/nlp_hooks.py,sha256=mkZzP0xd8z3xRUvDyiGsWNAkVEJP8nrLVB7nlsZBgrA,1284
+thop/profile.py,sha256=LByfdTIvpdFK4P48ywz00mlGn5_rziP3Eb01lYH-i5U,6115
+thop/utils.py,sha256=HHGyEEjqBWFBCG7r6wJzBuSxFOqd7sooOleXyYizTp8,681
+thop-0.0.31.post2001170342.dist-info/LICENSE,sha256=NvV3rSiPG-roGItuwJgI6u0njAi4KEusxpS7Vv-_Pfw,1067
+thop-0.0.31.post2001170342.dist-info/METADATA,sha256=Ve1RrxtqDLer_-Gjdd_S1rWPD3NpA5Qu7ZYPta_P-AA,2695
+thop-0.0.31.post2001170342.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+thop-0.0.31.post2001170342.dist-info/top_level.txt,sha256=HQ7D0gSvDJ31CNR-f0EuXNVve05RYBmwyIkHQKiEhU8,5
+thop-0.0.31.post2001170342.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+thop-0.0.31.post2001170342.dist-info/RECORD,,
