@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<div id="feddback-modal" class="modal modal-feedback mfp-hide"></div>
+<div id="request-modal" class="modal mfp-hide white-popup-block">
+    <div class="wrapper-request">
+        <a href="#" class="close-btn-cross" onclick="closePopup()">
+            <div class="icon-container"><img src="{% static 'images/cross-icon.png' %}" alt=""></div>
+        </a>
+        <div class="updatable">
+            {% include 'feedback/forms/modal-order.html' %}
+        </div>
+    </div>
+</div>
+<div id="order-contact-modal" class="modal mfp-hide white-popup-block">
+    <div class="wrapper-request wrapper-order-contact">
+        <a href="#" class="close-btn-cross" onclick="closePopup()">
+            <div class="icon-container"><img src="{% static 'images/cross-icon.png' %}" alt=""></div>
+        </a>
+        <div class="updatable">
+            {% include 'feedback/forms/modal-call.html' %}
+        </div>
+    </div>
+</div>
+{% include 'feedback/modal-success.html' %}

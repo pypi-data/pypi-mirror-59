@@ -1,0 +1,24 @@
+<form action="{% url 'feedback:call_modal_form' %}" method="post" class="send_ajax">
+    {% csrf_token %}
+    <input name="form_token" type="hidden" class="token">
+    <div class="input-form">
+        <h3>Заказать звонок</h3>
+        <ul class="flex-outer">
+            {{ call_modal_form.non_field_errors }}
+            {{ call_modal_form.as_ul }}
+        </ul>
+    </div>
+    <div class="feedback-form">
+        <button>
+            Отправить
+        </button>
+        <div class="terms">
+            <label class="terms-checkbox">
+                <input class="checkbox" type="checkbox" name="checkbox-test" required>
+                <span class="checkbox-custom"></span>
+            </label>
+            <p>Нажимая кнопку “отправить” вы даете согласие на обработку ваших <a href="#">персональных
+                данных</a></p>
+        </div>
+    </div>
+</form>

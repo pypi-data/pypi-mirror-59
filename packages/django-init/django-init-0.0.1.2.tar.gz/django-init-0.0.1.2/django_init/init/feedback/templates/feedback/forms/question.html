@@ -1,0 +1,55 @@
+<form action="{% url 'feedback:question_form' %}" method="post" enctype="multipart/form-data" class="form-contact send_ajax">
+    {% csrf_token %}
+    <input name="form_token" type="hidden" class="token">
+    <div class="input-form">
+        <h3>Задайте нам вопрос</h3>
+        {#        <form>#}
+        <div>
+            <ul class="flex-outer">
+                {{ question_form.non_field_errors }}
+                <li>
+                    {{ question_form.name.errors }}
+                    {{ question_form.name }}
+                </li>
+                <li>
+                    {{ question_form.phone.errors }}
+                    {{ question_form.phone }}
+                </li>
+                <li>
+                    {{ question_form.email.errors }}
+                    {{ question_form.email }}
+                </li>
+                <li>
+                    {{ question_form.message.errors }}
+                    {{ question_form.message }}
+                </li>
+                {#                {{ question_form.as_ul }}#}
+            </ul>
+        </div>
+        {#        </form>#}
+    </div>
+    <div class="feedback-form">
+        <div id="form-img" class="dropzone">
+            <p id="description"><a href="">Выберите</a> или перетащите сюда изображение или чертеж, при
+                необходимости</p>
+            {{ question_form.file.errors }}
+            {{ question_form.file }}
+
+            <img id="img-load" src="#" alt="" />
+
+        </div>
+
+        <button>
+            Отправить
+        </button>
+        <div class="terms">
+            <label class="terms-checkbox">
+                <input class="checkbox" type="checkbox" name="checkbox-test" required>
+                <span class="checkbox-custom"></span>
+            </label>
+            <p>Нажимая галочку, вы даете согласие на обработку ваших<br><a
+                    href="#">персональных
+                данных</a></p>
+        </div>
+    </div>
+</form>

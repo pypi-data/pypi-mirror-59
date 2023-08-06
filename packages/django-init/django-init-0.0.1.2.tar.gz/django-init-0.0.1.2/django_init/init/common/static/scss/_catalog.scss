@@ -1,0 +1,29 @@
+#content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card-item {
+  //width: 15rem;
+  //display: inline-block;
+  margin: 0 0 15px 0 !important;
+  border-radius: 0;
+  height: 380px;
+}
+
+a.card-item-link {
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+.breadcrumb {
+  padding: .75rem 0;
+  margin-bottom: 0;
+}
+
+.pagination {
+  margin-top: 50px;
+}

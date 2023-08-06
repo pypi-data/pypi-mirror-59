@@ -1,0 +1,120 @@
+<nav aria-label="...">
+    <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+            <span class="page-link">Previous</span>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active">
+      <span class="page-link">
+        2
+        <span class="sr-only">(current)</span>
+      </span>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+</nav>
+
+<nav aria-label="...">
+    <ul class="pagination justify-content-center">
+        {% if products.has_previous %}
+            <li class="page-item">
+                <a class="page-link" href="?page=1">first</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="?page={{ products.previous_page_number }}">previous</a>
+            </li>
+        {% endif %}
+
+        <span class="current">
+            Page {{ products.number }} of {{ products.paginator.num_pages }}.
+        </span>
+
+        {% if products.has_next %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ products.next_page_number }}">next</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="?page={{ products.paginator.num_pages }}">last</a>
+            </li>
+        {% endif %}
+    </ul>
+</nav>
+
+{#{% load catalog_tags %}#}
+{#{% if page_obj.paginator.num_pages > 1 %}#}
+{#    <div class="order-blank--pagination">#}
+{#        <ul>#}
+{#            {% if page_obj.has_previous %}#}
+{#                {% if page_obj.previous_page_number == 1 %}#}
+{#                    <li class="prev"><a href="{{ request.path }}"><span>< Предыдущая</span></a></li>#}
+{#                {% else %}#}
+{#                    <li class="prev"><a href="?page={{ page_obj.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}"><span>< Предыдущая</span></a>#}
+{#                    </li>#}
+{#                {% endif %}#}
+{#            {% endif %}#}
+{##}
+{#            {% if page_obj.paginator.num_pages > 7 %}#}
+{##}
+{#                {% if page_obj.number < 5 %}#}
+{##}
+{#                    {% for pn in page_obj.paginator.page_range|slice:':5' %}#}
+{#                        {% if page_obj.number == pn %}#}
+{#                            <li class="active"><span>{{ pn }}</span></li>#}
+{#                        {% elif pn == 1 %}#}
+{#                            <li><a href="{{ request.path }}">{{ pn }}</a></li>#}
+{#                        {% else %}#}
+{#                            <li><a href="?page={{ pn }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">{{ pn }}</a></li>#}
+{#                        {% endif %}#}
+{#                    {% endfor %}#}
+{#                    <li class="dots"></li>#}
+{#                    <li><a href="?page={{ page_obj.paginator.num_pages }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">{{ page_obj.paginator.num_pages }}</a></li>#}
+{##}
+{#                {% elif page_obj.number > 4 and page_obj.paginator.num_pages == 7  or page_obj.number > page_obj.paginator.num_pages|add:-4 %}#}
+{##}
+{#                    <li><a href="{{ request.path }}">1</a></li>#}
+{#                    <li class="dots"></li>#}
+{#                    {% for pn in page_obj.paginator.page_range|slice:'-5:' %}#}
+{#                        {% if page_obj.number == pn %}#}
+{#                            <li class="active"><span>{{ pn }}</span></li>#}
+{#                        {% elif pn == 1 %}#}
+{#                            <li><a href="{{ request.path }}">{{ pn }}</a></li>#}
+{#                        {% else %}#}
+{#                            <li><a href="?page={{ pn }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">{{ pn }}</a></li>#}
+{#                        {% endif %}#}
+{#                    {% endfor %}#}
+{##}
+{#                {% else %}#}
+{##}
+{#                    <li><a href="{{ request.path }}">1</a></li>#}
+{#                    <li class="dots"></li>#}
+{#                    <li><a href="?page={{ page_obj.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">{{ page_obj.previous_page_number }}</a></li>#}
+{#                    <li class="active"><span>{{ page_obj.number }}</span></li>#}
+{#                    <li><a href="?page={{ page_obj.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">{{ page_obj.next_page_number }}</a></li>#}
+{#                    <li class="dots"></li>#}
+{#                    <li><a href="?page={{ page_obj.paginator.num_pages }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">{{ page_obj.paginator.num_pages }}</a></li>#}
+{##}
+{#                {% endif %}#}
+{##}
+{#            {% else %}#}
+{##}
+{#                {% for pn in page_obj.paginator.page_range %}#}
+{#                    {% if page_obj.number == pn %}#}
+{#                        <li class="active"><span>{{ pn }}</span></li>#}
+{#                    {% elif pn == 1 %}#}
+{#                        <li><a href="{{ request.path }}">{{ pn }}</a></li>#}
+{#                    {% else %}#}
+{#                        <li><a href="?page={{ pn }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">{{ pn }}</a></li>#}
+{#                    {% endif %}#}
+{#                {% endfor %}#}
+{##}
+{#            {% endif %}#}
+{##}
+{#            {% if page_obj.has_next %}#}
+{#                <li class="next"><span><a href="?page={{ page_obj.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">Следующая ></a></span></li>#}
+{#            {% endif %}#}
+{#        </ul>#}
+{#    </div>#}
+{#{% endif %}#}

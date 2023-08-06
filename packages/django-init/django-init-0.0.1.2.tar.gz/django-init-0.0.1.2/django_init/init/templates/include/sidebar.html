@@ -1,0 +1,32 @@
+{% load mptt_tags i18n %}
+<div class="col-md-3">
+    <div class="list-group list-group-flush">
+        <div class="card-header">{% trans 'Каталог товаров' %}</div>
+        {% if categories_sidebar %}
+            {% for obj in categories_sidebar %}
+                <a href="{% url 'catalog:category' obj.full_slug %}" class="list-group-item sidebar-item">
+                    {{ obj.title }}
+                    <span class="badge badge-light badge-pill pull-right">{{ obj.products_count }}</span>
+                </a>
+
+{#                <li class="list-group-item">{{ obj.title }}</li>#}
+                {#                {% if obj.is_root_node %}#}
+                {#                    <li class="nav-item">#}
+                {#                        <a href="{% url 'catalog:category' obj.full_slug %}" class="nav-link">{{ obj.title }}#}
+                {#                            <span class="badge badge-light badge-pill pull-right">{{ obj.products_count }}</span>#}
+                {#                        </a>#}
+                {#                        {% if obj.is_leaf_node %}#}
+                {#                            </li>#}
+                {#                        {% else %}#}
+                {#                            <ul>#}
+                {#                        {% endif %}#}
+                {#                        {% else %}#}
+                {#                        <li><a href="{% url 'catalog:category' obj.full_slug %}">{{ obj.title }}</a></li>#}
+                {#                        {% if not obj.get_next_sibling %}#}
+                {#                            </ul>#}
+                {#                        {% endif %}#}
+                {#                {% endif %}#}
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>

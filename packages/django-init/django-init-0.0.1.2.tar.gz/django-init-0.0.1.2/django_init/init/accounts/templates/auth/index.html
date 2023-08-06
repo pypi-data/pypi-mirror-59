@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load thumbnail static %}
+{% block content %}
+    <section class="section page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 m-auto">
+                    <h1>{% firstof page.seo_h1 page.title %}</h1>
+                    {{ page.full_text|safe }}
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include 'auth/forms/login.html' %}
+    <section class="user-login section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="block">
+                        <!-- Image -->
+{#                        <div class="image align-self-center">#}
+{#                            <img class="img-fluid" src="images/Login/front-desk-sign-in.jpg" alt="desk-image">#}
+{#                        </div>#}
+                        <!-- Content -->
+                        <div class="content text-center">
+                            <div class="logo">
+                                <a href="homepage.html"><img src="images/logo.png" alt=""></a>
+                            </div>
+                            <div class="title-text">
+                                <h3>Sign in to To Your Account</h3>
+                            </div>
+                            <form action="#">
+                                <!-- Username -->
+                                <input class="form-control main" type="text" placeholder="Username" required>
+                                <!-- Password -->
+                                <input class="form-control main" type="password" placeholder="Password" required>
+                                <!-- Submit Button -->
+                                <button class="btn btn-main-md">sign in</button>
+                            </form>
+                            <div class="new-acount">
+                                <a href="#">Forget your password?</a>
+                                <p>Don't Have an account? <a href="sign-up.html"> SIGN UP</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
