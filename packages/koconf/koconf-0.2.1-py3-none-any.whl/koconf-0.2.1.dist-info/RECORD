@@ -1,0 +1,16 @@
+koconf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+koconf/cli.py,sha256=wZM8iClxFgg43c2BK6GXAIFpAkmgGHcehTjPbUgpluY,5327
+koconf/common.py,sha256=-YualcpqXqfcMjn0v8a62sJ5JysJO068LCJzc6GOnJk,574
+koconf/db.py,sha256=TuX7jSlGgMot4n0I1ezxtg9y8WDgHFWaP-rwPFlY3vs,5806
+koconf/task.py,sha256=EVQ3oEK9bsIQWFntplyCR4JmcMc1YdRVHRrwLoriOi8,1652
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_cli.py,sha256=v_iUDP06F0kYEeyZHWvYBlNHuB9uwWO0T8KfUFsnI8A,4637
+test/test_common.py,sha256=emUARG8jWAZ6PN6feLu5QxHCfKADkoo6DPPReB_HSuo,1129
+test/test_db.py,sha256=OoQmi41h3JxS_9huziBQWRAhyxvSLdsQHqCweGt2wc0,4735
+test/test_task.py,sha256=MYZ1gjMZVHy8hCGxeTqNPnydLZYgYb77nvdWzORi0YQ,2207
+koconf-0.2.1.dist-info/LICENSE,sha256=28KQNCCkivgg1L-p8izLJfY3qLKF9qAde5NmRA_AxLM,11339
+koconf-0.2.1.dist-info/METADATA,sha256=BCJGeRFccIScgwKS5tf_izfISeUB6MDGLdZU5DL_ctI,713
+koconf-0.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+koconf-0.2.1.dist-info/entry_points.txt,sha256=P2FsCZUKckEgoJVv9w666BXbu4MGk1kRO-UUYXz-kYY,44
+koconf-0.2.1.dist-info/top_level.txt,sha256=t_iiWiJHCgGieYYp5GJ2EtlXAHUy-4YDDWwcWalKyqU,12
+koconf-0.2.1.dist-info/RECORD,,
