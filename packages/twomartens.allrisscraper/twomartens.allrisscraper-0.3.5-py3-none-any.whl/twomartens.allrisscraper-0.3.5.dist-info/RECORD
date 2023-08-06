@@ -1,0 +1,13 @@
+twomartens.allrisscraper-0.3.5-py3.8-nspkg.pth,sha256=kecjAQiWTUO4r_3iVYbIpOHECyUUqwb0vNbbOssnSvE,559
+twomartens/allrisscraper/__init__.py,sha256=m48vWvQi0Z1DtExHi6KFLMP8xYHYSrIkG1HoOb9mriM,723
+twomartens/allrisscraper/__main__.py,sha256=hPVws8jR60kDm8FE4wJpN47CXMTBfR2wZG4M7Jvhegc,676
+twomartens/allrisscraper/definitions.py,sha256=tdGer3g41hxNf_AP3E3bYhpzHyftS86n4TJXmOsa-2U,1733
+twomartens/allrisscraper/main.py,sha256=z2J926zNVT8KY6Kab0pAyGMLp-5lkvAXH-kk1Kxff_w,9076
+twomartens/allrisscraper/meeting.py,sha256=E2HeUfqP8TsCShtAWX_gzaAo2ctHeMms0SY2IgnMx4Q,792
+twomartens.allrisscraper-0.3.5.dist-info/LICENSE,sha256=4bMsitQEG9jz6P6PoUzQpyxaDMguhh4QtPES1HKtSm0,11666
+twomartens.allrisscraper-0.3.5.dist-info/METADATA,sha256=s2GKcqhRZFyWN0OJa_Di-aO5HBMtceqWZbiX5gx2q6c,3072
+twomartens.allrisscraper-0.3.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+twomartens.allrisscraper-0.3.5.dist-info/entry_points.txt,sha256=OIX3J1k8OFZsYonyv8eFf7eC_5_RaBPrP6NZ5pvNMfU,73
+twomartens.allrisscraper-0.3.5.dist-info/namespace_packages.txt,sha256=JxSrjAIU_aXOZI2ds-JBPk5qpvqk0Qj4eCqVI-cLmnI,11
+twomartens.allrisscraper-0.3.5.dist-info/top_level.txt,sha256=JxSrjAIU_aXOZI2ds-JBPk5qpvqk0Qj4eCqVI-cLmnI,11
+twomartens.allrisscraper-0.3.5.dist-info/RECORD,,
