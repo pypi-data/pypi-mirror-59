@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+Fool_house.egg-info/PKG-INFO
+Fool_house.egg-info/SOURCES.txt
+Fool_house.egg-info/dependency_links.txt
+Fool_house.egg-info/top_level.txt
+fool_house/__init__.py
+fool_house/__main__.py
+fool_house/schizo_count.py
