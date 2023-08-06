@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+misc/max_prob.png
+misc/regret_plot.png
+misc/regret_plot2.png
+slots/__init__.py
+slots/slots.py
+slots.egg-info/PKG-INFO
+slots.egg-info/SOURCES.txt
+slots.egg-info/dependency_links.txt
+slots.egg-info/requires.txt
+slots.egg-info/top_level.txt
