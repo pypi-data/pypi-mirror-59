@@ -1,0 +1,16 @@
+LATTE/LATTE_DV.py,sha256=Vb48e6YLKB57_Lcs4Y7Jk2XdFNqQvA-1y8GNPB1r0fM,24453
+LATTE/LATTEbrew.py,sha256=oEGyNnKjPqS2DpwMU6ve9nYQcapbeovsuBU_k0c1H6o,27830
+LATTE/LATTEutils.py,sha256=puK4py_ga6SFimY_dO7zYzoOenZxeQoS_LFvTWp8bts,181234
+LATTE/__init__.py,sha256=248SFgOW8tTzDpyY6euJ1BwIHMa4uimdKSyc2FGEEZE,21
+LATTE/__main__.py,sha256=rhHcGv2uI_gInkf00FAFIXkHbJHK1pAV3e1T3pStKNQ,19194
+LATTE/filters.py,sha256=lRv0pzbr7t09HrVd72ijFdJLRUF7cAbPoLfWFjujVjI,7374
+LATTE/norm.py,sha256=6doUouaCAGkLcy-TDkalrT2Tnn-ulSfw28R_OuFAqa0,3131
+LATTE/pyaneti_LATTE.py,sha256=xlB2SQ1jfufOJyt727TWn1qw7OTkVRllok0Fb2N_u3o,3733
+LATTE/test.py,sha256=XajujPaXF5wt7nxBXP57uKSRV1SzOT8tpomF_09eqc0,161
+LATTE/pyaneti_LATTE/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tessLATTE-0.1.9.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+tessLATTE-0.1.9.dist-info/METADATA,sha256=jUBZK68L3fi6SwsqVgT_Yaxf8VkeESN3ai6GCZ6Vt2o,10950
+tessLATTE-0.1.9.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+tessLATTE-0.1.9.dist-info/entry_points.txt,sha256=aK9Ex5xN6vwzlwoCmx_ThT2U0GO5DNa1YA45jhfJcBA,47
+tessLATTE-0.1.9.dist-info/top_level.txt,sha256=-mklI7e9PY_30cyWBxTlLvFlSu4If6GcOkndq7yUwys,6
+tessLATTE-0.1.9.dist-info/RECORD,,
