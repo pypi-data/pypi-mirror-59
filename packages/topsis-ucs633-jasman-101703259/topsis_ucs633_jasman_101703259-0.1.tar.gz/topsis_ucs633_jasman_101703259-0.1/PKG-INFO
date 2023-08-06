@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: topsis_ucs633_jasman_101703259
+Version: 0.1
+Summary: An implementation of topsis approach in python
+Home-page: https://github.com/jasmanpreet/topsis-in-python
+Author: Jasman
+Author-email: jkaur1_be17@thapar.edu
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: python,topsis,ucs633
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
