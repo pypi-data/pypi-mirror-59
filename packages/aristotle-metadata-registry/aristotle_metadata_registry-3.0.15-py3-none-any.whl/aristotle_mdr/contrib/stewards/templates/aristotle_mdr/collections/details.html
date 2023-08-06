@@ -1,0 +1,108 @@
+{% extends "aristotle_mdr/stewards/base.html" %}
+{% load i18n aristotle_tags util_tags %}
+{% has_group_perm group "manage_collections" as can_manage_collections %}
+
+
+{% block title %}{{ stewardship_organisation }}{% endblock %}
+
+{% block steward_content %}
+
+    <h2>
+        {{ item.name}}
+    </h2>
+
+    <section>
+
+    {% include "aristotle_mdr/collections/helpers/actionbar.html" %}
+
+    <aside id="sminfobox" class="col-md-3 pull-right">
+        <header>{{ item.name }}</header>
+        <dl>
+            <dt>Publication</dt>
+            <dd>
+                <ul>
+                    {% for record in item.publication_details.all %}
+                    <li>
+                        {{ record.get_permission_display }} from {% timetag record.publication_date %}
+                    </li>
+                    {% empty %}
+                    <li>This item is not published</li>
+                    {% endfor %}
+                </ul>
+            </dd>
+            {% if item.parent_collection %}
+                <dt>Parent Collection</dt>
+                <dd>
+                    <a href="{% url 'aristotle:stewards:group:collection_detail_view' stewardship_organisation.slug item.parent_collection.id %}">
+                      {{ item.parent_collection.name }}
+                    </a>
+                </dd>
+            {% endif %}
+            <dt>Created</dt>
+            <dd>{% timetag item.created %}</dd>
+            <dt>Last Updated</dt>
+            <dd>{% timetag item.modified %}</dd>
+        </dl>
+    </aside>
+
+
+    <h3>Description</h3>
+    {% if item.description %}
+        <p>{{ item.description|bleach }}</p>
+    {% else %}
+        <em>This collection has no description</em>
+    {% endif %}
+
+    {% if type_counts %}
+        <h3>Items Summary</h3>
+        <ul>
+        {% for type, count in type_counts.items %}
+            <li>{{ type.model_class|model_verbose_name_plural }}: {{ count }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+
+    <h3 class="clear">Items</h3>
+    <table class="table">
+        <tbody>
+            {% for obj in sub_collections.all %}
+            <tr>
+                <td>
+                    <a href="{{ obj.get_absolute_url }}">{{obj.name}}</a>
+                    <br>
+                    <div class="small" style="white-space: nowrap;">
+                        {{ obj.item_type_name }}
+                    </div>
+                </td>
+                <td>
+                    {{ obj.description|striptags }}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        
+    </table>
+
+    <table class="table">
+        <thead></thead>
+        <tbody>
+            {% for obj in metadata %}
+            <tr>
+                <td>
+                <a href="{{ obj.get_absolute_url }}">{{obj.name}}</a><br>
+                    <div class="small" style="white-space: nowrap;">
+                        {{ obj.item_type_name }}
+                    </div>
+                </td>
+                <td>
+                    {% include obj.item.list_details_template with item=obj %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        
+    </table>
+
+    </section>
+
+{% endblock %}
