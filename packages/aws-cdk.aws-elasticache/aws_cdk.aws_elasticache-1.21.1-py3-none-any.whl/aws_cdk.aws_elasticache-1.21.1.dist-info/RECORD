@@ -1,0 +1,8 @@
+aws_cdk/aws_elasticache/__init__.py,sha256=OAiEcc2buuDztpC904t-Cp6nHStLcY_q5iXqzyF4YQY,117116
+aws_cdk/aws_elasticache/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_elasticache/_jsii/__init__.py,sha256=aqZXp3sktFzdgCZRieMvucBwmD0tpCoC8nfnIJW4zOQ,177
+aws_cdk/aws_elasticache/_jsii/aws-elasticache@1.21.1.jsii.tgz,sha256=roLJFDTha7vVX4GIsBH_UDbBn3pMQBT5CiqP-oS6CwE,41244
+aws_cdk.aws_elasticache-1.21.1.dist-info/METADATA,sha256=40sePdZbO-GWtkr36vx_DkE9Oo-oKqfc3pLjqXQVBMk,1634
+aws_cdk.aws_elasticache-1.21.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+aws_cdk.aws_elasticache-1.21.1.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_elasticache-1.21.1.dist-info/RECORD,,
