@@ -1,0 +1,14 @@
+nbx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nbx/_nbdev.py,sha256=p060xlYmCNSNIF_DCZ2SwAv0m39BUUsOslQSoKbgV4E,1289
+nbx/om.py,sha256=95qBeBaxIv4XwzarlTa2jLuImerNdxC17OGnJoe-wow,7702
+nbx/pspace.py,sha256=bVUS7ZQsxS_yWJbJXmSoM8rNO64INd-ZdF_ZKc0Zm_M,3120
+nbx/templ.py,sha256=zc1gdN6y21qB4I54i9_PoRAhwDP-yfapGi-rKyK1Hdo,1141
+test_nbx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_nbx/experiment.py,sha256=ZYsDQvRg0hAikRxj31PTozPFXhpUpyaYyqAuJ4q-R0I,681
+test_nbx/wrapper.py,sha256=I3jBv7LG9lZFPmSiyNjG77ait6EdvmkJexJpb1CZmBI,950
+nbx-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nbx-0.0.2.dist-info/METADATA,sha256=ztYUuignb20yj3C3kBk4qaO-TWQ_wu5Q6VA42TbCctg,5039
+nbx-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+nbx-0.0.2.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+nbx-0.0.2.dist-info/top_level.txt,sha256=tWq7BK7RB-Z0RHbrugtULn0g1f8ahDd7QxaOHMOqJU4,4
+nbx-0.0.2.dist-info/RECORD,,
