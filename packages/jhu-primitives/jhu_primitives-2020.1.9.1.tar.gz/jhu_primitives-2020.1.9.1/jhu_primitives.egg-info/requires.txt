@@ -1,0 +1,10 @@
+d3m
+typing
+scipy
+numpy
+jinja2
+scipy
+cython
+lapjv==1.2.0
+graspy>=0.0.2
+networkx
