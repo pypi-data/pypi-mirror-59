@@ -1,0 +1,16 @@
+
+[dev]
+netifaces
+pytest
+pytest-asyncio
+pytest-watch
+pytz
+
+[examples]
+pyaudio
+
+[test]
+netifaces
+pytest
+pytest-asyncio
+pytz
