@@ -1,0 +1,11 @@
+uarray-0.6.0.dist-info/top_level.txt,sha256=gWrAWzY0Mj5-QR13QhN3vWteA6-PCq6QGPQsHczIWO4,7
+uarray-0.6.0.dist-info/WHEEL,sha256=a9ZIsWOBTpAZiUOADB9tURiwqnpn9ET3u8XtZfXk9j4,110
+uarray-0.6.0.dist-info/RECORD,,
+uarray-0.6.0.dist-info/METADATA,sha256=6rFYl2e3twXSRM7G_dYkwEQHYpQ-Mdq9I0e-LfV2t_M,3536
+uarray/_uarray.cpython-35m-i386-linux-gnu.so,sha256=C3QBUyKIN4TpkNmonMElUmlH1g9LLqib4cvaW_jH03k,722660
+uarray/_backend.py,sha256=jgWjr2TR41tEBdYAn4h6qC57ePg6VU4urMlr4yk4P_U,13544
+uarray/__init__.py,sha256=NxyogGGSICVYuIqYt8a_iveA83bq3z-WSB0or_Yy8xI,4568
+uarray/_version.py,sha256=5d56QcPDBk5wwJjXsHCF-EbwvT1yeYrxgZqWpX90V4Q,497
+uarray/tests/test_uarray.py,sha256=5ohKtDVUiTNoOHOe3pg53Tu1O47laWhtttK5uNmgz6Y,7023
+uarray/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uarray/tests/conftest.py,sha256=MJBddI68cTxQKeKcNQIWpp1Nd_q6ExnUQvrk0ZvlfOg,370
