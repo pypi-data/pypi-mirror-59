@@ -1,0 +1,630 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>pydtmc.plotting</title>
+    <link rel="stylesheet" href="../../_static/traditional.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0 right"><a href="../../index.html">Homepage</a></li>
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for pydtmc.plotting</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;plot_eigenvalues&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;plot_graph&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;plot_redistributions&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;plot_walk&#39;</span>
+<span class="p">]</span>
+
+
+<span class="c1">###########</span>
+<span class="c1"># IMPORTS #</span>
+<span class="c1">###########</span>
+
+
+<span class="c1"># Major</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.colors</span> <span class="k">as</span> <span class="nn">mplc</span>
+<span class="kn">import</span> <span class="nn">matplotlib.image</span> <span class="k">as</span> <span class="nn">mpli</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">pp</span>
+<span class="kn">import</span> <span class="nn">matplotlib.ticker</span> <span class="k">as</span> <span class="nn">mplt</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">numpy.linalg</span> <span class="k">as</span> <span class="nn">npl</span>
+
+<span class="c1"># Minor</span>
+
+<span class="kn">from</span> <span class="nn">inspect</span> <span class="k">import</span> <span class="p">(</span>
+    <span class="n">trace</span>
+<span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">io</span> <span class="k">import</span> <span class="p">(</span>
+    <span class="n">BytesIO</span>
+<span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">subprocess</span> <span class="k">import</span> <span class="p">(</span>
+    <span class="n">call</span><span class="p">,</span>
+    <span class="n">PIPE</span>
+<span class="p">)</span>
+
+<span class="c1"># Internal</span>
+
+<span class="kn">from</span> <span class="nn">.custom_types</span> <span class="k">import</span> <span class="p">(</span>
+    <span class="c1"># Specific</span>
+    <span class="n">tdistributions</span><span class="p">,</span>
+    <span class="n">tmc</span><span class="p">,</span>
+    <span class="n">oplot</span><span class="p">,</span>
+    <span class="n">ostate</span><span class="p">,</span>
+    <span class="n">tstateswalk_flex</span><span class="p">,</span>
+    <span class="n">ostatus</span><span class="p">,</span>
+    <span class="c1"># Lists</span>
+    <span class="n">tlist_str</span>
+<span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">.exceptions</span> <span class="k">import</span> <span class="p">(</span>
+    <span class="n">ValidationError</span>
+<span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">.validation</span> <span class="k">import</span> <span class="p">(</span>
+    <span class="n">validate_boolean</span><span class="p">,</span>
+    <span class="n">validate_distribution</span><span class="p">,</span>
+    <span class="n">validate_enumerator</span><span class="p">,</span>
+    <span class="n">validate_dpi</span><span class="p">,</span>
+    <span class="n">validate_markov_chain</span><span class="p">,</span>
+    <span class="n">validate_state</span><span class="p">,</span>
+    <span class="n">validate_status</span><span class="p">,</span>
+    <span class="n">validate_walk</span>
+<span class="p">)</span>
+
+
+<span class="c1">#############</span>
+<span class="c1"># CONSTANTS #</span>
+<span class="c1">#############</span>
+
+
+<span class="n">color_black</span> <span class="o">=</span> <span class="s1">&#39;#000000&#39;</span>
+<span class="n">color_gray</span> <span class="o">=</span> <span class="s1">&#39;#E0E0E0&#39;</span>
+<span class="n">color_white</span> <span class="o">=</span> <span class="s1">&#39;#FFFFFF&#39;</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;#80B1D3&#39;</span><span class="p">,</span> <span class="s1">&#39;#FFED6F&#39;</span><span class="p">,</span> <span class="s1">&#39;#B3DE69&#39;</span><span class="p">,</span> <span class="s1">&#39;#BEBADA&#39;</span><span class="p">,</span> <span class="s1">&#39;#FDB462&#39;</span><span class="p">,</span> <span class="s1">&#39;#8DD3C7&#39;</span><span class="p">,</span> <span class="s1">&#39;#FB8072&#39;</span><span class="p">,</span> <span class="s1">&#39;#FCCDE5&#39;</span><span class="p">]</span>
+
+
+<span class="c1">#############</span>
+<span class="c1"># FUNCTIONS #</span>
+<span class="c1">#############</span>
+
+
+<div class="viewcode-block" id="plot_eigenvalues"><a class="viewcode-back" href="../../pydtmc.html#pydtmc.plot_eigenvalues">[docs]</a><span class="k">def</span> <span class="nf">plot_eigenvalues</span><span class="p">(</span><span class="n">mc</span><span class="p">:</span> <span class="n">tmc</span><span class="p">,</span> <span class="n">dpi</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">oplot</span><span class="p">:</span>
+
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The function plots the eigenvalues of the Markov chain on the complex plane.</span>
+
+<span class="sd">    :param mc: the target Markov chain.</span>
+<span class="sd">    :param dpi: the resolution of the plot expressed in dots per inch (by default, 100).</span>
+<span class="sd">    :return: None if Matplotlib is in interactive mode as the plot is immediately displayed, otherwise the handles of the plot.</span>
+<span class="sd">    :raises ValidationError: if any input argument is not compliant.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">try</span><span class="p">:</span>
+
+        <span class="n">mc</span> <span class="o">=</span> <span class="n">validate_markov_chain</span><span class="p">(</span><span class="n">mc</span><span class="p">)</span>
+        <span class="n">dpi</span> <span class="o">=</span> <span class="n">validate_dpi</span><span class="p">(</span><span class="n">dpi</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">argument</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">trace</span><span class="p">()[</span><span class="mi">0</span><span class="p">][</span><span class="mi">4</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;@arg@&#39;</span><span class="p">,</span> <span class="n">argument</span><span class="p">))</span> <span class="kn">from</span> <span class="nn">None</span>
+
+    <span class="n">figure</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">pp</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">)</span>
+
+    <span class="n">handles</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+    <span class="n">labels</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+
+    <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+
+    <span class="n">values</span> <span class="o">=</span> <span class="n">npl</span><span class="o">.</span><span class="n">eigvals</span><span class="p">(</span><span class="n">mc</span><span class="o">.</span><span class="n">p</span><span class="p">)</span>
+    <span class="n">values</span> <span class="o">=</span> <span class="n">values</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">complex</span><span class="p">)</span>
+    <span class="n">values_final</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">])</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">complex</span><span class="p">)))</span>
+
+    <span class="n">x_unit_circle</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+    <span class="n">y_unit_circle</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">mc</span><span class="o">.</span><span class="n">is_ergodic</span><span class="p">:</span>
+
+        <span class="n">values_abs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">values</span><span class="p">))</span>
+        <span class="n">values_ct1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">values_abs</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">values_ct1</span><span class="p">):</span>
+
+            <span class="n">mu</span> <span class="o">=</span> <span class="n">values_abs</span><span class="p">[</span><span class="o">~</span><span class="n">values_ct1</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">):</span>
+
+                <span class="n">x_slem_circle</span> <span class="o">=</span> <span class="n">mu</span> <span class="o">*</span> <span class="n">x_unit_circle</span>
+                <span class="n">y_slem_circle</span> <span class="o">=</span> <span class="n">mu</span> <span class="o">*</span> <span class="n">y_unit_circle</span>
+
+                <span class="n">cs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">,</span> <span class="mi">201</span><span class="p">)</span>
+                <span class="n">x_spectral_gap</span><span class="p">,</span> <span class="n">y_spectral_gap</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">cs</span><span class="p">,</span> <span class="n">cs</span><span class="p">)</span>
+                <span class="n">z_spectral_gap</span> <span class="o">=</span> <span class="n">x_spectral_gap</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y_spectral_gap</span><span class="o">**</span><span class="mi">2</span>
+
+                <span class="n">h</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">contourf</span><span class="p">(</span><span class="n">x_spectral_gap</span><span class="p">,</span> <span class="n">y_spectral_gap</span><span class="p">,</span> <span class="n">z_spectral_gap</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="p">[</span><span class="n">mu</span> <span class="o">**</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
+                <span class="n">handles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pp</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">((</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">fc</span><span class="o">=</span><span class="n">h</span><span class="o">.</span><span class="n">collections</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_facecolor</span><span class="p">()[</span><span class="mi">0</span><span class="p">]))</span>
+                <span class="n">labels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Spectral Gap&#39;</span><span class="p">)</span>
+
+                <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_slem_circle</span><span class="p">,</span> <span class="n">y_slem_circle</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_unit_circle</span><span class="p">,</span> <span class="n">y_unit_circle</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">3.0</span><span class="p">)</span>
+
+    <span class="n">h</span><span class="p">,</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">values_final</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">imag</span><span class="p">(</span><span class="n">values_final</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;None&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mf">12.5</span><span class="p">)</span>
+    <span class="n">handles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+    <span class="n">labels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Eigenvalues&#39;</span><span class="p">)</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+
+    <span class="n">formatter</span> <span class="o">=</span> <span class="n">mplt</span><span class="o">.</span><span class="n">FormatStrFormatter</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%g</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">formatter</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">formatter</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;major&#39;</span><span class="p">)</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">handles</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">labels</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1</span><span class="p">),</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper center&#39;</span><span class="p">,</span> <span class="n">ncol</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">handles</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Eigenplot&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">15.0</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+
+    <span class="n">pp</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">bottom</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">pp</span><span class="o">.</span><span class="n">isinteractive</span><span class="p">():</span>
+        <span class="n">pp</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">block</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">return</span> <span class="n">figure</span><span class="p">,</span> <span class="n">ax</span></div>
+
+
+<div class="viewcode-block" id="plot_graph"><a class="viewcode-back" href="../../pydtmc.html#pydtmc.plot_graph">[docs]</a><span class="k">def</span> <span class="nf">plot_graph</span><span class="p">(</span><span class="n">mc</span><span class="p">:</span> <span class="n">tmc</span><span class="p">,</span> <span class="n">nodes_color</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">nodes_type</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">edges_color</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">edges_value</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">dpi</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">oplot</span><span class="p">:</span>
+
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The function plots the directed graph of the Markov chain.</span>
+
+<span class="sd">    | **Notes:** Graphviz and Pydot are not required, but they provide access to extended graphs with additional features.</span>
+
+<span class="sd">    :param mc: the target Markov chain.</span>
+<span class="sd">    :param nodes_color: a boolean indicating whether to display colored nodes based on communicating classes (by default, True).</span>
+<span class="sd">    :param nodes_type: a boolean indicating whether to use a different shape for every node type (by default, True).</span>
+<span class="sd">    :param edges_color: a boolean indicating whether to display edges using a gradient based on transition probabilities, valid only for extended graphs (by default, True).</span>
+<span class="sd">    :param edges_value: a boolean indicating whether to display the transition probability of every edge (by default, True).</span>
+<span class="sd">    :param dpi: the resolution of the plot expressed in dots per inch (by default, 100).</span>
+<span class="sd">    :return: None if Matplotlib is in interactive mode as the plot is immediately displayed, otherwise the handles of the plot.</span>
+<span class="sd">    :raises ValidationError: if any input argument is not compliant.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">edge_colors</span><span class="p">(</span><span class="n">hex_from</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">hex_to</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">steps</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">tlist_str</span><span class="p">:</span>
+
+        <span class="n">begin</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">hex_from</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="mi">2</span><span class="p">],</span> <span class="mi">16</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">)]</span>
+        <span class="n">end</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">hex_to</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="mi">2</span><span class="p">],</span> <span class="mi">16</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">)]</span>
+
+        <span class="n">clist</span> <span class="o">=</span> <span class="p">[</span><span class="n">hex_from</span><span class="p">]</span>
+
+        <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">steps</span><span class="p">):</span>
+            <span class="n">vector</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">begin</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="o">*</span> <span class="p">(</span><span class="n">end</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="n">begin</span><span class="p">[</span><span class="n">j</span><span class="p">]))</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
+            <span class="n">rgb</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">vector</span><span class="p">]</span>
+            <span class="n">clist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;#{&quot;&quot;.join([&quot;0</span><span class="si">{0:x}</span><span class="s1">&quot;.format(v) if v &lt; 16 else &quot;</span><span class="si">{0:x}</span><span class="s1">&quot;.format(v) for v in rgb])}&#39;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">clist</span>
+
+    <span class="k">def</span> <span class="nf">node_colors</span><span class="p">(</span><span class="n">count</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">tlist_str</span><span class="p">:</span>
+
+        <span class="n">colors_limit</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">colors</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="n">offset</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="n">clist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+
+        <span class="k">while</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">clist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="n">offset</span><span class="p">])</span>
+            <span class="n">offset</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">offset</span> <span class="o">&gt;</span> <span class="n">colors_limit</span><span class="p">:</span>
+                <span class="n">offset</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">count</span> <span class="o">-=</span> <span class="mi">1</span>
+
+        <span class="k">return</span> <span class="n">clist</span>
+
+    <span class="k">try</span><span class="p">:</span>
+
+        <span class="n">mc</span> <span class="o">=</span> <span class="n">validate_markov_chain</span><span class="p">(</span><span class="n">mc</span><span class="p">)</span>
+        <span class="n">nodes_color</span> <span class="o">=</span> <span class="n">validate_boolean</span><span class="p">(</span><span class="n">nodes_color</span><span class="p">)</span>
+        <span class="n">nodes_type</span> <span class="o">=</span> <span class="n">validate_boolean</span><span class="p">(</span><span class="n">nodes_type</span><span class="p">)</span>
+        <span class="n">edges_color</span> <span class="o">=</span> <span class="n">validate_boolean</span><span class="p">(</span><span class="n">edges_color</span><span class="p">)</span>
+        <span class="n">edges_value</span> <span class="o">=</span> <span class="n">validate_boolean</span><span class="p">(</span><span class="n">edges_value</span><span class="p">)</span>
+        <span class="n">dpi</span> <span class="o">=</span> <span class="n">validate_dpi</span><span class="p">(</span><span class="n">dpi</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">argument</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">trace</span><span class="p">()[</span><span class="mi">0</span><span class="p">][</span><span class="mi">4</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;@arg@&#39;</span><span class="p">,</span> <span class="n">argument</span><span class="p">))</span> <span class="kn">from</span> <span class="nn">None</span>
+
+    <span class="n">extended_graph</span> <span class="o">=</span> <span class="kc">True</span>
+
+    <span class="c1"># noinspection PyBroadException</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">call</span><span class="p">([</span><span class="s1">&#39;dot&#39;</span><span class="p">,</span> <span class="s1">&#39;-V&#39;</span><span class="p">],</span> <span class="n">stdout</span><span class="o">=</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">stderr</span><span class="o">=</span><span class="n">PIPE</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+        <span class="n">extended_graph</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">pass</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">import</span> <span class="nn">pydot</span> <span class="k">as</span> <span class="nn">pyd</span>
+    <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+        <span class="n">extended_graph</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">pass</span>
+
+    <span class="n">g</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">to_directed_graph</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">extended_graph</span><span class="p">:</span>
+
+        <span class="n">g_pydot</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">nx_pydot</span><span class="o">.</span><span class="n">to_pydot</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">nodes_color</span><span class="p">:</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">node_colors</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mc</span><span class="o">.</span><span class="n">communicating_classes</span><span class="p">))</span>
+            <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">g_pydot</span><span class="o">.</span><span class="n">get_nodes</span><span class="p">():</span>
+                <span class="n">state</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">get_name</span><span class="p">()</span>
+                <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">cc</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">mc</span><span class="o">.</span><span class="n">communicating_classes</span><span class="p">):</span>
+                    <span class="k">if</span> <span class="n">state</span> <span class="ow">in</span> <span class="n">cc</span><span class="p">:</span>
+                        <span class="n">node</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s1">&#39;filled&#39;</span><span class="p">)</span>
+                        <span class="n">node</span><span class="o">.</span><span class="n">set_fillcolor</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
+                        <span class="k">break</span>
+
+        <span class="k">if</span> <span class="n">nodes_type</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">g_pydot</span><span class="o">.</span><span class="n">get_nodes</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">node</span><span class="o">.</span><span class="n">get_name</span><span class="p">()</span> <span class="ow">in</span> <span class="n">mc</span><span class="o">.</span><span class="n">transient_states</span><span class="p">:</span>
+                    <span class="n">node</span><span class="o">.</span><span class="n">set_shape</span><span class="p">(</span><span class="s1">&#39;box&#39;</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">node</span><span class="o">.</span><span class="n">set_shape</span><span class="p">(</span><span class="s1">&#39;ellipse&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">edges_color</span><span class="p">:</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">edge_colors</span><span class="p">(</span><span class="n">color_gray</span><span class="p">,</span> <span class="n">color_black</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">edge</span> <span class="ow">in</span> <span class="n">g_pydot</span><span class="o">.</span><span class="n">get_edges</span><span class="p">():</span>
+                <span class="n">probability</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">transition_probability</span><span class="p">(</span><span class="n">edge</span><span class="o">.</span><span class="n">get_destination</span><span class="p">(),</span> <span class="n">edge</span><span class="o">.</span><span class="n">get_source</span><span class="p">())</span>
+                <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">probability</span> <span class="o">*</span> <span class="mf">20.0</span><span class="p">))</span> <span class="o">-</span> <span class="mi">1</span>
+                <span class="n">edge</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s1">&#39;filled&#39;</span><span class="p">)</span>
+                <span class="n">edge</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
+
+        <span class="k">if</span> <span class="n">edges_value</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">edge</span> <span class="ow">in</span> <span class="n">g_pydot</span><span class="o">.</span><span class="n">get_edges</span><span class="p">():</span>
+                <span class="n">probability</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">transition_probability</span><span class="p">(</span><span class="n">edge</span><span class="o">.</span><span class="n">get_destination</span><span class="p">(),</span> <span class="n">edge</span><span class="o">.</span><span class="n">get_source</span><span class="p">())</span>
+                <span class="k">if</span> <span class="n">probability</span><span class="o">.</span><span class="n">is_integer</span><span class="p">():</span>
+                    <span class="n">edge</span><span class="o">.</span><span class="n">set_label</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39; </span><span class="si">{probability:g}</span><span class="s1">.0 &#39;</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">edge</span><span class="o">.</span><span class="n">set_label</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39; {round(probability,2):g} &#39;</span><span class="p">)</span>
+
+        <span class="n">buffer</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">()</span>
+        <span class="n">buffer</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">g_pydot</span><span class="o">.</span><span class="n">create_png</span><span class="p">())</span>
+        <span class="n">buffer</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+        <span class="n">img</span> <span class="o">=</span> <span class="n">mpli</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span>
+        <span class="n">img_x</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="n">dpi</span>
+        <span class="n">img_y</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">dpi</span>
+
+        <span class="n">figure</span> <span class="o">=</span> <span class="n">pp</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="n">img_y</span><span class="p">,</span> <span class="n">img_x</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">)</span>
+        <span class="n">figure</span><span class="o">.</span><span class="n">figimage</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+        <span class="n">ax</span> <span class="o">=</span> <span class="n">figure</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+
+    <span class="k">else</span><span class="p">:</span>
+
+        <span class="n">mpi</span> <span class="o">=</span> <span class="n">pp</span><span class="o">.</span><span class="n">isinteractive</span><span class="p">()</span>
+        <span class="n">pp</span><span class="o">.</span><span class="n">interactive</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+        <span class="n">figure</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">pp</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">)</span>
+
+        <span class="n">positions</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">spring_layout</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+        <span class="n">node_colors_all</span> <span class="o">=</span> <span class="n">node_colors</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mc</span><span class="o">.</span><span class="n">communicating_classes</span><span class="p">))</span>
+
+        <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">g</span><span class="o">.</span><span class="n">nodes</span><span class="p">:</span>
+
+            <span class="n">node_color</span> <span class="o">=</span> <span class="kc">None</span>
+
+            <span class="k">if</span> <span class="n">nodes_color</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">cc</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">mc</span><span class="o">.</span><span class="n">communicating_classes</span><span class="p">):</span>
+                    <span class="k">if</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">cc</span><span class="p">:</span>
+                        <span class="n">node_color</span> <span class="o">=</span> <span class="n">node_colors_all</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
+                        <span class="k">break</span>
+
+            <span class="k">if</span> <span class="n">nodes_type</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">mc</span><span class="o">.</span><span class="n">transient_states</span><span class="p">:</span>
+                    <span class="n">node_shape</span> <span class="o">=</span> <span class="s1">&#39;s&#39;</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">node_shape</span> <span class="o">=</span> <span class="s1">&#39;o&#39;</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">node_shape</span> <span class="o">=</span> <span class="kc">None</span>
+
+            <span class="k">if</span> <span class="n">node_color</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">node_shape</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_nodes</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">positions</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">nodelist</span><span class="o">=</span><span class="p">[</span><span class="n">node</span><span class="p">],</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="n">node_color</span><span class="p">,</span> <span class="n">node_shape</span><span class="o">=</span><span class="n">node_shape</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">node_color</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">node_shape</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_nodes</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">positions</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">nodelist</span><span class="o">=</span><span class="p">[</span><span class="n">node</span><span class="p">],</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="n">node_color</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">node_color</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">node_shape</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_nodes</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">positions</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">nodelist</span><span class="o">=</span><span class="p">[</span><span class="n">node</span><span class="p">],</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">node_shape</span><span class="o">=</span><span class="n">node_shape</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_nodes</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">positions</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span>
+
+        <span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_labels</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">positions</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+
+        <span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edges</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">positions</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">arrows</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">edges_value</span><span class="p">:</span>
+
+            <span class="n">edges_values</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+
+            <span class="k">for</span> <span class="n">edge</span> <span class="ow">in</span> <span class="n">g</span><span class="o">.</span><span class="n">edges</span><span class="p">:</span>
+                <span class="n">probability</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">transition_probability</span><span class="p">(</span><span class="n">edge</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">edge</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                <span class="k">if</span> <span class="n">probability</span><span class="o">.</span><span class="n">is_integer</span><span class="p">():</span>
+                    <span class="n">value</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39; </span><span class="si">{probability:g}</span><span class="s1">.0 &#39;</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">value</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39; {round(probability,2):g} &#39;</span>
+                <span class="n">edges_values</span><span class="p">[(</span><span class="n">edge</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">edge</span><span class="p">[</span><span class="mi">1</span><span class="p">])]</span> <span class="o">=</span> <span class="n">value</span>
+
+            <span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edge_labels</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">positions</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">edge_labels</span><span class="o">=</span><span class="n">edges_values</span><span class="p">,</span> <span class="n">label_pos</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+
+        <span class="n">pp</span><span class="o">.</span><span class="n">interactive</span><span class="p">(</span><span class="n">mpi</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">pp</span><span class="o">.</span><span class="n">isinteractive</span><span class="p">():</span>
+        <span class="n">pp</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">block</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">return</span> <span class="n">figure</span><span class="p">,</span> <span class="n">ax</span></div>
+
+
+<div class="viewcode-block" id="plot_redistributions"><a class="viewcode-back" href="../../pydtmc.html#pydtmc.plot_redistributions">[docs]</a><span class="k">def</span> <span class="nf">plot_redistributions</span><span class="p">(</span><span class="n">mc</span><span class="p">:</span> <span class="n">tmc</span><span class="p">,</span> <span class="n">distributions</span><span class="p">:</span> <span class="n">tdistributions</span><span class="p">,</span> <span class="n">initial_status</span><span class="p">:</span> <span class="n">ostatus</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">plot_type</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;projection&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">oplot</span><span class="p">:</span>
+
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The function plots a redistribution of states on the given Markov chain.</span>
+
+<span class="sd">    :param mc: the target Markov chain.</span>
+<span class="sd">    :param distributions: a sequence of redistributions or the number of redistributions to perform.</span>
+<span class="sd">    :param initial_status: the initial state or the initial distribution of the states (if omitted, the states are assumed to be uniformly distributed).</span>
+<span class="sd">    :param plot_type: the type of plot to display (either heatmap or projection; projection by default).</span>
+<span class="sd">    :param dpi: the resolution of the plot expressed in dots per inch (by default, 100).</span>
+<span class="sd">    :return: None if Matplotlib is in interactive mode as the plot is immediately displayed, otherwise the handles of the plot.</span>
+<span class="sd">    :raises ValueError: if the &quot;distributions&quot; parameter represents a sequence of redistributions and the &quot;initial_status&quot; parameter does not match its first element.</span>
+<span class="sd">    :raises ValidationError: if any input argument is not compliant.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">try</span><span class="p">:</span>
+
+        <span class="n">mc</span> <span class="o">=</span> <span class="n">validate_markov_chain</span><span class="p">(</span><span class="n">mc</span><span class="p">)</span>
+        <span class="n">distributions</span> <span class="o">=</span> <span class="n">validate_distribution</span><span class="p">(</span><span class="n">distributions</span><span class="p">,</span> <span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">initial_status</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">initial_status</span> <span class="o">=</span> <span class="n">validate_status</span><span class="p">(</span><span class="n">initial_status</span><span class="p">,</span> <span class="n">mc</span><span class="o">.</span><span class="n">states</span><span class="p">)</span>
+
+        <span class="n">plot_type</span> <span class="o">=</span> <span class="n">validate_enumerator</span><span class="p">(</span><span class="n">plot_type</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;heatmap&#39;</span><span class="p">,</span> <span class="s1">&#39;projection&#39;</span><span class="p">])</span>
+        <span class="n">dpi</span> <span class="o">=</span> <span class="n">validate_dpi</span><span class="p">(</span><span class="n">dpi</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">argument</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">trace</span><span class="p">()[</span><span class="mi">0</span><span class="p">][</span><span class="mi">4</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;@arg@&#39;</span><span class="p">,</span> <span class="n">argument</span><span class="p">))</span> <span class="kn">from</span> <span class="nn">None</span>
+
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">distributions</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+        <span class="n">distributions</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">redistribute</span><span class="p">(</span><span class="n">distributions</span><span class="p">,</span> <span class="n">initial_status</span><span class="o">=</span><span class="n">initial_status</span><span class="p">,</span> <span class="n">include_initial</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">output_last</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">initial_status</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">distributions</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">initial_status</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;The &quot;initial_status&quot; parameter, if specified when the &quot;distributions&quot; parameter represents a sequence of redistributions, must match the first element.&#39;</span><span class="p">)</span>
+
+    <span class="n">distribution_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">distributions</span><span class="p">)</span>
+    <span class="n">distributions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">distributions</span><span class="p">)</span>
+
+    <span class="n">figure</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">pp</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">plot_type</span> <span class="o">==</span> <span class="s1">&#39;heatmap&#39;</span><span class="p">:</span>
+
+        <span class="n">color_map</span> <span class="o">=</span> <span class="n">mplc</span><span class="o">.</span><span class="n">LinearSegmentedColormap</span><span class="o">.</span><span class="n">from_list</span><span class="p">(</span><span class="s1">&#39;ColorMap&#39;</span><span class="p">,</span> <span class="p">[</span><span class="n">color_white</span><span class="p">,</span> <span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span> <span class="mi">20</span><span class="p">)</span>
+        <span class="n">ax_is</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">distributions</span><span class="p">),</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">color_map</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Steps&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">13.0</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">distribution_len</span> <span class="o">+</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span> <span class="k">if</span> <span class="n">distribution_len</span> <span class="o">&lt;=</span> <span class="mi">11</span> <span class="k">else</span> <span class="mf">10.0</span><span class="p">),</span> <span class="n">minor</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">distribution_len</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="n">minor</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">distribution_len</span><span class="p">,</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">distribution_len</span> <span class="o">&lt;=</span> <span class="mi">11</span> <span class="k">else</span> <span class="mi">10</span><span class="p">))</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">distribution_len</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="n">minor</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="n">minor</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">mc</span><span class="o">.</span><span class="n">states</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;minor&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span>
+
+        <span class="n">cb</span> <span class="o">=</span> <span class="n">figure</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">ax_is</span><span class="p">,</span> <span class="n">drawedges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
+        <span class="n">cb</span><span class="o">.</span><span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Redistplot (Heatmap)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">15.0</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+
+    <span class="k">else</span><span class="p">:</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_prop_cycle</span><span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">,</span> <span class="n">colors</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">distribution_len</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
+                <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">distribution_len</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="n">distributions</span><span class="p">[:,</span> <span class="n">i</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="n">mc</span><span class="o">.</span><span class="n">states</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
+                <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">distribution_len</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="n">distributions</span><span class="p">[:,</span> <span class="n">i</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="n">mc</span><span class="o">.</span><span class="n">states</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+        <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">distributions</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:],</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span> <span class="o">/</span> <span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">distributions</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">color_black</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Start&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">markeredgecolor</span><span class="o">=</span><span class="n">color_black</span><span class="p">,</span> <span class="n">markerfacecolor</span><span class="o">=</span><span class="n">color_black</span><span class="p">)</span>
+            <span class="n">legend_size</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">size</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">legend_size</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">size</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Steps&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">13.0</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">distribution_len</span><span class="p">,</span> <span class="mf">1.0</span> <span class="k">if</span> <span class="n">distribution_len</span> <span class="o">&lt;=</span> <span class="mi">11</span> <span class="k">else</span> <span class="mf">10.0</span><span class="p">))</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">distribution_len</span><span class="p">,</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">distribution_len</span> <span class="o">&lt;=</span> <span class="mi">11</span> <span class="k">else</span> <span class="mi">10</span><span class="p">))</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0</span> <span class="o">*</span> <span class="p">(</span><span class="n">distribution_len</span> <span class="o">*</span> <span class="mf">0.05</span><span class="p">),</span> <span class="n">distribution_len</span> <span class="o">*</span> <span class="mf">1.05</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Frequencies&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">13.0</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">1.05</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.15</span><span class="p">),</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper center&#39;</span><span class="p">,</span> <span class="n">ncol</span><span class="o">=</span><span class="n">legend_size</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Redistplot (Projection)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">15.0</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+
+        <span class="n">pp</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">bottom</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">pp</span><span class="o">.</span><span class="n">isinteractive</span><span class="p">():</span>
+        <span class="n">pp</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">block</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">return</span> <span class="n">figure</span><span class="p">,</span> <span class="n">ax</span></div>
+
+
+<div class="viewcode-block" id="plot_walk"><a class="viewcode-back" href="../../pydtmc.html#pydtmc.plot_walk">[docs]</a><span class="k">def</span> <span class="nf">plot_walk</span><span class="p">(</span><span class="n">mc</span><span class="p">:</span> <span class="n">tmc</span><span class="p">,</span> <span class="n">walk</span><span class="p">:</span> <span class="n">tstateswalk_flex</span><span class="p">,</span> <span class="n">initial_state</span><span class="p">:</span> <span class="n">ostate</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">plot_type</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;histogram&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">oplot</span><span class="p">:</span>
+
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The function plots a random walk on the given Markov chain.</span>
+
+<span class="sd">    :param mc: the target Markov chain.</span>
+<span class="sd">    :param walk: a sequence of states or the number of simulations to perform.</span>
+<span class="sd">    :param initial_state: the initial state of the walk (if omitted, it is chosen uniformly at random).</span>
+<span class="sd">    :param plot_type: the type of plot to display (one of histogram, sequence and transitions; histogram by default).</span>
+<span class="sd">    :param dpi: the resolution of the plot expressed in dots per inch (by default, 100).</span>
+<span class="sd">    :return: None if Matplotlib is in interactive mode as the plot is immediately displayed, otherwise the handles of the plot.</span>
+<span class="sd">    :raises ValueError: if the &quot;walk&quot; parameter represents a sequence of states and the &quot;initial_state&quot; parameter does not match its first element.</span>
+<span class="sd">    :raises ValidationError: if any input argument is not compliant.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">try</span><span class="p">:</span>
+
+        <span class="n">mc</span> <span class="o">=</span> <span class="n">validate_markov_chain</span><span class="p">(</span><span class="n">mc</span><span class="p">)</span>
+        <span class="n">walk</span> <span class="o">=</span> <span class="n">validate_walk</span><span class="p">(</span><span class="n">walk</span><span class="p">,</span> <span class="n">mc</span><span class="o">.</span><span class="n">states</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">initial_state</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">initial_state</span> <span class="o">=</span> <span class="n">validate_state</span><span class="p">(</span><span class="n">initial_state</span><span class="p">,</span> <span class="n">mc</span><span class="o">.</span><span class="n">states</span><span class="p">)</span>
+
+        <span class="n">plot_type</span> <span class="o">=</span> <span class="n">validate_enumerator</span><span class="p">(</span><span class="n">plot_type</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;histogram&#39;</span><span class="p">,</span> <span class="s1">&#39;sequence&#39;</span><span class="p">,</span> <span class="s1">&#39;transitions&#39;</span><span class="p">])</span>
+        <span class="n">dpi</span> <span class="o">=</span> <span class="n">validate_dpi</span><span class="p">(</span><span class="n">dpi</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">argument</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">trace</span><span class="p">()[</span><span class="mi">0</span><span class="p">][</span><span class="mi">4</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;@arg@&#39;</span><span class="p">,</span> <span class="n">argument</span><span class="p">))</span> <span class="kn">from</span> <span class="nn">None</span>
+
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">walk</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+        <span class="n">walk</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">walk</span><span class="p">,</span> <span class="n">initial_state</span><span class="o">=</span><span class="n">initial_state</span><span class="p">,</span> <span class="n">include_initial</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">output_indices</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">initial_state</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="p">(</span><span class="n">walk</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="n">initial_state</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;The &quot;initial_state&quot; parameter, if specified when the &quot;walk&quot; parameter represents a sequence of states, must match the first element.&#39;</span><span class="p">)</span>
+
+    <span class="n">walk_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">walk</span><span class="p">)</span>
+
+    <span class="n">figure</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">pp</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">plot_type</span> <span class="o">==</span> <span class="s1">&#39;histogram&#39;</span><span class="p">:</span>
+
+        <span class="n">walk_histogram</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">walk_len</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">walk</span><span class="p">):</span>
+            <span class="n">walk_histogram</span><span class="p">[</span><span class="n">s</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span>
+
+        <span class="n">walk_histogram</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">walk_histogram</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">walk_histogram</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="n">walk_histogram</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="n">color_black</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;States&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">13.0</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">))</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">mc</span><span class="o">.</span><span class="n">states</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Frequencies&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">13.0</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Walkplot (Histogram)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">15.0</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+
+    <span class="k">elif</span> <span class="n">plot_type</span> <span class="o">==</span> <span class="s1">&#39;sequence&#39;</span><span class="p">:</span>
+
+        <span class="n">walk_sequence</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">walk_len</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">walk</span><span class="p">):</span>
+            <span class="n">walk_sequence</span><span class="p">[</span><span class="n">s</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span>
+
+        <span class="n">color_map</span> <span class="o">=</span> <span class="n">mplc</span><span class="o">.</span><span class="n">LinearSegmentedColormap</span><span class="o">.</span><span class="n">from_list</span><span class="p">(</span><span class="s1">&#39;ColorMap&#39;</span><span class="p">,</span> <span class="p">[</span><span class="n">color_white</span><span class="p">,</span> <span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">walk_sequence</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">color_map</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Steps&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">13.0</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">walk_len</span> <span class="o">+</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span> <span class="k">if</span> <span class="n">walk_len</span> <span class="o">&lt;=</span> <span class="mi">11</span> <span class="k">else</span> <span class="mf">10.0</span><span class="p">),</span> <span class="n">minor</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">walk_len</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="n">minor</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">walk_len</span><span class="p">,</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">walk_len</span> <span class="o">&lt;=</span> <span class="mi">11</span> <span class="k">else</span> <span class="mi">10</span><span class="p">))</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">walk_len</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;States&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">13.0</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="n">minor</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="n">minor</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">mc</span><span class="o">.</span><span class="n">states</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;minor&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Walkplot (Sequence)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">15.0</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+
+    <span class="k">else</span><span class="p">:</span>
+
+        <span class="n">walk_transitions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">walk_len</span><span class="p">):</span>
+            <span class="n">walk_transitions</span><span class="p">[</span><span class="n">walk</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">],</span> <span class="n">walk</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">+=</span> <span class="mf">1.0</span>
+
+        <span class="n">walk_transitions</span> <span class="o">=</span> <span class="n">walk_transitions</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">walk_transitions</span><span class="p">)</span>
+
+        <span class="n">color_map</span> <span class="o">=</span> <span class="n">mplc</span><span class="o">.</span><span class="n">LinearSegmentedColormap</span><span class="o">.</span><span class="n">from_list</span><span class="p">(</span><span class="s1">&#39;ColorMap&#39;</span><span class="p">,</span> <span class="p">[</span><span class="n">color_white</span><span class="p">,</span> <span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span> <span class="mi">20</span><span class="p">)</span>
+        <span class="n">ax_is</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">walk_transitions</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">color_map</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="n">minor</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="n">minor</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">mc</span><span class="o">.</span><span class="n">states</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="n">minor</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">mc</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="n">minor</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">mc</span><span class="o">.</span><span class="n">states</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;minor&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span>
+
+        <span class="n">cb</span> <span class="o">=</span> <span class="n">figure</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">ax_is</span><span class="p">,</span> <span class="n">drawedges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
+        <span class="n">cb</span><span class="o">.</span><span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Walkplot (Transitions)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mf">15.0</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">pp</span><span class="o">.</span><span class="n">isinteractive</span><span class="p">():</span>
+        <span class="n">pp</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">block</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">return</span> <span class="n">figure</span><span class="p">,</span> <span class="n">ax</span></div>
+</pre></div>
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0 right"><a href="../../index.html">Homepage</a></li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Tommaso Belluzzo.
+    </div>
+  </body>
+</html>
