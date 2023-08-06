@@ -1,0 +1,4 @@
+ 
+    [trytond.modules]
+    import_product = trytond.modules.import_product
+    
