@@ -1,0 +1,8 @@
+metrecord/__init__.py,sha256=ggMNzhFYZ_BjJHbH3UrMicPPevPmtqXSRZ_FcponVHU,151
+metrecord/__version__.py,sha256=jp0ajFXaSBLnT8HUdrdCbtzqbWHwAkrMd7y8PmdHwDU,230
+metrecord/api.py,sha256=SbbCAEZxUa-vYPmD2zBbmrwIr6TRglLZ_iCPTkrVono,1067
+metrecord/exceptions.py,sha256=7IQP-9Eot5yXFV_K-_TePP8NyqQsS1l2OOdL3zckpmI,343
+metrecord-0.0.2.dist-info/METADATA,sha256=U4aATRIXCm10uuGRgidIE_EuCYC-O3x3xVZhOH7oEOQ,1410
+metrecord-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+metrecord-0.0.2.dist-info/top_level.txt,sha256=07luiFV8y8GAU4wsDVpmQCZZwyRlOlue3Zpy77goS5o,10
+metrecord-0.0.2.dist-info/RECORD,,
