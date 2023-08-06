@@ -1,0 +1,15 @@
+jrpytensorflow/__init__.py,sha256=RYX3yXVin_oTl59Y4p-mmVkoBUgvl-c46-iiwvk8o8U,1427
+jrpytensorflow/datasets/__init__.py,sha256=1W2Rv6fpg6PAQtG5NboyfcbfN_AiGrLAEpOyetQIThI,961
+jrpytensorflow/datasets/data/walking.zip,sha256=G83fd5bB13pVl2wNuX20gyzeccP9VFjn2hdYmlCVfgE,35524155
+jrpytensorflow/vignettes/practical1.pdf,sha256=8f01jgEEIIFE6ZS_kF2fMKILL9abnkBNc9ZX2UXvJ7s,22418
+jrpytensorflow/vignettes/practical2.pdf,sha256=UkoWbXjST43zIiDyfKmW1sV7dDndttsH6eWpZOZlbB4,25284
+jrpytensorflow/vignettes/practical3.pdf,sha256=dYbNQgofwN_yp8noXlp4ya-QZ0jKpvBOjdaCrVrXNJM,19590
+jrpytensorflow/vignettes/practical4.pdf,sha256=gqtaEPCCAF9SYk0Wvh9y_nYVT55TKTLjBpvkSPYZEek,40917
+jrpytensorflow/vignettes/solutions1.pdf,sha256=DPXCSubKEjii5yv7HcAgk4X7r3lCyb8GP3dFEKYGPdM,34453
+jrpytensorflow/vignettes/solutions2.pdf,sha256=mE2ZEpMuu-JVFs5rHfsEnzknUbr1qGTf4C5G8qqunAY,30362
+jrpytensorflow/vignettes/solutions3.pdf,sha256=n1DIjd8fCL3C6cCm-zxXDjSSgnR7GJvLysRCrstR3pY,28051
+jrpytensorflow/vignettes/solutions4.pdf,sha256=-O7jHQCpYKdCndhnIi8FaoIfjT4Tuoj8gCH5fTa8S5M,45309
+jrpytensorflow/vignettes.py,sha256=gnU3hT5XkaSrhkjpr0ljr5lTJ0XygO0f_X_C32Jb9uE,1091
+jrpytensorflow-0.1.8.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+jrpytensorflow-0.1.8.dist-info/METADATA,sha256=m_t_aacAyUtMyWF1GKY0JXmALRKKzVWLukkeFtBC6CQ,713
+jrpytensorflow-0.1.8.dist-info/RECORD,,
