@@ -1,0 +1,9 @@
+README.md
+setup.py
+guid_core/__init__.py
+guid_core/generate_GUID.py
+guid_core/strip_accents.py
+guid_core.egg-info/PKG-INFO
+guid_core.egg-info/SOURCES.txt
+guid_core.egg-info/dependency_links.txt
+guid_core.egg-info/top_level.txt
