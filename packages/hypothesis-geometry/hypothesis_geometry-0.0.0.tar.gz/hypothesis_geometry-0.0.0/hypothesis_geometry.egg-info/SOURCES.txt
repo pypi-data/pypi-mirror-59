@@ -1,0 +1,8 @@
+README.md
+setup.py
+hypothesis_geometry/__init__.py
+hypothesis_geometry.egg-info/PKG-INFO
+hypothesis_geometry.egg-info/SOURCES.txt
+hypothesis_geometry.egg-info/dependency_links.txt
+hypothesis_geometry.egg-info/requires.txt
+hypothesis_geometry.egg-info/top_level.txt
