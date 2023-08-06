@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ink8
+Version: 1.15
+Summary: Kubernetes Deployment Manager
+Home-page: https://github.com/wywfalcon/ink8
+Author: Falcon Wong
+Author-email: wywfalcon@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Click (==7.0)
+Requires-Dist: coloredlogs (==10.0)
+Requires-Dist: GitPython (==3.0.5)
+Requires-Dist: Jinja2 (==2.10.3)
+Requires-Dist: PyYAML (==5.3)
+
+UNKNOWN
+
+
