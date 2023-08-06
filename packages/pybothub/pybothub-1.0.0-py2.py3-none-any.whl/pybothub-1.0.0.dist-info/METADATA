@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pybothub
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/bothub-it/pybothub
+Author: Daniel Yohan
+Author-email: dyohan9@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Requires-Dist: requests (<=2.22.0,>=2.0.0)
+
+UNKNOWN
+
+
