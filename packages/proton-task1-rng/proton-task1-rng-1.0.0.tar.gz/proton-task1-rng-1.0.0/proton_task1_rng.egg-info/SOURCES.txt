@@ -1,0 +1,10 @@
+README.md
+setup.py
+proton_task1_rng.egg-info/PKG-INFO
+proton_task1_rng.egg-info/SOURCES.txt
+proton_task1_rng.egg-info/dependency_links.txt
+proton_task1_rng.egg-info/entry_points.txt
+proton_task1_rng.egg-info/top_level.txt
+task1_rng/__init__.py
+task1_rng/__main__.py
+task1_rng/random_generator.py
