@@ -1,0 +1,37 @@
+Metadata-Version: 1.1
+Name: percentile_rank
+Version: 1.0.1
+Summary: Returns the percentile of a value. Returns the same values as the Excel PERCENTRANK and PERCENTRANK.INC functions.
+Home-page: https://github.com/malcolmvr/percentile_rank
+Author: Malcolm van Raalte
+Author-email: malcolm@van.raalte.ca
+License: MIT
+Download-URL: https://github.com/malcolmvr/percentile_rank/archive/v1.0.1.tar.gz
+Description: # percentile_rank
+        
+        Returns the percentile of a value. Returns the same values as the Excel PERCENTRANK and PERCENTRANK.INC functions.
+        
+        ## Usage
+        
+        ```
+        pip install percentile_rank
+        from percentile_rank import percent_rank
+        percent_rank([1, 5, 20, 50, 55, 60, 70, 80, 90, 100], 44)
+        ```
+        
+        ## Credits
+        
+        Initially based on the answer provided by xlecoustillier On Stack Overflow:
+        https://stackoverflow.com/questions/17919263/what-is-the-excel-percentrank-algorithm-in-c
+        
+Keywords: percentile,rank,percentrank,percentrank.inc,excel
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
