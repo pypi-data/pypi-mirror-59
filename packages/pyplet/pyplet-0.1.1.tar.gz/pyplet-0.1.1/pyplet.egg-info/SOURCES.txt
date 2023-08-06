@@ -1,0 +1,15 @@
+README.md
+setup.py
+pyplet/__init__.py
+pyplet/code.py
+pyplet/feed.py
+pyplet/js_lib.py
+pyplet/primitives.py
+pyplet/server.py
+pyplet/transpiler.py
+pyplet/widgets.py
+pyplet.egg-info/PKG-INFO
+pyplet.egg-info/SOURCES.txt
+pyplet.egg-info/dependency_links.txt
+pyplet.egg-info/requires.txt
+pyplet.egg-info/top_level.txt

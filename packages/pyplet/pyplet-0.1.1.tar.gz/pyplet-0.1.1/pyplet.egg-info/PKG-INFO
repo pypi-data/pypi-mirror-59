@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pyplet
+Version: 0.1.1
+Summary: A library for creating small web applications with Python alone
+Home-page: https://github.com/ispgroupucl/pyplet
+Author: Maxime Istasse
+Author-email: istassem@gmail.com
+License: LGPL
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
