@@ -1,0 +1,5 @@
+========================
+affinitic.privatefolder
+========================
+
+User documentation

@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: affinitic.privatefolder
+Version: 1.0
+Summary: Folderish content type with only one private state
+Home-page: https://github.com/affinitic/affinitic.privatefolder
+Author: Laurent Lasudry
+Author-email: laurent.lasudry@affinitic.be
+License: GPL version 2
+Project-URL: Source, https://github.com/affinitic/affinitic.privatefolder
+Project-URL: Tracker, https://github.com/affinitic/affinitic.privatefolder/issues
+Project-URL: PyPI, https://pypi.python.org/pypi/affinitic.privatefolder
+Description: .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+           If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+           This text does not appear on pypi or github. It is a comment.
+        
+        =======================
+        affinitic.privatefolder
+        =======================
+        
+        This products allows you to add folders with only a 'Private' state.
+        You can create a simple Extranet with only this folder and the sharing tab.
+        
+        
+        Features
+        --------
+        
+        - Adds PrivateFolder content type
+        - Adds privatefolder_workflow workflow (with Private state)
+        
+        
+        Translations
+        ------------
+        
+        This product has been translated into
+        
+        - French
+        
+        
+        Installation
+        ------------
+        
+        Install affinitic.privatefolder by adding it to your buildout::
+        
+            [buildout]
+        
+            ...
+        
+            eggs =
+                affinitic.privatefolder
+        
+        
+        and then running ``bin/buildout``
+        
+        
+        Contribute
+        ----------
+        
+        - Issue Tracker: https://github.com/affinitic/affinitic.privatefolder/issues
+        - Source Code: https://github.com/affinitic/affinitic.privatefolder
+        
+        
+        License
+        -------
+        
+        The project is licensed under the GPLv2.
+        
+        
+        Credits
+        -------
+        
+        This package was developed by `Affinitic team <https://github.com/affinitic>`_.
+        
+        .. image:: http://www.affinitic.be/affinitic_logo.png
+           :alt: Affinitic website
+           :target: http://www.affinitic.be
+        
+        ``affinitic.privatefolder`` is licensed under GNU General Public License, version 2.
+        
+        
+        Contributors
+        ============
+        
+        - Laurent Lasudry, laurent.lasudry@affinitic.be
+        
+        
+        Changelog
+        =========
+        
+        
+        1.0 (2020-01-21)
+        ----------------
+        
+        - Initial release.
+          [laulaz]
+        
+Keywords: Python Plone
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: Addon
+Classifier: Framework :: Plone :: 5.1
+Classifier: Framework :: Plone :: 5.2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Requires-Python: ==2.7
+Provides-Extra: test

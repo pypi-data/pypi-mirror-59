@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<object name="portal_workflow" meta_type="Plone Workflow Tool">
+ <object name="privatefolder_workflow" meta_type="Workflow"/>
+ <bindings>
+  <type type_id="PrivateFolder">
+    <bound-workflow workflow_id="privatefolder_workflow"/>
+  </type>
+ </bindings>
+</object>
