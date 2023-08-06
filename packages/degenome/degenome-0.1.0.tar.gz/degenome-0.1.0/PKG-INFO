@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: degenome
+Version: 0.1.0
+Summary: Pipeline to convert differential gene expression matrices to Ideogram JSON
+Home-page: https://github.com/eweitz/degenome
+Author: Eric Weitz
+Author-email: eric.m.weitz@gmail.com
+License: UNKNOWN
+Description: DEGenome – Differential expression across the genome
+        ====================================================
+        |Build| |Coverage|
+        
+        DEGenome transforms differential gene expression data to Ideogram_ JSON.
+        
+        `Read the docs`_, and try the `DEGenome tutorial on Terra
+        <https://app.terra.bio/#workspaces/degenome/degenome/notebooks/launch/degenome-tutorial.ipynb>`_!
+        
+        .. |Build| image:: https://img.shields.io/circleci/build/github/eweitz/degenome.svg
+          :target: https://circleci.com/gh/eweitz/degenome
+        .. |Coverage| image:: https://codecov.io/gh/eweitz/degenome/branch/master/graph/badge.svg
+          :target: https://codecov.io/gh/eweitz/degenome
+        .. _Ideogram: https://github.com/eweitz/ideogram
+        .. _Read the docs: https://degenome.readthedocs.io
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Description-Content-Type: text/x-rst

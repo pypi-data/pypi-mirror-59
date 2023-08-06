@@ -1,0 +1,9 @@
+README.rst
+setup.py
+degenome/__init__.py
+degenome/dge_to_ideogram.py
+degenome/gtf_to_gen_pos.py
+degenome.egg-info/PKG-INFO
+degenome.egg-info/SOURCES.txt
+degenome.egg-info/dependency_links.txt
+degenome.egg-info/top_level.txt
