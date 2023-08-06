@@ -1,0 +1,13 @@
+auto_mechop/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auto_mechop/__main__.py,sha256=E-sObVTvK3F6XFHrebC_ySeXJTRdgK7YrCJdk2HRGXw,128
+auto_mechop/cli.py,sha256=OXkE0az7cnARRUX_vN2Qux3R39PwICEPWETQwSpqJDY,3757
+auto_mechop/google_drive.py,sha256=o41Q7FGMrX51fb1UVCGdzX-_gUYSxLTxz4fc5u_3CLc,8443
+auto_mechop/gui.py,sha256=qI0m3_RRvEigVJKxkqNFFhWH2faihhDspmAxfjAvBzs,2912
+auto_mechop/runner.py,sha256=aA7oiC1Ewh1EuiY16F7QqA4hWSJ5Iu3gh50Qh_OSlZM,7576
+auto_mechop/semester.py,sha256=X7lTVZM0UjqlbXnbLvkkxE-x4EsuwB1XlYvBFkfkdfk,7943
+auto_mechop/submit.py,sha256=w6w9pfm6x7O2huiP-mIGD3410yZxy_tQbeyFDKJJMLE,9963
+auto_mechop/util.py,sha256=h8Ov_PBnokr8bThPjflFOyEgh6BJVkIxveF_lIlZHoM,787
+usc_auto_mechop-1.0.5.dist-info/METADATA,sha256=XdupMLXMJ1QpdnbBxHVWKd3sw4z_GWIu1qWz68A08ow,364
+usc_auto_mechop-1.0.5.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+usc_auto_mechop-1.0.5.dist-info/top_level.txt,sha256=XWQ1c4izsyRH80p9idprNcEkr2p8_EnyEV3Ix__awjY,12
+usc_auto_mechop-1.0.5.dist-info/RECORD,,
