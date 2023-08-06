@@ -1,0 +1,8 @@
+README.md
+setup.py
+exceldirreader.egg-info/PKG-INFO
+exceldirreader.egg-info/SOURCES.txt
+exceldirreader.egg-info/dependency_links.txt
+exceldirreader.egg-info/top_level.txt
+excels_in_directory_reader/__init__.py
+excels_in_directory_reader/reader.py
