@@ -1,0 +1,52 @@
+# EMS Deploy script
+
+This project provides a general-purpose deploy script for the EMS projects. It runs the suitable docker-compose command based on the available docker-compose files located in the directory.
+
+## Install
+
+`pip install ems-deploy`
+
+## Directory structure and required files
+Deploy concatenates a `docker-compose` command.
+
+`docker-compose.yml` Required.
+`docker-compose.deploy.yml` Default if no tags are given when running the command.
+`docker-compose.<tag1>.<tag2>.<etc>.yml` Optional. Notice there can be any number of tags.
+
+## How to use
+`deploy [-h] [-d] [-v] [--dry-run] [tag]`
+
+If a tag is supplied, it will append all parent-tags too, and they are required. I.e. if we
+run the command `deploy debug.test`, it will add (and require) the following three files
+```
+docker-compose.yml
+docker-compose.debug.yml
+docker-compose.debug.test.yml
+```
+
+Notice one can also use the full file as a tag. That is, the following command will give the same result
+`deploy docker-compose.debug.test.yml`.
+
+The first level tag will be used as the project name, i.e. the `docker-compose -p` command.
+
+### Notes
+
+The following flags are always added to the `docker-compose` command:
+
+ - `--force-recreate`
+ - `--renew-anon-volumes`
+ - `--build`
+
+If the first level tag is `deploy`, the `-d` is automatically added.
+
+### Deploy
+To deploy the app with `docker-compose.yml` and `docker-compose.deploy.yml`, simply run
+
+`deploy`
+
+### Additional flags
+
+ - `-d` Detaches the process (this is automatically done in deploy-mode, but not in debug-mode)
+ - `-v` Writes the resulting command to the terminal.
+ - `--dry-run` Will not execute the command
+
