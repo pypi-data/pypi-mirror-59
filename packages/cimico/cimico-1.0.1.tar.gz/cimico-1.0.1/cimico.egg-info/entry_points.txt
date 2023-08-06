@@ -1,0 +1,3 @@
+[console_scripts]
+cimico = cimico.main:main
+

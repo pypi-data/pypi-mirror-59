@@ -1,0 +1,16 @@
+README.md
+setup.py
+cimico/__init__.py
+cimico/__main__.py
+cimico/example.py
+cimico/generatevid.py
+cimico/main.py
+cimico/outputjson.py
+cimico/testsuite.py
+cimico/writetojson.py
+cimico.egg-info/PKG-INFO
+cimico.egg-info/SOURCES.txt
+cimico.egg-info/dependency_links.txt
+cimico.egg-info/entry_points.txt
+cimico.egg-info/requires.txt
+cimico.egg-info/top_level.txt
