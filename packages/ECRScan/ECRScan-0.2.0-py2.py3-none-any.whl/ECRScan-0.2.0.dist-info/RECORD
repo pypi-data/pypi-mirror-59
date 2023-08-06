@@ -1,0 +1,9 @@
+ecrscan/__init__.py,sha256=YEbxOyA4NnHCqOkbAeVJ0IpQIx9YcJMkiD7wg9oLsI4,18
+ecrscan/command.py,sha256=WzxR3inPVdXsYhuhsldF2_jgrtNrHnaKJ0Qhfb73Q80,2904
+ecrscan/utility.py,sha256=HfE_U9G-kWR2Rvs5PjX1ypPRnkcaQZbSmqibCJd6cn8,3524
+ECRScan-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ECRScan-0.2.0.dist-info/METADATA,sha256=nwCn3CeHTe2AP9ozXfNw7H7JBXcOeStMzoY6CwylQ24,354
+ECRScan-0.2.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+ECRScan-0.2.0.dist-info/entry_points.txt,sha256=Gdly1OVNWLFD442xFwUqu0KkKWNEN0JaOceH9EwrhHE,67
+ECRScan-0.2.0.dist-info/top_level.txt,sha256=Bfc67rNzu7sOuLgg3jsCIuaBa9jma6XbnTNycx2OoCg,8
+ECRScan-0.2.0.dist-info/RECORD,,
