@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: imperium
+Version: 0.0.11
+Summary: Imperium is a python package that allows you to easily evaluate python expressions
+Home-page: https://github.com/ibragim64/imperium
+Author: Ibragim Abubakarov
+Author-email: ibragim.ai95@gmail.com
+Maintainer: Ibragim Abubakarov
+Maintainer-email: ibragim.ai95@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+
+# Imperium
+> Imperium is a python package that allows you to easily evaluate python expressions
+
+## Installation
+```bash
+pip install imperium
+```
+
+## Usage
+```python
+from imperium.evaluator import Expression
+
+obj = {
+    'name': 'iPhone',
+    'model': '11 Pro',
+    'price': 1299.90,
+    'state': 'new'
+}
+
+expr = Expression()
+if expr.evaluate('$subject.state == "new"', obj): # "$subject" is a reserved key
+    # Your logic
+```
+To access the data in the given subject, use the "$subject" key as shown above.
+
+### Check if the subject has an attribute
+```python
+from imperium.evaluator import Expression
+
+obj = {
+    'name': 'iPhone',
+    'model': '11 Pro',
+    'price': 1299.90,
+    'state': 'new'
+}
+
+someother_obj = {
+    'name': 'John Doe'
+}
+
+expr = Expression()
+res = expr.evaluate('exists("$subject.price", $subject)', subject=obj, source=someother_obj) # REMINDER: "$subject" key let's you access the object that you passed to the evaluate method (obj in this case)
+print(res) # Output: True
+```
+
+### Testing regular expressions
+```python
+from imperium.evaluator import Expression
+
+obj = {
+    'name': 'iPhone',
+    'model': '11 Pro',
+    'price': 1299.90,
+    'state': 'new'
+}
+
+buyer = {
+    'fullname': 'John Doe'
+}
+
+# Passing the name attribute of the subject
+# REMINDER: "$subject" let's you access the object/subject passed to the evaluate method (obj in this case)
+# and "$source" let's you access the optional source object passed to the evaluate method 
+expression = "exists('$subject.name', $subject) && matches('IPHONE', $subject['name'], 'i')"
+
+expr = Expression()
+res = expr.evaluate(expression, subject=obj, source=buyer)
+print(res) # Output: True
+```
+
+**Imperium** has built-in functions to simplify certain actions/verifications.
+
+Function            |   Argument(s)                                             |   Description
+--------------------|-----------------------------------------------------------|----------------
+**exists()**        | key (Ex: $subject.price), $subject                        | Checks if the given attribute/key exists in the given subject.
+**matches()**       | regex, value, flag (**i** or **m**)                       | Tests a regular expression
+**date()**          | datestring, format                                        | **datestring** and **format** are both optional, provide them to the function if you want to convert a date string to date object. <br> If these two arguments are left emtpy, the function returns date object with current date and time.
+**date_modify()**   | date, operation (**+** \| **-**), valuetype (**days** \| **months** \| **years**), value: **int**  | This function can add and subtract days, months and years from a date object.
+
