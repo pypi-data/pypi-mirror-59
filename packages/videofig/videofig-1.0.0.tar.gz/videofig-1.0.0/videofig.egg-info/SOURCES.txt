@@ -1,0 +1,8 @@
+setup.py
+videofig/videofig.py
+videofig.egg-info/PKG-INFO
+videofig.egg-info/SOURCES.txt
+videofig.egg-info/dependency_links.txt
+videofig.egg-info/not-zip-safe
+videofig.egg-info/requires.txt
+videofig.egg-info/top_level.txt
