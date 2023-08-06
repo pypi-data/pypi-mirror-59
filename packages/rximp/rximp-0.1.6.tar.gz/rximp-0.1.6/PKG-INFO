@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: rximp
+Version: 0.1.6
+Summary: Small library to overcome the "impediment" between RX worlds
+Home-page: https://github.com/freelancer1845/rx-imp-python
+Author: Jascha Riedel
+Author-email: jaschelite@googlemail.com
+License: MIT
+Download-URL: https://github.com/freelancer1845/rx-imp-python/archive/v_02.tar.gz
+Description: UNKNOWN
+Keywords: Reactive,ReactiveX,Rx,Interface,Network
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
