@@ -1,0 +1,15 @@
+tax2peptide/Accession.py,sha256=xqslfIk--yr7EDFOHx37vcr1GWoloOorxNhaKL9X-Cw,5172
+tax2peptide/DatabaseCleaner.py,sha256=w0OCzoFmeO4nw2iwIEaxK-9IvMGQpdjmlcyuKSn1lvk,3449
+tax2peptide/Download.py,sha256=M3gA9UZp4W2pMitheX0xeJCDCOqG7sPau_vmQ1TXZhc,7264
+tax2peptide/Output.py,sha256=v9HpIcd9zwKsdn5SmwKbsPkE-fA1i1tWIYuR8GIAu-Q,3859
+tax2peptide/TaxonGraph.py,sha256=gLuafnFI7BIldu0OG7SZ_bYakYQQbEbQesmD83QRvOk,9926
+tax2peptide/TestFile.py,sha256=AkNzltVm5tafdYfMvVJVmSq6cwdQPpos5I0a1XQasIg,1850
+tax2peptide/WriteCustomDB.py,sha256=v73CkjP5XEGV5nGQuLqcxwNPZ2zRyZI75zB0_EJvYLs,10141
+tax2peptide/__init__.py,sha256=0rpEvXKaWSUDXXP16mgakQQ6i1yTFMjKAmj-o3nFkpE,43
+tax2peptide/__main__.py,sha256=Yf9kIapt7jrtM2M-FgROtf_Etfcs0mwHMNRKyVV9b6w,24746
+tax2peptide/version.py,sha256=m3MwU52xKwEwFoINAThbVIthInA2BGrGh6ptKPsP4pM,22
+tax2peptide-0.0.20.dist-info/LICENSE,sha256=Y44iYmoVX3fb4fvI0_iJ26xVsZgMK3jP9k_NWvRXV9w,1083
+tax2peptide-0.0.20.dist-info/METADATA,sha256=lcefmgdYLUlTWqGkiwGk69fL60J5DqCbOBoY6AnKiGg,8689
+tax2peptide-0.0.20.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tax2peptide-0.0.20.dist-info/top_level.txt,sha256=vfVssy_GLVlyA-5-IfPJBmeEPW7upM8K3XFbGUS9n5o,12
+tax2peptide-0.0.20.dist-info/RECORD,,
