@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dagtools
+Version: 0.0.1
+Summary: Tools for manipulating Directed Acyclic Graphs in Python
+Home-page: http://github.com/JWKennington/dagtools
+Author: James W. Kennington
+Author-email: jameswkennington@gmail.com
+License: MIT
+Description: # Analyzing DAGs in Python
+        
+        The `dagtools` package provides utilities for computing various 
+        graph-theoretic properties of DAGs (Directed Acyclic Graphs).
+        
+        ## Graph Formats and Conversion
+        The `dagtools` package is familiar with the below graph formats, and 
+        can convert between any of them:
+        
+        - DOT Format
+        - `networkx.Graph` and related subclasses 
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
