@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: python-pptx-interface
+Version: 0.0.1
+Summary: Easy interface to create pptx-files using python-pptx
+Home-page: https://github.com/natter1/python_pptx_interface.git
+Author: Nathanael Jöhrmann
+Author-email: 
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Requires-Dist: python-pptx
+
+python_pptx_interface
+=====================
+
+Easy interface to create pptx-files using python-pptx.
+  * PPTXCreator: Create pptx-File from template, incluing methods to add text, figures etc.
+  * PPTXFontTool: Helps to set/change/copy fonts.
+  * TemplateExample: Example class to show how to work with custom templates
+  * AbstractTemplate: Base class for all custom templates (enforce necessary attributes)
+
+
