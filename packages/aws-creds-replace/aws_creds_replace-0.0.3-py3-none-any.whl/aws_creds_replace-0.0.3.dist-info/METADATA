@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aws-creds-replace
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: https://github.com/trejas/aws_creds_replace.git
+Author: Traey Hatch
+Author-email: thatch@newmathdata.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: click (==7.0)
+Requires-Dist: xerox (==0.4.1)
+
+AWS Creds Replace Library
+
+
