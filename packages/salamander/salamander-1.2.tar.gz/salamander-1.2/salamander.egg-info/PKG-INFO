@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: salamander
+Version: 1.2
+Summary: Genetic algorithm library for humans
+Home-page: https://github.com/rayenmhamdi/salamander
+Author: Rayen Mhamdi
+Author-email: rayenmhamdi94@gmail.com
+License: gpl-3.0
+Description: # salamander
+        Genetic Algorithm Library for humans
+Keywords: salamander,Genetic Algorithm,Chromosome,Individuals,Population
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Python: >=3.
+Description-Content-Type: text/markdown

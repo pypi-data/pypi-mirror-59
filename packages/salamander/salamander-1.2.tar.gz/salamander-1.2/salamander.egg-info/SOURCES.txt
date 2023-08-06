@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+salamander/__init__.py
+salamander/salamander.py
+salamander.egg-info/PKG-INFO
+salamander.egg-info/SOURCES.txt
+salamander.egg-info/dependency_links.txt
+salamander.egg-info/top_level.txt
