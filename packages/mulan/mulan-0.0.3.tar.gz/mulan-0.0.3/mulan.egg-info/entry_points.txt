@@ -1,0 +1,3 @@
+[console_scripts]
+mulan = mulan.shell:run
+

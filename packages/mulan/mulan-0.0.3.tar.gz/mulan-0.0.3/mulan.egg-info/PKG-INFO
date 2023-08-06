@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: mulan
+Version: 0.0.3
+Summary: 木兰诗复读机
+Home-page: https://github.com/Ailln/mulan
+Author: Ailln
+Author-email: kinggreenhall@gmail.com
+License: MIT License
+Description: # MULAN
+        
+        📦 木兰诗复读机。
+        
+        ## 使用方法
+        
+        ### 安装
+        
+        ```bash
+        pip install mulan
+        ```
+        
+        ### 运行
+        
+        ```python
+        from mulan import shi
+        
+        print(shi())
+        ```
+        
+        ## 许可
+        
+        [![](https://award.dovolopor.com?lt=License&rt=MIT&rbc=green)](./LICENSE)
+        
+        ## 参考
+        
+        - [如何从模板创建仓库？](https://help.github.com/cn/articles/creating-a-repository-from-a-template)
+        - [如何发布自己的包到 pypi ？](https://www.v2ai.cn/python/2018/07/30/PY-1.html)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
