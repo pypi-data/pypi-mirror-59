@@ -1,0 +1,15 @@
+libscrc/__init__.py,sha256=jBqwpye9l49fMre1WxHqOih12DddL7omd2Fp1a08yrk,697
+libscrc/_crc16.cp38-win_amd64.pyd,sha256=ilMQG7oTY2VwSiK_xeJanCVrbIIGa4j7XzmUw8bky9Q,23552
+libscrc/_crc32.cp38-win_amd64.pyd,sha256=Ab8E9651CHeGnqwbRywUp_tcUcta04m58fvky8CG99s,16384
+libscrc/_crc64.cp38-win_amd64.pyd,sha256=Xw9SIXjFciQqpBGkXR6Kww5nY3LPdWGCEd9tJgKhYRA,14336
+libscrc/_crc8.cp38-win_amd64.pyd,sha256=1h7CsN7ADmxoxfFmosjLncx5V7qee8gQsUe7S-GxRB4,18432
+libscrc/_crcx.cp38-win_amd64.pyd,sha256=uwncsgSnwQ5skk28nbOm2LeA-nAWGLyL0BLwUC2fzss,18432
+libscrc/testcrc16.py,sha256=0tlh-7qry_4qb1XlTVDQUvWlrDLMUwvF7f1BncfH8Zs,1744
+libscrc/testcrc64.py,sha256=eMy-8VGyV3zkyX8IxCMNTB_NUmUrYgQk3ONsIdD2uvA,1737
+libscrc/testcrc8.py,sha256=QH-zQ8zAxozuKOSVfgTJrtToUsU38N7H1AlQsIuP39c,1069
+libscrc/testmodbus.py,sha256=ygNBOSaPRgIpPystefHoNiB__ALTHgm_5zKFloeTzXk,1666
+libscrc-0.1.6.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+libscrc-0.1.6.dist-info/METADATA,sha256=Ga3Ltj3V4Soim6ixbmx0iOLlbvbX1Fxvh3b1S5va1rA,6520
+libscrc-0.1.6.dist-info/WHEEL,sha256=z-ezgbNu1Y2ixypRrBmFDHP9mmiBhiGywozViqVfAIc,105
+libscrc-0.1.6.dist-info/top_level.txt,sha256=j8elyX8PEpgoQ0zwvun_4gI27RymPFWlkGB2sDNEQsg,8
+libscrc-0.1.6.dist-info/RECORD,,
