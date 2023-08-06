@@ -1,0 +1,6 @@
+[robotpy]
+lowfi = halsim_lowfi.main:HalSimLowfiMain
+
+[robotpybuild]
+halsim_lowfi = halsim_lowfi.pkgcfg
+
