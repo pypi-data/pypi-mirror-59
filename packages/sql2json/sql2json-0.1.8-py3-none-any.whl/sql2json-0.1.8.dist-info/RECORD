@@ -1,0 +1,8 @@
+sql2json/__init__.py,sha256=8PUe8raDxT-_X6w-WgD7eOacLJ7UMhuSjLy4cHh7uqg,135
+sql2json/__main__.py,sha256=CCfyc-Bqv7vRha5Alg2Ru1rLxxKeKLW_bwxg-2p8vP0,579
+sql2json/parameter/__init__.py,sha256=my_O1iTIoYdfQAXWM9kW0yc6O-4pQLpjnqg309QMCls,74
+sql2json/parameter/parameter_parser.py,sha256=5YrqJVHDO5q3hFPKToYvDvOUwzSbPnD7_DT6_0hKrkE,1869
+sql2json/sql2json.py,sha256=bXOeC-ERXmnp2WRsumA8-3l6joTS_h1hqtO2cw9IPrg,5129
+sql2json-0.1.8.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+sql2json-0.1.8.dist-info/METADATA,sha256=HTO5P7SKGNH6BsBdSexVrabyr0KUkU3RKE-6QFkhpJw,716
+sql2json-0.1.8.dist-info/RECORD,,
