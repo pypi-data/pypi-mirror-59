@@ -1,0 +1,11 @@
+feedinlib/__init__.py,sha256=38e3TdUXI8L_7nPSGTQXufEfKX1XW71STfEW4dc0yAk,288
+feedinlib/cds_request_tools.py,sha256=6s7qA-brIZqfIm7heRR6oYImCudnvgK2aC1w8rftCCc,13095
+feedinlib/era5.py,sha256=vIhd2lRFOHiCEXtWHVmygw4lFWPrr-DPk66ICBXQSB4,12857
+feedinlib/models.py,sha256=3Sn-CxOTp2Xr204ON09Za4usvNTUkvlvK1kwfBCionk,43082
+feedinlib/open_FRED.py,sha256=Jzegeyu1EwRzM26mBz3DIHJhUA4gC--6rmuYljoBohw,17177
+feedinlib/powerplants.py,sha256=pqpxAEKzZ5FD9ZwfwV20i1sr39CiYRzkLVIww2IMKHU,14098
+feedinlib-0.1.0rc3.dist-info/LICENSE,sha256=1i8GWDCqNznMAxFWuWkIBcey6BG0oXjItKzYcl1WHJQ,35142
+feedinlib-0.1.0rc3.dist-info/METADATA,sha256=HaTn-1LlqtwQo8TOZAva7SsxSYqHdFoATLn0tqL533U,6571
+feedinlib-0.1.0rc3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+feedinlib-0.1.0rc3.dist-info/top_level.txt,sha256=UZGctE7CmygWPVMRwz6Apwbgt6IO8sb73XbV0ZagtEo,10
+feedinlib-0.1.0rc3.dist-info/RECORD,,
