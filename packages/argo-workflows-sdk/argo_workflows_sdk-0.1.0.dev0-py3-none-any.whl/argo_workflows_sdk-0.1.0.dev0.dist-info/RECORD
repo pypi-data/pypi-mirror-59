@@ -1,0 +1,15 @@
+argo/workflows/sdk/__about__.py,sha256=LH4pIlgPsjtj-GKB9Efqu4P-pgu3Aw_BwvfDYphiTu0,501
+argo/workflows/sdk/__init__.py,sha256=Sen4p_kRoi5nKZjvuVggowtBe7UFvavbDwLjHIPk3AI,330
+argo/workflows/sdk/_arguments.py,sha256=a5T58K-6A5OYNRFHIgNNs26cqCkVTU8j41XopdQBiEo,1710
+argo/workflows/sdk/_base.py,sha256=rbORIbRAacAYKZ4IvsCshSzGr7TvEQfU459LRpmcNQ0,5303
+argo/workflows/sdk/_inputs.py,sha256=BT2FN1EoaFQxrdA_3T3tJpBVfFPaRZNFpPcs9cDc2qM,603
+argo/workflows/sdk/_outputs.py,sha256=QxIs08suWY4U17SmI8Yd8EdfdQ7PFgJ2U2hBMK8VRZc,608
+argo/workflows/sdk/_utils.py,sha256=Fs1cEqDLe0dNL4uOTHOW9HHQzITq2dF4y7nymcO-QeA,1915
+argo/workflows/sdk/_workflow.py,sha256=TNVtFAtH_z2tWjgcK7M2cvrExIfCl4UhVpFQzM8ow90,14873
+argo/workflows/sdk/tasks.py,sha256=u5-JyUMpwIvLprJLo1EbbOmAmMT3wCxYmW1tzgf9ot4,1999
+argo/workflows/sdk/templates.py,sha256=nzHLH_bD_5_FkO9wADmq-0gY7IN4kFKirtzB5mj4sFQ,5573
+argo_workflows_sdk-0.1.0.dev0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+argo_workflows_sdk-0.1.0.dev0.dist-info/METADATA,sha256=xC4ewlsLC2wpy1oTBlnGSZ6jpClh4GLHG9BRwVexBCk,14418
+argo_workflows_sdk-0.1.0.dev0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+argo_workflows_sdk-0.1.0.dev0.dist-info/top_level.txt,sha256=Svly2iFb6Zb1-Uy3XOd2Km5UgbhX2dGFWJW9Dp9p4xc,5
+argo_workflows_sdk-0.1.0.dev0.dist-info/RECORD,,
