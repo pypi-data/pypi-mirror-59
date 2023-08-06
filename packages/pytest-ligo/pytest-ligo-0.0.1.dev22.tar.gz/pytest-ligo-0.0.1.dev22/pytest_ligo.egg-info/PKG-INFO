@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: pytest-ligo
+Version: 0.0.1.dev22
+Summary: UNKNOWN
+Home-page: https://yourlabs.io/oss/pytest-ligo
+Author: James Pic
+Author-email: jamespic@gmail.com
+License: MIT
+Description: pytest-ligo
+        ~~~~~~~~~~~
+        
+        Py.test plugin which adds a ligo fixture to encapsulate boilerplate business
+        logic. Refer to ``test_pytest_ligo.py`` for example usage.
+        
+        Install with pip, ie::
+        
+            pip install pytest-ligo
+        
+        You also need ligo, which you can install in ~/.local/bin with::
+        
+            curl https://gitlab.com/jpic/pytest-ligo/raw/master/install.sh | bash -eux -
+        
+        Note: the above works on arch linux and ubuntu-18.04 without extra
+        configuration. For debian, export distro=debian-10 or distro=debian-9 prior to
+        the above command.
+Keywords: cli ligo
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Plugins
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: System
+Requires-Python: >=3
+Description-Content-Type: text/x-rst
