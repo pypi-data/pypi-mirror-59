@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: nci_eval
+Version: 1.0.0
+Summary: Supplementary code and materials for paper "On Model Evaluation under Non-constant Class Imbalance" by Brabec et al.
+Home-page: https://github.com/CiscoCTA/nci_eval
+Author: Jan Brabec, Tomas Komarek
+Author-email: brabecjan91@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
