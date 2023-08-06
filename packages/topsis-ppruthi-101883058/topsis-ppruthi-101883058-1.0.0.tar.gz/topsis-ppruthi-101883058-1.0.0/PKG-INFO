@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: topsis-ppruthi-101883058
+Version: 1.0.0
+Summary: A python package to identify the best model out of different mobile phones using TOPSIS
+Home-page: UNKNOWN
+Author: Pritpal Singh Pruthi
+Author-email: ppruthi_be17@thapar.edu
+License: UNKNOWN
+Description: #BEST MODEL 
+        
+        Apython package to get the rank of different models in the given dataset.
+        
+        ##Usage
+        
+        Following query on terminal will provide you the result in tabular form which has performance score and the rank of that model
+        
+        topsis data.csv "1,1,1,1" "+,-,+,+" 
+        i.e. topsis <datafile name> <weights> <impacts>
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
