@@ -1,0 +1,2 @@
+django_gravatar
+example_project
