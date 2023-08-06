@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: rocketchat
+Version: 1.0.0
+Summary: Python interface for the RocketChat REST API.
+Home-page: https://github.com/bpabel/rocketchat
+Author: Brendan Abel
+Author-email: 007brendan@gmail.com
