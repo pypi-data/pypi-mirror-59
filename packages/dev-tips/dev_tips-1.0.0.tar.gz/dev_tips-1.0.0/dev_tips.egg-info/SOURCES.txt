@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+dev_tips/__init__.py
+dev_tips/main.py
+dev_tips.egg-info/PKG-INFO
+dev_tips.egg-info/SOURCES.txt
+dev_tips.egg-info/dependency_links.txt
+dev_tips.egg-info/top_level.txt
