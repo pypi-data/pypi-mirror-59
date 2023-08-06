@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: wbclione
+Version: 0.1
+Summary: A utility package to log and monitor machine learning weights.
+Home-page: https://github.com/mfts/wbclione
+Author: Marc Seitz
+Author-email: marc@mfts.io
+License: MIT license
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: System :: Monitoring
+Description-Content-Type: text/markdown
+
+Simplified machine learning logger
+
+
