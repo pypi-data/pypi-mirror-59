@@ -1,0 +1,14 @@
+README.md
+setup.py
+ocr/DetectChars.py
+ocr/DetectPlates.py
+ocr/Main.py
+ocr/PossibleChar.py
+ocr/PossiblePlate.py
+ocr/Preprocess.py
+ocrzzz.egg-info/PKG-INFO
+ocrzzz.egg-info/SOURCES.txt
+ocrzzz.egg-info/dependency_links.txt
+ocrzzz.egg-info/entry_points.txt
+ocrzzz.egg-info/requires.txt
+ocrzzz.egg-info/top_level.txt
