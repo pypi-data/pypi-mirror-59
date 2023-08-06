@@ -1,0 +1,12 @@
+README.md
+setup.py
+metrecord/__init__.py
+metrecord/__version__.py
+metrecord/api.py
+metrecord/exceptions.py
+metrecord.egg-info/PKG-INFO
+metrecord.egg-info/SOURCES.txt
+metrecord.egg-info/dependency_links.txt
+metrecord.egg-info/not-zip-safe
+metrecord.egg-info/requires.txt
+metrecord.egg-info/top_level.txt

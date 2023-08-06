@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: metrecord
+Version: 0.0.2
+Summary: Python SDK for metrecord.com
+Home-page: https://app.metrecord.com
+Author: Ryan Baker
+License: Apache 2.0
+Description: # Python Metrecord SDK
+        
+        This package is the Python integration for metric tracking powered by [Metrecord](https://app.metrecord.com)
+        
+        ## Examples
+        
+        Here are a couple examples you can use to get started:
+        
+        
+        
+        ```
+        from metrecord import Metrecord
+        
+        
+        recorder = Metrecord('CLIENT_ID', 'CLIENT_SECRET')
+        recorder.track('runtime_ms', 20.21)
+        
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
