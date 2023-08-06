@@ -1,0 +1,14 @@
+xain_proto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xain_proto/fl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xain_proto/fl/coordinator_pb2.py,sha256=O-XJeSe2pXWW7p-Q_rfU6HK-_SdtkxZuAKNGW4CAyt4,20005
+xain_proto/fl/coordinator_pb2_grpc.py,sha256=DDZgY8wM_xnFsskp1XVIWaLpylPs7UF6Z351VfPRZE0,4456
+xain_proto/fl/hellonumproto_pb2.py,sha256=VBMk5ULMpp8rMbFW_VsMwJhNFL-Zo5lf7nxkpC7SExw,4471
+xain_proto/fl/hellonumproto_pb2_grpc.py,sha256=0dXKuXEVIvSzDFFTo2xIWGKxXCPdNkE_RRhHROhpEqU,1661
+xain_proto/numproto/__init__.py,sha256=pgfc9hnkkVonp6_Xr6BcdnUXMGyd6Am4wePgj9uLL0c,112
+xain_proto/numproto/ndarray_pb2.py,sha256=14HFAfHFqSW8qHbYeTHJa_V_PQQM7-zv95K8EYOllCE,2011
+xain_proto/numproto/ndarray_pb2_grpc.py,sha256=s9KvvTKGqObFxOBLz6ktRK2g4c8yLiOXt7p2M71egTM,83
+xain_proto/numproto/numproto.py,sha256=EBmR8l-JmDRL8aPMPQFJ3oh-fJoDvaSxOq_7LZQCIEw,890
+xain_proto-0.3.0.dist-info/METADATA,sha256=4bXwVUPtYI6vA4ejT6s1NoveyENKCV3r3ubIvGhNeMw,1625
+xain_proto-0.3.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+xain_proto-0.3.0.dist-info/top_level.txt,sha256=ZtYPh--gxpwK5VuKfCtLPafyXw6i_gf47BGP6ckrnGc,11
+xain_proto-0.3.0.dist-info/RECORD,,
