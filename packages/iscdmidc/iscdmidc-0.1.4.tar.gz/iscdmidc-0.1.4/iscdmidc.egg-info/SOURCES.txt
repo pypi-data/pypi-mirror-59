@@ -1,0 +1,7 @@
+README.md
+iscdmidc.py
+setup.py
+iscdmidc.egg-info/PKG-INFO
+iscdmidc.egg-info/SOURCES.txt
+iscdmidc.egg-info/dependency_links.txt
+iscdmidc.egg-info/top_level.txt
