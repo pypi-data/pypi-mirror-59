@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: toms
+Version: 0.3.0
+Summary: Convert date to milliseconds and back
+Home-page: https://github.com/d10xa/toms
+Author: d10xa
+Author-email: d10xa@mail.ru
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: python-dateutil (>=2.7.1)
+
+## toms. unix timestamp converter
+
+toms is a command line tool that allows
+ to convert unix epoch millis to iso date. And back
+
+
+```
+toms 1500000000000
+2017-07-14T02:40:00+00:00
+```
+
+```
+toms 2017-07-14T02:40
+1500000000000
+```
+
+## install
+
+```pip install toms```
+
