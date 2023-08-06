@@ -1,0 +1,8 @@
+README.md
+setup.py
+EleganceReport/EleganceReport.py
+EleganceReport/__init__.py
+EleganceReport.egg-info/PKG-INFO
+EleganceReport.egg-info/SOURCES.txt
+EleganceReport.egg-info/dependency_links.txt
+EleganceReport.egg-info/top_level.txt
