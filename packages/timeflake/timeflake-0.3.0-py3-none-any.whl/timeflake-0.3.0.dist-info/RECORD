@@ -1,0 +1,10 @@
+timeflake/__init__.py,sha256=bbzQoX6v5GNVPbkU2L92MGBRrt7Rj7DSB2tDzwUAxj8,1255
+timeflake/__main__.py,sha256=uc2awi-YlEgieXcQ3lNbZLzB0lY-OBAVDC7fGUoMWho,955
+timeflake/flake.py,sha256=iPGIY7UgF0FcNTDJhPn8tat-USYUGlzzSV3Xmu27DYo,1723
+timeflake/utils.py,sha256=AdyaF91dLt8mJDwANz2m3a0GSebhggCxgmA2SdN2IA0,1044
+timeflake-0.3.0.dist-info/LICENSE,sha256=B9YvdqrkCL3-ydTxhYtUoyBBY_kN1tj9B2dMFktVxDo,1077
+timeflake-0.3.0.dist-info/METADATA,sha256=Fk-oF85mckTpTTScZ4c84Kzsf8bCRpMhfkI4xNlFIlI,4052
+timeflake-0.3.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+timeflake-0.3.0.dist-info/entry_points.txt,sha256=VKCU6oCHk6R1s7RnZoFBD7dl7DIcvi6STG5wtREgTxs,55
+timeflake-0.3.0.dist-info/top_level.txt,sha256=56C1n44I_3ymi4HKYa42N7cDp39rHmpiAsLpxvTjUHw,10
+timeflake-0.3.0.dist-info/RECORD,,
