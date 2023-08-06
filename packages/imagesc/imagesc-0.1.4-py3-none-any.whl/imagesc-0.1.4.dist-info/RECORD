@@ -1,0 +1,8 @@
+imagesc/__init__.py,sha256=L0iW4GdxC_r0wkroaJpcFSlibVUYtJXhjb0AJNe6xQQ,440
+imagesc/imagesc.py,sha256=7a1rp5QNSNs_ur_0CiaajnF9jnwxDVWze0cvObL2JoA,23194
+imagesc/savefig.py,sha256=-KEl2IxcA-HpIoQPLnyDy2FPvZMIH2ZvOujEAGz9bPw,1333
+imagesc-0.1.4.dist-info/LICENSE,sha256=1fCkUcigE1onfyoNVL4qCclHJzYGJoobERqrPwUug8g,1144
+imagesc-0.1.4.dist-info/METADATA,sha256=DuVoEVUj_ft1V5akMe-pFg3BSOF-AISzDJ1fgyfBd4g,11274
+imagesc-0.1.4.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+imagesc-0.1.4.dist-info/top_level.txt,sha256=Ngvquc84B94al8a3EGxyleERfvsAGtttSB-hHN02e4c,8
+imagesc-0.1.4.dist-info/RECORD,,
