@@ -1,0 +1,13 @@
+liebres/__init__.py,sha256=QrFN3EM684WLBSBnGSS6qXLO4TKGV3Lwx-9MLtma6MI,120
+liebres/_version.py,sha256=yHTH8dVBgu29hNekCKmq8TkocpAxvi_a_vKUu65hrq0,63
+liebres/dataframes/__init__.py,sha256=9P_qEhxlMe3bapIrfyAZZI9NT32upwH_Jn-Le3xIHa0,81
+liebres/dataframes/abc.py,sha256=Yo0aseeJHp1yPyWrZ06_Hnzy7BCHjbcQx-m6xuMM8Z4,4437
+liebres/dataframes/sqlite.py,sha256=C1Gz3cZuyb0Fp13pVBKr8ecG1W4DvP9Jkg22FOOOIUY,4986
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_dataframes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_dataframes/test_sqlite.py,sha256=0uXoBDgkO1PnK7U9gj4gqDGuRFpw0ZNvF6sStiYydAw,5328
+liebres-0.0.1.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+liebres-0.0.1.dist-info/METADATA,sha256=XRxu8Q-K_GeuMR2jvOGXg7iXEyJv5u0VXdI1rWHOeOE,2733
+liebres-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+liebres-0.0.1.dist-info/top_level.txt,sha256=a-d_rN74FqAOw1shjGx3zDBOtQNTF_kG9683GaYtQ-k,14
+liebres-0.0.1.dist-info/RECORD,,
