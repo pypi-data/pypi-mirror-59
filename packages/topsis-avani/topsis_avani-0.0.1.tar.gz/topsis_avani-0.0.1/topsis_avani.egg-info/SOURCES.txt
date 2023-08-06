@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+topsis_avani/__init_.py
+topsis_avani/topsis_avani.py
+topsis_avani/topsis_avani__code.py
+topsis_avani.egg-info/PKG-INFO
+topsis_avani.egg-info/SOURCES.txt
+topsis_avani.egg-info/dependency_links.txt
+topsis_avani.egg-info/top_level.txt

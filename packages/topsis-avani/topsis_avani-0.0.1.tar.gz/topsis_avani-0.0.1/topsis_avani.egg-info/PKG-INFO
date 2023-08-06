@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: topsis-avani
+Version: 0.0.1
+Summary: Implementation of topsis over a csv datafile using the distance calculation and comparison approach
+Home-page: https://github.com/Avani-Agarwal1999/Topsis_Avani_3122.git
+Author: avani/avaniagarwal
+Author-email: avaniagarwal1999@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/Avani-Agarwal1999/Topsis_Avani_3122/archive/0.0.1.tar.gz
+Description: Topsis by Avani Agarwal
+        101703122
+        Coe 6
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
