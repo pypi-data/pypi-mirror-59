@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ruleparse
+Version: 2020.1.16.3
+Summary: 规则解析框架
+Home-page: https://gitee.com/youfani/ruleparse
+Author: niyoufa
+Author-email: niyoufa@aegis-data.cn
+License: mit
+Project-URL: Documentation, https://gitee.com/youfani/ruleparse
+Description: 定义规则解析的基类与规则解析项目的基本结构，并提供生成规则解析项目模板脚本
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: testing
