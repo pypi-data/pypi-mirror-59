@@ -1,0 +1,28 @@
+Metadata-Version: 1.0
+Name: jupyter-hdfs-kernel
+Version: 1.0.2
+Summary: jupyter_hdfs_kernel
+Home-page: https://github.com/Jasper912/jupyter_hdfs_kernel.git
+Author: huangnj
+Author-email: jasper0912@icloud.com
+License: MIT License
+Description-Content-Type: UNKNOWN
+Description: ## Jupyter Hdfs Kernel
+        
+        ### Install
+        
+        ```
+        pip install jupyter_hdfs_kernel
+        jupyter-kernelspec install hdfs_kernel/kernels/hdfs
+        ```
+        
+        ### User config
+        
+        * webhdfs name service config to every user
+        
+        ```
+        cp hdfs_kernel/config.json.template /home/{user}/.hdfs/config.json
+        ```
+        
+Keywords: Hdfs Pyhdfs Kernel Ipykernel
+Platform: UNKNOWN
