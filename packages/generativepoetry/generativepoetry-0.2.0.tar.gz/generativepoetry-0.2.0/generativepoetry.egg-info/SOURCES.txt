@@ -1,0 +1,14 @@
+README.rst
+setup.py
+generativepoetry/__init__.py
+generativepoetry/lexigen.py
+generativepoetry/markov.py
+generativepoetry/pdf.py
+generativepoetry/poemgen.py
+generativepoetry/utils.py
+generativepoetry.egg-info/PKG-INFO
+generativepoetry.egg-info/SOURCES.txt
+generativepoetry.egg-info/dependency_links.txt
+generativepoetry.egg-info/requires.txt
+generativepoetry.egg-info/top_level.txt
+generativepoetry.egg-info/zip-safe
