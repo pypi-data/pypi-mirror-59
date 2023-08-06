@@ -1,0 +1,16 @@
+README.rst
+setup.py
+musictheorpy/__init__.py
+musictheorpy/chords.py
+musictheorpy/interval_utils.py
+musictheorpy/notegroups.py
+musictheorpy/notes.py
+musictheorpy/scales.py
+musictheorpy.egg-info/PKG-INFO
+musictheorpy.egg-info/SOURCES.txt
+musictheorpy.egg-info/dependency_links.txt
+musictheorpy.egg-info/top_level.txt
+musictheorpy/tests/__init__.py
+musictheorpy/tests/test_chords.py
+musictheorpy/tests/test_note.py
+musictheorpy/tests/test_scale.py
