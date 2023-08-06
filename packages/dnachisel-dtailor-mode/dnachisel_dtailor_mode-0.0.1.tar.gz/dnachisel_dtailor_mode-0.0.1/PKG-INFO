@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dnachisel_dtailor_mode
+Version: 0.0.1
+Summary: implement d-tailor method using dnachisel specs
+Home-page: https://github.com/Lix1993/dnachisel_dtailor_mode
+Author: Example Author
+Author-email: author@example.com
+License: UNKNOWN
+Description: # dnachisel_dtailor_mode
+        implement d-tailor method using dnachisel specs
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

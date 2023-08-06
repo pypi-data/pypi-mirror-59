@@ -1,0 +1,7 @@
+README.md
+setup.py
+dnachisel_dtailor_mode/__init__.py
+dnachisel_dtailor_mode.egg-info/PKG-INFO
+dnachisel_dtailor_mode.egg-info/SOURCES.txt
+dnachisel_dtailor_mode.egg-info/dependency_links.txt
+dnachisel_dtailor_mode.egg-info/top_level.txt
