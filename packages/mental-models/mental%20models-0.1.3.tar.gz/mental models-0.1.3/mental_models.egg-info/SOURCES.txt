@@ -1,0 +1,10 @@
+README.md
+setup.py
+mental_models/__init__.py
+mental_models/auto_map.py
+mental_models/similarity.py
+mental_models.egg-info/PKG-INFO
+mental_models.egg-info/SOURCES.txt
+mental_models.egg-info/dependency_links.txt
+mental_models.egg-info/requires.txt
+mental_models.egg-info/top_level.txt
