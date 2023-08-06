@@ -1,0 +1,9 @@
+README.md
+setup.py
+synbiopython/__init__.py
+synbiopython/version.py
+synbiopython.egg-info/PKG-INFO
+synbiopython.egg-info/SOURCES.txt
+synbiopython.egg-info/dependency_links.txt
+synbiopython.egg-info/top_level.txt
+synbiopython/lab_automation/__init__.py
