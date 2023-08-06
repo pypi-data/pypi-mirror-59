@@ -1,0 +1,11 @@
+intellipush/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+intellipush/client.py,sha256=R37_uw6ifp1GN-9kfCPBkl2_40YJcTle960yrXvOD6s,18304
+intellipush/contacts.py,sha256=gpyu_5F03Kfil9ApaapaR6X47_u3YRyTUlRuZSyd0RQ,591
+intellipush/messages.py,sha256=peSybkt_XrXvdKf5ye2BH49YF0whar_VHD6GH1yEGwU,643
+intellipush/shorturls.py,sha256=pVkFRdFVlYHndnuw2Iv967oc0GF2J1MhuXeMjgLX0tk,104
+intellipush/utils.py,sha256=0ZeRCB3FlEXZzOm13CA9vDdi3xA_C-CORIth4kH_h60,887
+intellipush-0.2.0.dist-info/LICENSE,sha256=8sOBuRGtK1Kv5ljj_mqLBqiqQnQ3qNJkwJPYD7YFi4Y,1089
+intellipush-0.2.0.dist-info/METADATA,sha256=IdiN6rfsi2YxWldGGgikspyekxnFHA6rvimACAFBK0k,1973
+intellipush-0.2.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+intellipush-0.2.0.dist-info/top_level.txt,sha256=cD5ziKA4HyXf_JUphWzEr3N9j9FNW2ngxWufzlgAYbM,12
+intellipush-0.2.0.dist-info/RECORD,,
