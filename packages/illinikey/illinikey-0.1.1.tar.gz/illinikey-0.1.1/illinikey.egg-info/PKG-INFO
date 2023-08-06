@@ -1,0 +1,39 @@
+Metadata-Version: 1.1
+Name: illinikey
+Version: 0.1.1
+Summary: generate offline one-time passwords for Duo two-factor login
+Home-page: https://github.com/evidlo/illinikey
+Author: Evan Widloski
+Author-email: evan@evanw.org
+License: WTFPL
+Description: # IlliniKey
+        
+        ![](image.png)
+        
+        Generate one time passwords (OTP) offline for UIUC Duo login.  Based heavily on [local-boilerkey](https://github.com/elnardu/local-boilerkey).
+        
+        # Setup and usage
+        
+        ```
+        pip install illinikey
+        illinikey
+        ```
+        
+        Follow instructions for adding a new device.
+        
+        # i3 configuration
+        
+        Add to your i3 config to auto to auto-fill the passcode field on the Duo login screen.
+        
+        
+        ```
+        bindsym $mod+x exec sh -c "xdotool type $(illinikey)"
+        ```
+        
+        # Caveats
+        
+        Key secrets are stored in `~/.cache/illinikey.json`.  An attacker with access to this file can bypass two-factor on your UIUC account.
+        
+Keywords: two-factor two factor duo illinois
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3

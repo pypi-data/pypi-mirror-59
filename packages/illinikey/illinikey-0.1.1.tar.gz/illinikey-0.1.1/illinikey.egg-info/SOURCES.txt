@@ -1,0 +1,10 @@
+README.md
+setup.py
+illinikey/__init__.py
+illinikey/illinikey.py
+illinikey.egg-info/PKG-INFO
+illinikey.egg-info/SOURCES.txt
+illinikey.egg-info/dependency_links.txt
+illinikey.egg-info/entry_points.txt
+illinikey.egg-info/requires.txt
+illinikey.egg-info/top_level.txt
