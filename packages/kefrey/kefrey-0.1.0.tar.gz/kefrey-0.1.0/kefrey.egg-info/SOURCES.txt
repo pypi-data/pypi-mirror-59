@@ -1,0 +1,11 @@
+README.md
+setup.py
+kefrey/__init__.py
+kefrey/__main__.py
+kefrey/installer.py
+kefrey.egg-info/PKG-INFO
+kefrey.egg-info/SOURCES.txt
+kefrey.egg-info/dependency_links.txt
+kefrey.egg-info/entry_points.txt
+kefrey.egg-info/requires.txt
+kefrey.egg-info/top_level.txt

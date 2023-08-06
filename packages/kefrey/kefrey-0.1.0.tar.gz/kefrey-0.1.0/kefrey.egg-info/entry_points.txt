@@ -1,0 +1,4 @@
+[console_scripts]
+kefrey = kefrey.__main__:main
+kefrey-install = kefrey.installer:main
+
