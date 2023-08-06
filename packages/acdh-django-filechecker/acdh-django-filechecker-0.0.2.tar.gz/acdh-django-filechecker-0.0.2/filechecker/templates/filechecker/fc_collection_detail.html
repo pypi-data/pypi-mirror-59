@@ -1,0 +1,217 @@
+{% extends "webpage/base.html" %}
+{% load static %}
+{% load mptt_tags %}
+{% load webpage_extras %}
+{% block title %}{{ object.name }}{% endblock %}
+{% block scriptHeader %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/three@latest/build/three.min.js"></script>
+<script crossorigin src="https://unpkg.com/@acdh/network-visualization@latest/lib/network-visualization.umd.js"></script>
+<script src="{% static 'netvis/js/netvis.js' %}"></script>
+{% endblock %}
+{% block content %}
+<!-- <div class="container"> -->
+<div class="card w-100">
+  <div class="card-header">
+    <div class="row">
+      <div class="col-md-2">
+        {% if object.get_prev %}
+        <h2>
+          <a href="{{ object.get_prev }}" title="previous">
+            <i data-feather="chevron-left"></i>
+          </a>
+        </h2>
+        {% endif %}
+      </div>
+      <div class="col-md-8">
+        <h2 style="text-align: center;">
+          <small><a href="{{ object.get_listview_url }}" title="back to listview"><small>{{ class_name }}</small></a></small>
+          {{ object }}
+          {% if user.is_authenticated %}
+            <a href="{{ object.get_edit_url }}" title="edit">
+              <i data-feather="edit-3"></i>
+            </a>
+            <a href="{{ object.get_delete_url }}" title="delete">
+              <i data-feather="trash-2"></i>
+            </a>
+          {% endif %}
+          <a href="{% url 'filechecker-rdf:res_as_arche_graph' model_name=class_name|lower pk=object.id %}?format=turtle" title="As ARCHE-RDF">
+            <i data-feather="download"></i>
+          </a>
+        </h2>
+      </div>
+      <div class="col-md-2">
+        <h2>
+          {% if object.get_next %}
+          <a href="{{ object.get_next }}" style="float:right" title="next">
+            <i data-feather="chevron-right"></i>
+          </a>
+        </h2>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    {% block custom %}
+    <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h3>Basic Information</h3>
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        <table class="table">
+          <tr>
+            <th>Arche-ID</th>
+            <td><a href="{{ object.fc_arche_id }}">{{ object.fc_arche_id}}</a></td>
+          </tr>
+          <tr>
+            <th>Description</th>
+            <td><p>{{ object.fc_arche_description }}</p></td>
+          </tr>
+          <tr>
+            <th>Child-Collections</th>
+            <td>{{ object.children.all|length }}</td>
+          </tr>
+          <tr>
+            <th>Child-Resources</th>
+            <td>{{ object.has_fc_resource.all|length }}</td>
+          </tr>
+          <tr>
+            <th>Created</th>
+            <td>{{ object.fc_firstmod }} - {{ object.fc_lastmod}}</td>
+          </tr>
+          <tr>
+            <th>Access</th>
+            <td>{{ object.fc_arche_access }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <h3>Collections and Resources</h3>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        {% drilldown_tree_for_node object as drilldown cumulative count filechecker.FcResource.fc_directory in game_count%}
+          {% for node,structure in drilldown|tree_info %}
+            {% if structure.new_level %}
+              <ul>
+                <li>{% else %}</li>
+                <li>
+                  {% endif %}
+                  {% if node == object %}
+                    <strong> <i data-feather="folder"></i> {{ node }}</strong> <i data-feather="chevron-down"></i>
+                    {% else %}
+                      <a href="{{ node.get_absolute_url }}"><i data-feather="folder"></i>{{ node }}</a>
+                    {% if node.parent_id == object.pk %}
+                      (<i data-feather="file"></i> {{ node.game_count }})
+                    {% endif %}
+                    {% if node.children.all %}
+                      (<i data-feather="folder"></i>{{ node.children.all|length }})
+                    {% endif %}
+                  {% endif %}
+                  {% if node == object %}
+                  <ul>
+                    {% for child_res in object.has_fc_resource.all %}
+                    <li>
+                      <a href="{{ child_res.get_absolute_url }}"><i data-feather="file"></i>{{ child_res.fc_filename }}</a> </li>
+                    {% endfor %}
+                  </ul>
+                  {% endif %}
+                  {% for level in structure.closed_levels %}
+
+                </li>
+              </ul>
+            {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <h3>Download Options</h3>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        <ul>
+          <li>
+            Metadata of the collection only
+            <ul>
+              <li>
+                <a href="{% url 'filechecker-rdf:res_as_arche_graph' model_name=class_name|lower pk=object.id %}?format=turtle">turtle (ttl)</a>
+              </li>
+              <li>
+                <a href="{% url 'filechecker-rdf:res_as_arche_graph' model_name=class_name|lower pk=object.id %}">xml</a>
+              </li>
+            </ul>
+            </li>
+            <li>
+              Metata of Collection (ancestors) and (direct) child resources
+              <ul>
+                <li>
+                  <a href="{% url 'filechecker-rdf:collection_and_resources_as_graph' pk=object.id %}?format=turtle">turtle (ttl)</a>
+                </li>
+                <li>
+                  <a href="{% url 'filechecker-rdf:collection_and_resources_as_graph' pk=object.id %}">xml</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  {% if object.fc_custom_rdf %}
+  <div class="card">
+    <div class="card-header" id="headingFour">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <h3>Custom Arche RDF</h3>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+      <div class="card-body">
+        <code>
+          {{ object.fc_custom_rdf}}
+        </code>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3>Netvis</h3>
+        </div>
+        <div class="card-body">
+            <div id="visualization" style="position: relative; height: 700px; background: #fafafa;"></div>
+            <script type="text/javascript">
+              showGraph("{% url 'netvis:graph' app_name=app_name model_name=class_name|lower pk=object.id %}", "visualization")
+            </script>
+        </div>
+    </div>
+
+
+  </div>
+</div>
+{% endblock custom %}
+{% endblock %}
