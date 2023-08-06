@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+msdsl/__init__.py
+msdsl/assignment.py
+msdsl/circuit.py
+msdsl/files.py
+msdsl/model.py
+msdsl/msdsl.sv
+msdsl/util.py
+msdsl.egg-info/PKG-INFO
+msdsl.egg-info/SOURCES.txt
+msdsl.egg-info/dependency_links.txt
+msdsl.egg-info/not-zip-safe
+msdsl.egg-info/requires.txt
+msdsl.egg-info/top_level.txt
