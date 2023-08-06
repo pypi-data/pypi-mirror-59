@@ -1,0 +1,15 @@
+README.md
+setup.py
+savesyndrom/__init__.py
+savesyndrom/__main__.py
+savesyndrom/activewindow.py
+savesyndrom/keylogger.py
+savesyndrom/settings.py
+savesyndrom.egg-info/PKG-INFO
+savesyndrom.egg-info/SOURCES.txt
+savesyndrom.egg-info/dependency_links.txt
+savesyndrom.egg-info/requires.txt
+savesyndrom.egg-info/top_level.txt
+savesyndrom/gui/__init__.py
+savesyndrom/gui/main.py
+savesyndrom/gui/show.py
