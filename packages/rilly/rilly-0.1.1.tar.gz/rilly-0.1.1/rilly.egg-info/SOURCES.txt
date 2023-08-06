@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+rilly/__init__.py
+rilly/logging.py
+rilly/stream.py
+rilly.egg-info/PKG-INFO
+rilly.egg-info/SOURCES.txt
+rilly.egg-info/dependency_links.txt
+rilly.egg-info/requires.txt
+rilly.egg-info/top_level.txt
