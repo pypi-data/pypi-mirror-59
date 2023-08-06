@@ -1,0 +1,13 @@
+easy_tokenizer/__init__.py,sha256=mWOhafOCxXxAeB4JR_8Cj625QqV7FqtQy0h11XFHSks,800
+easy_tokenizer/__main__.py,sha256=71HBMvMoB8_IZw6x-gr5qBTvN-Eh1iPXpfuLaVCwums,1584
+easy_tokenizer/normalizer.py,sha256=HiG5FRSjJzFAYlJV9gll4IZk46BqrUar1NSEMqYwDz8,273
+easy_tokenizer/patterns.py,sha256=Zw8A9r9fvbUpmywr39qfwDy1zNGARngDtR01jNsWph8,3602
+easy_tokenizer/token_with_pos.py,sha256=gkgIUhiH89kQG_ml9q8GNHm3lAU5f7qxAjODtYCf1TQ,485
+easy_tokenizer/tokenizer.py,sha256=4ldw8ACQHHOro_W-Tyd6I217oc62Gbflb1EfCCTJ87g,9063
+easy_tokenizer-0.0.9.dist-info/AUTHORS.rst,sha256=Bk4bblnfq4Zi_rYvieyEQPm-SRRmOh0UEP8i7r_SNuc,132
+easy_tokenizer-0.0.9.dist-info/LICENSE,sha256=iSFDFluiPhDlVu1YfVy9UNHARaa6WMs6TUnEVEgYlIg,1064
+easy_tokenizer-0.0.9.dist-info/METADATA,sha256=F2j6ScoBcOX9Z89oN2RUs32_B3tqvXoJ9pJi8IR_S3o,3092
+easy_tokenizer-0.0.9.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+easy_tokenizer-0.0.9.dist-info/entry_points.txt,sha256=6pkLZZdLxX2BApERZkIFSik6LvcEEmsqDMUkRRNEoZI,65
+easy_tokenizer-0.0.9.dist-info/top_level.txt,sha256=CapZTmlxt3MwbEesyHtP4dA5nE36bi9c8JjtXVE1T8I,15
+easy_tokenizer-0.0.9.dist-info/RECORD,,
