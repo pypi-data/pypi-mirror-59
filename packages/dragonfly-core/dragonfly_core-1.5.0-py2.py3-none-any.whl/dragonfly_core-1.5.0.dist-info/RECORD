@@ -1,0 +1,17 @@
+dragonfly/__init__.py,sha256=UMigjxWejSG7oBfYdOSEDSdJ6h87CCMuKOGTFASI26E,655
+dragonfly/_base.py,sha256=zUQT42JI68HLq5W0v2OrRxqJzmm9gnUZOW2ZuUM3K4w,3075
+dragonfly/building.py,sha256=2RcFoNrVSyapzk80NU6HkR_mzd4gdGYJ5DP7WvmYWKs,33532
+dragonfly/context.py,sha256=DrHtfX_eGwdgxW8zZMyr7Vb3aE09LHfvFRaZD4bP084,7617
+dragonfly/extensionutil.py,sha256=ICpJlnemAI5vInvgF0PtJ85XC6kDpbQiGosskm_Bjts,4984
+dragonfly/model.py,sha256=rdEKQy7Cv5pEPyfNHPYbmaaysBaCX9GrKN7X8WySlLw,16492
+dragonfly/properties.py,sha256=soNqHSUKF98idkvZw57mNxQaDwVyDGcaU01Igeeqnmg,18088
+dragonfly/room2d.py,sha256=3x9QcEz_tbaglZB3LEzaqNN8yjLCpJw3-jVuP3xHd9Q,45480
+dragonfly/shadingparameter.py,sha256=0IiIvP_d5VEMfE4jVaD7Pnf5hlLgi73GiD4WRYYRrFY,18804
+dragonfly/story.py,sha256=5tClV8yYuidTITzVPth0waTeHjxitya9uysFNT1Idzg,19990
+dragonfly/subdivide.py,sha256=y_8ScU3ArQnGTrDL_k9SfHB5ZIaLA6NlOPia_o0oc00,5756
+dragonfly/windowparameter.py,sha256=0sABN0ZpeX4f6571fjs9sMGNsWjwS05RF1i-Q3G2SQA,16014
+dragonfly_core-1.5.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dragonfly_core-1.5.0.dist-info/METADATA,sha256=374-UVNdIkcNSHrRK_zJslojFohpmKS6GVGXBYS_UaM,2221
+dragonfly_core-1.5.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+dragonfly_core-1.5.0.dist-info/top_level.txt,sha256=gs85608EtdVuXcqYNOZSYAJ77_aEgVF6OIyDGljKnno,10
+dragonfly_core-1.5.0.dist-info/RECORD,,
