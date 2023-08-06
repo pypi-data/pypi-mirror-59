@@ -1,0 +1,17 @@
+dnachisel_dtailor_mode/Design.py,sha256=4jNqAW0GjuALFWw6lF3uS7LQASAtQJ66yt-5DwYwYg8,3930
+dnachisel_dtailor_mode/DnaDesignProblem.py,sha256=oshDQS5WJAL3nKjHo-xEwvr9a0u-XpAn0gHcQEPcxEU,3110
+dnachisel_dtailor_mode/SequenceDesigner.py,sha256=5lfyHrooSzPoAaMgJknOvUC8FA2PhcPmDaxbcSEpKUw,8654
+dnachisel_dtailor_mode/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dnachisel_dtailor_mode/version.py,sha256=jZ5uWOiyV1Hb9rhNyo3bAgfWmHx8_xkueUWpcUrkz_w,21
+dnachisel_dtailor_mode/tools/DBSQLite.py,sha256=fxYDreWuM6GaVoqQRrAh3xJ4CbITD25xScVZdNl-2xc,13668
+dnachisel_dtailor_mode/tools/__init__.py,sha256=-bPt2r-k80Y10UxYFWLYItXGm_xoSv_IqFX1tEtGUVY,538
+dnachisel_dtailor_mode/tools/biotables_tailor.py,sha256=6hwzL_JlAR-gDoB8_u0uknyhCVleUtNixP-l8NB2LU8,4678
+dnachisel_dtailor_mode/tools/codontools.py,sha256=ogpp-QTFSqzZ8w-FUjgLEnGaUO3F3w8-Hfz_wYYRsSg,2371
+dnachisel_dtailor_mode/tools/mathtools.py,sha256=v2UAthv-I5OMjw_KlG8ROGBl0hFf6wnhdpScJKiKE14,668
+dnachisel_dtailor_mode/tools/range.py,sha256=2c8xdH3xl4psGz1yshTAXT8QgMXo4ocPD7ddnOjZXCA,2616
+dnachisel_dtailor_mode/tools/seqtools.py,sha256=TV7REoHszQvIR169fgOzD3yb-7Qq8RgWjEu99Lbn3Hc,917
+dnachisel_dtailor_mode/tools/tailor_example.py,sha256=IwNuI1NOyL-yFL3UQOxsj89Mb2dnqv3nyWLj8QcP43E,3175
+dnachisel_dtailor_mode-0.1.1.dist-info/METADATA,sha256=S2L8Xg9xyy21IsSLojJVHZeJC9TDnbUQn0UFIOXZmow,554
+dnachisel_dtailor_mode-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dnachisel_dtailor_mode-0.1.1.dist-info/top_level.txt,sha256=EgKYk7wV5mkTrN2IHJW-rCcIf2blkqhpkIYGdKrSfHk,23
+dnachisel_dtailor_mode-0.1.1.dist-info/RECORD,,
