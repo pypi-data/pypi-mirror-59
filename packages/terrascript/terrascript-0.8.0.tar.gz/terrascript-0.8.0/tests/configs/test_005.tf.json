@@ -1,0 +1,44 @@
+{
+  "provider": {
+    "aws": [
+      {
+        "version": "~> 2.0",
+        "region": "us-east-1"
+      }
+    ]
+  },
+  "resource": {
+    "aws_instance": {
+      "web": {
+        "ami": "AMI",
+        "instance_type": "t2.micro",
+        "provisioner": [
+          {
+            "file": {
+              "source": "conf/myapp.conf",
+              "destination": "/etc/myapp.conf"
+            }
+          },
+          {
+            "file": {
+              "source": "ami used: ${self.ami}",
+              "destination": "/tmp/file.log"
+            }
+          },
+          {
+            "file": {
+              "source": "conf/configs.d",
+              "destination": "/etc"
+            }
+          },
+          {
+            "file": {
+              "source": "apps/app1/",
+              "destination": "D:/IIS/webapp1"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

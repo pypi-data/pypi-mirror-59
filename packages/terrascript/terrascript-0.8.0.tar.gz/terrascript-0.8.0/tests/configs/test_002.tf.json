@@ -1,0 +1,21 @@
+{
+  "provider": {
+    "aws": [
+      {
+        "version": "~> 2.0",
+        "region": "us-east-1",
+        "endpoints": {
+          "dynamodb": "http://localhost:4569",
+          "s3": "http://localhost:4572"
+        }
+      }
+    ]
+  },
+  "resource": {
+    "aws_vpc": {
+      "example": {
+        "cidr_block": "10.0.0.0/16"
+      }
+    }
+  }
+}
