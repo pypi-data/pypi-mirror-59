@@ -1,0 +1,5 @@
+Django
+PyJWT>=1.7.1
+djangorestframework
+psycopg2
+django-ipware
