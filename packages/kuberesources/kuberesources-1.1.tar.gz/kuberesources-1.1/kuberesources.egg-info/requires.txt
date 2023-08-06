@@ -1,0 +1,5 @@
+kubernetes
+pick
+adal
+colorama
+progress
