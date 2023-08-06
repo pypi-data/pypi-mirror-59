@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: SeleniumCookies
+Version: 0.3
+Summary: COOKIE INJECTION FOR SELENIUM
+Home-page: https://github.com/D-E-F-E-A-T/Selenium-Cookie-Injector
+Author: D-E-F-E-A-T
+Author-email: pchackers18@gmail.com
+License: MIT
+Download-URL: https://github.com/D-E-F-E-A-T/Selenium-Cookie-Injector/archive/v_01.tar.gz
+Keywords: SELENIUM,COOKIE
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: setuptools
+Requires-Dist: wheel
+Requires-Dist: pyaes
+Requires-Dist: pbkdf2
+Requires-Dist: keyring
+Requires-Dist: lz4
+Requires-Dist: configparser
+
+UNKNOWN
+
+
