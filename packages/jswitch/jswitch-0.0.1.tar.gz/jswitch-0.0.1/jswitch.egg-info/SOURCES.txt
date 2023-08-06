@@ -1,0 +1,10 @@
+README.md
+jswitch.py
+setup.py
+jswitch.egg-info/PKG-INFO
+jswitch.egg-info/SOURCES.txt
+jswitch.egg-info/dependency_links.txt
+jswitch.egg-info/entry_points.txt
+jswitch.egg-info/not-zip-safe
+jswitch.egg-info/requires.txt
+jswitch.egg-info/top_level.txt
