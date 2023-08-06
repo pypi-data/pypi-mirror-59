@@ -1,0 +1,7 @@
+pbr>=1.0
+six
+ipaddress
+netaddr
+pexpect
+numpy
+pandas
