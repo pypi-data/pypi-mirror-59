@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sesamelib
+Version: 0.0.27
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: ipython
+Requires-Dist: numpy
+Requires-Dist: ipdb
+Requires-Dist: matplotlib
+Requires-Dist: libais
+
+UNKNOWN
+
+
