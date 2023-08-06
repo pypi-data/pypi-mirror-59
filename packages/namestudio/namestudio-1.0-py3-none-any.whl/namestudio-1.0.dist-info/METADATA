@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: namestudio
+Version: 1.0
+Summary: UNKNOWN
+Home-page: https://github.com/whalesalad/verisign-namestudio
+Author: Michael Whalen
+Author-email: michael@whalesalad.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: requests (==2.22.0)
+
+UNKNOWN
+
+
