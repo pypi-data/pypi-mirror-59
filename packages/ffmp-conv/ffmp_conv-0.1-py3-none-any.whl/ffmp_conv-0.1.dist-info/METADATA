@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ffmp-conv
+Version: 0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: np-at
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: ffmpeg
+Requires-Dist: plexapi
+
+UNKNOWN
+
+
