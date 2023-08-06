@@ -1,0 +1,7 @@
+README.md
+setup.py
+windel.egg-info/PKG-INFO
+windel.egg-info/SOURCES.txt
+windel.egg-info/dependency_links.txt
+windel.egg-info/requires.txt
+windel.egg-info/top_level.txt

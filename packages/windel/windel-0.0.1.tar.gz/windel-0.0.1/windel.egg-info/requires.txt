@@ -1,0 +1,4 @@
+fire==0.2
+numpy==1.17
+pysam==0.15
+scipy==1.4
