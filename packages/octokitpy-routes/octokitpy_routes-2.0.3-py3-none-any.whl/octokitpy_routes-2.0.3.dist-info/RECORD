@@ -1,0 +1,10 @@
+octokit_routes/__init__.py,sha256=8HjFAL4DD6atFnMm84lVl4uoKya5iB0bRcNkuFQFaK8,424
+octokit_routes/routes/api.github.com.json,sha256=aKG3tisyTV8bZrF51zFaaILaQdsT3JLmexy23OYlZJU,5414134
+octokit_routes/routes/ghe-2.16.json,sha256=eO_EOn2DNj93Z0pWZ0KxEvy4GHJxH0UWWWMUliIj8o0,4691562
+octokit_routes/routes/ghe-2.17.json,sha256=14xwyvf-86zFLaeVleU1EA2ko3CPT_XdcRZoEnQpq88,4880004
+octokit_routes/routes/ghe-2.18.json,sha256=dX09H0gdW4TVoUb0tXUDfYnGNcolMw5BVa4I70-pOqs,4963513
+octokit_routes/routes/ghe-2.19.json,sha256=mP4WfSPfQS0toVD6azgy4-l3Dv8vNSf7QN5B3UXQMSc,5027729
+octokitpy_routes-2.0.3.dist-info/METADATA,sha256=jOnAzP6YXc1F2eDH81XP5x9w6eamWhWUvYJ97OlQVgo,913
+octokitpy_routes-2.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+octokitpy_routes-2.0.3.dist-info/top_level.txt,sha256=_SFIo3KJNjcxa6lnNsgPVaCFrx3YIH5iemoEV2HmG48,15
+octokitpy_routes-2.0.3.dist-info/RECORD,,
