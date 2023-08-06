@@ -1,0 +1,4 @@
+include *.rst *.txt *.cfg *.ini *.json *.yaml
+recursive-include rustybits *.ico *.png *.gif *.jpg
+recursive-include rustybits *.less *.css *.js *.html *.pt *.mak *.mako
+recursive-include rustybits *.json *.yaml *.xml

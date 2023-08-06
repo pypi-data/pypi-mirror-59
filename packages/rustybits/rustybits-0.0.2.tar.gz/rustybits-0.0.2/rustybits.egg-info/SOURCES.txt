@@ -1,0 +1,16 @@
+CHANGELOG.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+VERSION.txt
+requirements.txt
+setup.cfg
+setup.py
+test-requirements.txt
+rustybits.egg-info/PKG-INFO
+rustybits.egg-info/SOURCES.txt
+rustybits.egg-info/dependency_links.txt
+rustybits.egg-info/entry_points.txt
+rustybits.egg-info/requires.txt
+rustybits.egg-info/top_level.txt
+rustybits.egg-info/zip-safe
