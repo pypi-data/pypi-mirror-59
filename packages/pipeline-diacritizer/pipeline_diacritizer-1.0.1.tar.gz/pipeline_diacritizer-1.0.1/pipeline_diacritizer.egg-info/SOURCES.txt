@@ -1,0 +1,12 @@
+README.md
+setup.py
+pipeline_diacritizer/__init__.py
+pipeline_diacritizer/dataset_preprocessing.py
+pipeline_diacritizer/diacritization_model.py
+pipeline_diacritizer/pipeline_diacritizer.py
+pipeline_diacritizer.egg-info/PKG-INFO
+pipeline_diacritizer.egg-info/SOURCES.txt
+pipeline_diacritizer.egg-info/dependency_links.txt
+pipeline_diacritizer.egg-info/entry_points.txt
+pipeline_diacritizer.egg-info/requires.txt
+pipeline_diacritizer.egg-info/top_level.txt
