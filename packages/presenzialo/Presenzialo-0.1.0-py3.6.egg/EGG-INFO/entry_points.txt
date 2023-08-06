@@ -1,0 +1,3 @@
+[console_scripts]
+Presenzialo = presenzialo.presenzialo:main
+
