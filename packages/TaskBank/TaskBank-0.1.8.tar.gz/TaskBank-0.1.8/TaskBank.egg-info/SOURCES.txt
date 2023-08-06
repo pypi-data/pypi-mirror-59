@@ -1,0 +1,10 @@
+README.md
+setup.py
+TaskBank.egg-info/PKG-INFO
+TaskBank.egg-info/SOURCES.txt
+TaskBank.egg-info/dependency_links.txt
+TaskBank.egg-info/top_level.txt
+src/ImgAug.py
+src/SciKit.py
+src/TaskBank.py
+src/__init__.py
