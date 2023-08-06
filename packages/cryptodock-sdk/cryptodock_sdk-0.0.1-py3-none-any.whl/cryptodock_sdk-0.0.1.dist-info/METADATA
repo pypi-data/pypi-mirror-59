@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cryptodock-sdk
+Version: 0.0.1
+Summary: SDK for CryptoDock's remote API. Included when bootstrapping a new strategy template with the CryptoDock desktop iOS app, and used in the CryptoDock remote backtesters.
+Home-page: https://github.com/the-launch-tech/cryptodock-sdk
+Author: Daniel Griffiths
+Author-email: daniel@thelaunch.tech
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+Check paths for imports:
+python -v -m my_scriptname.py
+
+
