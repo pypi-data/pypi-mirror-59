@@ -1,0 +1,8 @@
+polyquack_django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polyquack_django/fields.py,sha256=n1k1kdRS4Q8xYTYTWuI8FNyonqfsjQHwuAJqUg-JlNU,1581
+polyquack_django/form_fields.py,sha256=WsF_9UydW0tCK1l9cH9zB_N2MEM7Y45BG_ys_Ge5cEI,466
+polyquack_django/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polyquack_django/templatetags/translate_filters.py,sha256=WpqfPfYU1LBfQ1NgNE1zO7iKbrpdSMKTNVjUZZ5VOxE,352
+polyquack_django-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+polyquack_django-0.1.0.dist-info/METADATA,sha256=XFiIURciVzv5l-MhDmfgi2HplcAqEaC7ibsXPazYdHY,1415
+polyquack_django-0.1.0.dist-info/RECORD,,
