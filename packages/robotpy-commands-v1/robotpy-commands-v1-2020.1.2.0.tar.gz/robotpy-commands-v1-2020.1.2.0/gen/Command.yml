@@ -1,0 +1,60 @@
+---
+
+extra_includes:
+- frc/smartdashboard/SendableBuilder.h
+- frc/commands/CommandGroup.h
+
+classes:
+  Command:
+    shared_ptr: true
+    ignored_bases:
+    - SendableHelper<Command>
+    methods:
+      Command:
+        overloads:
+          "":
+          wpi::Twine&:
+          double:
+          Subsystem&:
+          wpi::Twine&, double:
+          wpi::Twine&, Subsystem&:
+          double, Subsystem&:
+          wpi::Twine&, double, Subsystem&:
+      TimeSinceInitialized:
+      Requires:
+      Start:
+      Run:
+      Cancel:
+      IsRunning:
+      IsInitialized:
+      IsCompleted:
+      IsCanceled:
+      IsInterruptible:
+      SetInterruptible:
+      DoesRequire:
+      GetRequirements:
+      GetGroup:
+      SetRunWhenDisabled:
+      WillRunWhenDisabled:
+      GetID:
+      GetName:
+      SetName:
+      GetSubsystem:
+      SetSubsystem:
+      InitSendable:
+      SetTimeout:
+      IsTimedOut:
+      AssertUnlocked:
+      SetParent:
+      IsParented:
+      ClearRequirements:
+      Initialize:
+      Execute:
+      IsFinished:
+      End:
+      Interrupted:
+      _Initialize:
+      _Interrupted:
+      _Execute:
+      _End:
+      _Cancel:

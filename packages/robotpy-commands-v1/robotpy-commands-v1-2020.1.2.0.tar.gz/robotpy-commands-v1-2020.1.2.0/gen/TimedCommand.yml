@@ -1,0 +1,18 @@
+---
+
+extra_includes:
+- frc/smartdashboard/SendableBuilder.h
+- frc/commands/Command.h
+- frc/commands/CommandGroup.h
+
+classes:
+  TimedCommand:
+    shared_ptr: true
+    methods:
+      TimedCommand:
+        overloads:
+          wpi::Twine&, double:
+          double:
+          wpi::Twine&, double, Subsystem&:
+          double, Subsystem&:
+      IsFinished:

@@ -1,0 +1,24 @@
+---
+
+extra_includes:
+- frc/smartdashboard/SendableBuilder.h
+- frc/commands/Command.h
+- frc/commands/CommandGroup.h
+
+classes:
+  InstantCommand:
+    shared_ptr: true
+    methods:
+      InstantCommand:
+        overloads:
+          wpi::Twine&:
+          Subsystem&:
+          wpi::Twine&, Subsystem&:
+          std::function<void ( )>:
+          Subsystem&, std::function<void ( )>:
+          wpi::Twine&, std::function<void ( )>:
+          wpi::Twine&, Subsystem&, std::function<void ( )>:
+          "":
+      function<void:
+      _Initialize:
+      IsFinished:

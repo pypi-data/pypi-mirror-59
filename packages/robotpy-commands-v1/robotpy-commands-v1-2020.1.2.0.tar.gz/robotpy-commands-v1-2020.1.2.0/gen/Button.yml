@@ -1,0 +1,17 @@
+---
+
+extra_includes:
+- frc/smartdashboard/SendableBuilder.h
+- frc/commands/Command.h
+- frc/commands/CommandGroup.h
+
+classes:
+  Button:
+    shared_ptr: true
+    methods:
+      Button:
+      WhenPressed:
+      WhileHeld:
+      WhenReleased:
+      CancelWhenPressed:
+      ToggleWhenPressed:
