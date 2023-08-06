@@ -1,0 +1,10 @@
+README.rst
+setup.py
+somap_py/__init__.py
+somap_py/som_selector.py
+somap_py/som_selector_gui.py
+somap_py/somutils.py
+somap_py.egg-info/PKG-INFO
+somap_py.egg-info/SOURCES.txt
+somap_py.egg-info/dependency_links.txt
+somap_py.egg-info/top_level.txt
