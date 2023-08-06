@@ -1,0 +1,8 @@
+filefield_cache/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+filefield_cache/cache.py,sha256=oDHrIMS3PA2TJXa6gAyaFKhASMDHrDf47YBJ0gckDJc,1734
+filefield_cache/widgets.py,sha256=fSKT6-CFB-Vu5XVmaGCK4UEExmpD7UJxrI4By8lAH_8,1778
+filefield_cache/templates/filefield_cache/cached_clearable_file_input.html,sha256=xLD4qELPebFm_UkY66aLLB4bZjpOcGSdtnRU6RhCt3g,959
+filefield_cache-0.0.3.dist-info/METADATA,sha256=ztiAkxJYd4M3mXTbqdXGRf951Dh6Pwlg5dVvF9RWQp4,1653
+filefield_cache-0.0.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+filefield_cache-0.0.3.dist-info/top_level.txt,sha256=KLeBpkG6gSTSJevKUfHdpgd5JsZp6XztO34vCdPdqDY,16
+filefield_cache-0.0.3.dist-info/RECORD,,
