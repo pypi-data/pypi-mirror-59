@@ -1,0 +1,3 @@
+[console_scripts]
+veracode = veracode.utils.cli:main
+
