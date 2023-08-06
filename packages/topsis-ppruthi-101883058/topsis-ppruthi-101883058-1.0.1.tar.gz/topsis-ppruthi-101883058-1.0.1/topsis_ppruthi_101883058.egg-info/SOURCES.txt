@@ -1,0 +1,9 @@
+README.md
+setup.py
+topsis_ppruthi_101883058.egg-info/PKG-INFO
+topsis_ppruthi_101883058.egg-info/SOURCES.txt
+topsis_ppruthi_101883058.egg-info/dependency_links.txt
+topsis_ppruthi_101883058.egg-info/entry_points.txt
+topsis_ppruthi_101883058.egg-info/requires.txt
+topsis_ppruthi_101883058.egg-info/top_level.txt
+topsis_python/topsis.py
