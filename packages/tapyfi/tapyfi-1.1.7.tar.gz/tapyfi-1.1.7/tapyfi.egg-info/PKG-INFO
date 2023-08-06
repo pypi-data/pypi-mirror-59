@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tapyfi
+Version: 1.1.7
+Summary: Financial Indicators For Traders 
+Home-page: https://github.com/rdvnszn1/TaPyFi
+Author: Rıdvan Sözen
+Author-email: ridvansozen1@gmail.com
+License: MIT
+Description: README
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
