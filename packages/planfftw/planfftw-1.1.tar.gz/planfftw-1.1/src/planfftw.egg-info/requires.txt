@@ -1,0 +1,14 @@
+numpy
+
+[dev]
+pytest
+tox
+scipy
+pyfftw
+
+[docs]
+sphinx
+numpydoc
+
+[speed]
+pyfftw
