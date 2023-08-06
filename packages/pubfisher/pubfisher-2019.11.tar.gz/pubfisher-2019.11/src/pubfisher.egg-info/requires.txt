@@ -1,0 +1,6 @@
+pycairo
+PyGObject
+beautifulsoup4
+bibtexparser
+requests
+typeguard

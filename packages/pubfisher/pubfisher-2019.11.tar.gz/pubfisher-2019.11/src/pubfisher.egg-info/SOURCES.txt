@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/pubfisher/__init__.py
+src/pubfisher/annotate.py
+src/pubfisher/core.py
+src/pubfisher/gi_composites.py
+src/pubfisher.egg-info/PKG-INFO
+src/pubfisher.egg-info/SOURCES.txt
+src/pubfisher.egg-info/dependency_links.txt
+src/pubfisher.egg-info/requires.txt
+src/pubfisher.egg-info/top_level.txt
+src/pubfisher/fishers/__init__.py
+src/pubfisher/fishers/googlescholar.py
+src/pubfisher/fishers/share.py
