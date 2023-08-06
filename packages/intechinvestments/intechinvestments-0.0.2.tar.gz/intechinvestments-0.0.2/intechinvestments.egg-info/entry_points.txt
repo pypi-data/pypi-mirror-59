@@ -1,0 +1,3 @@
+[console_scripts]
+intechinvestments = intechinvestments.__main__:main
+
