@@ -1,0 +1,12 @@
+ichrome/__init__.py,sha256=6FGPoHDTJWsg7kAhVAQsMc083F1VNxDCtEfeSIRZ7mk,447
+ichrome/__main__.py,sha256=GHKU2XXHKd4MCq5O3trKPqiw_Z-4Wc05O7tMHvIb-kQ,2429
+ichrome/async_utils.py,sha256=rFAtlAROKn7A6vP459dQ5anUv_GT_gt1Eqz5anUTmMA,36595
+ichrome/base.py,sha256=yWxN1nfXV8Lj4OnO1OBlYLz0Jf0HrVeLfQ4mI58kHnI,983
+ichrome/daemon.py,sha256=JXVyT6B4WAbRIAHO20n-2QbiICOaNY0I9-aWoQoFDq4,13236
+ichrome/logs.py,sha256=xGjAAzHVfUAEkKKXTazMrx51fqD48NuM9q51mH7R4eA,574
+ichrome/sync_utils.py,sha256=hjP0wHqC5erJKIFv182q55aI98rPSYXz03moIp6JCgE,19371
+ichrome-0.2.4.dist-info/LICENSE,sha256=4bl-rb3nuvHYk6dj9IYbOZO3KG9dGzF3iEHJM5VQYus,1082
+ichrome-0.2.4.dist-info/METADATA,sha256=QEQrSpo9Ro6W1-BupPg6CM58s4RvW5Chd-0afOIZEww,17965
+ichrome-0.2.4.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+ichrome-0.2.4.dist-info/top_level.txt,sha256=q05m2qZfm8toJUsEe8DjwqqV0YFRdfbq21dqaWdm9cw,8
+ichrome-0.2.4.dist-info/RECORD,,
