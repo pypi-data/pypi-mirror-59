@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: mlep
+Version: 0.1.dev2
+Summary: Interact with an EnergyPlus simulation during runtime using the BCVTB protocol.
+Home-page: https://github.com/corymosiman12/python-mlep
+Author: Cory Mosiman
+Author-email: UNKNOWN
+License: MIT
+Description: # MLEP Client
+        Interact with an EnergyPlus simulation during runtime using the BCVTB protocol.
+        
+Platform: UNKNOWN
