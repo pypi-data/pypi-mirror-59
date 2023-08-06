@@ -1,0 +1,13 @@
+prestring
+typing_extensions
+magicalimport
+
+[dev]
+flake8
+black
+
+[docs]
+
+[testing]
+flake8
+black
