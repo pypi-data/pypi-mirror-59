@@ -1,0 +1,3 @@
+[flake8.extension]
+KWA = flake8_kw_args:Plugin
+

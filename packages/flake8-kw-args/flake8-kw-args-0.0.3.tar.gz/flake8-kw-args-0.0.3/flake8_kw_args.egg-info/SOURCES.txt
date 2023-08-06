@@ -1,0 +1,12 @@
+.project-version
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+flake8_kw_args/__init__.py
+flake8_kw_args.egg-info/PKG-INFO
+flake8_kw_args.egg-info/SOURCES.txt
+flake8_kw_args.egg-info/dependency_links.txt
+flake8_kw_args.egg-info/entry_points.txt
+flake8_kw_args.egg-info/top_level.txt
+requirements/project.txt
