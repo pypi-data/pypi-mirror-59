@@ -1,0 +1,3 @@
+[console_scripts]
+topsis-bharat = topsis_bharat132.package_101703139:main
+
