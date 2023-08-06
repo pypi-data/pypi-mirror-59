@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cellfinder-analyst
+Version: 0.0.1
+Summary: Group level analysis of cellfinder results.
+Home-page: https://github.com/adamltyson/cellfinder-analyst
+Author: Adam Tyson
+Author-email: adam.tyson@ucl.ac.uk
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6,
+Provides-Extra: dev
