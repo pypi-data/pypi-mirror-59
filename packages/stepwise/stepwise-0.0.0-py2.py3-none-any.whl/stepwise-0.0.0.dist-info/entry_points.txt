@@ -1,0 +1,10 @@
+[console_scripts]
+stepwise=stepwise:main
+
+[stepwise.commands]
+lpr=stepwise.cli:lpr
+ls=stepwise.cli:ls
+
+[stepwise.protocol_dirs]
+builtins=stepwise:protocol_dirs
+
