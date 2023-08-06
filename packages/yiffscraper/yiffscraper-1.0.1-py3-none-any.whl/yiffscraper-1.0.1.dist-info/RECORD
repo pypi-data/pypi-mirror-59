@@ -1,0 +1,10 @@
+yiffscraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yiffscraper/__main__.py,sha256=aqD9cUzCAcGNU4fY-7oc0fY_tRv21-K27ED-1377gRQ,3531
+yiffscraper/downloader.py,sha256=bNUiae9JER944SaX_qC6GgzIzSYCJzh68p5L28WgqFI,3851
+yiffscraper/yiffscraper.py,sha256=_vH2JDhrkN_W9i2TatOGnbuGMxoNm66uxDzJ6KF8QEE,5419
+yiffscraper-1.0.1.dist-info/LICENSE,sha256=uWrZyN1hEPvW6vcJ4tW1tXm1VdOHY50pBCAtp0-oRh8,1094
+yiffscraper-1.0.1.dist-info/METADATA,sha256=5dBKmDylqgURwK_zPnBKINN7dl6_V0_cS3oCbc7ukCQ,2597
+yiffscraper-1.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+yiffscraper-1.0.1.dist-info/entry_points.txt,sha256=6I5A2UOElEjinmCr_U4jjOE_keJkDQOPducem1m9peE,52
+yiffscraper-1.0.1.dist-info/top_level.txt,sha256=ItiDIj238Is_o-K5GuVNpPkgcYYPppAkF0keSXu7wGo,12
+yiffscraper-1.0.1.dist-info/RECORD,,
