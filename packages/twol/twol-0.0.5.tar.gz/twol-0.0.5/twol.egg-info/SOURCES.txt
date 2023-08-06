@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+twol/twolcsyntax.ebnf
+twol.egg-info/PKG-INFO
+twol.egg-info/SOURCES.txt
+twol.egg-info/dependency_links.txt
+twol.egg-info/entry_points.txt
+twol.egg-info/top_level.txt
