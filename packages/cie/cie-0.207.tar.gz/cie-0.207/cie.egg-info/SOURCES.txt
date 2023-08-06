@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+cie/cie10.py
+cie.egg-info/PKG-INFO
+cie.egg-info/SOURCES.txt
+cie.egg-info/dependency_links.txt
+cie.egg-info/requires.txt
+cie.egg-info/top_level.txt
+cie/data/cie-10.zip
+cie10_django/__init__.py
+cie10_django/admin.py
+cie10_django/apps.py
+cie10_django/models.py
+cie10_django/tests.py
+cie10_django/views.py
+cie10_django/migrations/0001_initial.py
