@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+ahip.egg-info/PKG-INFO
+ahip.egg-info/SOURCES.txt
+ahip.egg-info/dependency_links.txt
+ahip.egg-info/top_level.txt

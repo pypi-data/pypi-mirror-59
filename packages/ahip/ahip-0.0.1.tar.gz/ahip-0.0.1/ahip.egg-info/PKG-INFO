@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: ahip
+Version: 0.0.1
+Summary: A placeholder package for the hip project
+Home-page: https://github.com/python-trio/hip
+Author: Nathaniel J. Smith
+Author-email: njs@pobox.com
+License: MIT -or- Apache License 2.0
+Description: This is a placeholder package to reserve the name for the hip project:
+        
+          https://github.com/python-trio/hip
+        
+        For more details see:
+        
+          https://github.com/python-trio/hip/issues/168
+        
+        If you have any questions, please get in touch with us!
+        
+Platform: UNKNOWN
+Requires-Python: >=3.5
