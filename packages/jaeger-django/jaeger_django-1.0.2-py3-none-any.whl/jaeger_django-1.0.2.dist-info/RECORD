@@ -1,0 +1,13 @@
+jaegertrace/__init__.py,sha256=gbUXYeGrcrqcOc70BjFtxHtBnwSqor-SlWYgZjypEOA,47
+jaegertrace/conf.py,sha256=fbhVwIsLm4vN6_yZaGJYW62jSLa6yMRwZEohZNZOCXA,1062
+jaegertrace/httpclient.py,sha256=uUanjLhjJHdpAVyyQcu0peYc6YyAoKYS8VKMPVcyo_c,4357
+jaegertrace/initial_tracer.py,sha256=d_fZfDolerIgXZjtb2eCZ2hqBKU5yZ-OyK6VDPWVQZs,450
+jaegertrace/middleware.py,sha256=_wfQhwLW9LFC70-QDt7aZiMVnTXRzXWyTCT9dJBRRlc,3981
+jaegertrace/request_context.py,sha256=068Oe6ZLWWbZxOuSzrlVDEm9pWflrkrp7Eq7uM9fANE,9588
+tests/__init__.py,sha256=gbUXYeGrcrqcOc70BjFtxHtBnwSqor-SlWYgZjypEOA,47
+tests/test_inboud.py,sha256=iIL0ouwexgYQT-JREZbRC51pnUzzsSJGLTYrKB9ajmQ,1177
+jaeger_django-1.0.2.dist-info/LICENSE,sha256=2GIewu7luco8ZfhJJQXzWQ3oV0-sD99RMqdyMtukerw,11326
+jaeger_django-1.0.2.dist-info/METADATA,sha256=fsknLP3ZgZ_mR7DV_UgRIcrehErPbrz6Qhg1Yvjy34s,1577
+jaeger_django-1.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+jaeger_django-1.0.2.dist-info/top_level.txt,sha256=XrctlhyYOjKdUPqjbxRB9nlS30cfbLCj6iC9rDMluRI,18
+jaeger_django-1.0.2.dist-info/RECORD,,
