@@ -1,0 +1,9 @@
+README.md
+gitmb.py
+setup.py
+git_multi_branch.egg-info/PKG-INFO
+git_multi_branch.egg-info/SOURCES.txt
+git_multi_branch.egg-info/dependency_links.txt
+git_multi_branch.egg-info/entry_points.txt
+git_multi_branch.egg-info/requires.txt
+git_multi_branch.egg-info/top_level.txt
