@@ -1,0 +1,8 @@
+README.md
+setup.py
+Mytopsis/__init__.py
+Mytopsis/topsis.py
+topsis_sunvir.egg-info/PKG-INFO
+topsis_sunvir.egg-info/SOURCES.txt
+topsis_sunvir.egg-info/dependency_links.txt
+topsis_sunvir.egg-info/top_level.txt
