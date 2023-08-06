@@ -1,0 +1,15 @@
+beatmachine-2.2.0a4.dist-info/dependency_links.txt,sha256=Z_Ci5c_Z9MCBuZFmMnV3AUvLJQcEKMmoJM4ZRG1SZb0,91
+beatmachine-2.2.0a4.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+beatmachine-2.2.0a4.dist-info/METADATA,sha256=gEy7txELDkkIAPu29_oapT4tMXmIdgl5ibHLWYPpYVc,543
+beatmachine-2.2.0a4.dist-info/top_level.txt,sha256=wpkY8Qc75yZX8b36cb2Krw0j49rPYqI0EnXKH1TwndA,11
+beatmachine-2.2.0a4.dist-info/WHEEL,sha256=Us79eivRQjLGHRjcJWcKLoOci69wgGrVnpmn7W4m6PA,86
+beatmachine/beats.py,sha256=viKDQL2WefeM_06bakIv9veGiuWEb7BX30XgCLITHeM,1785
+beatmachine/loader.py,sha256=J8h5qUagVuQLKT8ZswlijPEKtqMs9V_tb6rckblpKr4,2436
+beatmachine/__main__.py,sha256=Bn4EFTQi6F4LAQW04iEvGdESjp8iJTXq-GjJrqP3m7Y,1108
+beatmachine/__init__.py,sha256=eRiUS33Z8NERho1TdlaKShfWU_a5K-lsSetZVhfhXXg,158
+beatmachine/effects/periodic.py,sha256=re2DUOIa85HXrjtIQSy-XT46oS38T8RsY9Qn0ZpNuno,4869
+beatmachine/effects/base.py,sha256=EyRT80tpJeZbmqM-nE0yTuvnjgV4fBn-RlzYuIRUNiU,2920
+beatmachine/effects/__init__.py,sha256=XhrpUCdzEKC73QrryudnbVY8m8Yq2g96jj6qcCim0Go,210
+beatmachine/effects/temporal.py,sha256=8xJkKYPQvDk0NrGzP9kna1_ZhS07Wra4Mi_UOZFiHDs,3982
+beatmachine-2.2.0a4.dist-info/LICENSE,sha256=GY-TkToVeU98M4cG2zSZbcZclNIcuQJD1OssZE7iYQ0,1070
+beatmachine-2.2.0a4.dist-info/RECORD,,
