@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+nbconvert = mkdocs_nbconvert.plugin:NbConvertPlugin
+
