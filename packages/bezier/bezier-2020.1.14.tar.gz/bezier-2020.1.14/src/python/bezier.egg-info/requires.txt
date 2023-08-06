@@ -1,0 +1,5 @@
+numpy>=1.18.1
+
+[full]
+scipy>=1.4.1
+sympy>=1.5.1
