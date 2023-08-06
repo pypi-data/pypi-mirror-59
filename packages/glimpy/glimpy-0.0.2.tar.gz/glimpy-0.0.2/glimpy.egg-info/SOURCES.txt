@@ -1,0 +1,10 @@
+README.md
+setup.py
+glimpy/__init__.py
+glimpy/families.py
+glimpy/glm.py
+glimpy.egg-info/PKG-INFO
+glimpy.egg-info/SOURCES.txt
+glimpy.egg-info/dependency_links.txt
+glimpy.egg-info/requires.txt
+glimpy.egg-info/top_level.txt
