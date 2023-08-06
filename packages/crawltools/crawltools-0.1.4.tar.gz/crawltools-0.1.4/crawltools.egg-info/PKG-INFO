@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: crawltools
+Version: 0.1.4
+Summary: Simple crawlers
+Home-page: https://github.com/maybes/crawler
+Author: Jiun Bae
+Author-email: maytryark@gmail.com
+License: MIT
+Download-URL: https://github.com/MaybeS/crawler/releases/latest
+Description: # Crawler
+        
+        Simple crawler
+        
+Keywords: crawler,scrapy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >= 3
