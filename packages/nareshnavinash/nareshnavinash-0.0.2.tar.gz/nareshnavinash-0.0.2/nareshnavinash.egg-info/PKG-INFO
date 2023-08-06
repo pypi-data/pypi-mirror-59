@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nareshnavinash
+Version: 0.0.2
+Summary: A small example package
+Home-page: UNKNOWN
+Author: nareshnavinash
+Author-email: nareshnavinash@gmail.com
+License: UNKNOWN
+Description: # Test module
+        
+        To learn how to push module to pypi
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
