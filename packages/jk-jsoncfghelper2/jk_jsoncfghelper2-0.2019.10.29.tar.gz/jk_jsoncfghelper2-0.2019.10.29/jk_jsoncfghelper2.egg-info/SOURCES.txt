@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+README.rst
+setup.py
+jk_jsoncfghelper2/__init__.py
+jk_jsoncfghelper2/compile_from_jdef.py
+jk_jsoncfghelper2/compile_from_xml.py
+jk_jsoncfghelper2/jdef.py
+jk_jsoncfghelper2/value_checkers.py
+jk_jsoncfghelper2.egg-info/PKG-INFO
+jk_jsoncfghelper2.egg-info/SOURCES.txt
+jk_jsoncfghelper2.egg-info/dependency_links.txt
+jk_jsoncfghelper2.egg-info/not-zip-safe
+jk_jsoncfghelper2.egg-info/requires.txt
+jk_jsoncfghelper2.egg-info/top_level.txt
