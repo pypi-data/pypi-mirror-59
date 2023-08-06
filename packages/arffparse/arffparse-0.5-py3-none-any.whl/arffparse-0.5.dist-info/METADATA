@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: arffparse
+Version: 0.5
+Summary: Small ARFF parsing tool for datasets
+Home-page: https://github.com/connormullett/ArffParse
+Author: arff parse
+Author-email: connormullett@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+
+# ARFF Parse
+
+Simple, small, command-line tool for parsing ARFF style datasets to CSV
+
+# Install
+ - `pip install arffparse`
+
+# Contributing
+ - Just pull request
+
+## Soon to come
+ - Reversable (CSV to ARFF)
+ - More file formats
+
+
+
