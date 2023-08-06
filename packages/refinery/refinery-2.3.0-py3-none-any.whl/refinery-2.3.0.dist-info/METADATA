@@ -1,0 +1,30 @@
+Metadata-Version: 2.0
+Name: refinery
+Version: 2.3.0
+Summary: A map extractor for games built with the Blam engine
+Home-page: https://github.com/MosesofEgypt/refinery
+Author: Devin Bobadilla, Michelle van der Graaf
+Author-email: MosesBobadilla@gmail.com
+License: GPLv3
+Keywords: refinery,halo
+Platform: POSIX
+Platform: Windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires: mozzarilla
+Requires: supyr_struct
+Requires: reclaimer
+Requires: binilla
+Provides: refinery
+Description-Content-Type: text/markdown
+Requires-Dist: mozzarilla (>=1.7.0)
+Requires-Dist: supyr-struct
+Requires-Dist: reclaimer
+Requires-Dist: binilla
+
+Could not read long description from readme.
+
+
