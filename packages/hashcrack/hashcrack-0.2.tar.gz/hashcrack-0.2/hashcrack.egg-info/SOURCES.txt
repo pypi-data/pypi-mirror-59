@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+hashcrack/__init__.py
+hashcrack/add.py
+hashcrack/cli.py
+hashcrack/config.py
+hashcrack/crack.py
+hashcrack/help.py
+hashcrack/identify.py
+hashcrack/set.py
+hashcrack/show.py
+hashcrack/types.py
+hashcrack/version.py
+hashcrack/static/wordlists/rockyou.txt.xz
