@@ -1,0 +1,12 @@
+tima/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tima/__main__.py,sha256=Z2Uq8uqpCGt-lyfbOn86DI9E_gg8rBwoMISPahNiZV4,1691
+tima/tima_mindif_processor.py,sha256=eBfLhMx75Hu9s3XkpHk5NDX_WCr2l20ZSP_0o2aK3QQ,15203
+tima/utils.py,sha256=ftHIsUnMzB-3yfC3xzSxcG2YXSfW_ZzuSQqM1v7_VkY,290
+tima/fonts/DejaVuSans.ttf,sha256=ZDyraPhT0SbmEuggo_8jBRba--DrNnH59IY-yI_Pyqc,720012
+tima/fonts/DejaVuSansMono.ttf,sha256=RT2-ueN5npP74OmAwA5l7wK3H5YJslylPFUIcNGllpg,333636
+tima_mindif-1.1.1.dist-info/LICENSE.txt,sha256=Idfchg-CLT3zoxZegtaPIF7lPooa6spff4Rllvc4NjM,3531
+tima_mindif-1.1.1.dist-info/METADATA,sha256=HQptByLLCoBFEdO59JNBkxD2OfOvoudUD7Phel0Tvw4,2542
+tima_mindif-1.1.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+tima_mindif-1.1.1.dist-info/entry_points.txt,sha256=F_bTIkbPPvnMEartvt2u0zg5FL5mtxWOUlQL0X6C0Pc,52
+tima_mindif-1.1.1.dist-info/top_level.txt,sha256=Gxz7CGpFjJv819ezaGKRXqeaWw5TV6nmvHoOXpgHvxY,5
+tima_mindif-1.1.1.dist-info/RECORD,,
