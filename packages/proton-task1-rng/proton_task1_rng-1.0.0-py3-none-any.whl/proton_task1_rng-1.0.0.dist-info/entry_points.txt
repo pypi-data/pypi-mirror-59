@@ -1,0 +1,3 @@
+[console_scripts]
+proton-task1 = reader.__main__:main
+

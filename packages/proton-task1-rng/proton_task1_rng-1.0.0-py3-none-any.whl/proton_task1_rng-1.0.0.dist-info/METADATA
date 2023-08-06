@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: proton-task1-rng
+Version: 1.0.0
+Summary: Generate a random number from a discrete distribution
+Home-page: UNKNOWN
+Author: Cyril van Schreven
+Author-email: cyril.schreven@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+# Task 1: Random Number Generator for discrete distributions
+
+A pseudo-random number generator for discrete distribution. It uses the library [random](https://docs.python.org/3/library/random.html) as backend for pseudo-randomness.
+
+## Installation
+This repository supports Python3
+
+
