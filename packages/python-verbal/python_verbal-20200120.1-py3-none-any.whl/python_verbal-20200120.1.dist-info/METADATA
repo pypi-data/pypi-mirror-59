@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: python-verbal
+Version: 20200120.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: dev@cf-partners.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pyyaml
+Requires-Dist: pymongo
+Requires-Dist: psutil (>=2.1.1)
+Requires-Dist: argh
+Requires-Dist: tornado
+Requires-Dist: coverage
+Requires-Dist: pyzmq
+
+UNKNOWN
+
+

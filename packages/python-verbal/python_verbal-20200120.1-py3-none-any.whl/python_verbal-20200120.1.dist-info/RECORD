@@ -1,0 +1,15 @@
+verbal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verbal/argh.py,sha256=t3zLUtpDbUl89n4arjn6rtRV4qtb5wiq97OK-wTofJk,810
+verbal/istring.py,sha256=GnZ9dHoDd6w-eO4YQ0alD-aP_3LCLgzQdhdMruQ9Nyw,2506
+verbal/logging.py,sha256=oXpqaIdblk8HbxyBMPJusXaeMtgfEDoWzxAjtTFSs_0,1650
+verbal/loggly.py,sha256=CKvafdkzpi1mYS3BZuQJGtgEZtRtKvUmNI_8UGNFO6M,2014
+verbal/mongolog.py,sha256=2t1Gx4Bu_kXjSh9GpvRJQPVX7P9BNWtrL_czm1tMVLM,5816
+verbal/mongolog.py.orig,sha256=SZOXlI4w96tKQKHmiPyhNd9FqhZQEGFq0wqrI1hSHUk,6034
+verbal/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verbal/test/test_istring.py,sha256=h7r5Wi8ruqfGgiBdBvBjqTBeCTBXBaBCrjUeJF5sTI4,349
+verbal/test/test_loggly.py,sha256=-NXVjAzS4MSdSMeHa4an3PzPXekK_RQk44ahHohiOGg,373
+python_verbal-20200120.1.dist-info/METADATA,sha256=bFK6GpbysDrEUn1pyZArjxYUllDzHDRvBE58QFfVEx8,359
+python_verbal-20200120.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+python_verbal-20200120.1.dist-info/entry_points.txt,sha256=OS1v8dQ6qqFm9DrPyWjqWVbSDEjaQJHM29SpFuKVWyI,51
+python_verbal-20200120.1.dist-info/top_level.txt,sha256=_RARc09xGOXlhVzZUlZ8hB5mn3jf4nY8bPxaN1btBDI,7
+python_verbal-20200120.1.dist-info/RECORD,,
