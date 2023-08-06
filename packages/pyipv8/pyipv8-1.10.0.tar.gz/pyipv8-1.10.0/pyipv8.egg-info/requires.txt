@@ -1,0 +1,10 @@
+cryptography
+libnacl
+netifaces
+Twisted
+pyOpenSSL
+six
+pyasn1
+
+[netifaces]
+netifaces
