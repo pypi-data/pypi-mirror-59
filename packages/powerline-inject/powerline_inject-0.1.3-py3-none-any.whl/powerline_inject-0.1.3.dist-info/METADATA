@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: powerline-inject
+Version: 0.1.3
+Summary: A powerline segment to show an ENV list with extra knobs
+Home-page: https://github.com/d2iq-shadowbq/powerline-inject
+Author: Scott MacGregor
+Author-email: smacgregor@d2iq.com
+License: Copyright
+Download-URL: https://github.com/d2iq-shadowbq/powerline-inject/tarball/0.1.3
+Keywords: powerline,powerline_inject
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Terminals
+Requires-Python: >=3.6
+Requires-Dist: powerline-status (>=2.7)
+
+UNKNOWN
+
+
