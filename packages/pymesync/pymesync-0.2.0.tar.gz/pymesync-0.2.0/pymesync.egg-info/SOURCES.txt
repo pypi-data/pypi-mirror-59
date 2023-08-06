@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+pymesync/__init__.py
+pymesync/mock_pymesync.py
+pymesync/pymesync.py
+pymesync.egg-info/PKG-INFO
+pymesync.egg-info/SOURCES.txt
+pymesync.egg-info/dependency_links.txt
+pymesync.egg-info/requires.txt
+pymesync.egg-info/top_level.txt
