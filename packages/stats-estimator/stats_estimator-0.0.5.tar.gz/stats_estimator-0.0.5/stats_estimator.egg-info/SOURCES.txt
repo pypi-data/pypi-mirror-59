@@ -1,0 +1,12 @@
+setup.py
+stats_estimator/Binomialdistribution.py
+stats_estimator/Binomialdistribution_challenge.py
+stats_estimator/Gaussiandistribution.py
+stats_estimator/Generaldistribution.py
+stats_estimator/__init__.py
+stats_estimator/test.py
+stats_estimator.egg-info/PKG-INFO
+stats_estimator.egg-info/SOURCES.txt
+stats_estimator.egg-info/dependency_links.txt
+stats_estimator.egg-info/not-zip-safe
+stats_estimator.egg-info/top_level.txt
