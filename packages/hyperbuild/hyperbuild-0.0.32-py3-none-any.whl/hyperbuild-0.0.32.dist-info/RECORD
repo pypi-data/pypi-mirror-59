@@ -1,0 +1,8 @@
+hyperbuild/__init__.py,sha256=c3c07zes4onsjgkMex9XhmYUw0Fwl3Zq1_YCMBhF78I,547
+hyperbuild/linux-x86_64/hyperbuild.so,sha256=8Km-WOnf6V9jrzWi0GW6BvP6lzE_t7XfffXbZSbuYSU,2779736
+hyperbuild/macos-x86_64/hyperbuild.so,sha256=qQGK5xUB7B0Q_jq7Lobfb7FX0qWI3749kDufEtho6KE,530188
+hyperbuild/windows-x86_64/hyperbuild.pyd,sha256=LzAb6gfbYoiVdU1gjyfCR-1wpQCAx1TQTIBvl_YZ3gU,413184
+hyperbuild-0.0.32.dist-info/METADATA,sha256=wTrjLj6CoCYL5vVslotqpHLkjCqxL6AtVe2H9ftZpDY,14340
+hyperbuild-0.0.32.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+hyperbuild-0.0.32.dist-info/top_level.txt,sha256=JM59mhdAg_zT-cCceaWBVslgiZrkAjSyGg3Ys5AUueY,11
+hyperbuild-0.0.32.dist-info/RECORD,,
