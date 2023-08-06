@@ -1,0 +1,11 @@
+ipdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipdf/game.py,sha256=-PgY5FWixJLIfGom5gjcLisCc80GCg2SSq467SdfXRc,2264
+ipdf/helper.py,sha256=YvgSXw2Q9E8xKNkb4CzYccDI-mIciLj6nCf_T2X4jB8,1783
+ipdf/strategies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipdf/strategies/abstract.py,sha256=YFwS2wrTMSHrmzUwY0m8PX1diAy9ElZm7ewG5_GLQUk,281
+ipdf/strategies/memory_based.py,sha256=_VAZDVtIQG9MogAaOqdb4VKQ30-go_5-LcqTRdkmi0g,1773
+ipdframework-0.1.dist-info/LICENSE,sha256=0qIBYMIx1qVsogTb1b0_x44LZoSVmYxlYeEX_r_sDD4,1063
+ipdframework-0.1.dist-info/METADATA,sha256=zLz5OvuFOSzDHkm8OElCH0Azrmc1JKYzcPoLP73C_Ik,789
+ipdframework-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ipdframework-0.1.dist-info/top_level.txt,sha256=Gk7JBcur9KVBZwUesdoqlX8x-zkgD4pcQuAhYm27Qrw,5
+ipdframework-0.1.dist-info/RECORD,,
