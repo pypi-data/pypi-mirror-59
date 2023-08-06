@@ -1,0 +1,9 @@
+numpy<1.17
+cython
+pytest
+pytest-timeout
+pytest-xdist
+pytest-env
+Pillow
+mpmath
+matplotlib
