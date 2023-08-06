@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+from __future__ import absolute_import
+
+from dicomsort.gui.core import DicomSort
+
+
+def main():
+    ds = DicomSort(0)
+    ds.MainLoop()
+
+
+if __name__ == '__main__':
+    main()
