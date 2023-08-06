@@ -1,0 +1,11 @@
+paraxor_schema/__init__.py,sha256=bPeHmuim0ouXMmDzY9pneKLe74aeFx0kWVFUqXXy9H0,742
+paraxor_schema/schema.py,sha256=S786mDWpy51LxgHQP4isKtQ5W_yeqU0CQBByBK_lmwM,8074
+paraxor_schema/tests/__init__.py,sha256=bPeHmuim0ouXMmDzY9pneKLe74aeFx0kWVFUqXXy9H0,742
+paraxor_schema/tests/test_schema.py,sha256=HC947iR0AfHGus5l2BPg9pZ7wj_TUK3dDBOdSE0WAPM,6704
+paraxor_schema-1.0.0.dist-info/DESCRIPTION.rst,sha256=S4LJ40f2vL5MBH2wpIweowewaekE8x7b9DdthktzNBI,149
+paraxor_schema-1.0.0.dist-info/METADATA,sha256=CbKb72sS6atvebgZB-f9hrKItFzVedCti8BF4XAR0Y8,1009
+paraxor_schema-1.0.0.dist-info/RECORD,,
+paraxor_schema-1.0.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+paraxor_schema-1.0.0.dist-info/entry_points.txt,sha256=zSB-S-Yg2feQMFD29u8DJwTbHKSIbbCUM30gNojl4zQ,175
+paraxor_schema-1.0.0.dist-info/metadata.json,sha256=WiCnpW2nqNo8S2MsQ0da1owWCjtynprn8ftpMZUf3WE,1233
+paraxor_schema-1.0.0.dist-info/top_level.txt,sha256=_xkvXOYBXs2EFwbvq2BHHncSzleAE9wnWVICdD9yhHk,15
