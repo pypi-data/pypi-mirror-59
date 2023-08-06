@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dd2nx
+Version: 0.1.2
+Summary: Python library for converting the dd package's BDD to Multigraph in networkx.
+Home-page: https://github.com/mvcisback/dd2nx
+License: MIT
+Author: Marcell Vazquez-Chanlatte
+Author-email: mvc@linux.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: attrs (>=19.3,<20.0)
+Requires-Dist: dd (>=0.5.4,<0.6.0)
+Requires-Dist: funcy (>=1.13,<2.0)
+Requires-Dist: networkx (>=2.4,<3.0)
+Project-URL: Repository, https://github.com/mvcisback/dd2nx
+Description-Content-Type: text/markdown
+
+# dd2nx
+Python library for converting the dd package's BDD to Multigraph in networkx.
+
