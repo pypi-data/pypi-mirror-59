@@ -1,0 +1,17 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+djdt_flamegraph/__init__.py
+djdt_flamegraph/djdt_flamegraph.py
+djdt_flamegraph/flamegraph.pl
+djdt_flamegraph/flamegraph.py
+djdt_flamegraph.egg-info/PKG-INFO
+djdt_flamegraph.egg-info/SOURCES.txt
+djdt_flamegraph.egg-info/dependency_links.txt
+djdt_flamegraph.egg-info/not-zip-safe
+djdt_flamegraph.egg-info/top_level.txt
+tests/__init__.py
+tests/test_djdt_flamegraph.py
