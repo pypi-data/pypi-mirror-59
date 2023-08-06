@@ -1,0 +1,3 @@
+[console_scripts]
+awx-export = awx_exporter.awx_exporter:main
+
