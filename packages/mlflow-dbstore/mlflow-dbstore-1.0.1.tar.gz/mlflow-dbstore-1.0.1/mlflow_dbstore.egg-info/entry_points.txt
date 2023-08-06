@@ -1,0 +1,3 @@
+[mlflow.artifact_repository]
+mssql = dbstoreplugin.store.artifact:DBArtifactRepository
+
