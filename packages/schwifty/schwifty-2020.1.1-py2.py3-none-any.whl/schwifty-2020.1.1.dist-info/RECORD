@@ -1,0 +1,16 @@
+schwifty/__init__.py,sha256=kJ56twHwwNCegv1H3rc6D6k8S68mL6wzBIocCDHQc9c,173
+schwifty/bic.py,sha256=LnQBbfZG_LKIpxB3VQdIJyzJnhimKkVg8Dym2lsVqaI,6642
+schwifty/common.py,sha256=6LcY-DUtuIyPGEo56wpXjA_b_QvTz9d1HBsAllxvY3o,967
+schwifty/iban.py,sha256=KSX6r4wKkzVUqFESNdRYKbVz1lRKpSq-llaVALLMaAU,6438
+schwifty/registry.py,sha256=PzXfZfdXLoDVMYTe5uDAmIqBJGKXgV8vuB3ExDWK_dw,1957
+schwifty/bank_registry/README.md,sha256=Mw7eH2Lsi7Dj-9IZpGN6ugQrPOxYTGcbEnF1U_nzTG4,787
+schwifty/bank_registry/generated_de.json,sha256=Zpsit0B4lkiYFAxvytSZpHdiSrr75ruifpI9ltRzwh4,981535
+schwifty/iban_registry/README.md,sha256=VPzzZ-lVLPMmc1I7bsSaIDtKCnd0XHJNF8xFn9FDlPM,760
+schwifty/iban_registry/generated.json,sha256=W6OynioUNdWUhENnWSAmvN49d0C6Vp58cBtb8Tjp8vA,28919
+schwifty-2020.1.1.dist-info/AUTHORS,sha256=MxQohFZ19y0O-gviGJiYSk78J-ViDSOBHYJn6P6hp40,338
+schwifty-2020.1.1.dist-info/LICENSE,sha256=lhjalcXON2yemto-AP9vTNVUR1knaPaFCOZys5ztk8k,1079
+schwifty-2020.1.1.dist-info/METADATA,sha256=d0WddtrekhHTrZ3uJHJoDDuCY-dbRoPel7Qi41zOvNA,5493
+schwifty-2020.1.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+schwifty-2020.1.1.dist-info/pbr.json,sha256=qxDI4VcEx_7AQZy-E2BfC-NhQNk4NgPi6Xw-ddXOkZY,46
+schwifty-2020.1.1.dist-info/top_level.txt,sha256=Q0ez7zvjM13gsQvK6w_bFs8N9UmXbbpPEx9Iq_EX0nY,9
+schwifty-2020.1.1.dist-info/RECORD,,
