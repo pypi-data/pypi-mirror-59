@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bst-plugins-experimental
+Version: 1.93.0
+Summary: A collection of experimental BuildStream plugins.
+Home-page: UNKNOWN
+License: LGPL
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: cargo
+Provides-Extra: ostree
+Provides-Extra: bazel

@@ -1,0 +1,10 @@
+buildstream>=1.93.0.dev0<2.0.0
+
+[bazel]
+requests
+
+[cargo]
+pytoml
+
+[ostree]
+PyGObject
