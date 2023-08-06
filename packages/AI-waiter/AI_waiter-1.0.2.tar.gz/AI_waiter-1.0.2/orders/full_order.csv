@@ -1,0 +1,10 @@
+,translation_id,sentence_id,order,sentence,item,quantity,number
+0,0,0,can I have a latte and a pineapple mojito,can I have a latte ,latte,[],one
+1,0,1,can I have a latte and a pineapple mojito, a pineapple mojito,pineapple nojito,[],one
+2,1,0,can I have the lads and a pineapple mojito,can I have the lads ,[],[],one
+3,1,1,can I have the lads and a pineapple mojito, a pineapple mojito,pineapple nojito,[],one
+4,2,0,can I have a latte in a pineapple mojito,can I have a latte in a pineapple mojito,not sure,item not clear,one
+5,3,0,can I have the lads and the pineapple mojito,can I have the lads ,[],item not clear,one
+6,3,1,can I have the lads and the pineapple mojito, the pineapple mojito,pineapple nojito,[],one
+7,4,0,can I have a laptop and a pineapple mojito,can I have a laptop ,[],[],one
+8,4,1,can I have a laptop and a pineapple mojito, a pineapple mojito,pineapple nojito,[],one

@@ -1,0 +1,17 @@
+.gitignore.txt
+DESCRIPTION.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+AI_waiter.egg-info/PKG-INFO
+AI_waiter.egg-info/SOURCES.txt
+AI_waiter.egg-info/dependency_links.txt
+AI_waiter.egg-info/requires.txt
+AI_waiter.egg-info/top_level.txt
+orders/final_order.csv
+orders/full_order.csv
+src/__init__.py
+src/master.py
