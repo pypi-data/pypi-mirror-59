@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: storedisagg
+Version: 1.0.0
+Summary: Ex-post disaggregation of storage operation by time scales
+Home-page: https://github.com/mcsoini/storedisagg
+Author: storedisagg contributors listed in AUTHORS
+Author-email: m.c.soini@posteo.de
+License: UNKNOWN
+Description: =============================
+        storedisagg
+        =============================
+        
+        Ex-post disaggregation of energy storage operation by time scales
+        
+        ============
+        Installation
+        ============
+        
+        ``pip install symenergy``
+        
+        ===================
+        Source and examples
+        ===================
+        
+        `<https://github.com/mcsoini/symenergy>`_
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst

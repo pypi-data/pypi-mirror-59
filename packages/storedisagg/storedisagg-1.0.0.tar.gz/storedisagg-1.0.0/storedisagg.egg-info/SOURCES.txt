@@ -1,0 +1,13 @@
+README.md
+setup.py
+storedisagg/__init__.py
+storedisagg/compcalc.py
+storedisagg/storagedisaggregator.py
+storedisagg.egg-info/PKG-INFO
+storedisagg.egg-info/SOURCES.txt
+storedisagg.egg-info/dependency_links.txt
+storedisagg.egg-info/requires.txt
+storedisagg.egg-info/top_level.txt
+storedisagg/example/__init__.py
+storedisagg/example/example_data.py
+storedisagg/example/std_example.py
