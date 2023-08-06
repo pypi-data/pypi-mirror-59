@@ -1,0 +1,9 @@
+requests
+flask
+base58
+
+[dev]
+ipython
+twine
+bump2version
+black

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: randomframe
+Version: 0.3
+Summary: Random Frame backend
+Home-page: https://git.automatia.nl/ShadowJonathan/randomframe
+Author: Jonathan de Jong
+Author-email: jonathan@automatia.nl
+License: UNKNOWN
+Description: # RandomFrame
+        
+        [![Build Status](https://drone.jboi.dev/api/badges/ShadowJonathan/randomframe/status.svg)](https://drone.jboi.dev/ShadowJonathan/randomframe)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev

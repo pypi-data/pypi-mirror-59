@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+randomframe/__init__.py
+randomframe.egg-info/PKG-INFO
+randomframe.egg-info/SOURCES.txt
+randomframe.egg-info/dependency_links.txt
+randomframe.egg-info/requires.txt
+randomframe.egg-info/top_level.txt
