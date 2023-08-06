@@ -1,0 +1,12 @@
+httpx
+
+[lint]
+mypy
+autoflake
+black
+isort
+
+[test]
+asynctest
+starlette
+python-multipart
