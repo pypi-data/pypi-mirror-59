@@ -1,0 +1,11 @@
+packme/PackerTemplate.py,sha256=7FQAWZcArhwvknHKBvxB4KeKcbGXcfbBp3-ZyciYWjo,10207
+packme/Packman.py,sha256=Pc2g7J4YwMfSFoL5anIT0XCAoRMw4wD_mNgyZjRmTyk,9562
+packme/__init__.py,sha256=WR4_tS3OJstX8ZkTtB1wQcFVzakOdZG_g0SZAKlfkMA,65
+packme/__pkginfo__.py,sha256=wp416jRITyye7FFCvGHlS4sUQ3nDDL5McXR5agxRku4,1038
+packme-0.0.5.data/scripts/packme,sha256=g9AifI-RPxqAgsou-JpZMJ-CJxf0PMtla5R20CQHwBY,3033
+packme-0.0.5.dist-info/COPYING,sha256=by009KDV_Ar22_k93GTG-bclcfogSxaPIuiHAangIOI,1084
+packme-0.0.5.dist-info/LICENSE,sha256=by009KDV_Ar22_k93GTG-bclcfogSxaPIuiHAangIOI,1084
+packme-0.0.5.dist-info/METADATA,sha256=GkDN3uiXbZkItRpRo9OlzJmebw9-TK9w2aEuSEGecJQ,3131
+packme-0.0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+packme-0.0.5.dist-info/top_level.txt,sha256=25O7Q0xzUdQnXClgWN__s65uUBL34BqF8k2czw58low,7
+packme-0.0.5.dist-info/RECORD,,
