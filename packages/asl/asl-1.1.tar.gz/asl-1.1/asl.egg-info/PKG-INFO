@@ -1,0 +1,83 @@
+Metadata-Version: 1.2
+Name: asl
+Version: 1.1
+Summary: Bindings to the ASL library on Mac OS X
+Home-page: http://asl.readthedocs.io/
+Author: Ronald Oussoren
+Author-email: ronaldoussoren@mac.com
+Maintainer: Ronald Oussoren
+Maintainer-email: ronaldoussoren@mac.com
+License: MIT
+Download-URL: http://pypi.python.org/pypi/asl
+Description: Introduction
+        ============
+        
+        This package implements bindings to the ASL
+        library on Mac OS X 10.4 or later. The ASL
+        library is a low-level logging library, meant
+        as a replacement for the syslog API.
+        
+        See the documentation (in doc/) for more
+        information.
+        
+        
+        Release history
+        ===============
+        
+        asl 1.1
+        -------
+        
+        * Removed support for Python 2.7 and older Python 3 versions
+        
+        * Added support for Python 3.6, 3.7 and 3.8
+        
+        * Migrated to GitHub
+        
+        * Added type annotations
+        
+        * Better code quality through flake8, isort, black and mypy
+        
+        
+        asl 1.0.2
+        ---------
+        
+        * Fixes some packaging issues
+        
+        * Updates constants for macOS 10.12
+        
+        asl 1.0
+        -------
+        
+        * First public release
+        
+        * Adds command-line interface (``python3 -m asl --help``)
+        
+        * Add translation from numeric ID to string, and the reverse, for log levels
+        
+        * Updated the documentation
+        
+        asl 0.9
+        -------
+        
+        * Initial release with support for the ASL API in OSX 10.8.
+        
+Keywords: logging
+Platform: Mac
+Platform: OS
+Platform: X
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Environment :: MacOS X
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Logging
+Classifier: Development Status :: 5 - Production/Stable
+Project-URL: Documentation, https://asl.readthedocs.io/en/latest/
+Project-URL: Issue tracker, https://github.com/ronaldoussoren/asl/issues
+Project-URL: Repository, https://github.com/ronaldoussoren/asl
