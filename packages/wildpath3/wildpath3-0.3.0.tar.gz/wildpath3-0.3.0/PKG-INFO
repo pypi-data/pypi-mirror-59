@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: wildpath3
+Version: 0.3.0
+Summary: easy data structure access utility
+Home-page: UNKNOWN
+Author: Lars van Gemerden
+Author-email: gemerden@gmail.com
+License: MIT License
+Description: see <https://github.com/gemerden/wildpath>
+Keywords: access data structure getter setter deleter iterator utility tool path wildcard slice
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.3

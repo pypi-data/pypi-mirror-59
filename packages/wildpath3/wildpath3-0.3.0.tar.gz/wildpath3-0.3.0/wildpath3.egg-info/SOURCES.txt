@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+wildpath/__init__.py
+wildpath/keyparser.py
+wildpath/paths.py
+wildpath/tools.py
+wildpath3.egg-info/PKG-INFO
+wildpath3.egg-info/SOURCES.txt
+wildpath3.egg-info/dependency_links.txt
+wildpath3.egg-info/requires.txt
+wildpath3.egg-info/top_level.txt
