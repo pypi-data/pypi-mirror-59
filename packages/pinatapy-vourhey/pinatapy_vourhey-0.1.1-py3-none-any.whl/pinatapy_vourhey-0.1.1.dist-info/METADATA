@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pinatapy-vourhey
+Version: 0.1.1
+Summary: Non-official Pinata.cloud library
+Home-page: https://github.com/vourhey/pinatapy
+Author: Vadim Manaenko
+Author-email: vadim.razorq@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Non-official Pinata.cloud library
+
+For more information about [Pinata.cloud](pinata.cloud) go to the official [documentation](https://pinata.cloud/documentation#GettingStarted)
+
+
