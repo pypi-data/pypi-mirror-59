@@ -1,0 +1,6 @@
+v0.0.2, 2020-01-12
+    831b9fb expand testing, change db to always use naive datetime to reduce cross compatibility issues, make easier to change precision/tz for ArrowType columns
+    b04bc54 add testing, mv precision and tz to class var
+v0.0.1, 2020-01-10
+
+
