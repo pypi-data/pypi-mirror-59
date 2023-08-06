@@ -1,0 +1,80 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "model:ir.ui.menu,name:menu_import_configuration"
+msgid "Import products"
+msgstr "Artikel importieren"
+
+msgctxt "model:ir.action,name:act_configuration_view_form"
+msgid "Import products"
+msgstr "Artikel importieren"
+
+msgctxt "field:import_product.configuration,prodcat:"
+msgid "Product Category"
+msgstr "Artikel Kategorie"
+
+msgctxt "help:import_product.configuration,prodcat:"
+msgid "select category for imported products"
+msgstr "wählen Sie die Kategorie für die importieren Artikel"
+
+msgctxt "field:import_product.configuration,attribute_set:"
+msgid "Attribute Set"
+msgstr "Attributsatz"
+
+msgctxt "help:import_product.configuration,attribute_set:"
+msgid "Select a set of attributes to apply on the variants."
+msgstr "Wählen Sie einen Attributsatz aus, die auf die Varianten angewendet werden sollen."
+
+# import wizard
+msgctxt "model:ir.action,name:wizard_import"
+msgid "Import CSV-File"
+msgstr "CSV-Datei importieren"
+
+msgctxt "view:import_product.wizardcsvimport.schritt2:"
+msgid "Column (csv)"
+msgstr "Spalte (CSV)"
+
+msgctxt "view:import_product.wizardcsvimport.schritt2:"
+msgid "Field (product)"
+msgstr "Feld (Artikel)"
+
+msgctxt "wizard_button:import_product.wizardcsvimport,schritt1,end:"
+msgid "Cancel"
+msgstr "Abbruch"
+
+msgctxt "wizard_button:import_product.wizardcsvimport,schritt1,selectcolumns:"
+msgid "Select columns"
+msgstr "Spalten wählen"
+
+msgctxt "wizard_button:import_product.wizardcsvimport,schritt2,end:"
+msgid "Cancel"
+msgstr "Abbruch"
+
+msgctxt "wizard_button:import_product.wizardcsvimport,schritt2,schritt1:"
+msgid "Back"
+msgstr "Zurück"
+
+msgctxt "wizard_button:import_product.wizardcsvimport,schritt2,importieren:"
+msgid "Import products"
+msgstr "Artikel importieren"
+
+msgctxt "field:import_product.wizardcsvimport.schritt1,csvtext:"
+msgid "CSV-File"
+msgstr "CSV-Datei"
+
+msgctxt "help:import_product.wizardcsvimport.schritt1,csvtext:"
+msgid "Select a csv-file to import."
+msgstr "Wählen Sie eine CSV-Datei für den Import."
+
+msgctxt "field:import_product.wizardcsvimport.schritt1,account_cat:"
+msgid "Account Category"
+msgstr "Buchhaltungskategorie"
+
+msgctxt "field:import_product.wizardcsvimport.schritt1,attribute_set:"
+msgid "Attribute Set"
+msgstr "Attributsatz"
+
+msgctxt "help:import_product.wizardcsvimport.schritt1,attribute_set:"
+msgid "Select a set of attributes to apply on the variants."
+msgstr "Wählen Sie einen Attributsatz aus, die auf die Varianten angewendet werden sollen."
