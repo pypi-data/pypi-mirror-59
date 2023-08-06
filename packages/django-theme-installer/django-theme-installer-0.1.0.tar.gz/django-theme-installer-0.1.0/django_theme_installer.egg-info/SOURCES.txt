@@ -1,0 +1,10 @@
+README.md
+setup.py
+bin/theme_cli.py
+django_theme_installer.egg-info/PKG-INFO
+django_theme_installer.egg-info/SOURCES.txt
+django_theme_installer.egg-info/dependency_links.txt
+django_theme_installer.egg-info/top_level.txt
+theme_installer/__init__.py
+theme_installer/constants.py
+theme_installer/core.py
