@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: kalayil
+Version: 0.1.1
+Summary: Package for easier Machine Learning Workflow.
+Home-page: https://github.com/santokalayil/kalayil
+Author: Santo K Thomas
+Author-email: santokalayil@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# kalayil
+
+This project is a python module for making machine learning workflow easier than ever before.
+
+## Installation
+
+Run the following to install:
+
+'''python
+pip install kalayil
+'''
+
+## Usage
+
+'''python
+> from kalayil import modelling as kl
+
+Rull All Machine Learning Classificatin alogorithms at once and see the results
+> RunAll(models,data,phase='',scores=None,trained_models = {},use_params=False)
+
+Feature Scale your data OHE_features refers to one hot encoded features. OHE_features are to be listed to avoid them
+> FeatureScale(data,OHE_features,scaler='MinMaxScaler')
+
+
+'''
+
+
