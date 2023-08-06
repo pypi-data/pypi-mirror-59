@@ -1,0 +1,2 @@
+include ink8/kubernetes/*
+include requirements.txt
