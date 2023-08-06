@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: snovalleyai-image-processing
+Version: 1.0.4
+Summary: Research tool in image processing
+Home-page: https://github.com/jloveric/image-processing
+Author: John Loverich
+Author-email: john.loverich@gmail.com
+License: UNKNOWN
+Description: # Image Processing
+        
+        This is an experiment in parameterizing objects in images.  A goal here is to use the parameterization in an image recognition technique that is scale, shift and rotation invariant.  A work in progress.
+        
+        ![](Parameterization.png)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
