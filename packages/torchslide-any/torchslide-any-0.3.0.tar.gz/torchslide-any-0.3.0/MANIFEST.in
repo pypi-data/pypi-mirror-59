@@ -1,0 +1,4 @@
+graft torchslide
+
+global-exclude *.py[cdo]
+global-exclude *.dll
