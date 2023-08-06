@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/orchest/__init__.py
+src/orchest.egg-info/PKG-INFO
+src/orchest.egg-info/SOURCES.txt
+src/orchest.egg-info/dependency_links.txt
+src/orchest.egg-info/top_level.txt
+src/orchest/data/__init__.py
