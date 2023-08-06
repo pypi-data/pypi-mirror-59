@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: megrim
+Version: 0.3.0
+Summary: A bioinformatics tutorial framework for epi2me-labs
+Home-page: https://github.com/sagrudd/megrim
+Author: Stephen Rudd
+Author-email: stephen.rudd@nanoporetech.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: datetime
+Requires-Dist: pytz
+Requires-Dist: progressbar
+Requires-Dist: tqdm
+Requires-Dist: ipython
+Requires-Dist: ipywidgets
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: pyranges
+Requires-Dist: pysam
+Requires-Dist: fontawesome
+Requires-Dist: scipy
+Requires-Dist: dask[complete]
+
+
+---
+### Megrim
+
+
+
