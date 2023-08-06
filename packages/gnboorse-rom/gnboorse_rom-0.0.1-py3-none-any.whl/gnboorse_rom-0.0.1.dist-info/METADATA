@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: gnboorse-rom
+Version: 0.0.1
+Summary: Python Roman Numeral Parsing
+Home-page: https://github.com/gnboorse/rom
+Author: Gabriel Boorse
+Author-email: gnboorse@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# rom
+
+This is a basic Roman numeral manipulation library written in Python.
+
+It is capable of parsing Arabic numerals into Roman numerals, as well as generating Roman numerals from Arabic numerals.
+
+## Installation
+
+```sh
+pip3 install gnboorse-rom
+```
+
+## Usage
+
+```python
+>>> from rom import rom
+>>> rom(12)
+XII
+>>> int(rom(12))
+12
+>>> int(rom('xlvi'))
+46
+>>> rom('XLVI', caps=False)
+xlvi
+```
+
+
