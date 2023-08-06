@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: TaskBank
+Version: 0.1.0
+Summary: A library of machine learning tasks for HackDuck
+Home-page: https://github.com/AlexandreKempf/TaskBank
+Author: Alexandre Kempf
+Author-email: alexanre.kempf@cri-paris.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+To launch test, go to project root and type "ward" in terminal
+test
+
+
