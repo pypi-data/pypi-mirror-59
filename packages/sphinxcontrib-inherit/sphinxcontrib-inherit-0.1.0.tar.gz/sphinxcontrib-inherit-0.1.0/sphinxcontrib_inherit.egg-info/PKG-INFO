@@ -1,0 +1,51 @@
+Metadata-Version: 1.2
+Name: sphinxcontrib-inherit
+Version: 0.1.0
+Summary: A Sphinx extension that allows documentation to be created in a modular way.
+Home-page: https://bitbucket.org/libateq/sphinxcontrib-inherit
+Author: David Harper
+Author-email: python-packages@libateq.org
+License: GPL-3
+Project-URL: Bug Tracker, https://bitbucket.org/libateq/sphinxcontrib-inherit/issues
+Project-URL: Source Code, https://bitbucket.org/libateq/sphinxcontrib-inherit
+Description: Documentation Inheritance for Sphinx
+        ====================================
+        
+        The *sphinxcontrib-inherit* package is an extension to Sphinx_.  It allows you
+        to extend existing sphinx documentation without needing to add any directives
+        or hooks to the original document.  It is ideal for use in projects that make
+        extensive use of pluggable modules, and require different documentation to be
+        generated depending on which modules are enabled.
+        
+        This extension was inspired by the sphinxcontrib-inheritance_ package, but
+        takes a different approach on how the inheritance is implemented.
+        
+        .. _Sphinx: http://www.sphinx-doc.org/
+        .. _sphinxcontrib-inheritance: https://bitbucket.org/nantic/sphinxcontrib-inheritance
+        
+        .. start-of-readme-only-text
+        
+        Installation
+        ============
+        
+        .. code:: python
+        
+            pip3 install sphinxcontrib-inherit
+        
+Keywords: sphinx inherit modular documentation
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Requires-Python: >=3.5
