@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: zk_watcher
+Version: 0.4.0
+Summary: Service Registration Daemon for Zookeeper
+Home-page: https://github.com/Nextdoor/zkwatcher
+Author: Nextdoor Engineering
+Author-email: eng@nextdoor.com
+License: Apache License, Version 2.0
+Download-URL: http://pypi.python.org/pypi/zk_watcher#downloads
+Description: ZKWatcher: Watches and Registers Apps in Zookeeper
+        ==================================================
+        
+        |build_status|_ |doc_status|_ |pypi_download|_
+        
+        Documentation
+        -------------
+        
+        Documentation is hosted at `https://zkwatcher.readthedocs.org <https://zkwatcher.readthedocs.org>`_
+        
+        .. |build_status| image:: https://travis-ci.org/Nextdoor/zkwatcher.svg?branch=master
+        .. _build_status: https://travis-ci.org/Nextdoor/zkwatcher
+        .. |doc_status| image:: https://readthedocs.org/projects/zkwatcher/badge/?version=latest
+        .. _doc_status: https://zkwatcher.readthedocs.org
+        .. |pypi_download| image:: https://badge.fury.io/py/zkwatcher.png
+        .. _pypi_download: https://pypi.python.org/pypi/zkwatcher
+        
+Keywords: apache
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Operating System :: POSIX
+Classifier: Natural Language :: English
