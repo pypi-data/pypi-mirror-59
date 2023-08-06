@@ -1,0 +1,9 @@
+
+.idea/
+dist/
+*.iml
+__pycache__/
+test-data/
+ex_simple_test_generator.main/
+test_pytestgen_cases.py
+botostubs
