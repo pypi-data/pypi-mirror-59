@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "bbfcapi"
+version = "1.0.1"
+description = "API service, library and parser for BBFC"
+homepage = "https://github.com/Fustra/bbfcapi/"
+repository = "https://github.com/Fustra/bbfcapi/"
+readme = "README.md"
+authors = ["QasimK <noreply@QasimK.io>"]
+license = "AGPL-3.0"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiohttp = {version = "^3.6", extras = ["speedups"]}
+beautifulsoup4 = "^4.8"
+fastapi = "^0.44.1"
+uvicorn = "^0.10.8"
+
+[tool.poetry.dev-dependencies]
+# Checks
+pyflakes = "^2.1"
+bandit = "^1.6"
+safety = "^1.8"
+black = {version = "=19.10b0", allow-prereleases = true}
+isort = "^4.3"
+# Tests
+pytest = "^3.0"
+pytest-asyncio = "^0.10.0"
+aioresponses = "^0.6.1"
+
+[tool.black]
+target-version = ['py38']
+
+[build-system]
+requires = ["poetry>=1.02"]
+build-backend = "poetry.masonry.api"
