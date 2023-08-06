@@ -1,0 +1,3 @@
+[console_scripts]
+android-arsenal=android_arsenal_notifier.android_arsenal:main
+
