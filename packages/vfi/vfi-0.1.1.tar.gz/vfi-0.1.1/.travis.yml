@@ -1,0 +1,29 @@
+language: python
+python:
+  - 3.6
+  - 3.7
+env:
+- SKLEARN_VERSION="*"
+- SKLEARN_VERSION="nightly"
+
+cache:
+  directories:
+    - $HOME/.cache/pip
+    - $HOME/.ccache  # https://github.com/travis-ci/travis-ci/issues/5853
+
+install:
+  - pip install numpy scipy
+  - |
+      if [ $SKLEARN_VERSION = "nightly" ]; then
+          pip install --pre -f https://sklearn-nightly.scdn8.secure.raxcdn.com scikit-learn
+      else
+          pip install scikit-learn
+      fi
+  - pip install -e ".[tests]"
+
+script:
+  - inv test
+  - inv lint
+
+after_success:
+  - codecov
