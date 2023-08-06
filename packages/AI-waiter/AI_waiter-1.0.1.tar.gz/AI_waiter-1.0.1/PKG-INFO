@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: AI_waiter
+Version: 1.0.1
+Summary: Code to read record an order and write to a database
+Home-page: https://github.com/AltiusBI/wAIter
+Author: Josie Park and 
+Author-email: josie.park@altiusdata.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: <3.8
