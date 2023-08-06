@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Usage &mdash; django_signal_notifier 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Backends" href="backends.html" />
+    <link rel="prev" title="Setup" href="setup.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> django_signal_notifier
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#initialization">Initialization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-signal">Custom Signal</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="backends.html">Backends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_user.html">Dynamic User</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_task.html">Background Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comparison.html">Comparison with similar projects</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">django_signal_notifier</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Usage</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/usage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="initialization">
+<span id="usage-initialization"></span><h2>Initialization<a class="headerlink" href="#initialization" title="Permalink to this headline">¶</a></h2>
+<p>As stated in Architecture <a class="reference internal" href="introduction.html#introduction-architecture"><span class="std std-ref">Architecture</span></a> part of <a class="reference internal" href="introduction.html"><span class="doc">Introduction</span></a>, First You should implement a <strong>trigger</strong>
+regarding these parameters:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">verb_name</span></code>: equals to the signal’s name (<em>required</em>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">action_object</span></code>: An object or a class model that the signal operated on it. It is exactly equal to <strong>sender</strong> parameter in signals. (<em>It’s required for the pre-defined Django signals</em>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">actor_object</span></code>: If you use a custom signal that you pass this parameter, you can use it (<em>Optional</em>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">target</span></code>: It’s just a simple string and used as a piece of side information. Same as <em>actor_object</em>, <em>target</em> is used with a custom signal (<em>Optional</em>).</p></li>
+</ul>
+<p>Then you can define some <strong>backend</strong> s. We have already defined some messengers and message_templates
+that are initialized on <em>DSN</em>’s core by default. You can implement your messengers and message_templates.
+It’s explained in <a class="reference internal" href="backends.html"><span class="doc">Backends</span></a>.</p>
+<p>For connecting backend to the trigger, you must define at least one <strong>subscription</strong> and select the user and group
+that must receive the message.</p>
+</div>
+<div class="section" id="custom-signal">
+<span id="usage-customsignal"></span><h2>Custom Signal<a class="headerlink" href="#custom-signal" title="Permalink to this headline">¶</a></h2>
+<p>In addition to django default signal(that we load all of them in <strong>DSN</strong> by default.), You can define your signal according to the <a class="reference external" href="https://docs.djangoproject.com/en/3.0/topics/signals/#defining-signals">Django official documentation</a>. It’s a standard way to define
+custom signals in the <cite>signals.py</cite> of each app.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">custom_signal</span> <span class="o">=</span> <span class="n">Signal</span><span class="p">(</span><span class="n">providing_args</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;parameter1&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Then you must set up the custom signal in the <em>ready</em> function of the app’s config in <cite>apps.py</cite>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyAppConfig</span><span class="p">(</span><span class="n">AppConfig</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;myapp&#39;</span>
+    <span class="o">...</span>
+    <span class="k">def</span> <span class="nf">ready</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+       <span class="kn">from</span> <span class="nn">.signals</span> <span class="kn">import</span> <span class="n">custom_signal</span>
+       <span class="kn">from</span> <span class="nn">django_signal_notifier.models</span> <span class="kn">import</span> <span class="n">Trigger</span>
+       <span class="o">...</span>
+       <span class="n">Trigger</span><span class="o">.</span><span class="n">init_verb_signal</span><span class="p">(</span><span class="s1">&#39;custom_signal&#39;</span><span class="p">,</span> <span class="n">custom_signal</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Because <em>apps.py</em> runs in migration too. To avoid initialization problems
+You <strong>must</strong> import django_signal_notifier and signals in ready function.</p>
+</div>
+<p>If you want to use <strong>actor_object</strong> or <strong>target</strong>, You must set them as the signal parameters.
+<strong>action_object</strong> is optional, but it isn’t necessary to be defined as a parameter, You can set it as signal <strong>sender</strong> parameters(Refer to Django signal documentation, ` <em>send</em> method part &lt;<a class="reference external" href="https://docs.djangoproject.com/en/3.0/topics/signals/#django.dispatch.Signal.send_robust">https://docs.djangoproject.com/en/3.0/topics/signals/#django.dispatch.Signal.send_robust</a>&gt;`_)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>sender</strong> is necessary for all pre-defined Django’s signals. Therefore, <em>DSN</em> uses <strong>sender</strong> as <strong>action_object</strong> by default.</p>
+</div>
+<p>Same as a standard Django signal, you can use <strong>send</strong> and <strong>send_robust</strong> to trigger the signal.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="backends.html" class="btn btn-neutral float-right" title="Backends" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="setup.html" class="btn btn-neutral float-left" title="Setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Mohammad Hadi Azaddel
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

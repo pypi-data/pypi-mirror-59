@@ -1,0 +1,347 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Backends &mdash; django_signal_notifier 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Dynamic User" href="dynamic_user.html" />
+    <link rel="prev" title="Usage" href="usage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> django_signal_notifier
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Backends</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#custom-message-template">Custom Message_template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-messenger">Custom Messenger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-message-template-and-messenger">Add message_template and messenger</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_user.html">Dynamic User</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_task.html">Background Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comparison.html">Comparison with similar projects</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">django_signal_notifier</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Backends</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/backends.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="backends">
+<h1>Backends<a class="headerlink" href="#backends" title="Permalink to this headline">¶</a></h1>
+<p>All backend consists of two parts, messenger and message_template.
+You can select them in the admin panel, but if you need to define your messenger or message_template you must implement and add them to the messenger or message_template list of <em>DSN</em>.</p>
+<div class="section" id="custom-message-template">
+<span id="backends-custom-message-template"></span><h2>Custom Message_template<a class="headerlink" href="#custom-message-template" title="Permalink to this headline">¶</a></h2>
+<p>Each message_template is a class which inherits from <code class="docutils literal notranslate"><span class="pre">BaseMessageTemplate</span></code> class(###link to the class##). We have to dissect <code class="docutils literal notranslate"><span class="pre">BaseMessageTemplate</span></code> and explain some details.</p>
+<ul>
+<li><dl>
+<dt><code class="docutils literal notranslate"><span class="pre">file_name</span></code> and <code class="docutils literal notranslate"><span class="pre">template_string</span></code> :</dt><dd><p>Each message_template has a string template based on the <a class="reference external" href="https://docs.djangoproject.com/en/3.0/ref/templates/language/">Django template language</a>. It can be a simple string, Html, etc.
+You can set it directly by <em>template_string</em> variable or set a file by <em>file_name</em>. At first, <em>DSN</em> checks <em>file_name</em> to get template string from it.
+Same as each Django app, template files are in <strong>app_name/template/app_name</strong>.
+So that, you must define that template file in the app that you defined new message_template class (You can refer to DSN_Notification ####links#### example for more details).
+.. code-block:: python</p>
+<blockquote>
+<div><p>file_name = “app_name/my_template.html”</p>
+</div></blockquote>
+<p>If <em>file_name</em> is left empty, <em>template_string</em> is set as the template string.
+There are no preferences between these two ways. Use whatever you prefer.</p>
+<p>An example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">template_string</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">{</span><span class="si">% i</span><span class="s2">f </span><span class="se">\&quot;</span><span class="s2">verb</span><span class="se">\&quot;</span><span class="s2"> in context and context.verb != None %}</span>
+<span class="s2">    &lt;div&gt;</span>
+<span class="s2">        &lt;p&gt;{{ context.verb }}&lt;/p&gt;</span>
+<span class="s2">    &lt;/div&gt;</span>
+<span class="s2">{</span><span class="si">% e</span><span class="s2">ndif %} &quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt><code class="docutils literal notranslate"><span class="pre">render(self,</span> <span class="pre">user,</span> <span class="pre">trigger_context,</span> <span class="pre">signal_kwargs)</span></code> :</dt><dd><p>Messengers use this function to render template_message by the passed context.
+A Context is a dictionary which consists of three parts:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">user</span></code>: The User object that the message_template should render for that. We pass it to the message_template to access the user’s name. (e.g., The user’s name can be set at the message header).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">trigger_context</span></code>: It consists of <a class="reference internal" href="introduction.html#introduction-concepts-trigger"><span class="std std-ref">four trigger’s parameters</span></a>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">signal_kwargs</span></code>: Other signal arguments that are passed to <em>DSN</em> can be accessed from this.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You shouldn’t change this function. We explained it to show how message_template class works. If you can add more variables to the context change <code class="docutils literal notranslate"><span class="pre">get_template_context</span></code> function.</p>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt><code class="docutils literal notranslate"><span class="pre">get_template_context(self,</span> <span class="pre">context)</span></code> :</dt><dd><p><em>User</em>, <em>trigger_context</em> and <em>signal_kwargs</em> are concatenated as <em>context</em>.
+You can set any new variables to <em>context</em>. For instance, you can add the sending time of a message to the template context:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_template_context</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+    <span class="n">context</span><span class="p">[</span><span class="s1">&#39;current_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">date</span><span class="p">())</span>
+    <span class="k">return</span> <span class="n">context</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Notice that it doesn’t call the superclass <strong>get_template_context</strong> method. So you should call parent’s method manually in your code if you want:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_template_context</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+    <span class="n">context</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_template_context</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+
+    <span class="c1"># Your code :</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+<p>Briefly, You must set a template string or template_file for the message_template by <code class="docutils literal notranslate"><span class="pre">file_name</span></code> or <code class="docutils literal notranslate"><span class="pre">template_string</span></code>.
+To add more variables to the message context, You must overwrite <code class="docutils literal notranslate"><span class="pre">get_template_context</span></code> function.</p>
+</div>
+<div class="section" id="custom-messenger">
+<span id="backends-custom-messenger"></span><h2>Custom Messenger<a class="headerlink" href="#custom-messenger" title="Permalink to this headline">¶</a></h2>
+<p>Like message_template, every messenger is a class that inherits from a base class named <a href="#id1"><span class="problematic" id="id2">``</span></a>BaseMessenger``(###link to the class##).
+To define your messenger, You must redefine <strong>send()</strong> class method.</p>
+<p><code class="docutils literal notranslate"><span class="pre">send(self,</span> <span class="pre">template,</span> <span class="pre">sender,</span> <span class="pre">users,</span> <span class="pre">trigger_context,</span> <span class="pre">signal_kwargs)</span></code>:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">template</span></code>: This is the template object.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">users</span></code>: List of users that you must send the message for them.</p>
+<p>Some messengers can send user’s messages simultaneously to improve performance. Consequently, we avoid calling send function for each user singly.
+Instead, we left it to the messenger to send messages to users.</p>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">trigger_context</span></code>: Same as message_template</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">signal_kwargs</span></code>: Same as message_template</p></li>
+</ul>
+<p>Firstly you must render the template class by <code class="docutils literal notranslate"><span class="pre">user</span></code>, <code class="docutils literal notranslate"><span class="pre">trigger_context</span></code>, <code class="docutils literal notranslate"><span class="pre">signal_kwargs</span></code>. You can render every user message by using a <em>for loop</em> over <code class="docutils literal notranslate"><span class="pre">users</span></code> list. Then you can send rendered string messages to the user.
+Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">simple_Messenger</span><span class="p">(</span><span class="n">BaseMessenger</span><span class="p">):</span>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">send</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">template</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">trigger_context</span><span class="p">,</span> <span class="n">signal_kwargs</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">:</span>
+            <span class="n">rendered_message</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span> <span class="n">trigger_context</span><span class="o">=</span><span class="n">trigger_context</span><span class="p">,</span> <span class="n">signal_kwargs</span><span class="o">=</span><span class="n">signal_kwargs</span><span class="p">)</span>
+
+            <span class="n">My_messenger</span><span class="o">.</span><span class="n">send_my_message</span><span class="p">(</span><span class="n">user_receiver</span><span class="o">=</span><span class="n">user</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="n">rendered_message</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For more details how to define a new message_template and messenger, refer to DSN_Notification ###link ##### documentation.</p>
+</div>
+</div>
+<div class="section" id="add-message-template-and-messenger">
+<span id="backends-add-message-template-and-messenger"></span><h2>Add message_template and messenger<a class="headerlink" href="#add-message-template-and-messenger" title="Permalink to this headline">¶</a></h2>
+<p>We suggest defining your messengers and message_templates in a separate file. E.g., messengers.py or message_template.py</p>
+<p>You must introduce the new message_template and messenger to <em>DSN</em>. Use <code class="docutils literal notranslate"><span class="pre">Add_Messenger</span></code> and <code class="docutils literal notranslate"><span class="pre">Add_Message_Template</span></code> functions to add new messenger and message_template, respectively.
+You must do it in <code class="docutils literal notranslate"><span class="pre">ready()</span></code> function in <em>apps.py</em> of your app.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django_signal_notifier.message_templates</span> <span class="kn">import</span> <span class="n">Add_Message_Template</span>
+<span class="kn">from</span> <span class="nn">django_signal_notifier.messengers</span> <span class="kn">import</span> <span class="n">Add_Messenger</span>
+
+<span class="k">class</span> <span class="nc">MyAppConfig</span><span class="p">(</span><span class="n">AppConfig</span><span class="p">):</span>
+    <span class="o">...</span>
+
+    <span class="k">def</span> <span class="nf">ready</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="kn">from</span> <span class="nn">myapp.messengers</span> <span class="kn">import</span> <span class="n">simple_Messenger</span>
+        <span class="kn">from</span> <span class="nn">myapp.message_templates</span> <span class="kn">import</span> <span class="n">simple_Message_template</span>
+
+        <span class="o">...</span>
+
+        <span class="c1"># Messengers :</span>
+        <span class="n">Add_Messenger</span><span class="p">(</span><span class="n">simple_Messenger</span><span class="p">)</span>
+        <span class="c1"># Message templates :</span>
+        <span class="n">Add_Message_Template</span><span class="p">(</span><span class="n">simple_Message_template</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Because of that <em>apps.py</em> runs in migration. To avoid initialization problems
+You should import your messenger and message_template classes in <code class="docutils literal notranslate"><span class="pre">ready()</span></code> function.</p>
+</div>
+<p>After you re-run the app, you can see your messengers and message_templates are added to the messenger and message_template lists, respectively.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="dynamic_user.html" class="btn btn-neutral float-right" title="Dynamic User" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="usage.html" class="btn btn-neutral float-left" title="Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Mohammad Hadi Azaddel
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction &mdash; django_signal_notifier 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Setup" href="setup.html" />
+    <link rel="prev" title="Quick Start" href="quickstart.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> django_signal_notifier
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#concepts">Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#architecture">Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#summary">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backends.html">Backends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_user.html">Dynamic User</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background_task.html">Background Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comparison.html">Comparison with similar projects</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">django_signal_notifier</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/introduction.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>To understand how <strong>DSN</strong> works, We explain some main concepts at first.</p>
+<div class="section" id="concepts">
+<span id="introduction-concepts"></span><h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
+<p><strong>DSN</strong> has 3 main parts:</p>
+<ul id="introduction-concepts-trigger">
+<li><dl>
+<dt><code class="docutils literal notranslate"><span class="pre">Trigger</span></code></dt><dd><p>Any Django’s signal can be connected to the corresponding trigger. There is a one-to-one connection between each signal and each trigger.</p>
+<p>Calling the signal’s <strong>Send</strong> method leads to calling the handler method of the corresponding trigger.</p>
+<p>Trigger has 4 parts(We got the idea from <em>Activity</em> concept in a similar package named <a class="reference external" href="https://github.com/justquick/django-activity-stream">Django-activity-stream</a> ):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Verb</span></code>. The verb phrase that identifies the action of the activity.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Action</span> <span class="pre">Object</span></code>. The object linked to the action itself.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Actor</span> <span class="pre">Object</span></code>. <em>(Optional)</em> The object that performes the activity.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Target</span></code>. <em>(Optional)</em> The object to which the activity was performed.</p></li>
+</ul>
+<p><strong>Example</strong>: A telegram client can be defined as a Backend for <strong>DSN</strong>.
+We can define a trigger that is connected to <code class="docutils literal notranslate"><span class="pre">post_save</span></code> signal and
+one of the project models(<em>Testmodel</em> ) set as the action_object.
+So when we create new <em>Testmodel</em>, the handler of the corresponding trigger is called automatically
+(The new <em>Testmodel</em> could be created by anyone and everywhere Because <code class="docutils literal notranslate"><span class="pre">actor_object</span></code> and <code class="docutils literal notranslate"><span class="pre">target</span></code> were left empty).</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt><code class="docutils literal notranslate"><span class="pre">Backend</span></code></dt><dd><p>Backend is a tool to send a message like Notification, Email message, or So on that is the primary goal of <strong>DSN</strong>.
+We’ve got this idea from <a class="reference external" href="https://github.com/idlesign/django-sitemessage">django-sitemessage</a> ):
+Backend consists of <strong>two</strong> parts:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Message_template</span></code>. It’s a class as a template of the message that contains template string or points to a template file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Messenger</span></code>. It’s the operational core of each backend that sends the string message (rendered message_template). E.g., Telegram and email Client.</p></li>
+</ol>
+<p><strong>Example</strong>: A telegram client can be defined as a Backend for <strong>DSN</strong>.</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt><code class="docutils literal notranslate"><span class="pre">Subscription</span></code></dt><dd><p>Triggers and Backends are connected in a subscription entity.
+Message receivers are set in the subscription, too.</p>
+<p>If the handler method of a trigger is called, the related subscriptions receivers and backends are invoked.
+Then the backends(messenger) are called for each receiver(user). That’s the central part of <strong>DSN</strong>.</p>
+<p><strong>Example</strong>: Same as the above example, A trigger that is connected to the post_save for <em>Testmodel</em> is defined.
+Also, we have connected a subscription that set email messenger as the backend and Admin user as the receiver.
+Therefore, If a new <em>Testmodel</em> object is created, an email message is sent to the Admin.</p>
+<p>Moreover, We can connect more than one subscription to a trigger. Subscriptions can be switched off.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Receivers field are just provided in subscription for those situations that the receivers are static(e.g., sending some logs or notifications to Administrator user or group users). Besides, You can send the message to dynamic users(that changed according to the occasions).  For more details refer to <a class="reference internal" href="dynamic_user.html"><span class="doc">Dynamic User</span></a> section.</p>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="architecture">
+<span id="introduction-architecture"></span><h2>Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline">¶</a></h2>
+<p><strong>DSN</strong>’s architecture :</p>
+<img alt="DSN Architecture" src="_images/DSN_Architecture.png" />
+<p>As stated above, <strong>DSN</strong> consists of 3 models(Trigger, Subscription, and Backend).
+<strong>DSN</strong> works as follow:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><dl>
+<dt><strong>Setup</strong> and <strong>Initialization</strong> steps:</dt><dd><p>1.1. Custom messengers, message_templates, and signals must be defined(<em>Optional</em>). It must be done through the code.
+1.2. 3 steps must be done through the admin panel:</p>
+<blockquote>
+<div><p>1.2.1. Triggers must be defined by the name of the pre-defined signal(verb_name).</p>
+<p>1.2.2. Required backends must be defined by proper messenger and message_template.</p>
+<p>1.2.3. Subscriptions are the relations between the Trigger and Backends. So, according to the logic of our code, We must select proper backends for a trigger in a subscription.</p>
+</div></blockquote>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt><strong>Execution</strong>: The code of <strong>DSN</strong> starts when a signal triggers(The send function calling).</dt><dd><p>2.1. After the signal triggers, the handler method of the associated trigger is called, and It’s check that passed signal arguments match the associated trigger.</p>
+<p>2.2. If everything matches, the associated subscription is evoked, Then a list of backends and receiver users are created.</p>
+<p>2.3. After that, each backend’s messengers are called for the specified message and the user.
+(Note: We can set users dynamically. Hence associated user must be defined in the messenger, and the receiver field in the subscription must be left empty)</p>
+</dd>
+</dl>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="summary">
+<span id="introduction-summary"></span><h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>In a nutshell, we can say <strong>DSN</strong> is developed to <em>send message</em> :</p>
+<ul class="simple">
+<li><p><strong>When and Where</strong> ? : When a Trigger Triggered (The associated signal’s send function is called, and the trigger’s specs match).</p></li>
+<li><p><strong>What</strong> to send?: The message that is created to the message_template and other parameters like signal_kwargs.</p></li>
+<li><p><strong>Whom</strong> to send? : Send the message to the registered receivers in the subscription or the dynamic user that can be specified in the messenger.</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It would be best if you took notice of these 3 questions When you want to assign a new trigger to a signal.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="setup.html" class="btn btn-neutral float-right" title="Setup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="quickstart.html" class="btn btn-neutral float-left" title="Quick Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Mohammad Hadi Azaddel
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
