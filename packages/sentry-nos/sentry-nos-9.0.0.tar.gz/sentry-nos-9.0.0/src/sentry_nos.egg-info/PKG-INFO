@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: sentry-nos
+Version: 9.0.0
+Summary: A realtime logging and aggregation server with nos support.
+Home-page: https://github.com/bitholic/sentry/tree/feature/nos
+Author: Sentry & bitholic
+Author-email: hello@sentry.io
+License: BSD
+Description: ## Sentry with nos support
+        
+        NOS: Netease Object Storage
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 2 :: Only
+Classifier: Topic :: Software Development
+Provides-Extra: tests
+Provides-Extra: optional
+Provides-Extra: postgres
+Provides-Extra: dev
