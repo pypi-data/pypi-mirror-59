@@ -1,0 +1,9 @@
+README.md
+setup.py
+china_district/__init__.py
+china_district/core.py
+china_district.egg-info/PKG-INFO
+china_district.egg-info/SOURCES.txt
+china_district.egg-info/dependency_links.txt
+china_district.egg-info/requires.txt
+china_district.egg-info/top_level.txt
