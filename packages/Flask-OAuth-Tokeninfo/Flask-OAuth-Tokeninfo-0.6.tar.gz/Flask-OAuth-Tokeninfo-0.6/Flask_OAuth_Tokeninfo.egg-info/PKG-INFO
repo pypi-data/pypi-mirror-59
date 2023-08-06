@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: Flask-OAuth-Tokeninfo
+Version: 0.6
+Summary: A library that authenticates using token info
+Home-page: https://cerebra.tech
+Author: Cerebra
+Author-email: info@cerebra.tech
+License: proprietary
+Description: todo
+Platform: any
