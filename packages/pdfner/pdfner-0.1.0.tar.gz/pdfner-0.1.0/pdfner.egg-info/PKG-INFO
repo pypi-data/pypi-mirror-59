@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pdfner
+Version: 0.1.0
+Summary: Information extraction and named-entity recognition for indexing PDFs
+Home-page: https://github.com/hnluu8/pdfner
+Author: Hung Luu
+Author-email: hung.luu@outlook.com
+License: MIT
+Description: # pdfner
+        Information extraction and named entity recognition for indexing PDFs
+        
+        ## Install NLP tools
+        1. Download language-specific model data in spaCy
+            ```
+                $ python -m spacy download en
+            ```
+        2. Download Stanford CoreNLP from https://stanfordnlp.github.io/CoreNLP/download.html and extract to {project root}/pdfner/tests/tools
+        
+        
+        ## Install OCRmyPDF
+        https://ocrmypdf.readthedocs.io/en/latest/installation.html
+        
+        
+Keywords: pdf, ner
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: <3.8,>=3.6
+Description-Content-Type: text/markdown; charset=UTF-8
+Provides-Extra: test
