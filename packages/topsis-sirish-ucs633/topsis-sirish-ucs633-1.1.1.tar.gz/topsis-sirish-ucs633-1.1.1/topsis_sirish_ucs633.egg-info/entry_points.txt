@@ -1,0 +1,3 @@
+[console_scripts]
+topsis-sirish-ucs633 = mypackage.__init__:main
+
