@@ -1,0 +1,21 @@
+dist: xenial
+language: python
+python:
+  - "3.4"
+  - "3.5"
+  - "3.6"
+  - "3.7"
+# Install dependencies
+before_install:
+  - python --version
+  - uname -a
+install:
+  - pip install pylint>=2.2.2
+  - pip install pytest==4.4.1
+  - pip install pytest-cov==2.6.1
+  - pip freeze
+# Execute the tests and the linter
+script:
+  - pytest --cov=gpio_calculator
+  - pylint --output-format=text --rcfile=.pylintrc --errors-only gpio_calculator
+  - echo "Done"
