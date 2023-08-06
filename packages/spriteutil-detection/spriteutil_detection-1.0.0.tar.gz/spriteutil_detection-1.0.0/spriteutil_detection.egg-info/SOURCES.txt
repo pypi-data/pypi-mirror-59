@@ -1,0 +1,9 @@
+README.md
+setup.py
+spriteutil_detection/__init__.py
+spriteutil_detection/spriteutil.py
+spriteutil_detection.egg-info/PKG-INFO
+spriteutil_detection.egg-info/SOURCES.txt
+spriteutil_detection.egg-info/dependency_links.txt
+spriteutil_detection.egg-info/requires.txt
+spriteutil_detection.egg-info/top_level.txt
