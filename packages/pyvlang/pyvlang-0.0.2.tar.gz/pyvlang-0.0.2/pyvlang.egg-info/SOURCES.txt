@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+pyvlang.egg-info/PKG-INFO
+pyvlang.egg-info/SOURCES.txt
+pyvlang.egg-info/dependency_links.txt
+pyvlang.egg-info/top_level.txt
