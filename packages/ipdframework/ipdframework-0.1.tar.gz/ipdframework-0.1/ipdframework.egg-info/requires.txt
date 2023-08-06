@@ -1,0 +1,10 @@
+colorful==0.5.4
+numpy==1.18.1
+
+[dev]
+pytest==5.2.1
+twine==1.12.1
+wheel==0.33.6
+
+[linter]
+flake8==3.7.8

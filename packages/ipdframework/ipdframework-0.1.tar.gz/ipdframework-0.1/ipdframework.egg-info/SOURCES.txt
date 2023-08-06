@@ -1,0 +1,13 @@
+README.md
+setup.py
+ipdf/__init__.py
+ipdf/game.py
+ipdf/helper.py
+ipdf/strategies/__init__.py
+ipdf/strategies/abstract.py
+ipdf/strategies/memory_based.py
+ipdframework.egg-info/PKG-INFO
+ipdframework.egg-info/SOURCES.txt
+ipdframework.egg-info/dependency_links.txt
+ipdframework.egg-info/requires.txt
+ipdframework.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ipdframework
+Version: 0.1
+Summary: Library for the iterated evolutionary tournaments between memory-based agents
+Home-page: https://github.com/dmitry-tk/ipdf
+Author: Dmytro Tkachyk
+Author-email: dmitry.tkk@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: game-theory,strategy
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6,<4
+Provides-Extra: linter
+Provides-Extra: dev
