@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: forest-puller
+Version: 1.0.1
+Summary: A package for retrieving data concerning forests on the European continent.
+Home-page: https://gitlab.com/bioeconomy/puller/forest_puller
+Author: Lucas Sinclair
+Author-email: lucas.sinclair@me.com
+License: MIT
+Description: # `forest_puller` version 1.0.1
+        
+        `forest_puller` is a package for retrieving data concerning forests on the European continent. This includes forest growth rates, amount of forested areas and forest inventory (standing stock).
+Platform: UNKNOWN
