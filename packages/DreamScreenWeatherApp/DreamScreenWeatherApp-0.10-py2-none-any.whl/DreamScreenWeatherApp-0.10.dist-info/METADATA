@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: DreamScreenWeatherApp
+Version: 0.10
+Summary: An interface to Weather Underground, as a data source for the HP DreamScreen weather app.
+Home-page: https://bitbucket.org/jtashiro/dreamscreen-weather/src/master/
+Author: John Tashiro
+Author-email: jtashiro@fiospace.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+
+# dreamscreen-weather
+
+package supports the HP DreamScreen tablet 'weather' application, providing both a data access layer and a data provider service. 
+
+Requires:
+1.  user/developer will need to run a web server on a server (local/remote) to host the data provider service.
+2.  change to home router configuration, to override the weatherbug DNS alias, to point to the user's server that is runnign the data provider service.
+3.  weatehrunderground API for the data provider service to pull weather data from internet weather underground as the source.
+
+
+
+
+
