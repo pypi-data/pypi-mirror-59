@@ -1,0 +1,3 @@
+[console_scripts]
+najia = najia.__main__:main
+
