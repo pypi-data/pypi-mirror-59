@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: pangeamt-tea
+Version: 0.0.101
+Summary: TEA - Translation Engine Architect
+Home-page: UNKNOWN
+Author: Pangeamt
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: PyYAML
+Requires-Dist: aiohttp
+Requires-Dist: asyncclick
+Requires-Dist: autoclass
+Requires-Dist: pangeamt-nlp
+
+# TEA - Translation Engine Architect
+
+A command line tool to create translation engine.
+
+
+## Install
+pipx
+
+
+## Usage 
+
+### Step 1: Create a new project
+
+tea new -c customer -s es -t en -f automotion -v 0.0.1
+
+```
+├── customer_es_en_automotion_0.0.1
+│   ├── config.yml
+│   └── data
+```
+
+### Step 2: Config
+
+#### Tokenizer
+tea tokenizer -l (list all available tokenizer from pangea-nlp)
+tea tokenizer -s mecab  -t moses
+
+#### Truecaser
+tea truecaser -s -t
+
+#### BPE
+tea bpe -s -t
+
+ data['processors'],
+          data['tokenizer'],
+          data['truecaser'],
+          data['bpe'],
+          data['trainer'])
+
+### Step 3:
+Copy some multilingual ressources (.tmx, bilingual files, .af ) into the 'data' directory
+
