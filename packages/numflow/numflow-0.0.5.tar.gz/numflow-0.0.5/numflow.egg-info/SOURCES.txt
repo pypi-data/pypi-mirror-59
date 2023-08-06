@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+numflow/__init__.py
+numflow/core.py
+numflow.egg-info/PKG-INFO
+numflow.egg-info/SOURCES.txt
+numflow.egg-info/dependency_links.txt
+numflow.egg-info/requires.txt
+numflow.egg-info/top_level.txt
+numflow/cython/testmodule.c
+numflow/cython/testmodule.pxd
+numflow/cython/testmodule.pyx
