@@ -1,0 +1,15 @@
+hip_data_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hip_data_tools/common.py,sha256=qHue1JZEEfPfGaXgwcbjGx2_2WcUvNHJjIXPWNBcYFA,1730
+hip_data_tools/apache/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hip_data_tools/apache/kafka.py,sha256=7cGk7JvNulY3R3V1pdDhP7JmclKxEpl8xGn5q6nC-sE,23331
+hip_data_tools/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hip_data_tools/aws/athena.py,sha256=ftz_mJrl5XCwJjO8VjDkh6Zvr0j8FUUKCANzjJMIH6Q,12347
+hip_data_tools/aws/s3.py,sha256=3NE3ajZfUhqa709BrLaQBu4raC0CL1XMycCROwwNLb4,6462
+hip_data_tools/hipages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hip_data_tools/hipages/version_tracking.py,sha256=nGeOKSJfvoqoxQ5aiZCo72i_NvVJsHPa3WpnHSO_yOM,17366
+hip_data_tools-1.8.0.dist-info/LICENSE.md,sha256=IVsl_GnzDUbor0UQfaF_4Z7FGY_uZ9m1-vQuxhk9rf0,10453
+hip_data_tools-1.8.0.dist-info/METADATA,sha256=Mw-ASQ9c9dTWIu19fvJ-mSsKs0o_p1PkB4xDS9RqOy4,3722
+hip_data_tools-1.8.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+hip_data_tools-1.8.0.dist-info/entry_points.txt,sha256=Yy2ogyZjdZ7u0J-AezKkmP8i9HW3n4LUevMgfvqaXeA,82
+hip_data_tools-1.8.0.dist-info/top_level.txt,sha256=c9MfQFt-ZY3gNvvrvdjN6Aa_K_KZb_hdeGDQq6b8OX0,15
+hip_data_tools-1.8.0.dist-info/RECORD,,
