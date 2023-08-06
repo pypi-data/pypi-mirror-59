@@ -1,0 +1,6 @@
+README.md
+setup.py
+EZML.egg-info/PKG-INFO
+EZML.egg-info/SOURCES.txt
+EZML.egg-info/dependency_links.txt
+EZML.egg-info/top_level.txt
