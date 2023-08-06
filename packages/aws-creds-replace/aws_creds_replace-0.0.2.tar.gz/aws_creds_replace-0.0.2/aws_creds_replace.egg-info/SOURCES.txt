@@ -1,0 +1,9 @@
+setup.py
+aws_creds_replace/__init__.py
+aws_creds_replace/main.py
+aws_creds_replace.egg-info/PKG-INFO
+aws_creds_replace.egg-info/SOURCES.txt
+aws_creds_replace.egg-info/dependency_links.txt
+aws_creds_replace.egg-info/entry_points.txt
+aws_creds_replace.egg-info/requires.txt
+aws_creds_replace.egg-info/top_level.txt

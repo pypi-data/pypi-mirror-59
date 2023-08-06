@@ -1,0 +1,3 @@
+[console_scripts]
+rollcred = aws_creds_replace.main:cli
+
