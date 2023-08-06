@@ -1,0 +1,9 @@
+clonenotebooks/utils.py,sha256=Fwu9ZKC12O5OF1wMsQSuL8pwVtFewJeXbvNoDQ0aCOk,1698
+clonenotebooks/cloners/__init__.py,sha256=Qg3zpr6APA_ovD0WEaL3DG6CPV60-HbFfowMTN4YyJU,51
+clonenotebooks/cloners/cloners.py,sha256=uO_hOXZFhwYCS6SfqCwG8mphmBfESpw5Z7H17hoSZ3Y,7746
+clonenotebooks/renderers/__init__.py,sha256=bh9UY8qoYbyjRwBddznEcRmKA0HtPflUA5pbQJoKmw8,376
+clonenotebooks/renderers/renderers.py,sha256=YqXd577gnQXTceXDbEGrD4uDQa4jKwAtReAYcm8QEB0,9693
+clonenotebooks-1.0.0.dist-info/METADATA,sha256=JixSXS-5qD_2BLAPlcF0AO1_CIu-9Jb9R3O3vERBhyA,9051
+clonenotebooks-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+clonenotebooks-1.0.0.dist-info/top_level.txt,sha256=JFwW9AGencNTnxx6Pq5h9uSZg1zFTStci78_ZGwjfHE,15
+clonenotebooks-1.0.0.dist-info/RECORD,,
