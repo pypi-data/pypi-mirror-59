@@ -1,0 +1,15 @@
+MANIFEST.in
+setup.py
+version.yml
+whitepaper/__init__.py
+whitepaper/version.py
+whitepaper.egg-info/PKG-INFO
+whitepaper.egg-info/SOURCES.txt
+whitepaper.egg-info/dependency_links.txt
+whitepaper.egg-info/requires.txt
+whitepaper.egg-info/top_level.txt
+whitepaper.egg-info/zip-safe
+whitepaper/core/__init__.py
+whitepaper/core/core.py
+whitepaper/google/GoogleChart.py
+whitepaper/google/__init__.py
