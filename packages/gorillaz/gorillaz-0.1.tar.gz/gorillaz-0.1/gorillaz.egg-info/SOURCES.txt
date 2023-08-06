@@ -1,0 +1,14 @@
+setup.py
+distributions/Binomialdistribution.py
+distributions/Gaussiandistribution.py
+distributions/Generaldistribution.py
+distributions/__init__.py
+gorillaz/Binomialdistribution.py
+gorillaz/Gaussiandistribution.py
+gorillaz/Generaldistribution.py
+gorillaz/__init__.py
+gorillaz.egg-info/PKG-INFO
+gorillaz.egg-info/SOURCES.txt
+gorillaz.egg-info/dependency_links.txt
+gorillaz.egg-info/not-zip-safe
+gorillaz.egg-info/top_level.txt
