@@ -1,0 +1,45 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: {{ service_name }}
+  name: {{ service_name }}
+  namespace: {{ name_space }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ service_name }}
+  template:
+    metadata:
+      labels:
+        app: {{ service_name }}
+    spec:
+      containers:
+      - image: vault
+        name: {{ service_name }}
+        ports:
+        - containerPort: 8200
+          name: vault-port
+          protocol: TCP
+        securityContext:
+         capabilities:
+           add:
+             - IPC_LOCK
+        env:
+        - name: VAULT_DEV_ROOT_TOKEN_ID
+          value: vault-root-token
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ service_name }}
+  labels:
+    app: {{ service_name }}
+spec:
+  ports:
+    - name: {{ service_name }}
+      port: 8200
+  selector:
+    app: {{ service_name }}
