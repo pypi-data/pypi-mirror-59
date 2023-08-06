@@ -1,0 +1,11 @@
+README.md
+setup.py
+qpyson/__init__.py
+qpyson/cli.py
+qpyson.egg-info/PKG-INFO
+qpyson.egg-info/SOURCES.txt
+qpyson.egg-info/dependency_links.txt
+qpyson.egg-info/entry_points.txt
+qpyson.egg-info/not-zip-safe
+qpyson.egg-info/requires.txt
+qpyson.egg-info/top_level.txt
