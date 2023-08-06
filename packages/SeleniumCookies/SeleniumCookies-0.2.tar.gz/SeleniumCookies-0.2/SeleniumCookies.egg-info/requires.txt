@@ -1,0 +1,7 @@
+configparser
+keyring
+lz4
+pbkdf2
+pyaes
+setuptools
+wheel
