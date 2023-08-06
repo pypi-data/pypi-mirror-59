@@ -1,0 +1,12 @@
+override_storage/__init__.py,sha256=9yuEi64VXYt70VWnxwhIzfWZeQRx6VKxnxbWfTcEVn0,220
+override_storage/__version__.py,sha256=64ozm8LOjf9u7pPpOMvkrvDywCJuu_rZwX808gBCZRA,63
+override_storage/compat.py,sha256=CVvQrJKLJ06TfI3fbUa-wMGl7Ocg67xDsdJoGPrRQm0,2365
+override_storage/runner.py,sha256=SL-k5Oeb-o0Yhu2rFiDtgyjVluAYjp7Hg21Gr5y7jL4,543
+override_storage/storage.py,sha256=nEJl-n9JP9Ev7wBWM0kIMqz3db_uGzZq1egzte9ap2I,4457
+override_storage/utils.py,sha256=YZOza16qFG5S8MO9FdBjnQftVyCa_1vUK6cOMUbP-jY,12393
+django_override_storage-0.2.0.dist-info/LICENSE,sha256=8Ll-FQx8BhoZ5bz6TjYZ_UDem_7Bpv9NipQpKoFR8V8,1058
+django_override_storage-0.2.0.dist-info/LICENSE~,sha256=8Ll-FQx8BhoZ5bz6TjYZ_UDem_7Bpv9NipQpKoFR8V8,1058
+django_override_storage-0.2.0.dist-info/METADATA,sha256=LxKUgG-nMzx5cmsKEBbdadt7bjIpLeDdX6Y5mjk0jGs,6448
+django_override_storage-0.2.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+django_override_storage-0.2.0.dist-info/top_level.txt,sha256=zXjVK7YJCJzV94QQla9XaSaVo0P_m68mW5uGxecxths,17
+django_override_storage-0.2.0.dist-info/RECORD,,
