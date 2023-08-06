@@ -1,0 +1,9 @@
+README.md
+makereq.py
+setup.py
+makereq.egg-info/PKG-INFO
+makereq.egg-info/SOURCES.txt
+makereq.egg-info/dependency_links.txt
+makereq.egg-info/entry_points.txt
+makereq.egg-info/requires.txt
+makereq.egg-info/top_level.txt
