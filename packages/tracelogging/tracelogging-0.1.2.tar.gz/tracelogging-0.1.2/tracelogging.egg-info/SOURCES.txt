@@ -1,0 +1,7 @@
+README.md
+setup.py
+tracelogging.py
+tracelogging.egg-info/PKG-INFO
+tracelogging.egg-info/SOURCES.txt
+tracelogging.egg-info/dependency_links.txt
+tracelogging.egg-info/top_level.txt
