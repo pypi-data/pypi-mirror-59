@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: trader
+Version: 0.0.0
+Summary: trader
+Home-page: http://pypi.org/project/trader
+License: UNKNOWN
+Description: trader
+        =======================
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown

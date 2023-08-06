@@ -1,0 +1,8 @@
+README.md
+setup.py
+trader/__init__.py
+trader/version.py
+trader.egg-info/PKG-INFO
+trader.egg-info/SOURCES.txt
+trader.egg-info/dependency_links.txt
+trader.egg-info/top_level.txt
