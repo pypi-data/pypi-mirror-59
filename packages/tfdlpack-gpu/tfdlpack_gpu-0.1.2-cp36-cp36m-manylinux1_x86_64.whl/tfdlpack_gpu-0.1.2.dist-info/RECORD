@@ -1,0 +1,9 @@
+tfdlpack_gpu-0.1.2.data/purelib/tfdlpack/__init__.py,sha256=yX7OsoK8UJEF9KaFl4uhQfR5CdLRxOX9lX3xqAN-J1A,104
+tfdlpack_gpu-0.1.2.data/purelib/tfdlpack/capsule_api.py,sha256=SIC9wElRjixUR0MMJXZLWf3XbTcjYZmMrnjkfFm5gno,1918
+tfdlpack_gpu-0.1.2.data/purelib/tfdlpack/core.py,sha256=BBZLDUj2yd_wcSVVCiQI_tt2je7blZjXb6-CUkGJWNE,2178
+tfdlpack_gpu-0.1.2.data/purelib/tfdlpack/libinfo.py,sha256=MW3HJ3iUee6Mjl1ojpBIJHKm1ZdJ9mlN0LB5zDzF_yg,3194
+tfdlpack_gpu-0.1.2.data/purelib/tfdlpack/libtfdlpack.so,sha256=UX6eEI2FDKrtF_vwD22ppXYYSgbe8ayjX_80ZMNo-58,106248
+tfdlpack_gpu-0.1.2.dist-info/METADATA,sha256=Qqaflmf_rFYN4nbDSGico8_l7LxpLI6QBQF6FN6914A,366
+tfdlpack_gpu-0.1.2.dist-info/WHEEL,sha256=AKoo51LvHJJJz3_DqlQwz4MB2e4xQub2c35_Bx40pVs,109
+tfdlpack_gpu-0.1.2.dist-info/top_level.txt,sha256=710geHaLBvIkFcu2oWgXZcSM6my9rUPPzkNB3eTqV8s,9
+tfdlpack_gpu-0.1.2.dist-info/RECORD,,
