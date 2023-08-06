@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: storedisagg
+Version: 1.0.1
+Summary: Ex-post disaggregation of storage operation by time scales
+Home-page: https://github.com/mcsoini/storedisagg
+Author: storedisagg contributors listed in AUTHORS
+Author-email: m.c.soini@posteo.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: wrapt
+Requires-Dist: tqdm
+
+=============================
+storedisagg
+=============================
+
+Ex-post disaggregation of energy storage operation by time scales
+
+============
+Installation
+============
+
+``pip install storedisagg``
+
+===================
+Source and examples
+===================
+
+`<https://github.com/mcsoini/storedisagg>`_
+
+
+
+
+

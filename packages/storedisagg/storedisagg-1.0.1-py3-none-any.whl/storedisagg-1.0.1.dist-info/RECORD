@@ -1,0 +1,12 @@
+storedisagg/__init__.py,sha256=NrglHfiF--dI9HlE8fcRZ-r4b1rQXxWLNgIOFZLWb3o,811
+storedisagg/compcalc.py,sha256=GufLRVYKdHXJcXXROp8Q8LtPzQ6qkmMOWJm5nWnjL4I,4242
+storedisagg/storagedisaggregator.py,sha256=Xf68hLa46QhxUR2Vti6fbD9Ph_HgIwV4niX8DU4yONQ,17885
+storedisagg/example/__init__.py,sha256=vFpYnRRe6zrpX0-RfDJzJoCK6KxvPBB6xeSFjSsIGWI,28
+storedisagg/example/example_data.py,sha256=KDCFZLPQ_wjP6fmakTY_2ALMt34tCGwIkAgItNvHATE,1410
+storedisagg/example/std_example.py,sha256=vcJAH44gsvNPVPWUk773uPRRvHzSMH9Q6H1xKbSdQkY,28549
+storedisagg-1.0.1.dist-info/AUTHORS,sha256=tUPW_O9-asaSBZLtjkO3rq3Ih9m9Egyc6NZ814ah3JQ,20
+storedisagg-1.0.1.dist-info/LICENSE,sha256=uI_TOziPhuMjNgia5Yee44MSUWA75QcnSjcwVhcMyFw,1064
+storedisagg-1.0.1.dist-info/METADATA,sha256=OHQSElKk9T8oDbjvs7EqUgnIh7VvmOygJ-jL-3uSzyw,855
+storedisagg-1.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+storedisagg-1.0.1.dist-info/top_level.txt,sha256=ojrtIgJRO7GpckZsn4Y6bAEadheWjOz7Y_Nt-ivYWbw,12
+storedisagg-1.0.1.dist-info/RECORD,,
