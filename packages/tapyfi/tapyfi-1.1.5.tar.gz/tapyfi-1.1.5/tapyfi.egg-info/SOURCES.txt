@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+tapyfi/OHLCObject.py
+tapyfi/__init__.py
+tapyfi/__main__.py
+tapyfi.egg-info/PKG-INFO
+tapyfi.egg-info/SOURCES.txt
+tapyfi.egg-info/dependency_links.txt
+tapyfi.egg-info/entry_points.txt
+tapyfi.egg-info/requires.txt
+tapyfi.egg-info/top_level.txt
