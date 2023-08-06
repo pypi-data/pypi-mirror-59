@@ -1,0 +1,60 @@
+[dashboard]
+title = StarlingX Review Inbox
+description = Review Inbox
+foreach = (
+    project:starlingx/ansible-playbooks OR
+    project:starlingx/clients OR
+    project:starlingx/compile OR
+    project:starlingx/config OR
+    project:starlingx/config-files OR
+    project:starlingx/containers OR
+    project:starlingx/distcloud OR
+    project:starlingx/distcloud-client OR
+    project:starlingx/docs OR
+    project:starlingx/election OR
+    project:starlingx/fault OR
+    project:starlingx/governance OR
+    project:starlingx/gui OR
+    project:starlingx/ha OR
+    project:starlingx/helm-charts OR
+    project:starlingx/integ OR
+    project:starlingx/manifest OR
+    project:starlingx/metal OR
+    project:starlingx/monitor-armada-app OR
+    project:starlingx/monitoring OR
+    project:starlingx/nfv OR
+    project:starlingx/openstack-armada-app OR
+    project:starlingx/platform-armada-app OR
+    project:starlingx/root OR
+    project:starlingx/specs OR
+    project:starlingx/stx-puppet OR
+    project:starlingx/test OR
+    project:starlingx/tools OR
+    project:starlingx/update OR
+    project:starlingx/upstream OR
+    project:starlingx/utilities OR
+    project:starlingx/zuul-jobs
+    )
+    status:open
+    NOT owner:self
+    NOT label:Workflow<=-1
+    label:Verified>=1,zuul
+    NOT reviewedby:self
+
+[section "Needs final +2"]
+query = label:Code-Review>=2 limit:50 NOT label:Code-Review<=-1,self
+
+[section "Passed Zuul, No Negative Feedback (Small Fixes)"]
+query = NOT label:Code-Review>=2 NOT label:Code-Review<=-1,starlingx-core delta:<=10
+
+[section "Passed Zuul, No Negative Feedback"]
+query = NOT label:Code-Review>=2 NOT label:Code-Review<=-1,starlingx-core delta:>10
+
+[section "Needs Feedback (Changes older than 5 days that have not been reviewed by anyone)"]
+query = NOT label:Code-Review<=-1 NOT label:Code-Review>=1 age:5d
+
+[section "You are a reviewer, but haven't voted in the current revision"]
+query = NOT label:Code-Review<=-1,self NOT label:Code-Review>=1,self reviewer:self
+
+[section "Wayward Changes (Changes with no code review in the last 2days)"]
+query = NOT is:reviewed age:2d
