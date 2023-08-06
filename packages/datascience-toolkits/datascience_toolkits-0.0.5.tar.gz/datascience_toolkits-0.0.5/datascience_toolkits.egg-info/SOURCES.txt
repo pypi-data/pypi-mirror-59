@@ -1,0 +1,14 @@
+README.md
+setup.py
+datascience_toolkits/__init__.py
+datascience_toolkits/_nbdev.py
+datascience_toolkits/core.py
+datascience_toolkits/experimental.py
+datascience_toolkits/template.py
+datascience_toolkits.egg-info/PKG-INFO
+datascience_toolkits.egg-info/SOURCES.txt
+datascience_toolkits.egg-info/dependency_links.txt
+datascience_toolkits.egg-info/entry_points.txt
+datascience_toolkits.egg-info/not-zip-safe
+datascience_toolkits.egg-info/requires.txt
+datascience_toolkits.egg-info/top_level.txt

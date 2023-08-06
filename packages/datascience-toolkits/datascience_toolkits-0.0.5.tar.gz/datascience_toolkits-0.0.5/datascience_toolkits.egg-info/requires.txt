@@ -1,0 +1,10 @@
+pandas
+scikit-learn
+gensim
+nltk
+tensorflow
+tqdm
+transformers
+simpletransformers
+chartify
+tqdm
