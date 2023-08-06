@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: Topsis_Lokesh_COE14_101703311
+Version: 0.1
+Summary: This library has got the implementation of topsis approach
+Home-page: https://github.com/lokesharora2000/Topsis_Project/tree/master/Topsis_Lokesh_COE14_101703311
+Author: Lokesh Arora
+Author-email: 3lokesharora@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: topsis,Lokesh,101703311
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
