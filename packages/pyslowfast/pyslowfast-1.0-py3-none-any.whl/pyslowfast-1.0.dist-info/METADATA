@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyslowfast
+Version: 1.0
+Summary: PySlowFast Video Understanding
+Home-page: https://github.com/facebookresearch/SlowFast
+Author: FAIR
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: yacs (>=0.1.6)
+Requires-Dist: pyyaml (>=5.1)
+Requires-Dist: av
+Requires-Dist: matplotlib
+Requires-Dist: termcolor (>=1.1)
+Requires-Dist: simplejson
+
+UNKNOWN
+
+
