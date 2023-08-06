@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: ur
+Version: 0.1.0
+Summary: Import remote Jupyter notebooks (or Python files)
+Home-page: https://gitlab.com/runsascoded/ur
+Author: Ryan Williams
+Author-email: ryan@runsascoded.com
+License: MIT
+Description: UNKNOWN
+Keywords: gists,imports,importlib,jupyter,notebooks
+Platform: UNKNOWN
