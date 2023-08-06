@@ -1,0 +1,6 @@
+setuptools
+six
+stomp.py<5
+
+[:python_version < "3.4"]
+enum34
