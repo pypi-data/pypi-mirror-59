@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+config.ini
+setup.py
+yt_audio/YTAudio.py
+yt_audio/arguments.py
+yt_audio/common.py
+yt_audio/version.py
+yt_audio.egg-info/PKG-INFO
+yt_audio.egg-info/SOURCES.txt
+yt_audio.egg-info/dependency_links.txt
+yt_audio.egg-info/entry_points.txt
+yt_audio.egg-info/requires.txt
+yt_audio.egg-info/top_level.txt
