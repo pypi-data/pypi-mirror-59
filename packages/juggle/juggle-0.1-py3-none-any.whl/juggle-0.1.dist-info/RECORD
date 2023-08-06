@@ -1,0 +1,15 @@
+callbacks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+callbacks/trainingmonitor.py,sha256=HfqHNWPP69CNPdiphrb95W9tyiahvVqVPi_fjfx4Ck4,2522
+datasets/__init__.py,sha256=LatroosIFsA3Z1Lo49t26ztQFjN7eTJBBgZygRZ9ROk,85
+datasets/simpledatasetloader.py,sha256=5dIyMtX4p0gUps6fV1rqXTTCNqzMeNUNIb0PfPwv7Fw,1442
+juggle-0.1.data/scripts/juggle,sha256=FqRUWhgC2pqASKIxNH-3VBiXXqMf_L6TgRbromDjn6M,56
+preprocessing/__init__.py,sha256=ONFiAHaKbcCizk0FPpgFb5-Dy60qcHinU8kymEZtasY,149
+preprocessing/imagetoarraypreprocessor.py,sha256=4F2GAra4WSvagYpVnv0IWz8ya7lKj7mJ9vgiVAfTAQI,424
+preprocessing/simplepreprocessor.py,sha256=i5nqiczfcC7taAH_SIc-N4IliHWWoY7kfDss7fTtVjE,479
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/captchahelper.py,sha256=HQh9OoJWYO3Nm3TjZ4NVfz2JDOb7-BnhiQfD6WyTGyc,921
+juggle-0.1.dist-info/LICENSE,sha256=k49Yga8CP889JJaHlOpGFzr_be2nqMoep2chYeIDctk,1091
+juggle-0.1.dist-info/METADATA,sha256=jRbkCGJl8JRiA7p7n0qcIumdytS9QKjnlwlJ40NIrLM,456
+juggle-0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+juggle-0.1.dist-info/top_level.txt,sha256=oWYfIWXf3FUsQMRaoKNMLKfZFVCLDwz-JBvu9t8Dw2Q,39
+juggle-0.1.dist-info/RECORD,,
