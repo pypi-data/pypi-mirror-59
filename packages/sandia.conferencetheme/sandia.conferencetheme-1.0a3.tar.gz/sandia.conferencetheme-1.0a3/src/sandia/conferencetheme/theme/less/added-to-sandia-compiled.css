@@ -1,0 +1,12 @@
+/* Couldn't find sandia-compiled.less so I appended sandia-compiled.css. 
+The following is what was added for the case that the less file shows up and gets compiled */
+
+#content-core .event_ical img {
+max-width: 16px;
+margin: 0 5px 0 0;
+}
+
+article.vevent {
+clear: both;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFkZGVkLXRvLXNhbmRpYS1jb21waWxlZC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7NkZBQzZGOztBQUU3RjtBQUNBLGdCQUFnQjtBQUNoQixrQkFBa0I7Q0FDakI7O0FBRUQ7QUFDQSxZQUFZO0NBQ1giLCJmaWxlIjoiYWRkZWQtdG8tc2FuZGlhLWNvbXBpbGVkLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIENvdWxkbid0IGZpbmQgc2FuZGlhLWNvbXBpbGVkLmxlc3Mgc28gSSBhcHBlbmRlZCBzYW5kaWEtY29tcGlsZWQuY3NzLiBcblRoZSBmb2xsb3dpbmcgaXMgd2hhdCB3YXMgYWRkZWQgZm9yIHRoZSBjYXNlIHRoYXQgdGhlIGxlc3MgZmlsZSBzaG93cyB1cCBhbmQgZ2V0cyBjb21waWxlZCAqL1xuXG4jY29udGVudC1jb3JlIC5ldmVudF9pY2FsIGltZyB7XG5tYXgtd2lkdGg6IDE2cHg7XG5tYXJnaW46IDAgNXB4IDAgMDtcbn1cblxuYXJ0aWNsZS52ZXZlbnQge1xuY2xlYXI6IGJvdGg7XG59Il19 */
