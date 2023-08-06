@@ -1,0 +1,15 @@
+click
+fitb<3.0.0,>=2.0.0
+exit-codes
+toml
+
+[dev]
+bumpversion
+twine
+
+[pytest-plugin]
+pytest
+
+[test]
+hypothesis
+pytest
