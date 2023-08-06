@@ -1,0 +1,12 @@
+uarray/__init__.py,sha256=NxyogGGSICVYuIqYt8a_iveA83bq3z-WSB0or_Yy8xI,4568
+uarray/_backend.py,sha256=jgWjr2TR41tEBdYAn4h6qC57ePg6VU4urMlr4yk4P_U,13544
+uarray/_uarray.cpython-35m-darwin.so,sha256=Kg-wTqBBdZ1SOLBnfQAJVmZxEzpLmhNH0nyN-3cV3rI,189432
+uarray/_version.py,sha256=5d56QcPDBk5wwJjXsHCF-EbwvT1yeYrxgZqWpX90V4Q,497
+uarray/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uarray/tests/conftest.py,sha256=MJBddI68cTxQKeKcNQIWpp1Nd_q6ExnUQvrk0ZvlfOg,370
+uarray/tests/test_uarray.py,sha256=5ohKtDVUiTNoOHOe3pg53Tu1O47laWhtttK5uNmgz6Y,7023
+uarray-0.6.0.dist-info/LICENSE,sha256=yAw5tfzga6SJfhTgsKiLVEWDNNlR6xNhQC_60s-4Y7Q,1514
+uarray-0.6.0.dist-info/METADATA,sha256=UKIFPSyy7PHVrpF6-_E1xckYWmataGfVTOx9xqP3moo,3422
+uarray-0.6.0.dist-info/WHEEL,sha256=BdYa13sefkHen0XB9IN0lCOeSQrE46zSZzvnFK5xexs,109
+uarray-0.6.0.dist-info/top_level.txt,sha256=gWrAWzY0Mj5-QR13QhN3vWteA6-PCq6QGPQsHczIWO4,7
+uarray-0.6.0.dist-info/RECORD,,
