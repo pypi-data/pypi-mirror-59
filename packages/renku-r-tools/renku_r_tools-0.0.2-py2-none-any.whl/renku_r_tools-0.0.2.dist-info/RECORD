@@ -1,0 +1,10 @@
+renku_r_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+renku_r_tools/__main__.py,sha256=qZ4MomJ-uQaNTG5CatiZWRVDq2MXrFNUHDXJ1ExZAMU,645
+renku_r_tools/packrat.py,sha256=_JXdnKliekmg1wWCs35gGmVARRqUEh4aAj6hoiR0uNQ,1294
+renku_r_tools-0.0.2.dist-info/DESCRIPTION.rst,sha256=8cddGh0-8XDDNlKZD4OwqVpE7Q99FNmaryga3_AU2dQ,2108
+renku_r_tools-0.0.2.dist-info/METADATA,sha256=IP0Gjy9Jm9QStKaWg5hcftL5rgq4lm0OMC5zFgTIpKE,2568
+renku_r_tools-0.0.2.dist-info/RECORD,,
+renku_r_tools-0.0.2.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+renku_r_tools-0.0.2.dist-info/entry_points.txt,sha256=Vplkphw0PiM4nlYbHwWzKkcv03XMsO6wzfHmHxmkv9k,56
+renku_r_tools-0.0.2.dist-info/metadata.json,sha256=r-ILp4j6Ik13MTj3qudM0N459KHBetC6V7WytlRfS-0,825
+renku_r_tools-0.0.2.dist-info/top_level.txt,sha256=Yz8DPZKZa5yxfoi6zZthMOETFcGJ9V37BQDtvmeEP4I,14
