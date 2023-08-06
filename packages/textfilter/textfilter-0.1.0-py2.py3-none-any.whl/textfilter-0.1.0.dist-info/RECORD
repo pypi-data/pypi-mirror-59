@@ -1,0 +1,10 @@
+textfilter/__init__.py,sha256=2dLHiBqamc1OYhY-wCYpWb6ZVQggZ1KUW3I95ekJGao,121
+textfilter/__main__.py,sha256=Cc9DO6t60rk0RJDFqofRoUvAWOYuH5kKcbKcPvyp5M0,1280
+textfilter/textfilter.py,sha256=dsrjiweMRGZOgfuLP4slIFptiGXqCFNlVQI8q0RxqIs,6442
+textfilter-0.1.0.dist-info/AUTHORS.rst,sha256=HM_n15RH85S8k8HYjyrLlimvhWgp2FDqeNemogXzraw,149
+textfilter-0.1.0.dist-info/LICENSE,sha256=YXZkTOpUwZdgqQD2aQ_OecDzLGqSo1CA5LTXlIdyD08,1069
+textfilter-0.1.0.dist-info/METADATA,sha256=YSDUWo0EA7euNbIwyGLlZ7zsLTbcjWIYeqU8ZNq6wVk,1955
+textfilter-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+textfilter-0.1.0.dist-info/entry_points.txt,sha256=1uagkIPkttX8uilEC7YLp6q1WBv_BrNKIx0XUHeR87I,57
+textfilter-0.1.0.dist-info/top_level.txt,sha256=F288mhDF1UBJcxrpaH8LUu2OSO1M-OUgeOBh561T0DI,11
+textfilter-0.1.0.dist-info/RECORD,,

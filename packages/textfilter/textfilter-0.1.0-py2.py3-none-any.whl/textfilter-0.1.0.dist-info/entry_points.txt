@@ -1,0 +1,3 @@
+[console_scripts]
+textfilter = textfilter.__main__:main
+
