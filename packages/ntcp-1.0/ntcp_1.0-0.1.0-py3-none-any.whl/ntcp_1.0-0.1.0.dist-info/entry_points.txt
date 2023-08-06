@@ -1,0 +1,3 @@
+[console_scripts]
+ntcp = ntcp.ntcp:main
+
