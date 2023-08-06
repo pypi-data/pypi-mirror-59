@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+topsis/topsis.py
+topsis_Anurag.egg-info/PKG-INFO
+topsis_Anurag.egg-info/SOURCES.txt
+topsis_Anurag.egg-info/dependency_links.txt
+topsis_Anurag.egg-info/entry_points.txt
+topsis_Anurag.egg-info/requires.txt
+topsis_Anurag.egg-info/top_level.txt
