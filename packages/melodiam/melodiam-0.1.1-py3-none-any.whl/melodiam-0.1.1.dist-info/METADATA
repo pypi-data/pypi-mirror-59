@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: melodiam
+Version: 0.1.1
+Summary: Melodiam - async, 100% tested and type-annotated Spotify Web API wrapper.
+Home-page: https://gitlab.com/harry.sky.vortex/melodiam
+Author: Igor Nehoroshev
+Author-email: mail@neigor.me
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: httpx
+Provides-Extra: lint
+Requires-Dist: mypy ; extra == 'lint'
+Requires-Dist: autoflake ; extra == 'lint'
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: isort ; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: asynctest ; extra == 'test'
+Requires-Dist: starlette ; extra == 'test'
+Requires-Dist: python-multipart ; extra == 'test'
+
+Melodiam
+========
+
+**Melodiam** - async, 100% tested and type-annotated **Spotify Web API** wrapper.
+
+Python 3.6+ is required.
+
+
