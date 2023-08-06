@@ -1,0 +1,9 @@
+README.md
+setup.py
+stack-module/__init__.py
+stack-module/stack-module.usage.py
+stack-module/stackmodule.py
+stack_module.egg-info/PKG-INFO
+stack_module.egg-info/SOURCES.txt
+stack_module.egg-info/dependency_links.txt
+stack_module.egg-info/top_level.txt
