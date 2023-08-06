@@ -1,0 +1,13 @@
+README.md
+setup.py
+a5dev/__init__.py
+a5dev/deepfake.py
+a5dev/general.py
+a5dev/image.py
+a5dev/transfersh.py
+a5dev/video.py
+a5dev.egg-info/PKG-INFO
+a5dev.egg-info/SOURCES.txt
+a5dev.egg-info/dependency_links.txt
+a5dev.egg-info/requires.txt
+a5dev.egg-info/top_level.txt
