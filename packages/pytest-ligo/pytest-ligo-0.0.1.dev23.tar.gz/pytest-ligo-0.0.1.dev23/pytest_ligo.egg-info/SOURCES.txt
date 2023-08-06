@@ -1,0 +1,9 @@
+README.rst
+pytest_ligo.py
+setup.py
+pytest_ligo.egg-info/PKG-INFO
+pytest_ligo.egg-info/SOURCES.txt
+pytest_ligo.egg-info/dependency_links.txt
+pytest_ligo.egg-info/entry_points.txt
+pytest_ligo.egg-info/requires.txt
+pytest_ligo.egg-info/top_level.txt
