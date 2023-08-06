@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+ntap.egg-info/PKG-INFO
+ntap.egg-info/SOURCES.txt
+ntap.egg-info/dependency_links.txt
+ntap.egg-info/requires.txt
+ntap.egg-info/top_level.txt
