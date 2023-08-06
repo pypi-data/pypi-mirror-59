@@ -1,0 +1,6 @@
+selenium
+pyderman
+beautifulsoup4
+tqdm
+pprint
+requests
