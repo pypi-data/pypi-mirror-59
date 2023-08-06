@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ecoe
+Version: 0.0.14
+Summary: Package for Ecological Engineering Applications
+Home-page: https://github.com/OSU-BEE/ecoe
+Author: John Bolte
+Author-email: john.bolte@oregonstate.edu
+License: UNKNOWN
+Description: # ecoe Package
+        
+        ### This package is in the process of being developed, and is NOT intended for use at this time.
+        
+        This package provides a number of functions for common 
+        analysis tasks in Ecological Engineering
+        
+Keywords: ecological engineering python
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
