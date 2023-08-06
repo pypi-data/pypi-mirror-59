@@ -1,0 +1,8 @@
+
+[packaging]
+twine
+
+[testing]
+mockredispy-kblin
+pytest
+pytest-cov

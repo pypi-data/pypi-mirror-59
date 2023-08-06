@@ -1,0 +1,10 @@
+README.md
+setup.py
+crispy_models/__init__.py
+crispy_models/models.py
+crispy_models/version.py
+crispy_models.egg-info/PKG-INFO
+crispy_models.egg-info/SOURCES.txt
+crispy_models.egg-info/dependency_links.txt
+crispy_models.egg-info/requires.txt
+crispy_models.egg-info/top_level.txt
