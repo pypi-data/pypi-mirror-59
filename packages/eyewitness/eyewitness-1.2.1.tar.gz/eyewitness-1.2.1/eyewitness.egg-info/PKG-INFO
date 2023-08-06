@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: eyewitness
+Version: 1.2.1
+Summary: A light weight framework for Object Detection.
+Home-page: https://gitlab.com/penolove15/witness
+Author: Ching-Hua Yang
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: mot
+Provides-Extra: all
