@@ -1,0 +1,3 @@
+[console_scripts]
+wbclione = wbclione.cli:cli
+
