@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+
+        <!-- wizard: csv-daten laden -->
+        <record model="ir.action.wizard" id="wizard_import">
+            <field name="name">Import CSV-File</field>
+            <field name="wiz_name">import_product.wizardcsvimport</field>
+        </record>
+
+        <!-- form-action -->
+        <record model="ir.action.keyword" id="wizard_import_keyword1">
+            <field name="keyword">form_action</field>
+            <field name="model">product.template,-1</field>
+            <field name="action" ref="wizard_import"/>
+        </record>
+
+        <!-- permissions for wizard -->
+        <record model="ir.action-res.group" 
+                id="wizard_import-group_product_admin">
+            <field name="action" ref="wizard_import"/>
+            <field name="group" ref="product.group_product_admin"/>
+        </record>
+
+        <!-- view for form 'schritt1' -->
+        <record model="ir.ui.view" id="wizardcsvimport_schritt1_form">
+            <field name="model">import_product.wizardcsvimport.schritt1</field>
+            <field name="type">form</field>
+            <field name="name">wiz_wizardcsvimport_schritt1_form</field>
+        </record>
+
+        <!-- view for form 'schritt2' -->
+        <record model="ir.ui.view" id="wizardcsvimport_schritt2_form">
+            <field name="model">import_product.wizardcsvimport.schritt2</field>
+            <field name="type">form</field>
+            <field name="name">wiz_wizardcsvimport_schritt2_form</field>
+        </record>
+
+    </data>
+</tryton>
