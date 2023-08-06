@@ -1,0 +1,11 @@
+asyncoss/__init__.py,sha256=xmGC-L4qzwwajZqx4spTaHYkTeoIWAMbu9iTaut3b24,429
+asyncoss/api.py,sha256=fy60ZHZ1ef0dzxa_zbNaEVlG3oNwt4UKqP8eTtyIkHs,47878
+asyncoss/exceptions.py,sha256=pxcaM6N6hGPjf7LdbYattVVXRL4-TRz-LiuV0BNShh4,7547
+asyncoss/http.py,sha256=zu9KKuyUR9FAZwFzA4UsUktctRnwdCZPPQWpUIxsCYM,3768
+asyncoss/iterators.py,sha256=2bU7oVNpWvzXYbtxLbIO5Uk1uUa3xODEdxxP3u3n-no,9597
+asyncoss/models.py,sha256=fFPrTotEa74ueMkKbGNOSCWNU1xrwJ-Ou3qcyNo28bw,27440
+asyncoss-0.0.3.dist-info/LICENSE,sha256=-_rvnn5A0pQ8MIl5Q4CttYoCuoc_R4UtWpB_A3_VrTc,1064
+asyncoss-0.0.3.dist-info/METADATA,sha256=2v1Oue6OH8Ap-jCzafhGdawkJJhIY5ihEHj_tx3bQzI,1409
+asyncoss-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+asyncoss-0.0.3.dist-info/top_level.txt,sha256=zFfbZv3pWgCf5eVBLMADzfR39DxhpKOOS6wUPsG5sqA,9
+asyncoss-0.0.3.dist-info/RECORD,,
