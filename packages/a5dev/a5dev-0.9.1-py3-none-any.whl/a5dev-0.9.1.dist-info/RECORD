@@ -1,0 +1,11 @@
+a5dev/__init__.py,sha256=yqAE2hgZ0DreUXM43bD9Yg1IWwvR4X2d6syAJeY6sB4,183
+a5dev/deepfake.py,sha256=TGgd3yyTEmMnXMNvd6X7ig-lAct3hfSuNGLz-tU-XoY,2687
+a5dev/general.py,sha256=inUmnixkwAHN8eU1CNHFDLjKPwq8u5DlHjmTpKeMsMg,1041
+a5dev/image.py,sha256=Nx350m5TgNMdSEmXLFzL4lXSkzQMxYe8e0quX1u_Cfo,4379
+a5dev/transfersh.py,sha256=lc7FVRbulsFudO2P8GuXt8JLwd9Wvzv6fyqA2CTAHas,3459
+a5dev/video.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+a5dev-0.9.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+a5dev-0.9.1.dist-info/METADATA,sha256=m6IfFd7r1EA6LmpA8aVhTK7wwT8sMFIJ2y-mdyLY4wY,684
+a5dev-0.9.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+a5dev-0.9.1.dist-info/top_level.txt,sha256=KIGqeRCY8xBwVuOCw4-DgR1FB2cCszaYtsOXu8bVMpo,6
+a5dev-0.9.1.dist-info/RECORD,,
