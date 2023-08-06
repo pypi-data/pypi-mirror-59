@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: JKBio
+Version: 1.0
+Summary: A useful module for any CompBio
+Home-page: https://github.com/jkobject/JKBio
+Author: Jeremie Kalfon
+Author-email: jkobject@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: pysam
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: venn
+Requires-Dist: sklearn
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+Requires-Dist: rpy2
+Requires-Dist: rpy2-bioconductor-extensions
+Requires-Dist: jupyter
+Requires-Dist: gseapy
+Requires-Dist: bokeh
+Requires-Dist: igv
+
+UNKNOWN
+
+
