@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Topsis3431
+Version: 1.0.0
+Summary: TOPSIS package for MCDM
+Home-page: https://github.com/pypa/sampleproject
+Author: Rakshit Rajesh Jain
+Author-email: rakshitj.1899@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+#Package for TOPSIS in Python
+This is package is built for implementing MCDM(Multiple Criteria Decision Making) using TOPSIS.
+This package is built for Project work of UCS633(Data Analytics and Visualization) subject in B.E. COE(3rd Yr) at Thapar Institute of Engg. and Technology.
+
