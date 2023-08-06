@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "mapbook/main": true
+  }
+}
