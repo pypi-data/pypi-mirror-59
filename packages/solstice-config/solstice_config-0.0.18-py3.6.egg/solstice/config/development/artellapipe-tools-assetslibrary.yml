@@ -1,0 +1,19 @@
+# Base Configuration file for artellapipe-tools-assetslibrary in Solstice
+
+# Defines icon of the tool
+icon: assetslibrary
+
+# URL to tool documentation web page
+url: https://solstice-short-film.github.io/solstice-docs/pipeline/pipeline/tools/assetslibrary/
+
+# Defines whether this needs Kitsu data to work or not
+kitsu_login: True
+
+supported_files:
+  "Rig":
+    rig:
+      ma: reference
+
+  "Alembic":
+    gpualembic:
+      abc: import

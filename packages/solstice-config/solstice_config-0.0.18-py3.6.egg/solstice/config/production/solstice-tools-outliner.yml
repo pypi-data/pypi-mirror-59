@@ -1,0 +1,89 @@
+# Base Configuration file for artellapipe-tools-outliner
+
+# Defines tool name
+name: Outliner
+
+# Unique ID for the tool
+id: solstice-tools-outliner
+
+# Defines logo name of the tool
+logo: student
+
+# Description of the tool
+description: Tool that manage the assets in a DCC scene
+
+# URL to tool documentation web page
+url: https://solstice-short-film.github.io/solstice-docs/pipeline/pipeline/tools/namemanager/
+
+# Tags relatedi with this tool
+tags: ['outliner', 'asset']
+
+# Defines the ID used by Sentry to monitorize error traces
+#sentry_id: https://f489c1a2f43c4c629ba6f08f6c3ef727@sentry.io/1764485
+
+# Directory where tool logger will be created
+logger_dir: ${join(user, "solstice", "logs", "tools")}
+
+# Default logger level used by tool logger
+logger_level: INFO
+
+# Directory where tool resources are located
+resources_path: ${join(filename, "resources")}
+
+# File that defines tool logger settings
+logging_file: ${join(filename, "__logging__.ini")}
+
+# Menu representation of this tool
+menu_ui:
+  label: "Outliner"
+  is_checkable: False
+  is_checked: False
+  load_on_startup: False
+
+# Tool Menu definition where this tool is registered
+menu:
+  - label: General
+    type: menu
+    children:
+      - id: solstice-tools-outliner
+        type: tool
+
+# Tool Shelf definition
+shelf:
+  - name: General
+    children:
+      - id: solstice-tools-outliner
+        displayLabel: False
+        type: tool
+
+# Defines whether this needs Kitsu data to work or not
+kitsu_login: False
+
+# Defines the outliners that should be added
+outliners:
+  props:
+    name: Props
+    class: solstice.tools.outliner.outliners.prop.SolsticePropsOutliner
+    categories:
+      - Prop
+  characters:
+    name: Characters
+    class: solstice.tools.outliner.outliners.character.SolsticeCharactersOutliner
+    categories:
+      - Character
+  cameras:
+    name: Cameras
+    class: solstice.tools.outliner.outliners.camera.SolsticeCamerasOutliner
+    categories:
+      - Camera
+  lights:
+    name: Lights
+    class: solstice.tools.outliner.outliners.light.SolsticeLightsOutliner
+    categories:
+      - Light Rig
+  fx:
+    name: Fx
+    class: solstice.tools.outliner.outliners.fx.SoslticeFxOutilner
+    categories:
+      - Cloth
+      - Groom
