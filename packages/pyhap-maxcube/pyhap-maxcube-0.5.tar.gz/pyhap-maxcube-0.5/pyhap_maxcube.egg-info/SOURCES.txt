@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyhap/accessories/maxcube/__init__.py
+pyhap_maxcube.egg-info/PKG-INFO
+pyhap_maxcube.egg-info/SOURCES.txt
+pyhap_maxcube.egg-info/dependency_links.txt
+pyhap_maxcube.egg-info/requires.txt
+pyhap_maxcube.egg-info/top_level.txt
