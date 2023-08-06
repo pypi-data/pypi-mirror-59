@@ -1,0 +1,6 @@
+README.md
+setup.py
+arffparse.egg-info/PKG-INFO
+arffparse.egg-info/SOURCES.txt
+arffparse.egg-info/dependency_links.txt
+arffparse.egg-info/top_level.txt
