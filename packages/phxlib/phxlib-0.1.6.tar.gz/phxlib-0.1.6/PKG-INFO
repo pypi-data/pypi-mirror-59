@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: phxlib
+Version: 0.1.6
+Summary: Library for personal use with some useful functions and tools
+Home-page: https://gitlab.com/PhoxSpark/phxlib
+Author: PhoxSpark
+Author-email: lgraciamorales@icloud.com
+License: MIT
+Download-URL: https://gitlab.com/PhoxSpark/phxlib/-/archive/master/phxlib-master.zip
+Description: This is a set of tools to easify the task of programming on Python (even more). This is intended for personal use.
+Keywords: library,tools,useful
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
