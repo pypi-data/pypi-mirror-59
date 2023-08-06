@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: Topsis-UCS633
+Version: 1.0.1
+Summary: A topsis Package Project of UCS633
+Home-page: UNKNOWN
+Author: Divya Arora
+Author-email: divyaarora2k@gmail.com
+License: MIT
+Description: This package has been created based on Project 1 of course UCS633.Divya Arora COE 8 101703177
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Python Software Foundation License

@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+Topsis_UCS633/__init__.py
+Topsis_UCS633/topsis.py
+Topsis_UCS633.egg-info/PKG-INFO
+Topsis_UCS633.egg-info/SOURCES.txt
+Topsis_UCS633.egg-info/dependency_links.txt
+Topsis_UCS633.egg-info/entry_points.txt
+Topsis_UCS633.egg-info/top_level.txt
