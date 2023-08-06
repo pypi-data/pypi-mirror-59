@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+liebres/__init__.py
+liebres/_version.py
+liebres.egg-info/PKG-INFO
+liebres.egg-info/SOURCES.txt
+liebres.egg-info/dependency_links.txt
+liebres.egg-info/requires.txt
+liebres.egg-info/top_level.txt
+liebres/dataframes/__init__.py
+liebres/dataframes/abc.py
+liebres/dataframes/sqlite.py
+tests/__init__.py
+tests/test_dataframes/__init__.py
+tests/test_dataframes/test_sqlite.py

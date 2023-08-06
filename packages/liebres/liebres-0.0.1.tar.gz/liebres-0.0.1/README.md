@@ -1,0 +1,58 @@
+
+# liebres
+
+[![PyPI](https://img.shields.io/pypi/v/liebres.svg)](https://pypi.org/project/liebres)
+[![Read the Docs](https://img.shields.io/readthedocs/liebres.svg)](https://liebres.readthedocs.io/)
+[![Travis (.org) branch](https://img.shields.io/travis/garciparedes/liebres/master.svg)](https://travis-ci.org/garciparedes/liebres/branches)
+[![Codecov](https://img.shields.io/codecov/c/github/garciparedes/liebres.svg)](https://codecov.io/gh/garciparedes/liebres)
+[![GitHub](https://img.shields.io/github/license/garciparedes/liebres.svg)](https://github.com/garciparedes/liebres/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/garciparedes/liebres.svg)](https://github.com/garciparedes/liebres)
+
+## Description 
+
+Flexible and powerful data analysis / manipulation library for Python on top of SQL, providing labeled data structures.
+
+*IMPORTANT*: This project is still under its early stage of development. So it's not recommended yet to use on real world projects. 
+
+
+## How to install
+
+```bash
+pip install liebres
+```
+
+## Getting Started
+
+```python
+import liebres as lb
+
+df = lb.DataFrame({'a': [1, 2, 3], 'b': [4, 5, 6]})
+
+...
+
+```
+
+## Documentation
+You can find the documentation at: https://liebres.readthedocs.io
+
+
+## Development
+
+You can install it simply typing:
+
+```bash
+pipenv install --dev
+```
+
+To run the tests perform:
+
+```bash
+pipenv python -m unittest discover tests
+```
+
+## Repository Contents
+
+[TODO]
+
+## LICENSE
+This project is licensed under [MIT](LICENSE) license.
