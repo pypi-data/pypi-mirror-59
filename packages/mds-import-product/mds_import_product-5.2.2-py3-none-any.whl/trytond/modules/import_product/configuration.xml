@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+
+        <!-- config-dialog -->
+        <record model="ir.ui.view" id="configuration_view_form">
+            <field name="model">import_product.configuration</field>
+            <field name="type">form</field>
+            <field name="name">configuration_form</field>
+        </record>
+
+        <record model="ir.action.act_window" id="act_configuration_view_form">
+            <field name="name">Import products</field>
+            <field name="res_model">import_product.configuration</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_configuration_view_form_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="configuration_view_form"/>
+            <field name="act_window" ref="act_configuration_view_form"/>
+        </record>
+        
+        <!-- menu item -->
+        <menuitem parent="product.menu_configuration"
+                action="act_configuration_view_form"
+                id="menu_import_configuration"
+                sequence="0" icon="tryton-list"/>
+        <record model="ir.ui.menu-res.group"
+            id="menu_import_configuration_group_product_admin">
+            <field name="menu" ref="menu_import_configuration"/>
+            <field name="group" ref="product.group_product_admin"/>
+        </record>
+
+        <!-- grant access -->
+        <record model="ir.model.access" id="access_anon">
+            <field name="model" search="[('model', '=', 'import_product.configuration')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_admin">
+            <field name="model" search="[('model', '=', 'import_product.configuration')]"/>
+            <field name="group" ref="product.group_product_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+    </data>
+</tryton>

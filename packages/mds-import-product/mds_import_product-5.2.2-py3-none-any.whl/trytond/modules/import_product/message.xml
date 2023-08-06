@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+        <record model="ir.message" id="wizimp_cfgprodcat">
+            <field name="text">Configuration: value 'Product Category' must be set.</field>
+        </record>
+        <record model="ir.message" id="wizimp_toomanycolumn">
+            <field name="text">Import: too many columns in csv-file.</field>
+        </record>
+        <record model="ir.message" id="wizimp_m2o_notmatch">
+            <field name="text">Import: value '%(val1)s' not exactly match to column '%(colname)s' in table '%(tabname)s', found %(numitm)s items.</field>
+        </record>
+    </data>
+</tryton>
