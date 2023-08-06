@@ -1,0 +1,8 @@
+aws_cdk/aws_dax/__init__.py,sha256=PNOyCGH5hdxGCcLfsIlKraoCfECZI-ftZygiJT8ouLk,35230
+aws_cdk/aws_dax/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_dax/_jsii/__init__.py,sha256=aqZXp3sktFzdgCZRieMvucBwmD0tpCoC8nfnIJW4zOQ,177
+aws_cdk/aws_dax/_jsii/aws-dax@1.21.0.jsii.tgz,sha256=RdkDqdvDMNDeBZpyxwu1GoY2ntl4foZssozwFLWH6oY,22760
+aws_cdk.aws_dax-1.21.0.dist-info/METADATA,sha256=6v5EqAWC93wV1mhyfYpO5gfJzCjgPUqFrIvufcctUVo,1627
+aws_cdk.aws_dax-1.21.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+aws_cdk.aws_dax-1.21.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_dax-1.21.0.dist-info/RECORD,,
