@@ -1,0 +1,29 @@
+{% extends "aristotle_mdr/concepts/managedContent.html" %}
+{% load aristotle_tags util_tags mptt_tags %}
+
+{% block objSpecific %}
+    {% if item.frameworkdimension_set.all %}
+        <h2>Framework Dimensions</h2>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Table of contents
+            </div>
+            <div class="panel-body">
+            
+            <ul>
+            {% for top in item.root_dimensions %}
+                    {% include "comet/helpers/dimension_toc_node.html" with node=top %}
+            {% endfor %}
+            </ul>
+            </div>
+        </div>
+
+    {% endif %}
+
+    <ul class="root">
+        {% for top in item.root_dimensions %}
+            {% include "comet/helpers/dimension_node.html" with node=top %}
+        {% endfor %}
+    </ul>
+
+{% endblock %}

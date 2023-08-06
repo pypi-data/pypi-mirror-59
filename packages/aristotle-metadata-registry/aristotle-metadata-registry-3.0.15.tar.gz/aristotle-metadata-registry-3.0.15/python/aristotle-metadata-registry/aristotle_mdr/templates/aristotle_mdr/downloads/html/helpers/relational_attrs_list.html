@@ -1,0 +1,10 @@
+{% load aristotle_download_tags %}
+<ul>
+    {% with items=qs|rels_for_download:user %}
+      {% for sub_item in items %}
+        <li>{% include 'aristotle_mdr/helpers/inlineDetails.html' with item=sub_item skip_can_view=True %}</li>
+      {% empty %}
+        <li><em>None</em></li>
+      {% endfor %}
+    {% endwith %}
+</ul>
