@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+multicoder/__init__.py
+multicoder/cli.py
+multicoder/encoders.py
+multicoder.egg-info/PKG-INFO
+multicoder.egg-info/SOURCES.txt
+multicoder.egg-info/dependency_links.txt
+multicoder.egg-info/entry_points.txt
+multicoder.egg-info/not-zip-safe
+multicoder.egg-info/top_level.txt
+multicoder/tests/__init__.py
+multicoder/tests/test_encoders.py
