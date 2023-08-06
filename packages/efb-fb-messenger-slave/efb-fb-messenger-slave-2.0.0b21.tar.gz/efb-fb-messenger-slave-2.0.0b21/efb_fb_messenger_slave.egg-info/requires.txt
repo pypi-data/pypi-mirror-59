@@ -1,0 +1,7 @@
+ehforwarderbot>=2.0.0b28
+fbchat~=1.9
+PyYaml>=5.3
+requests
+emoji
+bullet
+cjkwrap
