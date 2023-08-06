@@ -1,0 +1,31 @@
+## Description
+For the moment there are two classes in the package: `SshfsSaver` and `NfsSaver`. 
+They are used to write data to a remote server via passing a writing func to`.save()` 
+method. 
+
+Any writing function must require a save path as its first argument, but since a saver 
+is initialized with a target directory, there is no need to pass it in the `args`. 
+
+## Usage example
+```
+import os
+from mountvfs import Sshfs
+
+
+def write(filepath, filename, text):
+    with open(os.path.join(filepath, filename), 'w') as ouf:
+        ouf.write(file)
+
+
+MOUNT_PARAMS = {
+    'user': 'test_user', 
+    'server: 'test_server', 
+    'remote_dir': 'path/to/mounted/remote/dir',
+    'key': 'path/to/ssh/private/key',
+    'target_dir': 'path/to/mounted/local/dir'
+}
+
+with Sshfs(**MOUNT_PARAMS) as saver:
+     saver.save(write, args=('test_filename', 'test_text')) 
+
+```
