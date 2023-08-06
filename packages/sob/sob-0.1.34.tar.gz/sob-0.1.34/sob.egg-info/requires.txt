@@ -1,0 +1,6 @@
+future>=0.18.2
+pyyaml>=5.1.1
+iso8601>=0.1.12
+
+[testing]
+setuptools_setup_versions>=0.0.29
