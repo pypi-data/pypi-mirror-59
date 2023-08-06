@@ -1,0 +1,3 @@
+[console_scripts]
+multicoder = multicoder.cli:main
+
