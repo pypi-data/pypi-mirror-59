@@ -1,0 +1,12 @@
+benchmark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+benchmark/benchmark.py,sha256=_SOOe3i7Hc5M28IdBmDOsM1WCgPmbKCfpkziZzFpCB0,670
+timeflake/__init__.py,sha256=XDwBBpk4_ni8XHuLBNBnX1nCFXYcH5RVkHSAmfRf7to,274
+timeflake/__main__.py,sha256=z7zf2cpo2D7Pae8arS4Vrri42KIiyOnjnIVpw7Vuv8Q,1595
+timeflake/flake.py,sha256=e3GV7wXJ1OcY_4bDAU7q9xiUrUyQH0L5qJeVEr8aaxQ,4000
+timeflake/utils.py,sha256=HA0dhpegXO4XzhyqZ4jkodgDNj-H8XkzxTeYMnuO6LI,876
+timeflake-0.2.0.dist-info/LICENSE,sha256=B9YvdqrkCL3-ydTxhYtUoyBBY_kN1tj9B2dMFktVxDo,1077
+timeflake-0.2.0.dist-info/METADATA,sha256=1kZ9YXGeeI_YCL2jqzH_4n7kkyyQzEB6SfCCbj9y-ts,3947
+timeflake-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+timeflake-0.2.0.dist-info/entry_points.txt,sha256=VKCU6oCHk6R1s7RnZoFBD7dl7DIcvi6STG5wtREgTxs,55
+timeflake-0.2.0.dist-info/top_level.txt,sha256=8qBkyB6MHLiL0AsJ2uwyteMUc9nKWhlCNnNCjvz-FU8,20
+timeflake-0.2.0.dist-info/RECORD,,
