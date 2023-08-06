@@ -1,0 +1,63 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ service_name }}
+  namespace: {{ name_space }}
+  labels:
+    app: {{ service_name }}
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: {{ service_name }}
+  template:
+    metadata:
+      labels:
+        app: {{ service_name }}
+    spec:
+      containers:
+      - name: {{ service_name }}
+        image: {{ service_name }}:{{ image_tag }}
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        env:
+        - name: REDIS_URL
+          value: "redis://redis"
+        - name: POSTGRES_URL
+          value: "postgresql://postgres"
+        - name: KONG_URL
+          value: "https://kong-proxy:8443"
+        - name: KONG_ADMIN
+          value: "https://kong-admin:8444"
+        - name: ENVIRONMENT
+          value: {{ name_space }}
+        - name: PORT
+          value: "8080"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ service_name }}
+  namespace: {{ name_space }}
+  labels:
+    app: {{ service_name }}
+spec:
+  selector:
+    app: {{ service_name }}
+  ports:
+  - port: 8080
+    targetPort: 8080
