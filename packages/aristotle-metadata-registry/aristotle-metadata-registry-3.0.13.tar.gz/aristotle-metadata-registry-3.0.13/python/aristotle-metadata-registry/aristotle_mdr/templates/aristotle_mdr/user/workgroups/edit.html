@@ -1,0 +1,18 @@
+{% extends "aristotle_mdr/user/workgroups/base.html" %}
+{% load i18n %}
+
+{% block title %} Editing - {{ item.name }}{% endblock %}
+
+
+{% block workgroup_page %}
+
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <table class="table">
+            {{ form.as_table }}
+        </table>
+        <a class="btn btn-danger" href="{% url 'aristotle:workgroup' item.id %}">Cancel</a>
+        <button class="btn btn-primary" type="submit">Save changes</button>
+    </form>
+{% endblock %}

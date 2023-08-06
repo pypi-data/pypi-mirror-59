@@ -1,0 +1,102 @@
+{% extends "aristotle_mdr/concepts/managedContent.html" %}
+{% load i18n aristotle_tags util_tags %}
+
+{% block extra_head_scripts %}
+    {{ block.super }}
+    <style>
+        .file_type {
+            border:1px solid black;
+            border-top-right-radius: 10px;
+            padding:4px;
+            font-size:8pt;
+        }
+    </style>
+
+{% endblock %}
+
+{% block objSpecific %}
+    For more details on how to access this data contact the publishing organisation.
+
+    <h2>Data source details</h2>
+    <dl class="">
+        <dt>Contained in dataset</dt>
+            <dd>
+                {% if item.dataset %}
+                    <a href="{{item.dataset.get_absolute_url}}">{{item.dataset.name}}</a>
+                {% else %}
+                    This distribution is not linked to a dataset
+                {% endif %}
+            </dd>
+        <dt>Format type</dt>
+            <dd>{% firstof distribution.format_type "Unknown format type" %}</dd>
+        <dt style="float:left">Licence</dt>
+            <dd>{% firstof distribution.license "Unknown" %}</dd>
+        {% if item.rights %}
+            <dt style="float:left">Rights</dt> <dd>{{ item.rights }}</dd>
+        {% endif %}
+
+        <div class="well">
+            {% if item.download_URL %}
+                <a href='{{item.download_URL}}' class='btn btn-default'>
+                    <i class='fa fa-download'></i>
+                    Download
+                </a>
+            {% endif %}
+            {% with columns=item.distributiondataelementpath_set.all %}
+            {% if columns %}
+                <table class='table table-striped'>
+                    <thead>
+                    <tr>
+                        <th>Path name</th>
+                        <th>Data Element</th>
+                        <th>Definition</th>
+                        <th>
+                            Data&nbsp;Type
+                        </th>
+                        <th>
+                            Format
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for column in columns %}
+                        <tr>
+                            <td>
+                                <tt>{{column.logical_path}}</tt>
+                            </td>
+                            <td>
+                                <a href="{{column.data_element.get_absolute_url}}">{{column.data_element.name}}</a>
+                                {% if column.specialisation_classes.exists %}
+                                    <hr>
+                                    <div>
+                                        This data element is specialised in this context for the following object classes:
+                                        <ul>
+                                            {% for oc in column.specialisation_classes.all|can_view_iter:request.user %}
+                                                <li><a href="{{oc.get_absolute_url}}">{{oc.name}}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {{column.data_element.definition|striptags|bleach|safe}}
+                            </td>
+                            <td>
+                                {% firstof column.data_element.valueDomain.data_type.name "-" %}
+                            </td>
+                            <td>
+                                {% firstof column.data_element.valueDomain.format "-" %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <p>No data elements have been specified for this distribution.</p>
+            {% endif %}
+            {% endwith %}
+        </div>
+
+    </dl>
+
+{% endblock %}
