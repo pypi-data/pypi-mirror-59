@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: mkdocs-blog-plugin
+Version: 0.1.1
+Summary: Keeps a really simple blog in your mkdocs
+Home-page: https://github.com/fmaida/mkdocs-blog-plugin
+Author: Francesco Maida
+Author-email: francesco.maida@gmail.com
+License: LICENSE.txt
+Description: UNKNOWN
+Platform: UNKNOWN
