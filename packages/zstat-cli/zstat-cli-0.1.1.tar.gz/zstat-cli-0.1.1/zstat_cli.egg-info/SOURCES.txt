@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+test/__init__.py
+test/context.py
+test/test_zstat.py
+zstat/__init__.py
+zstat/command_line.py
+zstat/zstat.py
+zstat_cli.egg-info/PKG-INFO
+zstat_cli.egg-info/SOURCES.txt
+zstat_cli.egg-info/dependency_links.txt
+zstat_cli.egg-info/entry_points.txt
+zstat_cli.egg-info/top_level.txt
