@@ -1,0 +1,13 @@
+changelogd/__init__.py,sha256=83ZvOQ1sMDmR5JrJhWmIEjydx010rc5PAAx1SY5l2lE,87
+changelogd/changelogd.py,sha256=wtRMKvbQPEX2kOqA3oJwSnGNM454CAQImO-KXJXhBAU,10406
+changelogd/cli.py,sha256=eoHYjnmF0Yk9tQlHvxUn2tt2JU7EQ9-QgMUIFRZ3zSw,538
+changelogd/commands.py,sha256=ywuSo-_tEqKFrDKXwsHVskKaAXUCsnUyBjwC-aoNziE,3082
+changelogd/config.py,sha256=cMMfzAgu-o3KJ0WkOlMg8uwj7EPEs3loByDc5iNEf_o,8864
+changelogd/resolver.py,sha256=Bp5dWKJovx7h9baX-5s9gFkWGyaBgh-VIU4rbe1vsNo,2880
+changelogd/utils.py,sha256=D4pIbfruEhSpm-scefL4J5bPdJ1Pe55xqM35ahXO-wc,565
+changelogd-0.1.1.dist-info/LICENSE,sha256=OYvR7W4CT2xa0WxG2iEs1F8vl-4o25hlx286XecQ0hY,1075
+changelogd-0.1.1.dist-info/METADATA,sha256=dCshLHDHqIQSe0ia99W-3NkVb3SOGfsyLh-zjH3z35o,4015
+changelogd-0.1.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+changelogd-0.1.1.dist-info/entry_points.txt,sha256=Z5XJ7Aeuw8hdTlEI2Eo8_Bsb3dj7KfcdRVTXf-6aPOo,52
+changelogd-0.1.1.dist-info/top_level.txt,sha256=rnntneLJQjhRo0zdgR2WSta7n_tqvrzONMQZcYQiYgU,11
+changelogd-0.1.1.dist-info/RECORD,,
