@@ -1,0 +1,9 @@
+README.md
+setup.py
+crsmssql/__init__.py
+crsmssql/crsmssql.py
+crsmssql.egg-info/PKG-INFO
+crsmssql.egg-info/SOURCES.txt
+crsmssql.egg-info/dependency_links.txt
+crsmssql.egg-info/requires.txt
+crsmssql.egg-info/top_level.txt
