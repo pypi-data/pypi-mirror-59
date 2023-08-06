@@ -1,0 +1,6 @@
+colorama
+PyYAML>=5.1
+pykwalify
+configobj
+setuptools>=v40.1.0
+packaging
