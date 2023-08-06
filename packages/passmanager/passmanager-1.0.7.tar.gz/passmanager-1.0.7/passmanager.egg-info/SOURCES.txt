@@ -1,0 +1,12 @@
+README.md
+setup.py
+passmanager/__init__.py
+passmanager/__main__.py
+passmanager/cli.py
+passmanager/clipboard.py
+passmanager/manager.py
+passmanager/password.py
+passmanager.egg-info/PKG-INFO
+passmanager.egg-info/SOURCES.txt
+passmanager.egg-info/dependency_links.txt
+passmanager.egg-info/top_level.txt
