@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+Tool.py
+setup.py
+testlib/__init__.py
+testlib/testlibone.py
+wcltestlib.egg-info/PKG-INFO
+wcltestlib.egg-info/SOURCES.txt
+wcltestlib.egg-info/dependency_links.txt
+wcltestlib.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: wcltestlib
+Version: 1.0.1
+Summary: this is a testlib
+Home-page: https://github.com/wcl1997/PythonCode
+Author: wcl
+Author-email: wcl0729@163.com
+License: MIT
+Description: 
+        我这个库是为了测试用的
+        
+        *斜体*
+        
+        **加粗**
+        
+        ``this is my code``
+        
+Platform: UNKNOWN
