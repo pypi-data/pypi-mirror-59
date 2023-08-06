@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: topsis_101703191
+Version: 0.0.1
+Summary: TOPSIS method
+Home-page: https://github.com/geetanshg22/topsis
+Author: Geetansh Goyal
+Author-email: ggoyal_be17@thapar.edu
+License: UNKNOWN
+Description: #TOPSIS-Python
+        
+        Project 1 : UCS633
+        
+        
+        Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) method, numerical data, interval data, positive ideal solution, negative ideal solution. Introduction. Multi-criteria decision making (MCDM) refers to making choice of the best alternative from among a finite set of decision alternatives in terms of multiple, usually conflicting criteria.
+        
+        
+        Run from Command line
+        
+        python <your-file-name> <your-dataset-name.csv>  <weight array>("w1,w2,w3,w4,...") <impact array>("i1,i2,i3,i4,...") 
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
