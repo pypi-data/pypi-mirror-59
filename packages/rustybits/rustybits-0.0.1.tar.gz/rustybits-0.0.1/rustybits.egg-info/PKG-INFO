@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: rustybits
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: http://github.com/metagriffin/rustybits
+Author: metagriffin
+Author-email: mg.pypi@metagriffin.net
+License: GPLv3+
+Description: UNKNOWN
+Keywords: fuse mount meta-backup meta-archiving
+Platform: any
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Topic :: Database
+Classifier: Topic :: Desktop Environment :: File Managers
+Classifier: Topic :: Home Automation
+Classifier: Topic :: System :: Archiving
+Classifier: Topic :: System :: Archiving :: Packaging
+Classifier: Topic :: System :: Filesystems
+Classifier: Topic :: System :: Recovery Tools
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
