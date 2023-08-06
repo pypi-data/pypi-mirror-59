@@ -1,0 +1,9 @@
+vtmm/__init__.py,sha256=0J5H5DumPu2OFsJPeL9EgDHL9PdOIgDyBLX4ZupQ5h8,95
+vtmm/const.py,sha256=3oNvnW6CVPF71zrL9QH4p2zAtwTJSzgSC_b4cx3cBMo,21
+vtmm/fresnel.py,sha256=inXCHkF25xtaeELRbS1O8ilsa7Fr_PfDMcg0dRq34DM,1115
+vtmm/tmm.py,sha256=9UDqBaKxUHzlUXgOiNp4wAj57W2_JMh7niSIcCMVKMI,2377
+vtmm-0.1.dist-info/LICENSE,sha256=ICmqbH7NUoXZpX2zw_qpnzJog83IT_Cezw4vdm18Zg0,1059
+vtmm-0.1.dist-info/METADATA,sha256=aqf-CAYy76xcjjOysg7SVw9aLcKL0osSbfSDPdytfk8,3081
+vtmm-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+vtmm-0.1.dist-info/top_level.txt,sha256=xPcHdwj09PJPW3YGYTmglRwHh8lCeDD9qFX1ZgOuCVg,5
+vtmm-0.1.dist-info/RECORD,,
