@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: topsis-Dilpreet
+Version: 1.0
+Summary: Utility repo for multiple decision making.
+Home-page: https://github.com/dilpreet701/topsis-Dilpreet
+Author: Dilpreet Singh
+Author-email: dilpreetgill374@gmail.com
+License: MIT
+Download-URL: https://github.com/haymant1998/topsos-Haymant/archive/topsis1.0.tar.gz
+Description: UNKNOWN
+Keywords: topsis,decision,multiple
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
