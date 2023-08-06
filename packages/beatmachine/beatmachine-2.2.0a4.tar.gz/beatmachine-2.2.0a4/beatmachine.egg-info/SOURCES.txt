@@ -1,0 +1,9 @@
+setup.py
+beatmachine/beats.py
+beatmachine/loader.py
+beatmachine/__main__.py
+beatmachine/__init__.py
+beatmachine/effects/periodic.py
+beatmachine/effects/base.py
+beatmachine/effects/__init__.py
+beatmachine/effects/temporal.py
