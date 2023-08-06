@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: sample-ais-geocoder
+Version: 0.0.1
+Summary: Python package for geocoding addresses using the AIS API
+Home-page: https://github.com/CityOfPhiladelphia/ais-geocoding-example
+Author: CityGeo
+Author-email: keisan.gittens@phila.gov
+License: UNKNOWN
+Description: # Example AIS Geocoder Package
+        
+        This is a simple example package. You can use
+        [Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+        to write your content.
+        
+        ## Installation
+        ```pip install sample-ais-geocoder```
+        
+        
+        ## Usage
+        Address Standardizer
+        
+        ```     lorem ipsum Proident dolor enim Lorem ut laborum dolor pariatur nostrud mollit. Quis consequat nulla veniam ea eu nostrud labore aute eiusmod. Excepteur cupidatat mollit pariatur cillum aute cupidatat aliqua sint quis Lorem velit aliqua.```
+        
+        ```     Velit aute non tempor deserunt commodo sint excepteur deserunt ut exercitation nostrud veniam labore. Culpa deserunt dolore laboris labore minim nisi. Esse tempor voluptate dolor amet laboris ex reprehenderit ex. Fugiat velit veniam eu elit sunt ex commodo. Minim culpa cillum sunt exercitation in ea sint cupidatat in tempor aliqua fugiat ipsum sit. Officia eiusmod non ut veniam consequat. Adipisicing velit nulla cillum aute laboris ad. ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

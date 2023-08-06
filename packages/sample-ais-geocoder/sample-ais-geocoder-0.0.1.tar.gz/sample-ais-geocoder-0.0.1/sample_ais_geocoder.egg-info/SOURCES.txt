@@ -1,0 +1,7 @@
+README.md
+setup.py
+sample_ais_geocoder.egg-info/PKG-INFO
+sample_ais_geocoder.egg-info/SOURCES.txt
+sample_ais_geocoder.egg-info/dependency_links.txt
+sample_ais_geocoder.egg-info/requires.txt
+sample_ais_geocoder.egg-info/top_level.txt
