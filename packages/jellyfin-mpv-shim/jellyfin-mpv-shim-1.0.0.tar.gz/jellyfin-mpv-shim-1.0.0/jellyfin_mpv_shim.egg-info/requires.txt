@@ -1,0 +1,5 @@
+python-mpv
+requests
+urllib3
+six
+websocket_client
