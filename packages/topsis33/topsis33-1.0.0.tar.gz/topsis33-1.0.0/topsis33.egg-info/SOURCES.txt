@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+topsis/cli.py
+topsis/topsis.py
+topsis33.egg-info/PKG-INFO
+topsis33.egg-info/SOURCES.txt
+topsis33.egg-info/dependency_links.txt
+topsis33.egg-info/entry_points.txt
+topsis33.egg-info/requires.txt
+topsis33.egg-info/top_level.txt
