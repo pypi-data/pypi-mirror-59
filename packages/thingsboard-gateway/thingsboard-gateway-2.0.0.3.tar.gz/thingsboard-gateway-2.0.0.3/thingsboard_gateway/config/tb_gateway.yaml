@@ -1,0 +1,14 @@
+connectors:
+- configuration: mqtt0.json
+  name: Default Local Broker
+  type: mqtt
+storage:
+  max_records_count: 100000
+  read_records_count: 100
+  type: memory
+thingsboard:
+  host: cloud.thingsboard.io
+  port: 1883
+  remoteConfiguration: true
+  security:
+    accessToken: 1rU0vhsmIY6HkkeboB5Y
