@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: QLearnGaming
+Version: 0.6
+Summary: A library which makes it simple to build Deep Learning on games
+Home-page: https://github.com/user/azfar154
+Author: Azfar Mohamed
+Author-email: azfarmah@outlook.com
+License: MIT
+Description: # QLearnGaming
+        This library is built on top of Gym and Keras. This is an example of code running 
+        # Coding Example
+        import QLearnGaming
+        import gym
+        env = gym.make('CartPole-v0')
+        model = QLearnGaming.create_model(env)
+        D,state = QLearnGaming.record_events(env,model)
+        model = QLearnGaming.train(D,env,state,model)
+        QLearnGaming.test(env,model)
+        # Output
+        Reward 10.0
+        
+Keywords: KERAS,GYM,GAMING
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
