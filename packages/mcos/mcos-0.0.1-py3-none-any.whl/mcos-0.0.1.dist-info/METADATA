@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: mcos
+Version: 0.0.1
+Summary: Implementation of Monte Carlo Optimization Selection from the paper "A Robust Estimator of the Efficient Frontier"
+Home-page: https://github.com/enjine-com/mcos
+Author: ENJINE
+Author-email: info@enjine.com
+License: MIT
+Keywords: Monte Carlo convex optimization de-noising clustering shrinkage
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Typing :: Typed
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# mcos
+Implementation of Monte Carlo Optimization Selection from the paper ["A Robust Estimator of the Efficient Frontier"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3469961)
+
+
