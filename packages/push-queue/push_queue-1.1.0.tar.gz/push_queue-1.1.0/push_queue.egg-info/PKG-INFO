@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: push-queue
+Version: 1.1.0
+Summary: A queue between thread with method push,drop old put into new
+Home-page: https://github.com/mt6979/push_queue
+Author: liuyancong
+Author-email: 1437255447@qq.com
+License: UNKNOWN
+Description: #                         CustomQueue 
+        
+        - CustomeQueue 继承自queue.Queue
+        - 只是新增一个push方法
+          - push(new_item)
+          - 当该队列满的时候,会将队列中最先入队列的元素old_item取出来,会将new_item放入队列
+          - 然后返回old_item
+          - 当队列不满的时候,直接将new_item入队列,然后返回None
+          - 理论上这个方法不阻塞,也不会抛出异常
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
