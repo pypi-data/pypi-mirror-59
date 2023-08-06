@@ -1,0 +1,3 @@
+[console_scripts]
+request_limiter = request_limiter.cli:main
+
