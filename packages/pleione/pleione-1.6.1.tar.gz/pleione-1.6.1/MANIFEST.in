@@ -1,0 +1,9 @@
+exclude .gitattributes
+exclude .gitignore
+
+exclude __pycache__
+
+recursive-exclude contrib *
+recursive-exclude docs *
+recursive-exclude tests *
+recursive-exclude wellek *
