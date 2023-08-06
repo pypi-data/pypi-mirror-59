@@ -1,0 +1,9 @@
+README.md
+setup.py
+jupyterhub_remote_user_authenticator.egg-info/PKG-INFO
+jupyterhub_remote_user_authenticator.egg-info/SOURCES.txt
+jupyterhub_remote_user_authenticator.egg-info/dependency_links.txt
+jupyterhub_remote_user_authenticator.egg-info/requires.txt
+jupyterhub_remote_user_authenticator.egg-info/top_level.txt
+remote_user_authenticator/__init__.py
+remote_user_authenticator/remote_user_authenticator.py
