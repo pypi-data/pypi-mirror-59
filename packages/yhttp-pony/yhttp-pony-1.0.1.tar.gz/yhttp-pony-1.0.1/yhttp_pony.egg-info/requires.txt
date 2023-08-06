@@ -1,0 +1,3 @@
+yhttp<3,>=2
+pony
+psycopg2
