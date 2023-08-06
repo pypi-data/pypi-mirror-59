@@ -1,0 +1,8 @@
+#!/code/env/test-gitz/bin/python
+from gitz import mover
+
+git_rename = mover.Mover('rename')
+
+
+if __name__ == '__main__':
+    git_rename()
