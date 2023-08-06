@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+mallu.py
+model.py
+santa.py
+setup.py
+mallu.egg-info/PKG-INFO
+mallu.egg-info/SOURCES.txt
+mallu.egg-info/dependency_links.txt
+mallu.egg-info/top_level.txt
