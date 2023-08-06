@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: Autogovernance
+Version: 0.7.6
+Summary: Package to update information in Governance
+Home-page: https://github.com/JulioPestanaSalinas/AutoGovernance
+Author: Julio Pestaña Salinas
+Author-email: Julio.Pestana.Salinas@es.ey.com
+License: GNU
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Autogovernance
+
+Autogovernance is a package that help to update the information relative to dictionary and quality rules in Governance, a Stratio tool.
+
+
+## Getting Started
+
+### Prerequisites
+
+There are certain requirements to use this package:
+
+1.- Previous installation of Python 3.x. You can get the installable from https://www.python.org/downloads/.
+
+2.- The package use any other packages which should be installed. These packages are selenium, os, sys, logging and xlrd.
+You can install every needed packages using the command above:
+```
+ pip3 install --upgrade -r requirements.txt 
+
+```
+3.- This package is based on Selenium and use a Chrome driver to execute. That means you need to install Chrome browser (https://www.google.com/intl/es_es/chrome/). 
+
+4.- In addition, you have to download (https://chromedriver.chromium.org/downloads) the driver used by selenium to navigate over Governance or any other web. That file .exe should be in the same directory of your application.
+
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+
+## Built With
+
+* [Governance](https://admin.sgcto-int.stratio.com/service/governance-ui/) - Stratio Governance
+* [Spyder](https://www.spyder-ide.org/) - KDE
+
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Julio PestaÃ±a Salinas** - [JulioPestanaSalinas](https://github.com/JulioPestanaSalinas)
+
+## License
+
+This project is licensed under the GNU-3 License - see the [LICENSE](LICENSE) file for details.
+
+
+
