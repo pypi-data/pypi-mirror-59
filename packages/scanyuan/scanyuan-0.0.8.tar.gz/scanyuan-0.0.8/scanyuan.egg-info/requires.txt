@@ -1,0 +1,9 @@
+
+[anndata]
+anndata
+
+[pandas]
+pandas
+
+[seaborn]
+seaborn
