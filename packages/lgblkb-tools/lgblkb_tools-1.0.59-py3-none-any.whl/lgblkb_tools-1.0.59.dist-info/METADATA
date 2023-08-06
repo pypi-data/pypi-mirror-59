@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: lgblkb-tools
+Version: 1.0.59
+Summary: Some useful tools for everyday routine coding improvisation)
+Home-page: https://github.com/lgblkb/lgblkb_tools
+Author: Dias Bakhtiyarov
+Author-email: dbakhtiyarov@nu.edu.kz
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: python-box
+Requires-Dist: more-itertools
+Requires-Dist: sklearn
+Requires-Dist: scikit-image
+Requires-Dist: scikit-learn
+Requires-Dist: python-dateutil
+Requires-Dist: ruamel.yaml
+Requires-Dist: python-log-indenter
+Requires-Dist: colorlog
+Requires-Dist: requests
+Requires-Dist: docopt
+Requires-Dist: python-dotenv
+Requires-Dist: wrapt
+Requires-Dist: shapely
+Requires-Dist: pyproj
+Requires-Dist: geojson
+Requires-Dist: geopandas
+Requires-Dist: geojsonio
+Requires-Dist: matplotlib
+Requires-Dist: redis
+Requires-Dist: celery
+Requires-Dist: celery-singleton
+Requires-Dist: docker
+Requires-Dist: python-telegram-bot
+Requires-Dist: sqlalchemy
+Requires-Dist: geoalchemy2
+Requires-Dist: psycopg2
+Requires-Dist: jsonpickle
+Requires-Dist: fabric
+Requires-Dist: checksumdir
+Requires-Dist: joblib
+
+UNKNOWN
+
+
