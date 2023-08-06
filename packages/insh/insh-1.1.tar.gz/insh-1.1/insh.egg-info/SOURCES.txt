@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+insh.egg-info/PKG-INFO
+insh.egg-info/SOURCES.txt
+insh.egg-info/dependency_links.txt
+insh.egg-info/entry_points.txt
+insh.egg-info/top_level.txt
