@@ -1,0 +1,65 @@
+# norepeat
+
+The norepeat package contains some magical function, it's my personal tools collection...
+
+1 Count a project sum of codes number
+
+2 Generate markdown menu automatically
+
+
+## Installation
+
+You can install the Real Python Feed Reader from [PyPI](https://pypi.org/project/norepeat/):
+
+```
+pip install norepeat
+```
+The norepeat is supported on Python 3 and above.
+
+## DOC
+norepeat -h
+
+norepeat gen_markdown_menu -h
+
+norepeat count_code_nums -h
+
+```
+gen_markdown_menu
+usage: gen_markdown_menu [-h] [-n NAME]
+
+    Generate markdown Menu automatically/自动生成markdown 目录
+    Eg:
+        norepeat gen_markdown_menu -n=sample.md
+    then you will get a sample_back.md with contents
+    sample_back.md is new generated file including menu
+
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -n NAME, --name NAME  file name
+************************************************************
+
+count_code_nums
+usage: count_code_nums [-h] [-p PATH] [-t TYPE]
+
+Count summary codes lines/统计代码行数
+    Eg:
+        norepeat count_code_nums -p=project -t=py
+
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -p PATH, --path PATH  file/directory path
+  -t TYPE, --type TYPE  file type
+************************************************************
+
+```
+
+## norepeat package (Private)
+
+TEST:
+* python3 setup.py sdist bdist_wheel
+* python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
+PROD:
+twine upload dist/*
